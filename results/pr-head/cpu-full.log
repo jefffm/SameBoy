@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "group": "all",
+  "sameboy_commit": "8182d8edbaddbac9f6057930f6cebdabd3b83228",
+  "sameboy_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "rom_sha256": "650f9c5f4e8ddcdef3099861051a2d6737d4221b9b9c40e4b29e7434e94ab74f",
+  "manifest_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
+  "oracle_sha256": "e2251d1ccdd6cf9558ea95a9da574d6d60b973f541708b67daff8b6a00786277",
+  "runner_source_sha256": "4163bf9023b37df91075559338b5917f3e48cf9e19fe1e013466bc136f659312",
+  "execution_seconds": 4.558775887999218,
+  "checked_cases": 57,
+  "failed_cases": 0,
+  "different_bytes": 0
+}
+Report: /home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/validation/cpu-full/results.json

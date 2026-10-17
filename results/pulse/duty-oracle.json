@@ -1,0 +1,516 @@
+{
+  "baseline_report": "artifacts/torture/comparison-torture-pula2a6h/metrics.json",
+  "baseline_report_sha256": "8c0eb6c3214f0f0768543330a8e8d5311f390c5028f86f2f72a83b92f29c549a",
+  "reference": {
+    "path": "artifacts/torture/pulse-diagnosis/full-latched/audio.wav",
+    "sha256": "9b345b0f6754040656770c2edb11499c01de885553d9a9f044507b32144cd278",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int16",
+    "samples": 27054971,
+    "duration_s": 563.6452291666667
+  },
+  "hardware": {
+    "path": "artifacts/hardware/torture-pula2a6h/capture.wav",
+    "sha256": "c998f8af6ed5389fdbc12127d68da749bfe7ba341f67afda141fe8e31cc73960",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int32",
+    "samples": 31582208,
+    "duration_s": 657.9626666666667
+  },
+  "manifest_sha256": "b8173ececdf7fc73e288a6e44556d0c4cf97b98772f06212f99198d4d9ec8585",
+  "markers_sha256": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657",
+  "candidate_provenance": {
+    "manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/pulse-diagnosis/full-latched/manifest.json",
+    "input_manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/full/manifest.json",
+    "manifest_sha256": "b8173ececdf7fc73e288a6e44556d0c4cf97b98772f06212f99198d4d9ec8585",
+    "rom_sha256": "0eab1e73e34da49fe1bc7c83dd2fb6768e1e6e3e4ca01d5c39d3932eb936dedf",
+    "sameboy_commit": "89933a9dfa9d0b59c4aa2e3cb9f3a6497c8031d8",
+    "sameboy_diff_sha256": "e6f859240de5a1306665b3cf48cb117812c487120cc0b7bb501c567972927690",
+    "capture_source_sha256": "ca354f4f042ea48cb5bdc479d312f9f63bcbd7b56f08a3a9ae925762f0d37868",
+    "commands": [
+      [
+        "make",
+        "-C",
+        "/home/jeff/Documents/ChatGPT/dmg/build/torture-fix-pulse",
+        "CONF=release",
+        "build/lib/libsameboy.a",
+        "bootroms"
+      ],
+      [
+        "cc",
+        "-std=gnu11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/home/jeff/Documents/ChatGPT/dmg/build/torture-fix-pulse",
+        "/home/jeff/Documents/ChatGPT/dmg/benchmark/capture.c",
+        "/home/jeff/Documents/ChatGPT/dmg/build/torture-fix-pulse/build/lib/libsameboy.a",
+        "-lm",
+        "-ldl",
+        "-o",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/pulse-diagnosis/full-latched/capture"
+      ],
+      [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/pulse-diagnosis/full-latched/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/full/audio-torture.gb",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/build/torture-fix-pulse/build/bin/BootROMs/dmg_boot.bin",
+        "--until-done",
+        "--seed",
+        "1",
+        "--wav",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/pulse-diagnosis/full-latched/audio.wav",
+        "--screenshot",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/pulse-diagnosis/full-latched/screen.ppm",
+        "--apu-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/pulse-diagnosis/full-latched/apu.csv",
+        "--markers-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/pulse-diagnosis/full-latched/markers.csv"
+      ]
+    ],
+    "completion_authority": "ROM emits HRAM FF82=4 after its finite suite/end packet; no wall-clock timeout.",
+    "outputs_sha256": {
+      "audio.wav": "9b345b0f6754040656770c2edb11499c01de885553d9a9f044507b32144cd278",
+      "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+      "apu.csv": "470319225ed2f3adab9bdc44bd6d39ca54770f34cb10925f2dd1e2f4ef96a109",
+      "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+    },
+    "status": "completed"
+  },
+  "frozen_mapping": {
+    "clock": 1.0000585963100947,
+    "offset_s": 94.04181316194428,
+    "gain": 0.06392767566127538
+  },
+  "cpu_marker_timing_identical": true,
+  "packet_coverage": {
+    "expected": 337,
+    "reference_valid_unique": 337,
+    "hardware_valid_unique": 337,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "candidate_decoder": {
+    "method": "Decode actual audio around reference packet-writer markers; each search includes one bit of phase ambiguity before/after the specified packet.",
+    "valid_packets": 337,
+    "invalid_or_partial_candidates": 12
+  },
+  "candidate_invalid_packets": [
+    {
+      "kind": 1,
+      "id": 25,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 35.99516666666667,
+      "preamble_score": 7.6662263904414,
+      "candidate_region_s": [
+        35.99516666666667,
+        35.99516666666667
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 0,
+      "id": 96,
+      "payload_length": 16,
+      "status": "unknown_kind_or_id",
+      "start_s": 368.2065,
+      "preamble_score": 8.2822433252964,
+      "candidate_region_s": [
+        368.2065,
+        368.2065
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 2,
+      "id": 383,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 389.3653125,
+      "preamble_score": 7.659034346006088,
+      "candidate_region_s": [
+        389.3653125,
+        389.3653125
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 0,
+      "id": 125,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 421.5761875,
+      "preamble_score": 8.290461351006043,
+      "candidate_region_s": [
+        421.5761875,
+        421.5761875
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 2,
+      "id": 383,
+      "payload_length": 129,
+      "status": "unknown_kind_or_id",
+      "start_s": 426.1805625,
+      "preamble_score": 7.624295836902766,
+      "candidate_region_s": [
+        426.1805625,
+        426.1805625
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 135,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 444.59045833333334,
+      "preamble_score": 8.266896584326105,
+      "candidate_region_s": [
+        444.59045833333334,
+        444.59045833333334
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 2,
+      "id": 13,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 458.39891666666665,
+      "preamble_score": 7.6889874642158045,
+      "candidate_region_s": [
+        458.39891666666665,
+        458.39891666666665
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 3,
+      "id": 145,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 467.6027291666667,
+      "preamble_score": 8.22990583059856,
+      "candidate_region_s": [
+        467.6027291666667,
+        467.6027291666667
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 3,
+      "id": 147,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 472.20591666666667,
+      "preamble_score": 8.229999304642112,
+      "candidate_region_s": [
+        472.20591666666667,
+        472.20591666666667
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 47,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 555.1698125,
+      "preamble_score": 7.677232003214442,
+      "candidate_region_s": [
+        555.1698125,
+        555.1698125
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 178,
+      "payload_length": 1,
+      "status": "unexpected_payload_length",
+      "expected_payload_length": 0,
+      "start_s": 556.9056666666667,
+      "preamble_score": 7.639491834963661,
+      "candidate_region_s": [
+        556.9056666666667,
+        556.9056666666667
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 149,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 557.5142291666667,
+      "preamble_score": 8.311304688253506,
+      "candidate_region_s": [
+        557.5142291666667,
+        557.5142291666667
+      ],
+      "within_valid_packet_first_bit": true
+    }
+  ],
+  "cases": [
+    {
+      "id": 2,
+      "name": "ch1-duty-trigger",
+      "group": "ch1",
+      "description": "All four duty encodings, changed during playback or with fresh triggers.",
+      "reference_interval_s": [
+        1.808981895,
+        1.871563911
+      ],
+      "mapped_hardware_interval_s": [
+        95.85090105660835,
+        95.91348673968356
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3004,
+        "rmse": 0.01252584293668971,
+        "normalized_rmse_reference": 0.1198345099368741,
+        "correlation": 0.9928664827305078,
+        "reference_rms": 0.10452617483300942,
+        "hardware_calibrated_rms": 0.10341511843562746,
+        "mean_difference": 0.0018976087600034647,
+        "peak_absolute_difference": 0.1900231450070692
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0011946294899154858
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0002998493561836853,
+        "relative_integrated_absolute_psd_difference": 0.023002994495224787,
+        "reference_power": 0.013035231401978178,
+        "hardware_power": 0.012795074077044317
+      },
+      "baseline_waveform": {
+        "samples": 3004,
+        "rmse": 0.032601644790126325,
+        "normalized_rmse_reference": 0.3057775966721955,
+        "correlation": 0.9518291763836639,
+        "reference_rms": 0.10661881427852432,
+        "hardware_calibrated_rms": 0.10341511843562746,
+        "mean_difference": 0.0017532496437730222,
+        "peak_absolute_difference": 0.2734378566363865
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0019777429816331244,
+        "relative_integrated_absolute_psd_difference": 0.14860140759142254,
+        "reference_power": 0.013309046083001453,
+        "hardware_power": 0.012795074077044317
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 3,
+      "name": "ch1-duty-live",
+      "group": "ch1",
+      "description": "All four duty encodings, changed during playback or with fresh triggers.",
+      "reference_interval_s": [
+        2.012444496,
+        2.075007439
+      ],
+      "mapped_hardware_interval_s": [
+        96.05437557976602,
+        96.11694218872363
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3003,
+        "rmse": 0.011869999364020181,
+        "normalized_rmse_reference": 0.11357524139971376,
+        "correlation": 0.9935045854043694,
+        "reference_rms": 0.10451220897911379,
+        "hardware_calibrated_rms": 0.10350320669497484,
+        "mean_difference": 0.0011493326084879491,
+        "peak_absolute_difference": 0.18219675472622415
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.001158442182639385
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.984952588373142,
+        "integrated_absolute_psd_difference": 0.0002987056290789191,
+        "relative_integrated_absolute_psd_difference": 0.022919671741423713,
+        "reference_power": 0.013032718463373779,
+        "hardware_power": 0.01282052489055048
+      },
+      "baseline_waveform": {
+        "samples": 3003,
+        "rmse": 0.011869999364020181,
+        "normalized_rmse_reference": 0.11357524139971376,
+        "correlation": 0.9935045854043694,
+        "reference_rms": 0.10451220897911379,
+        "hardware_calibrated_rms": 0.10350320669497484,
+        "mean_difference": 0.0011493326084879491,
+        "peak_absolute_difference": 0.18219675472622415
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.984952588373142,
+        "integrated_absolute_psd_difference": 0.0002987056290789191,
+        "relative_integrated_absolute_psd_difference": 0.022919671741423713,
+        "reference_power": 0.013032718463373779,
+        "hardware_power": 0.01282052489055048
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 9,
+      "name": "ch2-duty-trigger",
+      "group": "ch2",
+      "description": "All four duty encodings, changed during playback or with fresh triggers.",
+      "reference_interval_s": [
+        36.118647575,
+        36.181224823
+      ],
+      "mapped_hardware_interval_s": [
+        130.1625771564178,
+        130.22515807121363
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3003,
+        "rmse": 0.011900804674340465,
+        "normalized_rmse_reference": 0.11407745667992676,
+        "correlation": 0.9935239431354645,
+        "reference_rms": 0.10432214234694227,
+        "hardware_calibrated_rms": 0.10360610335662558,
+        "mean_difference": -0.0017164547799492739,
+        "peak_absolute_difference": 0.17123218139238286
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0010124236300668265
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0004670621126256011,
+        "relative_integrated_absolute_psd_difference": 0.03583718450331511,
+        "reference_power": 0.013032890811564609,
+        "hardware_power": 0.012841040036579309
+      },
+      "baseline_waveform": {
+        "samples": 3003,
+        "rmse": 0.03238707147995247,
+        "normalized_rmse_reference": 0.30431188265241726,
+        "correlation": 0.9522961491472159,
+        "reference_rms": 0.10642723247499587,
+        "hardware_calibrated_rms": 0.10360610335662558,
+        "mean_difference": -0.0018615428461799183,
+        "peak_absolute_difference": 0.26497990820660017
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.002102258764255697,
+        "relative_integrated_absolute_psd_difference": 0.1579741286127663,
+        "reference_power": 0.01330761424491762,
+        "hardware_power": 0.012841040036579309
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 10,
+      "name": "ch2-duty-live",
+      "group": "ch2",
+      "description": "All four duty encodings, changed during playback or with fresh triggers.",
+      "reference_interval_s": [
+        36.322105408,
+        36.384663582
+      ],
+      "mapped_hardware_interval_s": [
+        130.36604691129605,
+        130.4286087509742
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3002,
+        "rmse": 0.012487353826024188,
+        "normalized_rmse_reference": 0.11968499395307103,
+        "correlation": 0.9928704689518311,
+        "reference_rms": 0.10433516695435127,
+        "hardware_calibrated_rms": 0.10359979868789136,
+        "mean_difference": -0.00180931092044599,
+        "peak_absolute_difference": 0.165337255192002
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0010407564445968484
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.989340439706863,
+        "hardware_resolution_reference_hz": 15.984952588373142,
+        "integrated_absolute_psd_difference": 0.0004646077648744554,
+        "relative_integrated_absolute_psd_difference": 0.03565141713012029,
+        "reference_power": 0.01303195783715226,
+        "hardware_power": 0.012843479671652844
+      },
+      "baseline_waveform": {
+        "samples": 3002,
+        "rmse": 0.012487353826024188,
+        "normalized_rmse_reference": 0.11968499395307103,
+        "correlation": 0.9928704689518311,
+        "reference_rms": 0.10433516695435127,
+        "hardware_calibrated_rms": 0.10359979868789136,
+        "mean_difference": -0.00180931092044599,
+        "peak_absolute_difference": 0.165337255192002
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.989340439706863,
+        "hardware_resolution_reference_hz": 15.984952588373142,
+        "integrated_absolute_psd_difference": 0.0004646077648744554,
+        "relative_integrated_absolute_psd_difference": 0.03565141713012029,
+        "reference_power": 0.01303195783715226,
+        "hardware_power": 0.012843479671652844
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    }
+  ],
+  "scope": "Same hardware samples and original global mapping/gain for every candidate; no new clock, gain, EQ or per-case fit. Hardware packets reuse the validated baseline report."
+}

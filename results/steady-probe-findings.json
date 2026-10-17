@@ -1,0 +1,97 @@
+{
+  "hardware": {
+    "path": "/home/jeff/Music/Scarlett-Recordings/Media/01-Scarlett 3-4 - Stereo-261017_0638.wav",
+    "sha256": "0ce54987365dde0fb5998112fdc3a5bb4e2b383bc1d564b8a0751d56ab15e4cf",
+    "channel": 0,
+    "start_s": 22.126,
+    "end_s": 37.312
+  },
+  "emulator": {
+    "path": "artifacts/noise-probe/steady-mbc5.wav",
+    "sha256": "f13ad48e849862b65c79cefb9aae79149e52060f20367f4c8204a0f82183fcd3",
+    "channel": 0,
+    "aligned_start_s": 3.027573664939323,
+    "aligned_end_s": 18.212692015308324,
+    "native_psd_start_s": 3.114,
+    "native_psd_end_s": 18.3
+  },
+  "duration_s": 15.186,
+  "duration_authority": "benchmark/baseline.json",
+  "selection": "Use the final complete 15.186-second hardware passage after observed startup settling. Use the final settled emulator passage for native spectra, and permit one full 127-step period of earlier emulator start positions for a single global phase fit over the entire passage. No local phase selection.",
+  "nominal_lfsr_period_s": 0.18603515625,
+  "nominal_period_authority": "benchmark/noise-probe.asm: 127 steps * 6144 DMG T-cycles / 4194304 Hz",
+  "hardware_period_estimate": {
+    "dominant_fft_bin_hz": 86.00026340050046,
+    "dominant_harmonic": 16,
+    "fitted_dominant_line_hz": 86.00021803610696,
+    "fundamental_hz": 5.375013627256685,
+    "period_s": 0.18604603994471786
+  },
+  "emulator_period_estimate": {
+    "dominant_fft_bin_hz": 102.1335440537337,
+    "dominant_harmonic": 19,
+    "fitted_dominant_line_hz": 102.13123364474926,
+    "fundamental_hz": 5.375328086565751,
+    "period_s": 0.18603515616083838
+  },
+  "emulated_seconds_per_hardware_second": 0.9999414995133317,
+  "relative_clock_ratio_ppm": -58.50048666833363,
+  "implemented_audio_resampling_ratio": 0.999941943261491,
+  "implemented_ratio_minus_fit_ppm": 0.443748159328905,
+  "single_rms_gain_hardware_per_emulator": 0.06458191277977834,
+  "global_phase_fractional_sample": -0.026582534812726752,
+  "whole_passage": {
+    "correlation": 0.9983976582219243,
+    "normalized_rmse": 0.0580331233137424,
+    "hardware_rms": 0.0039792272247201775,
+    "emulator_rms": 0.0039792272247201775,
+    "hardware_mean": 5.070360893319596e-05,
+    "emulator_mean": -1.6415011908648527e-07
+  },
+  "halves_without_refitting": [
+    {
+      "correlation": 0.9983475478114084,
+      "normalized_rmse": 0.05958407909394657,
+      "hardware_rms": 0.003979542215856308,
+      "emulator_rms": 0.003979396079975471,
+      "hardware_mean": 6.223377964694326e-05,
+      "emulator_mean": -1.6720388345063155e-07
+    },
+    {
+      "correlation": 0.9984561662699168,
+      "normalized_rmse": 0.05643905163834629,
+      "hardware_rms": 0.003978912208647731,
+      "emulator_rms": 0.003979058362299346,
+      "hardware_mean": 3.9173438219448656e-05,
+      "emulator_mean": -1.6109635472233897e-07
+    }
+  ],
+  "native_harmonic_powers": {
+    "fundamental": {
+      "harmonic": 1,
+      "frequency_hz": 5.375013627256685,
+      "sameboy_minus_hardware_power_db": -1.8485803308464988
+    },
+    "line_in_prior_37_to_41_hz_region": {
+      "harmonic": 7,
+      "frequency_hz": 37.625095390796794,
+      "sameboy_minus_hardware_power_db": -0.4599743764615
+    },
+    "line_in_prior_80_to_83_hz_region": {
+      "harmonic": 15,
+      "frequency_hz": 80.62520440885027,
+      "sameboy_minus_hardware_power_db": -0.04718150122710125
+    },
+    "strongest_hardware_line": {
+      "harmonic": 16,
+      "frequency_hz": 86.00021803610696,
+      "sameboy_minus_hardware_power_db": -0.0272877817542473
+    },
+    "strongest_emulator_line": {
+      "harmonic": 19,
+      "frequency_hz": 102.125258917877,
+      "sameboy_minus_hardware_power_db": 0.011038812388631566
+    }
+  },
+  "interpretation": "The strong globally aligned waveform agreement and 127-step periodicity support agreement of the ongoing narrow-noise sequence. Residual steady differences are concentrated toward low frequencies and are compatible with an analog transfer difference. They do not establish its component or justify EQ. The fitted clock ratio includes recording-clock and oscillator effects. This steady comparison does not validate NR44 restart timing."
+}

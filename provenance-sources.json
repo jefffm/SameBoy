@@ -1,0 +1,686 @@
+[
+  {
+    "path": "benchmark/capture.c",
+    "source": "benchmark/capture.c",
+    "source_sha256": "ca354f4f042ea48cb5bdc479d312f9f63bcbd7b56f08a3a9ae925762f0d37868",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/noise-probe.asm",
+    "source": "benchmark/noise-probe.asm",
+    "source_sha256": "2f5920522f60f4e2ef1454ca6cbf8c683f956b5a5a08646462a6785dfc439212",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/dac-off-probe.asm",
+    "source": "benchmark/dac-off-probe.asm",
+    "source_sha256": "f635458de4dba9e907e41ec14c47642c1a02e53318b9e977d872b6d7c9a9ac08",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/noise-feedback-test.c",
+    "source": "benchmark/noise-feedback-test.c",
+    "source_sha256": "9cf6443f54133cca36fd1fffc107433bf3a1d5e25d82520015ec79658947499a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/pulse-clock-test.c",
+    "source": "benchmark/pulse-clock-test.c",
+    "source_sha256": "2440ef52526bc6b73526c5864b08c822ff81f5ea46b98974d5a532f1061175f6",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/pulse-duty-test.c",
+    "source": "benchmark/pulse-duty-test.c",
+    "source_sha256": "670ab5f7046a93a6db16c853ad2fa2fafd3c82dd883419b3992ec6d1a7117667",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/mixer-dac-test.c",
+    "source": "benchmark/mixer-dac-test.c",
+    "source_sha256": "ad673bdfa157d5f38a83e11d7159c04a6584337ec3d649a486c65e360d79490c",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-noise-feedback-test.sh",
+    "source": "benchmark/run-noise-feedback-test.sh",
+    "source_sha256": "5abbe29f3c5164720058bc4d9e8dbd88698ea01d53a509df01ec3d9f3b2c8c3b",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-pulse-clock-test.sh",
+    "source": "benchmark/run-pulse-clock-test.sh",
+    "source_sha256": "f4e9a3e65a6e00f183f77e205ea563864c48dcbebfc1b44292ae07568070bc76",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-pulse-duty-test.sh",
+    "source": "benchmark/run-pulse-duty-test.sh",
+    "source_sha256": "75fdaac64a66cb15ceadf82376e053da20dabcfcbf72b8cc8be1a0df3ec80c1e",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-mixer-dac-test.sh",
+    "source": "benchmark/run-mixer-dac-test.sh",
+    "source_sha256": "b5180e4c1055b8020d97eef76a01f8dbb37a84c614861cbfa0917f9c04648677",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-dac-off-probe.sh",
+    "source": "benchmark/run-dac-off-probe.sh",
+    "source_sha256": "a933f6f65048dccd527d7c941308b8260cf2ff2c3b4bd68523a3c87ed5927521",
+    "transformation": "Optional third argument selects the SameBoy checkout for its boot ROM."
+  },
+  {
+    "path": "benchmark/verify-dac-off.py",
+    "source": "benchmark/verify-dac-off.py",
+    "source_sha256": "40a8af8f02e96f78b135d9dc53af90d16bde5e5e81ee4e0d71a9abc0cc6f6818",
+    "transformation": "Explicit --silence-only mode reproduces DAC-off-gap assertion without claiming the old startup control is unchanged after the separate mixer fix. Original strict mode remains available."
+  },
+  {
+    "path": "benchmark/generate-sweep-table.py",
+    "source": "benchmark/generate-sweep-table.py",
+    "source_sha256": "b83f233cbb66462ea26394954083365faabc275fe7bad6c00f12665b2673ed6b",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-sweep-map-test.py",
+    "source": "benchmark/run-sweep-map-test.py",
+    "source_sha256": "bba4452a2d4fefcd4bb05c4767232a3694a06ce862c242cfef824c8cd7c8405f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/check-physical-probe.py",
+    "source": "benchmark/check-physical-probe.py",
+    "source_sha256": "1f1a4a02156194940d933cd5485e2d357fc35a11751d9b5b0f4bc3e15cc2fe16",
+    "transformation": "Resolve the frozen ROM relative to this package, retaining immutable manifest/ROM/oracle hash checks."
+  },
+  {
+    "path": "benchmark/probe-readbacks.c",
+    "source": "benchmark/probe-readbacks.c",
+    "source_sha256": "4163bf9023b37df91075559338b5917f3e48cf9e19fe1e013466bc136f659312",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/wave-probe-check.py",
+    "source": "benchmark/wave-probe-check.py",
+    "source_sha256": "28f924062e179263f6014f051f6ca674909d64508e36e682b1d9690f7c07013b",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/wave-readback-check.py",
+    "source": "benchmark/wave-readback-check.py",
+    "source_sha256": "88acb002f249835543e6a1ddc57163bffa19810adb7feaeddb383253a577aaa1",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/wave-readback.c",
+    "source": "benchmark/wave-readback.c",
+    "source_sha256": "5f294dd5003c985d0086e985b81854ff0b7aa941436e493b91422edf4a107728",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/wave-retrigger-probe.py",
+    "source": "benchmark/wave-retrigger-probe.py",
+    "source_sha256": "07732970ec644b68ea7fd5d8477eeabd119a236882f38af870efd6517bb76506",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/wave-majority-repro.asm",
+    "source": "benchmark/wave-majority-repro.asm",
+    "source_sha256": "7fd36b7962edd4c1a4f1b43cd2fd7273b1293aad8eb004899f3687df8ee95740",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/wave-readback-oracle.json",
+    "source": "benchmark/wave-readback-oracle.json",
+    "source_sha256": "2b1883aab145fb196f165a567393099a5fbe5fec268d920ba6abb1695547e99a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/sweep-history-probe.py",
+    "source": "benchmark/sweep-history-probe.py",
+    "source_sha256": "bf26aab30bd48161fe6689b69517a16aaaeb00732767d130117c5f23febe61d4",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/torture/analyze.py",
+    "source": "benchmark/torture/analyze.py",
+    "source_sha256": "561e132cdb04a6260d197832c5a2b3e6bf74ca3339a5bb48c70368a05cae19cf",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/torture/compare_candidate.py",
+    "source": "benchmark/torture/compare_candidate.py",
+    "source_sha256": "116ab5cdbc2215a004b7d383f66882cdddca29f83ec419974bdabd6434e615a8",
+    "transformation": "Resolve archived paths inside the package; accept decoded FLAC WAV by exact original PCM/format verification instead of container SHA. Add --hardware override. All numerical comparison and frozen alignment code unchanged."
+  },
+  {
+    "path": "benchmark/torture/render.py",
+    "source": "benchmark/torture/render.py",
+    "source_sha256": "ccd2bbfa60a0f047b185af543cde6c61ef3f1a7795d5b7d75d359d44d4e4356d",
+    "transformation": "Resolve ROM next to the supplied frozen manifest; rendering and immutable manifest contents unchanged."
+  },
+  {
+    "path": "benchmark/torture/build.py",
+    "source": "benchmark/torture/build.py",
+    "source_sha256": "98bb6aa39da91983f6b4e28d0a8cc2e55807528ab5a900748e69502a735f1af6",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/torture/cases.py",
+    "source": "benchmark/torture/cases.py",
+    "source_sha256": "e5a85fa26720252f1577c3e8169f14c64c382d6e09cc4fc213fb58510c5d92c0",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/torture/engine.asm",
+    "source": "benchmark/torture/engine.asm",
+    "source_sha256": "ea2609d9219539dd418666c0ae54f72a443a386e045bc3c1b2d3a9e2b8e96dc2",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/torture/macros.inc",
+    "source": "benchmark/torture/macros.inc",
+    "source_sha256": "c141ad69421ebdccdd7c2f0508ea2f7b8d0816b0a46ebced2e3764448fc65124",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/sweep-circuit/research/minimal-4cd.asm",
+    "source": "benchmark/sweep-circuit/research/minimal-4cd.asm",
+    "source_sha256": "8801d83979a65156209cc61d0435eaad6aee5b19ab2ed256332d3547d2066423",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/sweep-circuit/research/readback-test.c",
+    "source": "benchmark/sweep-circuit/research/readback-test.c",
+    "source_sha256": "c06a4d1c5f5874dbc6a12a701d3a9492bd765625857bc84e4b0c1d53cf5e9b61",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/oracles/dmg-probe-v2-erekgdxk.json",
+    "source": "benchmark/oracles/dmg-probe-v2-erekgdxk.json",
+    "source_sha256": "e2251d1ccdd6cf9558ea95a9da574d6d60b973f541708b67daff8b6a00786277",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/oracles/dmg-sweep-history-vvg4l2b6.json",
+    "source": "benchmark/oracles/dmg-sweep-history-vvg4l2b6.json",
+    "source_sha256": "663c82bbc431c7365810690b21d3b53e76570ee7f2dfa02a089eeaca09cf4487",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "oracle-analysis/steady_probe.py",
+    "source": "oracle-analysis/steady_probe.py",
+    "source_sha256": "b2857d708d686d1fe2c2a685ebeabbe924d9598629e6c9c908f85927939f10bb",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "oracle-analysis/retrigger_hardware.py",
+    "source": "oracle-analysis/retrigger_hardware.py",
+    "source_sha256": "d35b03dbd36b7c3563fc6cbcfde5b66c4a7e06d6a59647ef8654f6d5ee23aefd",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/full/audio-torture.gb",
+    "source": "artifacts/torture/full/audio-torture.gb",
+    "source_sha256": "0eab1e73e34da49fe1bc7c83dd2fb6768e1e6e3e4ca01d5c39d3932eb936dedf",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/full/audio-torture.sym",
+    "source": "artifacts/torture/full/audio-torture.sym",
+    "source_sha256": "f0963a460bbe5a487ff7bb8c6c863a6879ea94c4a5d720bd2debecd1b05f61d7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/full/cases.inc",
+    "source": "artifacts/torture/full/cases.inc",
+    "source_sha256": "ddf256365c3a20035987666b1310ab8f75c41a679bd92c9bd9d132c789adcd26",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/full/case_table.inc",
+    "source": "artifacts/torture/full/case_table.inc",
+    "source_sha256": "a8bed7c1401fc1686b913d5db4c777c89f87537cca19f7efce3a6121100c4648",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/full/manifest.json",
+    "source": "artifacts/torture/full/manifest.json",
+    "source_sha256": "b8173ececdf7fc73e288a6e44556d0c4cf97b98772f06212f99198d4d9ec8585",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/audio-torture.gb",
+    "source": "artifacts/audio-oracle-probe-v2/audio-torture.gb",
+    "source_sha256": "650f9c5f4e8ddcdef3099861051a2d6737d4221b9b9c40e4b29e7434e94ab74f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/audio-torture.sym",
+    "source": "artifacts/audio-oracle-probe-v2/audio-torture.sym",
+    "source_sha256": "e5a8a81958946a9a07e82ea048f90cfcd29d07acd793f6755458a077037081db",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/cases.inc",
+    "source": "artifacts/audio-oracle-probe-v2/cases.inc",
+    "source_sha256": "6776c0c74897709ce40cb421f19e15b80874d3ed6e1f5258bdac5d517a051e04",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/case_table.inc",
+    "source": "artifacts/audio-oracle-probe-v2/case_table.inc",
+    "source_sha256": "d7c0228d161c7dd3f882c34f37ccf7ad53ad6f4db41e143b2d0481311c7f7715",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/manifest.json",
+    "source": "artifacts/audio-oracle-probe-v2/manifest.json",
+    "source_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/sweep-history-probe/audio-torture.gb",
+    "source": "artifacts/sweep-history-probe/audio-torture.gb",
+    "source_sha256": "9c8a598aedfd53bfa9da05f51868d57d4f99b563a9fd394732153038dbb6d1a2",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/sweep-history-probe/audio-torture.sym",
+    "source": "artifacts/sweep-history-probe/audio-torture.sym",
+    "source_sha256": "1614a7f9297d855e83a9032ee034a2757bca706e6885d296c10457c7a6ce3700",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/sweep-history-probe/cases.inc",
+    "source": "artifacts/sweep-history-probe/cases.inc",
+    "source_sha256": "c1087ddf57ec8ffac4577e79cfec62ec51e7a7e452a3c6c591cac4ad8ff536d0",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/sweep-history-probe/case_table.inc",
+    "source": "artifacts/sweep-history-probe/case_table.inc",
+    "source_sha256": "54e3669fdca73732b8b97573eeece02c7cabb8448082d4cede303bb1c7a1a649",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/sweep-history-probe/manifest.json",
+    "source": "artifacts/sweep-history-probe/manifest.json",
+    "source_sha256": "a19ddd5eeeaa131cbc553939502b76fecbaab92e9c03c8b1eca3e0a83b62fad8",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/reference/manifest.json",
+    "source": "artifacts/audio-oracle-probe-v2/reference/manifest.json",
+    "source_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/renders/render-h1xqcgiz/markers.csv",
+    "source": "artifacts/torture/renders/render-h1xqcgiz/markers.csv",
+    "source_sha256": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/renders/render-h1xqcgiz/manifest.json",
+    "source": "artifacts/torture/renders/render-h1xqcgiz/manifest.json",
+    "source_sha256": "c91aa686be8e0c6472110485ae2699df9fb51963ed889e573ede83afd55b7f06",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/reference/markers.csv",
+    "source": "artifacts/audio-oracle-probe-v2/reference/markers.csv",
+    "source_sha256": "60f42f80c21801180e199596d8d8e1b3d52fb3367797ebf21d0a0d35cc451f76",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/reference/manifest.json",
+    "source": "artifacts/audio-oracle-probe-v2/reference/manifest.json",
+    "source_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/sweep-history-probe/reference/markers.csv",
+    "source": "artifacts/sweep-history-probe/reference/markers.csv",
+    "source_sha256": "7e73ac6d5c6e98b7a50ad38dcb753c5220e6187922cf167a599c57db3d7333c4",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/sweep-history-probe/reference/manifest.json",
+    "source": "artifacts/sweep-history-probe/reference/manifest.json",
+    "source_sha256": "a19ddd5eeeaa131cbc553939502b76fecbaab92e9c03c8b1eca3e0a83b62fad8",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/comparison-torture-pula2a6h/metrics.json",
+    "source": "artifacts/torture/comparison-torture-pula2a6h/metrics.json",
+    "source_sha256": "8c0eb6c3214f0f0768543330a8e8d5311f390c5028f86f2f72a83b92f29c549a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-reference/metrics.json",
+    "source": "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-reference/metrics.json",
+    "source_sha256": "5e8bdca8b443a4d0fee2f15641152335b0de1ed5ffdc7779c9b339d1f4496f42",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/causal-findings.json",
+    "source": "benchmark/causal-findings.json",
+    "source_sha256": "644bb0510bf9dedf00a4b2dbbea0c92aa780371a6b6893060fc1d60dc1e03fb1",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/noise-feedback-findings.json",
+    "source": "benchmark/noise-feedback-findings.json",
+    "source_sha256": "98285e1b039e1b4c1b5950243811c7d8c35c53bf6679b244065c8d84a65d5fff",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/noise-feedback-regression.json",
+    "source": "benchmark/noise-feedback-regression.json",
+    "source_sha256": "9f92272b6e57b9bf93b4d17cf7835dd5c34cf6fd8a32ebfd2b0b7a208af9f806",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/retrigger-hardware-findings.json",
+    "source": "benchmark/retrigger-hardware-findings.json",
+    "source_sha256": "fb134bc72d50148284a404aad5f8bc5125939ddff570ed7a94addd735171d170",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/steady-probe-findings.json",
+    "source": "benchmark/steady-probe-findings.json",
+    "source_sha256": "387b4e6e494b7eb8b91eb743e37e0a61785b89b233d2f4813a932e00c89a3f0a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pulse-oracle-findings.json",
+    "source": "benchmark/pulse-oracle-findings.json",
+    "source_sha256": "4ab5fff7fb057e105b4ce34d4623d58bfed370af92174b8011b5a990665c4607",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/measured-map/v2-e2e.json",
+    "source": "artifacts/sweep-oracle/measured-map/v2-e2e.json",
+    "source_sha256": "73e7ee677f313e74e6f25a418eaecc4fd3f05e26b0ffbe8a488028dc160f3c96",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/measured-map/original-e2e.json",
+    "source": "artifacts/sweep-oracle/measured-map/original-e2e.json",
+    "source_sha256": "8778921dd250cf7c2dc8ab23e9fda2b1d57c5ff50e0b03520c112e0c69aa6567",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/measured-map/stimulus-isolation.json",
+    "source": "artifacts/sweep-oracle/measured-map/stimulus-isolation.json",
+    "source_sha256": "0b1cddb9988f7a8fc29459f5806c0d81653a402124c8e08f05d2a9c51824148f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/measured-map/performance.json",
+    "source": "artifacts/sweep-oracle/measured-map/performance.json",
+    "source_sha256": "d904f7b4a8103e6f9a967866fa81821bff21ced77509241f2716fec9b7653326",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/measured-map/regressions/results.json",
+    "source": "artifacts/sweep-oracle/measured-map/regressions/results.json",
+    "source_sha256": "a5a37de656c705c23f5c0eaaf4cf7579f704377e638094092946262a6fc4ff6f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/measured-map/boundaries/results.json",
+    "source": "artifacts/sweep-oracle/measured-map/boundaries/results.json",
+    "source_sha256": "4f741bdb57254b616d3b6e87d3f1d6c90d750608e12d2f61a29205c23c9b42a5",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/measured-map/boundaries-before/results.json",
+    "source": "artifacts/sweep-oracle/measured-map/boundaries-before/results.json",
+    "source_sha256": "8cda2db29b03daf8d641e2096cf182571790347380a77d9f7dcca15c4cbae114",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/wave-majority/v2-before/results.json",
+    "source": "artifacts/wave-majority/v2-before/results.json",
+    "source_sha256": "64d6648638c47b96864b820986e08fee4f71c44a7f448559d13cf893f153344d",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/wave-majority/v2-after/results.json",
+    "source": "artifacts/wave-majority/v2-after/results.json",
+    "source_sha256": "2915f65c71268350fe406b940f668d086525a81a1249ca52bfa24ff62d9694fb",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/wave-majority/original-after.json",
+    "source": "artifacts/wave-majority/original-after.json",
+    "source_sha256": "49951ea2ac58aca73d2084363134394063ef5837f43136d35f151ca9227570fe",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/wave-majority/minimal/results.json",
+    "source": "artifacts/wave-majority/minimal/results.json",
+    "source_sha256": "5ec839d14f484e092f9b0c75d876991cd8683b54afcaa8d057e5cd0653612571",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/historical-broad/samesuite/results.json",
+    "source": "artifacts/torture/fixes/validation/samesuite/results.json",
+    "source_sha256": "f6f1dd75d3df66444f40623ba0d3da76dbb4f32dda9c3b1141b683f0bc2808ca",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/historical-broad/dac.json",
+    "source": "artifacts/torture/fixes/validation/dac.json",
+    "source_sha256": "a44ffdce9af888dcfcb51c086a524da223a790a5fa771526382172a82c88c91f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/noise-feedback.log",
+    "source": "artifacts/pr-publication/validation/noise-feedback.log",
+    "source_sha256": "6b6ea54c2e15a200c9b3c3cc1702193f1f3d2cf04a957c9d49135e72ed409360",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/pulse-clock.log",
+    "source": "artifacts/pr-publication/validation/pulse-clock.log",
+    "source_sha256": "d622745ce5991338d3c1f9cb52e35e3c18583421df0ad4a9bc2e61165f28c717",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/pulse-duty.log",
+    "source": "artifacts/pr-publication/validation/pulse-duty.log",
+    "source_sha256": "da9c044531df9be20ca4f9558b782d487fb92ce8b83a47780c7a9c333c92ec4a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/mixer-dac.log",
+    "source": "artifacts/pr-publication/validation/mixer-dac.log",
+    "source_sha256": "4d1512f4fa2a3b0f761b8987e6c2af28d2d74a81d659921054d43e7ba054b604",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/cpu-full.log",
+    "source": "artifacts/pr-publication/validation/cpu-full.log",
+    "source_sha256": "66d4218ee809d415a163d0359c254b8d42d6ebbda7326aedc0d3eab325ce92e1",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/diff-check.log",
+    "source": "artifacts/pr-publication/validation/diff-check.log",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/sweep-table.log",
+    "source": "artifacts/pr-publication/validation/sweep-table.log",
+    "source_sha256": "e7200313ee26d5b57663c6477e951c8b77a4c2e7ae99332528d8256e797eb163",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/focused-validation.json",
+    "source": "artifacts/pr-publication/validation/focused-validation.json",
+    "source_sha256": "2a60a60f0789187c9f66ba370398299c027aac07d90bfdc6e9a6a9775de8310e",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/README.md",
+    "source": "artifacts/pr-publication/validation/README.md",
+    "source_sha256": "5207cef634344baa972ffdc017a7b05649347d27fa3f48ac24d223d7d4807b40",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/cpu-full/build.log",
+    "source": "artifacts/pr-publication/validation/cpu-full/build.log",
+    "source_sha256": "ff70dd01119108da65b887d7838b551f017e62b251c3906d50efdf16431016e9",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/cpu-full/execution.log",
+    "source": "artifacts/pr-publication/validation/cpu-full/execution.log",
+    "source_sha256": "5df975ad330d92c1d15a780e146e79b4e940d5c69abb5e7cab4c0215cc533c45",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/cpu-full/readbacks.jsonl",
+    "source": "artifacts/pr-publication/validation/cpu-full/readbacks.jsonl",
+    "source_sha256": "b4b2c9161a3acb17356ebfe2f4348f265c941843a6c952dd7ce517851a66a41c",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pr-head/cpu-full/results.json",
+    "source": "artifacts/pr-publication/validation/cpu-full/results.json",
+    "source_sha256": "b7f83207f37f42fd7df3d7a4a8b4a13b0a8c2e4bf32ca6e7bc21d058a756c07c",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "figures/dac-off-transition.png",
+    "source": "benchmark/figures/dac-off-transition.png",
+    "source_sha256": "6b01ca3c580c08bf0e8cf8b764e62a7d557c941ba2e5a9738a6df57d626e413b",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "figures/retrigger-hardware.png",
+    "source": "benchmark/figures/retrigger-hardware.png",
+    "source_sha256": "6f99209e920dee48d614f3140d81ca3d84a31be52804744708fc2e63378f6b58",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-probe/steady-mbc5.gb",
+    "source": "artifacts/noise-probe/steady-mbc5.gb",
+    "source_sha256": "6766ffa01c6622f2cd978509353a17f5ea1ab99b4f3b9fbd8069f280f1721de5",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-probe/retrigger-mbc5.gb",
+    "source": "artifacts/noise-probe/retrigger-mbc5.gb",
+    "source_sha256": "e37db38592077bcded4b74d8368f09bd81a9cfccf6d516129a03212c89512ea7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-probe/retrigger-mbc5.wav",
+    "source": "artifacts/noise-probe/retrigger-mbc5.wav",
+    "source_sha256": "932ab9276476d80fa3ba47e5a3261ce99aac6a518132f176b604b56be516540c",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-probe/retrigger-mbc5.csv",
+    "source": "artifacts/noise-probe/retrigger-mbc5.csv",
+    "source_sha256": "4d6d84dc9aab38c61587d3205ab8a8cdd9ab358414ac8656da7730a353602011",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-feedback-fixed/retrigger.wav",
+    "source": "artifacts/noise-feedback-fixed/retrigger.wav",
+    "source_sha256": "7c1792acffd0a45e3d389706506954c2d5d47aad43bb9ef1f8af361e15feee0e",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-feedback-fixed/retrigger.csv",
+    "source": "artifacts/noise-feedback-fixed/retrigger.csv",
+    "source_sha256": "4d6d84dc9aab38c61587d3205ab8a8cdd9ab358414ac8656da7730a353602011",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-probe/steady-mbc5.wav",
+    "source": "artifacts/noise-probe/steady-mbc5.wav",
+    "source_sha256": "f13ad48e849862b65c79cefb9aae79149e52060f20367f4c8204a0f82183fcd3",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/noise-feedback-fixed/steady.wav",
+    "source": "artifacts/noise-feedback-fixed/steady.wav",
+    "source_sha256": "1a1a347a04f81e46ab89341f7a14913665d09d5b8b437658c09e2c39551d4e0a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "licenses/SameBoy-LICENSE.txt",
+    "source": "SameBoy/LICENSE",
+    "source_sha256": "875b2c940181c315fa99ce5292326b985a43cdc4e878b38995066d6b495ff151",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/baseline.json",
+    "source": "benchmark/baseline.json",
+    "source_sha256": "3daec742aa1f535c4619186271788ac86743cbf7517f21536bafa149e054d4aa",
+    "transformation": "Retain duration_s only, plus provenance note and original hash; omit private input paths."
+  },
+  {
+    "path": "benchmark/pulse-edge-oracle.py",
+    "source": "benchmark/pulse-edge-oracle.py",
+    "source_sha256": "c84ec353907ddfd339ccfd6187ce80019b5bdb012fb4cb33062ad5ebac86e1a3",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pulse/baseline-edges.json",
+    "source": "artifacts/torture/pulse-diagnosis/baseline-edges.json",
+    "source_sha256": "18aa683ce25f17ae87b636e275bd500a9df55f49abf868b0babdb312202905ec",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pulse/ch1-clocked-edges.json",
+    "source": "artifacts/torture/pulse-diagnosis/ch1-clocked-edges.json",
+    "source_sha256": "67fc05ed7817f81d0e911ecf48c2906dbfc384603ac074b9f2bdddd4e1974f36",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pulse/ch2-clocked-edges.json",
+    "source": "artifacts/torture/pulse-diagnosis/ch2-clocked-edges.json",
+    "source_sha256": "235c205b2e7f1ba039f6ae08aa010c94b447b04178a0a3ec58deb56676831da3",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/pulse/duty-oracle.json",
+    "source": "artifacts/torture/pulse-diagnosis/duty-oracle.json",
+    "source_sha256": "8f43f4fd33353601fbfbffdd4d8035eff1e2cb010cdaf9965bd9ce08d39197b5",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/history-report.json",
+    "source": "artifacts/hardware/sweep-history-vvg4l2b6/history-report.json",
+    "source_sha256": "82f5420e209c4668cff175360ed49b1878efe38ebfa623a31caaaf92898c0cc7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/history-metrics.json",
+    "source": "artifacts/hardware/sweep-history-vvg4l2b6/analysis/metrics.json",
+    "source_sha256": "034481308cb98f332a8a40685cb073aa8f470071aaa2b2814838f57265243c66",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "artifacts/torture/comparison-torture-pula2a6h/signals.npz",
+    "source": "artifacts/torture/comparison-torture-pula2a6h/signals.npz",
+    "source_sha256": "a8419c12b4a08668b0b4e3f64b36da3a098c00041812632a476fec97d2072573",
+    "transformation": "Exact four existing arrays only: case_70_hardware_calibrated, case_70_time_s, case_72_hardware_calibrated, case_72_time_s. Recompressed losslessly; no samples recomputed."
+  },
+  {
+    "path": "artifacts/torture/renders/render-h1xqcgiz/apu.csv",
+    "source": "artifacts/torture/renders/render-h1xqcgiz/apu.csv",
+    "source_sha256": "470319225ed2f3adab9bdc44bd6d39ca54770f34cb10925f2dd1e2f4ef96a109",
+    "transformation": "Retain the exact 128 NR14/NR24=C6 rows used by pulse-edge-oracle.py in cases 70 and 72; write standard CSV header/newlines."
+  }
+]

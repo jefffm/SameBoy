@@ -1,0 +1,108 @@
+{
+  "sameboy_commit": "61d83fe7deeb4c90eef003b7933d0a9dd5fa7f2c",
+  "sanity_pass": true,
+  "sanity_screenshots": [
+    {
+      "test": "cgb-acid2",
+      "sha1": "64c3fd9a5fe9aee40fe15f3371029c0d2f20f5bc",
+      "sha256": "f532f86661698a67f2228180ebdd3a46f30c8d705e5f0ffdf03866c0b8380d9b",
+      "identical_to_preserved_pre_wave": true,
+      "matches_recorded_wave_candidate": true,
+      "matches_upstream_script": true
+    },
+    {
+      "test": "cgb_sound",
+      "sha1": "dbcc438dcea13b5d1b80c5cd06bda2592cc5d9e0",
+      "sha256": "2bae3e4e5b14c530d8229dd0187019d53ecb42a9834b1ad5ee733daf7ce53213",
+      "identical_to_preserved_pre_wave": true,
+      "matches_recorded_wave_candidate": true,
+      "matches_upstream_script": true
+    },
+    {
+      "test": "dmg-acid2",
+      "sha1": "0caadf9634e40247ae9c15ff71992e8f77bbf89e",
+      "sha256": "78b4923d6253f53224706b921b961fe36411adb68ca94bd1d0087de8b1ffa2fe",
+      "identical_to_preserved_pre_wave": true,
+      "matches_recorded_wave_candidate": true,
+      "matches_upstream_script": true
+    },
+    {
+      "test": "dmg-mode-acid2",
+      "sha1": "fbdb5e342bfdd2edda3ea5601d35d0ca60d18034",
+      "sha256": "a670490d890e193cfa37ceeeab79b598765abff719be55dafa6537d7303a84e6",
+      "identical_to_preserved_pre_wave": true,
+      "matches_recorded_wave_candidate": true,
+      "matches_upstream_script": true
+    },
+    {
+      "test": "dmg_sound-2",
+      "sha1": "c9e944b7e01078bdeba1819bc2fa9372b111f52d",
+      "sha256": "861482c9e5886cfe8208819efbbfc7bb7c8e5822ee93a49874cd84ba296335a7",
+      "identical_to_preserved_pre_wave": true,
+      "matches_recorded_wave_candidate": true,
+      "matches_upstream_script": true
+    },
+    {
+      "test": "oam_bug-2",
+      "sha1": "f0172cc91867d3343fbd113a2bb98100074be0de",
+      "sha256": "967ce6cb2a2f936652ecc6dae7ee90aa133cea5000cda27598d5e16941e2452b",
+      "identical_to_preserved_pre_wave": true,
+      "matches_recorded_wave_candidate": true,
+      "matches_upstream_script": true
+    }
+  ],
+  "samesuite_results": [
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "expected_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "screenshot_sha256": "89d1ae17f3aec60a83a3717881097f99d5460382afaba7270dfeb542b6e0c263",
+      "name": "div_write_trigger",
+      "model": "dmg-b",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/regressions/upstream-sanity/build/bin/tester/sameboy_tester",
+        "--model",
+        "dmg-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/regressions/samesuite/div_write_trigger.gb"
+      ],
+      "process_exit": 0,
+      "rom_sha256": "6c6dbc3ec9719ee2bc2d3ac69e6a520dcc149be77f5f209d46cfacec464f2378",
+      "matches_preserved_result_bytes": true,
+      "matches_preserved_screenshot": true,
+      "preserved_baseline_commit": "300a1209f0904d2d324ad0332c9e8479b0a11265"
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "expected_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "screenshot_sha256": "7c1c7865c40eece34f5db1fa4ca4055263efe38ce3c030cdbc168992e932f1d2",
+      "name": "div_write_trigger_10",
+      "model": "dmg-b",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/regressions/upstream-sanity/build/bin/tester/sameboy_tester",
+        "--model",
+        "dmg-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/regressions/samesuite/div_write_trigger_10.gb"
+      ],
+      "process_exit": 0,
+      "rom_sha256": "abe63dd5c25390fb28e56f44bb3fd89bcc72657f9b26137863e0bd9e6ee609a4",
+      "matches_preserved_result_bytes": true,
+      "matches_preserved_screenshot": true,
+      "preserved_baseline_commit": "300a1209f0904d2d324ad0332c9e8479b0a11265"
+    }
+  ],
+  "samesuite_pass": true,
+  "settings_authority": {
+    "duration": "Unmodified Tester default 60*40 approximate frames (40 emulated seconds); no --length override. Terminal HALT with interrupts disabled is detected by Tester and ends the run early after rendering. Blank screens receive the project-defined four-second extension.",
+    "parallelism": "Unmodified Tester default one job.",
+    "boot": "Unmodified Tester selects the supplied built-in boot ROM appropriate to --model.",
+    "buttons": "No --start: tests execute automatically.",
+    "exit_status": "Tester exits zero after processing a ROM regardless of pass/fail, so process success is not treated as test success."
+  },
+  "samesuite_scope_authority": "SameSuite/apu/README.md explicitly lists div_write_trigger and div_write_trigger_10 as passing on pre-CGB DMG-B; other tests use CGB-only PCM registers.",
+  "samesuite_baseline_note": "Preserved300a1209 DMG-B results passed; unmodified-upstream runs were only required/recorded for failures, so no independent26a56bd6 DMG-B execution claim is made. Expected bytes come from SameSuite ROM CorrectResults data."
+}

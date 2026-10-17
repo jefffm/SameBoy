@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "prefix": "artifacts/torture/fixes/validation/final",
+  "closed_dac_off_intervals": 336,
+  "nonzero_stereo_values_while_disconnected": 0,
+  "inactive_unrouted_dac_control_byte_identical": false,
+  "control_reference": "artifacts/noise-probe/original-dac-control.wav",
+  "wav_sha256": "9a6e566fb20d023ccd2485390740f4d1929b96d4c014259a591d177fb18631a7",
+  "settling_authority": "12 T-cycle LDH bus instruction plus the existing 1/20000-second DAC discharge; rounded up to capture samples.",
+  "scope": "Output regression against documented disconnection, plus unchanged active-DAC control. These generated ROMs have not yet been recorded on hardware."
+}

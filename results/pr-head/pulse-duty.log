@@ -1,0 +1,10 @@
+/home/jeff/Documents/ChatGPT/dmg/build/pulse-duty-test/rom/audio-torture.gb
+1 cases; 32768 bytes; SHA256 89cb8c0ef3be37519359f96734d67fd5a909c49f2b0531ab83996cc7460bf4fb
+make: Entering directory '/home/jeff/Documents/ChatGPT/dmg/SameBoy'
+make: 'build/lib/libsameboy.a' is up to date.
+make: Leaving directory '/home/jeff/Documents/ChatGPT/dmg/SameBoy'
+CH1 duty0->1 retrigger: output=0, expected retained 0
+duty latch: new-state roundtrip, legacy120 reconstruction and zero-volume retention passed
+CH2 duty0->1 retrigger: output=0, expected retained 0
+duty latch: new-state roundtrip, legacy120 reconstruction and zero-volume retention passed
+DMG pulse duty output latch: passed

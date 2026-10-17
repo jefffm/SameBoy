@@ -1,0 +1,1229 @@
+{
+  "sameboy_base_commit": "26a56bd6a122a6318a456abd80558408742d5adf",
+  "sameboy_fix_commit": "82c17ac6eba4e1d04c23f9e7def2e9763ae41bcd",
+  "physical_output": "User confirms stock DMG headphone jack, no mod; cable and chip revision unconfirmed.",
+  "contract": "Identify a supported cause or narrow unresolved behavior to a concrete hardware test.",
+  "full_passage": {
+    "method": "Fixed original baseline affine timing and scalar RMS gain, no refit. Envelope resamples complete WAV with the same Fourier method as baseline comparator. Native PSD uses the established one-second Hann Welch windows, default half overlap and constant detrend. Two measured opening repetitions, separately reported. Channel zero throughout.",
+    "fixed_parameters": {
+      "emulated_start_s": 3.022086462453255,
+      "oracle_start_s": 1.8903125,
+      "emulated_seconds_per_oracle_second": 0.9999817618069532,
+      "duration_s": 15.186,
+      "rms_gain_oracle_per_emulator": 0.06337448434741354,
+      "envelope_resolution_ms": 1.0
+    },
+    "oracle_sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+    "variants": {
+      "baseline": {
+        "wav": "artifacts/baseline.wav",
+        "sha256": "2c94939ee786a0b6a07a82001396791bf7e04102c7fb1520d255950f06fddc7d",
+        "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+        "envelope_correlation": 0.8381936350106565,
+        "envelope_normalized_rmse": 0.37003121203448097,
+        "raw_sample_correlation": 0.5502462385050019,
+        "spectral": [
+          {
+            "repeat": 1,
+            "psd_cosine": 0.9734189449720799,
+            "normalized_psd_l1": 0.2606209086555988,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.0941966866497908
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 1.0865826603335298
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -1.6167038405925704
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.9526048350008886
+              }
+            ]
+          },
+          {
+            "repeat": 2,
+            "psd_cosine": 0.9751550047270671,
+            "normalized_psd_l1": 0.258432664931362,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.2244745187828472
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.8096823950327916
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -1.8374229333259517
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.7654097023863239
+              }
+            ]
+          }
+        ]
+      },
+      "mute_only": {
+        "wav": "artifacts/dac-gate-muteonly.wav",
+        "sha256": "8fdf5f0f6e1b49f889ef5cd0a3e30acae5e35bf8110984d9668c3d8a7db79509",
+        "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+        "envelope_correlation": 0.8628126316883734,
+        "envelope_normalized_rmse": 0.34332298997414906,
+        "raw_sample_correlation": 0.5553875377766344,
+        "spectral": [
+          {
+            "repeat": 1,
+            "psd_cosine": 0.9769668739919228,
+            "normalized_psd_l1": 0.25038641907801146,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.0221878556167239
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.9118574449413483
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -0.9094148590693901
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.8872685075319485
+              }
+            ]
+          },
+          {
+            "repeat": 2,
+            "psd_cosine": 0.978956668810809,
+            "normalized_psd_l1": 0.24796783467727912,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.1241145898264724
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.6589721971947383
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -1.0602961158709383
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.7176717561982429
+              }
+            ]
+          }
+        ]
+      },
+      "mute_and_hold": {
+        "wav": "artifacts/dac-gate.wav",
+        "sha256": "7c716fe573c26cb1595ac62dbf724922b82768a66d3922266460ffbe1157b951",
+        "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+        "envelope_correlation": 0.8819038936702336,
+        "envelope_normalized_rmse": 0.32157811802517505,
+        "raw_sample_correlation": 0.5649856373209334,
+        "spectral": [
+          {
+            "repeat": 1,
+            "psd_cosine": 0.9817383673977746,
+            "normalized_psd_l1": 0.22144512790898943,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.1175334345712813
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.6650633348912981
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -0.9426408336426823
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.607824660396761
+              }
+            ]
+          },
+          {
+            "repeat": 2,
+            "psd_cosine": 0.983059629503224,
+            "normalized_psd_l1": 0.2195505073156281,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.2128027869465705
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.38702214861345613
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -1.0865432978916463
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.41231163584522995
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "identical_register_traces": true
+  },
+  "filter_probe": {
+    "baseline": "benchmark/baseline.json",
+    "oracle_sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+    "captures": {
+      "accurate": {
+        "wav": "artifacts/filter-probe-accurate.wav",
+        "wav_sha256": "2c94939ee786a0b6a07a82001396791bf7e04102c7fb1520d255950f06fddc7d",
+        "apu_trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66"
+      },
+      "off": {
+        "wav": "artifacts/filter-probe-off.wav",
+        "wav_sha256": "dd7c6be5bba976edc4ffff5bf17065732c488f7b22e9731af941e427cc8e7311",
+        "apu_trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66"
+      },
+      "dc": {
+        "wav": "artifacts/filter-probe-dc.wav",
+        "wav_sha256": "6d3875af25b1fd08193a51246b26c429695e94ecc60ee923407d535ec87532de",
+        "apu_trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66"
+      }
+    },
+    "fixed_timing": {
+      "oracle_start_s": 1.8903125,
+      "emulated_start_s": 3.022086462453255,
+      "emulated_seconds_per_oracle_second": 0.9999817618069532,
+      "duration_s": 15.186
+    },
+    "repeat_duration_s": 7.593,
+    "native_sample_intervals": [
+      {
+        "hardware": [
+          90735,
+          455199
+        ],
+        "emulated": [
+          145060,
+          509518
+        ]
+      },
+      {
+        "hardware": [
+          455199,
+          819663
+        ],
+        "emulated": [
+          509518,
+          873975
+        ]
+      }
+    ],
+    "method": "Identical seed/buttons/core and byte-identical register traces. Native waveform samples and fixed baseline affine timing. One-second Hann/Welch windows with default half overlap and per-window constant detrend, matching the established estimator. Only PSD ordinates are interpolated. Each candidate gets one non-DC amplitude-spectrum least-squares scalar gain on repetition 1; gain and any cutoff are frozen for repetition 2. Every non-DC bin through common Nyquist is used. No EQ bands, frequency cuts, local alignment or raw-DC RMS matching.",
+    "sameboy_accurate_filter_reconstruction": {
+      "pole_cutoff_hz": 28.03744579653888,
+      "whole_capture_rms_difference_int16_lsb": 0.5335558805760011,
+      "whole_capture_max_absolute_difference_int16_lsb": 0.9999999999381544,
+      "interpretation": "Continuous single-pole reconstruction compared with actual accurate-mode capture; integer quantization is retained in the actual frontend output."
+    },
+    "single_pole_fit": {
+      "cutoff_hz": 24.622974201256877,
+      "gain": 0.0614849191049479,
+      "initial_cutoff_hz": 28.03744579653888,
+      "parameterization": "Positive cutoff via exp(log_fc); unrestricted numerical optimization from the implemented SameBoy pole. No arbitrary cutoff search bounds.",
+      "objective": "Squared relative L2 amplitude-spectrum residual on repetition 1; scalar gain solved analytically per cutoff.",
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully."
+    },
+    "candidates": {
+      "accurate": {
+        "gain_fitted_repeat_1": 0.06233926207448968,
+        "relative_amplitude_spectrum_l2_by_repeat": [
+          0.17619523074761156,
+          0.17348962038017346
+        ],
+        "normalized_psd_l1_by_repeat": [
+          0.2606207914164894,
+          0.2584319504569998
+        ],
+        "raw_mean_by_repeat": [
+          1.1268019828630802e-05,
+          1.1246531012231896e-05
+        ],
+        "centered_rms_by_repeat": [
+          0.05891464142769459,
+          0.058931340094410666
+        ],
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.2372523178221766,
+              -1.3675301499552315
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              0.9435270291611451,
+              0.6666267638604061
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              40,
+              40
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.759759471764958,
+              -1.9804785644983363
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              81,
+              81
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              0.809549203828504,
+              0.6223540712139379
+            ]
+          }
+        ],
+        "gain_independent_low_high_balance_error_db_by_repeat": [
+          -2.1807793469833214,
+          -2.0341569138156377
+        ]
+      },
+      "off": {
+        "gain_fitted_repeat_1": 0.049615388227749184,
+        "relative_amplitude_spectrum_l2_by_repeat": [
+          0.3769881687547002,
+          0.37678146742868796
+        ],
+        "normalized_psd_l1_by_repeat": [
+          0.4511004004110446,
+          0.4518641950151228
+        ],
+        "raw_mean_by_repeat": [
+          0.03468538520044769,
+          0.034512463386375355
+        ],
+        "centered_rms_by_repeat": [
+          0.07018106282967605,
+          0.07016207002077832
+        ],
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.4491175901240203,
+              -1.5771115473648742
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -0.5623283287339301,
+              -0.8396889306919539
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              40,
+              40
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -2.027947680528567,
+              -2.2480392126636946
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              81,
+              81
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -0.6987543691634455,
+              -0.8865238330980063
+            ]
+          }
+        ],
+        "gain_independent_low_high_balance_error_db_by_repeat": [
+          -0.8867892613900902,
+          -0.7374226166729203
+        ]
+      },
+      "dc": {
+        "gain_fitted_repeat_1": 0.04617511974160507,
+        "relative_amplitude_spectrum_l2_by_repeat": [
+          0.4404503538500734,
+          0.44058707332163016
+        ],
+        "normalized_psd_l1_by_repeat": [
+          0.5271472570908794,
+          0.5300758754134597
+        ],
+        "raw_mean_by_repeat": [
+          -0.04990587468481665,
+          -0.05007286910063079
+        ],
+        "centered_rms_by_repeat": [
+          0.0733326985698768,
+          0.07337149383283934
+        ],
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.8945881561842106,
+              -2.005757252563554
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.2349294019415686,
+              -1.5162607172512628
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              40,
+              40
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -2.1386995581633172,
+              -2.367658445775737
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              81,
+              81
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.345529669250011,
+              -1.5312901709235105
+            ]
+          }
+        ],
+        "gain_independent_low_high_balance_error_db_by_repeat": [
+          -0.659658754242642,
+          -0.4894965353122913
+        ]
+      },
+      "fitted_single_pole": {
+        "gain_fitted_repeat_1": 0.0614849191049479,
+        "relative_amplitude_spectrum_l2_by_repeat": [
+          0.17476770579622813,
+          0.1724308561558593
+        ],
+        "normalized_psd_l1_by_repeat": [
+          0.2565873028365564,
+          0.2545445782570323
+        ],
+        "raw_mean_by_repeat": [
+          -1.7789985303686333e-18,
+          -1.6888347455315353e-18
+        ],
+        "centered_rms_by_repeat": [
+          0.059749222861217116,
+          0.059763934443317096
+        ],
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.0100720256988716,
+              -1.1399982222453016
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              0.9296016974586797,
+              0.6526256255224325
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              40,
+              40
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              -1.5409744158912635,
+              -1.7615793712187278
+            ]
+          },
+          {
+            "frequency_bin_centers_hz": [
+              81,
+              81
+            ],
+            "model_minus_hardware_db_by_repeat": [
+              0.7952855975156782,
+              0.6079971566931003
+            ]
+          }
+        ],
+        "gain_independent_low_high_balance_error_db_by_repeat": [
+          -1.9396737231575512,
+          -1.792623847767734
+        ]
+      }
+    },
+    "limits": "A fitted pole is a recording-path hypothesis, not a measured DMG circuit component or an emulation fix. Unknown LFSR/register timing and analog path can still affect the PSD. The held-out passage is a second performance of the same musical material, not an independent hardware stimulus."
+  },
+  "event_localization": {
+    "method": "Native samples with existing baseline scalar gain and affine mapping. Segment classes come only from emulator NR43 changes; hardware register writes are unobserved. Periodograms use actual segment-length Hann windows, duration weighting, and a zero-padded approximately 1 Hz display grid; segment lengths determine resolving power. Native event averages use NR44-to-NR44 intervals with NR42=0x98/NR43=0x6e and no intervening NR42/NR43 writes, without local delay fitting or time warping.",
+    "baseline": "benchmark/baseline.json",
+    "trace": "artifacts/baseline.csv",
+    "classes": [
+      {
+        "class": "nr43_6b",
+        "repeat": 1,
+        "segments": 15,
+        "duration_s": 1.7779998805079875,
+        "segment_duration_range_s": [
+          0.11757874354491672,
+          0.11887671796225362
+        ],
+        "raw_rms_ratio_db": 0.011959402988583256,
+        "hardware_whole_passage_energy_fraction": 0.22556610419421202,
+        "hann_psd_total_power_ratio_db": -0.02695237656477857,
+        "strongest_hann_psd_bin_hz": {
+          "hardware": 118.0,
+          "emulator": 118.0
+        },
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "emulator_minus_hardware_db": -2.0697079216420704
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "emulator_minus_hardware_db": -0.3209022742616729
+          }
+        ]
+      },
+      {
+        "class": "nr43_6e",
+        "repeat": 1,
+        "segments": 15,
+        "duration_s": 2.728388956135954,
+        "segment_duration_range_s": [
+          0.11826254050100089,
+          0.23730615451250797
+        ],
+        "raw_rms_ratio_db": -0.20466064659336142,
+        "hardware_whole_passage_energy_fraction": 0.1854903990508663,
+        "hann_psd_total_power_ratio_db": -0.24655428604573448,
+        "strongest_hann_psd_bin_hz": {
+          "hardware": 40.0,
+          "emulator": 40.0
+        },
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "emulator_minus_hardware_db": -0.9469763353784773
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "emulator_minus_hardware_db": 1.4162862306910524
+          }
+        ]
+      },
+      {
+        "class": "sweep_or_silence",
+        "repeat": 1,
+        "segments": 16,
+        "duration_s": 3.086611163356059,
+        "segment_duration_range_s": [
+          0.11842371439999423,
+          0.4737660916212598
+        ],
+        "raw_rms_ratio_db": 0.37260159145528093,
+        "hardware_whole_passage_energy_fraction": 0.08876666290854703,
+        "hann_psd_total_power_ratio_db": 6.3310719440502305,
+        "strongest_hann_psd_bin_hz": {
+          "hardware": 9.0,
+          "emulator": 8.0
+        },
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "emulator_minus_hardware_db": 9.267119549031289
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "emulator_minus_hardware_db": 10.160923872313939
+          }
+        ]
+      },
+      {
+        "class": "nr43_6b",
+        "repeat": 2,
+        "segments": 15,
+        "duration_s": 1.7788095647697943,
+        "segment_duration_range_s": [
+          0.11757588246978666,
+          0.11887671796225362
+        ],
+        "raw_rms_ratio_db": 0.01955805172250843,
+        "hardware_whole_passage_energy_fraction": 0.2250933643846069,
+        "hann_psd_total_power_ratio_db": -0.031967723807452955,
+        "strongest_hann_psd_bin_hz": {
+          "hardware": 118.0,
+          "emulator": 118.0
+        },
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "emulator_minus_hardware_db": -1.7402053479200121
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "emulator_minus_hardware_db": -0.5135681326862154
+          }
+        ]
+      },
+      {
+        "class": "nr43_6e",
+        "repeat": 2,
+        "segments": 15,
+        "duration_s": 2.7303621442839843,
+        "segment_duration_range_s": [
+          0.11818243039735923,
+          0.2383790576862802
+        ],
+        "raw_rms_ratio_db": -0.20752746072154854,
+        "hardware_whole_passage_energy_fraction": 0.18620503538413566,
+        "hann_psd_total_power_ratio_db": -0.27482433691925984,
+        "strongest_hann_psd_bin_hz": {
+          "hardware": 40.0,
+          "emulator": 40.0
+        },
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "emulator_minus_hardware_db": -0.8839687480105524
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "emulator_minus_hardware_db": 0.9158629891477328
+          }
+        ]
+      },
+      {
+        "class": "sweep_or_silence",
+        "repeat": 2,
+        "segments": 16,
+        "duration_s": 3.0838282909462205,
+        "segment_duration_range_s": [
+          0.1177227509931297,
+          0.4736119354335571
+        ],
+        "raw_rms_ratio_db": 0.3580083205527811,
+        "hardware_whole_passage_energy_fraction": 0.08887843407763207,
+        "hann_psd_total_power_ratio_db": 6.378183110646484,
+        "strongest_hann_psd_bin_hz": {
+          "hardware": 9.0,
+          "emulator": 8.0
+        },
+        "bands": [
+          {
+            "frequency_bin_centers_hz": [
+              37,
+              41
+            ],
+            "emulator_minus_hardware_db": 9.385610688002183
+          },
+          {
+            "frequency_bin_centers_hz": [
+              80,
+              83
+            ],
+            "emulator_minus_hardware_db": 9.826540568144127
+          }
+        ]
+      }
+    ],
+    "nr44_only_98_6e_intervals": {
+      "count": 210,
+      "duration_hardware_s": {
+        "minimum": 0.012369381478956346,
+        "median": 0.02511022587896539,
+        "maximum": 0.026770126300254788
+      },
+      "median_retrigger_hz": 39.824412763952516,
+      "native_event_averages": [
+        {
+          "repeat": 1,
+          "cycles": 105,
+          "hardware": {
+            "common_coverage_duration_s": 0.012458333333333333,
+            "mean_minimum": -0.005123857089451381,
+            "mean_maximum": 0.004721363385518392,
+            "mean_minimum_time_s": 0.0121875,
+            "mean_maximum_time_s": 0.0013958333333333333
+          },
+          "emulator": {
+            "common_coverage_duration_s": 0.01245856055496582,
+            "mean_minimum": -0.00632088940461082,
+            "mean_maximum": 0.006694250406552919,
+            "mean_minimum_time_s": 0.010916865770572057,
+            "mean_maximum_time_s": 0.0006875125389864082
+          }
+        },
+        {
+          "repeat": 2,
+          "cycles": 105,
+          "hardware": {
+            "common_coverage_duration_s": 0.012354166666666666,
+            "mean_minimum": -0.005350212823776972,
+            "mean_maximum": 0.005004251570928664,
+            "mean_minimum_time_s": 0.012333333333333333,
+            "mean_maximum_time_s": 0.0017083333333333334
+          },
+          "emulator": {
+            "common_coverage_duration_s": 0.012375225701755347,
+            "mean_minimum": -0.006236528605948024,
+            "mean_maximum": 0.006724623977949195,
+            "mean_minimum_time_s": 0.010958533197177295,
+            "mean_maximum_time_s": 0.0006875125389864082
+          }
+        }
+      ]
+    },
+    "interpretation": "The fundamental/harmonic redistribution occurs in the NR43=0x6e retriggered sections. NR43=0x6b sections have a different ratio at the same frequencies. This localizes a reproduction condition but does not distinguish digital behavior from state-dependent analog transients or unknown hardware write timing. There is no long steady, untriggered NR43=0x6e control in this passage. Windowed spectra are descriptive, especially where the sweep is followed by silence; raw RMS and energy fractions are reported separately."
+  },
+  "channels": {
+    "oracle": {
+      "right_gain_to_left_from_first_repeat": 1.0962055430285156,
+      "regions": {
+        "37-41Hz": [
+          -0.03212216064661193,
+          -0.03171179147631498
+        ],
+        "80-83Hz": [
+          0.012622067802215274,
+          0.01449310842483535
+        ]
+      }
+    },
+    "emulated": {
+      "right_gain_to_left_from_first_repeat": 1.0001745563774869,
+      "regions": {
+        "37-41Hz": [
+          0.0008638816230240348,
+          0.0016128007349615653
+        ],
+        "80-83Hz": [
+          0.00262332399388439,
+          0.0031918859123496158
+        ]
+      }
+    }
+  },
+  "minimal_before": {
+    "passed": false,
+    "prefix": "artifacts/noise-probe/original",
+    "closed_dac_off_intervals": 336,
+    "nonzero_stereo_values_while_disconnected": 807540,
+    "inactive_unrouted_dac_control_byte_identical": true,
+    "control_reference": "artifacts/noise-probe/original-dac-control.wav",
+    "wav_sha256": "a092d77cb06642bf66ab43e23e1979b20dc73697bb1b4627ab43603b569c5a87",
+    "settling_authority": "12 T-cycle LDH bus instruction plus the existing 1/20000-second DAC discharge; rounded up to capture samples.",
+    "scope": "Output regression against documented disconnection, plus unchanged active-DAC control. These generated ROMs have not yet been recorded on hardware."
+  },
+  "minimal_after": {
+    "passed": true,
+    "prefix": "artifacts/noise-probe/gate-hold",
+    "closed_dac_off_intervals": 336,
+    "nonzero_stereo_values_while_disconnected": 0,
+    "inactive_unrouted_dac_control_byte_identical": true,
+    "control_reference": "artifacts/noise-probe/original-dac-control.wav",
+    "wav_sha256": "24874dffbf022cd3ce7fc28c9f77fcd460e618a96756e2475a7139f29b429609",
+    "settling_authority": "12 T-cycle LDH bus instruction plus the existing 1/20000-second DAC discharge; rounded up to capture samples.",
+    "scope": "Output regression against documented disconnection, plus unchanged active-DAC control. These generated ROMs have not yet been recorded on hardware."
+  },
+  "retrigger_diagnostic": {
+    "status": "paired initialization and exact NR44-only cadence verified in SameBoy",
+    "hardware_status": "not yet recorded; no failing hardware assertion",
+    "first_trigger_seconds_from_boot": 1.4022197723388672,
+    "trigger_interval_t_cycles": 105336,
+    "trigger_interval_seconds": 0.025114059448242188,
+    "trigger_rate_hz": 39.81833371307056,
+    "continuous_lfsr_period_seconds": 0.18603515625,
+    "captured_trigger_count": 673,
+    "source_sha256": "2f5920522f60f4e2ef1454ca6cbf8c683f956b5a5a08646462a6785dfc439212",
+    "rom_sha256": {
+      "steady": "1cfaa47f74882d057ab7f26f524bfb33438260afb8df77d3295be06ddf2cc5b6",
+      "retrigger": "5360bcd30d66c6733d16029ab5adcd08ebf2bca65ed9cebc32d6195cf6e7a0c3"
+    },
+    "capture_duration_seconds": 18.3,
+    "duration_authority": "Reuse the existing baseline capture duration, not an accuracy gate."
+  },
+  "mute_before": {
+    "method": "Measure the observed all-DAC-off intervals without changing either signal.\n\nThe register trace identifies the intervals. The existing affine alignment and\nRMS gain identify matching hardware samples. The expected exponential comes\nfrom SameBoy's implemented DMG high-pass coefficient, not a fitted time constant.\nThis diagnoses a specific output-state discrepancy; it is not a regression test\nor proof that changing the emulator's capacitor state fixes the hardware model.\n",
+    "baseline": "benchmark/baseline.json",
+    "trace": {
+      "path": "artifacts/baseline.csv",
+      "sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66"
+    },
+    "emulated": {
+      "path": "artifacts/baseline.wav",
+      "sha256": "2c94939ee786a0b6a07a82001396791bf7e04102c7fb1520d255950f06fddc7d"
+    },
+    "oracle": {
+      "path": "/home/jeff/Music/Scarlett-Recordings/Media/01-Scarlett 3-4 - Stereo-261016_2126.wav",
+      "sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+      "channel": 0
+    },
+    "rms_gain_oracle_per_emulator": 0.06337448434741354,
+    "pole": {
+      "per_dmg_clock": 0.999958,
+      "clock_hz": 4194304,
+      "decay_rate_per_second": 176.16446747965713,
+      "time_constant_s": 0.00567651362562928,
+      "equivalent_corner_hz": 28.03744579653888,
+      "authority": "SameBoy/Core/apu.c:2171; Pan Docs Audio_details.md:220-238"
+    },
+    "alignment_sensitivity_shift_s": 0.0007054124121927293,
+    "alignment_sensitivity_note": "Plus/minus the observed first-trigger vs affine-start discrepancy; not a bound on unknown hardware register timing. Shifted full-window endpoints can include adjacent active samples, so all results are retained.",
+    "leading_background": {
+      "interval_s": [
+        0,
+        1
+      ],
+      "rms": 1.9687953033881806e-05,
+      "ac_rms": 1.825428060603523e-05
+    },
+    "summary": {
+      "intervals": 32,
+      "pooled_hardware_rms": 7.579263933201374e-05,
+      "pooled_emulator_rms": 0.0011242778975464527,
+      "pooled_emulator_minus_hardware_rms_db": 23.424932841051096,
+      "per_window_emulator_minus_hardware_rms_db_range": [
+        20.43145006211426,
+        33.732047734514154
+      ]
+    },
+    "interpretation": "NR42=0 removes the sole active DAC. SameBoy baseline keeps a large fixed-pole exponential tail; hardware comparison and explicit alignment sensitivity quantify whether that tail exists in this recording. A diagnostic gate/hold render can remove the source path while keeping ROM and register writes fixed. Hardware next-on behavior must also be checked before promoting that diagnostic to an accuracy fix.",
+    "sources": [
+      "https://raw.githubusercontent.com/gbdev/pandocs/master/src/Audio_details.md",
+      "https://iceboy.a-singer.de/doc/analog_audio.html"
+    ],
+    "full_detail_artifact": "artifacts/mute-tail.json",
+    "full_detail_sha256": "3a45b0adba14e2228fa618eaa965f754a8850df50a8d4b9decfe7200944b01cb"
+  },
+  "mute_after": {
+    "method": "Measure the observed all-DAC-off intervals without changing either signal.\n\nThe register trace identifies the intervals. The existing affine alignment and\nRMS gain identify matching hardware samples. The expected exponential comes\nfrom SameBoy's implemented DMG high-pass coefficient, not a fitted time constant.\nThis diagnoses a specific output-state discrepancy; it is not a regression test\nor proof that changing the emulator's capacitor state fixes the hardware model.\n",
+    "baseline": "benchmark/baseline.json",
+    "trace": {
+      "path": "artifacts/baseline.csv",
+      "sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66"
+    },
+    "emulated": {
+      "path": "artifacts/dac-gate.wav",
+      "sha256": "7c716fe573c26cb1595ac62dbf724922b82768a66d3922266460ffbe1157b951"
+    },
+    "oracle": {
+      "path": "/home/jeff/Music/Scarlett-Recordings/Media/01-Scarlett 3-4 - Stereo-261016_2126.wav",
+      "sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+      "channel": 0
+    },
+    "rms_gain_oracle_per_emulator": 0.06337448434741354,
+    "pole": {
+      "per_dmg_clock": 0.999958,
+      "clock_hz": 4194304,
+      "decay_rate_per_second": 176.16446747965713,
+      "time_constant_s": 0.00567651362562928,
+      "equivalent_corner_hz": 28.03744579653888,
+      "authority": "SameBoy/Core/apu.c:2171; Pan Docs Audio_details.md:220-238"
+    },
+    "alignment_sensitivity_shift_s": 0.0007054124121927293,
+    "alignment_sensitivity_note": "Plus/minus the observed first-trigger vs affine-start discrepancy; not a bound on unknown hardware register timing. Shifted full-window endpoints can include adjacent active samples, so all results are retained.",
+    "leading_background": {
+      "interval_s": [
+        0,
+        1
+      ],
+      "rms": 1.9687953033881806e-05,
+      "ac_rms": 1.825428060603523e-05
+    },
+    "summary": {
+      "intervals": 32,
+      "pooled_hardware_rms": 7.579263933201374e-05,
+      "pooled_emulator_rms": 0.00010089693115928377,
+      "pooled_emulator_minus_hardware_rms_db": 2.4850185263255655,
+      "per_window_emulator_minus_hardware_rms_db_range": [
+        -1.4530165210965074,
+        13.96725382293511
+      ]
+    },
+    "interpretation": "NR42=0 removes the sole active DAC. SameBoy baseline keeps a large fixed-pole exponential tail; hardware comparison and explicit alignment sensitivity quantify whether that tail exists in this recording. A diagnostic gate/hold render can remove the source path while keeping ROM and register writes fixed. Hardware next-on behavior must also be checked before promoting that diagnostic to an accuracy fix.",
+    "sources": [
+      "https://raw.githubusercontent.com/gbdev/pandocs/master/src/Audio_details.md",
+      "https://iceboy.a-singer.de/doc/analog_audio.html"
+    ],
+    "full_detail_artifact": "artifacts/mute-tail-dac-gate.json",
+    "full_detail_sha256": "51c826a73bfd5c33f334fbb273cbc46b522b0dd9c0c2f470d1599b1e2b0ad41f"
+  },
+  "dac_on": {
+    "method": "Compare post-mute DAC enables with fixed baseline alignment and gain.\n\nReport both register-defined windows: first trigger to next trigger, and DAC\nenable to the first genuinely changed NR43 after that initial trigger. The latter\nignores the immediate setup NR43 write and same-value rewrites, and includes all\nintervening envelope writes and retriggers. Neither window has a fitted boundary.\n",
+    "baseline": "benchmark/baseline.json",
+    "trace_sha256_all_variants": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+    "audio": {
+      "baseline": {
+        "path": "artifacts/baseline.wav",
+        "sha256": "2c94939ee786a0b6a07a82001396791bf7e04102c7fb1520d255950f06fddc7d"
+      },
+      "mute_only": {
+        "path": "artifacts/dac-gate-muteonly.wav",
+        "sha256": "8fdf5f0f6e1b49f889ef5cd0a3e30acae5e35bf8110984d9668c3d8a7db79509"
+      },
+      "gate_hold": {
+        "path": "artifacts/dac-gate.wav",
+        "sha256": "7c716fe573c26cb1595ac62dbf724922b82768a66d3922266460ffbe1157b951"
+      }
+    },
+    "oracle": {
+      "path": "/home/jeff/Music/Scarlett-Recordings/Media/01-Scarlett 3-4 - Stereo-261016_2126.wav",
+      "sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+      "channel": 0
+    },
+    "gain": 0.06337448434741354,
+    "envelope_resolution_s": 0.001,
+    "alignment_sensitivity_shift_s": 0.0007054124121927293,
+    "alignment_note": "Canonical fixed global alignment plus both signs of the observed first-trigger vs affine-start discrepancy. No phase/gain refitting and no favorable sensitivity case selected. This does not bound unknown hardware register timing.",
+    "pooled": {
+      "first_trigger_to_next_trigger": {
+        "-0.0007054124121927293": {
+          "baseline": {
+            "hardware_rms": 0.0028145242846189093,
+            "emulator_rms_after_baseline_gain": 0.004527966053611454,
+            "emulator_minus_hardware_rms_db": 4.129963240406788,
+            "envelope_normalized_rmse": 1.3757222133403835,
+            "envelope_correlation": 0.14253295952005254
+          },
+          "mute_only": {
+            "hardware_rms": 0.0028145242846189093,
+            "emulator_rms_after_baseline_gain": 0.004527966053611454,
+            "emulator_minus_hardware_rms_db": 4.129963240406788,
+            "envelope_normalized_rmse": 1.3757222133403835,
+            "envelope_correlation": 0.14253295952005254
+          },
+          "gate_hold": {
+            "hardware_rms": 0.0028145242846189093,
+            "emulator_rms_after_baseline_gain": 0.0028282455973685588,
+            "emulator_minus_hardware_rms_db": 0.04224239004351032,
+            "envelope_normalized_rmse": 0.38291049389943616,
+            "envelope_correlation": 0.8985879845041056
+          }
+        },
+        "0": {
+          "baseline": {
+            "hardware_rms": 0.0029873635094707744,
+            "emulator_rms_after_baseline_gain": 0.004527966053611454,
+            "emulator_minus_hardware_rms_db": 3.6123018092727346,
+            "envelope_normalized_rmse": 1.2635489942371458,
+            "envelope_correlation": 0.19694035076223604
+          },
+          "mute_only": {
+            "hardware_rms": 0.0029873635094707744,
+            "emulator_rms_after_baseline_gain": 0.004527966053611454,
+            "emulator_minus_hardware_rms_db": 3.6123018092727346,
+            "envelope_normalized_rmse": 1.2635489942371458,
+            "envelope_correlation": 0.19694035076223604
+          },
+          "gate_hold": {
+            "hardware_rms": 0.0029873635094707744,
+            "emulator_rms_after_baseline_gain": 0.0028282455973685588,
+            "emulator_minus_hardware_rms_db": -0.4754190410905439,
+            "envelope_normalized_rmse": 0.24795297255162313,
+            "envelope_correlation": 0.9561470865743378
+          }
+        },
+        "0.0007054124121927293": {
+          "baseline": {
+            "hardware_rms": 0.003089063109731486,
+            "emulator_rms_after_baseline_gain": 0.004527966053611454,
+            "emulator_minus_hardware_rms_db": 3.3215276242471523,
+            "envelope_normalized_rmse": 1.2561243345967326,
+            "envelope_correlation": 0.02808555301681298
+          },
+          "mute_only": {
+            "hardware_rms": 0.003089063109731486,
+            "emulator_rms_after_baseline_gain": 0.004527966053611454,
+            "emulator_minus_hardware_rms_db": 3.3215276242471523,
+            "envelope_normalized_rmse": 1.2561243345967326,
+            "envelope_correlation": 0.02808555301681298
+          },
+          "gate_hold": {
+            "hardware_rms": 0.003089063109731486,
+            "emulator_rms_after_baseline_gain": 0.0028282455973685588,
+            "emulator_minus_hardware_rms_db": -0.7661932261161255,
+            "envelope_normalized_rmse": 0.4267597225564353,
+            "envelope_correlation": 0.861609935663602
+          }
+        }
+      },
+      "dac_enable_to_pitch_change_after_trigger": {
+        "-0.0007054124121927293": {
+          "baseline": {
+            "hardware_rms": 0.004731924113452312,
+            "emulator_rms_after_baseline_gain": 0.004750813667848988,
+            "emulator_minus_hardware_rms_db": 0.034604521521470866,
+            "envelope_normalized_rmse": 0.3401622100810835,
+            "envelope_correlation": 0.603123913056635
+          },
+          "mute_only": {
+            "hardware_rms": 0.004731924113452312,
+            "emulator_rms_after_baseline_gain": 0.004750813667848988,
+            "emulator_minus_hardware_rms_db": 0.034604521521470866,
+            "envelope_normalized_rmse": 0.3401622100810835,
+            "envelope_correlation": 0.603123913056635
+          },
+          "gate_hold": {
+            "hardware_rms": 0.004731924113452312,
+            "emulator_rms_after_baseline_gain": 0.004710691295715434,
+            "emulator_minus_hardware_rms_db": -0.039062529693961595,
+            "envelope_normalized_rmse": 0.27660024131102207,
+            "envelope_correlation": 0.7685493569393873
+          }
+        },
+        "0": {
+          "baseline": {
+            "hardware_rms": 0.004744492379122174,
+            "emulator_rms_after_baseline_gain": 0.004750813667848988,
+            "emulator_minus_hardware_rms_db": 0.011564877233273383,
+            "envelope_normalized_rmse": 0.3476818080369432,
+            "envelope_correlation": 0.5717086803333193
+          },
+          "mute_only": {
+            "hardware_rms": 0.004744492379122174,
+            "emulator_rms_after_baseline_gain": 0.004750813667848988,
+            "emulator_minus_hardware_rms_db": 0.011564877233273383,
+            "envelope_normalized_rmse": 0.3476818080369432,
+            "envelope_correlation": 0.5717086803333193
+          },
+          "gate_hold": {
+            "hardware_rms": 0.004744492379122174,
+            "emulator_rms_after_baseline_gain": 0.004710691295715434,
+            "emulator_minus_hardware_rms_db": -0.06210217398215871,
+            "envelope_normalized_rmse": 0.2967942989614878,
+            "envelope_correlation": 0.7281922064502852
+          }
+        },
+        "0.0007054124121927293": {
+          "baseline": {
+            "hardware_rms": 0.004759850452718128,
+            "emulator_rms_after_baseline_gain": 0.004750813667848988,
+            "emulator_minus_hardware_rms_db": -0.016506216323707912,
+            "envelope_normalized_rmse": 0.4074720531778097,
+            "envelope_correlation": 0.3929293520730901
+          },
+          "mute_only": {
+            "hardware_rms": 0.004759850452718128,
+            "emulator_rms_after_baseline_gain": 0.004750813667848988,
+            "emulator_minus_hardware_rms_db": -0.016506216323707912,
+            "envelope_normalized_rmse": 0.4074720531778097,
+            "envelope_correlation": 0.3929293520730901
+          },
+          "gate_hold": {
+            "hardware_rms": 0.004759850452718128,
+            "emulator_rms_after_baseline_gain": 0.004710691295715434,
+            "emulator_minus_hardware_rms_db": -0.09017326753914046,
+            "envelope_normalized_rmse": 0.3844683336625566,
+            "envelope_correlation": 0.5358833096406026
+          }
+        }
+      }
+    },
+    "full_detail_artifact": "artifacts/dac-on.json",
+    "full_detail_sha256": "5c468edaeab3d41ef5dc4cf8319fafd3df469e93d34632308cd430ddc319267c"
+  },
+  "end_to_end": {
+    "run": {
+      "capture_command": [
+        "/home/jeff/Documents/ChatGPT/dmg/benchmark/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/inputs/lsdj-8.5.1.gb",
+        "--sav",
+        "/home/jeff/Documents/ChatGPT/dmg/inputs/dotexe-NOIZE_JAMS.sav",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+        "--seconds",
+        "18.3",
+        "--seed",
+        "1",
+        "--buttons",
+        "/home/jeff/Documents/ChatGPT/dmg/benchmark/opening.buttons",
+        "--wav",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/current.wav",
+        "--screenshot",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/current.ppm",
+        "--apu-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/current.csv"
+      ],
+      "sameboy_head": "26a56bd6a122a6318a456abd80558408742d5adf",
+      "sameboy_tracked_diff_sha256": "080b11baec9c768810fb5489a33e8acb1a00bd3913f8ad918fbbf2d48e17a829",
+      "boot_rom_sha256": "6f64da4cecd7e54e2f928eb3e3ba7810a7a567d0d247cc71737d1771e073a916",
+      "button_script_sha256": "ad82d70cc74f0cbf47520de7af0f6a3b3be74fcdc02d3fc1bab6ae6ec57500af",
+      "capture_source_sha256": "a871c1540b56c0f0c24f866c100ba8fc8e389da13061260c0e95eb27c133a9eb",
+      "capture_binary_sha256": "e581bdb21195db84a20d92a15a7da2fe0d0cbcc1b855d5fb1720f36bbdaba189",
+      "comparator_sha256": "b74754a06c8ce970d68e6b484ea564f6d2061c5470b6957c99090d4accd41183",
+      "save_sha256_after_capture": "9a2295ebc6d6ffb67685ffb8a46b82922bac037ecb82472f4d95fcd862f4a4d3",
+      "render_duration_s": 18.3,
+      "selected_musical_duration_s": 15.186,
+      "duration_note": "The render includes boot and input latency; comparison uses the two measured opening repetitions only."
+    },
+    "render_matches_validated_fix": true,
+    "baseline_wav_sha256": "2c94939ee786a0b6a07a82001396791bf7e04102c7fb1520d255950f06fddc7d",
+    "register_trace_unchanged": true
+  }
+}

@@ -1,0 +1,3794 @@
+{
+  "baseline_report": "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-reference/metrics.json",
+  "baseline_report_sha256": "5e8bdca8b443a4d0fee2f15641152335b0de1ed5ffdc7779c9b339d1f4496f42",
+  "reference": {
+    "path": "artifacts/sweep-oracle/measured-map/v2-render/audio.wav",
+    "sha256": "b9b85c6f122e928d895a5675a5beaf66a8821c085cb23f2409b550005f106d23",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int16",
+    "samples": 7685822,
+    "duration_s": 160.12129166666668
+  },
+  "hardware": {
+    "path": "artifacts/hardware/audio-oracle-probe-v2-erekgdxk/capture.wav",
+    "sha256": "bf1a40db5ef5a883182c1121d4da9d569c9d0b4191b47e8dbf8b8f9acd736a93",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int32",
+    "samples": 12670976,
+    "duration_s": 263.97866666666664
+  },
+  "manifest_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
+  "markers_sha256": "60f42f80c21801180e199596d8d8e1b3d52fb3367797ebf21d0a0d35cc451f76",
+  "candidate_provenance": {
+    "manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/manifest.json",
+    "input_manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/audio-oracle-probe-v2/manifest.json",
+    "manifest_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
+    "rom_sha256": "650f9c5f4e8ddcdef3099861051a2d6737d4221b9b9c40e4b29e7434e94ab74f",
+    "sameboy_commit": "61d83fe7deeb4c90eef003b7933d0a9dd5fa7f2c",
+    "sameboy_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "capture_source_sha256": "ca354f4f042ea48cb5bdc479d312f9f63bcbd7b56f08a3a9ae925762f0d37868",
+    "commands": [
+      [
+        "make",
+        "-C",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy",
+        "CONF=release",
+        "build/lib/libsameboy.a",
+        "bootroms"
+      ],
+      [
+        "cc",
+        "-std=gnu11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy",
+        "/home/jeff/Documents/ChatGPT/dmg/benchmark/capture.c",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/lib/libsameboy.a",
+        "-lm",
+        "-ldl",
+        "-o",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/capture"
+      ],
+      [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/audio-oracle-probe-v2/audio-torture.gb",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+        "--until-done",
+        "--seed",
+        "1",
+        "--wav",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/audio.wav",
+        "--screenshot",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/screen.ppm",
+        "--apu-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/apu.csv",
+        "--markers-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/markers.csv"
+      ]
+    ],
+    "completion_authority": "ROM emits HRAM FF82=4 after its finite suite/end packet; no wall-clock timeout.",
+    "outputs_sha256": {
+      "audio.wav": "b9b85c6f122e928d895a5675a5beaf66a8821c085cb23f2409b550005f106d23",
+      "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+      "apu.csv": "0f257d46e471c10910259f5d0d0eb8ec5029d67dfcced6725234815db65ff1d0",
+      "markers.csv": "60f42f80c21801180e199596d8d8e1b3d52fb3367797ebf21d0a0d35cc451f76"
+    },
+    "status": "completed"
+  },
+  "frozen_mapping": {
+    "clock": 1.0000586029858005,
+    "offset_s": 103.7656387444174,
+    "gain": 0.06378270267815656
+  },
+  "cpu_marker_timing_identical": true,
+  "packet_coverage": {
+    "expected": 116,
+    "reference_valid_unique": 116,
+    "hardware_valid_unique": 116,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "candidate_decoder": {
+    "method": "Decode actual audio around reference packet-writer markers; each search includes one bit of phase ambiguity before/after the specified packet.",
+    "valid_packets": 116,
+    "invalid_or_partial_candidates": 3
+  },
+  "candidate_invalid_packets": [
+    {
+      "kind": 3,
+      "id": 51,
+      "payload_length": 16,
+      "status": "unknown_kind_or_id",
+      "start_s": 13.357895833333334,
+      "preamble_score": 8.230594198899587,
+      "candidate_region_s": [
+        13.357895833333334,
+        13.357895833333334
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 2,
+      "id": 34,
+      "payload_length": 16,
+      "payload": [
+        0,
+        70,
+        103,
+        255,
+        0,
+        86,
+        103,
+        255,
+        25,
+        27,
+        187,
+        61,
+        221,
+        223,
+        255,
+        224
+      ],
+      "checksum": 48,
+      "expected_checksum": 185,
+      "bytes": [
+        211,
+        145,
+        2,
+        34,
+        0,
+        16,
+        0,
+        70,
+        103,
+        255,
+        0,
+        86,
+        103,
+        255,
+        25,
+        27,
+        187,
+        61,
+        221,
+        223,
+        255,
+        224,
+        48
+      ],
+      "status": "invalid_checksum",
+      "start_s": 13.359729166666666,
+      "preamble_score": 7.663394418023071,
+      "candidate_region_s": [
+        13.359729166666666,
+        13.359729166666666
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 2,
+      "id": 56,
+      "payload_length": 16,
+      "status": "unknown_kind_or_id",
+      "start_s": 16.552645833333333,
+      "preamble_score": 7.626659817419024,
+      "candidate_region_s": [
+        16.552645833333333,
+        16.552645833333333
+      ],
+      "within_valid_packet_first_bit": true
+    }
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "name": "calibration-pulse",
+      "group": "calibration",
+      "description": "Uninterrupted CH2 256 Hz, duty 50%, volume 8 for eight complete frame-sequencer cycles.",
+      "reference_interval_s": [
+        1.54306221,
+        1.668101311
+      ],
+      "mapped_hardware_interval_s": [
+        105.30879138247019,
+        105.43383781113485
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 6002,
+        "rmse": 0.007007790160283836,
+        "normalized_rmse_reference": 0.10627745316933979,
+        "correlation": 0.9968108885185155,
+        "reference_rms": 0.06593863468969108,
+        "hardware_calibrated_rms": 0.06593863468969109,
+        "mean_difference": 0.004628078112889475,
+        "peak_absolute_difference": 0.06874058189775532
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 8,
+        "rmse": 0.00037143173275795384
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 7.997334221926025,
+        "hardware_resolution_reference_hz": 7.996470588592107,
+        "integrated_absolute_psd_difference": 5.677794022308157e-05,
+        "relative_integrated_absolute_psd_difference": 0.01301548959088918,
+        "reference_power": 0.004362336109340522,
+        "hardware_power": 0.004371744804030661
+      },
+      "baseline_waveform": {
+        "samples": 6002,
+        "rmse": 0.007007790160283836,
+        "normalized_rmse_reference": 0.10627745316933963,
+        "correlation": 0.9968108885185157,
+        "reference_rms": 0.06593863468969108,
+        "hardware_calibrated_rms": 0.06593863468969109,
+        "mean_difference": 0.004628078112889475,
+        "peak_absolute_difference": 0.06874058189775532
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 7.997334221926025,
+        "hardware_resolution_reference_hz": 7.996470588592107,
+        "integrated_absolute_psd_difference": 5.677794022308157e-05,
+        "relative_integrated_absolute_psd_difference": 0.01301548959088918,
+        "reference_power": 0.004362336109340522,
+        "hardware_power": 0.004371744804030661
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 2,
+      "name": "sweep-original-prefix-0",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 0 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        1.808981895,
+        1.809041977
+      ],
+      "mapped_hardware_interval_s": [
+        105.5747266511577,
+        105.57478673667869
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3,
+        "rmse": 0.061695038899627214,
+        "normalized_rmse_reference": 1.0562246715107448,
+        "correlation": -0.9561700871770377,
+        "reference_rms": 0.05841090495583979,
+        "hardware_calibrated_rms": 0.003285524050860254,
+        "mean_difference": 0.061694407863450325,
+        "peak_absolute_difference": 0.06205624488168177
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.05512538090497954
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 16000.0,
+        "hardware_resolution_reference_hz": 16000.937647772807,
+        "integrated_absolute_psd_difference": 0.0016942832720706856,
+        "relative_integrated_absolute_psd_difference": 0.9968282721138658,
+        "reference_power": 0.0016996741760522125,
+        "hardware_power": 5.391114790862083e-06
+      },
+      "baseline_waveform": {
+        "samples": 3,
+        "rmse": 0.061695038899627214,
+        "normalized_rmse_reference": 1.0562246715107448,
+        "correlation": -0.9561700871770377,
+        "reference_rms": 0.05841090495583979,
+        "hardware_calibrated_rms": 0.003285524050860254,
+        "mean_difference": 0.061694407863450325,
+        "peak_absolute_difference": 0.06205624488168177
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 16000.0,
+        "hardware_resolution_reference_hz": 16000.937647772807,
+        "integrated_absolute_psd_difference": 0.0016942832720706856,
+        "relative_integrated_absolute_psd_difference": 0.9968282721138658,
+        "reference_power": 0.0016996741760522125,
+        "hardware_power": 5.391114790862083e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 3,
+      "name": "sweep-original-prefix-1",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 1 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        2.106329918,
+        2.114202499
+      ],
+      "mapped_hardware_interval_s": [
+        105.87209209963967,
+        105.87996514199644
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 378,
+        "rmse": 0.01729173793040395,
+        "normalized_rmse_reference": 0.3898178600110243,
+        "correlation": 0.9442721818528877,
+        "reference_rms": 0.044358506123641755,
+        "hardware_calibrated_rms": 0.04349803242402396,
+        "mean_difference": 0.007709207812288922,
+        "peak_absolute_difference": 0.06364579150076283
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0008604736996177947
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 126.99156863311751,
+        "integrated_absolute_psd_difference": 0.00018365728553955242,
+        "relative_integrated_absolute_psd_difference": 0.1553677769293598,
+        "reference_power": 0.0011820809254614929,
+        "hardware_power": 0.0013577705012778377
+      },
+      "baseline_waveform": {
+        "samples": 378,
+        "rmse": 0.01729173793040395,
+        "normalized_rmse_reference": 0.3898178600110243,
+        "correlation": 0.9442721818528874,
+        "reference_rms": 0.044358506123641755,
+        "hardware_calibrated_rms": 0.04349803242402396,
+        "mean_difference": 0.007709207812288922,
+        "peak_absolute_difference": 0.06364579150076283
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 126.99156863311751,
+        "integrated_absolute_psd_difference": 0.00018365728553955242,
+        "relative_integrated_absolute_psd_difference": 0.1553677769293598,
+        "reference_power": 0.0011820809254614929,
+        "hardware_power": 0.0013577705012778377
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 4,
+      "name": "sweep-original-prefix-2",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 2 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        2.41149044,
+        2.427175522
+      ],
+      "mapped_hardware_interval_s": [
+        106.17727050495742,
+        106.19295650615005
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 753,
+        "rmse": 0.013467005196571449,
+        "normalized_rmse_reference": 0.1333731845481362,
+        "correlation": 0.9904557572566256,
+        "reference_rms": 0.10097235994024731,
+        "hardware_calibrated_rms": 0.10271894309736947,
+        "mean_difference": 0.0014011270967818092,
+        "peak_absolute_difference": 0.060818632770330006
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0017465831571221585
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.745019920318725,
+        "hardware_resolution_reference_hz": 63.748755568815966,
+        "integrated_absolute_psd_difference": 0.0003275919307431209,
+        "relative_integrated_absolute_psd_difference": 0.03132360545334766,
+        "reference_power": 0.01045830855043253,
+        "hardware_power": 0.010519869518563062
+      },
+      "baseline_waveform": {
+        "samples": 753,
+        "rmse": 0.013467005196571449,
+        "normalized_rmse_reference": 0.1333731845481363,
+        "correlation": 0.9904557572566253,
+        "reference_rms": 0.10097235994024731,
+        "hardware_calibrated_rms": 0.10271894309736947,
+        "mean_difference": 0.0014011270967818092,
+        "peak_absolute_difference": 0.060818632770330006
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.745019920318725,
+        "hardware_resolution_reference_hz": 63.748755568815966,
+        "integrated_absolute_psd_difference": 0.0003275919307431209,
+        "relative_integrated_absolute_psd_difference": 0.03132360545334766,
+        "reference_power": 0.01045830855043253,
+        "hardware_power": 0.010519869518563062
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 5,
+      "name": "sweep-original-prefix-3",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 3 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        2.724463463,
+        2.747961044
+      ],
+      "mapped_hardware_interval_s": [
+        106.49026186911104,
+        106.51376082713945
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1128,
+        "rmse": 0.011743537167622333,
+        "normalized_rmse_reference": 0.10710017083685872,
+        "correlation": 0.9942605403548632,
+        "reference_rms": 0.10965003207614656,
+        "hardware_calibrated_rms": 0.10975133798419273,
+        "mean_difference": 0.0014644408808737318,
+        "peak_absolute_difference": 0.061662222828023035
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 2,
+        "rmse": 0.0010041519304293297
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 42.5531914893617,
+        "hardware_resolution_reference_hz": 42.55568523343832,
+        "integrated_absolute_psd_difference": 0.0005842077659780819,
+        "relative_integrated_absolute_psd_difference": 0.03570209820493338,
+        "reference_power": 0.01636340146242035,
+        "hardware_power": 0.01681179977890029
+      },
+      "baseline_waveform": {
+        "samples": 1128,
+        "rmse": 0.011743537167622333,
+        "normalized_rmse_reference": 0.10710017083685869,
+        "correlation": 0.9942605403548642,
+        "reference_rms": 0.10965003207614656,
+        "hardware_calibrated_rms": 0.10975133798419273,
+        "mean_difference": 0.0014644408808737318,
+        "peak_absolute_difference": 0.061662222828023035
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 42.5531914893617,
+        "hardware_resolution_reference_hz": 42.55568523343832,
+        "integrated_absolute_psd_difference": 0.0005842077659780819,
+        "relative_integrated_absolute_psd_difference": 0.03570209820493338,
+        "reference_power": 0.01636340146242035,
+        "hardware_power": 0.01681179977890029
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 6,
+      "name": "sweep-original-prefix-4",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 4 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        3.045248985,
+        3.076559067
+      ],
+      "mapped_hardware_interval_s": [
+        106.81106619010043,
+        106.84237810696472
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1503,
+        "rmse": 0.010362372552687626,
+        "normalized_rmse_reference": 0.09458539612463027,
+        "correlation": 0.9956005577663501,
+        "reference_rms": 0.1095557345769706,
+        "hardware_calibrated_rms": 0.11011532262246222,
+        "mean_difference": 0.0009641055523218593,
+        "peak_absolute_difference": 0.0615214820983717
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 2,
+        "rmse": 0.0005847385866997302
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 31.936127744510976,
+        "hardware_resolution_reference_hz": 31.93799929695171,
+        "integrated_absolute_psd_difference": 0.0003101960696640038,
+        "relative_integrated_absolute_psd_difference": 0.020041562547602178,
+        "reference_power": 0.015477638977860855,
+        "hardware_power": 0.015657485652340573
+      },
+      "baseline_waveform": {
+        "samples": 1503,
+        "rmse": 0.04226141526215153,
+        "normalized_rmse_reference": 0.37648779728123016,
+        "correlation": 0.9302059892969679,
+        "reference_rms": 0.11225175309090549,
+        "hardware_calibrated_rms": 0.11011532262246222,
+        "mean_difference": 0.007742662695847309,
+        "peak_absolute_difference": 0.26552665153022265
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 31.936127744510976,
+        "hardware_resolution_reference_hz": 31.93799929695171,
+        "integrated_absolute_psd_difference": 0.0003108803990330782,
+        "relative_integrated_absolute_psd_difference": 0.020086560698175403,
+        "reference_power": 0.015477034804734769,
+        "hardware_power": 0.015657485652340573
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 7,
+      "name": "sweep-original-prefix-5",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 5 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        3.373847008,
+        3.412969589
+      ],
+      "mapped_hardware_interval_s": [
+        107.1396834699257,
+        107.17880834362576
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1878,
+        "rmse": 0.01055468234618046,
+        "normalized_rmse_reference": 0.10610533515754302,
+        "correlation": 0.9949616240384012,
+        "reference_rms": 0.09947362524711027,
+        "hardware_calibrated_rms": 0.10080321884807657,
+        "mean_difference": 0.0031632986849107684,
+        "peak_absolute_difference": 0.06452164880730855
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 3,
+        "rmse": 0.005759716210933243
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 25.559105431309906,
+        "hardware_resolution_reference_hz": 25.560603271202567,
+        "integrated_absolute_psd_difference": 0.00027942899654651796,
+        "relative_integrated_absolute_psd_difference": 0.01895225090342368,
+        "reference_power": 0.01474384219428204,
+        "hardware_power": 0.01480513779705271
+      },
+      "baseline_waveform": {
+        "samples": 1878,
+        "rmse": 0.07132304586431784,
+        "normalized_rmse_reference": 0.6232572224101284,
+        "correlation": 0.7967995525687802,
+        "reference_rms": 0.11443597169802934,
+        "hardware_calibrated_rms": 0.10080321884807657,
+        "mean_difference": 0.015172501928471072,
+        "peak_absolute_difference": 0.2795237783926214
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 25.559105431309906,
+        "hardware_resolution_reference_hz": 25.560603271202567,
+        "integrated_absolute_psd_difference": 0.004450391664767812,
+        "relative_integrated_absolute_psd_difference": 0.29526694769920014,
+        "reference_power": 0.015072434281745609,
+        "hardware_power": 0.01480513779705271
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 8,
+      "name": "sweep-original-prefix-6",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 6 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        3.71025753,
+        3.757192612
+      ],
+      "mapped_hardware_interval_s": [
+        107.47611370658674,
+        107.52305153912269
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 2253,
+        "rmse": 0.009882907816080241,
+        "normalized_rmse_reference": 0.10870793458733148,
+        "correlation": 0.9949268731427175,
+        "reference_rms": 0.09091247896114445,
+        "hardware_calibrated_rms": 0.09226792722728726,
+        "mean_difference": 0.0035283552557677793,
+        "peak_absolute_difference": 0.060338669836434114
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 3,
+        "rmse": 0.004561446193955816
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 21.30492676431425,
+        "hardware_resolution_reference_hz": 21.306175296634898,
+        "integrated_absolute_psd_difference": 0.00032907009159420373,
+        "relative_integrated_absolute_psd_difference": 0.026029815573817644,
+        "reference_power": 0.012642044683758813,
+        "hardware_power": 0.012833593661259109
+      },
+      "baseline_waveform": {
+        "samples": 2253,
+        "rmse": 0.0673094134838426,
+        "normalized_rmse_reference": 0.6282723945822167,
+        "correlation": 0.7829211441471263,
+        "reference_rms": 0.10713412536389003,
+        "hardware_calibrated_rms": 0.09226792722728726,
+        "mean_difference": 0.0060544196785512925,
+        "peak_absolute_difference": 0.2723206867880128
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 21.30492676431425,
+        "hardware_resolution_reference_hz": 21.306175296634898,
+        "integrated_absolute_psd_difference": 0.0077078140679758865,
+        "relative_integrated_absolute_psd_difference": 0.5147909280853853,
+        "reference_power": 0.014972707651711837,
+        "hardware_power": 0.012833593661259109
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 9,
+      "name": "sweep-original-prefix-7",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 7 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        4.054480553,
+        4.109228134
+      ],
+      "mapped_hardware_interval_s": [
+        107.82035690208367,
+        107.87510769145538
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 2627,
+        "rmse": 0.00926459589392663,
+        "normalized_rmse_reference": 0.11005461394944263,
+        "correlation": 0.9949612405744611,
+        "reference_rms": 0.08418180357420213,
+        "hardware_calibrated_rms": 0.08550222108661822,
+        "mean_difference": 0.0036223137622509115,
+        "peak_absolute_difference": 0.061612422388790694
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.003911343930108326
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 18.271792919680244,
+        "hardware_resolution_reference_hz": 18.265910556818273,
+        "integrated_absolute_psd_difference": 0.0004521051624688161,
+        "relative_integrated_absolute_psd_difference": 0.04642768396561473,
+        "reference_power": 0.009737835787881519,
+        "hardware_power": 0.010051889821881401
+      },
+      "baseline_waveform": {
+        "samples": 2627,
+        "rmse": 0.062449115868210024,
+        "normalized_rmse_reference": 0.6285179826338251,
+        "correlation": 0.7815167576379303,
+        "reference_rms": 0.09935931444079764,
+        "hardware_calibrated_rms": 0.08550222108661822,
+        "mean_difference": 0.004171804421897136,
+        "peak_absolute_difference": 0.25813598048402453
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 18.271792919680244,
+        "hardware_resolution_reference_hz": 18.265910556818273,
+        "integrated_absolute_psd_difference": 0.00995046312873258,
+        "relative_integrated_absolute_psd_difference": 0.6949050493504774,
+        "reference_power": 0.014319169414631832,
+        "hardware_power": 0.010051889821881401
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 10,
+      "name": "sweep-original-prefix-8",
+      "group": "ch1",
+      "description": "Original active retrigger: first period $200, then $100. Read NR52 after 8 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        4.406516075,
+        4.469076157
+      ],
+      "mapped_hardware_interval_s": [
+        108.17241305441638,
+        108.23497680262398
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3003,
+        "rmse": 0.008738736717794933,
+        "normalized_rmse_reference": 0.11096305953321756,
+        "correlation": 0.9948350760191257,
+        "reference_rms": 0.07875356676857781,
+        "hardware_calibrated_rms": 0.07997354716168141,
+        "mean_difference": 0.0033337024389258115,
+        "peak_absolute_difference": 0.06480965170342164
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.003741547133282305
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.98495269507773,
+        "integrated_absolute_psd_difference": 0.00045698472558800235,
+        "relative_integrated_absolute_psd_difference": 0.06458053329047067,
+        "reference_power": 0.007076199317409999,
+        "hardware_power": 0.007432901709142464
+      },
+      "baseline_waveform": {
+        "samples": 3003,
+        "rmse": 0.05841238529409374,
+        "normalized_rmse_reference": 0.6283945983578184,
+        "correlation": 0.7813755966991348,
+        "reference_rms": 0.09295494494501169,
+        "hardware_calibrated_rms": 0.07997354716168141,
+        "mean_difference": 0.003455671127789031,
+        "peak_absolute_difference": 0.2767689440972237
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.98495269507773,
+        "integrated_absolute_psd_difference": 0.009409786831933673,
+        "relative_integrated_absolute_psd_difference": 0.7426176619975039,
+        "reference_power": 0.012671105622000816,
+        "hardware_power": 0.007432901709142464
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 11,
+      "name": "sweep-direct-prefix-0",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 0 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        4.766364098,
+        4.766424179
+      ],
+      "mapped_hardware_interval_s": [
+        108.53228216558496,
+        108.53234225010588
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3,
+        "rmse": 0.06145186079935543,
+        "normalized_rmse_reference": 1.0344064709025902,
+        "correlation": 0.5828623997459274,
+        "reference_rms": 0.059407846458785676,
+        "hardware_calibrated_rms": 0.0020543635899393,
+        "mean_difference": 0.061451596908158,
+        "peak_absolute_difference": 0.06165790184523826
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.057353482868846374
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 16000.0,
+        "hardware_resolution_reference_hz": 16000.937647772807,
+        "integrated_absolute_psd_difference": 0.0017558921968530256,
+        "relative_integrated_absolute_psd_difference": 0.9988039992934719,
+        "reference_power": 0.0017579947598278525,
+        "hardware_power": 2.1026475702368317e-06
+      },
+      "baseline_waveform": {
+        "samples": 3,
+        "rmse": 0.06145186079935543,
+        "normalized_rmse_reference": 1.0344064709025902,
+        "correlation": 0.5828623997459274,
+        "reference_rms": 0.059407846458785676,
+        "hardware_calibrated_rms": 0.0020543635899393,
+        "mean_difference": 0.061451596908158,
+        "peak_absolute_difference": 0.06165790184523826
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 16000.0,
+        "hardware_resolution_reference_hz": 16000.937647772807,
+        "integrated_absolute_psd_difference": 0.0017558921968530256,
+        "relative_integrated_absolute_psd_difference": 0.9988039992934719,
+        "reference_power": 0.0017579947598278525,
+        "hardware_power": 2.1026475702368317e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 12,
+      "name": "sweep-direct-prefix-1",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 1 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        5.06371212,
+        5.071584702
+      ],
+      "mapped_hardware_interval_s": [
+        108.82964761306687,
+        108.83752065642368
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 378,
+        "rmse": 0.016933309065724576,
+        "normalized_rmse_reference": 0.3793492259937042,
+        "correlation": 0.9438324708480764,
+        "reference_rms": 0.044637784672863966,
+        "hardware_calibrated_rms": 0.04319412954879593,
+        "mean_difference": 0.006932196167080335,
+        "peak_absolute_difference": 0.0608076245617313
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0014436551240680356
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 127.32841629527432,
+        "integrated_absolute_psd_difference": 0.00014216866867991818,
+        "relative_integrated_absolute_psd_difference": 0.11838060576478353,
+        "reference_power": 0.001200945608965715,
+        "hardware_power": 0.0013377372016420545
+      },
+      "baseline_waveform": {
+        "samples": 378,
+        "rmse": 0.016933309065724576,
+        "normalized_rmse_reference": 0.37934922599370413,
+        "correlation": 0.9438324708480765,
+        "reference_rms": 0.044637784672863966,
+        "hardware_calibrated_rms": 0.04319412954879593,
+        "mean_difference": 0.006932196167080335,
+        "peak_absolute_difference": 0.0608076245617313
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 127.32841629527432,
+        "integrated_absolute_psd_difference": 0.00014216866867991818,
+        "relative_integrated_absolute_psd_difference": 0.11838060576478353,
+        "reference_power": 0.001200945608965715,
+        "hardware_power": 0.0013377372016420545
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 13,
+      "name": "sweep-direct-prefix-2",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 2 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        5.368872643,
+        5.384557724
+      ],
+      "mapped_hardware_interval_s": [
+        109.13482601938466,
+        109.15051201957725
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 753,
+        "rmse": 0.013638472381025793,
+        "normalized_rmse_reference": 0.13504992501818042,
+        "correlation": 0.9902411476213608,
+        "reference_rms": 0.1009883743303803,
+        "hardware_calibrated_rms": 0.10272734755541689,
+        "mean_difference": 0.0016157365269890184,
+        "peak_absolute_difference": 0.06401178061368311
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0017389732250365914
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.745019920318725,
+        "hardware_resolution_reference_hz": 63.748755568815966,
+        "integrated_absolute_psd_difference": 0.0003668549923138999,
+        "relative_integrated_absolute_psd_difference": 0.035180433937663444,
+        "reference_power": 0.010427813169215988,
+        "hardware_power": 0.010552445115045285
+      },
+      "baseline_waveform": {
+        "samples": 753,
+        "rmse": 0.013638472381025793,
+        "normalized_rmse_reference": 0.13504992501818042,
+        "correlation": 0.9902411476213592,
+        "reference_rms": 0.1009883743303803,
+        "hardware_calibrated_rms": 0.10272734755541689,
+        "mean_difference": 0.0016157365269890184,
+        "peak_absolute_difference": 0.06401178061368311
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.745019920318725,
+        "hardware_resolution_reference_hz": 63.748755568815966,
+        "integrated_absolute_psd_difference": 0.0003668549923138999,
+        "relative_integrated_absolute_psd_difference": 0.035180433937663444,
+        "reference_power": 0.010427813169215988,
+        "hardware_power": 0.010552445115045285
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 14,
+      "name": "sweep-direct-prefix-3",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 3 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        5.681845665,
+        5.705343246
+      ],
+      "mapped_hardware_interval_s": [
+        109.44781738253823,
+        109.47131634056663
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1128,
+        "rmse": 0.011566900019529962,
+        "normalized_rmse_reference": 0.1054891590004501,
+        "correlation": 0.9943834482041788,
+        "reference_rms": 0.10965013020419107,
+        "hardware_calibrated_rms": 0.1097508951862501,
+        "mean_difference": 0.0009748173250940734,
+        "peak_absolute_difference": 0.060422611586027575
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 2,
+        "rmse": 0.0010392947973922532
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 42.5531914893617,
+        "hardware_resolution_reference_hz": 42.55568523343832,
+        "integrated_absolute_psd_difference": 0.0006247228515897338,
+        "relative_integrated_absolute_psd_difference": 0.03822666833106897,
+        "reference_power": 0.01634259219713339,
+        "hardware_power": 0.01683972896258851
+      },
+      "baseline_waveform": {
+        "samples": 1128,
+        "rmse": 0.011566900019529962,
+        "normalized_rmse_reference": 0.10548915900045007,
+        "correlation": 0.9943834482041802,
+        "reference_rms": 0.10965013020419107,
+        "hardware_calibrated_rms": 0.1097508951862501,
+        "mean_difference": 0.0009748173250940734,
+        "peak_absolute_difference": 0.060422611586027575
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 42.5531914893617,
+        "hardware_resolution_reference_hz": 42.55568523343832,
+        "integrated_absolute_psd_difference": 0.0006247228515897338,
+        "relative_integrated_absolute_psd_difference": 0.03822666833106897,
+        "reference_power": 0.01634259219713339,
+        "hardware_power": 0.01683972896258851
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 15,
+      "name": "sweep-direct-prefix-4",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 4 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        6.002631187,
+        6.033941269
+      ],
+      "mapped_hardware_interval_s": [
+        109.76862170352761,
+        109.79993362039191
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1503,
+        "rmse": 0.010591992738257013,
+        "normalized_rmse_reference": 0.09669047505385907,
+        "correlation": 0.9954150808105136,
+        "reference_rms": 0.1095453583443148,
+        "hardware_calibrated_rms": 0.11012045046589443,
+        "mean_difference": 0.0011197450878749132,
+        "peak_absolute_difference": 0.06138515117048806
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 2,
+        "rmse": 0.0005999278125062034
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 31.936127744510976,
+        "hardware_resolution_reference_hz": 31.93799929695171,
+        "integrated_absolute_psd_difference": 0.00030850886677708694,
+        "relative_integrated_absolute_psd_difference": 0.01992686484470959,
+        "reference_power": 0.015482057472728501,
+        "hardware_power": 0.015659236489719525
+      },
+      "baseline_waveform": {
+        "samples": 1503,
+        "rmse": 0.04237473359266275,
+        "normalized_rmse_reference": 0.37750384243742957,
+        "correlation": 0.9299224789249733,
+        "reference_rms": 0.1122498073637125,
+        "hardware_calibrated_rms": 0.11012045046589443,
+        "mean_difference": 0.007920840163348966,
+        "peak_absolute_difference": 0.27098353639622924
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 31.936127744510976,
+        "hardware_resolution_reference_hz": 31.93799929695171,
+        "integrated_absolute_psd_difference": 0.00030908091981535744,
+        "relative_integrated_absolute_psd_difference": 0.019964626163176947,
+        "reference_power": 0.015481427865923726,
+        "hardware_power": 0.015659236489719525
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 16,
+      "name": "sweep-direct-prefix-5",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 5 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        6.33122921,
+        6.370351791
+      ],
+      "mapped_hardware_interval_s": [
+        110.0972389833529,
+        110.13636385705296
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1877,
+        "rmse": 0.010261324583410692,
+        "normalized_rmse_reference": 0.10312759562934568,
+        "correlation": 0.9951425810651515,
+        "reference_rms": 0.09950124911562243,
+        "hardware_calibrated_rms": 0.10082685945970749,
+        "mean_difference": 0.0027119894169230874,
+        "peak_absolute_difference": 0.06046724927229513
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 3,
+        "rmse": 0.005649994102112382
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 25.572722429408635,
+        "hardware_resolution_reference_hz": 25.560603271202567,
+        "integrated_absolute_psd_difference": 0.0003041440942527814,
+        "relative_integrated_absolute_psd_difference": 0.020631424466916806,
+        "reference_power": 0.014741788417977967,
+        "hardware_power": 0.014819785717354378
+      },
+      "baseline_waveform": {
+        "samples": 1877,
+        "rmse": 0.07127640082729315,
+        "normalized_rmse_reference": 0.6226311298687225,
+        "correlation": 0.7967063418276539,
+        "reference_rms": 0.11447612785168854,
+        "hardware_calibrated_rms": 0.10082685945970749,
+        "mean_difference": 0.014739573405460315,
+        "peak_absolute_difference": 0.25684308867662903
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 25.572722429408635,
+        "hardware_resolution_reference_hz": 25.560603271202567,
+        "integrated_absolute_psd_difference": 0.004439569522755073,
+        "relative_integrated_absolute_psd_difference": 0.29459513210458127,
+        "reference_power": 0.015070070883516926,
+        "hardware_power": 0.014819785717354378
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 17,
+      "name": "sweep-direct-prefix-6",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 6 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        6.667639732,
+        6.714574814
+      ],
+      "mapped_hardware_interval_s": [
+        110.43366922001394,
+        110.48060705254989
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 2253,
+        "rmse": 0.009866963162281849,
+        "normalized_rmse_reference": 0.1085374175061863,
+        "correlation": 0.9948656850022408,
+        "reference_rms": 0.09090840181193235,
+        "hardware_calibrated_rms": 0.09224204747823898,
+        "mean_difference": 0.003330772213901931,
+        "peak_absolute_difference": 0.06258411850324072
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 3,
+        "rmse": 0.004369096964225924
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 21.30492676431425,
+        "hardware_resolution_reference_hz": 21.306175296634898,
+        "integrated_absolute_psd_difference": 0.00032308620486243636,
+        "relative_integrated_absolute_psd_difference": 0.025543991420112395,
+        "reference_power": 0.012648227113326159,
+        "hardware_power": 0.01283186983024449
+      },
+      "baseline_waveform": {
+        "samples": 2253,
+        "rmse": 0.06729577960782254,
+        "normalized_rmse_reference": 0.6281814496872025,
+        "correlation": 0.7828999396384259,
+        "reference_rms": 0.10712793197145809,
+        "hardware_calibrated_rms": 0.09224204747823898,
+        "mean_difference": 0.005859220610831029,
+        "peak_absolute_difference": 0.2770184520162259
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 21.30492676431425,
+        "hardware_resolution_reference_hz": 21.306175296634898,
+        "integrated_absolute_psd_difference": 0.007693369319845004,
+        "relative_integrated_absolute_psd_difference": 0.5137645094372839,
+        "reference_power": 0.014974505203310751,
+        "hardware_power": 0.01283186983024449
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 18,
+      "name": "sweep-direct-prefix-7",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 7 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        7.011862755,
+        7.066610336
+      ],
+      "mapped_hardware_interval_s": [
+        110.77791241551087,
+        110.83266320488258
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 2628,
+        "rmse": 0.009148005156399379,
+        "normalized_rmse_reference": 0.10866889380980098,
+        "correlation": 0.9949280702129011,
+        "reference_rms": 0.08418237119824541,
+        "hardware_calibrated_rms": 0.08542677765123224,
+        "mean_difference": 0.003257270153792925,
+        "peak_absolute_difference": 0.06053640053329664
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0035602611298278476
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 18.264840182648403,
+        "hardware_resolution_reference_hz": 18.265910556818273,
+        "integrated_absolute_psd_difference": 0.0004341221205316751,
+        "relative_integrated_absolute_psd_difference": 0.04459507644519165,
+        "reference_power": 0.009734754487195933,
+        "hardware_power": 0.01004500536430721
+      },
+      "baseline_waveform": {
+        "samples": 2628,
+        "rmse": 0.062418622077392974,
+        "normalized_rmse_reference": 0.6282661668963692,
+        "correlation": 0.7814799004568613,
+        "reference_rms": 0.09935060228651267,
+        "hardware_calibrated_rms": 0.08542677765123224,
+        "mean_difference": 0.0038047517893641785,
+        "peak_absolute_difference": 0.27594619832019135
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 18.264840182648403,
+        "hardware_resolution_reference_hz": 18.265910556818273,
+        "integrated_absolute_psd_difference": 0.009933530130964607,
+        "relative_integrated_absolute_psd_difference": 0.6938525269770305,
+        "reference_power": 0.014316486205278964,
+        "hardware_power": 0.01004500536430721
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 19,
+      "name": "sweep-direct-prefix-8",
+      "group": "ch1",
+      "description": "Only the final trigger is enabled; initial period write remains $200. Read NR52 after 8 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        7.363898277,
+        7.426458359
+      ],
+      "mapped_hardware_interval_s": [
+        111.12996856784356,
+        111.19253231605116
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3003,
+        "rmse": 0.008660683274588205,
+        "normalized_rmse_reference": 0.10999067662319742,
+        "correlation": 0.9948262287618532,
+        "reference_rms": 0.07874015817047572,
+        "hardware_calibrated_rms": 0.07993536616791327,
+        "mean_difference": 0.0031058965063289665,
+        "peak_absolute_difference": 0.06143685585275754
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.003586318246269671
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.98495269507773,
+        "integrated_absolute_psd_difference": 0.00044067649230790585,
+        "relative_integrated_absolute_psd_difference": 0.06234367319366614,
+        "reference_power": 0.00706850382297777,
+        "hardware_power": 0.007417824761554729
+      },
+      "baseline_waveform": {
+        "samples": 3003,
+        "rmse": 0.058421159107988306,
+        "normalized_rmse_reference": 0.6285830662113012,
+        "correlation": 0.7811610610074087,
+        "reference_rms": 0.09294103237637927,
+        "hardware_calibrated_rms": 0.07993536616791327,
+        "mean_difference": 0.00322770259737334,
+        "peak_absolute_difference": 0.26321474160709135
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.98495269507773,
+        "integrated_absolute_psd_difference": 0.009396489218781912,
+        "relative_integrated_absolute_psd_difference": 0.7419021888076105,
+        "reference_power": 0.012665401666874718,
+        "hardware_power": 0.007417824761554729
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 20,
+      "name": "sweep-same-period-prefix-0",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 0 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        7.7237463,
+        7.723806381
+      ],
+      "mapped_hardware_interval_s": [
+        111.48983767901214,
+        111.48989776353308
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3,
+        "rmse": 0.06037335728181147,
+        "normalized_rmse_reference": 1.0346785212600371,
+        "correlation": -0.6843242346017747,
+        "reference_rms": 0.05834987007199923,
+        "hardware_calibrated_rms": 0.0020277888896056344,
+        "mean_difference": 0.06037267328160495,
+        "peak_absolute_difference": 0.06063091581928763
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.056322081182393596
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 16000.0,
+        "hardware_resolution_reference_hz": 16000.937647772807,
+        "integrated_absolute_psd_difference": 0.0016943669604859214,
+        "relative_integrated_absolute_psd_difference": 0.9989679401927444,
+        "reference_power": 0.0016961174551397558,
+        "hardware_power": 1.7505630834152277e-06
+      },
+      "baseline_waveform": {
+        "samples": 3,
+        "rmse": 0.06037335728181147,
+        "normalized_rmse_reference": 1.0346785212600371,
+        "correlation": -0.6843242346017747,
+        "reference_rms": 0.05834987007199923,
+        "hardware_calibrated_rms": 0.0020277888896056344,
+        "mean_difference": 0.06037267328160495,
+        "peak_absolute_difference": 0.06063091581928763
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 16000.0,
+        "hardware_resolution_reference_hz": 16000.937647772807,
+        "integrated_absolute_psd_difference": 0.0016943669604859214,
+        "relative_integrated_absolute_psd_difference": 0.9989679401927444,
+        "reference_power": 0.0016961174551397558,
+        "hardware_power": 1.7505630834152277e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 21,
+      "name": "sweep-same-period-prefix-1",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 1 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        8.021094322,
+        8.028966904
+      ],
+      "mapped_hardware_interval_s": [
+        111.78720312649406,
+        111.79507616985087
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 378,
+        "rmse": 0.017243810366494697,
+        "normalized_rmse_reference": 0.38924276796516194,
+        "correlation": 0.9425014220927475,
+        "reference_rms": 0.04430091394283286,
+        "hardware_calibrated_rms": 0.0430567606442808,
+        "mean_difference": 0.007358927649437983,
+        "peak_absolute_difference": 0.061212955235486206
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.001244153298552056
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 126.99156863311751,
+        "integrated_absolute_psd_difference": 0.00016414615577599155,
+        "relative_integrated_absolute_psd_difference": 0.1395709542601259,
+        "reference_power": 0.0011760767607138626,
+        "hardware_power": 0.00133277237993097
+      },
+      "baseline_waveform": {
+        "samples": 378,
+        "rmse": 0.017243810366494697,
+        "normalized_rmse_reference": 0.3892427679651619,
+        "correlation": 0.9425014220927487,
+        "reference_rms": 0.04430091394283286,
+        "hardware_calibrated_rms": 0.0430567606442808,
+        "mean_difference": 0.007358927649437983,
+        "peak_absolute_difference": 0.061212955235486206
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 126.99156863311751,
+        "integrated_absolute_psd_difference": 0.00016414615577599155,
+        "relative_integrated_absolute_psd_difference": 0.1395709542601259,
+        "reference_power": 0.0011760767607138626,
+        "hardware_power": 0.00133277237993097
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 22,
+      "name": "sweep-same-period-prefix-2",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 2 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        8.326254845,
+        8.341939926
+      ],
+      "mapped_hardware_interval_s": [
+        112.09238153281186,
+        112.10806753300443
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 753,
+        "rmse": 0.01337720412460002,
+        "normalized_rmse_reference": 0.13242179367811985,
+        "correlation": 0.9905437424772794,
+        "reference_rms": 0.10101965660664766,
+        "hardware_calibrated_rms": 0.10297741251236021,
+        "mean_difference": 0.0008604331165351913,
+        "peak_absolute_difference": 0.06026255448473675
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.001957755905712552
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.745019920318725,
+        "hardware_resolution_reference_hz": 63.748755568815966,
+        "integrated_absolute_psd_difference": 0.00033961580819527354,
+        "relative_integrated_absolute_psd_difference": 0.032400886373005026,
+        "reference_power": 0.010481682639343666,
+        "hardware_power": 0.010595813645060386
+      },
+      "baseline_waveform": {
+        "samples": 753,
+        "rmse": 0.01337720412460002,
+        "normalized_rmse_reference": 0.1324217936781199,
+        "correlation": 0.9905437424772808,
+        "reference_rms": 0.10101965660664766,
+        "hardware_calibrated_rms": 0.10297741251236021,
+        "mean_difference": 0.0008604331165351913,
+        "peak_absolute_difference": 0.06026255448473675
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.745019920318725,
+        "hardware_resolution_reference_hz": 63.748755568815966,
+        "integrated_absolute_psd_difference": 0.00033961580819527354,
+        "relative_integrated_absolute_psd_difference": 0.032400886373005026,
+        "reference_power": 0.010481682639343666,
+        "hardware_power": 0.010595813645060386
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 23,
+      "name": "sweep-same-period-prefix-3",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 3 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        8.639227867,
+        8.662725449
+      ],
+      "mapped_hardware_interval_s": [
+        112.40537289596541,
+        112.42887185499389
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1128,
+        "rmse": 0.011664383126163833,
+        "normalized_rmse_reference": 0.10636785346426546,
+        "correlation": 0.994290473172541,
+        "reference_rms": 0.10966079267626203,
+        "hardware_calibrated_rms": 0.10980845810331039,
+        "mean_difference": 0.0009920622704132015,
+        "peak_absolute_difference": 0.06385563671694652
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 2,
+        "rmse": 0.0011331355113968309
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 42.5531914893617,
+        "hardware_resolution_reference_hz": 42.55568523343832,
+        "integrated_absolute_psd_difference": 0.0006498037182207466,
+        "relative_integrated_absolute_psd_difference": 0.03973669325948097,
+        "reference_power": 0.016352737606461675,
+        "hardware_power": 0.01687022316615351
+      },
+      "baseline_waveform": {
+        "samples": 1128,
+        "rmse": 0.011664383126163833,
+        "normalized_rmse_reference": 0.10636785346426546,
+        "correlation": 0.9942904731725415,
+        "reference_rms": 0.10966079267626203,
+        "hardware_calibrated_rms": 0.10980845810331039,
+        "mean_difference": 0.0009920622704132015,
+        "peak_absolute_difference": 0.06385563671694652
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 42.5531914893617,
+        "hardware_resolution_reference_hz": 42.55568523343832,
+        "integrated_absolute_psd_difference": 0.0006498037182207466,
+        "relative_integrated_absolute_psd_difference": 0.03973669325948097,
+        "reference_power": 0.016352737606461675,
+        "hardware_power": 0.01687022316615351
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 24,
+      "name": "sweep-same-period-prefix-4",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 4 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        8.96001339,
+        8.991323471
+      ],
+      "mapped_hardware_interval_s": [
+        112.72617721795487,
+        112.75748913381909
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1503,
+        "rmse": 0.01046638764776071,
+        "normalized_rmse_reference": 0.09553027362320783,
+        "correlation": 0.9954856295065827,
+        "reference_rms": 0.109560951212622,
+        "hardware_calibrated_rms": 0.11015878145317486,
+        "mean_difference": 0.0004726077112497783,
+        "peak_absolute_difference": 0.062465426899010315
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 2,
+        "rmse": 0.0006532722920287124
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 31.936127744510976,
+        "hardware_resolution_reference_hz": 31.93799929695171,
+        "integrated_absolute_psd_difference": 0.00033740200408425414,
+        "relative_integrated_absolute_psd_difference": 0.021804819224584184,
+        "reference_power": 0.015473735443944656,
+        "hardware_power": 0.01568085759504894
+      },
+      "baseline_waveform": {
+        "samples": 1503,
+        "rmse": 0.04214962836766278,
+        "normalized_rmse_reference": 0.37550006761186294,
+        "correlation": 0.930301640690628,
+        "reference_rms": 0.11224932297810103,
+        "hardware_calibrated_rms": 0.11015878145317486,
+        "mean_difference": 0.007231469544874194,
+        "peak_absolute_difference": 0.27842153286217897
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 31.936127744510976,
+        "hardware_resolution_reference_hz": 31.93799929695171,
+        "integrated_absolute_psd_difference": 0.00033782371569927454,
+        "relative_integrated_absolute_psd_difference": 0.021832939473654632,
+        "reference_power": 0.01547312106585188,
+        "hardware_power": 0.01568085759504894
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 25,
+      "name": "sweep-same-period-prefix-5",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 5 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        9.288611412,
+        9.327733994
+      ],
+      "mapped_hardware_interval_s": [
+        113.05479449678009,
+        113.09391937148021
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 1878,
+        "rmse": 0.010351096693586727,
+        "normalized_rmse_reference": 0.10406258201263889,
+        "correlation": 0.9949989125042998,
+        "reference_rms": 0.09946991986350616,
+        "hardware_calibrated_rms": 0.10077250724710007,
+        "mean_difference": 0.00252752354049736,
+        "peak_absolute_difference": 0.060833444970084444
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 3,
+        "rmse": 0.0053834391913131835
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 25.559105431309906,
+        "hardware_resolution_reference_hz": 25.560603271202567,
+        "integrated_absolute_psd_difference": 0.00029156560943249875,
+        "relative_integrated_absolute_psd_difference": 0.01977736642147894,
+        "reference_power": 0.014742388001460492,
+        "hardware_power": 0.014818249329248932
+      },
+      "baseline_waveform": {
+        "samples": 1878,
+        "rmse": 0.07119895669133529,
+        "normalized_rmse_reference": 0.6221478684135398,
+        "correlation": 0.7967711794858721,
+        "reference_rms": 0.11444057000933024,
+        "hardware_calibrated_rms": 0.10077250724710007,
+        "mean_difference": 0.014523125499238376,
+        "peak_absolute_difference": 0.271263029561252
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 25.559105431309906,
+        "hardware_resolution_reference_hz": 25.560603271202567,
+        "integrated_absolute_psd_difference": 0.004452806112464955,
+        "relative_integrated_absolute_psd_difference": 0.2954318457594001,
+        "reference_power": 0.015072194065670643,
+        "hardware_power": 0.014818249329248932
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 26,
+      "name": "sweep-same-period-prefix-6",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 6 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        9.625021935,
+        9.671957016
+      ],
+      "mapped_hardware_interval_s": [
+        113.39122473444118,
+        113.43816256597708
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 2252,
+        "rmse": 0.00962314089724563,
+        "normalized_rmse_reference": 0.10583636965184835,
+        "correlation": 0.9950277943985889,
+        "reference_rms": 0.09092470696889182,
+        "hardware_calibrated_rms": 0.0922774259397568,
+        "mean_difference": 0.002975506015420535,
+        "peak_absolute_difference": 0.06024509132649759
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 3,
+        "rmse": 0.0043444090758514966
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 21.314387211367674,
+        "hardware_resolution_reference_hz": 21.306175296634898,
+        "integrated_absolute_psd_difference": 0.0003280901190253741,
+        "relative_integrated_absolute_psd_difference": 0.025943678189738188,
+        "reference_power": 0.012646245325196313,
+        "hardware_power": 0.01284350855384698
+      },
+      "baseline_waveform": {
+        "samples": 2252,
+        "rmse": 0.06727677402333601,
+        "normalized_rmse_reference": 0.6278478928069675,
+        "correlation": 0.7829550131210559,
+        "reference_rms": 0.10715457484862552,
+        "hardware_calibrated_rms": 0.0922774259397568,
+        "mean_difference": 0.005509074809305136,
+        "peak_absolute_difference": 0.2570556299856688
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 21.314387211367674,
+        "hardware_resolution_reference_hz": 21.306175296634898,
+        "integrated_absolute_psd_difference": 0.007687848563692482,
+        "relative_integrated_absolute_psd_difference": 0.5134278715476092,
+        "reference_power": 0.014973570757892917,
+        "hardware_power": 0.01284350855384698
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 27,
+      "name": "sweep-same-period-prefix-7",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 7 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        9.969244957,
+        10.023992538
+      ],
+      "mapped_hardware_interval_s": [
+        113.73546792893806,
+        113.79021871830977
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 2628,
+        "rmse": 0.009129127999237105,
+        "normalized_rmse_reference": 0.10845005655654137,
+        "correlation": 0.9948707747611936,
+        "reference_rms": 0.0841781764722045,
+        "hardware_calibrated_rms": 0.08542371647138713,
+        "mean_difference": 0.0030608785409574502,
+        "peak_absolute_difference": 0.06297178660492779
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.003426815000452079
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 18.264840182648403,
+        "hardware_resolution_reference_hz": 18.265910556818273,
+        "integrated_absolute_psd_difference": 0.00042122937085473187,
+        "relative_integrated_absolute_psd_difference": 0.04324783350898197,
+        "reference_power": 0.009739895312148953,
+        "hardware_power": 0.010033098988047967
+      },
+      "baseline_waveform": {
+        "samples": 2628,
+        "rmse": 0.062396113562616554,
+        "normalized_rmse_reference": 0.6280414877487838,
+        "correlation": 0.7816083732618208,
+        "reference_rms": 0.09935030532182766,
+        "hardware_calibrated_rms": 0.08542371647138713,
+        "mean_difference": 0.0036093704616492793,
+        "peak_absolute_difference": 0.276131245444054
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 18.264840182648403,
+        "hardware_resolution_reference_hz": 18.265910556818273,
+        "integrated_absolute_psd_difference": 0.009917203646656558,
+        "relative_integrated_absolute_psd_difference": 0.6925798560055597,
+        "reference_power": 0.014319220463404506,
+        "hardware_power": 0.010033098988047967
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 28,
+      "name": "sweep-same-period-prefix-8",
+      "group": "ch1",
+      "description": "Both triggers use period $100; only the first high-period bit changes. Read NR52 after 8 complete sweep intervals plus unchanged instruction overhead.",
+      "reference_interval_s": [
+        10.321280479,
+        10.383840561
+      ],
+      "mapped_hardware_interval_s": [
+        114.08752408127076,
+        114.15008782947835
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3003,
+        "rmse": 0.008432864504442295,
+        "normalized_rmse_reference": 0.10707934392425482,
+        "correlation": 0.994904601249726,
+        "reference_rms": 0.07875341961758267,
+        "hardware_calibrated_rms": 0.0799028889195168,
+        "mean_difference": 0.0025887002114087943,
+        "peak_absolute_difference": 0.05970291195110561
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0034141331558460797
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.98495269507773,
+        "integrated_absolute_psd_difference": 0.0004305592673826373,
+        "relative_integrated_absolute_psd_difference": 0.06088227737834874,
+        "reference_power": 0.007071996743928553,
+        "hardware_power": 0.007394327505091439
+      },
+      "baseline_waveform": {
+        "samples": 3003,
+        "rmse": 0.05837340324866408,
+        "normalized_rmse_reference": 0.6279774156430616,
+        "correlation": 0.7813730591944634,
+        "reference_rms": 0.09295462192519859,
+        "hardware_calibrated_rms": 0.0799028889195168,
+        "mean_difference": 0.002710506302453166,
+        "peak_absolute_difference": 0.2756815871615431
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.98495269507773,
+        "integrated_absolute_psd_difference": 0.009380841348139459,
+        "relative_integrated_absolute_psd_difference": 0.7404986412280722,
+        "reference_power": 0.012668276247721266,
+        "hardware_power": 0.007394327505091439
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 29,
+      "name": "original-pattern",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        10.681128502,
+        10.681443214
+      ],
+      "mapped_hardware_interval_s": [
+        114.44739319243934,
+        114.4477079228824
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.034889773620958485,
+        "normalized_rmse_reference": 1.0248271000477978,
+        "correlation": 0.04452913267470355,
+        "reference_rms": 0.03404454626476138,
+        "hardware_calibrated_rms": 0.0014607689699823192,
+        "mean_difference": 0.021097777556866443,
+        "peak_absolute_difference": 0.060991798045611396
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.032583777294779064
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0021225653759988678,
+        "relative_integrated_absolute_psd_difference": 0.9992466756295117,
+        "reference_power": 0.0021241655616834358,
+        "hardware_power": 1.6001486256714905e-06
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.034889773620958485,
+        "normalized_rmse_reference": 1.0248271000477978,
+        "correlation": 0.04452913267470355,
+        "reference_rms": 0.03404454626476138,
+        "hardware_calibrated_rms": 0.0014607689699823192,
+        "mean_difference": 0.021097777556866443,
+        "peak_absolute_difference": 0.060991798045611396
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0021225653759988678,
+        "relative_integrated_absolute_psd_difference": 0.9992466756295117,
+        "reference_power": 0.0021241655616834358,
+        "hardware_power": 1.6001486256714905e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 30,
+      "name": "operand-truth-000",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        11.213277817,
+        11.213592529
+      ],
+      "mapped_hardware_interval_s": [
+        114.9795736929781,
+        114.97988842342116
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.03436093593510203,
+        "normalized_rmse_reference": 1.0253193466634185,
+        "correlation": -0.16138119744930052,
+        "reference_rms": 0.03351242327272861,
+        "hardware_calibrated_rms": 0.0014019034065252535,
+        "mean_difference": 0.020722265884749128,
+        "peak_absolute_difference": 0.06022149579946693
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.032110519866203356
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0020571193154095267,
+        "relative_integrated_absolute_psd_difference": 0.9993742750906415,
+        "reference_power": 0.0020584073121383373,
+        "hardware_power": 1.2879631840485787e-06
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.03436093593510203,
+        "normalized_rmse_reference": 1.0253193466634185,
+        "correlation": -0.16138119744930052,
+        "reference_rms": 0.03351242327272861,
+        "hardware_calibrated_rms": 0.0014019034065252535,
+        "mean_difference": 0.020722265884749128,
+        "peak_absolute_difference": 0.06022149579946693
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0020571193154095267,
+        "relative_integrated_absolute_psd_difference": 0.9993742750906415,
+        "reference_power": 0.0020584073121383373,
+        "hardware_power": 1.2879631840485787e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 31,
+      "name": "operand-truth-001",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        11.745427132,
+        11.745741844
+      ],
+      "mapped_hardware_interval_s": [
+        115.51175419351684,
+        115.5120689239599
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.03486496852726446,
+        "normalized_rmse_reference": 1.0212440660714028,
+        "correlation": 0.3572083633156269,
+        "reference_rms": 0.034139702433117286,
+        "hardware_calibrated_rms": 0.001423626895563806,
+        "mean_difference": 0.021095139313905036,
+        "peak_absolute_difference": 0.060600910446225426
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03271607553755348
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002134928738576657,
+        "relative_integrated_absolute_psd_difference": 0.9994292576612268,
+        "reference_power": 0.0021361479286414156,
+        "hardware_power": 1.2191582328778374e-06
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.03486496852726446,
+        "normalized_rmse_reference": 1.0212440660714028,
+        "correlation": 0.3572083633156269,
+        "reference_rms": 0.034139702433117286,
+        "hardware_calibrated_rms": 0.001423626895563806,
+        "mean_difference": 0.021095139313905036,
+        "peak_absolute_difference": 0.060600910446225426
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002134928738576657,
+        "relative_integrated_absolute_psd_difference": 0.9994292576612268,
+        "reference_power": 0.0021361479286414156,
+        "hardware_power": 1.2191582328778374e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 32,
+      "name": "operand-truth-010",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        12.277576447,
+        12.277891159
+      ],
+      "mapped_hardware_interval_s": [
+        116.0439346940556,
+        116.04424942449864
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.0376226494698299,
+        "normalized_rmse_reference": 1.023480994946916,
+        "correlation": 0.20607412769006103,
+        "reference_rms": 0.03675949983983946,
+        "hardware_calibrated_rms": 0.0014159412068815228,
+        "mean_difference": 0.024644874227457408,
+        "peak_absolute_difference": 0.06003408070020008
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03534355863295794
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002266148757983923,
+        "relative_integrated_absolute_psd_difference": 0.9994533325358383,
+        "reference_power": 0.0022673882653772267,
+        "hardware_power": 1.2394703569339461e-06
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.0376226494698299,
+        "normalized_rmse_reference": 1.023480994946916,
+        "correlation": 0.20607412769006103,
+        "reference_rms": 0.03675949983983946,
+        "hardware_calibrated_rms": 0.0014159412068815228,
+        "mean_difference": 0.024644874227457408,
+        "peak_absolute_difference": 0.06003408070020008
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002266148757983923,
+        "relative_integrated_absolute_psd_difference": 0.9994533325358383,
+        "reference_power": 0.0022673882653772267,
+        "hardware_power": 1.2394703569339461e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 33,
+      "name": "operand-truth-011",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        12.809725761,
+        12.810040474
+      ],
+      "mapped_hardware_interval_s": [
+        116.57611519359428,
+        116.5764299250374
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.03485730706360715,
+        "normalized_rmse_reference": 1.0238734507584564,
+        "correlation": -0.1246812489100528,
+        "reference_rms": 0.03404454626476138,
+        "hardware_calibrated_rms": 0.0013568060167703112,
+        "mean_difference": 0.020991267134272403,
+        "peak_absolute_difference": 0.06061920185835267
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03268774024799107
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0021284055959182625,
+        "relative_integrated_absolute_psd_difference": 0.9993981205747262,
+        "reference_power": 0.00212968741095318,
+        "hardware_power": 1.2817824367150154e-06
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.03485730706360715,
+        "normalized_rmse_reference": 1.0238734507584564,
+        "correlation": -0.1246812489100528,
+        "reference_rms": 0.03404454626476138,
+        "hardware_calibrated_rms": 0.0013568060167703112,
+        "mean_difference": 0.020991267134272403,
+        "peak_absolute_difference": 0.06061920185835267
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0021284055959182625,
+        "relative_integrated_absolute_psd_difference": 0.9993981205747262,
+        "reference_power": 0.00212968741095318,
+        "hardware_power": 1.2817824367150154e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 34,
+      "name": "operand-truth-100",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        13.341875076,
+        13.342189789
+      ],
+      "mapped_hardware_interval_s": [
+        117.10829569413303,
+        117.10861042557616
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.03415622621148792,
+        "normalized_rmse_reference": 1.016005894706997,
+        "correlation": 0.5983849349169063,
+        "reference_rms": 0.033618137837023214,
+        "hardware_calibrated_rms": 0.0011652886694120271,
+        "mean_difference": 0.02054262519693123,
+        "peak_absolute_difference": 0.05959437753263486
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03245284916761119
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0020708189704065198,
+        "relative_integrated_absolute_psd_difference": 0.9997085929761833,
+        "reference_power": 0.002071422597500724,
+        "hardware_power": 6.036088821697646e-07
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.03415622621148792,
+        "normalized_rmse_reference": 1.016005894706997,
+        "correlation": 0.5983849349169063,
+        "reference_rms": 0.033618137837023214,
+        "hardware_calibrated_rms": 0.0011652886694120271,
+        "mean_difference": 0.02054262519693123,
+        "peak_absolute_difference": 0.05959437753263486
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0020708189704065198,
+        "relative_integrated_absolute_psd_difference": 0.9997085929761833,
+        "reference_power": 0.002071422597500724,
+        "hardware_power": 6.036088821697646e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 35,
+      "name": "operand-truth-101",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        13.874024391,
+        13.874339104
+      ],
+      "mapped_hardware_interval_s": [
+        117.64047619467178,
+        117.6407909261149
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.034779827202438406,
+        "normalized_rmse_reference": 1.0187501566709667,
+        "correlation": 0.22643390961263443,
+        "reference_rms": 0.034139702433117286,
+        "hardware_calibrated_rms": 0.0011624679427310093,
+        "mean_difference": 0.020856734343072014,
+        "peak_absolute_difference": 0.060565187168672305
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.032977234490386274
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002135333422903508,
+        "relative_integrated_absolute_psd_difference": 0.999618703495677,
+        "reference_power": 0.0021361479286414156,
+        "hardware_power": 8.144860179707783e-07
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.034779827202438406,
+        "normalized_rmse_reference": 1.0187501566709667,
+        "correlation": 0.22643390961263443,
+        "reference_rms": 0.034139702433117286,
+        "hardware_calibrated_rms": 0.0011624679427310093,
+        "mean_difference": 0.020856734343072014,
+        "peak_absolute_difference": 0.060565187168672305
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002135333422903508,
+        "relative_integrated_absolute_psd_difference": 0.999618703495677,
+        "reference_power": 0.0021361479286414156,
+        "hardware_power": 8.144860179707783e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 36,
+      "name": "operand-truth-110",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        14.406173706,
+        14.406488419
+      ],
+      "mapped_hardware_interval_s": [
+        118.17265669521053,
+        118.17297142665366
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.034188527512152546,
+        "normalized_rmse_reference": 1.0201747344237602,
+        "correlation": -0.11417457091833658,
+        "reference_rms": 0.03351242327272861,
+        "hardware_calibrated_rms": 0.0011359290498649513,
+        "mean_difference": 0.02046050774104526,
+        "peak_absolute_difference": 0.05944739806442585
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03237649422286366
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002057509137987511,
+        "relative_integrated_absolute_psd_difference": 0.9995636557713676,
+        "reference_power": 0.0020584073121383373,
+        "hardware_power": 8.981533488174811e-07
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.034188527512152546,
+        "normalized_rmse_reference": 1.0201747344237602,
+        "correlation": -0.11417457091833658,
+        "reference_rms": 0.03351242327272861,
+        "hardware_calibrated_rms": 0.0011359290498649513,
+        "mean_difference": 0.02046050774104526,
+        "peak_absolute_difference": 0.05944739806442585
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002057509137987511,
+        "relative_integrated_absolute_psd_difference": 0.9995636557713676,
+        "reference_power": 0.0020584073121383373,
+        "hardware_power": 8.981533488174811e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 37,
+      "name": "operand-truth-111",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        14.938323021,
+        14.938637733
+      ],
+      "mapped_hardware_interval_s": [
+        118.70483719574929,
+        118.70515192619234
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.03480612666801059,
+        "normalized_rmse_reference": 1.0193112560966084,
+        "correlation": -0.16608670520442542,
+        "reference_rms": 0.034146710791067465,
+        "hardware_calibrated_rms": 0.0010939298361573853,
+        "mean_difference": 0.020788306303325087,
+        "peak_absolute_difference": 0.06059950832661741
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03305278095491008
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002136297009329621,
+        "relative_integrated_absolute_psd_difference": 0.9996175661578732,
+        "reference_power": 0.002137114314167852,
+        "hardware_power": 8.172882754129759e-07
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.03480612666801059,
+        "normalized_rmse_reference": 1.0193112560966084,
+        "correlation": -0.16608670520442542,
+        "reference_rms": 0.034146710791067465,
+        "hardware_calibrated_rms": 0.0010939298361573853,
+        "mean_difference": 0.020788306303325087,
+        "peak_absolute_difference": 0.06059950832661741
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002136297009329621,
+        "relative_integrated_absolute_psd_difference": 0.9996175661578732,
+        "reference_power": 0.002137114314167852,
+        "hardware_power": 8.172882754129759e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 38,
+      "name": "original-pattern-equal-time-NOP",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        15.470472336,
+        15.470787048
+      ],
+      "mapped_hardware_interval_s": [
+        119.23701769628804,
+        119.2373324267311
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.03757280154291767,
+        "normalized_rmse_reference": 1.0210527287369242,
+        "correlation": -0.5725938393768015,
+        "reference_rms": 0.03679810110237545,
+        "hardware_calibrated_rms": 0.001076669737242343,
+        "mean_difference": 0.0243246094139938,
+        "peak_absolute_difference": 0.0597276260050274
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0357214313651331
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0022711320905315618,
+        "relative_integrated_absolute_psd_difference": 0.9995507970989908,
+        "reference_power": 0.0022721527481375614,
+        "hardware_power": 1.0206331662206574e-06
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.03757280154291767,
+        "normalized_rmse_reference": 1.0210527287369242,
+        "correlation": -0.5725938393768015,
+        "reference_rms": 0.03679810110237545,
+        "hardware_calibrated_rms": 0.001076669737242343,
+        "mean_difference": 0.0243246094139938,
+        "peak_absolute_difference": 0.0597276260050274
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.0022711320905315618,
+        "relative_integrated_absolute_psd_difference": 0.9995507970989908,
+        "reference_power": 0.0022721527481375614,
+        "hardware_power": 1.0206331662206574e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 39,
+      "name": "original-pattern-delayed-DAC-off",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        16.002621651,
+        16.002943993
+      ],
+      "mapped_hardware_interval_s": [
+        119.76919819682678,
+        119.76952055771699
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 16,
+        "rmse": 0.03363248742206883,
+        "normalized_rmse_reference": 1.0188195259778985,
+        "correlation": -0.12458580046403615,
+        "reference_rms": 0.033011231689721685,
+        "hardware_calibrated_rms": 0.0010726005706791102,
+        "mean_difference": 0.0195052719081188,
+        "peak_absolute_difference": 0.060605462208071746
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.031938631119042576
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3000.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002084251617216613,
+        "relative_integrated_absolute_psd_difference": 0.9995669276166741,
+        "reference_power": 0.002085154640106207,
+        "hardware_power": 8.891491466184977e-07
+      },
+      "baseline_waveform": {
+        "samples": 16,
+        "rmse": 0.03363248742206883,
+        "normalized_rmse_reference": 1.0188195259778987,
+        "correlation": -0.12458580046403628,
+        "reference_rms": 0.033011231689721685,
+        "hardware_calibrated_rms": 0.0010726005706791102,
+        "mean_difference": 0.0195052719081188,
+        "peak_absolute_difference": 0.060605462208071746
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3000.0,
+        "hardware_resolution_reference_hz": 3200.1875295545615,
+        "integrated_absolute_psd_difference": 0.002084251617216613,
+        "relative_integrated_absolute_psd_difference": 0.9995669276166741,
+        "reference_power": 0.002085154640106207,
+        "hardware_power": 8.891491466184977e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 40,
+      "name": "original-pattern-safe-control",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        16.534778595,
+        16.535102844
+      ],
+      "mapped_hardware_interval_s": [
+        120.30138632681262,
+        120.30171059481458
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 15,
+        "rmse": 0.03742129354906474,
+        "normalized_rmse_reference": 1.0217586694894554,
+        "correlation": -0.04241780490021525,
+        "reference_rms": 0.03662439543357448,
+        "hardware_calibrated_rms": 0.0012558530380325247,
+        "mean_difference": 0.024388259573909547,
+        "peak_absolute_difference": 0.05970781632578896
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.035368542395541956
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3000.1758089574014,
+        "integrated_absolute_psd_difference": 0.002249686850145404,
+        "relative_integrated_absolute_psd_difference": 0.9995267774291545,
+        "reference_power": 0.0022507519567727236,
+        "hardware_power": 1.0372668117451302e-06
+      },
+      "baseline_waveform": {
+        "samples": 15,
+        "rmse": 0.03742129354906474,
+        "normalized_rmse_reference": 1.0217586694894554,
+        "correlation": -0.04241780490021525,
+        "reference_rms": 0.03662439543357448,
+        "hardware_calibrated_rms": 0.0012558530380325247,
+        "mean_difference": 0.024388259573909547,
+        "peak_absolute_difference": 0.05970781632578896
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3200.0,
+        "hardware_resolution_reference_hz": 3000.1758089574014,
+        "integrated_absolute_psd_difference": 0.002249686850145404,
+        "relative_integrated_absolute_psd_difference": 0.9995267774291545,
+        "reference_power": 0.0022507519567727236,
+        "hardware_power": 1.0372668117451302e-06
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 41,
+      "name": "operand-block08-truth-010",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        17.066937447,
+        17.067282677
+      ],
+      "mapped_hardware_interval_s": [
+        120.83357636491027,
+        120.83392161514178
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 17,
+        "rmse": 0.035637266477873165,
+        "normalized_rmse_reference": 1.019236968492603,
+        "correlation": -0.2461538812951866,
+        "reference_rms": 0.03496465255825519,
+        "hardware_calibrated_rms": 0.0010684623589819991,
+        "mean_difference": 0.021822093395980256,
+        "peak_absolute_difference": 0.0606131753895675
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.033896190199273195
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2823.5294117647063,
+        "hardware_resolution_reference_hz": 2823.6948790187307,
+        "integrated_absolute_psd_difference": 0.0022181268109580745,
+        "relative_integrated_absolute_psd_difference": 0.9996189610443651,
+        "reference_power": 0.0022189723258557014,
+        "hardware_power": 8.454950380278137e-07
+      },
+      "baseline_waveform": {
+        "samples": 17,
+        "rmse": 0.035637266477873165,
+        "normalized_rmse_reference": 1.019236968492603,
+        "correlation": -0.2461538812951867,
+        "reference_rms": 0.03496465255825519,
+        "hardware_calibrated_rms": 0.0010684623589819991,
+        "mean_difference": 0.021822093395980256,
+        "peak_absolute_difference": 0.0606131753895675
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2823.5294117647063,
+        "hardware_resolution_reference_hz": 2823.6948790187307,
+        "integrated_absolute_psd_difference": 0.0022181268109580745,
+        "relative_integrated_absolute_psd_difference": 0.9996189610443651,
+        "reference_power": 0.0022189723258557014,
+        "hardware_power": 8.454950380278137e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 42,
+      "name": "operand-block08-truth-100",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        17.599117279,
+        17.599462509
+      ],
+      "mapped_hardware_interval_s": [
+        121.36578738423741,
+        121.36613263446891
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 17,
+        "rmse": 0.037671939485278964,
+        "normalized_rmse_reference": 1.015515609959475,
+        "correlation": 0.1331118837093248,
+        "reference_rms": 0.037096366728210414,
+        "hardware_calibrated_rms": 0.0009433503535862009,
+        "mean_difference": 0.024722791970220218,
+        "peak_absolute_difference": 0.05932581168739226
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03615301637462422
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2823.5294117647063,
+        "hardware_resolution_reference_hz": 2823.6948790187307,
+        "integrated_absolute_psd_difference": 0.002232444902439593,
+        "relative_integrated_absolute_psd_difference": 0.9997477862523415,
+        "reference_power": 0.0022330080977804863,
+        "hardware_power": 5.631837006539672e-07
+      },
+      "baseline_waveform": {
+        "samples": 17,
+        "rmse": 0.037671939485278964,
+        "normalized_rmse_reference": 1.0155156099594749,
+        "correlation": 0.13311188370932484,
+        "reference_rms": 0.037096366728210414,
+        "hardware_calibrated_rms": 0.0009433503535862009,
+        "mean_difference": 0.024722791970220218,
+        "peak_absolute_difference": 0.05932581168739226
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2823.5294117647063,
+        "hardware_resolution_reference_hz": 2823.6948790187307,
+        "integrated_absolute_psd_difference": 0.002232444902439593,
+        "relative_integrated_absolute_psd_difference": 0.9997477862523415,
+        "reference_power": 0.0022330080977804863,
+        "hardware_power": 5.631837006539672e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 43,
+      "name": "operand-block08-truth-101",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        18.131297112,
+        18.131642342
+      ],
+      "mapped_hardware_interval_s": [
+        121.8979984045646,
+        121.89834365479611
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 16,
+        "rmse": 0.03948077998977251,
+        "normalized_rmse_reference": 1.0133929895882368,
+        "correlation": 0.4026117061270063,
+        "reference_rms": 0.03895900247525335,
+        "hardware_calibrated_rms": 0.0009044591856946026,
+        "mean_difference": 0.02664607953730336,
+        "peak_absolute_difference": 0.06041521469167934
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03805454328955875
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3000.0,
+        "hardware_resolution_reference_hz": 2823.6948790187307,
+        "integrated_absolute_psd_difference": 0.00237617749413332,
+        "relative_integrated_absolute_psd_difference": 0.9997759744050433,
+        "reference_power": 0.002376709937991218,
+        "hardware_power": 5.204969141211745e-07
+      },
+      "baseline_waveform": {
+        "samples": 16,
+        "rmse": 0.03948077998977251,
+        "normalized_rmse_reference": 1.0133929895882368,
+        "correlation": 0.40261170612700636,
+        "reference_rms": 0.03895900247525335,
+        "hardware_calibrated_rms": 0.0009044591856946026,
+        "mean_difference": 0.02664607953730336,
+        "peak_absolute_difference": 0.06041521469167934
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 3000.0,
+        "hardware_resolution_reference_hz": 2823.6948790187307,
+        "integrated_absolute_psd_difference": 0.00237617749413332,
+        "relative_integrated_absolute_psd_difference": 0.9997759744050433,
+        "reference_power": 0.002376709937991218,
+        "hardware_power": 5.204969141211745e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 44,
+      "name": "operand-block0c-truth-100",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        18.663476944,
+        18.663852692
+      ],
+      "mapped_hardware_interval_s": [
+        122.43020942389174,
+        122.4305851939117
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 18,
+        "rmse": 0.039213038466667745,
+        "normalized_rmse_reference": 1.017733551758983,
+        "correlation": -0.24284973374025565,
+        "reference_rms": 0.03852976881708826,
+        "hardware_calibrated_rms": 0.000980585143371867,
+        "mean_difference": 0.0266211471549075,
+        "peak_absolute_difference": 0.059801230077901855
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.03754918367371639
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2666.6666666666665,
+        "hardware_resolution_reference_hz": 2666.8229412954674,
+        "integrated_absolute_psd_difference": 0.0022941939547111634,
+        "relative_integrated_absolute_psd_difference": 0.9996476840252138,
+        "reference_power": 0.0022950025207614023,
+        "hardware_power": 8.085506660284378e-07
+      },
+      "baseline_waveform": {
+        "samples": 18,
+        "rmse": 0.039213038466667745,
+        "normalized_rmse_reference": 1.017733551758983,
+        "correlation": -0.24284973374025565,
+        "reference_rms": 0.03852976881708826,
+        "hardware_calibrated_rms": 0.000980585143371867,
+        "mean_difference": 0.0266211471549075,
+        "peak_absolute_difference": 0.059801230077901855
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2666.6666666666665,
+        "hardware_resolution_reference_hz": 2666.8229412954674,
+        "integrated_absolute_psd_difference": 0.0022941939547111634,
+        "relative_integrated_absolute_psd_difference": 0.9996476840252138,
+        "reference_power": 0.0022950025207614023,
+        "hardware_power": 8.085506660284378e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 45,
+      "name": "operand-block0c-truth-101",
+      "group": "ch3",
+      "description": "Physical hypothesis discriminator; no assumed pass result.",
+      "reference_interval_s": [
+        19.195687294,
+        19.196063042
+      ],
+      "mapped_hardware_interval_s": [
+        122.96245096300731,
+        122.96282673302727
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 19,
+        "rmse": 0.0386304169389716,
+        "normalized_rmse_reference": 1.0152093748066522,
+        "correlation": 0.09114209346145925,
+        "reference_rms": 0.038051674755592964,
+        "hardware_calibrated_rms": 0.000927996078306596,
+        "mean_difference": 0.025594111319356076,
+        "peak_absolute_difference": 0.060043297868959976
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.037123678677286366
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2526.315789473684,
+        "hardware_resolution_reference_hz": 2666.8229412954674,
+        "integrated_absolute_psd_difference": 0.002340626542998216,
+        "relative_integrated_absolute_psd_difference": 0.9997532135568725,
+        "reference_power": 0.0023412043204851032,
+        "hardware_power": 5.68101524884854e-07
+      },
+      "baseline_waveform": {
+        "samples": 19,
+        "rmse": 0.0386304169389716,
+        "normalized_rmse_reference": 1.0152093748066522,
+        "correlation": 0.09114209346145927,
+        "reference_rms": 0.038051674755592964,
+        "hardware_calibrated_rms": 0.000927996078306596,
+        "mean_difference": 0.025594111319356076,
+        "peak_absolute_difference": 0.060043297868959976
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 2526.315789473684,
+        "hardware_resolution_reference_hz": 2666.8229412954674,
+        "integrated_absolute_psd_difference": 0.002340626542998216,
+        "relative_integrated_absolute_psd_difference": 0.9997532135568725,
+        "reference_power": 0.0023412043204851032,
+        "hardware_power": 5.68101524884854e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 46,
+      "name": "sweep-hazard-shift-1-000-38e",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        19.727897644,
+        26.913918495
+      ],
+      "mapped_hardware_interval_s": [
+        123.4946925021229,
+        130.6811344754008
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 344929,
+        "rmse": 0.0010181573487900734,
+        "normalized_rmse_reference": 0.8731498491295174,
+        "correlation": 0.8262935584077263,
+        "reference_rms": 0.0011660740133038346,
+        "hardware_calibrated_rms": 0.0014743888376532132,
+        "mean_difference": 0.000687666303630971,
+        "peak_absolute_difference": 0.059477156375387065
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 430,
+        "rmse": 0.000836033091201222
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.13915907331653762,
+        "hardware_resolution_reference_hz": 0.13915915959552985,
+        "integrated_absolute_psd_difference": 4.4228145036943864e-07,
+        "relative_integrated_absolute_psd_difference": 2169864570.6216383,
+        "reference_power": 2.0382905751704617e-16,
+        "hardware_power": 4.422844660182023e-07
+      },
+      "baseline_waveform": {
+        "samples": 344929,
+        "rmse": 0.0010181573487900734,
+        "normalized_rmse_reference": 0.8731498491294994,
+        "correlation": 0.8262935584136528,
+        "reference_rms": 0.0011660740133038346,
+        "hardware_calibrated_rms": 0.0014743888376532132,
+        "mean_difference": 0.000687666303630971,
+        "peak_absolute_difference": 0.059477156375387065
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.13915907331653762,
+        "hardware_resolution_reference_hz": 0.13915915959552985,
+        "integrated_absolute_psd_difference": 4.4228145036943864e-07,
+        "relative_integrated_absolute_psd_difference": 2169864570.6216383,
+        "reference_power": 2.0382905751704617e-16,
+        "hardware_power": 4.422844660182023e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 47,
+      "name": "sweep-hazard-shift-2-000-3fb",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        30.760679245,
+        38.807017326
+      ],
+      "mapped_hardware_interval_s": [
+        134.5281206570664,
+        142.57493027750272
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 386224,
+        "rmse": 0.000824142524160217,
+        "normalized_rmse_reference": 0.7346922659200867,
+        "correlation": 0.8217060598094922,
+        "reference_rms": 0.0011217520074586719,
+        "hardware_calibrated_rms": 0.0013033170814599855,
+        "mean_difference": 0.0004012963042895393,
+        "peak_absolute_difference": 0.06012484497840255
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 481,
+        "rmse": 0.0006075118463832147
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12428021044782303,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 2.5798213212254697e-07,
+        "relative_integrated_absolute_psd_difference": 2148913293.2034335,
+        "reference_power": 1.2005236923169069e-16,
+        "hardware_power": 2.5798550376256734e-07
+      },
+      "baseline_waveform": {
+        "samples": 386224,
+        "rmse": 0.000824142524160217,
+        "normalized_rmse_reference": 0.7346922659200862,
+        "correlation": 0.8217060598091409,
+        "reference_rms": 0.0011217520074586719,
+        "hardware_calibrated_rms": 0.0013033170814599855,
+        "mean_difference": 0.0004012963042895393,
+        "peak_absolute_difference": 0.06012484497840255
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12428021044782303,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 2.5798213212254697e-07,
+        "relative_integrated_absolute_psd_difference": 2148913293.2034335,
+        "reference_power": 1.2005236923169069e-16,
+        "hardware_power": 2.5798550376256734e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 48,
+      "name": "sweep-hazard-shift-2-3fc-51f",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        43.075962067,
+        45.379214287
+      ],
+      "mapped_hardware_interval_s": [
+        146.84412519141074,
+        149.1475123888679
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 110556,
+        "rmse": 0.0012337110327131846,
+        "normalized_rmse_reference": 0.6001632402651395,
+        "correlation": 0.8571415555310344,
+        "reference_rms": 0.002055625786357967,
+        "hardware_calibrated_rms": 0.0022748153172972795,
+        "mean_difference": 0.00039074248124939,
+        "peak_absolute_difference": 0.058720935595963114
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 138,
+        "rmse": 0.0006897276452138691
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.4341691088679041,
+        "hardware_resolution_reference_hz": 0.43417098952007394,
+        "integrated_absolute_psd_difference": 2.2605936511755356e-07,
+        "relative_integrated_absolute_psd_difference": 3783418.474437924,
+        "reference_power": 5.975002940988113e-14,
+        "hardware_power": 2.2606273350160962e-07
+      },
+      "baseline_waveform": {
+        "samples": 110556,
+        "rmse": 0.0012337110327131846,
+        "normalized_rmse_reference": 0.6001632402651451,
+        "correlation": 0.8571415555311905,
+        "reference_rms": 0.002055625786357967,
+        "hardware_calibrated_rms": 0.0022748153172972795,
+        "mean_difference": 0.00039074248124939,
+        "peak_absolute_difference": 0.058720935595963114
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.4341691088679041,
+        "hardware_resolution_reference_hz": 0.43417098952007394,
+        "integrated_absolute_psd_difference": 2.2605936511755356e-07,
+        "relative_integrated_absolute_psd_difference": 3783418.474437924,
+        "reference_power": 5.975002940988113e-14,
+        "hardware_power": 2.2606273350160962e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 49,
+      "name": "sweep-hazard-shift-3-000-3fb",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        46.802326202,
+        54.848664284
+      ],
+      "mapped_hardware_interval_s": [
+        150.57070770247526,
+        158.6175173239116
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 386224,
+        "rmse": 0.0007547553894889642,
+        "normalized_rmse_reference": 0.6766300358676903,
+        "correlation": 0.8247697090112743,
+        "reference_rms": 0.0011154624380827244,
+        "hardware_calibrated_rms": 0.0012689239088357583,
+        "mean_difference": 0.00024841067827260444,
+        "peak_absolute_difference": 0.06010675097440079
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 481,
+        "rmse": 0.0005202284005146368
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12428021044782303,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.9965606000133885e-07,
+        "relative_integrated_absolute_psd_difference": 1669579227.6048958,
+        "reference_power": 1.195846574395613e-16,
+        "hardware_power": 1.99662709395701e-07
+      },
+      "baseline_waveform": {
+        "samples": 386224,
+        "rmse": 0.0007547553894889642,
+        "normalized_rmse_reference": 0.6766300358676807,
+        "correlation": 0.824769709006349,
+        "reference_rms": 0.0011154624380827244,
+        "hardware_calibrated_rms": 0.0012689239088357583,
+        "mean_difference": 0.00024841067827260444,
+        "peak_absolute_difference": 0.06010675097440079
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12428021044782303,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.9965606000133885e-07,
+        "relative_integrated_absolute_psd_difference": 1669579227.6048958,
+        "reference_power": 1.195846574395613e-16,
+        "hardware_power": 1.99662709395701e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 50,
+      "name": "sweep-hazard-shift-3-3fc-652",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        59.117609024,
+        63.842503548
+      ],
+      "mapped_hardware_interval_s": [
+        162.8867122368196,
+        167.6118836537463
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 226795,
+        "rmse": 0.0009011546516137216,
+        "normalized_rmse_reference": 0.6271877482312697,
+        "correlation": 0.8421880249408934,
+        "reference_rms": 0.0014368180088897874,
+        "hardware_calibrated_rms": 0.001617604208976062,
+        "mean_difference": 0.0002288865339294406,
+        "peak_absolute_difference": 0.05874312653202114
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 283,
+        "rmse": 0.0005453615645877947
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.2116448775325735,
+        "hardware_resolution_reference_hz": 0.21164514895117642,
+        "integrated_absolute_psd_difference": 2.0178314207444616e-07,
+        "relative_integrated_absolute_psd_difference": 121997518.53567663,
+        "reference_power": 1.653993822959909e-15,
+        "hardware_power": 2.0178462466100984e-07
+      },
+      "baseline_waveform": {
+        "samples": 226795,
+        "rmse": 0.0009011546516137216,
+        "normalized_rmse_reference": 0.627187748231269,
+        "correlation": 0.8421880249418905,
+        "reference_rms": 0.0014368180088897874,
+        "hardware_calibrated_rms": 0.001617604208976062,
+        "mean_difference": 0.0002288865339294406,
+        "peak_absolute_difference": 0.05874312653202114
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.2116448775325735,
+        "hardware_resolution_reference_hz": 0.21164514895117642,
+        "integrated_absolute_psd_difference": 2.0178314207444616e-07,
+        "relative_integrated_absolute_psd_difference": 121997518.53567663,
+        "reference_power": 1.653993822959909e-15,
+        "hardware_power": 2.0178462466100984e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 51,
+      "name": "sweep-hazard-shift-4-000-3fb",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        66.469621658,
+        74.51595974
+      ],
+      "mapped_hardware_interval_s": [
+        170.23915572071158,
+        178.28596534214796
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 386225,
+        "rmse": 0.0007289147657446743,
+        "normalized_rmse_reference": 0.6520555262258386,
+        "correlation": 0.8278131127842079,
+        "reference_rms": 0.0011178722308569486,
+        "hardware_calibrated_rms": 0.0012567606551245692,
+        "mean_difference": 0.00018321015419077037,
+        "peak_absolute_difference": 0.059550581733409186
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 481,
+        "rmse": 0.0004797672376868871
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12427988866593306,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.8382402794591183e-07,
+        "relative_integrated_absolute_psd_difference": 1530641531.8456147,
+        "reference_power": 1.2009606698980706e-16,
+        "hardware_power": 1.8383005616406072e-07
+      },
+      "baseline_waveform": {
+        "samples": 386225,
+        "rmse": 0.0007289147657446743,
+        "normalized_rmse_reference": 0.652055526225834,
+        "correlation": 0.8278131127911469,
+        "reference_rms": 0.0011178722308569486,
+        "hardware_calibrated_rms": 0.0012567606551245692,
+        "mean_difference": 0.00018321015419077037,
+        "peak_absolute_difference": 0.059550581733409186
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12427988866593306,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.8382402794591183e-07,
+        "relative_integrated_absolute_psd_difference": 1530641531.8456147,
+        "reference_power": 1.2009606698980706e-16,
+        "hardware_power": 1.8383005616406072e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 52,
+      "name": "sweep-hazard-shift-4-3fc-716",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        78.78490448,
+        85.055332184
+      ],
+      "mapped_hardware_interval_s": [
+        182.55516025505594,
+        188.82595542484165
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 300980,
+        "rmse": 0.0008016064986404283,
+        "normalized_rmse_reference": 0.6440961693447936,
+        "correlation": 0.8337173602886738,
+        "reference_rms": 0.0012445447384912525,
+        "hardware_calibrated_rms": 0.0014138981084126881,
+        "mean_difference": 0.00018246418324908284,
+        "peak_absolute_difference": 0.05863960299415762
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 375,
+        "rmse": 0.0005049621426257112
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.15947903515183734,
+        "hardware_resolution_reference_hz": 0.15947884352493513,
+        "integrated_absolute_psd_difference": 1.931892312491073e-07,
+        "relative_integrated_absolute_psd_difference": 482489629.0496536,
+        "reference_power": 4.0040079541114026e-16,
+        "hardware_power": 1.9319520584341896e-07
+      },
+      "baseline_waveform": {
+        "samples": 300980,
+        "rmse": 0.0008016064986404283,
+        "normalized_rmse_reference": 0.6440961693447893,
+        "correlation": 0.8337173602890885,
+        "reference_rms": 0.0012445447384912525,
+        "hardware_calibrated_rms": 0.0014138981084126881,
+        "mean_difference": 0.00018246418324908284,
+        "peak_absolute_difference": 0.05863960299415762
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.15947903515183734,
+        "hardware_resolution_reference_hz": 0.15947884352493513,
+        "integrated_absolute_psd_difference": 1.931892312491073e-07,
+        "relative_integrated_absolute_psd_difference": 482489629.0496536,
+        "reference_power": 4.0040079541114026e-16,
+        "hardware_power": 1.9319520584341896e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 53,
+      "name": "sweep-hazard-shift-5-000-3fb",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        88.448636055,
+        96.494974136
+      ],
+      "mapped_hardware_interval_s": [
+        192.2194581535802,
+        200.2662677740165
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 386224,
+        "rmse": 0.0007354717149213149,
+        "normalized_rmse_reference": 0.6569219292754529,
+        "correlation": 0.8243499015477017,
+        "reference_rms": 0.001119572482125075,
+        "hardware_calibrated_rms": 0.0012625102727570003,
+        "mean_difference": 0.00016831640658629169,
+        "peak_absolute_difference": 0.059703471781629304
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 481,
+        "rmse": 0.00048320869163424575
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12428021044782303,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.848520844808974e-07,
+        "relative_integrated_absolute_psd_difference": 1545783201.9993348,
+        "reference_power": 1.1958474140604418e-16,
+        "hardware_power": 1.8485463471788556e-07
+      },
+      "baseline_waveform": {
+        "samples": 386224,
+        "rmse": 0.0007354717149213149,
+        "normalized_rmse_reference": 0.6569219292754557,
+        "correlation": 0.8243499015553071,
+        "reference_rms": 0.001119572482125075,
+        "hardware_calibrated_rms": 0.0012625102727570003,
+        "mean_difference": 0.00016831640658629169,
+        "peak_absolute_difference": 0.059703471781629304
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12428021044782303,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.848520844808974e-07,
+        "relative_integrated_absolute_psd_difference": 1545783201.9993348,
+        "reference_power": 1.1958474140604418e-16,
+        "hardware_power": 1.8485463471788556e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 54,
+      "name": "sweep-hazard-shift-5-3fc-785",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        100.763918877,
+        107.910457611
+      ],
+      "mapped_hardware_interval_s": [
+        204.53546268792456,
+        211.6824202304325
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 343033,
+        "rmse": 0.0007600502267512346,
+        "normalized_rmse_reference": 0.650236781185761,
+        "correlation": 0.8303612495076612,
+        "reference_rms": 0.0011688822421967856,
+        "hardware_calibrated_rms": 0.001330499720797411,
+        "mean_difference": 0.0001672070494047821,
+        "peak_absolute_difference": 0.05890627869546059
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 427,
+        "rmse": 0.0004887183526939262
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.13992822847947575,
+        "hardware_resolution_reference_hz": 0.13992786250362457,
+        "integrated_absolute_psd_difference": 1.899568162202817e-07,
+        "relative_integrated_absolute_psd_difference": 907274830.9342024,
+        "reference_power": 2.093707548623244e-16,
+        "hardware_power": 1.899627112913545e-07
+      },
+      "baseline_waveform": {
+        "samples": 343033,
+        "rmse": 0.0007600502267512346,
+        "normalized_rmse_reference": 0.6502367811857626,
+        "correlation": 0.8303612495028178,
+        "reference_rms": 0.0011688822421967856,
+        "hardware_calibrated_rms": 0.001330499720797411,
+        "mean_difference": 0.0001672070494047821,
+        "peak_absolute_difference": 0.05890627869546059
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.13992822847947575,
+        "hardware_resolution_reference_hz": 0.13992786250362457,
+        "integrated_absolute_psd_difference": 1.899568162202817e-07,
+        "relative_integrated_absolute_psd_difference": 907274830.9342024,
+        "reference_power": 2.093707548623244e-16,
+        "hardware_power": 1.899627112913545e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 55,
+      "name": "sweep-hazard-shift-6-000-3fb",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        111.741581917,
+        119.787919998
+      ],
+      "mapped_hardware_interval_s": [
+        215.51376905175582,
+        223.56057867219212
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 386225,
+        "rmse": 0.0007255178032064317,
+        "normalized_rmse_reference": 0.6487658334062293,
+        "correlation": 0.8275100134041191,
+        "reference_rms": 0.0011183045805560022,
+        "hardware_calibrated_rms": 0.0012573733403132444,
+        "mean_difference": 0.00016053149232574882,
+        "peak_absolute_difference": 0.05968362863646459
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 481,
+        "rmse": 0.000473037824529263
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12427988866593306,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.8356309133743704e-07,
+        "relative_integrated_absolute_psd_difference": 1527213204.5683126,
+        "reference_power": 1.2019480370412565e-16,
+        "hardware_power": 1.8356695388180344e-07
+      },
+      "baseline_waveform": {
+        "samples": 386225,
+        "rmse": 0.0007255178032064317,
+        "normalized_rmse_reference": 0.6487658334062412,
+        "correlation": 0.8275100133962398,
+        "reference_rms": 0.0011183045805560022,
+        "hardware_calibrated_rms": 0.0012573733403132444,
+        "mean_difference": 0.00016053149232574882,
+        "peak_absolute_difference": 0.05968362863646459
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12427988866593306,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.8356309133743704e-07,
+        "relative_integrated_absolute_psd_difference": 1527213204.5683126,
+        "reference_power": 1.2019480370412565e-16,
+        "hardware_power": 1.8356695388180344e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 56,
+      "name": "sweep-hazard-shift-6-3fc-7c1",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        124.056864738,
+        131.676974297
+      ],
+      "mapped_hardware_interval_s": [
+        227.8297735851001,
+        235.45032970527237
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 365765,
+        "rmse": 0.000743599954370451,
+        "normalized_rmse_reference": 0.6593071962139081,
+        "correlation": 0.8262976516156961,
+        "reference_rms": 0.001127850505258556,
+        "hardware_calibrated_rms": 0.0012897005237540718,
+        "mean_difference": 0.00015871767745694122,
+        "peak_absolute_difference": 0.05925656370848682
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 456,
+        "rmse": 0.00048311806818018843
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.13123180183997923,
+        "hardware_resolution_reference_hz": 0.13123195787514672,
+        "integrated_absolute_psd_difference": 1.896290800216412e-07,
+        "relative_integrated_absolute_psd_difference": 1257395689.1855955,
+        "reference_power": 1.5081098309193531e-16,
+        "hardware_power": 1.896344062973618e-07
+      },
+      "baseline_waveform": {
+        "samples": 365765,
+        "rmse": 0.000743599954370451,
+        "normalized_rmse_reference": 0.6593071962139017,
+        "correlation": 0.8262976516114833,
+        "reference_rms": 0.001127850505258556,
+        "hardware_calibrated_rms": 0.0012897005237540718,
+        "mean_difference": 0.00015871767745694122,
+        "peak_absolute_difference": 0.05925656370848682
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.13123180183997923,
+        "hardware_resolution_reference_hz": 0.13123195787514672,
+        "integrated_absolute_psd_difference": 1.896290800216412e-07,
+        "relative_integrated_absolute_psd_difference": 1257395689.1855955,
+        "reference_power": 1.5081098309193531e-16,
+        "hardware_power": 1.896344062973618e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 57,
+      "name": "sweep-hazard-shift-7-000-3fb",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        135.742645264,
+        143.788983345
+      ],
+      "mapped_hardware_interval_s": [
+        239.51623893273035,
+        247.56304855316662
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 386225,
+        "rmse": 0.0007294581382445907,
+        "normalized_rmse_reference": 0.6535247019264062,
+        "correlation": 0.8255208111220764,
+        "reference_rms": 0.0011161906139038858,
+        "hardware_calibrated_rms": 0.0012579286974003154,
+        "mean_difference": 0.00016112794141877118,
+        "peak_absolute_difference": 0.05954269365027794
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 481,
+        "rmse": 0.0004797300446628709
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12427988866593306,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.8248321928575917e-07,
+        "relative_integrated_absolute_psd_difference": 1523857304.0880733,
+        "reference_power": 1.1975085777139953e-16,
+        "hardware_power": 1.8248768212059832e-07
+      },
+      "baseline_waveform": {
+        "samples": 386225,
+        "rmse": 0.0007294581382445907,
+        "normalized_rmse_reference": 0.6535247019264074,
+        "correlation": 0.8255208111154702,
+        "reference_rms": 0.0011161906139038858,
+        "hardware_calibrated_rms": 0.0012579286974003154,
+        "mean_difference": 0.00016112794141877118,
+        "peak_absolute_difference": 0.05954269365027794
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12427988866593306,
+        "hardware_resolution_reference_hz": 0.12428009264361516,
+        "integrated_absolute_psd_difference": 1.8248321928575917e-07,
+        "relative_integrated_absolute_psd_difference": 1523857304.0880733,
+        "reference_power": 1.1975085777139953e-16,
+        "hardware_power": 1.8248768212059832e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    },
+    {
+      "id": 58,
+      "name": "sweep-hazard-shift-7-3fc-7e1",
+      "group": "ch1-sweep-hazard",
+      "description": "Every eligible old frequency in this interval, reset independently; packed NR52 bit0 before and after exactly the first sweep update.",
+      "reference_interval_s": [
+        148.057928085,
+        155.930608749
+      ],
+      "mapped_hardware_interval_s": [
+        251.8322434660746,
+        259.7053854926678
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 377889,
+        "rmse": 0.000735323185719271,
+        "normalized_rmse_reference": 0.6618946267137213,
+        "correlation": 0.8247873779955428,
+        "reference_rms": 0.0011109369317139136,
+        "hardware_calibrated_rms": 0.001269442648962278,
+        "mean_difference": 0.0001589587894459212,
+        "peak_absolute_difference": 0.05900284037348044
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 471,
+        "rmse": 0.0004795872433197923
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12702142692695476,
+        "hardware_resolution_reference_hz": 0.1270214758059925,
+        "integrated_absolute_psd_difference": 1.8834778511161912e-07,
+        "relative_integrated_absolute_psd_difference": 1466461307.508179,
+        "reference_power": 1.2843692782570648e-16,
+        "hardware_power": 1.8835488861434917e-07
+      },
+      "baseline_waveform": {
+        "samples": 377889,
+        "rmse": 0.000735323185719271,
+        "normalized_rmse_reference": 0.6618946267137245,
+        "correlation": 0.8247873779929729,
+        "reference_rms": 0.0011109369317139136,
+        "hardware_calibrated_rms": 0.001269442648962278,
+        "mean_difference": 0.0001589587894459212,
+        "peak_absolute_difference": 0.05900284037348044
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 0.12702142692695476,
+        "hardware_resolution_reference_hz": 0.1270214758059925,
+        "integrated_absolute_psd_difference": 1.8834778511161912e-07,
+        "relative_integrated_absolute_psd_difference": 1466461307.508179,
+        "reference_power": 1.2843692782570648e-16,
+        "hardware_power": 1.8835488861434917e-07
+      },
+      "readback": {
+        "status": "identical",
+        "differences": []
+      }
+    }
+  ],
+  "scope": "Same hardware samples and original global mapping/gain for every candidate; no new clock, gain, EQ or per-case fit. Hardware packets reuse the validated baseline report."
+}

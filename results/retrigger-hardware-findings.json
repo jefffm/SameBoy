@@ -1,0 +1,310 @@
+{
+  "command": "MPLCONFIGDIR=/tmp/retrigger-matplotlib .venv/bin/python oracle-analysis/retrigger_hardware.py --prototype artifacts/feedback-latch/retrigger.wav --plot benchmark/figures/retrigger-hardware.png",
+  "method": "Measure native derivative extrema for every complete NR44 cycle, independently deriving cadence and reset phase from each recording. No gain, resampling, width offset, per-event alignment, amplitude gate, or individual-cycle rejection. Compare all 64 chronological phase means using one cyclic offset; independently fit that offset on the first full 64-cycle pattern and repeat its template unchanged for the remaining hardware cycles.",
+  "duration_s": 15.186,
+  "duration_authority": "benchmark/baseline.json",
+  "selection": "Final complete passage of the baseline-defined duration in each file. Hardware startup settling is earlier than this passage; the button marker is not used as an acoustic onset. Hardware cadence and reset phase are measured from audio independently of the emulator.",
+  "trace": {
+    "path": "artifacts/noise-probe/retrigger-mbc5.csv",
+    "sha256": "4d6d84dc9aab38c61587d3205ab8a8cdd9ab358414ac8656da7730a353602011",
+    "fixed_controls": {
+      "NR42": "0x98",
+      "NR43": "0x6e"
+    },
+    "constant_nr44_cadence_t_cycles": 105336,
+    "observed_triggers": 673
+  },
+  "baseline_model": {
+    "cpu_hz": 4194304,
+    "lfsr_clock_t_cycles": 6144,
+    "initial_high_run_t_cycle_bounds": [
+      36916,
+      43012
+    ],
+    "following_run_clock_lengths": [
+      6,
+      1
+    ],
+    "base_counter_initial_t_cycles": 52,
+    "base_counter_subsequent_t_cycles": 48,
+    "base_counter_ticks_per_restart": 2194,
+    "counter_phase_advance_mod128": 18,
+    "phase_pattern_restarts": 64,
+    "authority": "benchmark/noise-probe.asm cadence 105336T. Baseline SameBoy Core/apu.c zero-seed narrow step_lfsr changes at steps 7/13/14; restart initial countdown 52T then 48T. 2194 base ticks advance selected-bit6 phase 18 mod128; 128/gcd(18,128)=64."
+  },
+  "hardware": {
+    "path": "artifacts/hardware/retrigger-wqowpq82/capture.wav",
+    "sha256": "d5fa58dc64167ea22ec06ca98b5256d85a652d22e718cc40759ba826830ef93f",
+    "sample_rate": 48000,
+    "channel": 0,
+    "selected_interval_s": [
+      15.747333333333334,
+      30.933333333333334
+    ],
+    "complete_cycles": 604,
+    "edge_fitted_cadence_s": 0.02511553048930721,
+    "inferred_lfsr_clock_s": 0.0014649295523496573,
+    "initial_pulse_width_s": {
+      "minimum": 0.009541666666666667,
+      "median": 0.010270833333333333,
+      "mean": 0.010268073951434878,
+      "maximum": 0.011
+    },
+    "initial_pulse_width_lfsr_clocks": {
+      "minimum": 6.51339625947365,
+      "median": 7.01114488192251,
+      "mean": 7.009261254212203,
+      "maximum": 7.508893504371369
+    },
+    "following_six_clock_run_s": {
+      "minimum": 0.008770833333333334,
+      "median": 0.008791666666666666,
+      "mean": 0.008789700607064018,
+      "maximum": 0.008791666666666666
+    },
+    "following_one_clock_run_s": {
+      "minimum": 0.0014583333333333334,
+      "median": 0.0014583333333333334,
+      "mean": 0.0014648868653421637,
+      "maximum": 0.0014791666666666666
+    },
+    "same_phase_width_difference_after_64_resets_s": {
+      "minimum": -2.083333333333451e-05,
+      "median": 0.0,
+      "mean": 3.2124508814385318e-21,
+      "maximum": 2.083333333333451e-05
+    },
+    "wrapped_width_change_per_reset_clocks": {
+      "minimum": -0.15643528134107143,
+      "median": -0.14221389212824498,
+      "mean": -0.14063167587233907,
+      "maximum": -0.12799250291541941
+    },
+    "phase_balanced_initial_width_clocks": 7.00915734402037
+  },
+  "baseline_emulator": {
+    "path": "artifacts/noise-probe/retrigger-mbc5.wav",
+    "sha256": "932ab9276476d80fa3ba47e5a3261ce99aac6a518132f176b604b56be516540c",
+    "sample_rate": 48000,
+    "channel": 0,
+    "selected_interval_s": [
+      3.114,
+      18.3
+    ],
+    "complete_cycles": 603,
+    "edge_fitted_cadence_s": 0.025114059625431135,
+    "inferred_lfsr_clock_s": 0.0014648437603350128,
+    "initial_pulse_width_s": {
+      "minimum": 0.0088125,
+      "median": 0.009541666666666667,
+      "mean": 0.009535067716970703,
+      "maximum": 0.010270833333333333
+    },
+    "initial_pulse_width_lfsr_clocks": {
+      "minimum": 6.015999957554901,
+      "median": 6.513777731820674,
+      "mean": 6.509272848860013,
+      "maximum": 7.011555506086446
+    },
+    "following_six_clock_run_s": {
+      "minimum": 0.008770833333333334,
+      "median": 0.008791666666666666,
+      "mean": 0.008789040906578222,
+      "maximum": 0.008791666666666666
+    },
+    "following_one_clock_run_s": {
+      "minimum": 0.0014583333333333334,
+      "median": 0.0014583333333333334,
+      "mean": 0.0014648286346047542,
+      "maximum": 0.0014791666666666666
+    },
+    "same_phase_width_difference_after_64_resets_s": {
+      "minimum": -2.083333333333451e-05,
+      "median": 0.0,
+      "mean": -7.730364873220843e-08,
+      "maximum": 2.083333333333451e-05
+    },
+    "wrapped_width_change_per_reset_clocks": {
+      "minimum": -0.16088889480912716,
+      "median": -0.14222222121879202,
+      "mean": -0.14062163159070837,
+      "maximum": -0.12799999909691184
+    },
+    "phase_balanced_initial_width_clocks": 6.5085283491416615
+  },
+  "candidate": {
+    "path": "artifacts/feedback-latch/retrigger.wav",
+    "sha256": "7c1792acffd0a45e3d389706506954c2d5d47aad43bb9ef1f8af361e15feee0e",
+    "sample_rate": 48000,
+    "channel": 0,
+    "selected_interval_s": [
+      3.114,
+      18.3
+    ],
+    "complete_cycles": 603,
+    "edge_fitted_cadence_s": 0.025114059625431135,
+    "inferred_lfsr_clock_s": 0.0014648437603350128,
+    "initial_pulse_width_s": {
+      "minimum": 0.009541666666666667,
+      "median": 0.01025,
+      "mean": 0.010263785240464346,
+      "maximum": 0.011
+    },
+    "initial_pulse_width_lfsr_clocks": {
+      "minimum": 6.513777731820674,
+      "median": 6.997333283964567,
+      "mean": 7.006744008055164,
+      "maximum": 7.509333280352218
+    },
+    "following_six_clock_run_s": {
+      "minimum": 0.008770833333333334,
+      "median": 0.008791666666666666,
+      "mean": 0.008789075456053069,
+      "maximum": 0.008791666666666666
+    },
+    "following_one_clock_run_s": {
+      "minimum": 0.0014583333333333334,
+      "median": 0.0014583333333333334,
+      "mean": 0.0014648286346047542,
+      "maximum": 0.0014791666666666666
+    },
+    "same_phase_width_difference_after_64_resets_s": {
+      "minimum": -2.083333333333451e-05,
+      "median": 0.0,
+      "mean": -3.8651824366109045e-08,
+      "maximum": 2.083333333333451e-05
+    },
+    "wrapped_width_change_per_reset_clocks": {
+      "minimum": -0.16088889480912716,
+      "median": -0.14222222121879202,
+      "mean": -0.14062901440045666,
+      "maximum": -0.12799999909691184
+    },
+    "phase_balanced_initial_width_clocks": 7.008483901169845
+  },
+  "candidate_label": "Feedback latch candidate",
+  "candidate_trace": {
+    "path": "artifacts/feedback-latch/retrigger.csv",
+    "sha256": "4d6d84dc9aab38c61587d3205ab8a8cdd9ab358414ac8656da7730a353602011",
+    "identical_to_baseline_trace": true
+  },
+  "hardware_vs_baseline": {
+    "emulated_seconds_per_hardware_second": 0.9999414360816826,
+    "relative_clock_ratio_ppm": -58.56391831737806,
+    "phase_balanced_initial_width_difference_clocks": 0.5006289948787082,
+    "phase_balanced_difference_nominal_s": 0.0007333432542168576,
+    "sorted_all_64_phase_mean_differences_clocks": {
+      "minimum": 0.4973467901027213,
+      "median": 0.5005131142709667,
+      "mean": 0.5006289948787094,
+      "maximum": 0.5041598981460247
+    }
+  },
+  "hardware_vs_candidate": {
+    "method": "One cyclic offset over all 64 chronological phase means minimizes RMS width error. Each file uses its independently measured cadence. No width offset, gain, or event-specific phase is fitted. A separate check fits the offset using only the first complete 64-cycle pattern and repeats that unchanged template for every later hardware cycle.",
+    "candidate_seconds_per_hardware_second": 0.9999414360816826,
+    "global_cyclic_offset": 46,
+    "phase_mean_error": {
+      "lfsr_clocks": {
+        "minimum": -0.002011231065480956,
+        "median": 0.0008349254497299619,
+        "mean": 0.0006734428505245915,
+        "maximum": 0.005908049809524307
+      },
+      "rms_lfsr_clocks": 0.0015896868812207646,
+      "rms_hardware_s": 2.3287792912828578e-06
+    },
+    "all_native_hardware_cycles_against_phase_mean_template": {
+      "lfsr_clocks": {
+        "minimum": -0.013214788618900464,
+        "median": -0.0003889685285161093,
+        "mean": 0.0006802228002157859,
+        "maximum": 0.013804101776449862
+      },
+      "rms_lfsr_clocks": 0.005947508652308178,
+      "rms_hardware_s": 8.712681187621533e-06
+    },
+    "first_pattern_check": {
+      "training_cycles": 64,
+      "global_cyclic_offset": 46,
+      "training_rms_clocks": 0.007724991001634583,
+      "held_out_cycles": 540,
+      "held_out_error": {
+        "lfsr_clocks": {
+          "minimum": -0.014659499375564877,
+          "median": -0.0004081254367722664,
+          "mean": 0.0005376319472145066,
+          "maximum": 0.013839916865800106
+        },
+        "rms_lfsr_clocks": 0.008619326272751884,
+        "rms_hardware_s": 1.2626705778298058e-05
+      }
+    }
+  },
+  "identity_control": {
+    "command": ".venv/bin/python oracle-analysis/retrigger_hardware.py --hardware artifacts/noise-probe/retrigger-mbc5.wav --emulated artifacts/noise-probe/retrigger-mbc5.wav --prototype artifacts/noise-probe/retrigger-mbc5.wav --out-prefix /tmp/retrigger-hardware-identity",
+    "source_sha256": "932ab9276476d80fa3ba47e5a3261ce99aac6a518132f176b604b56be516540c",
+    "complete_cycles": 603,
+    "comparison": {
+      "emulated_seconds_per_hardware_second": 1.0,
+      "relative_clock_ratio_ppm": 0.0,
+      "phase_balanced_initial_width_difference_clocks": 0.0,
+      "phase_balanced_difference_nominal_s": 0.0,
+      "sorted_all_64_phase_mean_differences_clocks": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "maximum": 0.0
+      }
+    },
+    "phase_mean_error": {
+      "lfsr_clocks": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "maximum": 0.0
+      },
+      "rms_lfsr_clocks": 0.0,
+      "rms_hardware_s": 0.0
+    },
+    "global_cyclic_offset": 0,
+    "all_native_cycles_against_phase_mean_template": {
+      "lfsr_clocks": {
+        "minimum": -0.012799999909690385,
+        "median": 0.0,
+        "mean": 5.449850999818347e-17,
+        "maximum": 0.01279999990969305
+      },
+      "rms_lfsr_clocks": 0.0056812839048574655,
+      "rms_hardware_s": 8.322193278722196e-06
+    },
+    "first_pattern_check": {
+      "training_cycles": 64,
+      "global_cyclic_offset": 0,
+      "training_rms_clocks": 0.0,
+      "held_out_cycles": 539,
+      "held_out_error": {
+        "lfsr_clocks": {
+          "minimum": -0.01422222212188018,
+          "median": 0.0,
+          "mean": -0.00044856730254530687,
+          "maximum": 0.01422222212188018
+        },
+        "rms_lfsr_clocks": 0.008813699661777643,
+        "rms_hardware_s": 1.2910692955021792e-05
+      }
+    },
+    "interpretation": "Identical inputs produce exactly zero clock-ratio difference and phase-mean width error. Native widths against an averaged phase template or the first 64 native cycles retain sampling-grid variation; their nonzero residual is expected even for this identity control."
+  },
+  "observations": "artifacts/retrigger-hardware.npz",
+  "full_report": "artifacts/retrigger-hardware.json",
+  "figure": "benchmark/figures/retrigger-hardware.png",
+  "interpretation": "The minimal fixed-NR43 hardware probe reproduces the baseline initial-pulse discrepancy while subsequent six-clock and one-clock runs agree. The feedback latch candidate matches the chronological 64-phase initial-width sequence with one cyclic offset, including 540 held-out cycles. This distinguishes a restart-path mismatch from ongoing LFSR speed/sequence error. Native-edge sampling and analog edge shaping remain measurement caveats; this probe alone does not validate NR43 changes, other divisors, or other models.",
+  "production_equivalence": {
+    "wav": "artifacts/noise-feedback-fixed/retrigger.wav",
+    "sha256": "7c1792acffd0a45e3d389706506954c2d5d47aad43bb9ef1f8af361e15feee0e",
+    "byte_identical_to_measured_candidate": true,
+    "trace_byte_identical": true,
+    "note": "Final core includes synchronized reset, ordinary NR43 latch handling, and save-state migration. Its fixed-NR43 hardware-probe output is byte-identical to the measured isolated candidate; the existing measurements apply unchanged."
+  }
+}

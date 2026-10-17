@@ -1,0 +1,10 @@
+/home/jeff/Documents/ChatGPT/dmg/build/pulse-clock-test/rom/audio-torture.gb
+1 cases; 32768 bytes; SHA256 ec76ec2526c3edb27d8eb656a69b2facef61f87f869b2a5e2f5cabafc4600cf3
+make: Entering directory '/home/jeff/Documents/ChatGPT/dmg/SameBoy'
+make: 'build/lib/libsameboy.a' is up to date.
+make: Leaving directory '/home/jeff/Documents/ChatGPT/dmg/SameBoy'
+CH1 after length expiry: phase 0 -> 1, expected 1, NR52=f0
+CH2 after length expiry: phase 0 -> 1, expected 1, NR52=f0
+legacy112byte_APU active=0: gate inferred from saved channel state
+legacy112byte_APU active=1: gate inferred from saved channel state
+DMG pulse frequency gate: passed

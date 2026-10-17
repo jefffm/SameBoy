@@ -1,0 +1,50 @@
+{
+  "scope": "Initial throughput check, same finite160.12sROM,48kHzstereo,uncapped,noAPUtrace,/dev/null outputs; one completed run per build, no statisticalregression or percentthreshold claim.",
+  "platform": "Linux-7.2.5-3-omarchy-x86_64-with-glibc2.44",
+  "runs": [
+    {
+      "label": "before",
+      "commit": "6e6b9e613e56645234aa3ba7892ae18ccdeb1bf5",
+      "binary_sha256": "17bb882aac9bcffb9295f4197762d290696240624fb24c0168ff8c8100315546",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/audio-oracle-probe-v2/wave-majority-reference/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/audio-oracle-probe-v2/audio-torture.gb",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+        "--until-done",
+        "--seed",
+        "1",
+        "--wav",
+        "/dev/null",
+        "--screenshot",
+        "/dev/null"
+      ],
+      "wall_seconds": 5.060908688989002,
+      "cpu_seconds": 5.035611,
+      "stderr": "DMG-B seed=1 highpass=1 ticks_8mhz=1343194880 seconds=160.121307373 samples=7685822 inputs=0/0 apu_writes=0\nmarkers=233 suite_done=yes\n"
+    },
+    {
+      "label": "measured-map",
+      "commit": "61d83fe7deeb4c90eef003b7933d0a9dd5fa7f2c",
+      "binary_sha256": "05e9c2d6bc4d43d1d9ba70677262e8952a81fa3dcba991d96fe8668ccc6cda97",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-oracle/measured-map/v2-render/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/audio-oracle-probe-v2/audio-torture.gb",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+        "--until-done",
+        "--seed",
+        "1",
+        "--wav",
+        "/dev/null",
+        "--screenshot",
+        "/dev/null"
+      ],
+      "wall_seconds": 5.0473793229903094,
+      "cpu_seconds": 5.024046999999999,
+      "stderr": "DMG-B seed=1 highpass=1 ticks_8mhz=1343194880 seconds=160.121307373 samples=7685822 inputs=0/0 apu_writes=0\nmarkers=233 suite_done=yes\n"
+    }
+  ]
+}

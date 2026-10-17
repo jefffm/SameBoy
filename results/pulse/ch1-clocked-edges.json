@@ -1,0 +1,448 @@
+{
+  "render": "artifacts/torture/pulse-diagnosis/ch1-clocked",
+  "duty_step_s": 0.00048828125,
+  "cases": [
+    {
+      "case_id": 70,
+      "mismatched_bursts": 0,
+      "observed_bursts": 62,
+      "bursts": [
+        {
+          "length_load": 0,
+          "reference_edge_s": 0.004064402666666522,
+          "hardware_edge_s": 0.004070363333340765,
+          "edge_error_s": -5.960666674242887e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 1,
+          "reference_edge_s": 0.004067253000000104,
+          "hardware_edge_s": 0.00407321466667554,
+          "edge_error_s": -5.9616666754358505e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 2,
+          "reference_edge_s": 0.004064455666666245,
+          "hardware_edge_s": 0.004070416333348703,
+          "edge_error_s": -5.9606666824585375e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 3,
+          "reference_edge_s": 0.004055056666666612,
+          "hardware_edge_s": 0.004061017333327754,
+          "edge_error_s": -5.960666661142255e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 4,
+          "reference_edge_s": 0.004059888333333372,
+          "hardware_edge_s": 0.004065848999999844,
+          "edge_error_s": -5.960666666471326e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 5,
+          "reference_edge_s": 0.004058118333333471,
+          "hardware_edge_s": 0.004064078999988396,
+          "edge_error_s": -5.9606666549250065e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 6,
+          "reference_edge_s": 0.004049746666666909,
+          "hardware_edge_s": 0.004055707333350256,
+          "edge_error_s": -5.960666683346716e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 7,
+          "reference_edge_s": 0.0040556056666667395,
+          "hardware_edge_s": 0.00406156633334831,
+          "edge_error_s": -5.960666681570359e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 8,
+          "reference_edge_s": 0.004054862999999909,
+          "hardware_edge_s": 0.004060823666662827,
+          "edge_error_s": -5.960666662918612e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 9,
+          "reference_edge_s": 0.0040475186666668606,
+          "hardware_edge_s": 0.004074312666659807,
+          "edge_error_s": -2.6793999992946738e-05,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 10,
+          "reference_edge_s": 0.004054404999999761,
+          "hardware_edge_s": 0.004060366666664095,
+          "edge_error_s": -5.96166666433362e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 11,
+          "reference_edge_s": 0.004054689666666,
+          "hardware_edge_s": 0.0040606513333329985,
+          "edge_error_s": -5.9616666669981555e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 12,
+          "reference_edge_s": 0.0040483726666664666,
+          "hardware_edge_s": 0.004075167666655943,
+          "edge_error_s": -2.6794999989476764e-05,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 13,
+          "reference_edge_s": 0.004056287333333408,
+          "hardware_edge_s": 0.004062247999996771,
+          "edge_error_s": -5.9606666633627015e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 14,
+          "reference_edge_s": 0.004057599333333606,
+          "hardware_edge_s": 0.004063559999991639,
+          "edge_error_s": -5.960666658033631e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 15,
+          "reference_edge_s": 0.004052309666667142,
+          "hardware_edge_s": 0.004058270333331393,
+          "edge_error_s": -5.96066666425088e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 16,
+          "reference_edge_s": 0.004061251666667154,
+          "hardware_edge_s": 0.0040672123333251875,
+          "edge_error_s": -5.960666658033631e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 17,
+          "reference_edge_s": 0.004063591000000422,
+          "hardware_edge_s": 0.0040695516666744425,
+          "edge_error_s": -5.9606666740208425e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 18,
+          "reference_edge_s": 0.004059328666667028,
+          "hardware_edge_s": 0.004065289333311739,
+          "edge_error_s": -5.960666644710955e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 19,
+          "reference_edge_s": 0.004048464666665197,
+          "hardware_edge_s": 0.004054425333322342,
+          "edge_error_s": -5.9606666571454525e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 20,
+          "reference_edge_s": 0.004051831333333311,
+          "hardware_edge_s": 0.004057793000015408,
+          "edge_error_s": -5.961666682097189e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 21,
+          "reference_edge_s": 0.0040485963333320996,
+          "hardware_edge_s": 0.004054558000007091,
+          "edge_error_s": -5.961666674991761e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 22,
+          "reference_edge_s": 0.004059593000000916,
+          "hardware_edge_s": 0.004065554666681237,
+          "edge_error_s": -5.961666680320832e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 23,
+          "reference_edge_s": 0.004063988000000407,
+          "hardware_edge_s": 0.004069948666654,
+          "edge_error_s": -5.960666653592739e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 24,
+          "reference_edge_s": 0.004061780333334042,
+          "hardware_edge_s": 0.004067741000000069,
+          "edge_error_s": -5.960666666027237e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 25,
+          "reference_edge_s": 0.004052971000000127,
+          "hardware_edge_s": 0.004058931666662602,
+          "edge_error_s": -5.960666662474523e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 26,
+          "reference_edge_s": 0.004058393333332688,
+          "hardware_edge_s": 0.004064354000007597,
+          "edge_error_s": -5.960666674909021e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 27,
+          "reference_edge_s": 0.004057212999999393,
+          "hardware_edge_s": 0.00406317366665121,
+          "edge_error_s": -5.960666651816382e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 28,
+          "reference_edge_s": 0.004049431000000325,
+          "hardware_edge_s": 0.004055391666668129,
+          "edge_error_s": -5.9606666678035936e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 29,
+          "reference_edge_s": 0.004055880666665956,
+          "hardware_edge_s": 0.004061841333339089,
+          "edge_error_s": -5.960666673132664e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 30,
+          "reference_edge_s": 0.004055727666665732,
+          "hardware_edge_s": 0.004061688333337088,
+          "edge_error_s": -5.960666671356307e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 31,
+          "reference_edge_s": 0.00404897300000151,
+          "hardware_edge_s": 0.004075768000006974,
+          "edge_error_s": -2.6795000005463976e-05,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 32,
+          "reference_edge_s": 0.004056450000000211,
+          "hardware_edge_s": 0.004062410666676897,
+          "edge_error_s": -5.960666676685378e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 33,
+          "reference_edge_s": 0.004057324333334833,
+          "hardware_edge_s": 0.004063285999990285,
+          "edge_error_s": -5.961666655451836e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 34,
+          "reference_edge_s": 0.004051598000000212,
+          "hardware_edge_s": 0.0040575586666591335,
+          "edge_error_s": -5.960666658921809e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 35,
+          "reference_edge_s": 0.0040601013333319,
+          "hardware_edge_s": 0.004066063000010445,
+          "edge_error_s": -5.961666678544475e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 36,
+          "reference_edge_s": 0.004062003999999675,
+          "hardware_edge_s": 0.004067965666678219,
+          "edge_error_s": -5.961666678544475e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 37,
+          "reference_edge_s": 0.004057304000001594,
+          "hardware_edge_s": 0.004063265666673033,
+          "edge_error_s": -5.961666671439048e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 38,
+          "reference_edge_s": 0.004066835666666435,
+          "hardware_edge_s": 0.004072797333321887,
+          "edge_error_s": -5.961666655451836e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 39,
+          "reference_edge_s": 0.004048932333333255,
+          "hardware_edge_s": 0.004075726333326202,
+          "edge_error_s": -2.6793999992946738e-05,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 40,
+          "reference_edge_s": 0.004066092999998716,
+          "hardware_edge_s": 0.004072054666664826,
+          "edge_error_s": -5.961666666109977e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 41,
+          "reference_edge_s": 0.004055819666668015,
+          "hardware_edge_s": 0.004061780333358911,
+          "edge_error_s": -5.9606666908962325e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 42,
+          "reference_edge_s": 0.0040597760000000704,
+          "hardware_edge_s": 0.004065737666678615,
+          "edge_error_s": -5.961666678544475e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 43,
+          "reference_edge_s": 0.004057131666666436,
+          "hardware_edge_s": 0.004063092333325358,
+          "edge_error_s": -5.960666658921809e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 44,
+          "reference_edge_s": 0.0040478846666669455,
+          "hardware_edge_s": 0.0040538453333169855,
+          "edge_error_s": -5.960666650040025e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 45,
+          "reference_edge_s": 0.0040528693333339305,
+          "hardware_edge_s": 0.004058830000019498,
+          "edge_error_s": -5.960666685567162e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 46,
+          "reference_edge_s": 0.004051251333333283,
+          "hardware_edge_s": 0.0040572130000100515,
+          "edge_error_s": -5.961666676768118e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 47,
+          "reference_edge_s": 0.004063865999999194,
+          "hardware_edge_s": 0.004069826666665222,
+          "edge_error_s": -5.960666666027237e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 48,
+          "reference_edge_s": 0.004049044666667001,
+          "hardware_edge_s": 0.004055005333356121,
+          "edge_error_s": -5.960666689119876e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 49,
+          "reference_edge_s": 0.004048453999999424,
+          "hardware_edge_s": 0.004054415666672639,
+          "edge_error_s": -5.9616666732154044e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 50,
+          "reference_edge_s": 0.0040620960000001816,
+          "hardware_edge_s": 0.004068056666653774,
+          "edge_error_s": -5.960666653592739e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 51,
+          "reference_edge_s": 0.004048301999999282,
+          "hardware_edge_s": 0.004075096000008216,
+          "edge_error_s": -2.679400000893395e-05,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 52,
+          "reference_edge_s": 0.0040487386666665515,
+          "hardware_edge_s": 0.0040547003333131215,
+          "edge_error_s": -5.961666646570052e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 53,
+          "reference_edge_s": 0.004063407999998603,
+          "hardware_edge_s": 0.0040693686666770645,
+          "edge_error_s": -5.960666678461735e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 54,
+          "reference_edge_s": 0.00405064133333255,
+          "hardware_edge_s": 0.0040566019999914715,
+          "edge_error_s": -5.960666658921809e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 55,
+          "reference_edge_s": 0.004052106333332972,
+          "hardware_edge_s": 0.004058066999988341,
+          "edge_error_s": -5.960666655369096e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 56,
+          "reference_edge_s": 0.004046968666665762,
+          "hardware_edge_s": 0.0040737636666676735,
+          "edge_error_s": -2.6795000001911262e-05,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 57,
+          "reference_edge_s": 0.004056063666666887,
+          "hardware_edge_s": 0.004062024333336467,
+          "edge_error_s": -5.96066666957995e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 58,
+          "reference_edge_s": 0.0040585560000003795,
+          "hardware_edge_s": 0.004064516666687723,
+          "edge_error_s": -5.960666687343519e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 59,
+          "reference_edge_s": 0.00405444566666624,
+          "hardware_edge_s": 0.004060407333327021,
+          "edge_error_s": -5.9616666607809066e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 60,
+          "reference_edge_s": 0.004064567999998658,
+          "hardware_edge_s": 0.0040705286666593565,
+          "edge_error_s": -5.960666660698166e-06,
+          "duty_step_error": 0
+        },
+        {
+          "length_load": 61,
+          "reference_edge_s": 0.0040472543333329725,
+          "hardware_edge_s": 0.004053214999999,
+          "edge_error_s": -5.960666666027237e-06,
+          "duty_step_error": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

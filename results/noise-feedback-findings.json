@@ -1,0 +1,402 @@
+{
+  "contract": "Correct the hardware-confirmed DMG noise restart discrepancy with a minimal regression and end-to-end LSDj evidence.",
+  "source_parent": "82c17ac6eba4e1d04c23f9e7def2e9763ae41bcd",
+  "source_changes": "Core/apu.c        | 47 ++++++++++++++++++++++++++++++++++++++++++-----\n Core/apu.h        |  3 +++\n Core/save_state.c | 15 +++++++++++----\n 3 files changed, 56 insertions(+), 9 deletions(-)",
+  "source_sha256": {
+    "SameBoy/Core/apu.c": "926dcb545548b9ed83d491c38833f78bef7f3d55c55b0d418abd38ac743f7efe",
+    "SameBoy/Core/apu.h": "bc2235dd1d990dc4b16e1e907bf55f95667919d3130a0515ba9c6315dc8f5c06",
+    "SameBoy/Core/save_state.c": "d08bf57b5ed403782fe4eec13b997887f5c3ea8ea3b0afc2f57494c49ecdd257"
+  },
+  "hardware_findings": "benchmark/retrigger-hardware-findings.json",
+  "regression_findings": "benchmark/noise-feedback-regression.json",
+  "e2e_run_at_capture_time": {
+    "capture_command": [
+      "/home/jeff/Documents/ChatGPT/dmg/benchmark/capture",
+      "--rom",
+      "/home/jeff/Documents/ChatGPT/dmg/inputs/lsdj-8.5.1.gb",
+      "--sav",
+      "/home/jeff/Documents/ChatGPT/dmg/inputs/dotexe-NOIZE_JAMS.sav",
+      "--boot",
+      "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+      "--seconds",
+      "18.3",
+      "--seed",
+      "1",
+      "--buttons",
+      "/home/jeff/Documents/ChatGPT/dmg/benchmark/opening.buttons",
+      "--wav",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/current.wav",
+      "--screenshot",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/current.ppm",
+      "--apu-log",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/current.csv"
+    ],
+    "sameboy_head": "82c17ac6eba4e1d04c23f9e7def2e9763ae41bcd",
+    "sameboy_tracked_diff_sha256": "9bbdd5de09f19ad472f92f95f39a4f526c617ead00ed6d320b8bc3da7ec43a7e",
+    "boot_rom_sha256": "6f64da4cecd7e54e2f928eb3e3ba7810a7a567d0d247cc71737d1771e073a916",
+    "button_script_sha256": "ad82d70cc74f0cbf47520de7af0f6a3b3be74fcdc02d3fc1bab6ae6ec57500af",
+    "capture_source_sha256": "a871c1540b56c0f0c24f866c100ba8fc8e389da13061260c0e95eb27c133a9eb",
+    "capture_binary_sha256": "c864d059595c6c2459bb0af6e9d2ed5521603da5bf7926d74c7eada4a7777441",
+    "comparator_sha256": "b74754a06c8ce970d68e6b484ea564f6d2061c5470b6957c99090d4accd41183",
+    "save_sha256_after_capture": "9a2295ebc6d6ffb67685ffb8a46b82922bac037ecb82472f4d95fcd862f4a4d3",
+    "render_duration_s": 18.3,
+    "selected_musical_duration_s": 15.186,
+    "duration_note": "The render includes boot and input latency; comparison uses the two measured opening repetitions only."
+  },
+  "fixed_original_alignment": {
+    "method": "Fixed original baseline affine timing and scalar RMS gain, no refit. Envelope resamples complete WAV with the same Fourier method as baseline comparator. Native PSD uses the established one-second Hann Welch windows, default half overlap and constant detrend. Two measured opening repetitions, separately reported. Channel zero throughout.",
+    "fixed_parameters": {
+      "emulated_start_s": 3.022086462453255,
+      "oracle_start_s": 1.8903125,
+      "emulated_seconds_per_oracle_second": 0.9999817618069532,
+      "duration_s": 15.186,
+      "rms_gain_oracle_per_emulator": 0.06337448434741354,
+      "envelope_resolution_ms": 1.0
+    },
+    "oracle_sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+    "variants": {
+      "upstream": {
+        "wav": "artifacts/baseline.wav",
+        "sha256": "2c94939ee786a0b6a07a82001396791bf7e04102c7fb1520d255950f06fddc7d",
+        "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+        "envelope_correlation": 0.8381936350106565,
+        "envelope_normalized_rmse": 0.37003121203448097,
+        "raw_sample_correlation": 0.5502462385050019,
+        "spectral": [
+          {
+            "repeat": 1,
+            "psd_cosine": 0.9734189449720799,
+            "normalized_psd_l1": 0.2606209086555988,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.0941966866497908
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 1.0865826603335298
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -1.6167038405925704
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.9526048350008886
+              }
+            ]
+          },
+          {
+            "repeat": 2,
+            "psd_cosine": 0.9751550047270671,
+            "normalized_psd_l1": 0.258432664931362,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.2244745187828472
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.8096823950327916
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -1.8374229333259517
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.7654097023863239
+              }
+            ]
+          }
+        ]
+      },
+      "dac_disconnect": {
+        "wav": "artifacts/dac-gate.wav",
+        "sha256": "7c716fe573c26cb1595ac62dbf724922b82768a66d3922266460ffbe1157b951",
+        "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+        "envelope_correlation": 0.8819038936702336,
+        "envelope_normalized_rmse": 0.32157811802517505,
+        "raw_sample_correlation": 0.5649856373209334,
+        "spectral": [
+          {
+            "repeat": 1,
+            "psd_cosine": 0.9817383673977746,
+            "normalized_psd_l1": 0.22144512790898943,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.1175334345712813
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.6650633348912981
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -0.9426408336426823
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.607824660396761
+              }
+            ]
+          },
+          {
+            "repeat": 2,
+            "psd_cosine": 0.983059629503224,
+            "normalized_psd_l1": 0.2195505073156281,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -1.2128027869465705
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.38702214861345613
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -1.0865432978916463
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.41231163584522995
+              }
+            ]
+          }
+        ]
+      },
+      "feedback_latch": {
+        "wav": "artifacts/current.wav",
+        "sha256": "f28e90f9bafa96fd4cac1a1c03ea2b60c9e5e89e55854d4563c84b7fc1f6b3ed",
+        "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+        "envelope_correlation": 0.8710669282003163,
+        "envelope_normalized_rmse": 0.3367786363671277,
+        "raw_sample_correlation": 0.5284203031742137,
+        "spectral": [
+          {
+            "repeat": 1,
+            "psd_cosine": 0.990907949824187,
+            "normalized_psd_l1": 0.1766461803515351,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -0.7303771699951367
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": 0.13198175499970988
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -0.5432436173127575
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": 0.12077969542386985
+              }
+            ]
+          },
+          {
+            "repeat": 2,
+            "psd_cosine": 0.9931899998893363,
+            "normalized_psd_l1": 0.1665792184319501,
+            "bands": [
+              {
+                "frequency_bin_centers_hz": [
+                  37,
+                  41
+                ],
+                "sameboy_minus_hardware_db": -0.7174298985590711
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  80,
+                  83
+                ],
+                "sameboy_minus_hardware_db": -0.08443283638645299
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  40,
+                  40
+                ],
+                "sameboy_minus_hardware_db": -0.5764952219273307
+              },
+              {
+                "frequency_bin_centers_hz": [
+                  81,
+                  81
+                ],
+                "sameboy_minus_hardware_db": -0.02687180857729204
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "identical_register_traces": true
+  },
+  "separate_global_refits": {
+    "before": {
+      "oracle": {
+        "path": "/home/jeff/Music/Scarlett-Recordings/Media/01-Scarlett 3-4 - Stereo-261016_2126.wav",
+        "sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+        "channel": 0
+      },
+      "emulated": {
+        "path": "artifacts/current.wav",
+        "sha256": "7c716fe573c26cb1595ac62dbf724922b82768a66d3922266460ffbe1157b951",
+        "channel": 0
+      },
+      "sample_rate": 48000,
+      "oracle_start_s": 1.8903125,
+      "emulated_start_s": 3.022123290867205,
+      "duration_s": 15.186,
+      "emulated_seconds_per_oracle_second": 0.9999805088179811,
+      "fitted_clock_ratio_ppm": -19.49118201893807,
+      "global_integer_lag_start_s": 3.0223125,
+      "global_integer_lag_correlation": 0.8877022329620563,
+      "nominal_emulated_start_s": 3.022791862,
+      "envelope_resolution_ms": 1.0,
+      "envelope_correlation": 0.8832456506380751,
+      "rms_gain_oracle_per_emulator": 0.06424576873351201,
+      "envelope_ls_gain_oracle_per_emulator": 0.06092259217151168,
+      "audio_resampling_ratio": 0.9999806470047825,
+      "envelope_normalized_rmse": 0.32163934310752457,
+      "raw_sample_correlation": 0.5711213509379997,
+      "raw_least_squares_gain": 0.036692052419439784,
+      "normalized_psd_cosine": 0.973722457215418,
+      "normalized_psd_l1_distance": 0.40836470808316067,
+      "oracle_rms_dbfs": -48.55601533712475,
+      "emulated_rms_dbfs": -24.71290530459717,
+      "alignment": "one affine clock mapping fitted to RMS envelopes; one raw RMS gain; native PSDs on corrected frequency axes; Fourier resampling only for aligned audio; no local warping or equalization",
+      "interpretation": "Descriptive mismatch measurements, not an emulator correctness verdict. Raw residual includes unknown LFSR phase and analog recording transfer.",
+      "common_listening_gain": 58.4437403059155
+    },
+    "after": {
+      "oracle": {
+        "path": "/home/jeff/Music/Scarlett-Recordings/Media/01-Scarlett 3-4 - Stereo-261016_2126.wav",
+        "sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+        "channel": 0
+      },
+      "emulated": {
+        "path": "artifacts/current.wav",
+        "sha256": "f28e90f9bafa96fd4cac1a1c03ea2b60c9e5e89e55854d4563c84b7fc1f6b3ed",
+        "channel": 0
+      },
+      "sample_rate": 48000,
+      "oracle_start_s": 1.8903125,
+      "emulated_start_s": 3.0229762728392844,
+      "duration_s": 15.186,
+      "emulated_seconds_per_oracle_second": 0.9999694465722284,
+      "fitted_clock_ratio_ppm": -30.55342777158465,
+      "global_integer_lag_start_s": 3.0223125,
+      "global_integer_lag_correlation": 0.885433266101652,
+      "nominal_emulated_start_s": 3.022791862,
+      "envelope_resolution_ms": 1.0,
+      "envelope_correlation": 0.8954343499419317,
+      "rms_gain_oracle_per_emulator": 0.06464608675667022,
+      "envelope_ls_gain_oracle_per_emulator": 0.06161746299965385,
+      "audio_resampling_ratio": 0.9999692632398595,
+      "envelope_normalized_rmse": 0.30608323371923557,
+      "raw_sample_correlation": 0.6491566919185071,
+      "raw_least_squares_gain": 0.04196509202897572,
+      "normalized_psd_cosine": 0.9825899189563551,
+      "normalized_psd_l1_distance": 0.3728929259812329,
+      "oracle_rms_dbfs": -48.55601533712475,
+      "emulated_rms_dbfs": -24.766804329385216,
+      "alignment": "one affine clock mapping fitted to RMS envelopes; one raw RMS gain; native PSDs on corrected frequency axes; Fourier resampling only for aligned audio; no local warping or equalization",
+      "interpretation": "Descriptive mismatch measurements, not an emulator correctness verdict. Raw residual includes unknown LFSR phase and analog recording transfer.",
+      "common_listening_gain": 60.25799019182596
+    }
+  },
+  "minimal_capture_equivalence": {
+    "steady": {
+      "final_wav": "artifacts/noise-feedback-fixed/steady.wav",
+      "sha256": "1a1a347a04f81e46ab89341f7a14913665d09d5b8b437658c09e2c39551d4e0a",
+      "prototype_wav_byte_identical": true,
+      "apu_trace_byte_identical": true
+    },
+    "retrigger": {
+      "final_wav": "artifacts/noise-feedback-fixed/retrigger.wav",
+      "sha256": "7c1792acffd0a45e3d389706506954c2d5d47aad43bb9ef1f8af361e15feee0e",
+      "prototype_wav_byte_identical": true,
+      "apu_trace_byte_identical": true
+    }
+  },
+  "lsdj_capture": {
+    "frames": 878400,
+    "apu_trace_byte_identical": true,
+    "apu_writes": 3695,
+    "screenshot_byte_identical": true,
+    "sha256": "f28e90f9bafa96fd4cac1a1c03ea2b60c9e5e89e55854d4563c84b7fc1f6b3ed"
+  },
+  "limits": "Evidence supports DMG-B normal noise restart and ordinary deterministic clock-selector handling. Existing partial NR43 corruption approximations remain; no claim of complete #397 resolution, other hardware revision accuracy, or calibrated analog transfer. Frozen-map envelope error worsens while native PSD and separately refitted envelope metrics improve.",
+  "source_commit": "300a1209f0904d2d324ad0332c9e8479b0a11265",
+  "patch": {
+    "path": "benchmark/patches/0002-dmg-noise-feedback.patch",
+    "sha256": "1750abaccacbfa90d70bfdbfadbd8809f1a05eceee9ee83a5057d16789aff1f7"
+  }
+}

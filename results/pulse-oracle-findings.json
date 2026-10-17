@@ -1,0 +1,28 @@
+{
+  "core_commits": [
+    "89933a9d",
+    "5f85d9cf0932cda62e32619f81b0dcccab7f1eab"
+  ],
+  "hardware_sha256": "c998f8af6ed5389fdbc12127d68da749bfe7ba341f67afda141fe8e31cc73960",
+  "model_scope": "GB_MODEL_DMG_B",
+  "phase_errors_before_per_channel": [
+    49,
+    49
+  ],
+  "phase_errors_after_per_channel": [
+    0,
+    0
+  ],
+  "bursts_observed_per_channel": 62,
+  "coverage_packets": 337,
+  "fixed_global_mapping": true,
+  "evidence_sha256": {
+    "artifacts/torture/pulse-diagnosis/baseline-edges.json": "18aa683ce25f17ae87b636e275bd500a9df55f49abf868b0babdb312202905ec",
+    "artifacts/torture/pulse-diagnosis/ch1-clocked-edges.json": "67fc05ed7817f81d0e911ecf48c2906dbfc384603ac074b9f2bdddd4e1974f36",
+    "artifacts/torture/pulse-diagnosis/ch2-clocked-edges.json": "235c205b2e7f1ba039f6ae08aa010c94b447b04178a0a3ec58deb56676831da3",
+    "artifacts/torture/pulse-diagnosis/duty-oracle.json": "8f43f4fd33353601fbfbffdd4d8035eff1e2cb010cdaf9965bd9ce08d39197b5",
+    "benchmark/pulse-clock-test.c": "2440ef52526bc6b73526c5864b08c822ff81f5ea46b98974d5a532f1061175f6",
+    "benchmark/pulse-duty-test.c": "670ab5f7046a93a6db16c853ad2fa2fafd3c82dd883419b3992ec6d1a7117667",
+    "benchmark/pulse-edge-oracle.py": "c84ec353907ddfd339ccfd6187ce80019b5bdb012fb4cb33062ad5ebac86e1a3"
+  }
+}

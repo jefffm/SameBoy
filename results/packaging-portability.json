@@ -1,0 +1,151 @@
+{
+  "status": "passed",
+  "generated_utc": "2026-10-17T17:42:42.997470+00:00",
+  "scope": "Packaging and relocation checks only. Existing complete WAV comparisons and broad regression suites were reused, not rerun.",
+  "frozen_rom_rebuild": [
+    {
+      "suite": "torture",
+      "rom_sha256": "0eab1e73e34da49fe1bc7c83dd2fb6768e1e6e3e4ca01d5c39d3932eb936dedf",
+      "byte_identical": true
+    },
+    {
+      "suite": "v2",
+      "rom_sha256": "650f9c5f4e8ddcdef3099861051a2d6737d4221b9b9c40e4b29e7434e94ab74f",
+      "byte_identical": true
+    },
+    {
+      "suite": "history",
+      "rom_sha256": "9c8a598aedfd53bfa9da05f51868d57d4f99b563a9fd394732153038dbb6d1a2",
+      "byte_identical": true
+    },
+    {
+      "suite": "steady",
+      "rom_sha256": "6766ffa01c6622f2cd978509353a17f5ea1ab99b4f3b9fbd8069f280f1721de5",
+      "byte_identical": true
+    },
+    {
+      "suite": "retrigger",
+      "rom_sha256": "e37db38592077bcded4b74d8368f09bd81a9cfccf6d516129a03212c89512ea7",
+      "byte_identical": true
+    }
+  ],
+  "flac_pcm_verification": "hardware/manifest.json: all five independently decoded signed little-endian PCM streams exactly equal original WAV PCM by SHA256 and byte count; originals untouched.",
+  "archived_reference_paths_resolved_with_original_hashes": [
+    "artifacts/torture/renders/render-h1xqcgiz/manifest.json",
+    "artifacts/torture/renders/render-h1xqcgiz/markers.csv",
+    "artifacts/audio-oracle-probe-v2/reference/manifest.json",
+    "artifacts/audio-oracle-probe-v2/reference/markers.csv"
+  ],
+  "portable_comparator_pcm_verification": "Passed on decoded history FLAC, matching the original 48 kHz stereo PCM24 format, frame count and PCM SHA256.",
+  "python_sources_syntax_checked": [
+    "evidence.py",
+    "check-packets.py",
+    "benchmark/verify-dac-off.py",
+    "benchmark/generate-sweep-table.py",
+    "benchmark/run-sweep-map-test.py",
+    "benchmark/check-physical-probe.py",
+    "benchmark/wave-probe-check.py",
+    "benchmark/wave-readback-check.py",
+    "benchmark/wave-retrigger-probe.py",
+    "benchmark/sweep-history-probe.py",
+    "benchmark/pulse-edge-oracle.py",
+    "oracle-analysis/steady_probe.py",
+    "oracle-analysis/retrigger_hardware.py",
+    "benchmark/torture/analyze.py",
+    "benchmark/torture/compare_candidate.py",
+    "benchmark/torture/render.py",
+    "benchmark/torture/build.py",
+    "benchmark/torture/cases.py"
+  ],
+  "sweep_generator": "Packaged generator --check reproduced publication-head Core/dmg_sweep.h byte for byte.",
+  "history_end_to_end_portability": {
+    "render_provenance": {
+      "manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/build/history-portability-render/manifest.json",
+      "input_manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/artifacts/sweep-history-probe/manifest.json",
+      "manifest_sha256": "a19ddd5eeeaa131cbc553939502b76fecbaab92e9c03c8b1eca3e0a83b62fad8",
+      "rom_sha256": "9c8a598aedfd53bfa9da05f51868d57d4f99b563a9fd394732153038dbb6d1a2",
+      "sameboy_commit": "8182d8edbaddbac9f6057930f6cebdabd3b83228",
+      "sameboy_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "capture_source_sha256": "ca354f4f042ea48cb5bdc479d312f9f63bcbd7b56f08a3a9ae925762f0d37868",
+      "commands": [
+        [
+          "make",
+          "-C",
+          "/home/jeff/Documents/ChatGPT/dmg/SameBoy",
+          "CONF=release",
+          "build/lib/libsameboy.a",
+          "bootroms"
+        ],
+        [
+          "cc",
+          "-std=gnu11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-I",
+          "/home/jeff/Documents/ChatGPT/dmg/SameBoy",
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/benchmark/capture.c",
+          "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/lib/libsameboy.a",
+          "-lm",
+          "-ldl",
+          "-o",
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/build/history-portability-render/capture"
+        ],
+        [
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/build/history-portability-render/capture",
+          "--rom",
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/artifacts/sweep-history-probe/audio-torture.gb",
+          "--boot",
+          "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+          "--until-done",
+          "--seed",
+          "1",
+          "--wav",
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/build/history-portability-render/audio.wav",
+          "--screenshot",
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/build/history-portability-render/screen.ppm",
+          "--apu-log",
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/build/history-portability-render/apu.csv",
+          "--markers-log",
+          "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/evidence/build/history-portability-render/markers.csv"
+        ]
+      ],
+      "completion_authority": "ROM emits HRAM FF82=4 after its finite suite/end packet; no wall-clock timeout.",
+      "outputs_sha256": {
+        "audio.wav": "9be610007204a8c75087eb50e3fdc7e32f9aaf360de593beed0b181736dfb4a7",
+        "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+        "apu.csv": "d4f2539762ab346c3ac5d1dd97fbff5e85ebdacde7faded831b356ff4d4443c5",
+        "markers.csv": "7e73ac6d5c6e98b7a50ad38dcb753c5220e6187922cf167a599c57db3d7333c4"
+      },
+      "status": "completed"
+    },
+    "packet_coverage": {
+      "expected": 26,
+      "reference_valid_unique": 26,
+      "hardware_valid_unique": 26,
+      "missing_reference": [],
+      "missing_hardware": [],
+      "reference_duplicates": {},
+      "hardware_duplicates": {},
+      "order_matches_manifest": true,
+      "complete": true,
+      "suite_end_received": true
+    },
+    "hardware_invalid_candidates": 10,
+    "physical_readback_oracle": "All 30 bytes in 12 readback packets match the committed physical history oracle.",
+    "pair_report_complete": true,
+    "pairs_checked": 6,
+    "all_controls_valid": true,
+    "target_differences": 0
+  },
+  "v2_packet_checker_portability": "New package checker consumed the preserved physical metrics and matched all 116 packets / 57 readback payloads to the committed oracle; v2 waveform analysis was not rerun.",
+  "original_lsdj_excerpt": "Exact PCM24 extraction independently compared sample for sample to the existing float32 analysis excerpt; see hardware/lsdj-dac-excerpt.json.",
+  "tools": {
+    "python": "Python 3.14.8",
+    "rgbasm": "rgbasm v1.0.4",
+    "rgblink": "rgblink v1.0.4",
+    "rgbfix": "rgbfix v1.0.4",
+    "flac": "flac 1.5.0"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "format": "dmg-sweep-history-observations-v1",
+  "hardware_wav": {
+    "path": "artifacts/hardware/sweep-history-vvg4l2b6/capture.wav",
+    "sha256": "841af60171c30577d549f736ff192e3be204c0230f9cb7f38f28b466b75c7fc8",
+    "sample_rate": 48000,
+    "bits_per_sample": 24,
+    "channels": 2,
+    "duration_seconds": 16.0
+  },
+  "rom_sha256": "9c8a598aedfd53bfa9da05f51868d57d4f99b563a9fd394732153038dbb6d1a2",
+  "manifest_sha256": "a19ddd5eeeaa131cbc553939502b76fecbaab92e9c03c8b1eca3e0a83b62fad8",
+  "metrics_sha256": "034481308cb98f332a8a40685cb073aa8f470071aaa2b2814838f57265243c66",
+  "history_report_sha256": "82f5420e209c4668cff175360ed49b1878efe38ebfa623a31caaaf92898c0cc7",
+  "source": "Decoded checksummed packets from the finalized user-started physical DMG recording; values copied from hardware_packets, never prediction_NR52.",
+  "packet_coverage": {
+    "expected": 26,
+    "reference_valid_unique": 26,
+    "hardware_valid_unique": 26,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "hardware_invalid_candidate_count": 10,
+  "pairs": [
+    {
+      "shift": 2,
+      "target_frequency": 1306,
+      "direct_NR52": [
+        241,
+        240
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        240
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1307,
+      "direct_NR52": [
+        241,
+        240
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        240
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1308,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1310,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1311,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 3,
+      "target_frequency": 1615,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    }
+  ],
+  "readbacks": [
+    {
+      "case": 2,
+      "name": "sweep-history-s2-51a-direct",
+      "shift": 2,
+      "target_frequency": 1306,
+      "predecessor_frequency": 1045,
+      "initial_frequency": 1306,
+      "mode": "direct",
+      "NR52": [
+        241,
+        240
+      ]
+    },
+    {
+      "case": 3,
+      "name": "sweep-history-s2-51a-chained",
+      "shift": 2,
+      "target_frequency": 1306,
+      "predecessor_frequency": 1045,
+      "initial_frequency": 1045,
+      "mode": "chained",
+      "NR52": [
+        241,
+        241,
+        240
+      ]
+    },
+    {
+      "case": 4,
+      "name": "sweep-history-s2-51b-direct",
+      "shift": 2,
+      "target_frequency": 1307,
+      "predecessor_frequency": 1046,
+      "initial_frequency": 1307,
+      "mode": "direct",
+      "NR52": [
+        241,
+        240
+      ]
+    },
+    {
+      "case": 5,
+      "name": "sweep-history-s2-51b-chained",
+      "shift": 2,
+      "target_frequency": 1307,
+      "predecessor_frequency": 1046,
+      "initial_frequency": 1046,
+      "mode": "chained",
+      "NR52": [
+        241,
+        241,
+        240
+      ]
+    },
+    {
+      "case": 6,
+      "name": "sweep-history-s2-51c-direct",
+      "shift": 2,
+      "target_frequency": 1308,
+      "predecessor_frequency": 1047,
+      "initial_frequency": 1308,
+      "mode": "direct",
+      "NR52": [
+        241,
+        241
+      ]
+    },
+    {
+      "case": 7,
+      "name": "sweep-history-s2-51c-chained",
+      "shift": 2,
+      "target_frequency": 1308,
+      "predecessor_frequency": 1047,
+      "initial_frequency": 1047,
+      "mode": "chained",
+      "NR52": [
+        241,
+        241,
+        241
+      ]
+    },
+    {
+      "case": 8,
+      "name": "sweep-history-s2-51e-direct",
+      "shift": 2,
+      "target_frequency": 1310,
+      "predecessor_frequency": 1048,
+      "initial_frequency": 1310,
+      "mode": "direct",
+      "NR52": [
+        241,
+        241
+      ]
+    },
+    {
+      "case": 9,
+      "name": "sweep-history-s2-51e-chained",
+      "shift": 2,
+      "target_frequency": 1310,
+      "predecessor_frequency": 1048,
+      "initial_frequency": 1048,
+      "mode": "chained",
+      "NR52": [
+        241,
+        241,
+        241
+      ]
+    },
+    {
+      "case": 10,
+      "name": "sweep-history-s2-51f-direct",
+      "shift": 2,
+      "target_frequency": 1311,
+      "predecessor_frequency": 1049,
+      "initial_frequency": 1311,
+      "mode": "direct",
+      "NR52": [
+        241,
+        241
+      ]
+    },
+    {
+      "case": 11,
+      "name": "sweep-history-s2-51f-chained",
+      "shift": 2,
+      "target_frequency": 1311,
+      "predecessor_frequency": 1049,
+      "initial_frequency": 1049,
+      "mode": "chained",
+      "NR52": [
+        241,
+        241,
+        241
+      ]
+    },
+    {
+      "case": 12,
+      "name": "sweep-history-s3-64f-direct",
+      "shift": 3,
+      "target_frequency": 1615,
+      "predecessor_frequency": 1436,
+      "initial_frequency": 1615,
+      "mode": "direct",
+      "NR52": [
+        241,
+        241
+      ]
+    },
+    {
+      "case": 13,
+      "name": "sweep-history-s3-64f-chained",
+      "shift": 3,
+      "target_frequency": 1615,
+      "predecessor_frequency": 1436,
+      "initial_frequency": 1436,
+      "mode": "chained",
+      "NR52": [
+        241,
+        241,
+        241
+      ]
+    }
+  ],
+  "scope": "Six target transitions reached directly and after one surviving ordinary sweep update on this DMG. Agreement does not establish every prior history, another chip variant, or transistor timing."
+}

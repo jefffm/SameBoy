@@ -1,0 +1,97 @@
+{
+  "baseline_commit": "82c17ac6eba4e1d04c23f9e7def2e9763ae41bcd",
+  "test_command": "benchmark/run-noise-feedback-test.sh",
+  "production_test_source": "benchmark/noise-feedback-test.c",
+  "original_fails": {
+    "command": "build/noise-feedback-latch/feedback-regression-red artifacts/noise-probe/steady-mbc5.gb",
+    "exit_code": 1,
+    "expected_first_DMG_phase0_edge_T": 46084,
+    "actual_edge_T": 39940,
+    "log": "artifacts/feedback-latch/regression-original-fails.log",
+    "note": "Same exact event expectation against the isolated original library; the old-source-compatible harness omits accesses to the absent latch field."
+  },
+  "final_passes": {
+    "exit_code": 0,
+    "log": "artifacts/feedback-latch/regression-final.log",
+    "DMG_phase0_edges_T": [
+      46084,
+      82948,
+      89092
+    ],
+    "DMG_phase64_edges_T": [
+      43012,
+      79876,
+      86020
+    ],
+    "CGB_E_phase0_edges_T": [
+      39940,
+      76804,
+      82948
+    ],
+    "CGB_E_phase64_edges_T": [
+      43012,
+      79876,
+      86020
+    ],
+    "checks": [
+      "NR44 actual synchronized reset clears feedback",
+      "APU disable and initialization clear feedback",
+      "Intervening old-channel edge retains feedback during delayed NR44",
+      "Mid-halfcycle native+BESS save/load preserves next127-step output",
+      "NR43 rise consumes held feedback",
+      "NR43 fall captures feedback",
+      "NR43 pulse consumes then refreshes feedback",
+      "Same-value NR43 FF transition captures then consumes",
+      "Legacy104-byte APU section ignores nonzero oldpadding and live latch",
+      "Legacy fallback derives from loaded LFSR and preserves followingRTC/RAM/VRAM"
+    ]
+  },
+  "non_DMG_controls": {
+    "all_explicit_unique_non_DMG_enum_values_tested": 15,
+    "two_counter_phases_per_model": [
+      0,
+      64
+    ],
+    "original_and_final_output_edge_lines_identical": true,
+    "baseline_log": "artifacts/feedback-latch/regression-original.log",
+    "final_log": "artifacts/feedback-latch/regression-final-all-models.log",
+    "scope": "Exact firstthree digital transitions at the existing NR42=98/NR43=6e fixture; not a claim of exhaustive model equivalence."
+  },
+  "state_layout": {
+    "original": {
+      "sizeof_apu": 104,
+      "apu_section_size": 104,
+      "last_old_field_offset": 101,
+      "old_tail_padding": [
+        102,
+        103
+      ]
+    },
+    "initial_prototype": {
+      "sizeof_apu": 104,
+      "latch_offset": 102,
+      "limitation": "Occupies old tail padding; cannot identify old states by section size."
+    },
+    "final": {
+      "sizeof_apu": 112,
+      "apu_section_size": 112,
+      "latch_offset": 104,
+      "legacy_test": "Native state APU section shortened by8bytes to104; oldpadding102\u2013103=FF, live feedback1, loaded feedback0. Fallback0 verified. New-state mid-halfcycle roundtrip separately uses normal public save/load including BESS."
+    }
+  },
+  "sha256": {
+    "benchmark/noise-feedback-test.c": "da10df19119d0c7e963c9579e4c5ca8d723495aa21d19f8a70fc3a53f7e21b48",
+    "benchmark/run-noise-feedback-test.sh": "5abbe29f3c5164720058bc4d9e8dbd88698ea01d53a509df01ec3d9f3b2c8c3b",
+    "SameBoy/Core/apu.c": "926dcb545548b9ed83d491c38833f78bef7f3d55c55b0d418abd38ac743f7efe",
+    "SameBoy/Core/apu.h": "bc2235dd1d990dc4b16e1e907bf55f95667919d3130a0515ba9c6315dc8f5c06",
+    "SameBoy/Core/save_state.c": "d08bf57b5ed403782fe4eec13b997887f5c3ea8ea3b0afc2f57494c49ecdd257",
+    "build/noise-feedback-latch/feedback_regression.c": "0a9272e94a7f9962cd3f802db986703bd119a2e48f5d6856ee0c018ecc79de0d",
+    "artifacts/feedback-latch/regression-original.log": "bcf65e9091cb90b4c0578ede24e736d8936b93a8e0a652b58a0540f0a0c409ce",
+    "artifacts/feedback-latch/regression-original-fails.log": "ea3db58d8b79faffeafebd67c4a013370c2a06806e2514149c51de6b78fc0e27",
+    "artifacts/feedback-latch/regression-final.log": "9cf5edd33983e1391bec86240aac54a9f80dc2c82864e5017af54406a45ca5a6",
+    "artifacts/feedback-latch/regression-final-all-models.log": "557622932086315bd06d8afaa831a1c5584d8d1efea87fb0c284b127ccebe9e3",
+    "benchmark/noise-probe.asm": "2f5920522f60f4e2ef1454ca6cbf8c683f956b5a5a08646462a6785dfc439212",
+    "build/noise-feedback-test/steady.gb": "6766ffa01c6622f2cd978509353a17f5ea1ab99b4f3b9fbd8069f280f1721de5"
+  },
+  "fixture_build": "The one-command helper uses rgbasm, rgblink and rgbfix to assemble benchmark/noise-probe.asm with RETRIGGER=0 and MBC5/RAM header1b0004 into build/noise-feedback-test/steady.gb. Existing captures are untouched."
+}

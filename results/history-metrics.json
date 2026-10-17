@@ -1,0 +1,3117 @@
+{
+  "reference": {
+    "path": "artifacts/sweep-history-probe/reference/audio.wav",
+    "sha256": "9be610007204a8c75087eb50e3fdc7e32f9aaf360de593beed0b181736dfb4a7",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int16",
+    "samples": 278373,
+    "duration_s": 5.7994375
+  },
+  "hardware": {
+    "path": "artifacts/hardware/sweep-history-vvg4l2b6/capture.wav",
+    "sha256": "841af60171c30577d549f736ff192e3be204c0230f9cb7f38f28b466b75c7fc8",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int32",
+    "samples": 768000,
+    "duration_s": 16.0
+  },
+  "manifest": {
+    "path": "artifacts/sweep-history-probe/reference/manifest.json",
+    "sha256": "a19ddd5eeeaa131cbc553939502b76fecbaab92e9c03c8b1eca3e0a83b62fad8"
+  },
+  "markers": {
+    "path": "artifacts/sweep-history-probe/reference/markers.csv",
+    "sha256": "7e73ac6d5c6e98b7a50ad38dcb753c5220e6187922cf167a599c57db3d7333c4"
+  },
+  "protocol": {
+    "sync_hex": "d391",
+    "bit_t_cycles": 8192,
+    "frequencies_hz": [
+      2048,
+      4096
+    ],
+    "checksum": "XOR kind/id_lo/id_hi/length/payload; excludes sync"
+  },
+  "reference_packets": [
+    {
+      "kind": 1,
+      "id": 1,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 0,
+      "expected_checksum": 0,
+      "bytes": [
+        211,
+        145,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "status": "valid",
+      "start_s": 1.4186666666666667,
+      "preamble_score": 15.993014973600028,
+      "candidate_region_s": [
+        1.4178125,
+        1.4194583333333333
+      ],
+      "end_s": 1.5280416666666665
+    },
+    {
+      "kind": 1,
+      "id": 2,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 3,
+      "expected_checksum": 3,
+      "bytes": [
+        211,
+        145,
+        1,
+        2,
+        0,
+        0,
+        3
+      ],
+      "status": "valid",
+      "start_s": 1.6845833333333333,
+      "preamble_score": 15.991801655577245,
+      "candidate_region_s": [
+        1.6837291666666667,
+        1.685375
+      ],
+      "end_s": 1.7939583333333333,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 1.6854375000000001,
+          "preamble_score": 8.069490853653013,
+          "candidate_region_s": [
+            1.6854375000000001,
+            1.6854375000000001
+          ],
+          "kind": 1,
+          "id": 2,
+          "payload": [],
+          "checksum": 3
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 2,
+      "payload_length": 2,
+      "payload": [
+        241,
+        240
+      ],
+      "checksum": 3,
+      "expected_checksum": 3,
+      "bytes": [
+        211,
+        145,
+        2,
+        2,
+        0,
+        2,
+        241,
+        240,
+        3
+      ],
+      "status": "valid",
+      "start_s": 1.8333541666666666,
+      "preamble_score": 15.99020159291821,
+      "candidate_region_s": [
+        1.8324791666666667,
+        1.8341875
+      ],
+      "end_s": 1.9739791666666666
+    },
+    {
+      "kind": 1,
+      "id": 3,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 2,
+      "expected_checksum": 2,
+      "bytes": [
+        211,
+        145,
+        1,
+        3,
+        0,
+        0,
+        2
+      ],
+      "status": "valid",
+      "start_s": 2.0054166666666666,
+      "preamble_score": 15.992119152884921,
+      "candidate_region_s": [
+        2.004541666666667,
+        2.0061875000000002
+      ],
+      "end_s": 2.1147916666666666,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 2.00625,
+          "preamble_score": 8.11136684486666,
+          "candidate_region_s": [
+            2.00625,
+            2.00625
+          ],
+          "kind": 1,
+          "id": 3,
+          "payload": [],
+          "checksum": 2
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 3,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        240
+      ],
+      "checksum": 242,
+      "expected_checksum": 242,
+      "bytes": [
+        211,
+        145,
+        2,
+        3,
+        0,
+        3,
+        241,
+        241,
+        240,
+        242
+      ],
+      "status": "valid",
+      "start_s": 2.162,
+      "preamble_score": 15.990284591049168,
+      "candidate_region_s": [
+        2.161125,
+        2.1628333333333334
+      ],
+      "end_s": 2.3182500000000004
+    },
+    {
+      "kind": 1,
+      "id": 4,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 5,
+      "expected_checksum": 5,
+      "bytes": [
+        211,
+        145,
+        1,
+        4,
+        0,
+        0,
+        5
+      ],
+      "status": "valid",
+      "start_s": 2.3496875,
+      "preamble_score": 15.992475348575566,
+      "candidate_region_s": [
+        2.3488125,
+        2.3504583333333335
+      ],
+      "end_s": 2.4590625
+    },
+    {
+      "kind": 2,
+      "id": 4,
+      "payload_length": 2,
+      "payload": [
+        241,
+        240
+      ],
+      "checksum": 5,
+      "expected_checksum": 5,
+      "bytes": [
+        211,
+        145,
+        2,
+        4,
+        0,
+        2,
+        241,
+        240,
+        5
+      ],
+      "status": "valid",
+      "start_s": 2.4984375,
+      "preamble_score": 15.991921740658565,
+      "candidate_region_s": [
+        2.4975833333333335,
+        2.4992708333333336
+      ],
+      "end_s": 2.6390625
+    },
+    {
+      "kind": 1,
+      "id": 5,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 4,
+      "expected_checksum": 4,
+      "bytes": [
+        211,
+        145,
+        1,
+        5,
+        0,
+        0,
+        4
+      ],
+      "status": "valid",
+      "start_s": 2.6705,
+      "preamble_score": 15.993529903022559,
+      "candidate_region_s": [
+        2.6696458333333335,
+        2.6712708333333337
+      ],
+      "end_s": 2.779875
+    },
+    {
+      "kind": 2,
+      "id": 5,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        240
+      ],
+      "checksum": 244,
+      "expected_checksum": 244,
+      "bytes": [
+        211,
+        145,
+        2,
+        5,
+        0,
+        3,
+        241,
+        241,
+        240,
+        244
+      ],
+      "status": "valid",
+      "start_s": 2.8270833333333334,
+      "preamble_score": 15.991765069992,
+      "candidate_region_s": [
+        2.826229166666667,
+        2.827916666666667
+      ],
+      "end_s": 2.9833333333333334
+    },
+    {
+      "kind": 1,
+      "id": 6,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 7,
+      "expected_checksum": 7,
+      "bytes": [
+        211,
+        145,
+        1,
+        6,
+        0,
+        0,
+        7
+      ],
+      "status": "valid",
+      "start_s": 3.0147708333333334,
+      "preamble_score": 15.993688680597161,
+      "candidate_region_s": [
+        3.013916666666667,
+        3.015541666666667
+      ],
+      "end_s": 3.1241458333333334
+    },
+    {
+      "kind": 2,
+      "id": 6,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 6,
+      "expected_checksum": 6,
+      "bytes": [
+        211,
+        145,
+        2,
+        6,
+        0,
+        2,
+        241,
+        241,
+        6
+      ],
+      "status": "valid",
+      "start_s": 3.163520833333333,
+      "preamble_score": 15.992595993609093,
+      "candidate_region_s": [
+        3.1626666666666665,
+        3.1643541666666666
+      ],
+      "end_s": 3.304145833333333
+    },
+    {
+      "kind": 1,
+      "id": 7,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 6,
+      "expected_checksum": 6,
+      "bytes": [
+        211,
+        145,
+        1,
+        7,
+        0,
+        0,
+        6
+      ],
+      "status": "valid",
+      "start_s": 3.335583333333333,
+      "preamble_score": 15.993941965654786,
+      "candidate_region_s": [
+        3.3347291666666665,
+        3.336375
+      ],
+      "end_s": 3.444958333333333
+    },
+    {
+      "kind": 2,
+      "id": 7,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 247,
+      "expected_checksum": 247,
+      "bytes": [
+        211,
+        145,
+        2,
+        7,
+        0,
+        3,
+        241,
+        241,
+        241,
+        247
+      ],
+      "status": "valid",
+      "start_s": 3.492166666666667,
+      "preamble_score": 15.992240740333477,
+      "candidate_region_s": [
+        3.4913125,
+        3.493
+      ],
+      "end_s": 3.6484166666666664
+    },
+    {
+      "kind": 1,
+      "id": 8,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 9,
+      "expected_checksum": 9,
+      "bytes": [
+        211,
+        145,
+        1,
+        8,
+        0,
+        0,
+        9
+      ],
+      "status": "valid",
+      "start_s": 3.679854166666667,
+      "preamble_score": 15.99391389650786,
+      "candidate_region_s": [
+        3.679,
+        3.680645833333333
+      ],
+      "end_s": 3.7892291666666664
+    },
+    {
+      "kind": 2,
+      "id": 8,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 8,
+      "expected_checksum": 8,
+      "bytes": [
+        211,
+        145,
+        2,
+        8,
+        0,
+        2,
+        241,
+        241,
+        8
+      ],
+      "status": "valid",
+      "start_s": 3.8286041666666666,
+      "preamble_score": 15.992227339635617,
+      "candidate_region_s": [
+        3.82775,
+        3.8294375
+      ],
+      "end_s": 3.9692291666666666
+    },
+    {
+      "kind": 1,
+      "id": 9,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 8,
+      "expected_checksum": 8,
+      "bytes": [
+        211,
+        145,
+        1,
+        9,
+        0,
+        0,
+        8
+      ],
+      "status": "valid",
+      "start_s": 4.000666666666667,
+      "preamble_score": 15.99333640603905,
+      "candidate_region_s": [
+        3.9998125,
+        4.001458333333334
+      ],
+      "end_s": 4.110041666666667,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 4.001520833333333,
+          "preamble_score": 8.02412278317159,
+          "candidate_region_s": [
+            4.001520833333333,
+            4.001520833333333
+          ],
+          "kind": 1,
+          "id": 9,
+          "payload": [],
+          "checksum": 8
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 9,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 249,
+      "expected_checksum": 249,
+      "bytes": [
+        211,
+        145,
+        2,
+        9,
+        0,
+        3,
+        241,
+        241,
+        241,
+        249
+      ],
+      "status": "valid",
+      "start_s": 4.15725,
+      "preamble_score": 15.991614908055295,
+      "candidate_region_s": [
+        4.156395833333334,
+        4.158083333333334
+      ],
+      "end_s": 4.3135
+    },
+    {
+      "kind": 1,
+      "id": 10,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 11,
+      "expected_checksum": 11,
+      "bytes": [
+        211,
+        145,
+        1,
+        10,
+        0,
+        0,
+        11
+      ],
+      "status": "valid",
+      "start_s": 4.3449375,
+      "preamble_score": 15.993099191266165,
+      "candidate_region_s": [
+        4.344083333333334,
+        4.3457291666666675
+      ],
+      "end_s": 4.4543125,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 4.345791666666667,
+          "preamble_score": 8.033076292772432,
+          "candidate_region_s": [
+            4.345791666666667,
+            4.345791666666667
+          ],
+          "kind": 1,
+          "id": 10,
+          "payload": [],
+          "checksum": 11
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 10,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 10,
+      "expected_checksum": 10,
+      "bytes": [
+        211,
+        145,
+        2,
+        10,
+        0,
+        2,
+        241,
+        241,
+        10
+      ],
+      "status": "valid",
+      "start_s": 4.4936875,
+      "preamble_score": 15.990849756533489,
+      "candidate_region_s": [
+        4.4928333333333335,
+        4.494541666666667
+      ],
+      "end_s": 4.6343125
+    },
+    {
+      "kind": 1,
+      "id": 11,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 10,
+      "expected_checksum": 10,
+      "bytes": [
+        211,
+        145,
+        1,
+        11,
+        0,
+        0,
+        10
+      ],
+      "status": "valid",
+      "start_s": 4.66575,
+      "preamble_score": 15.99170396243406,
+      "candidate_region_s": [
+        4.6648958333333335,
+        4.666541666666667
+      ],
+      "end_s": 4.775125,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 4.666604166666667,
+          "preamble_score": 8.07107707948314,
+          "candidate_region_s": [
+            4.666604166666667,
+            4.666604166666667
+          ],
+          "kind": 1,
+          "id": 11,
+          "payload": [],
+          "checksum": 10
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 11,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 251,
+      "expected_checksum": 251,
+      "bytes": [
+        211,
+        145,
+        2,
+        11,
+        0,
+        3,
+        241,
+        241,
+        241,
+        251
+      ],
+      "status": "valid",
+      "start_s": 4.822333333333333,
+      "preamble_score": 15.989949606987551,
+      "candidate_region_s": [
+        4.821479166666666,
+        4.8231874999999995
+      ],
+      "end_s": 4.978583333333333
+    },
+    {
+      "kind": 1,
+      "id": 12,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 13,
+      "expected_checksum": 13,
+      "bytes": [
+        211,
+        145,
+        1,
+        12,
+        0,
+        0,
+        13
+      ],
+      "status": "valid",
+      "start_s": 5.010020833333333,
+      "preamble_score": 15.991265685246526,
+      "candidate_region_s": [
+        5.009166666666666,
+        5.0108125
+      ],
+      "end_s": 5.119395833333333,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 5.0108749999999995,
+          "preamble_score": 8.080350208210284,
+          "candidate_region_s": [
+            5.0108749999999995,
+            5.0108749999999995
+          ],
+          "kind": 1,
+          "id": 12,
+          "payload": [],
+          "checksum": 13
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 12,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 12,
+      "expected_checksum": 12,
+      "bytes": [
+        211,
+        145,
+        2,
+        12,
+        0,
+        2,
+        241,
+        241,
+        12
+      ],
+      "status": "valid",
+      "start_s": 5.158791666666667,
+      "preamble_score": 15.990683481080358,
+      "candidate_region_s": [
+        5.157916666666667,
+        5.159625
+      ],
+      "end_s": 5.299416666666667
+    },
+    {
+      "kind": 1,
+      "id": 13,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 12,
+      "expected_checksum": 12,
+      "bytes": [
+        211,
+        145,
+        1,
+        13,
+        0,
+        0,
+        12
+      ],
+      "status": "valid",
+      "start_s": 5.330854166666667,
+      "preamble_score": 15.99256056170663,
+      "candidate_region_s": [
+        5.33,
+        5.331625
+      ],
+      "end_s": 5.440229166666667,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 5.3316875,
+          "preamble_score": 8.124586742713253,
+          "candidate_region_s": [
+            5.3316875,
+            5.3316875
+          ],
+          "kind": 1,
+          "id": 13,
+          "payload": [],
+          "checksum": 12
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 13,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 253,
+      "expected_checksum": 253,
+      "bytes": [
+        211,
+        145,
+        2,
+        13,
+        0,
+        3,
+        241,
+        241,
+        241,
+        253
+      ],
+      "status": "valid",
+      "start_s": 5.4874375,
+      "preamble_score": 15.990733819648879,
+      "candidate_region_s": [
+        5.4865625,
+        5.488270833333333
+      ],
+      "end_s": 5.6436874999999995
+    },
+    {
+      "kind": 3,
+      "id": 65535,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 3,
+      "expected_checksum": 3,
+      "bytes": [
+        211,
+        145,
+        3,
+        255,
+        255,
+        0,
+        3
+      ],
+      "status": "valid",
+      "start_s": 5.675104166666666,
+      "preamble_score": 15.993560408137322,
+      "candidate_region_s": [
+        5.67425,
+        5.675875
+      ],
+      "end_s": 5.784479166666666
+    }
+  ],
+  "reference_invalid_candidates": [
+    {
+      "kind": 0,
+      "id": 6,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 3.1626041666666667,
+      "preamble_score": 8.303939482345596,
+      "candidate_region_s": [
+        3.1626041666666667,
+        3.1626041666666667
+      ],
+      "within_valid_packet_first_bit": true
+    }
+  ],
+  "hardware_packets": [
+    {
+      "kind": 1,
+      "id": 1,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 0,
+      "expected_checksum": 0,
+      "bytes": [
+        211,
+        145,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "status": "valid",
+      "start_s": 11.584729166666667,
+      "preamble_score": 15.992530923851028,
+      "candidate_region_s": [
+        11.583875,
+        11.585520833333334
+      ],
+      "end_s": 11.694110793448555
+    },
+    {
+      "kind": 1,
+      "id": 2,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 3,
+      "expected_checksum": 3,
+      "bytes": [
+        211,
+        145,
+        1,
+        2,
+        0,
+        0,
+        3
+      ],
+      "status": "valid",
+      "start_s": 11.850666666666667,
+      "preamble_score": 15.992654174892447,
+      "candidate_region_s": [
+        11.8498125,
+        11.851458333333333
+      ],
+      "end_s": 11.960048293448555,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 11.8515,
+          "preamble_score": 8.17582466486896,
+          "candidate_region_s": [
+            11.8515,
+            11.851520833333334
+          ],
+          "kind": 1,
+          "id": 2,
+          "payload": [],
+          "checksum": 3
+        },
+        {
+          "start_s": 11.8515625,
+          "preamble_score": 7.723922429038896,
+          "candidate_region_s": [
+            11.8515625,
+            11.851604166666666
+          ],
+          "kind": 1,
+          "id": 2,
+          "payload": [],
+          "checksum": 3
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 2,
+      "payload_length": 2,
+      "payload": [
+        241,
+        240
+      ],
+      "checksum": 3,
+      "expected_checksum": 3,
+      "bytes": [
+        211,
+        145,
+        2,
+        2,
+        0,
+        2,
+        241,
+        240,
+        3
+      ],
+      "status": "valid",
+      "start_s": 11.9994375,
+      "preamble_score": 15.990669817615279,
+      "candidate_region_s": [
+        11.998583333333332,
+        12.000270833333333
+      ],
+      "end_s": 12.140071020148142,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 12.0003125,
+          "preamble_score": 7.767902340749013,
+          "candidate_region_s": [
+            12.0003125,
+            12.000375
+          ],
+          "kind": 2,
+          "id": 2,
+          "payload": [
+            241,
+            240
+          ],
+          "checksum": 3
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 3,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 2,
+      "expected_checksum": 2,
+      "bytes": [
+        211,
+        145,
+        1,
+        3,
+        0,
+        0,
+        2
+      ],
+      "status": "valid",
+      "start_s": 12.1715,
+      "preamble_score": 15.992546645666172,
+      "candidate_region_s": [
+        12.170645833333333,
+        12.172291666666666
+      ],
+      "end_s": 12.280881626781888,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 12.1724375,
+          "preamble_score": 7.352468401047464,
+          "candidate_region_s": [
+            12.1724375,
+            12.1724375
+          ],
+          "kind": 1,
+          "id": 3,
+          "payload": [],
+          "checksum": 2
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 3,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        240
+      ],
+      "checksum": 242,
+      "expected_checksum": 242,
+      "bytes": [
+        211,
+        145,
+        2,
+        3,
+        0,
+        3,
+        241,
+        241,
+        240,
+        242
+      ],
+      "status": "valid",
+      "start_s": 12.328104166666666,
+      "preamble_score": 15.990033382803785,
+      "candidate_region_s": [
+        12.32725,
+        12.328875
+      ],
+      "end_s": 12.484363633497933,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 12.328916666666666,
+          "preamble_score": 8.346819802327614,
+          "candidate_region_s": [
+            12.328916666666666,
+            12.3289375
+          ],
+          "kind": 2,
+          "id": 3,
+          "payload": [
+            241,
+            241,
+            240
+          ],
+          "checksum": 242
+        },
+        {
+          "start_s": 12.328979166666667,
+          "preamble_score": 7.758634227298373,
+          "candidate_region_s": [
+            12.328979166666667,
+            12.329020833333333
+          ],
+          "kind": 2,
+          "id": 3,
+          "payload": [
+            241,
+            241,
+            240
+          ],
+          "checksum": 242
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 4,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 5,
+      "expected_checksum": 5,
+      "bytes": [
+        211,
+        145,
+        1,
+        4,
+        0,
+        0,
+        5
+      ],
+      "status": "valid",
+      "start_s": 12.515791666666667,
+      "preamble_score": 15.992505463903331,
+      "candidate_region_s": [
+        12.5149375,
+        12.516583333333333
+      ],
+      "end_s": 12.625173293448555
+    },
+    {
+      "kind": 2,
+      "id": 4,
+      "payload_length": 2,
+      "payload": [
+        241,
+        240
+      ],
+      "checksum": 5,
+      "expected_checksum": 5,
+      "bytes": [
+        211,
+        145,
+        2,
+        4,
+        0,
+        2,
+        241,
+        240,
+        5
+      ],
+      "status": "valid",
+      "start_s": 12.6645625,
+      "preamble_score": 15.991312605445678,
+      "candidate_region_s": [
+        12.663708333333334,
+        12.665395833333333
+      ],
+      "end_s": 12.805196020148141
+    },
+    {
+      "kind": 1,
+      "id": 5,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 4,
+      "expected_checksum": 4,
+      "bytes": [
+        211,
+        145,
+        1,
+        5,
+        0,
+        0,
+        4
+      ],
+      "status": "valid",
+      "start_s": 12.836625,
+      "preamble_score": 15.992140760315625,
+      "candidate_region_s": [
+        12.835770833333333,
+        12.837416666666666
+      ],
+      "end_s": 12.946006626781887,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 12.837479166666666,
+          "preamble_score": 7.969873493991118,
+          "candidate_region_s": [
+            12.837479166666666,
+            12.837583333333333
+          ],
+          "kind": 1,
+          "id": 5,
+          "payload": [],
+          "checksum": 4
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 5,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        240
+      ],
+      "checksum": 244,
+      "expected_checksum": 244,
+      "bytes": [
+        211,
+        145,
+        2,
+        5,
+        0,
+        3,
+        241,
+        241,
+        240,
+        244
+      ],
+      "status": "valid",
+      "start_s": 12.993229166666667,
+      "preamble_score": 15.990744455658266,
+      "candidate_region_s": [
+        12.992375,
+        12.9940625
+      ],
+      "end_s": 13.149488633497935,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 12.994104166666666,
+          "preamble_score": 7.772399630867782,
+          "candidate_region_s": [
+            12.994104166666666,
+            12.994166666666667
+          ],
+          "kind": 2,
+          "id": 5,
+          "payload": [
+            241,
+            241,
+            240
+          ],
+          "checksum": 244
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 6,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 7,
+      "expected_checksum": 7,
+      "bytes": [
+        211,
+        145,
+        1,
+        6,
+        0,
+        0,
+        7
+      ],
+      "status": "valid",
+      "start_s": 13.180916666666667,
+      "preamble_score": 15.992044887873696,
+      "candidate_region_s": [
+        13.1800625,
+        13.181708333333333
+      ],
+      "end_s": 13.290298293448554,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 13.181770833333333,
+          "preamble_score": 7.9620832096075285,
+          "candidate_region_s": [
+            13.181770833333333,
+            13.181770833333333
+          ],
+          "kind": 1,
+          "id": 6,
+          "payload": [],
+          "checksum": 7
+        },
+        {
+          "start_s": 13.181833333333334,
+          "preamble_score": 7.612385093425583,
+          "candidate_region_s": [
+            13.181833333333334,
+            13.181854166666668
+          ],
+          "kind": 1,
+          "id": 6,
+          "payload": [],
+          "checksum": 7
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 6,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 6,
+      "expected_checksum": 6,
+      "bytes": [
+        211,
+        145,
+        2,
+        6,
+        0,
+        2,
+        241,
+        241,
+        6
+      ],
+      "status": "valid",
+      "start_s": 13.3296875,
+      "preamble_score": 15.991534967182027,
+      "candidate_region_s": [
+        13.328833333333334,
+        13.330520833333333
+      ],
+      "end_s": 13.470321020148141,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 13.3305625,
+          "preamble_score": 7.773605262535949,
+          "candidate_region_s": [
+            13.3305625,
+            13.330625
+          ],
+          "kind": 2,
+          "id": 6,
+          "payload": [
+            241,
+            241
+          ],
+          "checksum": 6
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 7,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 6,
+      "expected_checksum": 6,
+      "bytes": [
+        211,
+        145,
+        1,
+        7,
+        0,
+        0,
+        6
+      ],
+      "status": "valid",
+      "start_s": 13.50175,
+      "preamble_score": 15.991731952786502,
+      "candidate_region_s": [
+        13.500895833333333,
+        13.502541666666668
+      ],
+      "end_s": 13.611131626781887,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 13.502604166666666,
+          "preamble_score": 7.9722320111059295,
+          "candidate_region_s": [
+            13.502604166666666,
+            13.502604166666666
+          ],
+          "kind": 1,
+          "id": 7,
+          "payload": [],
+          "checksum": 6
+        },
+        {
+          "start_s": 13.502645833333334,
+          "preamble_score": 7.740001453277539,
+          "candidate_region_s": [
+            13.502645833333334,
+            13.5026875
+          ],
+          "kind": 1,
+          "id": 7,
+          "payload": [],
+          "checksum": 6
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 7,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 247,
+      "expected_checksum": 247,
+      "bytes": [
+        211,
+        145,
+        2,
+        7,
+        0,
+        3,
+        241,
+        241,
+        241,
+        247
+      ],
+      "status": "valid",
+      "start_s": 13.658354166666667,
+      "preamble_score": 15.991213994036986,
+      "candidate_region_s": [
+        13.6575,
+        13.6591875
+      ],
+      "end_s": 13.814613633497935,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 13.659229166666666,
+          "preamble_score": 7.775511998628949,
+          "candidate_region_s": [
+            13.659229166666666,
+            13.659270833333334
+          ],
+          "kind": 2,
+          "id": 7,
+          "payload": [
+            241,
+            241,
+            241
+          ],
+          "checksum": 247
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 8,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 9,
+      "expected_checksum": 9,
+      "bytes": [
+        211,
+        145,
+        1,
+        8,
+        0,
+        0,
+        9
+      ],
+      "status": "valid",
+      "start_s": 13.846041666666666,
+      "preamble_score": 15.991371727587758,
+      "candidate_region_s": [
+        13.8451875,
+        13.846833333333333
+      ],
+      "end_s": 13.955423293448554,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 13.846895833333333,
+          "preamble_score": 7.980214418644005,
+          "candidate_region_s": [
+            13.846895833333333,
+            13.846895833333333
+          ],
+          "kind": 1,
+          "id": 8,
+          "payload": [],
+          "checksum": 9
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 8,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 8,
+      "expected_checksum": 8,
+      "bytes": [
+        211,
+        145,
+        2,
+        8,
+        0,
+        2,
+        241,
+        241,
+        8
+      ],
+      "status": "valid",
+      "start_s": 13.9948125,
+      "preamble_score": 15.991896398352454,
+      "candidate_region_s": [
+        13.993958333333333,
+        13.995645833333333
+      ],
+      "end_s": 14.135446020148141,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 13.9956875,
+          "preamble_score": 7.776582032759678,
+          "candidate_region_s": [
+            13.9956875,
+            13.995729166666667
+          ],
+          "kind": 2,
+          "id": 8,
+          "payload": [
+            241,
+            241
+          ],
+          "checksum": 8
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 9,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 8,
+      "expected_checksum": 8,
+      "bytes": [
+        211,
+        145,
+        1,
+        9,
+        0,
+        0,
+        8
+      ],
+      "status": "valid",
+      "start_s": 14.166875,
+      "preamble_score": 15.990951385575924,
+      "candidate_region_s": [
+        14.166020833333333,
+        14.167666666666667
+      ],
+      "end_s": 14.276256626781887,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 14.167729166666666,
+          "preamble_score": 7.987650859562535,
+          "candidate_region_s": [
+            14.167729166666666,
+            14.167729166666666
+          ],
+          "kind": 1,
+          "id": 9,
+          "payload": [],
+          "checksum": 8
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 9,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 249,
+      "expected_checksum": 249,
+      "bytes": [
+        211,
+        145,
+        2,
+        9,
+        0,
+        3,
+        241,
+        241,
+        241,
+        249
+      ],
+      "status": "valid",
+      "start_s": 14.323479166666667,
+      "preamble_score": 15.99161077690869,
+      "candidate_region_s": [
+        14.322625,
+        14.3243125
+      ],
+      "end_s": 14.479738633497934,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 14.324354166666666,
+          "preamble_score": 7.7797338164555425,
+          "candidate_region_s": [
+            14.324354166666666,
+            14.324416666666666
+          ],
+          "kind": 2,
+          "id": 9,
+          "payload": [
+            241,
+            241,
+            241
+          ],
+          "checksum": 249
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 10,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 11,
+      "expected_checksum": 11,
+      "bytes": [
+        211,
+        145,
+        1,
+        10,
+        0,
+        0,
+        11
+      ],
+      "status": "valid",
+      "start_s": 14.511166666666666,
+      "preamble_score": 15.991217387966234,
+      "candidate_region_s": [
+        14.5103125,
+        14.511958333333334
+      ],
+      "end_s": 14.620548293448554,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 14.512,
+          "preamble_score": 8.295424255439206,
+          "candidate_region_s": [
+            14.512,
+            14.512020833333333
+          ],
+          "kind": 1,
+          "id": 10,
+          "payload": [],
+          "checksum": 11
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 10,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 10,
+      "expected_checksum": 10,
+      "bytes": [
+        211,
+        145,
+        2,
+        10,
+        0,
+        2,
+        241,
+        241,
+        10
+      ],
+      "status": "valid",
+      "start_s": 14.6599375,
+      "preamble_score": 15.992186443577154,
+      "candidate_region_s": [
+        14.659083333333333,
+        14.660770833333334
+      ],
+      "end_s": 14.80057102014814,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 14.6608125,
+          "preamble_score": 7.792072115669835,
+          "candidate_region_s": [
+            14.6608125,
+            14.660875
+          ],
+          "kind": 2,
+          "id": 10,
+          "payload": [
+            241,
+            241
+          ],
+          "checksum": 10
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 11,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 10,
+      "expected_checksum": 10,
+      "bytes": [
+        211,
+        145,
+        1,
+        11,
+        0,
+        0,
+        10
+      ],
+      "status": "valid",
+      "start_s": 14.832020833333333,
+      "preamble_score": 15.990425619625896,
+      "candidate_region_s": [
+        14.831145833333334,
+        14.832791666666667
+      ],
+      "end_s": 14.94140246011522
+    },
+    {
+      "kind": 2,
+      "id": 11,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 251,
+      "expected_checksum": 251,
+      "bytes": [
+        211,
+        145,
+        2,
+        11,
+        0,
+        3,
+        241,
+        241,
+        241,
+        251
+      ],
+      "status": "valid",
+      "start_s": 14.988604166666667,
+      "preamble_score": 15.99189429298026,
+      "candidate_region_s": [
+        14.98775,
+        14.9894375
+      ],
+      "end_s": 15.144863633497934,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 14.989479166666667,
+          "preamble_score": 7.7804173889417685,
+          "candidate_region_s": [
+            14.989479166666667,
+            14.989541666666666
+          ],
+          "kind": 2,
+          "id": 11,
+          "payload": [
+            241,
+            241,
+            241
+          ],
+          "checksum": 251
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "id": 12,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 13,
+      "expected_checksum": 13,
+      "bytes": [
+        211,
+        145,
+        1,
+        12,
+        0,
+        0,
+        13
+      ],
+      "status": "valid",
+      "start_s": 15.1763125,
+      "preamble_score": 15.990654510618851,
+      "candidate_region_s": [
+        15.175458333333333,
+        15.177083333333334
+      ],
+      "end_s": 15.285694126781888,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 15.177145833333332,
+          "preamble_score": 8.023765630755772,
+          "candidate_region_s": [
+            15.177145833333332,
+            15.177145833333332
+          ],
+          "kind": 1,
+          "id": 12,
+          "payload": [],
+          "checksum": 13
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 12,
+      "payload_length": 2,
+      "payload": [
+        241,
+        241
+      ],
+      "checksum": 12,
+      "expected_checksum": 12,
+      "bytes": [
+        211,
+        145,
+        2,
+        12,
+        0,
+        2,
+        241,
+        241,
+        12
+      ],
+      "status": "valid",
+      "start_s": 15.3250625,
+      "preamble_score": 15.992286779817839,
+      "candidate_region_s": [
+        15.324208333333333,
+        15.326
+      ],
+      "end_s": 15.46569602014814
+    },
+    {
+      "kind": 1,
+      "id": 13,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 12,
+      "expected_checksum": 12,
+      "bytes": [
+        211,
+        145,
+        1,
+        13,
+        0,
+        0,
+        12
+      ],
+      "status": "valid",
+      "start_s": 15.497145833333333,
+      "preamble_score": 15.991115421890704,
+      "candidate_region_s": [
+        15.496291666666666,
+        15.497916666666667
+      ],
+      "end_s": 15.60652746011522,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 15.498020833333333,
+          "preamble_score": 7.761274169113235,
+          "candidate_region_s": [
+            15.498020833333333,
+            15.498083333333334
+          ],
+          "kind": 1,
+          "id": 13,
+          "payload": [],
+          "checksum": 12
+        }
+      ]
+    },
+    {
+      "kind": 2,
+      "id": 13,
+      "payload_length": 3,
+      "payload": [
+        241,
+        241,
+        241
+      ],
+      "checksum": 253,
+      "expected_checksum": 253,
+      "bytes": [
+        211,
+        145,
+        2,
+        13,
+        0,
+        3,
+        241,
+        241,
+        241,
+        253
+      ],
+      "status": "valid",
+      "start_s": 15.653729166666666,
+      "preamble_score": 15.991805621581527,
+      "candidate_region_s": [
+        15.652875,
+        15.6545625
+      ],
+      "end_s": 15.809988633497934,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 15.654604166666667,
+          "preamble_score": 7.790615408712292,
+          "candidate_region_s": [
+            15.654604166666667,
+            15.654666666666667
+          ],
+          "kind": 2,
+          "id": 13,
+          "payload": [
+            241,
+            241,
+            241
+          ],
+          "checksum": 253
+        }
+      ]
+    },
+    {
+      "kind": 3,
+      "id": 65535,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 3,
+      "expected_checksum": 3,
+      "bytes": [
+        211,
+        145,
+        3,
+        255,
+        255,
+        0,
+        3
+      ],
+      "status": "valid",
+      "start_s": 15.841416666666667,
+      "preamble_score": 15.992239111475179,
+      "candidate_region_s": [
+        15.8405625,
+        15.8421875
+      ],
+      "end_s": 15.950798293448555,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 15.842291666666666,
+          "preamble_score": 7.7778774313563614,
+          "candidate_region_s": [
+            15.842291666666666,
+            15.842291666666666
+          ],
+          "kind": 3,
+          "id": 65535,
+          "payload": [],
+          "checksum": 3
+        },
+        {
+          "start_s": 15.842333333333332,
+          "preamble_score": 7.495116862912795,
+          "candidate_region_s": [
+            15.842333333333332,
+            15.842354166666667
+          ],
+          "kind": 3,
+          "id": 65535,
+          "payload": [],
+          "checksum": 3
+        }
+      ]
+    }
+  ],
+  "hardware_invalid_candidates": [
+    {
+      "kind": 150,
+      "id": 51050,
+      "payload_length": 71,
+      "status": "unknown_kind_or_id",
+      "start_s": 2.8936041666666665,
+      "preamble_score": 5.999470544614148,
+      "candidate_region_s": [
+        2.8936041666666665,
+        2.893625
+      ],
+      "within_valid_packet_first_bit": false
+    },
+    {
+      "kind": 213,
+      "id": 48289,
+      "payload_length": 93,
+      "status": "unknown_kind_or_id",
+      "start_s": 8.171666666666667,
+      "preamble_score": 1.5964548855709264,
+      "candidate_region_s": [
+        8.171666666666667,
+        8.171666666666667
+      ],
+      "within_valid_packet_first_bit": false
+    },
+    {
+      "kind": 2,
+      "id": 4,
+      "payload_length": 2,
+      "payload": [
+        241,
+        240
+      ],
+      "checksum": 1,
+      "expected_checksum": 5,
+      "bytes": [
+        211,
+        145,
+        2,
+        4,
+        0,
+        2,
+        241,
+        240,
+        1
+      ],
+      "status": "invalid_checksum",
+      "start_s": 12.6654375,
+      "preamble_score": 7.775783225819447,
+      "candidate_region_s": [
+        12.6654375,
+        12.6655
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 24,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 13.8469375,
+      "preamble_score": 7.746206445470572,
+      "candidate_region_s": [
+        13.8469375,
+        13.8469375
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 24,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 13.846979166666667,
+      "preamble_score": 7.392867119429771,
+      "candidate_region_s": [
+        13.846979166666667,
+        13.847
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 25,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 14.167791666666666,
+      "preamble_score": 7.636157614233001,
+      "candidate_region_s": [
+        14.167791666666666,
+        14.1678125
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 26,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 14.512083333333333,
+      "preamble_score": 7.645739534204849,
+      "candidate_region_s": [
+        14.512083333333333,
+        14.512104166666667
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 27,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 14.8329375,
+      "preamble_score": 7.42155967596771,
+      "candidate_region_s": [
+        14.8329375,
+        14.8329375
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 12,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 29,
+      "expected_checksum": 13,
+      "bytes": [
+        211,
+        145,
+        1,
+        12,
+        0,
+        0,
+        29
+      ],
+      "status": "invalid_checksum",
+      "start_s": 15.1771875,
+      "preamble_score": 7.766233419283063,
+      "candidate_region_s": [
+        15.1771875,
+        15.17725
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 13,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 8,
+      "expected_checksum": 12,
+      "bytes": [
+        211,
+        145,
+        1,
+        13,
+        0,
+        0,
+        8
+      ],
+      "status": "invalid_checksum",
+      "start_s": 15.497979166666667,
+      "preamble_score": 8.030509000844349,
+      "candidate_region_s": [
+        15.497979166666667,
+        15.497979166666667
+      ],
+      "within_valid_packet_first_bit": true
+    }
+  ],
+  "decoder": {
+    "reference": {
+      "method": "Decode actual audio around reference packet-writer markers; each search includes one bit of phase ambiguity before/after the specified packet.",
+      "valid_packets": 26,
+      "invalid_or_partial_candidates": 1
+    },
+    "hardware_initial": {
+      "clock_used": 1.0,
+      "bit_duration_s": 0.001953125,
+      "candidate_regions": 64,
+      "valid_packets": 26,
+      "invalid_or_partial_candidates": 10
+    },
+    "hardware_clock_corrected": {
+      "clock_used": 1.0000605877201107,
+      "bit_duration_s": 0.0019532433353908413,
+      "candidate_regions": 62,
+      "valid_packets": 26,
+      "invalid_or_partial_candidates": 10
+    }
+  },
+  "packet_coverage": {
+    "expected": 26,
+    "reference_valid_unique": 26,
+    "hardware_valid_unique": 26,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "cases": [
+    {
+      "id": 1,
+      "name": "calibration-pulse",
+      "group": "calibration",
+      "description": "Uninterrupted CH2 256 Hz, duty 50%, volume 8 for eight complete frame-sequencer cycles.",
+      "reference_interval_s": [
+        1.54306221,
+        1.668101311
+      ],
+      "mapped_hardware_interval_s": [
+        11.70913073840004,
+        11.834177169885619
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 6002,
+        "rmse": 0.007076071097109894,
+        "normalized_rmse_reference": 0.10731297562362442,
+        "correlation": 0.9968267523169069,
+        "reference_rms": 0.06593863468969108,
+        "hardware_calibrated_rms": 0.06593863468969108,
+        "mean_difference": 0.004745428954431861,
+        "peak_absolute_difference": 0.0671547360365064
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 8,
+        "rmse": 0.0003813393302466742
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 7.997334221926025,
+        "hardware_resolution_reference_hz": 7.997803070012104,
+        "integrated_absolute_psd_difference": 3.790417239622206e-05,
+        "relative_integrated_absolute_psd_difference": 0.008688961933734068,
+        "reference_power": 0.0043623361093415225,
+        "hardware_power": 0.004375548258116798
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 2,
+      "name": "sweep-history-s2-51a-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        1.808981895,
+        1.81687355
+      ],
+      "mapped_hardware_interval_s": [
+        11.97506601308679,
+        11.982958130739375
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 378,
+        "rmse": 0.01738432173407876,
+        "normalized_rmse_reference": 0.5093070368904701,
+        "correlation": 0.19732747465271866,
+        "reference_rms": 0.03413328400137022,
+        "hardware_calibrated_rms": 0.03227928595859516,
+        "mean_difference": 0.0028243166571288126,
+        "peak_absolute_difference": 0.0623371252786919
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0018539980427750638
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 126.99157149791708,
+        "integrated_absolute_psd_difference": 0.00011935581765586317,
+        "relative_integrated_absolute_psd_difference": 0.19048279349307465,
+        "reference_power": 0.0006265963212063171,
+        "hardware_power": 0.0007459312150365891
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          240
+        ],
+        "hardware": [
+          241,
+          240
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 3,
+      "name": "sweep-history-s2-51a-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        2.129797935,
+        2.145508766
+      ],
+      "mapped_hardware_interval_s": [
+        12.295900861102332,
+        12.31161261315838
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 754,
+        "rmse": 0.012404046630792519,
+        "normalized_rmse_reference": 0.4896470781801675,
+        "correlation": 0.662365307970893,
+        "reference_rms": 0.025332626668362147,
+        "hardware_calibrated_rms": 0.024570400675224514,
+        "mean_difference": 0.0006492182452040631,
+        "peak_absolute_difference": 0.062192299633995654
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.000762225993137633
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.66047745358091,
+        "hardware_resolution_reference_hz": 63.66420958383641,
+        "integrated_absolute_psd_difference": 6.641518953945375e-05,
+        "relative_integrated_absolute_psd_difference": 0.3197858384845022,
+        "reference_power": 0.0002076864624593826,
+        "hardware_power": 0.00027409439071110996
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241,
+          240
+        ],
+        "hardware": [
+          241,
+          241,
+          240
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 4,
+      "name": "sweep-history-s2-51b-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        2.474069595,
+        2.48196125
+      ],
+      "mapped_hardware_interval_s": [
+        12.640192704216405,
+        12.64808482186899
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 379,
+        "rmse": 0.01720100812968443,
+        "normalized_rmse_reference": 0.5056123211212782,
+        "correlation": 0.19905239052562615,
+        "reference_rms": 0.034020152221643604,
+        "hardware_calibrated_rms": 0.03348447689159011,
+        "mean_difference": 0.001380640028804723,
+        "peak_absolute_difference": 0.060690171605062994
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0005356753300534908
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.6490765171504,
+        "hardware_resolution_reference_hz": 126.65650138842388,
+        "integrated_absolute_psd_difference": 0.0001806940723332908,
+        "relative_integrated_absolute_psd_difference": 0.2906252658530505,
+        "reference_power": 0.0006217424758405401,
+        "hardware_power": 0.0008024139243360008
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          240
+        ],
+        "hardware": [
+          241,
+          240
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 5,
+      "name": "sweep-history-s2-51b-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        2.794885635,
+        2.810596466
+      ],
+      "mapped_hardware_interval_s": [
+        12.961027552231947,
+        12.976739304287994
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 754,
+        "rmse": 0.012389685818860288,
+        "normalized_rmse_reference": 0.48933223058264863,
+        "correlation": 0.6618036188914799,
+        "reference_rms": 0.025319578487825893,
+        "hardware_calibrated_rms": 0.024681478643961197,
+        "mean_difference": 0.0004739453457288416,
+        "peak_absolute_difference": 0.06185847334324318
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0006380998438646965
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.66047745358091,
+        "hardware_resolution_reference_hz": 63.66420958383641,
+        "integrated_absolute_psd_difference": 7.040503150814485e-05,
+        "relative_integrated_absolute_psd_difference": 0.3393542579626763,
+        "reference_power": 0.0002074676532153261,
+        "hardware_power": 0.0002778652905646203
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241,
+          240
+        ],
+        "hardware": [
+          241,
+          241,
+          240
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 6,
+      "name": "sweep-history-s2-51c-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        3.139157295,
+        3.14704895
+      ],
+      "mapped_hardware_interval_s": [
+        13.305319395346022,
+        13.313211512998604
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 379,
+        "rmse": 0.01730349432083486,
+        "normalized_rmse_reference": 0.5083490730031617,
+        "correlation": 0.19125893976245856,
+        "reference_rms": 0.03403860701193262,
+        "hardware_calibrated_rms": 0.03340437777834283,
+        "mean_difference": 0.0014919417618090463,
+        "peak_absolute_difference": 0.06064192795149952
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0006342292335897934
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.6490765171504,
+        "hardware_resolution_reference_hz": 126.65650138842388,
+        "integrated_absolute_psd_difference": 0.0001776746353860902,
+        "relative_integrated_absolute_psd_difference": 0.2854544368426504,
+        "reference_power": 0.0006224273034649971,
+        "hardware_power": 0.000800079431684514
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 7,
+      "name": "sweep-history-s2-51c-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        3.459973335,
+        3.475684166
+      ],
+      "mapped_hardware_interval_s": [
+        13.626154243361562,
+        13.641865995417609
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 754,
+        "rmse": 0.012412106312491419,
+        "normalized_rmse_reference": 0.4911844050665259,
+        "correlation": 0.6595686816762827,
+        "reference_rms": 0.025269748356139946,
+        "hardware_calibrated_rms": 0.0246512490537345,
+        "mean_difference": 0.00046138457237012895,
+        "peak_absolute_difference": 0.06242255055940395
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.000618499302405446
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.66047745358091,
+        "hardware_resolution_reference_hz": 63.66420958383641,
+        "integrated_absolute_psd_difference": 7.040543666722465e-05,
+        "relative_integrated_absolute_psd_difference": 0.34071178381816586,
+        "reference_power": 0.00020664221201342205,
+        "hardware_power": 0.0002770402743419826
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241,
+          241
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 8,
+      "name": "sweep-history-s2-51e-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        3.804244995,
+        3.81213665
+      ],
+      "mapped_hardware_interval_s": [
+        13.970446086475636,
+        13.97833820412822
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 379,
+        "rmse": 0.017290631033920714,
+        "normalized_rmse_reference": 0.5073958974834176,
+        "correlation": 0.1923316437412506,
+        "reference_rms": 0.03407719912533545,
+        "hardware_calibrated_rms": 0.033376976185420106,
+        "mean_difference": 0.0015475699681090811,
+        "peak_absolute_difference": 0.061308287248534175
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0007002229399153473
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.6490765171504,
+        "hardware_resolution_reference_hz": 126.65650138842388,
+        "integrated_absolute_psd_difference": 0.00017544869980085556,
+        "relative_integrated_absolute_psd_difference": 0.28125688073829297,
+        "reference_power": 0.0006238023380630073,
+        "hardware_power": 0.0007992285417615886
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 9,
+      "name": "sweep-history-s2-51e-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        4.125061035,
+        4.140771866
+      ],
+      "mapped_hardware_interval_s": [
+        14.291280934491176,
+        14.306992686547224
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 755,
+        "rmse": 0.012260794366831139,
+        "normalized_rmse_reference": 0.48610183760989967,
+        "correlation": 0.6681277925735852,
+        "reference_rms": 0.02522268672571963,
+        "hardware_calibrated_rms": 0.02462784598026174,
+        "mean_difference": 0.00046062097560611897,
+        "peak_absolute_difference": 0.06222644107231892
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0005948407454578926
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.576158940397356,
+        "hardware_resolution_reference_hz": 63.66420958383641,
+        "integrated_absolute_psd_difference": 6.904731024399273e-05,
+        "relative_integrated_absolute_psd_difference": 0.3334147514125906,
+        "reference_power": 0.00020709134779267396,
+        "hardware_power": 0.00027596615019989185
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241,
+          241
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 10,
+      "name": "sweep-history-s2-51f-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        4.469332695,
+        4.47722435
+      ],
+      "mapped_hardware_interval_s": [
+        14.635572777605251,
+        14.643464895257836
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 379,
+        "rmse": 0.0171084633806205,
+        "normalized_rmse_reference": 0.5019359791741257,
+        "correlation": 0.2135517224178138,
+        "reference_rms": 0.03408495124969999,
+        "hardware_calibrated_rms": 0.03354635691839714,
+        "mean_difference": 0.0013462075224887316,
+        "peak_absolute_difference": 0.06123903679384478
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0005385943313028496
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.6490765171504,
+        "hardware_resolution_reference_hz": 126.65650138842388,
+        "integrated_absolute_psd_difference": 0.00018064129003075074,
+        "relative_integrated_absolute_psd_difference": 0.2871726898148376,
+        "reference_power": 0.0006290336666318239,
+        "hardware_power": 0.0008096521519640641
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 11,
+      "name": "sweep-history-s2-51f-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        4.790148735,
+        4.805859566
+      ],
+      "mapped_hardware_interval_s": [
+        14.956407625620791,
+        14.972119377676838
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 754,
+        "rmse": 0.01232330743314263,
+        "normalized_rmse_reference": 0.4871358568979677,
+        "correlation": 0.664257004887087,
+        "reference_rms": 0.02529747555767341,
+        "hardware_calibrated_rms": 0.02474991758227936,
+        "mean_difference": 0.0003470634394306982,
+        "peak_absolute_difference": 0.061893303738123774
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0005475579753940508
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.66047745358091,
+        "hardware_resolution_reference_hz": 63.66420958383641,
+        "integrated_absolute_psd_difference": 7.218053631107394e-05,
+        "relative_integrated_absolute_psd_difference": 0.3485060859175713,
+        "reference_power": 0.00020711413438027044,
+        "hardware_power": 0.0002792872012594126
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241,
+          241
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 12,
+      "name": "sweep-history-s3-64f-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        5.134420395,
+        5.14231205
+      ],
+      "mapped_hardware_interval_s": [
+        15.300699468734866,
+        15.30859158638745
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 378,
+        "rmse": 0.017162716468842237,
+        "normalized_rmse_reference": 0.5039686083009939,
+        "correlation": 0.19885328055324905,
+        "reference_rms": 0.034055129994509194,
+        "hardware_calibrated_rms": 0.033469905050071226,
+        "mean_difference": 0.0014158928999448356,
+        "peak_absolute_difference": 0.060814992591064675
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.0005852249444379676
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 126.98412698412699,
+        "hardware_resolution_reference_hz": 126.65650138842388,
+        "integrated_absolute_psd_difference": 0.00017988100876420858,
+        "relative_integrated_absolute_psd_difference": 0.2884114665980365,
+        "reference_power": 0.000623695759693603,
+        "hardware_power": 0.0008025834137754976
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": 13,
+      "name": "sweep-history-s3-64f-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "reference_interval_s": [
+        5.455236435,
+        5.470947266
+      ],
+      "mapped_hardware_interval_s": [
+        15.621534316750406,
+        15.637246068806453
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 754,
+        "rmse": 0.012340976507995842,
+        "normalized_rmse_reference": 0.48806999046387556,
+        "correlation": 0.6641627408563843,
+        "reference_rms": 0.025285259796994742,
+        "hardware_calibrated_rms": 0.02486192905240342,
+        "mean_difference": 0.00023946127870611822,
+        "peak_absolute_difference": 0.06143633342075444
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 1,
+        "rmse": 0.00042333074459132217
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 63.66047745358091,
+        "hardware_resolution_reference_hz": 63.66420958383641,
+        "integrated_absolute_psd_difference": 7.740284724192371e-05,
+        "relative_integrated_absolute_psd_difference": 0.37411804794929704,
+        "reference_power": 0.00020689418130507797,
+        "hardware_power": 0.00028428944861109295
+      },
+      "case_marker_received": true,
+      "readback": {
+        "status": "identical",
+        "reference": [
+          241,
+          241,
+          241
+        ],
+        "hardware": [
+          241,
+          241,
+          241
+        ],
+        "differences": []
+      }
+    }
+  ],
+  "limitations": [
+    "Packet validity/coverage is not an analog accuracy pass.",
+    "Waveform interpolation uses a cubic spline under one global affine time mapping; native PSD does not use resampled audio.",
+    "One signed calibration gain applies to every stimulus. Frequency-dependent analog transfer remains in the residual.",
+    "An invalid preamble candidate may be stimulus audio resembling sync; it is retained, not silently assigned to a case."
+  ],
+  "alignment": {
+    "hardware_s_equals": "offset_s + clock * reference_s",
+    "clock": 1.000058625546097,
+    "offset_s": 10.165978065535317,
+    "clock_difference_ppm": 58.6255460970353,
+    "packet_anchor_fit": {
+      "matched_keys": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          3,
+          65535
+        ]
+      ],
+      "matched_reference_s": [
+        1.4186666666666667,
+        1.6845833333333333,
+        2.0054166666666666,
+        2.3496875,
+        2.6705,
+        3.0147708333333334,
+        3.335583333333333,
+        3.679854166666667,
+        4.000666666666667,
+        4.3449375,
+        4.66575,
+        5.010020833333333,
+        5.330854166666667,
+        1.8333541666666666,
+        2.162,
+        2.4984375,
+        2.8270833333333334,
+        3.163520833333333,
+        3.492166666666667,
+        3.8286041666666666,
+        4.15725,
+        4.4936875,
+        4.822333333333333,
+        5.158791666666667,
+        5.4874375,
+        5.675104166666666
+      ],
+      "matched_hardware_s": [
+        11.584729166666667,
+        11.850666666666667,
+        12.1715,
+        12.515791666666667,
+        12.836625,
+        13.180916666666667,
+        13.50175,
+        13.846041666666666,
+        14.166875,
+        14.511166666666666,
+        14.832020833333333,
+        15.1763125,
+        15.497145833333333,
+        11.9994375,
+        12.328104166666666,
+        12.6645625,
+        12.993229166666667,
+        13.3296875,
+        13.658354166666667,
+        13.9948125,
+        14.323479166666667,
+        14.6599375,
+        14.988604166666667,
+        15.3250625,
+        15.653729166666666,
+        15.841416666666667
+      ],
+      "packet_timing_residual_s": [
+        5.221361865537233e-06,
+        9.943410624657645e-06,
+        -9.495149576821404e-06,
+        -9.520401135887369e-06,
+        -8.124365761474905e-06,
+        -8.14961732054087e-06,
+        -6.7535819443520495e-06,
+        -6.778833503418014e-06,
+        -5.3827981290055504e-06,
+        -5.4080496880715145e-06,
+        1.6821319020365877e-05,
+        1.679606746307627e-05,
+        -2.6424927401791365e-06,
+        9.297250151973913e-07,
+        1.8511565809120611e-06,
+        2.3005088305438903e-06,
+        3.221940399811274e-06,
+        3.6712926476667462e-06,
+        4.592724215157773e-06,
+        5.042076463013245e-06,
+        5.963508032280629e-06,
+        6.412860278359744e-06,
+        7.334291847627128e-06,
+        -1.3050951482185269e-05,
+        -1.2129519914694242e-05,
+        -2.6664820538258027e-06
+      ],
+      "packet_timing_rms_s": 8.076997537901549e-06
+    },
+    "calibration": {
+      "packet_samples": 38996,
+      "gain_hardware_per_reference": 0.06380063762637819,
+      "polarity": "same",
+      "alignment_refinement": {
+        "enabled": true,
+        "offset_adjustment_at_center_s": -3.1668785813711253e-07,
+        "clock_adjustment": -1.962174013763427e-06,
+        "objective": 0.008471224796809918,
+        "center_reference_s": 3.596706469894348
+      },
+      "gain_method": "One whole-calibration-case RMS ratio; sign comes from packet preamble correlation. No DC removal, per-case gain, or EQ.",
+      "preamble_fit_gain_hardware_per_reference": 0.06350744531248477,
+      "preamble_rms_after_its_fitted_gain": 0.006073048440643165,
+      "gain_source": {
+        "source": "manifest_calibration_case",
+        "case_id": 1,
+        "case_name": "calibration-pulse",
+        "reference_interval_s": [
+          1.54306221,
+          1.668101311
+        ],
+        "reference_rms": 0.06593863468969108,
+        "hardware_rms": 0.004206926937415111,
+        "method": "One whole-calibration-case RMS ratio; sign comes from packet preamble correlation. No DC removal, per-case gain, or EQ."
+      }
+    },
+    "explicit_clock": null,
+    "explicit_offset_s": null,
+    "identical_file_identity_mapping": false
+  },
+  "complete_hardware": true
+}

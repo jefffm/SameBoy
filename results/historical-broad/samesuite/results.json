@@ -1,0 +1,2215 @@
+{
+  "sameboy_commit": "df70505ee5e0827bcd6ef4a9d08c2c1864a2fe10",
+  "source_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tester_sha256": "57b1093b52feaa0946fc7ff4c0664304331d39a6d16fb3db3a2d427cd88fc059",
+  "baseline": "/home/jeff/Documents/ChatGPT/dmg/artifacts/preflight/samesuite-findings.json",
+  "baseline_sha256": "ced2521bee4a1c3541c1677e513b7042b1a45e06155939c1f2842771e8c21dda",
+  "decoder_source": "/home/jeff/Documents/ChatGPT/dmg/artifacts/preflight/run_samesuite.py",
+  "decoder_sha256": "59804019d8634e5fab44a3cfedb43fa017a9267d5e27b95cd78c7d2a1ac47f52",
+  "samesuite_commit": "f15645fb049a47ea235f6d2c9a033e72d8087901",
+  "model_selection": "Run all general APU tests on CGB-E, as documented by SameSuite/apu/README.md. Run explicitly cgb-suffixed ROMs on their named CGB revisions. The bare -A suffix is ambiguous: retain the earlier CGB-A run as exploratory and add a targeted AGB-A run, excluding both from the applicable CGB/DMG suite count. Contemporaneous author/source history strongly suggests -A means Advance, but the filename itself is not explicit. Run only div_write_trigger and div_write_trigger_10 on DMG-B, the cases explicitly documented for pre-CGB hardware. Other APU ROMs require CGB PCM registers and are not DMG accuracy evidence.",
+  "settings_authority": {
+    "duration": "Unmodified Tester default 60*40 approximate frames (40 emulated seconds); no --length override. Terminal HALT with interrupts disabled is detected by Tester and ends the run early after rendering. Blank screens receive the project-defined four-second extension.",
+    "parallelism": "Unmodified Tester default one job.",
+    "boot": "Unmodified Tester selects the supplied built-in boot ROM appropriate to --model.",
+    "buttons": "No --start: tests execute automatically.",
+    "exit_status": "Tester exits zero after processing a ROM regardless of pass/fail, so process success is not treated as test success."
+  },
+  "summary": {
+    "model_test_pairs": 79,
+    "pass": 65,
+    "fail": 14,
+    "changed_result_bytes": 0
+  },
+  "results": [
+    {
+      "result": "pass",
+      "result_bytes": 48,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000000000808080000000000000000000000000808080800000000000000000000000008080808",
+      "expected_hex": "000000000000000000000000000808080000000000000000000000000808080800000000000000000000000008080808",
+      "screenshot_sha256": "fe817317224e915c5113bdc0db34067bf891b4af09a198a73dfa331d649a9185",
+      "rom": "apu/channel_1/channel_1_align.gb",
+      "rom_sha256": "e9c88f708731a617396185bf51b73b66d3f62b1b227b3dad98c6f1fd28684cc9",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_align.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000000000808080000000000000000000000000808080800000000000000000000000008080808",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 48,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000000000808080000000000000000000000000008080800000000000000000000000000080808",
+      "expected_hex": "000000000000000000000000000808080000000000000000000000000008080800000000000000000000000000080808",
+      "screenshot_sha256": "e92418e33851901d6fe6b02a130d6bcef6cf611d6e18eb8a46e9548465fea769",
+      "rom": "apu/channel_1/channel_1_align_cpu.gb",
+      "rom_sha256": "2f238d0964c2b18dbb62b7510cf3d8d1c4488cf3ed0df00f1abbcb36744f4044",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_align_cpu.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000000000808080000000000000000000000000008080800000000000000000000000000080808",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "0008080808080800000808080808080000000808080808080808080808080000",
+      "expected_hex": "0008080808080800000808080808080000000808080808080808080808080000",
+      "screenshot_sha256": "8811a0b2db98c462e212d30db6053d2fae0be89fa6b480b7b5b4e007b9f9497f",
+      "rom": "apu/channel_1/channel_1_delay.gb",
+      "rom_sha256": "b16e78d2f36dd37b4160097f9a46991a24cfe898d9f53575e24105c8876b9890",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0008080808080800000808080808080000000808080808080808080808080000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "0000000000000000000000000000000008080000000000000000000000000000000000000000000000000000000000000808080800000000000000000000000000000000000000000000000008080808080808080000000000000000080808080000000008080808080808080808080800000000080808080808080808080808",
+      "expected_hex": "0000000000000000000000000000000008080000000000000000000000000000000000000000000000000000000000000808080800000000000000000000000000000000000000000000000008080808080808080000000000000000080808080000000008080808080808080808080800000000080808080808080808080808",
+      "screenshot_sha256": "dd00f7ceccdce094431f89f4e11a3819e2dcaecc468683220f91c5efaf6a92aa",
+      "rom": "apu/channel_1/channel_1_duty.gb",
+      "rom_sha256": "6c28533f5565ec086c41a11f6b6c51090ecd79423968b76475c7129eb813d4f5",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_duty.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000000000000000000000000008080000000000000000000000000000000000000000000000000000000000000808080800000000000000000000000000000000000000000000000008080808080808080000000000000000080808080000000008080808080808080808080800000000080808080808080808080808",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "0000000000000808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080000000000000000000000000000000000000808080808080000080808080808000008080808080800000808080808080000080808080808000008080808080808080000000000000000",
+      "expected_hex": "0000000000000808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080000000000000000000000000000000000000808080808080000080808080808000008080808080800000808080808080000080808080808000008080808080808080000000000000000",
+      "screenshot_sha256": "98e6f722f76318dced82b34206399bc989ba1282d2f8e26cc2cfff855961779e",
+      "rom": "apu/channel_1/channel_1_duty_delay.gb",
+      "rom_sha256": "599bcb930bf9362b5a15e17d8b6ccd611745db203a29d4465886e4fbb9c3f318",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_duty_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000000808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080000000000000000000000000000000000000808080808080000080808080808000008080808080800000808080808080000080808080808000008080808080808080000000000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 24,
+      "mismatches": [
+        {
+          "index": 1,
+          "address": "c001",
+          "actual": "f0",
+          "expected": "f1"
+        },
+        {
+          "index": 17,
+          "address": "c011",
+          "actual": "f0",
+          "expected": "f1"
+        }
+      ],
+      "actual_hex": "f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0",
+      "expected_hex": "f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0",
+      "screenshot_sha256": "8736f4655ee8f81eeab83d88c2fec9f7b867dd5438de5c3b1c3964bd3720c93f",
+      "rom": "apu/channel_1/channel_1_extra_length_clocking-cgb0B.gb",
+      "rom_sha256": "715842d3c02f255adc32fd9fc755f729ab98aebefd53a5fb191b8c7addbc1d22",
+      "model": "cgb-0",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-0",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-0/apu/channel_1/channel_1_extra_length_clocking-cgb0B.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 24,
+      "mismatches": [
+        {
+          "index": 1,
+          "address": "c001",
+          "actual": "f0",
+          "expected": "f1"
+        },
+        {
+          "index": 17,
+          "address": "c011",
+          "actual": "f0",
+          "expected": "f1"
+        }
+      ],
+      "actual_hex": "f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0",
+      "expected_hex": "f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0",
+      "screenshot_sha256": "8736f4655ee8f81eeab83d88c2fec9f7b867dd5438de5c3b1c3964bd3720c93f",
+      "rom": "apu/channel_1/channel_1_extra_length_clocking-cgb0B.gb",
+      "rom_sha256": "715842d3c02f255adc32fd9fc755f729ab98aebefd53a5fb191b8c7addbc1d22",
+      "model": "cgb-b",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-b/apu/channel_1/channel_1_extra_length_clocking-cgb0B.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "0000000000000000000008080808080800000000000000000008080808080808000000000000000008080808080808080000000000000008080808080808080000000000000008080808000000000808000000000008080808000000000808080000000008080808000000000808080800000008080808000000000808080800",
+      "expected_hex": "0000000000000000000008080808080800000000000000000008080808080808000000000000000008080808080808080000000000000008080808080808080000000000000008080808000000000808000000000008080808000000000808080000000008080808000000000808080800000008080808000000000808080800",
+      "screenshot_sha256": "bda14bb50af60eb1d6d6d961ad16a45f57c781a07610830bcf2781a91c5878ff",
+      "rom": "apu/channel_1/channel_1_freq_change.gb",
+      "rom_sha256": "300f55a78caf6ea636c17ab2c7f4b36ce4c6e824a8888f7dfa2dc014ba5b5fed",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_freq_change.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000000000000008080808080800000000000000000008080808080808000000000000000008080808080808080000000000000008080808080808080000000000000008080808000000000808000000000008080808000000000808080000000008080808000000000808080800000008080808000000000808080800",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 16,
+      "mismatches": [
+        {
+          "index": 4,
+          "address": "c004",
+          "actual": "0f",
+          "expected": "ff"
+        },
+        {
+          "index": 15,
+          "address": "c00f",
+          "actual": "0f",
+          "expected": "ff"
+        }
+      ],
+      "actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "expected_hex": "0000000ffffffff000000f0f0f0f0fff",
+      "screenshot_sha256": "884d4fa28255cafbf053caccbab23edccb5de3bf4f2e2993fbca9aba7d04de2a",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-A.gb",
+      "rom_sha256": "8fd134617c4985bb2e26ddb848856e4b47c20970154014c63e545aa4090eab2b",
+      "model": "cgb-a",
+      "scope": "ambiguous-suffix targeted model check",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-a",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-a/apu/channel_1/channel_1_freq_change_timing-A.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "0000000ffffffff000000f0f0f0f0fff",
+      "expected_hex": "0000000ffffffff000000f0f0f0f0fff",
+      "screenshot_sha256": "f93cc986ee2a7c66164f92f34ddc555b6386e68e18b069386fb021402abd848e",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-A.gb",
+      "rom_sha256": "8fd134617c4985bb2e26ddb848856e4b47c20970154014c63e545aa4090eab2b",
+      "model": "agb-a",
+      "scope": "ambiguous-suffix targeted model check",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "agb-a",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/agb-a/apu/channel_1/channel_1_freq_change_timing-A.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000ffffffff000000f0f0f0f0fff",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "expected_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "screenshot_sha256": "1297f688fe7139a3289b7c9f428407e1b377e444d38331811fc6da68b50c4b6b",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-cgb0BC.gb",
+      "rom_sha256": "e89f52cf139678b1ec749757bb01463a13d787785c24523ee76a49c77726531b",
+      "model": "cgb-0",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-0",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-0/apu/channel_1/channel_1_freq_change_timing-cgb0BC.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "expected_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "screenshot_sha256": "1297f688fe7139a3289b7c9f428407e1b377e444d38331811fc6da68b50c4b6b",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-cgb0BC.gb",
+      "rom_sha256": "e89f52cf139678b1ec749757bb01463a13d787785c24523ee76a49c77726531b",
+      "model": "cgb-b",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-b/apu/channel_1/channel_1_freq_change_timing-cgb0BC.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "expected_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "screenshot_sha256": "1297f688fe7139a3289b7c9f428407e1b377e444d38331811fc6da68b50c4b6b",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-cgb0BC.gb",
+      "rom_sha256": "e89f52cf139678b1ec749757bb01463a13d787785c24523ee76a49c77726531b",
+      "model": "cgb-c",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-c",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-c/apu/channel_1/channel_1_freq_change_timing-cgb0BC.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000f0ffffff000000f0f0f0f0f0f",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "0000000ffffffff00000000f0f0f0fff",
+      "expected_hex": "0000000ffffffff00000000f0f0f0fff",
+      "screenshot_sha256": "f096b3b3d038f7643d3ed8bdb1fe1b1d2d88aa382ae36c61103664f65f6e8331",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-cgbDE.gb",
+      "rom_sha256": "63a42c8b280494fdf728154f3aa04ae2fa549d62777e88b2f836e2ed3bac7381",
+      "model": "cgb-d",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-d",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-d/apu/channel_1/channel_1_freq_change_timing-cgbDE.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000ffffffff00000000f0f0f0fff",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "0000000ffffffff00000000f0f0f0fff",
+      "expected_hex": "0000000ffffffff00000000f0f0f0fff",
+      "screenshot_sha256": "f096b3b3d038f7643d3ed8bdb1fe1b1d2d88aa382ae36c61103664f65f6e8331",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-cgbDE.gb",
+      "rom_sha256": "63a42c8b280494fdf728154f3aa04ae2fa549d62777e88b2f836e2ed3bac7381",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_freq_change_timing-cgbDE.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000ffffffff00000000f0f0f0fff",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "020102030d0f0c0f020101020d0e0c0d",
+      "expected_hex": "020102030d0f0c0f020101020d0e0c0d",
+      "screenshot_sha256": "35184760ff37438f2c3d25c5cf1e6ab5e579c9d107c5e94ed4c4588bf65adc6f",
+      "rom": "apu/channel_1/channel_1_nrx2_glitch.gb",
+      "rom_sha256": "8909f1a9e1292b63846de762389df3c06526b64a07bb12d009fd99d1428764e2",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_nrx2_glitch.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "020102030d0f0c0f020101020d0e0c0d",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 72,
+      "mismatches": [],
+      "actual_hex": "000101020203030400000102030405060103040506070809010203030404050500000000000000000101020202020202020202020202030301020202020202020202020202030303",
+      "expected_hex": "000101020203030400000102030405060103040506070809010203030404050500000000000000000101020202020202020202020202030301020202020202020202020202030303",
+      "screenshot_sha256": "02d1f2b4bcae466735bb00f5a9d5f0ac14815bc0a95aab83c4ecddc8d6788d7a",
+      "rom": "apu/channel_1/channel_1_nrx2_speed_change.gb",
+      "rom_sha256": "605486c78f2577662fa755d592d4d884915c2f752b77a488219949c2d235fc74",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_nrx2_speed_change.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000101020203030400000102030405060103040506070809010203030404050500000000000000000101020202020202020202020202030301020202020202020202020202030303",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 144,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000008080808080000000000000000000000080808080800000000000000080808080808080808000000000000000808080808080808080000000808080808080808080808080800000008080808080808080808080808080808080808080808080808080808000808080808080808080808080808080008080808080808080808080000000000",
+      "expected_hex": "000000000000000000000008080808080000000000000000000000080808080800000000000000080808080808080808000000000000000808080808080808080000000808080808080808080808080800000008080808080808080808080808080808080808080808080808080808000808080808080808080808080808080008080808080808080808080000000000",
+      "screenshot_sha256": "ad65b08a9a8b9dbdf33babd8951a2d5032fc3db8af1555e8df52d855cb5c4244",
+      "rom": "apu/channel_1/channel_1_restart.gb",
+      "rom_sha256": "a52daac1ca4aeddc767ace3f6996c2d505362416ee177c7695d07a92bb1c245e",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_restart.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000008080808080000000000000000000000080808080800000000000000080808080808080808000000000000000808080808080808080000000808080808080808080808080800000008080808080808080808080808080808080808080808080808080808000808080808080808080808080808080008080808080808080808080000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "02020202020202020202020202020200",
+      "expected_hex": "02020202020202020202020202020200",
+      "screenshot_sha256": "f3d81620fc26d28761b614c92235e9a828f8ff6dc5cf6e09b5a2a5e09aebf1a0",
+      "rom": "apu/channel_1/channel_1_restart_nrx2_glitch.gb",
+      "rom_sha256": "3f2d221be0ef559417131120192a22ae7cd4f458a2bde7bb3f86b12ece53536f",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_restart_nrx2_glitch.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "02020202020202020202020202020200",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 56,
+      "mismatches": [
+        {
+          "index": 11,
+          "address": "c00b",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 19,
+          "address": "c013",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 27,
+          "address": "c01b",
+          "actual": "08",
+          "expected": "00"
+        }
+      ],
+      "actual_hex": "1f1f1f1f1f1f2020000000080808000000000008080808080000000808080000f1f1f1f1f1f1f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "expected_hex": "1f1f1f1f1f1f2020000000000808000000000000080808080000000008080000f1f1f1f1f1f1f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "screenshot_sha256": "b0d171cd4ea2284d1477f606565c4a267afaeefd0d6a0705e6bbd9d83085580e",
+      "rom": "apu/channel_1/channel_1_stop_div.gb",
+      "rom_sha256": "ce4eed3204f1b99331bf9c3c8da1ab224001f9d5a8ff7ce266ad8b2edd24dda8",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_stop_div.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "1f1f1f1f1f1f2020000000080808000000000008080808080000000808080000f1f1f1f1f1f1f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 144,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000000080808080000000000000000000000000808080800000000000000000808080808080808000000000000000008080808080808080000000008080808080808080808080800000000080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080800000000",
+      "expected_hex": "000000000000000000000000080808080000000000000000000000000808080800000000000000000808080808080808000000000000000008080808080808080000000008080808080808080808080800000000080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080800000000",
+      "screenshot_sha256": "eba42b98465cc7a1c7bf8fcb6c0d0c1c4ec1e9be9d8ff5956d5801e387c5110c",
+      "rom": "apu/channel_1/channel_1_stop_restart.gb",
+      "rom_sha256": "d25c60a727da005879f938e6efb44bb32e10c429f9f6da9da300885844115259",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_stop_restart.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000000080808080000000000000000000000000808080800000000000000000808080808080808000000000000000008080808080808080000000008080808080808080808080800000000080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080800000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 144,
+      "mismatches": [
+        {
+          "index": 1,
+          "address": "c001",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 5,
+          "address": "c005",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 9,
+          "address": "c009",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 13,
+          "address": "c00d",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 19,
+          "address": "c013",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 23,
+          "address": "c017",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 27,
+          "address": "c01b",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 31,
+          "address": "c01f",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 35,
+          "address": "c023",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 39,
+          "address": "c027",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 41,
+          "address": "c029",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 45,
+          "address": "c02d",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 49,
+          "address": "c031",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 53,
+          "address": "c035",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 57,
+          "address": "c039",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 61,
+          "address": "c03d",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 67,
+          "address": "c043",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 71,
+          "address": "c047",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 75,
+          "address": "c04b",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 79,
+          "address": "c04f",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 108,
+          "address": "c06c",
+          "actual": "08",
+          "expected": "00"
+        }
+      ],
+      "actual_hex": "000808080800000000080808080000000000000808080800000000080808080000000008080808000008080808000000000808080800000000080808080000000000000808080800000000080808080000000000000000000808080808080808000000000000000000000000080808080808080808080808080808080808080800000000000000000000000000000000",
+      "expected_hex": "000008080808000000000808080800000000000008080808000000000808080800000000080808080000080808080000000008080808000000000808080800000000000008080808000000000808080800000000000000000808080808080808000000000000000000000000000808080808080808080808080808080808080800000000000000000000000000000000",
+      "screenshot_sha256": "720525a9845feb537e49dc11f36279ad76f1052ef2ea18bc59ff8c8bff3a63eb",
+      "rom": "apu/channel_1/channel_1_sweep.gb",
+      "rom_sha256": "4d493597594cb460e902a8b97803e5ac80184ba5d4dadf87f24bc05310719e80",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_sweep.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "000808080800000000080808080000000000000808080800000000080808080000000008080808000008080808000000000808080800000000080808080000000000000808080800000000080808080000000000000000000808080808080808000000000000000000000000080808080808080808080808080808080808080800000000000000000000000000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 144,
+      "mismatches": [
+        {
+          "index": 15,
+          "address": "c00f",
+          "actual": "08",
+          "expected": "00"
+        },
+        {
+          "index": 41,
+          "address": "c029",
+          "actual": "00",
+          "expected": "08"
+        },
+        {
+          "index": 45,
+          "address": "c02d",
+          "actual": "08",
+          "expected": "00"
+        }
+      ],
+      "actual_hex": "0000000000000000000000000000000800000000080808000000000000000000080808080808080808000000000808080808080808000000000000000000000008080808080000000000000000000000f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0",
+      "expected_hex": "0000000000000000000000000000000000000000080808000000000000000000080808080808080808080000000008080808080808000000000000000000000008080808080000000000000000000000f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0",
+      "screenshot_sha256": "f81629b7fd49f3f6daba94f75ad3726ed7f5155cff4c28748c639ad450023885",
+      "rom": "apu/channel_1/channel_1_sweep_restart.gb",
+      "rom_sha256": "7f8500f6eb3ef5488c4e38d5ce87c95acada4de4a903c96fb443e8029767b9dd",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_sweep_restart.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "0000000000000000000000000000000800000000080808000000000000000000080808080808080808000000000808080808080808000000000000000000000008080808080000000000000000000000f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1",
+      "expected_hex": "f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1",
+      "screenshot_sha256": "b6acbcba5b6a3c9bade450ac494efba1e0fd05e7311f242113da4cf71c802a12",
+      "rom": "apu/channel_1/channel_1_sweep_restart_2.gb",
+      "rom_sha256": "ef19a199364032c4c77d04c90f0b3731c15db8134b63532027bd9679e38eab67",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_sweep_restart_2.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "00010407080a0e0f00010407080a0e0f000f0c0908060201000f0c09080602010000030607090d0e00010407080a0e0f0f0e0b0807050100000f0c0908060201000e0b0807050100000d0a070604000f01020508090b0f0000010407080a0e0f000e0b0807050100000d0a070604000f01020508090b0f0000010407080a0e0f",
+      "expected_hex": "00010407080a0e0f00010407080a0e0f000f0c0908060201000f0c09080602010000030607090d0e00010407080a0e0f0f0e0b0807050100000f0c0908060201000e0b0807050100000d0a070604000f01020508090b0f0000010407080a0e0f000e0b0807050100000d0a070604000f01020508090b0f0000010407080a0e0f",
+      "screenshot_sha256": "7ed51ecbd2eedc1229d3d3df804e904de01fd2af98927c95eaf928c9d9d9d6c1",
+      "rom": "apu/channel_1/channel_1_volume.gb",
+      "rom_sha256": "8a84b3fc6e98f98a2e069757db38d010fa16976c3c75c8bca07587cdea82729f",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_volume.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00010407080a0e0f00010407080a0e0f000f0c0908060201000f0c09080602010000030607090d0e00010407080a0e0f0f0e0b0807050100000f0c0908060201000e0b0807050100000d0a070604000f01020508090b0f0000010407080a0e0f000e0b0807050100000d0a070604000f01020508090b0f0000010407080a0e0f",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 64,
+      "mismatches": [
+        {
+          "index": 4,
+          "address": "c004",
+          "actual": "00",
+          "expected": "07"
+        },
+        {
+          "index": 12,
+          "address": "c00c",
+          "actual": "00",
+          "expected": "07"
+        },
+        {
+          "index": 20,
+          "address": "c014",
+          "actual": "00",
+          "expected": "07"
+        },
+        {
+          "index": 28,
+          "address": "c01c",
+          "actual": "00",
+          "expected": "07"
+        }
+      ],
+      "actual_hex": "0808070700000000080807070000000007070707000000000707070700000000ffff000000000000ffff000000000000ffff000000000000ffff000000000000",
+      "expected_hex": "0808070707000000080807070700000007070707070000000707070707000000ffff000000000000ffff000000000000ffff000000000000ffff000000000000",
+      "screenshot_sha256": "6f2d41f0ce22d6b5370531136ba904cdc647fd0d37f17995e0d8b942b8777872",
+      "rom": "apu/channel_1/channel_1_volume_div.gb",
+      "rom_sha256": "ef7cdb8b06f6a6bb2a21d5352d96d89acb1cccf55e4378c325603f3e5b7a3007",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_1/channel_1_volume_div.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "0808070700000000080807070000000007070707000000000707070700000000ffff000000000000ffff000000000000ffff000000000000ffff000000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 48,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000000008080800000000000000000000000008080808000000000000000000000000080808080",
+      "expected_hex": "000000000000000000000000008080800000000000000000000000008080808000000000000000000000000080808080",
+      "screenshot_sha256": "2879eec69e36e4ce6120ae4eb383ee6aa9943a21bcd0e473532df9e0e5d65651",
+      "rom": "apu/channel_2/channel_2_align.gb",
+      "rom_sha256": "f4fcad926787eec1a8e4d6e9bde64fa33dbc3d833abbb393376d0bc005c50f57",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_align.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000000008080800000000000000000000000008080808000000000000000000000000080808080",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 48,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000000008080800000000000000000000000000080808000000000000000000000000000808080",
+      "expected_hex": "000000000000000000000000008080800000000000000000000000000080808000000000000000000000000000808080",
+      "screenshot_sha256": "a019bec24dabc435a277f79bfcfa8ad7e6b97d9291d8fdb5d8691265d3a783bd",
+      "rom": "apu/channel_2/channel_2_align_cpu.gb",
+      "rom_sha256": "672e52fc289651863a2c1c7130a73758a833d2c4ca572bd070a264ee68eff49e",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_align_cpu.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000000008080800000000000000000000000000080808000000000000000000000000000808080",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "0080808080808000008080808080800000008080808080808080808080800000",
+      "expected_hex": "0080808080808000008080808080800000008080808080808080808080800000",
+      "screenshot_sha256": "fc4975200d54b27839456865359c0e653128240fb84418391935f95b3f0d83ea",
+      "rom": "apu/channel_2/channel_2_delay.gb",
+      "rom_sha256": "2dfafe594dd52b4bec354823a0bcab9bad34ae34da0e651f7ce12144f0c452f6",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0080808080808000008080808080800000008080808080808080808080800000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "0000000000000000000000000000000080800000000000000000000000000000000000000000000000000000000000008080808000000000000000000000000000000000000000000000000080808080808080800000000000000000808080800000000080808080808080808080808000000000808080808080808080808080",
+      "expected_hex": "0000000000000000000000000000000080800000000000000000000000000000000000000000000000000000000000008080808000000000000000000000000000000000000000000000000080808080808080800000000000000000808080800000000080808080808080808080808000000000808080808080808080808080",
+      "screenshot_sha256": "b6e696273bccd027827e12918ada0e09e66b8222ef30e3d3711d92cfec995345",
+      "rom": "apu/channel_2/channel_2_duty.gb",
+      "rom_sha256": "534fdb4a29fcaef9a3e8a5e276121f23a984b69189193936b151808433121e62",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_duty.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000000000000000000000000080800000000000000000000000000000000000000000000000000000000000008080808000000000000000000000000000000000000000000000000080808080808080800000000000000000808080800000000080808080808080808080808000000000808080808080808080808080",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "0000000000008080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080800000000000000000000000000000000000008080808080800000808080808080000080808080808000008080808080800000808080808080000080808080808080800000000000000000",
+      "expected_hex": "0000000000008080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080800000000000000000000000000000000000008080808080800000808080808080000080808080808000008080808080800000808080808080000080808080808080800000000000000000",
+      "screenshot_sha256": "2aedcf37937535813041e7cc5df0a46637de7d8e2c0f2a3b3ca1eb2eb5238add",
+      "rom": "apu/channel_2/channel_2_duty_delay.gb",
+      "rom_sha256": "4a78dfa92f43907538f440d418f082a300a48f1d9b4c7d47258edd18367c4c66",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_duty_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000008080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080800000000000000000000000000000000000008080808080800000808080808080000080808080808000008080808080800000808080808080000080808080808080800000000000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 24,
+      "mismatches": [
+        {
+          "index": 1,
+          "address": "c001",
+          "actual": "f0",
+          "expected": "f2"
+        },
+        {
+          "index": 17,
+          "address": "c011",
+          "actual": "f0",
+          "expected": "f2"
+        }
+      ],
+      "actual_hex": "f2f0f0f0f0f0f0f0f2f2f2f2f2f2f2f2f2f0f0f0f0f0f0f0",
+      "expected_hex": "f2f2f0f0f0f0f0f0f2f2f2f2f2f2f2f2f2f2f0f0f0f0f0f0",
+      "screenshot_sha256": "ae1dacf1b64f31b1bdceaab873204d71be79a5bd50de9cc79acff84834039e18",
+      "rom": "apu/channel_2/channel_2_extra_length_clocking-cgb0B.gb",
+      "rom_sha256": "931e491af2a3fa3ab59fce28b492fde0204e477debb485857764355739299d75",
+      "model": "cgb-0",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-0",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-0/apu/channel_2/channel_2_extra_length_clocking-cgb0B.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "f2f0f0f0f0f0f0f0f2f2f2f2f2f2f2f2f2f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 24,
+      "mismatches": [
+        {
+          "index": 1,
+          "address": "c001",
+          "actual": "f0",
+          "expected": "f2"
+        },
+        {
+          "index": 17,
+          "address": "c011",
+          "actual": "f0",
+          "expected": "f2"
+        }
+      ],
+      "actual_hex": "f2f0f0f0f0f0f0f0f2f2f2f2f2f2f2f2f2f0f0f0f0f0f0f0",
+      "expected_hex": "f2f2f0f0f0f0f0f0f2f2f2f2f2f2f2f2f2f2f0f0f0f0f0f0",
+      "screenshot_sha256": "ae1dacf1b64f31b1bdceaab873204d71be79a5bd50de9cc79acff84834039e18",
+      "rom": "apu/channel_2/channel_2_extra_length_clocking-cgb0B.gb",
+      "rom_sha256": "931e491af2a3fa3ab59fce28b492fde0204e477debb485857764355739299d75",
+      "model": "cgb-b",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-b/apu/channel_2/channel_2_extra_length_clocking-cgb0B.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "f2f0f0f0f0f0f0f0f2f2f2f2f2f2f2f2f2f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "0000000000000000000080808080808000000000000000000080808080808080000000000000000080808080808080800000000000000080808080808080800000000000000080808080000000008080000000000080808080000000008080800000000080808080000000008080808000000080808080000000008080808000",
+      "expected_hex": "0000000000000000000080808080808000000000000000000080808080808080000000000000000080808080808080800000000000000080808080808080800000000000000080808080000000008080000000000080808080000000008080800000000080808080000000008080808000000080808080000000008080808000",
+      "screenshot_sha256": "6c4deb75b87a282f602bef3a4c8b5ca5ee454c5e4b9af3bbfe74cc2b567c389c",
+      "rom": "apu/channel_2/channel_2_freq_change.gb",
+      "rom_sha256": "315f7c5613136a78a45acdc273ad5550ac78f8e627dba7b2fe47c3beb94773e3",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_freq_change.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000000000000080808080808000000000000000000080808080808080000000000000000080808080808080800000000000000080808080808080800000000000000080808080000000008080000000000080808080000000008080800000000080808080000000008080808000000080808080000000008080808000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "20102030d0f0c0f020101020d0e0c0d0",
+      "expected_hex": "20102030d0f0c0f020101020d0e0c0d0",
+      "screenshot_sha256": "ea8089750a5c4888a5785a5f4125053ac971c5bc677778e4a4720fe1affae74e",
+      "rom": "apu/channel_2/channel_2_nrx2_glitch.gb",
+      "rom_sha256": "9c5e9e11fea416fcf89d4cae294c0c1cd647b6548cee69cc8e93097c40fe70c4",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_nrx2_glitch.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "20102030d0f0c0f020101020d0e0c0d0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 72,
+      "mismatches": [],
+      "actual_hex": "001010202030304000001020304050601030405060708090102030304040505000000000000000001010202020202020202020202020303010202020202020202020202020303030",
+      "expected_hex": "001010202030304000001020304050601030405060708090102030304040505000000000000000001010202020202020202020202020303010202020202020202020202020303030",
+      "screenshot_sha256": "9b9f23045680669c256334c7bb80ecbbb79f98be4446d2ffe58166af5452231c",
+      "rom": "apu/channel_2/channel_2_nrx2_speed_change.gb",
+      "rom_sha256": "26ffdf03ed8bbc67088a97f2bac148306e1982f7dd17db9469a01b80aaf63a4b",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_nrx2_speed_change.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "001010202030304000001020304050601030405060708090102030304040505000000000000000001010202020202020202020202020303010202020202020202020202020303030",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 144,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000080808080800000000000000000000000808080808000000000000000808080808080808080000000000000008080808080808080800000008080808080808080808080808000000080808080808080808080808080808080808080808080808080808080008080808080808080808080808080800080808080808080808080800000000000",
+      "expected_hex": "000000000000000000000080808080800000000000000000000000808080808000000000000000808080808080808080000000000000008080808080808080800000008080808080808080808080808000000080808080808080808080808080808080808080808080808080808080008080808080808080808080808080800080808080808080808080800000000000",
+      "screenshot_sha256": "d6b9adb56c697e16ea595d1b9e7ad8421ada86402ebd06590163b1d0b27b1f4d",
+      "rom": "apu/channel_2/channel_2_restart.gb",
+      "rom_sha256": "2bf364574f283042143cbd934b92b81e05c19ebb96c390f34e157c68e50f083f",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_restart.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000080808080800000000000000000000000808080808000000000000000808080808080808080000000000000008080808080808080800000008080808080808080808080808000000080808080808080808080808080808080808080808080808080808080008080808080808080808080808080800080808080808080808080800000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "20202020202020202020202020202000",
+      "expected_hex": "20202020202020202020202020202000",
+      "screenshot_sha256": "35d54fbe9280b3e8d373407f6ef6b3f188a3bc9fa6a64f60babe5dbb111a9981",
+      "rom": "apu/channel_2/channel_2_restart_nrx2_glitch.gb",
+      "rom_sha256": "49df5c57ebb837105703916859a6eac3d5cd836c2bde373ef567296cb2c4d06c",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_restart_nrx2_glitch.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "20202020202020202020202020202000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 56,
+      "mismatches": [
+        {
+          "index": 11,
+          "address": "c00b",
+          "actual": "80",
+          "expected": "00"
+        },
+        {
+          "index": 19,
+          "address": "c013",
+          "actual": "80",
+          "expected": "00"
+        },
+        {
+          "index": 27,
+          "address": "c01b",
+          "actual": "80",
+          "expected": "00"
+        }
+      ],
+      "actual_hex": "1f1f1f1f1f1f2020000000808080000000000080808080800000008080800000f2f2f2f2f2f2f0f0f2f2f2f2f2f2f2f2f2f2f2f2f2f2f0f0",
+      "expected_hex": "1f1f1f1f1f1f2020000000008080000000000000808080800000000080800000f2f2f2f2f2f2f0f0f2f2f2f2f2f2f2f2f2f2f2f2f2f2f0f0",
+      "screenshot_sha256": "ef1a00dec997a71e1e5e3cd280ff88479990fa1906e05d9f1b01724c6fbaa103",
+      "rom": "apu/channel_2/channel_2_stop_div.gb",
+      "rom_sha256": "08f6b5abf42a23ae34e3c1dd6e8ee67a7357cf317b80e495b3a2cf049c5d904f",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_stop_div.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "1f1f1f1f1f1f2020000000808080000000000080808080800000008080800000f2f2f2f2f2f2f0f0f2f2f2f2f2f2f2f2f2f2f2f2f2f2f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 144,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000000808080800000000000000000000000008080808000000000000000008080808080808080000000000000000080808080808080800000000080808080808080808080808000000000808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808000000000",
+      "expected_hex": "000000000000000000000000808080800000000000000000000000008080808000000000000000008080808080808080000000000000000080808080808080800000000080808080808080808080808000000000808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808000000000",
+      "screenshot_sha256": "b1787138a1cc21156bb798223761a47957a49da32423be5488e31646998d2569",
+      "rom": "apu/channel_2/channel_2_stop_restart.gb",
+      "rom_sha256": "6b97cabca8be8057cc62a939e9d9b1220557c7332cfbfbca6acaffa02312ab78",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_stop_restart.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000000808080800000000000000000000000008080808000000000000000008080808080808080000000000000000080808080808080800000000080808080808080808080808000000000808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 8,
+      "mismatches": [],
+      "actual_hex": "8080000080808080",
+      "expected_hex": "8080000080808080",
+      "screenshot_sha256": "04459fb6f61f02778dc4bcafe0cf2eb7d55b2b4b37842bfb82f3d281de370d27",
+      "rom": "apu/channel_2/channel_2_volume.gb",
+      "rom_sha256": "5ef6b219eaa4f43170b7e6ab187491b70c08901cf599ca97227701239a376027",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_volume.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "8080000080808080",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 32,
+      "mismatches": [
+        {
+          "index": 4,
+          "address": "c004",
+          "actual": "00",
+          "expected": "70"
+        },
+        {
+          "index": 12,
+          "address": "c00c",
+          "actual": "00",
+          "expected": "70"
+        }
+      ],
+      "actual_hex": "80807070000000008080707000000000ffff000000000000ffff000000000000",
+      "expected_hex": "80807070700000008080707070000000ffff000000000000ffff000000000000",
+      "screenshot_sha256": "4d09f21ae0caeffb21edc48056750e931e1a03d2997ca45c210f632f8e4e09d3",
+      "rom": "apu/channel_2/channel_2_volume_div.gb",
+      "rom_sha256": "dc27c7fc592c1089d0ee2a64b2e5ac38520f21db4cffcafd6295674681828b67",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_2/channel_2_volume_div.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "80807070000000008080707000000000ffff000000000000ffff000000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 48,
+      "mismatches": [],
+      "actual_hex": "00000000000e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c000000000e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c",
+      "expected_hex": "00000000000e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c000000000e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c",
+      "screenshot_sha256": "cbd64fe6ec744c9a5fcbf518553cd82b61eb236065fa26ca43d897d519f8c2c4",
+      "rom": "apu/channel_3/channel_3_and_glitch.gb",
+      "rom_sha256": "d07ee8d128b5cf14d913f5344551cd55dd16c88217cdad127d95c91bc424646d",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_and_glitch.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00000000000e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c000000000e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "00000000000f0f0f00000000000f0f0f",
+      "expected_hex": "00000000000f0f0f00000000000f0f0f",
+      "screenshot_sha256": "d9c8b31f55e70321fe227a6ae90788f72af5d98809773476c9c7df045837c2fd",
+      "rom": "apu/channel_3/channel_3_delay.gb",
+      "rom_sha256": "aa08304186969c186f163ebd517189ee530727fb39b07c6fcad5ba5aa9aa9cd2",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00000000000f0f0f00000000000f0f0f",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+      "expected_hex": "f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+      "screenshot_sha256": "a1714ff2ff8d2a770ce7d75bd6aaf0948618791574dbb8d79863972731fd2b25",
+      "rom": "apu/channel_3/channel_3_extra_length_clocking-cgb0.gb",
+      "rom_sha256": "876d4817df46c8b75b0fa529210153f4584939529ed4d958c39329010239d7aa",
+      "model": "cgb-0",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-0",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-0/apu/channel_3/channel_3_extra_length_clocking-cgb0.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 32,
+      "mismatches": [
+        {
+          "index": 2,
+          "address": "c002",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 3,
+          "address": "c003",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 4,
+          "address": "c004",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 5,
+          "address": "c005",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 6,
+          "address": "c006",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 7,
+          "address": "c007",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 8,
+          "address": "c008",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 9,
+          "address": "c009",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 18,
+          "address": "c012",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 19,
+          "address": "c013",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 20,
+          "address": "c014",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 21,
+          "address": "c015",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 22,
+          "address": "c016",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 23,
+          "address": "c017",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 24,
+          "address": "c018",
+          "actual": "f0",
+          "expected": "f4"
+        },
+        {
+          "index": 25,
+          "address": "c019",
+          "actual": "f0",
+          "expected": "f4"
+        }
+      ],
+      "actual_hex": "f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+      "expected_hex": "f4f4f4f4f4f4f4f4f4f4f0f0f0f0f0f0f4f4f4f4f4f4f4f4f4f4f0f0f0f0f0f0",
+      "screenshot_sha256": "04476eabd42841da5748758f7b2365af150ef0599bea1500fe5058169684aa8e",
+      "rom": "apu/channel_3/channel_3_extra_length_clocking-cgbB.gb",
+      "rom_sha256": "1aff804073ba16682f24fe33a226a024f741fd7c8e4b6d8a736ff7f196902d35",
+      "model": "cgb-b",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-b/apu/channel_3/channel_3_extra_length_clocking-cgbB.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0f4f4f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 8,
+      "mismatches": [],
+      "actual_hex": "00000000000e0e0e",
+      "expected_hex": "00000000000e0e0e",
+      "screenshot_sha256": "9222b7d4a18cd7622ecb248156c3857aec3d9d3fdf12772eb1fd75c12225682b",
+      "rom": "apu/channel_3/channel_3_first_sample.gb",
+      "rom_sha256": "464b7139b6c2147fa0984006d32507559972404f538e53408369c1c337b1b6e7",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_first_sample.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00000000000e0e0e",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "000000000000000f00000f0f0f0f0f0f",
+      "expected_hex": "000000000000000f00000f0f0f0f0f0f",
+      "screenshot_sha256": "d7fb2df6bb79e097a146378e1943bf61d2716020c7955f50a9ebd464667d4b36",
+      "rom": "apu/channel_3/channel_3_freq_change_delay.gb",
+      "rom_sha256": "57677d9e859a90f62e0330098d72c1ae5f95883c57e2b4e9ce9b81118a9abbee",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_freq_change_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000f00000f0f0f0f0f0f",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 8,
+      "mismatches": [],
+      "actual_hex": "0f0f0f0f0f0e0e0e",
+      "expected_hex": "0f0f0f0f0f0e0e0e",
+      "screenshot_sha256": "df78e812880be3f7e02a687e5b3bc44a0bee9375d307d86c6b9c16fc7d8cf76f",
+      "rom": "apu/channel_3/channel_3_restart_delay.gb",
+      "rom_sha256": "b75a2ba1e73b292a777e016e340970676e0931562d71c5fef3bd8a55f9203745",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_restart_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0f0f0f0f0f0e0e0e",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "0000000000000000000000020202020312121212121212121212121212121234",
+      "expected_hex": "0000000000000000000000020202020312121212121212121212121212121234",
+      "screenshot_sha256": "79af4907249e1b51a50a0b0b0c462715f6fecbe841cfbe8a403adad4e8df8881",
+      "rom": "apu/channel_3/channel_3_restart_during_delay.gb",
+      "rom_sha256": "a9351488051707194629a160ad9955e177c42419ac3f1f528a7c273e685a0c6a",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_restart_during_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000000000000000020202020312121212121212121212121212121234",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 8,
+      "mismatches": [],
+      "actual_hex": "000000000000000e",
+      "expected_hex": "000000000000000e",
+      "screenshot_sha256": "167342fd0df3ddc470d1f691cf50dc0add185e9d9e7ccbd97879128137e41f2b",
+      "rom": "apu/channel_3/channel_3_restart_stop_delay.gb",
+      "rom_sha256": "6089c9eb877c55672b0925cae3ab08b4401ae9b7cc8c2705dcc4566870a36c76",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_restart_stop_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000e",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 8,
+      "mismatches": [],
+      "actual_hex": "0101010101030303",
+      "expected_hex": "0101010101030303",
+      "screenshot_sha256": "50bb71fcba0e01be644cd423b50de7c7ee9efcb7bcf974fbbc0750d7a7860917",
+      "rom": "apu/channel_3/channel_3_shift_delay.gb",
+      "rom_sha256": "1a6ed6d3d6179da890d921155525fcd7f0cc54ee13612f49418e9a16988ab6eb",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_shift_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0101010101030303",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 8,
+      "mismatches": [],
+      "actual_hex": "00000000000e0e0e",
+      "expected_hex": "00000000000e0e0e",
+      "screenshot_sha256": "9222b7d4a18cd7622ecb248156c3857aec3d9d3fdf12772eb1fd75c12225682b",
+      "rom": "apu/channel_3/channel_3_shift_skip_delay.gb",
+      "rom_sha256": "824ce5de007b22c8e6be9d97be9a3bd118cd3bf2ed0e4e33d5d0447989ffd36e",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_shift_skip_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00000000000e0e0e",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 8,
+      "mismatches": [],
+      "actual_hex": "0000000000000000",
+      "expected_hex": "0000000000000000",
+      "screenshot_sha256": "16c4e83e4bedb9f23745ea823723cbb6866ce2937688294321ed4141cd60c419",
+      "rom": "apu/channel_3/channel_3_stop_delay.gb",
+      "rom_sha256": "7350671b8a200a34ebc45144a84ae273e25a0f81a860d491dee5f6e7fb91d31d",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_stop_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 48,
+      "mismatches": [],
+      "actual_hex": "3f3f4040bfbfc0c0bfbfc0c07f7f80800f0f00000f0f0f0f0f0f00000f0f0000f4f4f0f0f4f4f4f4f4f4f0f0f4f4f0f0",
+      "expected_hex": "3f3f4040bfbfc0c0bfbfc0c07f7f80800f0f00000f0f0f0f0f0f00000f0f0000f4f4f0f0f4f4f4f4f4f4f0f0f4f4f0f0",
+      "screenshot_sha256": "5c65a89bf77d5ef79b8e09a23a7cf870ac9e9cff6388043a68da86a6e335fcc1",
+      "rom": "apu/channel_3/channel_3_stop_div.gb",
+      "rom_sha256": "0044649ce158e4e9d4a8664801c517b52670e1d87f706626876a4f5e11ee5244",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_stop_div.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "3f3f4040bfbfc0c0bfbfc0c07f7f80800f0f00000f0f0f0f0f0f00000f0f0000f4f4f0f0f4f4f4f4f4f4f0f0f4f4f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 48,
+      "mismatches": [],
+      "actual_hex": "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00114533442a66778899aabbccdd04ff",
+      "expected_hex": "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00114533442a66778899aabbccdd04ff",
+      "screenshot_sha256": "c1d1cf5554e9d670f5257d7396a618fb68de6f3751a1e4e7cd72fa5ee61235f2",
+      "rom": "apu/channel_3/channel_3_wave_ram_dac_on_rw.gb",
+      "rom_sha256": "bb5e2bec309ae687373749c22c874c716e60dffc17dc8b3002066389dc154c55",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_wave_ram_dac_on_rw.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00114533442a66778899aabbccdd04ff",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 144,
+      "mismatches": [],
+      "actual_hex": "2a112233445566778899aabbccddeeff002a2233445566778899aabbccddeeff00112a33445566778899aabbccddeeff0011222a445566778899aabbccddeeff001122332a5566778899aabbccddeeff00112233442a66778899aabbccddeeff0011223344552a778899aabbccddeeff001122334455662a8899aabbccddeeff00112233445566772a99aabbccddeeff",
+      "expected_hex": "2a112233445566778899aabbccddeeff002a2233445566778899aabbccddeeff00112a33445566778899aabbccddeeff0011222a445566778899aabbccddeeff001122332a5566778899aabbccddeeff00112233442a66778899aabbccddeeff0011223344552a778899aabbccddeeff001122334455662a8899aabbccddeeff00112233445566772a99aabbccddeeff",
+      "screenshot_sha256": "e58003cf5179f63553c49c3a6068e65ce4bfce1e5c0430c95a6fd6acab31eb95",
+      "rom": "apu/channel_3/channel_3_wave_ram_locked_write.gb",
+      "rom_sha256": "559d3a47d8589bae82843fa635a7a93a38a276629788ff6ec25e54096d0cb086",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_wave_ram_locked_write.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "2a112233445566778899aabbccddeeff002a2233445566778899aabbccddeeff00112a33445566778899aabbccddeeff0011222a445566778899aabbccddeeff001122332a5566778899aabbccddeeff00112233442a66778899aabbccddeeff0011223344552a778899aabbccddeeff001122334455662a8899aabbccddeeff00112233445566772a99aabbccddeeff",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 16,
+      "mismatches": [],
+      "actual_hex": "00000002020202031212121212121234",
+      "expected_hex": "00000002020202031212121212121234",
+      "screenshot_sha256": "d792da117688f8c292c23e54b6db40cebb7f3c22e6e92a52cc139c265cd09fcd",
+      "rom": "apu/channel_3/channel_3_wave_ram_sync.gb",
+      "rom_sha256": "20af000aef4866a87805d1e3b1fbde1db6f3c811ae07d7ff250fc95cce3d114a",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_3/channel_3_wave_ram_sync.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00000002020202031212121212121234",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 64,
+      "mismatches": [],
+      "actual_hex": "000000000000000000000000f0f0f0f000000000000000000000000000f0f0f0000000000000000000000000f0f0f0f000000000000000000000000000f0f0f0",
+      "expected_hex": "000000000000000000000000f0f0f0f000000000000000000000000000f0f0f0000000000000000000000000f0f0f0f000000000000000000000000000f0f0f0",
+      "screenshot_sha256": "f779312ac53c0947e6a47ed68d169877033a50228004b5151580ba499d640cce",
+      "rom": "apu/channel_4/channel_4_align.gb",
+      "rom_sha256": "861ddb52f870fd323cf6f0a6f8f99b6217a694654087bf2080cbb354a9d51a34",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_align.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000000000000000000000f0f0f0f000000000000000000000000000f0f0f0000000000000000000000000f0f0f0f000000000000000000000000000f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "0000000000f0f0f00000000000f0f0f00000f0f0f0f0f0f000000000f0f0f0f0",
+      "expected_hex": "0000000000f0f0f00000000000f0f0f00000f0f0f0f0f0f000000000f0f0f0f0",
+      "screenshot_sha256": "d6325742e01d75c876450f95ac71614f1da7bd3002e7e45c010f48f594c42a02",
+      "rom": "apu/channel_4/channel_4_delay.gb",
+      "rom_sha256": "b131d23e301128e9983937aa08d6cb6388666f1b2122a16d310bc68ddf11e88f",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_delay.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0000000000f0f0f00000000000f0f0f00000f0f0f0f0f0f000000000f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0",
+      "expected_hex": "f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0",
+      "screenshot_sha256": "08f33658b12816eba5733de72e1c49a2fc62ab01c1ecbc07016cdb553c6f539f",
+      "rom": "apu/channel_4/channel_4_equivalent_frequencies.gb",
+      "rom_sha256": "3553295a9b4cef019f605643171326f8fab8ebc3d787c920702d0d6ee4548d75",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_equivalent_frequencies.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0f0f0f0f0f0f0f000000000000000000000000000000000f0f0f0f0f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 24,
+      "mismatches": [
+        {
+          "index": 2,
+          "address": "c002",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 3,
+          "address": "c003",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 4,
+          "address": "c004",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 5,
+          "address": "c005",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 6,
+          "address": "c006",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 7,
+          "address": "c007",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 18,
+          "address": "c012",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 19,
+          "address": "c013",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 20,
+          "address": "c014",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 21,
+          "address": "c015",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 22,
+          "address": "c016",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 23,
+          "address": "c017",
+          "actual": "f8",
+          "expected": "f0"
+        }
+      ],
+      "actual_hex": "f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8",
+      "expected_hex": "f8f8f0f0f0f0f0f0f8f8f8f8f8f8f8f8f8f8f0f0f0f0f0f0",
+      "screenshot_sha256": "b28bd07b80c23ce6e5602c34e15ff9d99358fd58d4a4e2e4870c8fcc0c9b4c2e",
+      "rom": "apu/channel_4/channel_4_extra_length_clocking-cgb0B.gb",
+      "rom_sha256": "d599ab59753e8b342cace3554799564a32a67ebecc6c47fb88621fffebfa5a90",
+      "model": "cgb-0",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-0",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-0/apu/channel_4/channel_4_extra_length_clocking-cgb0B.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "fail",
+      "result_bytes": 24,
+      "mismatches": [
+        {
+          "index": 2,
+          "address": "c002",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 3,
+          "address": "c003",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 4,
+          "address": "c004",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 5,
+          "address": "c005",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 6,
+          "address": "c006",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 7,
+          "address": "c007",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 18,
+          "address": "c012",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 19,
+          "address": "c013",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 20,
+          "address": "c014",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 21,
+          "address": "c015",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 22,
+          "address": "c016",
+          "actual": "f8",
+          "expected": "f0"
+        },
+        {
+          "index": 23,
+          "address": "c017",
+          "actual": "f8",
+          "expected": "f0"
+        }
+      ],
+      "actual_hex": "f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8",
+      "expected_hex": "f8f8f0f0f0f0f0f0f8f8f8f8f8f8f8f8f8f8f0f0f0f0f0f0",
+      "screenshot_sha256": "b28bd07b80c23ce6e5602c34e15ff9d99358fd58d4a4e2e4870c8fcc0c9b4c2e",
+      "rom": "apu/channel_4/channel_4_extra_length_clocking-cgb0B.gb",
+      "rom_sha256": "d599ab59753e8b342cace3554799564a32a67ebecc6c47fb88621fffebfa5a90",
+      "model": "cgb-b",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-b/apu/channel_4/channel_4_extra_length_clocking-cgb0B.gb"
+      ],
+      "baseline_result": "fail",
+      "baseline_actual_hex": "f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 64,
+      "mismatches": [],
+      "actual_hex": "f0f0000000000000f0f0f0f0f0000000f000000000000000f0f0f0f0f0f00000f000000000000000f000000000000000f000000000000000f0f0f00000000000",
+      "expected_hex": "f0f0000000000000f0f0f0f0f0000000f000000000000000f0f0f0f0f0f00000f000000000000000f000000000000000f000000000000000f0f0f00000000000",
+      "screenshot_sha256": "5ca4379d8f4101016a8710de8aecde284f0a6d12c696aed0133fc7bb8205f9df",
+      "rom": "apu/channel_4/channel_4_freq_change.gb",
+      "rom_sha256": "fc7a0aefecddd0913e7506fae3756b8976acbbbffd8543d14b03057fabaa83db",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_freq_change.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f0f0000000000000f0f0f0f0f0000000f000000000000000f0f0f0f0f0f00000f000000000000000f000000000000000f000000000000000f0f0f00000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 144,
+      "mismatches": [],
+      "actual_hex": "000000f0f0f0f0f00000f0f0f0f0f0f0000000f0f0f0f0f000000000f0f0f0f00000000000f0f0f0000000f0f0f0f0f0000000f0f0f0f0f00000000000f0f0f000000000f0f0f0f00000f0f0f0f0f0f00000f0f0f0f0f0f000000000f0f0f0f000000000f0f0f0f0000000000000f0f000000000f0f0f0f000000000f0f0f0f000000000f0f0f0f000000000f0f0f0f0",
+      "expected_hex": "000000f0f0f0f0f00000f0f0f0f0f0f0000000f0f0f0f0f000000000f0f0f0f00000000000f0f0f0000000f0f0f0f0f0000000f0f0f0f0f00000000000f0f0f000000000f0f0f0f00000f0f0f0f0f0f00000f0f0f0f0f0f000000000f0f0f0f000000000f0f0f0f0000000000000f0f000000000f0f0f0f000000000f0f0f0f000000000f0f0f0f000000000f0f0f0f0",
+      "screenshot_sha256": "a1c9dc2db9982ec7b974f8ee5ce19645de3fce0380ff6d91c418e903c8a5fefb",
+      "rom": "apu/channel_4/channel_4_frequency_alignment.gb",
+      "rom_sha256": "45980ab777ad17fab7d0cb6e21f6297f210b3bbe1b62a297adbdf3354f10d70f",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_frequency_alignment.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "000000f0f0f0f0f00000f0f0f0f0f0f0000000f0f0f0f0f000000000f0f0f0f00000000000f0f0f0000000f0f0f0f0f0000000f0f0f0f0f00000000000f0f0f000000000f0f0f0f00000f0f0f0f0f0f00000f0f0f0f0f0f000000000f0f0f0f000000000f0f0f0f0000000000000f0f000000000f0f0f0f000000000f0f0f0f000000000f0f0f0f000000000f0f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c7e",
+      "expected_hex": "7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c7e",
+      "screenshot_sha256": "1c14eebb88da7e3ace342ea1c4036d08e6ea7c495fc313c7e66a5c81910c1a47",
+      "rom": "apu/channel_4/channel_4_lfsr.gb",
+      "rom_sha256": "03bfada7a305dd54dc979d4887c1fae9286fb5e6aef7645b2c07f57185497faf",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_lfsr.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c7e",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "00000080c0e0f0f8fcfeffffffffffffff7fbfdfeff7fbfdfeffffffffffff7f3f9fcfe7f3f9fcfeffffffffff7fbf5fafd7ebf5fafdfeffffffff7f3f1f0f87c3e1f0f8fcfeffffff7fbfdfef77bbddeef7fbfdfeffff7f3f9fcf673399cce6f3f9fcfeff7fbf5faf57ab55aad5eaf5fafdfe7f3f1f0f0703010080c0e0f0f8",
+      "expected_hex": "00000080c0e0f0f8fcfeffffffffffffff7fbfdfeff7fbfdfeffffffffffff7f3f9fcfe7f3f9fcfeffffffffff7fbf5fafd7ebf5fafdfeffffffff7f3f1f0f87c3e1f0f8fcfeffffff7fbfdfef77bbddeef7fbfdfeffff7f3f9fcf673399cce6f3f9fcfeff7fbf5faf57ab55aad5eaf5fafdfe7f3f1f0f0703010080c0e0f0f8",
+      "screenshot_sha256": "5a605252162f2cd293f146f8c65a57c8d8c850c3764830b69a125ae5389100a6",
+      "rom": "apu/channel_4/channel_4_lfsr15.gb",
+      "rom_sha256": "3a5f500a267742e77e4abbc445e07d55fa9749da38d63a48c0c0ac9365925687",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_lfsr15.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "00000080c0e0f0f8fcfeffffffffffffff7fbfdfeff7fbfdfeffffffffffff7f3f9fcfe7f3f9fcfeffffffffff7fbf5fafd7ebf5fafdfeffffffff7f3f1f0f87c3e1f0f8fcfeffffff7fbfdfef77bbddeef7fbfdfeffff7f3f9fcf673399cce6f3f9fcfeff7fbf5faf57ab55aad5eaf5fafdfe7f3f1f0f0703010080c0e0f0f8",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f0f0f0f00000f0f0f0f000f000f0f0f000000000f0f000f0f0f000f00000f0f0f0f000f00000f0f0000000f000f000f0f00000000000f000f0f0f0f0000000f0f0f000f0f000f0f00000f00000f000f00000f000000000f00000f0f0f00000f000f0f000f0000000f0000000f0f00000f0f000f000f000f000000000000000f0",
+      "expected_hex": "f0f0f0f00000f0f0f0f000f000f0f0f000000000f0f000f0f0f000f00000f0f0f0f000f00000f0f0000000f000f000f0f00000000000f000f0f0f0f0000000f0f0f000f0f000f0f00000f00000f000f00000f000000000f00000f0f0f00000f000f0f000f0000000f0000000f0f00000f0f000f000f000f000000000000000f0",
+      "screenshot_sha256": "5452b37fa887b78c10fdffb9fd368529b7b485a77cdf2eb848e9c5a99740166e",
+      "rom": "apu/channel_4/channel_4_lfsr_15_7.gb",
+      "rom_sha256": "47ec99dfe9eb2503319376df05886c44fbe991be75b36189257da8fd57c9a599",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_lfsr_15_7.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f0f0f0f00000f0f0f0f000f000f0f0f000000000f0f000f0f0f000f00000f0f0f0f000f00000f0f0000000f000f000f0f00000000000f000f0f0f0f0000000f0f0f000f0f000f0f00000f00000f000f00000f000000000f00000f0f0f00000f000f0f000f0000000f0000000f0f00000f0f000f000f000f000000000000000f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f0000000f0f0f0f0f0000000f0f0f000f0f000f0f0f0f000f0f000f0f00000f0f0f000f0f00000f00000f0f0f00000f00000f000f00000f000f0f000f00000f000000000f0000000f0000000f00000f0f0f00000f0f00000f0f00000f000f0f000f000f000f000f000f0000000f00000000000000000000000f0f00000f0f0f0",
+      "expected_hex": "f0000000f0f0f0f0f0000000f0f0f000f0f000f0f0f0f000f0f000f0f00000f0f0f000f0f00000f00000f0f0f00000f00000f000f00000f000f0f000f00000f000000000f0000000f0000000f00000f0f0f00000f0f00000f0f00000f000f0f000f000f000f000f000f0000000f00000000000000000000000f0f00000f0f0f0",
+      "screenshot_sha256": "5a4062dafe01c15deba64a9b6b12252c667718ccce619b1b5b4534654adae652",
+      "rom": "apu/channel_4/channel_4_lfsr_7_15.gb",
+      "rom_sha256": "90c0d2b6b9eb3e8c4721cf7be0f84c89a3c7334ce3c676cdb9af20fcf2d8961f",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_lfsr_7_15.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f0000000f0f0f0f0f0000000f0f0f000f0f000f0f0f0f000f0f000f0f00000f0f0f000f0f00000f00000f0f0f00000f00000f000f00000f000f0f000f00000f000000000f0000000f0000000f00000f0f0f00000f0f00000f0f00000f000f0f000f000f000f000f000f0000000f00000000000000000000000f0f00000f0f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "7c7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c",
+      "expected_hex": "7c7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c",
+      "screenshot_sha256": "e50f470aa097435fbbda73dc233a3e53af3082c1475773c6e97d8455b436977d",
+      "rom": "apu/channel_4/channel_4_lfsr_restart.gb",
+      "rom_sha256": "7f99c40b5592b9a0366ca49fd94884ee39fc2e9c1a8e99091078b320868c8da9",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_lfsr_restart.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "7c7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "7c7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c",
+      "expected_hex": "7c7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c",
+      "screenshot_sha256": "e50f470aa097435fbbda73dc233a3e53af3082c1475773c6e97d8455b436977d",
+      "rom": "apu/channel_4/channel_4_lfsr_restart_fast.gb",
+      "rom_sha256": "4daeb6e24ab4247ad7c5b98ba90845095a587c5967ab1365f28a9402d8bf3980",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_lfsr_restart_fast.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "7c7e3f5f6f777b7d3e1f4f6773793c5e2f576b753a1d0e07436130586c763b5d2e174b6532190c46235128546a351a0d060341205068747a3d1e0f476371385c6e375b6d361b4d261349245229144a25120904422110486472391c4e275369345a2d160b45221108446231184c6633592c562b552a150a05020100406070787c",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 64,
+      "mismatches": [],
+      "actual_hex": "8080707070707070808070707070707070707070707070707070707070707070ffff000000000000ffff000000000000ffff000000000000ffff000000000000",
+      "expected_hex": "8080707070707070808070707070707070707070707070707070707070707070ffff000000000000ffff000000000000ffff000000000000ffff000000000000",
+      "screenshot_sha256": "f427f2fbee06779665461a05c34ec420c4d98432f480c01924778425445ff83a",
+      "rom": "apu/channel_4/channel_4_volume_div.gb",
+      "rom_sha256": "a92bf6487521a10a99a48d95226348a709ae456876081ff3e88bd3a8498f1e04",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/channel_4/channel_4_volume_div.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "8080707070707070808070707070707070707070707070707070707070707070ffff000000000000ffff000000000000ffff000000000000ffff000000000000",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "0f0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c",
+      "expected_hex": "0f0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c",
+      "screenshot_sha256": "3294edb3cbe9e89b01642f6cd23c63233ee48f85c48f2d58dc50d811b4873078",
+      "rom": "apu/div_trigger_volume_10.gb",
+      "rom_sha256": "c72935bb8c620c4161837faf93f8015593c7d80907e2318c3c5c62ffab711a17",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/div_trigger_volume_10.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0f0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "expected_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "screenshot_sha256": "f4abcd74d1a2715348fb69bb464f101eb2596cedeff3ce4433ba10470921ba1e",
+      "rom": "apu/div_write_trigger.gb",
+      "rom_sha256": "6c6dbc3ec9719ee2bc2d3ac69e6a520dcc149be77f5f209d46cfacec464f2378",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/div_write_trigger.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "expected_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "screenshot_sha256": "89d1ae17f3aec60a83a3717881097f99d5460382afaba7270dfeb542b6e0c263",
+      "rom": "apu/div_write_trigger.gb",
+      "rom_sha256": "6c6dbc3ec9719ee2bc2d3ac69e6a520dcc149be77f5f209d46cfacec464f2378",
+      "model": "dmg-b",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "dmg-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/dmg-b/apu/div_write_trigger.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "expected_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "screenshot_sha256": "e284b56b8b0bcddfd65e15bb3b8ab3a1367b3acd43ecabc130dcf7906ef3c0c3",
+      "rom": "apu/div_write_trigger_10.gb",
+      "rom_sha256": "abe63dd5c25390fb28e56f44bb3fd89bcc72657f9b26137863e0bd9e6ee609a4",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/div_write_trigger_10.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 128,
+      "mismatches": [],
+      "actual_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "expected_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "screenshot_sha256": "7c1c7865c40eece34f5db1fa4ca4055263efe38ce3c030cdbc168992e932f1d2",
+      "rom": "apu/div_write_trigger_10.gb",
+      "rom_sha256": "abe63dd5c25390fb28e56f44bb3fd89bcc72657f9b26137863e0bd9e6ee609a4",
+      "model": "dmg-b",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "dmg-b",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/dmg-b/apu/div_write_trigger_10.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f0f0f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f0f0f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f0f0f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f0f0f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f0f0f0f0f1f1f1f1f1f1f1f1f1f1f1f1f1f1f0f0",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c0c",
+      "expected_hex": "0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c0c",
+      "screenshot_sha256": "701a082667cd5bf27c4e78f10af66c281bbc7c986c6caada13f3540b2268f06b",
+      "rom": "apu/div_write_trigger_volume.gb",
+      "rom_sha256": "610ed20b814c21fba73d87eadf2d72a706fda82825e52cdd81116b1197ac343a",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/div_write_trigger_volume.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c0c",
+      "result_bytes_unchanged": true
+    },
+    {
+      "result": "pass",
+      "result_bytes": 32,
+      "mismatches": [],
+      "actual_hex": "0f0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c",
+      "expected_hex": "0f0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c",
+      "screenshot_sha256": "3294edb3cbe9e89b01642f6cd23c63233ee48f85c48f2d58dc50d811b4873078",
+      "rom": "apu/div_write_trigger_volume_10.gb",
+      "rom_sha256": "67d583229492930d2a3a0cbb47f1db2ec1908b7f1936b2961e9083a83789fe98",
+      "model": "cgb-e",
+      "scope": "applicable CGB/DMG suite case",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/tester/sameboy_tester",
+        "--model",
+        "cgb-e",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/fixes/validation/samesuite/cgb-e/apu/div_write_trigger_volume_10.gb"
+      ],
+      "baseline_result": "pass",
+      "baseline_actual_hex": "0f0f0f0f0f0f0f0f0f0e0e0e0e0e0e0e0e0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c",
+      "result_bytes_unchanged": true
+    }
+  ]
+}

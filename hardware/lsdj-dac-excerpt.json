@@ -1,0 +1,18 @@
+{
+  "file": "hardware/lsdj-dac-excerpt.wav",
+  "sha256": "6e2bd94180221ff08221559fbc2ec7304122ba822cbcdc5adfee49f7ade1012a",
+  "source_wav_filename": "01-Scarlett 3-4 - Stereo-261016_2126.wav",
+  "source_wav_sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+  "source_frames_half_open": [
+    90735,
+    819663
+  ],
+  "sample_rate": 48000,
+  "source_channel_zero_based": 0,
+  "sample_width_bytes": 3,
+  "frames": 728928,
+  "pcm_sha256": "425e1bcf0121c7d5286ec6f5b29d9025d5ac0e464c9bc4366b8d7057ecb86878",
+  "transformation": "Contiguous original left PCM24 samples, no gain, resampling, or filtering; exactly equal to existing floating-point oracle-aligned.wav after decoding.",
+  "existing_analysis_excerpt_sha256": "6a13cbe70935e694ea8f59feb9053096c3512bf5d875935ff2d922861ae81e8d",
+  "purpose": "15.186-second DAC-disconnection evidence; no full song, LSDj program, or save is included."
+}

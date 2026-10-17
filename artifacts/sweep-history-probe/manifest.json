@@ -1,0 +1,472 @@
+{
+  "format": "dmg-audio-torture-v1",
+  "rom": "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/audio-torture.gb",
+  "rom_sha256": "9c8a598aedfd53bfa9da05f51868d57d4f99b563a9fd394732153038dbb6d1a2",
+  "rom_bytes": 32768,
+  "behavior": "Auto-start on power-on; one pass; silence after the final packet; no SRAM writes.",
+  "clock_T_hz": 4194304,
+  "protocol": {
+    "sync": [
+      211,
+      145
+    ],
+    "bit_order": "MSB first",
+    "symbol_T": 8192,
+    "zero_hz": 2048,
+    "one_hz": 4096,
+    "header": [
+      "kind",
+      "id_lo",
+      "id_hi",
+      "payload_length"
+    ],
+    "checksum": "XOR of header and payload; sync excluded",
+    "kinds": {
+      "1": "case marker",
+      "2": "readback",
+      "3": "suite end"
+    },
+    "end_id": 65535,
+    "silence_each_side_T": 65536
+  },
+  "markers": {
+    "1": "case acoustic packet starts",
+    "2": "stimulus starts",
+    "3": "stimulus ends",
+    "4": "suite complete",
+    "5": "readback acoustic packet starts",
+    "6": "end acoustic packet starts"
+  },
+  "cases": [
+    {
+      "id": 1,
+      "name": "calibration-pulse",
+      "group": "calibration",
+      "description": "Uninterrupted CH2 256 Hz, duty 50%, volume 8 for eight complete frame-sequencer cycles.",
+      "parameters": {
+        "frequency_hz": 256,
+        "duty": 2,
+        "volume": 8
+      },
+      "readback_labels": [],
+      "readback_length": 0,
+      "bank": 1,
+      "address": 17542
+    },
+    {
+      "id": 2,
+      "name": "sweep-history-s2-51a-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1306,
+        "predecessor_frequency": 1045,
+        "initial_frequency": 1306,
+        "mode": "direct",
+        "prediction_NR52": [
+          241,
+          240
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": false,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 0
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update"
+      ],
+      "readback_length": 2,
+      "bank": 1,
+      "address": 17454
+    },
+    {
+      "id": 3,
+      "name": "sweep-history-s2-51a-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1306,
+        "predecessor_frequency": 1045,
+        "initial_frequency": 1045,
+        "mode": "chained",
+        "prediction_NR52": [
+          241,
+          241,
+          240
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": false,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 32768
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update",
+        "NR52-after-second-update"
+      ],
+      "readback_length": 3,
+      "bank": 1,
+      "address": 16909
+    },
+    {
+      "id": 4,
+      "name": "sweep-history-s2-51b-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1307,
+        "predecessor_frequency": 1046,
+        "initial_frequency": 1307,
+        "mode": "direct",
+        "prediction_NR52": [
+          241,
+          240
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": false,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 0
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update"
+      ],
+      "readback_length": 2,
+      "bank": 1,
+      "address": 17366
+    },
+    {
+      "id": 5,
+      "name": "sweep-history-s2-51b-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1307,
+        "predecessor_frequency": 1046,
+        "initial_frequency": 1046,
+        "mode": "chained",
+        "prediction_NR52": [
+          241,
+          241,
+          240
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": false,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 32768
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update",
+        "NR52-after-second-update"
+      ],
+      "readback_length": 3,
+      "bank": 1,
+      "address": 16804
+    },
+    {
+      "id": 6,
+      "name": "sweep-history-s2-51c-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1308,
+        "predecessor_frequency": 1047,
+        "initial_frequency": 1308,
+        "mode": "direct",
+        "prediction_NR52": [
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 0
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update"
+      ],
+      "readback_length": 2,
+      "bank": 1,
+      "address": 17278
+    },
+    {
+      "id": 7,
+      "name": "sweep-history-s2-51c-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1308,
+        "predecessor_frequency": 1047,
+        "initial_frequency": 1047,
+        "mode": "chained",
+        "prediction_NR52": [
+          241,
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 32768
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update",
+        "NR52-after-second-update"
+      ],
+      "readback_length": 3,
+      "bank": 1,
+      "address": 16699
+    },
+    {
+      "id": 8,
+      "name": "sweep-history-s2-51e-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1310,
+        "predecessor_frequency": 1048,
+        "initial_frequency": 1310,
+        "mode": "direct",
+        "prediction_NR52": [
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 0
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update"
+      ],
+      "readback_length": 2,
+      "bank": 1,
+      "address": 17190
+    },
+    {
+      "id": 9,
+      "name": "sweep-history-s2-51e-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1310,
+        "predecessor_frequency": 1048,
+        "initial_frequency": 1048,
+        "mode": "chained",
+        "prediction_NR52": [
+          241,
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 32768
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update",
+        "NR52-after-second-update"
+      ],
+      "readback_length": 3,
+      "bank": 1,
+      "address": 16594
+    },
+    {
+      "id": 10,
+      "name": "sweep-history-s2-51f-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1311,
+        "predecessor_frequency": 1049,
+        "initial_frequency": 1311,
+        "mode": "direct",
+        "prediction_NR52": [
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 0
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update"
+      ],
+      "readback_length": 2,
+      "bank": 1,
+      "address": 17102
+    },
+    {
+      "id": 11,
+      "name": "sweep-history-s2-51f-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 2,
+        "target_frequency": 1311,
+        "predecessor_frequency": 1049,
+        "initial_frequency": 1049,
+        "mode": "chained",
+        "prediction_NR52": [
+          241,
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 32768
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update",
+        "NR52-after-second-update"
+      ],
+      "readback_length": 3,
+      "bank": 1,
+      "address": 16489
+    },
+    {
+      "id": 12,
+      "name": "sweep-history-s3-64f-direct",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 3,
+        "target_frequency": 1615,
+        "predecessor_frequency": 1436,
+        "initial_frequency": 1615,
+        "mode": "direct",
+        "prediction_NR52": [
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 0
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update"
+      ],
+      "readback_length": 2,
+      "bank": 1,
+      "address": 17014
+    },
+    {
+      "id": 13,
+      "name": "sweep-history-s3-64f-chained",
+      "group": "ch1-sweep-history",
+      "description": "Read the same target transition after a fresh trigger or one surviving ordinary sweep update.",
+      "parameters": {
+        "shift": 3,
+        "target_frequency": 1615,
+        "predecessor_frequency": 1436,
+        "initial_frequency": 1436,
+        "mode": "chained",
+        "prediction_NR52": [
+          241,
+          241,
+          241
+        ],
+        "prediction_authority": "History-independent extension of the recorded first-update map; pending this hardware measurement.",
+        "first_update_target_active_recorded": true,
+        "initial_wait_T": 8192,
+        "following_wait_T": 24576,
+        "second_update_wait_T": 32768
+      },
+      "readback_labels": [
+        "NR52-before-first-update",
+        "NR52-after-first-update",
+        "NR52-after-second-update"
+      ],
+      "readback_length": 3,
+      "bank": 1,
+      "address": 16384
+    }
+  ],
+  "commands": [
+    [
+      "rgbasm",
+      "-I",
+      "/home/jeff/Documents/ChatGPT/dmg/benchmark/torture/",
+      "-I",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/",
+      "-o",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/engine.o",
+      "/home/jeff/Documents/ChatGPT/dmg/benchmark/torture/engine.asm"
+    ],
+    [
+      "rgblink",
+      "-m",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/audio-torture.map",
+      "-n",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/audio-torture.sym",
+      "-o",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/audio-torture.gb",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/engine.o"
+    ],
+    [
+      "rgbfix",
+      "-v",
+      "-p",
+      "0",
+      "-t",
+      "DMG AUDIO LAB",
+      "-m",
+      "0x1b",
+      "-r",
+      "0x04",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/sweep-history-probe/audio-torture.gb"
+    ]
+  ],
+  "source_sha256": {
+    "benchmark/torture/cases.py": "e5a85fa26720252f1577c3e8169f14c64c382d6e09cc4fc213fb58510c5d92c0",
+    "benchmark/torture/build.py": "98bb6aa39da91983f6b4e28d0a8cc2e55807528ab5a900748e69502a735f1af6",
+    "benchmark/torture/engine.asm": "ea2609d9219539dd418666c0ae54f72a443a386e045bc3c1b2d3a9e2b8e96dc2",
+    "benchmark/torture/macros.inc": "c141ad69421ebdccdd7c2f0508ea2f7b8d0816b0a46ebced2e3764448fc65124",
+    "benchmark/sweep-history-probe.py": "bf26aab30bd48161fe6689b69517a16aaaeb00732767d130117c5f23febe61d4"
+  },
+  "generated_sha256": {
+    "cases.inc": "c1087ddf57ec8ffac4577e79cfec62ec51e7a7e452a3c6c591cac4ad8ff536d0",
+    "case_table.inc": "54e3669fdca73732b8b97573eeece02c7cabb8448082d4cede303bb1c7a1a649"
+  },
+  "timing_note": "Capture marker/APU CSV timestamps are GB_run instruction boundaries, not exact bus writes. Generated ASM and encoded-bit spacing define the schedule; holds include all listed CPU instruction overhead outside wait_cycles.",
+  "limits": [
+    "Finite domain/transition coverage, not every possible register interleaving.",
+    "Analog output and chip-instance differences require interpretation; this ROM has no invented accuracy pass threshold.",
+    "48kHz recordings cannot resolve ultrasonic oscillator edges; readback and subsequent audible playback expose some retained effects.",
+    "No calibrated VIN input is supplied. The NR50 gain grid clears VIN bits; the full-byte interaction walk visits them but does not characterize external audio."
+  ],
+  "oracle_sha256": "e2251d1ccdd6cf9558ea95a9da574d6d60b973f541708b67daff8b6a00786277",
+  "purpose": "Unmeasured paired-history discriminator. All prediction_NR52 values are hypotheses, not observations from this ROM."
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "torture-pula2a6h",
+    "source_metadata_sha256": "33b05352e7cad59ddf75a0894af3a5d84bc37c01ab07a51f552d9f6442963a0b",
+    "status": "saved",
+    "created": {
+      "utc": "2026-10-17T13:52:36.372202+00:00",
+      "monotonic_ns": 309334258821758
+    },
+    "finished": {
+      "utc": "2026-10-17T14:03:34.532515+00:00",
+      "monotonic_ns": 309992419139738
+    },
+    "stop_reason": "suite-end-packet",
+    "recorder_exit_code": 1,
+    "wav_sha256": "c998f8af6ed5389fdbc12127d68da749bfe7ba341f67afda141fe8e31cc73960",
+    "frames": 31582208,
+    "duration_seconds": 657.9626666666667,
+    "sample_rate": 48000,
+    "channels_count": 2,
+    "bits_per_sample": 24
+  },
+  {
+    "id": "audio-oracle-probe-v2-erekgdxk",
+    "source_metadata_sha256": "7cce8b93f5997e52f6579c5566d2c7de1dafdf339d22f6c383507e8a9c38a985",
+    "status": "saved",
+    "created": {
+      "utc": "2026-10-17T16:26:03.611374+00:00",
+      "monotonic_ns": 318541497995030
+    },
+    "finished": {
+      "utc": "2026-10-17T16:30:27.721893+00:00",
+      "monotonic_ns": 318805608514387
+    },
+    "stop_reason": "suite-end-packet",
+    "recorder_exit_code": 1,
+    "wav_sha256": "bf1a40db5ef5a883182c1121d4da9d569c9d0b4191b47e8dbf8b8f9acd736a93",
+    "frames": 12670976,
+    "duration_seconds": 263.97866666666664,
+    "sample_rate": 48000,
+    "channels_count": 2,
+    "bits_per_sample": 24
+  },
+  {
+    "id": "sweep-history-vvg4l2b6",
+    "source_metadata_sha256": "d36f437bcf2f52c8327a6f323c1b65e1df4735c59419db618a712fe9eba7a21a",
+    "status": "saved",
+    "created": {
+      "utc": "2026-10-17T17:26:30.114366+00:00",
+      "monotonic_ns": 322168000985983
+    },
+    "finished": {
+      "utc": "2026-10-17T17:26:46.162064+00:00",
+      "monotonic_ns": 322184048683778
+    },
+    "stop_reason": "suite-end-packet",
+    "recorder_exit_code": 1,
+    "wav_sha256": "841af60171c30577d549f736ff192e3be204c0230f9cb7f38f28b466b75c7fc8",
+    "frames": 768000,
+    "duration_seconds": 16.0,
+    "sample_rate": 48000,
+    "channels_count": 2,
+    "bits_per_sample": 24
+  },
+  {
+    "id": "retrigger-wqowpq82",
+    "source_metadata_sha256": "eb44390936daec6001cff3d675d7acc8c9b385c6bbf5d34c6261fccdf559e9e0",
+    "status": "saved",
+    "created": {
+      "utc": "2026-10-17T11:05:23.081295+00:00",
+      "monotonic_ns": 299300967913471
+    },
+    "finished": {
+      "utc": "2026-10-17T11:05:54.068264+00:00",
+      "monotonic_ns": 299331954886518
+    },
+    "recorder_exit_code": 1,
+    "wav_sha256": "d5fa58dc64167ea22ec06ca98b5256d85a652d22e718cc40759ba826830ef93f",
+    "frames": 1484800,
+    "duration_seconds": 30.933333333333334,
+    "sample_rate": 48000,
+    "channels_count": 2,
+    "bits_per_sample": 24
+  }
+]

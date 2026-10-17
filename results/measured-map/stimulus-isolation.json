@@ -1,0 +1,954 @@
+{
+  "before": "artifacts/torture/renders/wave-majority-integrated",
+  "after": "artifacts/sweep-oracle/measured-map/original-render",
+  "marker_timing_identical": true,
+  "changed": [
+    {
+      "id": 89,
+      "name": "ch1-sweep-shadow-retrigger",
+      "changed_channel_samples": 3140
+    }
+  ],
+  "unchanged": [
+    {
+      "id": 1,
+      "name": "calibration-pulse",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 2,
+      "name": "ch1-duty-trigger",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 3,
+      "name": "ch1-duty-live",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 4,
+      "name": "ch1-period-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 5,
+      "name": "ch1-period-boundaries",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 6,
+      "name": "ch1-restart-active",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 7,
+      "name": "ch1-restart-dac",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 8,
+      "name": "ch1-restart-power",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 9,
+      "name": "ch2-duty-trigger",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 10,
+      "name": "ch2-duty-live",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 11,
+      "name": "ch2-period-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 12,
+      "name": "ch2-period-boundaries",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 13,
+      "name": "ch2-restart-active",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 14,
+      "name": "ch2-restart-dac",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 15,
+      "name": "ch2-restart-power",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 16,
+      "name": "ch1-volume-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 17,
+      "name": "ch1-envelope-down-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 18,
+      "name": "ch1-envelope-down-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 19,
+      "name": "ch1-envelope-down-2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 20,
+      "name": "ch1-envelope-down-3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 21,
+      "name": "ch1-envelope-down-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 22,
+      "name": "ch1-envelope-down-5",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 23,
+      "name": "ch1-envelope-down-6",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 24,
+      "name": "ch1-envelope-down-7",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 25,
+      "name": "ch1-envelope-up-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 26,
+      "name": "ch1-envelope-up-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 27,
+      "name": "ch1-envelope-up-2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 28,
+      "name": "ch1-envelope-up-3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 29,
+      "name": "ch1-envelope-up-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 30,
+      "name": "ch1-envelope-up-5",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 31,
+      "name": "ch1-envelope-up-6",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 32,
+      "name": "ch1-envelope-up-7",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 33,
+      "name": "ch1-envelope-live",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 34,
+      "name": "ch2-volume-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 35,
+      "name": "ch2-envelope-down-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 36,
+      "name": "ch2-envelope-down-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 37,
+      "name": "ch2-envelope-down-2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 38,
+      "name": "ch2-envelope-down-3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 39,
+      "name": "ch2-envelope-down-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 40,
+      "name": "ch2-envelope-down-5",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 41,
+      "name": "ch2-envelope-down-6",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 42,
+      "name": "ch2-envelope-down-7",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 43,
+      "name": "ch2-envelope-up-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 44,
+      "name": "ch2-envelope-up-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 45,
+      "name": "ch2-envelope-up-2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 46,
+      "name": "ch2-envelope-up-3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 47,
+      "name": "ch2-envelope-up-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 48,
+      "name": "ch2-envelope-up-5",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 49,
+      "name": "ch2-envelope-up-6",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 50,
+      "name": "ch2-envelope-up-7",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 51,
+      "name": "ch2-envelope-live",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 52,
+      "name": "ch4-volume-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 53,
+      "name": "ch4-envelope-down-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 54,
+      "name": "ch4-envelope-down-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 55,
+      "name": "ch4-envelope-down-2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 56,
+      "name": "ch4-envelope-down-3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 57,
+      "name": "ch4-envelope-down-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 58,
+      "name": "ch4-envelope-down-5",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 59,
+      "name": "ch4-envelope-down-6",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 60,
+      "name": "ch4-envelope-down-7",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 61,
+      "name": "ch4-envelope-up-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 62,
+      "name": "ch4-envelope-up-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 63,
+      "name": "ch4-envelope-up-2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 64,
+      "name": "ch4-envelope-up-3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 65,
+      "name": "ch4-envelope-up-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 66,
+      "name": "ch4-envelope-up-5",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 67,
+      "name": "ch4-envelope-up-6",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 68,
+      "name": "ch4-envelope-up-7",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 69,
+      "name": "ch4-envelope-live",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 70,
+      "name": "ch1-length-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 71,
+      "name": "ch1-length-div-phases",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 72,
+      "name": "ch2-length-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 73,
+      "name": "ch2-length-div-phases",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 74,
+      "name": "ch3-length-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 75,
+      "name": "ch3-length-div-phases",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 76,
+      "name": "ch4-length-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 77,
+      "name": "ch4-length-div-phases",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 78,
+      "name": "ch1-sweep-shift-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 79,
+      "name": "ch1-sweep-pace-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 80,
+      "name": "ch1-sweep-shift-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 81,
+      "name": "ch1-sweep-pace-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 82,
+      "name": "ch1-sweep-trigger-overflow",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 83,
+      "name": "ch1-sweep-pace-zero-overflow",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 84,
+      "name": "ch1-sweep-shift-zero-control",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 85,
+      "name": "ch1-sweep-second-overflow",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 86,
+      "name": "ch1-sweep-negate-clear",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 87,
+      "name": "ch1-sweep-negate-clear-no-calculation",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 88,
+      "name": "ch1-sweep-shadow-live",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 90,
+      "name": "ch3-volume-trigger",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 91,
+      "name": "ch3-volume-live",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 92,
+      "name": "ch3-period-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 93,
+      "name": "ch3-inactive-ram-dac-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 94,
+      "name": "ch3-inactive-ram-dac-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 95,
+      "name": "ch3-active-read-phase-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 96,
+      "name": "ch3-active-read-phase-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 97,
+      "name": "ch3-active-read-phase-8",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 98,
+      "name": "ch3-active-read-phase-12",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 99,
+      "name": "ch3-active-read-phase-16",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 100,
+      "name": "ch3-active-read-phase-20",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 101,
+      "name": "ch3-active-read-phase-24",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 102,
+      "name": "ch3-active-read-phase-28",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 103,
+      "name": "ch3-active-write-address-00",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 104,
+      "name": "ch3-active-write-address-01",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 105,
+      "name": "ch3-active-write-address-02",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 106,
+      "name": "ch3-active-write-address-03",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 107,
+      "name": "ch3-active-write-address-04",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 108,
+      "name": "ch3-active-write-address-05",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 109,
+      "name": "ch3-active-write-address-06",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 110,
+      "name": "ch3-active-write-address-07",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 111,
+      "name": "ch3-active-write-address-08",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 112,
+      "name": "ch3-active-write-address-09",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 113,
+      "name": "ch3-active-write-address-0a",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 114,
+      "name": "ch3-active-write-address-0b",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 115,
+      "name": "ch3-active-write-address-0c",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 116,
+      "name": "ch3-active-write-address-0d",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 117,
+      "name": "ch3-active-write-address-0e",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 118,
+      "name": "ch3-active-write-address-0f",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 119,
+      "name": "ch3-retrigger-active-byte-00",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 120,
+      "name": "ch3-retrigger-active-byte-01",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 121,
+      "name": "ch3-retrigger-active-byte-02",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 122,
+      "name": "ch3-retrigger-active-byte-03",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 123,
+      "name": "ch3-retrigger-active-byte-04",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 124,
+      "name": "ch3-retrigger-active-byte-05",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 125,
+      "name": "ch3-retrigger-active-byte-06",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 126,
+      "name": "ch3-retrigger-active-byte-07",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 127,
+      "name": "ch3-retrigger-active-byte-08",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 128,
+      "name": "ch3-retrigger-active-byte-09",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 129,
+      "name": "ch3-retrigger-active-byte-0a",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 130,
+      "name": "ch3-retrigger-active-byte-0b",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 131,
+      "name": "ch3-retrigger-active-byte-0c",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 132,
+      "name": "ch3-retrigger-active-byte-0d",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 133,
+      "name": "ch3-retrigger-active-byte-0e",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 134,
+      "name": "ch3-retrigger-active-byte-0f",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 135,
+      "name": "ch3-retrigger-safe-byte-00",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 136,
+      "name": "ch3-retrigger-safe-byte-01",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 137,
+      "name": "ch3-retrigger-safe-byte-02",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 138,
+      "name": "ch3-retrigger-safe-byte-03",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 139,
+      "name": "ch3-retrigger-safe-byte-04",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 140,
+      "name": "ch3-retrigger-safe-byte-05",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 141,
+      "name": "ch3-retrigger-safe-byte-06",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 142,
+      "name": "ch3-retrigger-safe-byte-07",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 143,
+      "name": "ch3-retrigger-safe-byte-08",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 144,
+      "name": "ch3-retrigger-safe-byte-09",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 145,
+      "name": "ch3-retrigger-safe-byte-0a",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 146,
+      "name": "ch3-retrigger-safe-byte-0b",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 147,
+      "name": "ch3-retrigger-safe-byte-0c",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 148,
+      "name": "ch3-retrigger-safe-byte-0d",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 149,
+      "name": "ch3-retrigger-safe-byte-0e",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 150,
+      "name": "ch3-retrigger-safe-byte-0f",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 151,
+      "name": "ch3-stale-buffer-dac",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 152,
+      "name": "ch3-stale-buffer-power",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 153,
+      "name": "ch4-polynomial-shift-0",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 154,
+      "name": "ch4-polynomial-shift-1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 155,
+      "name": "ch4-polynomial-shift-2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 156,
+      "name": "ch4-polynomial-shift-3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 157,
+      "name": "ch4-polynomial-shift-4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 158,
+      "name": "ch4-polynomial-shift-5",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 159,
+      "name": "ch4-polynomial-shift-6",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 160,
+      "name": "ch4-polynomial-shift-7",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 161,
+      "name": "ch4-polynomial-shift-8",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 162,
+      "name": "ch4-polynomial-shift-9",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 163,
+      "name": "ch4-polynomial-shift-10",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 164,
+      "name": "ch4-polynomial-shift-11",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 165,
+      "name": "ch4-polynomial-shift-12",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 166,
+      "name": "ch4-polynomial-shift-13",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 167,
+      "name": "ch4-polynomial-shift-14",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 168,
+      "name": "ch4-polynomial-shift-15",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 169,
+      "name": "ch4-live-NR43-held",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 170,
+      "name": "ch4-live-NR43-trigger",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 171,
+      "name": "mixer-route-ch1",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 172,
+      "name": "mixer-route-ch2",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 173,
+      "name": "mixer-route-ch3",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 174,
+      "name": "mixer-route-ch4",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 175,
+      "name": "mixer-all-subsets",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 176,
+      "name": "mixer-NR50-domain",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 177,
+      "name": "ch1-DAC-off-all-off",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 178,
+      "name": "ch1-DAC-off-control",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 179,
+      "name": "ch2-DAC-off-all-off",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 180,
+      "name": "ch2-DAC-off-control",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 181,
+      "name": "ch3-DAC-off-all-off",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 182,
+      "name": "ch3-DAC-off-control",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 183,
+      "name": "ch4-DAC-off-all-off",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 184,
+      "name": "ch4-DAC-off-control",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 185,
+      "name": "global-NR52-off-state",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 186,
+      "name": "ch1-DIV-envelope-phases",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 187,
+      "name": "ch2-DIV-envelope-phases",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 188,
+      "name": "ch4-DIV-envelope-phases",
+      "changed_channel_samples": 0
+    },
+    {
+      "id": 189,
+      "name": "interaction-gray-register-walk",
+      "changed_channel_samples": 0
+    }
+  ]
+}

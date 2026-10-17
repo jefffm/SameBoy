@@ -1,0 +1,105 @@
+{
+  "complete": true,
+  "packet_failures": [],
+  "pairs": [
+    {
+      "shift": 2,
+      "target_frequency": 1306,
+      "direct_NR52": [
+        241,
+        240
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        240
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1307,
+      "direct_NR52": [
+        241,
+        240
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        240
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1308,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1310,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 2,
+      "target_frequency": 1311,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    },
+    {
+      "shift": 3,
+      "target_frequency": 1615,
+      "direct_NR52": [
+        241,
+        241
+      ],
+      "chained_NR52": [
+        241,
+        241,
+        241
+      ],
+      "controls_valid": true,
+      "direct_repeats_previous_take": true,
+      "different_after_target": false
+    }
+  ],
+  "interpretation": "A valid pair difference challenges the history-independent map. Agreement only supports these histories on this unit; it does not prove a transistor mechanism or all histories.",
+  "manifest_sha256": "a19ddd5eeeaa131cbc553939502b76fecbaab92e9c03c8b1eca3e0a83b62fad8",
+  "metrics_sha256": "034481308cb98f332a8a40685cb073aa8f470071aaa2b2814838f57265243c66"
+}

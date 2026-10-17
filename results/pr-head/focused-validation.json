@@ -1,0 +1,127 @@
+{
+  "sameboy_commit": "8182d8edbaddbac9f6057930f6cebdabd3b83228",
+  "sameboy_commit_after": "8182d8edbaddbac9f6057930f6cebdabd3b83228",
+  "sameboy_status_after": "",
+  "sameboy_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "commands": [
+    {
+      "name": "noise-feedback",
+      "command": [
+        "bash",
+        "benchmark/run-noise-feedback-test.sh",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.464194652042352,
+      "log": "artifacts/pr-publication/validation/noise-feedback.log",
+      "log_sha256": "6b6ea54c2e15a200c9b3c3cc1702193f1f3d2cf04a957c9d49135e72ed409360"
+    },
+    {
+      "name": "pulse-clock",
+      "command": [
+        "bash",
+        "benchmark/run-pulse-clock-test.sh",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.39239419501973316,
+      "log": "artifacts/pr-publication/validation/pulse-clock.log",
+      "log_sha256": "d622745ce5991338d3c1f9cb52e35e3c18583421df0ad4a9bc2e61165f28c717"
+    },
+    {
+      "name": "pulse-duty",
+      "command": [
+        "bash",
+        "benchmark/run-pulse-duty-test.sh",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.3865899069933221,
+      "log": "artifacts/pr-publication/validation/pulse-duty.log",
+      "log_sha256": "da9c044531df9be20ca4f9558b782d487fb92ce8b83a47780c7a9c333c92ec4a"
+    },
+    {
+      "name": "mixer-dac",
+      "command": [
+        "bash",
+        "benchmark/run-mixer-dac-test.sh",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.268964090035297,
+      "log": "artifacts/pr-publication/validation/mixer-dac.log",
+      "log_sha256": "4d1512f4fa2a3b0f761b8987e6c2af28d2d74a81d659921054d43e7ba054b604"
+    },
+    {
+      "name": "cpu-full",
+      "command": [
+        ".venv/bin/python",
+        "benchmark/check-physical-probe.py",
+        "--sameboy",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy",
+        "--out",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/pr-publication/validation/cpu-full"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.868875621992629,
+      "log": "artifacts/pr-publication/validation/cpu-full.log",
+      "log_sha256": "66d4218ee809d415a163d0359c254b8d42d6ebbda7326aedc0d3eab325ce92e1"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "-C",
+        "SameBoy",
+        "diff",
+        "--check",
+        "26a56bd6..HEAD"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.005745987989939749,
+      "log": "artifacts/pr-publication/validation/diff-check.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "sweep-table",
+      "command": [
+        ".venv/bin/python",
+        "benchmark/generate-sweep-table.py",
+        "--check",
+        "SameBoy/Core/dmg_sweep.h"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.045471437042579055,
+      "log": "artifacts/pr-publication/validation/sweep-table.log",
+      "log_sha256": "e7200313ee26d5b57663c6477e951c8b77a4c2e7ae99332528d8256e797eb163"
+    }
+  ],
+  "status": "passed",
+  "sha256": {
+    "SameBoy/build/lib/libsameboy.a": "71e9fbe93f291dfe46ee01119fc88f7e3853a695bb527bfac074f03c9c0b6177",
+    "SameBoy/Core/apu.c": "e91aa7eda31882801185fb430ad42b4af3d4df09ea1a4beb7c98301fb78c3aba",
+    "SameBoy/Core/apu.h": "d06dedb1034690a2ea83c2742cc820ac4b5ca458657b8eabd049263b0b24c5cd",
+    "SameBoy/Core/save_state.c": "926c6d52fd6c2ccc281bf83be1a0cb3a6ec83b150abbfd71d7b86dcb9be0b112",
+    "SameBoy/Core/dmg_sweep.h": "22f7eda92ecc27b3fabc03179dbf82f7e0c9ccd3543fc9fe50e01d3509a7dac7",
+    "benchmark/oracles/dmg-probe-v2-erekgdxk.json": "e2251d1ccdd6cf9558ea95a9da574d6d60b973f541708b67daff8b6a00786277",
+    "benchmark/noise-feedback-test.c": "9cf6443f54133cca36fd1fffc107433bf3a1d5e25d82520015ec79658947499a",
+    "benchmark/pulse-clock-test.c": "2440ef52526bc6b73526c5864b08c822ff81f5ea46b98974d5a532f1061175f6",
+    "benchmark/pulse-duty-test.c": "670ab5f7046a93a6db16c853ad2fa2fafd3c82dd883419b3992ec6d1a7117667",
+    "benchmark/mixer-dac-test.c": "ad673bdfa157d5f38a83e11d7159c04a6584337ec3d649a486c65e360d79490c",
+    "benchmark/probe-readbacks.c": "4163bf9023b37df91075559338b5917f3e48cf9e19fe1e013466bc136f659312",
+    "benchmark/run-noise-feedback-test.sh": "5abbe29f3c5164720058bc4d9e8dbd88698ea01d53a509df01ec3d9f3b2c8c3b",
+    "benchmark/run-pulse-clock-test.sh": "f4e9a3e65a6e00f183f77e205ea563864c48dcbebfc1b44292ae07568070bc76",
+    "benchmark/run-pulse-duty-test.sh": "75fdaac64a66cb15ceadf82376e053da20dabcfcbf72b8cc8be1a0df3ec80c1e",
+    "benchmark/run-mixer-dac-test.sh": "b5180e4c1055b8020d97eef76a01f8dbb37a84c614861cbfa0917f9c04648677",
+    "benchmark/check-physical-probe.py": "1f1a4a02156194940d933cd5485e2d357fc35a11751d9b5b0f4bc3e15cc2fe16",
+    "benchmark/generate-sweep-table.py": "b83f233cbb66462ea26394954083365faabc275fe7bad6c00f12665b2673ed6b"
+  },
+  "finished_at_utc": "2026-10-17T17:36:10.652206+00:00",
+  "tools": {
+    "clang": "clang version 23.1.1",
+    "cc": "cc (GCC) 16.2.1 20260810",
+    "rgbasm": "rgbasm v1.0.4",
+    "rgblink": "rgblink v1.0.4",
+    "rgbfix": "rgbfix v1.0.4"
+  }
+}
