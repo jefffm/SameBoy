@@ -35,7 +35,18 @@ Start:
     jr c, .vblank
     xor a
     ldh [$ff40], a
+IF KEEP_DAC
+    ; The DMG boot ROM leaves CH1's DAC enabled. Keep it connected throughout
+    ; startup, otherwise NR52=0 would exercise the very disconnection that this
+    ; control must exclude. Expire CH1 through its length counter instead; the
+    ; first noise hold below exceeds one 256 Hz length clock.
+    ld a, $3f
+    ldh [$ff11], a
+    ld a, $40
+    ldh [$ff14], a
+ELSE
     ldh [$ff26], a
+ENDC
     ldh [$ff04], a
     ld a, $80
     ldh [$ff26], a

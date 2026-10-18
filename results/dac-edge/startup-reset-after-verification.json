@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "prefix": "artifacts/dac-edge/after/probe",
+  "closed_dac_off_intervals": 336,
+  "nonzero_stereo_values_while_disconnected": 0,
+  "inactive_unrouted_dac_control_byte_identical": false,
+  "control_reference": "artifacts/dac-edge/before/probe-dac-control.wav",
+  "wav_sha256": "dc8710242ab4f174aee45f9ab486c01efc9daf5b23364bca23b37a211155aecc",
+  "settling_authority": "12 T-cycle LDH bus instruction; rounded up to the first capture sample after completion. No DAC-discharge allowance.",
+  "scope": "Output regression against documented disconnection, plus unchanged active-DAC control. These generated ROMs have not yet been recorded on hardware."
+}

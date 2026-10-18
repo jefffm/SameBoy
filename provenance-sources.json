@@ -14,8 +14,13 @@
   {
     "path": "benchmark/dac-off-probe.asm",
     "source": "benchmark/dac-off-probe.asm",
-    "source_sha256": "f635458de4dba9e907e41ec14c47642c1a02e53318b9e977d872b6d7c9a9ac08",
-    "transformation": "verbatim"
+    "source_sha256": "f6f2761611433eb6816b85173b5d7fc03593c87a2cb3839c34ebf02c84d90ff5",
+    "transformation": "verbatim",
+    "previous_published_source": {
+      "source": "benchmark/dac-off-probe.asm",
+      "source_sha256": "f635458de4dba9e907e41ec14c47642c1a02e53318b9e977d872b6d7c9a9ac08",
+      "transformation": "verbatim"
+    }
   },
   {
     "path": "benchmark/noise-feedback-test.c",
@@ -74,8 +79,13 @@
   {
     "path": "benchmark/verify-dac-off.py",
     "source": "benchmark/verify-dac-off.py",
-    "source_sha256": "40a8af8f02e96f78b135d9dc53af90d16bde5e5e81ee4e0d71a9abc0cc6f6818",
-    "transformation": "Explicit --silence-only mode reproduces DAC-off-gap assertion without claiming the old startup control is unchanged after the separate mixer fix. Original strict mode remains available."
+    "source_sha256": "7dadfabae50982ca551ca433f7f3b03169ba330694aaaf2c078c2f698a129f29",
+    "transformation": "Retain the companion --silence-only option; default the strict control reference to the packaged continuously enabled-DAC capture. No DAC-decay allowance remains.",
+    "previous_published_source": {
+      "source": "benchmark/verify-dac-off.py",
+      "source_sha256": "40a8af8f02e96f78b135d9dc53af90d16bde5e5e81ee4e0d71a9abc0cc6f6818",
+      "transformation": "Explicit --silence-only mode reproduces DAC-off-gap assertion without claiming the old startup control is unchanged after the separate mixer fix. Original strict mode remains available."
+    }
   },
   {
     "path": "benchmark/generate-sweep-table.py",
@@ -682,5 +692,149 @@
     "source": "artifacts/torture/renders/render-h1xqcgiz/apu.csv",
     "source_sha256": "470319225ed2f3adab9bdc44bd6d39ca54770f34cb10925f2dd1e2f4ef96a109",
     "transformation": "Retain the exact 128 NR14/NR24=C6 rows used by pulse-edge-oracle.py in cases 70 and 72; write standard CSV header/newlines."
+  },
+  {
+    "path": "benchmark/dac-edge-test.c",
+    "source": "benchmark/dac-edge-test.c",
+    "source_sha256": "637fd84428dcf97b63f099b711aed2085073eb5371facc9b4839404bcec4359a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-dac-edge-test.sh",
+    "source": "benchmark/run-dac-edge-test.sh",
+    "source_sha256": "ae80c20b8599f09a8319032521d6b4b81f126fe31368860f33dcc9e9f06e7876",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/before-dac-off.wav",
+    "source": "artifacts/dac-edge/before/continuous-control-dac-off.wav",
+    "source_sha256": "9a6e566fb20d023ccd2485390740f4d1929b96d4c014259a591d177fb18631a7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/before-dac-off.csv",
+    "source": "artifacts/dac-edge/before/continuous-control-dac-off.csv",
+    "source_sha256": "4f19ef3b53420ff0df0eef4bb0aff4754034d5c0a729b40274c668f9fea11691",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/before-dac-control.wav",
+    "source": "artifacts/dac-edge/before/continuous-control-dac-control.wav",
+    "source_sha256": "e4ff0729a76c4b34e99d1a4d6c2819bbd2b978af17e33814e7cf86863fb4666b",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/before-verification.json",
+    "source": "artifacts/dac-edge/before/continuous-verification.json",
+    "source_sha256": "9dca437d51bfd041819e79fec52e420d470ae558d2d1028990848db273f0ffac",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/c-before.stdout",
+    "source": "build/dac-edge-test/before.stdout",
+    "source_sha256": "1fe1eddfb8820ee9f1cedab7a343175bc76a36c6de9bea89452ccdc911068b73",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/c-before.stderr",
+    "source": "build/dac-edge-test/before.stderr",
+    "source_sha256": "f6cecd9107d4c5ec3a92bd1ff425f6e5034dc83f99ccbd19a694f3a333c70134",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/after-dac-off.wav",
+    "source": "artifacts/dac-edge/after/continuous-control-dac-off.wav",
+    "source_sha256": "dc8710242ab4f174aee45f9ab486c01efc9daf5b23364bca23b37a211155aecc",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/after-dac-off.csv",
+    "source": "artifacts/dac-edge/after/continuous-control-dac-off.csv",
+    "source_sha256": "4f19ef3b53420ff0df0eef4bb0aff4754034d5c0a729b40274c668f9fea11691",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/after-dac-control.wav",
+    "source": "artifacts/dac-edge/after/continuous-control-dac-control.wav",
+    "source_sha256": "e4ff0729a76c4b34e99d1a4d6c2819bbd2b978af17e33814e7cf86863fb4666b",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/after-verification.json",
+    "source": "artifacts/dac-edge/after/continuous-verification.json",
+    "source_sha256": "f68ae60b8fc408f4bb71a270b01785be3e54af03e1f5811b025e2807919670a1",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/c-after.stdout",
+    "source": "build/dac-edge-test/after.stdout",
+    "source_sha256": "3db3214ffee85365086d0b81eb7443036835900c5e4f3609faaf90c707dc3ce4",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/c-after.stderr",
+    "source": "build/dac-edge-test/after.stderr",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/dac-off.gb",
+    "source": "artifacts/noise-probe/dac-off.gb",
+    "source_sha256": "3dc9daf1a7ee5e1f0af75bc1d8019a19728a31dae39568105e9eada3d3e05d7e",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/dac-control.gb",
+    "source": "artifacts/noise-probe/dac-control.gb",
+    "source_sha256": "5c3746395625346c78722df1e08e65edbdf28ef43eca9d493e2ac2e4e59476eb",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/mixer-test.log",
+    "source": "artifacts/dac-edge/after/mixer-test.log",
+    "source_sha256": "4d1512f4fa2a3b0f761b8987e6c2af28d2d74a81d659921054d43e7ba054b604",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/analysis.json",
+    "source": "artifacts/dac-edge/analysis/analysis.json",
+    "source_sha256": "0eb3dbb8a419e39d57fc61f4f0f32dcdc932780872f4bfde8dd2dcc12f4d1f1d",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/first-edge.png",
+    "source": "artifacts/dac-edge/analysis/first-edge.png",
+    "source_sha256": "ff5dc6d87c62b78a39df7f0dea79c8c18ceef9501274b58cacde67bfe189d008",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/first-edge-native.csv",
+    "source": "artifacts/dac-edge/analysis/first-edge-native.csv",
+    "source_sha256": "a9581ae81a96ff64421c689be32ee1fe23ebdc2f858d52f4a1fdb86b2257cbf4",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/run.json",
+    "source": "artifacts/dac-edge/run.json",
+    "source_sha256": "412e9bfd933b6aa182669cdcf2c8bde176c2c46f41be3ffeac95cae3079068ba",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/startup-reset-before-verification.json",
+    "source": "artifacts/dac-edge/before/verification.json",
+    "source_sha256": "24f21611fea5d571e807949fdf0ab515fb82ed8f8782343c09c1a85fe51dd621",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/startup-reset-after-verification.json",
+    "source": "artifacts/dac-edge/after/verification.json",
+    "source_sha256": "6cf391338da722f890c3e6cd31b9cb80cb2c2940d999bd6430185718c561e506",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "DAC-EDGE.md",
+    "source": "benchmark/DAC-EDGE.md",
+    "source_sha256": "f0e003e0844828688a6f16b4bc607b743ddb8dd0e3a5b808b68b68674391beb2",
+    "transformation": "Adapt local reproduction commands and artifact links to the companion package; retain measured outcomes and limitations; explicitly distinguish preserved song analysis from portable emulator regression reproduction."
   }
 ]

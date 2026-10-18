@@ -1,0 +1,32 @@
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:107: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
+benchmark/dac-edge-test.c:108: gb->apu_output.highpass_diff.left == capacitor.left
+benchmark/dac-edge-test.c:109: gb->apu_output.highpass_diff.right == capacitor.right
