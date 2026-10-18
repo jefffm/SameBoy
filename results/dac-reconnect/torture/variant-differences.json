@@ -1,0 +1,82 @@
+[
+  {
+    "id": 177,
+    "name": "ch1-DAC-off-all-off",
+    "changed_frames": 733,
+    "total_frames": 3004,
+    "peak_change_pcm16": 2640,
+    "rms_change_pcm16": 48.64718151110813,
+    "first_different_frame": 26729884,
+    "last_different_frame": 26730635
+  },
+  {
+    "id": 178,
+    "name": "ch1-DAC-off-control",
+    "changed_frames": 0,
+    "total_frames": 3004,
+    "peak_change_pcm16": 0,
+    "rms_change_pcm16": 0.0,
+    "first_different_frame": null,
+    "last_different_frame": null
+  },
+  {
+    "id": 179,
+    "name": "ch2-DAC-off-all-off",
+    "changed_frames": 1629,
+    "total_frames": 3003,
+    "peak_change_pcm16": 2640,
+    "rms_change_pcm16": 68.80883187974742,
+    "first_different_frame": 26747165,
+    "last_different_frame": 26750166
+  },
+  {
+    "id": 180,
+    "name": "ch2-DAC-off-control",
+    "changed_frames": 934,
+    "total_frames": 3004,
+    "peak_change_pcm16": 2640,
+    "rms_change_pcm16": 48.64804029181807,
+    "first_different_frame": 26756931,
+    "last_different_frame": 26759180
+  },
+  {
+    "id": 181,
+    "name": "ch3-DAC-off-all-off",
+    "changed_frames": 737,
+    "total_frames": 3012,
+    "peak_change_pcm16": 2640,
+    "rms_change_pcm16": 48.580849494250316,
+    "first_different_frame": 26768957,
+    "last_different_frame": 26769706
+  },
+  {
+    "id": 182,
+    "name": "ch3-DAC-off-control",
+    "changed_frames": 0,
+    "total_frames": 3012,
+    "peak_change_pcm16": 0,
+    "rms_change_pcm16": 0.0,
+    "first_different_frame": null,
+    "last_different_frame": null
+  },
+  {
+    "id": 183,
+    "name": "ch4-DAC-off-all-off",
+    "changed_frames": 739,
+    "total_frames": 3004,
+    "peak_change_pcm16": 2640,
+    "rms_change_pcm16": 48.645207284421566,
+    "first_different_frame": 26788497,
+    "last_different_frame": 26789248
+  },
+  {
+    "id": 184,
+    "name": "ch4-DAC-off-control",
+    "changed_frames": 0,
+    "total_frames": 3004,
+    "peak_change_pcm16": 0,
+    "rms_change_pcm16": 0.0,
+    "first_different_frame": null,
+    "last_different_frame": null
+  }
+]

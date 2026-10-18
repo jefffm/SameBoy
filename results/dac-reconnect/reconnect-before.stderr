@@ -1,0 +1,44 @@
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:136: last_sample.left == expected.left
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:137: last_sample.right == expected.right
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:139: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:141: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+/home/jeff/Documents/ChatGPT/dmg/benchmark/dac-reconnect-test.c:138: gb->apu_output.dac_discharge[channel] == 1

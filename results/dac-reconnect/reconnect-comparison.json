@@ -1,0 +1,6 @@
+{
+  "control_cases": 24,
+  "controls_byte_equal": true,
+  "before": "DAC reconnect: 44 failed checks",
+  "after": "DAC reconnect: 0 failed checks"
+}

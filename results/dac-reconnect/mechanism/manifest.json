@@ -1,0 +1,31 @@
+{
+  "purpose": "Read-only causal instrumentation of first NOIZE JAMS DAC reconnect; emulator evidence only",
+  "sameboy_commit": "79fb345c2735e37e8a94b95030986a81d1a557af",
+  "source_archive_snapshot": "SameBoy/build/lib/libsameboy.a",
+  "command": "capture --rom inputs/lsdj-8.5.1.gb --sav inputs/dotexe-NOIZE_JAMS.sav --boot artifacts/defense-mechanism/build/dmg_boot.bin --buttons benchmark/opening.buttons --seconds 3.143 --seed 1 --highpass accurate --wav capture.wav --screenshot capture.ppm --apu-log trace.csv",
+  "duration_derivation": "Stop after first reconnect and the next note write at3.142475128; original music trace establishes event of interest. Diagnostic state covers3.1413 to3.1426 to include before/after, not an acceptance threshold.",
+  "state_columns": [
+    "run_start_seconds",
+    "sample_count_1based",
+    "sample_left",
+    "sample_right",
+    "noise_dac_discharge",
+    "highpass_diff_left_after_render",
+    "noise_bandlimited_output_left_fixed16",
+    "noise_bandlimited_input_left",
+    "noise_sample",
+    "noise_active",
+    "noise_lfsr_sample",
+    "NR42_decimal",
+    "NR51_decimal",
+    "noise_bandlimited_pos"
+  ],
+  "files_sha256": {
+    "capture.c": "2d42189d5640721e81ecc12d76b610f3cad151a1888068d3df9e3b14cef687c7",
+    "libsameboy.a": "7313f73028fd227a4637c475ed723c34776d0756b29a53489a440a5647c2794b",
+    "capture": "8d5f3575e113c81327c4148679e868e63f4838ee24053ba95c2a807cd925553c",
+    "capture.wav": "e9d90016d0fa25e92e7c11cd4b42d0189a893ae2502f947b8f6cd7c62bc9c62b",
+    "trace.csv": "8f589557492f40e04e226786530fd7e6253976987c532a40bcf42f370a9a9c47",
+    "state.csv": "c44aecab2ddd5854806398cd1059a348f00794f433c621c228a79fd7c0dbc1c5"
+  }
+}

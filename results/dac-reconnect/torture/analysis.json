@@ -1,0 +1,508 @@
+{
+  "method": "Native reconnection plots for already-recorded torture cases 177\u2013184.\nAll timing/gain are reused unchanged from the original suite comparison.\n",
+  "inputs_sha256": {
+    "artifacts/torture/comparison-torture-pula2a6h/metrics.json": "8c0eb6c3214f0f0768543330a8e8d5311f390c5028f86f2f72a83b92f29c549a",
+    "artifacts/torture/renders/render-h1xqcgiz/apu.csv": "470319225ed2f3adab9bdc44bd6d39ca54770f34cb10925f2dd1e2f4ef96a109",
+    "artifacts/hardware/torture-pula2a6h/capture.wav": "c998f8af6ed5389fdbc12127d68da749bfe7ba341f67afda141fe8e31cc73960",
+    "artifacts/dac-on-edge/torture-before/audio.wav": "4d19ac3574a74d83b55cf2493c3adab41ca6a94312e6851e575d1fd2b4064948",
+    "artifacts/dac-on-edge/torture-after/audio.wav": "bdff9c0fceb184723455de9bbc9ebb47a2dedb23e9b7aca41e655ae60966a696"
+  },
+  "mapping": {
+    "clock": 1.0000585963100947,
+    "offset": 94.04181316194428,
+    "gain": 0.06392767566127538
+  },
+  "cases": [
+    {
+      "id": 177,
+      "name": "ch1-DAC-off-all-off",
+      "off_write": {
+        "write_index": "184682",
+        "run_start_tick_8mhz": "4671254680",
+        "run_start_seconds": "556.856951714",
+        "address": "0xff12",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "184686",
+        "run_start_tick_8mhz": "4671385912",
+        "run_start_seconds": "556.872595787",
+        "address": "0xff12",
+        "value": "0xf0"
+      },
+      "reference_interval_s": [
+        556.825657845,
+        556.888244629
+      ],
+      "mapped_hardware_on_s": 650.9470396282502,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26729836,
+            26729933
+          ],
+          "samples": 97,
+          "min": -0.004547589476514677,
+          "max": 0.0006203918719569571,
+          "peak_absolute": 0.004547589476514677,
+          "rms": 0.0006092318347425713,
+          "mean": 0.00022849873751225411
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26729836,
+            26729933
+          ],
+          "samples": 97,
+          "min": 0.0,
+          "max": 0.0006028336114298735,
+          "peak_absolute": 0.0006028336114298735,
+          "rms": 0.0003934405267940848,
+          "mean": 0.00027926282636719024
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31245409,
+            31245506
+          ],
+          "samples": 97,
+          "min": -0.01579296588897705,
+          "max": 0.0013884305953979492,
+          "peak_absolute": 0.01579296588897705,
+          "rms": 0.005591068828806677,
+          "mean": -0.0022465064353549605
+        }
+      }
+    },
+    {
+      "id": 178,
+      "name": "ch1-DAC-off-control",
+      "off_write": {
+        "write_index": "184822",
+        "run_start_tick_8mhz": "4672961528",
+        "run_start_seconds": "557.060423851",
+        "address": "0xff12",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "184826",
+        "run_start_tick_8mhz": "4673092760",
+        "run_start_seconds": "557.076067924",
+        "address": "0xff12",
+        "value": "0xf0"
+      },
+      "reference_interval_s": [
+        557.029125214,
+        557.091716766
+      ],
+      "mapped_hardware_on_s": 651.1505236879666,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26739603,
+            26739700
+          ],
+          "samples": 97,
+          "min": -0.000557962501193993,
+          "max": 0.007458358888337884,
+          "peak_absolute": 0.007458358888337884,
+          "rms": 0.004851905255853801,
+          "mean": 0.0031657563842886908
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26739603,
+            26739700
+          ],
+          "samples": 97,
+          "min": -0.000557962501193993,
+          "max": 0.007458358888337884,
+          "peak_absolute": 0.007458358888337884,
+          "rms": 0.004851905255853801,
+          "mean": 0.0031657563842886908
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31255177,
+            31255274
+          ],
+          "samples": 97,
+          "min": -0.0098494291305542,
+          "max": 0.0014214515686035156,
+          "peak_absolute": 0.0098494291305542,
+          "rms": 0.003348600514252251,
+          "mean": -0.0019537566863384445
+        }
+      }
+    },
+    {
+      "id": 179,
+      "name": "ch2-DAC-off-all-off",
+      "off_write": {
+        "write_index": "184960",
+        "run_start_tick_8mhz": "4674668296",
+        "run_start_seconds": "557.263886452",
+        "address": "0xff17",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "184963",
+        "run_start_tick_8mhz": "4674799488",
+        "run_start_seconds": "557.279525757",
+        "address": "0xff17",
+        "value": "0xf0"
+      },
+      "reference_interval_s": [
+        557.232597351,
+        557.295174599
+      ],
+      "mapped_hardware_on_s": 651.353993442845,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26749369,
+            26749466
+          ],
+          "samples": 97,
+          "min": -0.004551491312187361,
+          "max": 0.000616490036284272,
+          "peak_absolute": 0.004551491312187361,
+          "rms": 0.0006080569097268499,
+          "mean": 0.00022684950800111909
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26749369,
+            26749466
+          ],
+          "samples": 97,
+          "min": 0.0,
+          "max": 0.0005989317757571882,
+          "peak_absolute": 0.0005989317757571882,
+          "rms": 0.0003907003188699983,
+          "mean": 0.0002773119085308476
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31264943,
+            31265040
+          ],
+          "samples": 97,
+          "min": -0.014874815940856934,
+          "max": 0.0006171464920043945,
+          "peak_absolute": 0.014874815940856934,
+          "rms": 0.00562606814638104,
+          "mean": -0.0022821610735863753
+        }
+      }
+    },
+    {
+      "id": 180,
+      "name": "ch2-DAC-off-control",
+      "off_write": {
+        "write_index": "185098",
+        "run_start_tick_8mhz": "4676375064",
+        "run_start_seconds": "557.467349052",
+        "address": "0xff17",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "185101",
+        "run_start_tick_8mhz": "4676506256",
+        "run_start_seconds": "557.482988358",
+        "address": "0xff17",
+        "value": "0xf0"
+      },
+      "reference_interval_s": [
+        557.436055183,
+        557.498637199
+      ],
+      "mapped_hardware_on_s": 651.5574679660026,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26759135,
+            26759232
+          ],
+          "samples": 97,
+          "min": -0.000557962501193993,
+          "max": 0.007458358888337884,
+          "peak_absolute": 0.007458358888337884,
+          "rms": 0.0048519597182609345,
+          "mean": 0.0031658167219537326
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26759135,
+            26759232
+          ],
+          "samples": 97,
+          "min": -0.000557962501193993,
+          "max": 0.007458358888337884,
+          "peak_absolute": 0.007458358888337884,
+          "rms": 0.004851961679365239,
+          "mean": 0.003165796609398719
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31274710,
+            31274807
+          ],
+          "samples": 97,
+          "min": -0.008486509323120117,
+          "max": 0.0012917518615722656,
+          "peak_absolute": 0.008486509323120117,
+          "rms": 0.003313949481403682,
+          "mean": -0.0019309250349850999
+        }
+      }
+    },
+    {
+      "id": 181,
+      "name": "ch3-DAC-off-all-off",
+      "off_write": {
+        "write_index": "185254",
+        "run_start_tick_8mhz": "4678213624",
+        "run_start_seconds": "557.686522484",
+        "address": "0xff1a",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "185274",
+        "run_start_tick_8mhz": "4678214424",
+        "run_start_seconds": "557.686617851",
+        "address": "0xff1a",
+        "value": "0x80"
+      },
+      "reference_interval_s": [
+        557.639517784,
+        557.702261925
+      ],
+      "mapped_hardware_on_s": 651.7611093909395,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26768909,
+            26769006
+          ],
+          "samples": 97,
+          "min": -0.004541736723005649,
+          "max": 0.0006262446254659851,
+          "peak_absolute": 0.004541736723005649,
+          "rms": 0.0006078549939430677,
+          "mean": 0.00012715157279750644
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26768909,
+            26769006
+          ],
+          "samples": 97,
+          "min": -0.0006301464611386704,
+          "max": 0.0006086863649389014,
+          "peak_absolute": 0.0006301464611386704,
+          "rms": 0.00039670709594008985,
+          "mean": 0.00017785532398740105
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31284485,
+            31284582
+          ],
+          "samples": 97,
+          "min": -0.00034427642822265625,
+          "max": 0.0011005401611328125,
+          "peak_absolute": 0.0011005401611328125,
+          "rms": 0.00026108091205195746,
+          "mean": -6.695752291335273e-05
+        }
+      }
+    },
+    {
+      "id": 182,
+      "name": "ch3-DAC-off-control",
+      "off_write": {
+        "write_index": "185427",
+        "run_start_tick_8mhz": "4679921792",
+        "run_start_seconds": "557.890151978",
+        "address": "0xff1a",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "185447",
+        "run_start_tick_8mhz": "4679922592",
+        "run_start_seconds": "557.890247345",
+        "address": "0xff1a",
+        "value": "0x80"
+      },
+      "reference_interval_s": [
+        557.843142509,
+        557.905891418
+      ],
+      "mapped_hardware_on_s": 651.9647508168766,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26778683,
+            26778780
+          ],
+          "samples": 97,
+          "min": -0.0005501588298486224,
+          "max": 0.007466162559683255,
+          "peak_absolute": 0.007466162559683255,
+          "rms": 0.004731020332295368,
+          "mean": 0.0030713681636087326
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26778683,
+            26778780
+          ],
+          "samples": 97,
+          "min": -0.0005501588298486224,
+          "max": 0.007466162559683255,
+          "peak_absolute": 0.007466162559683255,
+          "rms": 0.004731020332295368,
+          "mean": 0.0030713681636087326
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31294260,
+            31294357
+          ],
+          "samples": 97,
+          "min": -0.001248478889465332,
+          "max": 0.00701594352722168,
+          "peak_absolute": 0.00701594352722168,
+          "rms": 0.0026771610125517313,
+          "mean": 0.00035651934515569625
+        }
+      }
+    },
+    {
+      "id": 183,
+      "name": "ch4-DAC-off-all-off",
+      "off_write": {
+        "write_index": "185580",
+        "run_start_tick_8mhz": "4681498088",
+        "run_start_seconds": "558.078061104",
+        "address": "0xff21",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "185583",
+        "run_start_tick_8mhz": "4681629280",
+        "run_start_seconds": "558.093700409",
+        "address": "0xff21",
+        "value": "0x98"
+      },
+      "reference_interval_s": [
+        558.046772003,
+        558.109349251
+      ],
+      "mapped_hardware_on_s": 652.1682158024753,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26788449,
+            26788546
+          ],
+          "samples": 97,
+          "min": -0.004744632177985282,
+          "max": 0.0004233491704863513,
+          "peak_absolute": 0.004744632177985282,
+          "rms": 0.0005537374956531925,
+          "mean": 0.00013700672475428876
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26788449,
+            26788546
+          ],
+          "samples": 97,
+          "min": 0.0,
+          "max": 0.0004057909099592676,
+          "peak_absolute": 0.0004057909099592676,
+          "rms": 0.00026437606470749514,
+          "mean": 0.00018765013827914186
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31304026,
+            31304123
+          ],
+          "samples": 97,
+          "min": -0.00020325183868408203,
+          "max": 0.0007370710372924805,
+          "peak_absolute": 0.0007370710372924805,
+          "rms": 0.00023107372900007346,
+          "mean": -2.8101439328537773e-05
+        }
+      }
+    },
+    {
+      "id": 184,
+      "name": "ch4-DAC-off-control",
+      "off_write": {
+        "write_index": "185718",
+        "run_start_tick_8mhz": "4683204856",
+        "run_start_seconds": "558.281523705",
+        "address": "0xff21",
+        "value": "0x00"
+      },
+      "on_write": {
+        "write_index": "185721",
+        "run_start_tick_8mhz": "4683336048",
+        "run_start_seconds": "558.297163010",
+        "address": "0xff21",
+        "value": "0x98"
+      },
+      "reference_interval_s": [
+        558.250229836,
+        558.312811852
+      ],
+      "mapped_hardware_on_s": 652.3716903256329,
+      "native_two_ms_window": {
+        "current": {
+          "sample_interval_half_open": [
+            26798215,
+            26798312
+          ],
+          "samples": 97,
+          "min": -0.0005755207617210767,
+          "max": 0.007444702463483486,
+          "peak_absolute": 0.007444702463483486,
+          "rms": 0.004843640733392026,
+          "mean": 0.0031516775957790024
+        },
+        "candidate": {
+          "sample_interval_half_open": [
+            26798215,
+            26798312
+          ],
+          "samples": 97,
+          "min": -0.0005755207617210767,
+          "max": 0.007444702463483486,
+          "peak_absolute": 0.007444702463483486,
+          "rms": 0.004843640733392026,
+          "mean": 0.0031516775957790024
+        },
+        "hardware": {
+          "sample_interval_half_open": [
+            31313793,
+            31313890
+          ],
+          "samples": 97,
+          "min": -0.0011589527130126953,
+          "max": 0.007088899612426758,
+          "peak_absolute": 0.007088899612426758,
+          "rms": 0.0028903020861103432,
+          "mean": 0.00041723988719822203
+        }
+      }
+    }
+  ],
+  "original_inputs_unchanged": true,
+  "trace_validation": "All suite markers and each selected case APU write trace are identical. Earlier readback packet data may differ due to already-fixed digital emulation bugs.",
+  "limits": "Native 48kHz PCM. Previously-fitted packet mapping/gain reused, no local fit or filtering. Hardware analog transfer and sub-sample edge timing remain unknown."
+}

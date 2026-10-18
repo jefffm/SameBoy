@@ -836,5 +836,191 @@
     "source": "benchmark/DAC-EDGE.md",
     "source_sha256": "f0e003e0844828688a6f16b4bc607b743ddb8dd0e3a5b808b68b68674391beb2",
     "transformation": "Adapt local reproduction commands and artifact links to the companion package; retain measured outcomes and limitations; explicitly distinguish preserved song analysis from portable emulator regression reproduction."
+  },
+  {
+    "path": "benchmark/dac-reconnect-test.c",
+    "source": "benchmark/dac-reconnect-test.c",
+    "source_sha256": "bac09575c295955e7af38afe978faf6aef235f9cb893785018fefc2cd13f8c33",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-dac-reconnect-test.sh",
+    "source": "benchmark/run-dac-reconnect-test.sh",
+    "source_sha256": "189d4f15be32c01f1977bedf1f45d0c235c84f79ab0597431d47d852dc063b75",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/reconnect-before.stdout",
+    "source": "artifacts/dac-on-edge/mechanism/reconnect-before.stdout",
+    "source_sha256": "537a6ee2e5238a27debe12e6954bdf320409254d6c20f6f51b04a05a55d5b598",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/reconnect-before.stderr",
+    "source": "artifacts/dac-on-edge/mechanism/reconnect-before.stderr",
+    "source_sha256": "efa728999470fe05456dc570a4cd2f6ab36e5590795e63672d537729b3556e70",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/reconnect-before.json",
+    "source": "artifacts/dac-on-edge/mechanism/reconnect-before.json",
+    "source_sha256": "03f1307f088f8ecf76c1f5ee40c4945ac161daa2b13d8c732d697a6194fa2c62",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/reconnect-after.stdout",
+    "source": "artifacts/dac-on-edge/mechanism/reconnect-after.stdout",
+    "source_sha256": "78f01ec2a115a2b6637025c98193740b159396ddbcce49d34ee597dd6c6fcb7a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/reconnect-after.stderr",
+    "source": "artifacts/dac-on-edge/mechanism/reconnect-after.stderr",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/reconnect-after.json",
+    "source": "artifacts/dac-on-edge/mechanism/reconnect-after.json",
+    "source_sha256": "6a5d22dae21af17ddb295731b31bd42abe8eb05d4208d3b3cd4fdc8ecdc68845",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/reconnect-comparison.json",
+    "source": "artifacts/dac-on-edge/mechanism/reconnect-comparison.json",
+    "source_sha256": "1e3f7040e8477666a2c1f8494631a510153cfee1439f4fd4e4e18cb58accecaf",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/mechanism/FINDINGS.md",
+    "source": "artifacts/dac-on-edge/mechanism/FINDINGS.md",
+    "source_sha256": "649bb09d2eadafb03dac294bd487da804cac94697112c2a20fe4ec8096b150cd",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/mechanism/state.csv",
+    "source": "artifacts/dac-on-edge/mechanism/state.csv",
+    "source_sha256": "c44aecab2ddd5854806398cd1059a348f00794f433c621c228a79fd7c0dbc1c5",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/mechanism/manifest.json",
+    "source": "artifacts/dac-on-edge/mechanism/manifest.json",
+    "source_sha256": "ad161c5363c573a8bf009e57afcddf3939bcae1cc4eacd027dcfc2ccf94b13d9",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/mechanism/capture.c",
+    "source": "artifacts/dac-on-edge/mechanism/capture.c",
+    "source_sha256": "2d42189d5640721e81ecc12d76b610f3cad151a1888068d3df9e3b14cef687c7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/mechanism/trace.csv",
+    "source": "artifacts/dac-on-edge/mechanism/trace.csv",
+    "source_sha256": "8f589557492f40e04e226786530fd7e6253976987c532a40bcf42f370a9a9c47",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/noize/analysis.json",
+    "source": "artifacts/dac-on-edge/comparison/analysis.json",
+    "source_sha256": "c63a11037682c3428115328e05736a166a834377b41fe0431bd2d635c2000ba9",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/noize/first-reconnect-native.csv",
+    "source": "artifacts/dac-on-edge/comparison/first-reconnect-native.csv",
+    "source_sha256": "52d930f9b7c38202dcb2776bea8d0cbdc2cc5dc485906357c66e32a2235f478c",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/noize/first-reconnect.png",
+    "source": "artifacts/dac-on-edge/comparison/first-reconnect.png",
+    "source_sha256": "41c6b014e8c9fcfa052ed6b5bf902ae0993e144027ddf3a0c1d331062b35f5cc",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/noize/first-reconnect.pdf",
+    "source": "artifacts/dac-on-edge/comparison/first-reconnect.pdf",
+    "source_sha256": "2a20f6471d72dc9b58e394e9ebf269f45b496c5a3c69b638bd16546de0cd0b88",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/torture/analysis.json",
+    "source": "artifacts/dac-on-edge/torture-comparison/analysis.json",
+    "source_sha256": "b2f44a309eed2869def5d93a030f64660467100807a5ade975c93de59550412f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/torture/variant-differences.json",
+    "source": "artifacts/dac-on-edge/torture-comparison/variant-differences.json",
+    "source_sha256": "6ec6a1735ad85015d5e892149303ded69d26bd478682203d2961a478d8134de7",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/torture/reconnect-controls.png",
+    "source": "artifacts/dac-on-edge/torture-comparison/reconnect-controls.png",
+    "source_sha256": "b389311824872fb3214225418bff59bfcd158e426f5fcbc2567d8798e9dd8970",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/torture/reconnect-controls.pdf",
+    "source": "artifacts/dac-on-edge/torture-comparison/reconnect-controls.pdf",
+    "source_sha256": "1692b3e47f5acb5aa2cbaf455d0aaf1600625c34074e5ae40ef465a3c2cd5db8",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/torture/before-provenance.json",
+    "source": "artifacts/dac-on-edge/torture-before/provenance.json",
+    "source_sha256": "fe2cc70d48105641d07afde3fee99cf5c594904b1032bcaaf411ff1a24f9229a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/torture/after-provenance.json",
+    "source": "artifacts/dac-on-edge/torture-after/provenance.json",
+    "source_sha256": "c0f31baf68ec679217a5a81c021f84fd3c7f90f7abff68a353628ee64b44ab78",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/packet-and-controls.json",
+    "source": "artifacts/dac-on-edge/packet-and-controls.json",
+    "source_sha256": "9982fc967a1dda4322d7fb7c8addd31e5135a7110121c28cae3f001008b46d8a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/validation/mechanism-review.json",
+    "source": "artifacts/dac-on-edge/validation/mechanism-review.json",
+    "source_sha256": "9f355a70662b53bbcdbb3b4cf255c45b145dc76be60be5014473bd52c93e47f9",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/validation/shutdown.log",
+    "source": "artifacts/dac-on-edge/validation/shutdown.log",
+    "source_sha256": "3db3214ffee85365086d0b81eb7443036835900c5e4f3609faaf90c707dc3ce4",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-reconnect/validation/mixer.log",
+    "source": "artifacts/dac-on-edge/validation/mixer.log",
+    "source_sha256": "4d1512f4fa2a3b0f761b8987e6c2af28d2d74a81d659921054d43e7ba054b604",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "DAC-RECONNECT.md",
+    "source": "benchmark/DAC-RECONNECT.md",
+    "source_sha256": "15d265630e9ac86f1b4d5a1ea148d9773828c91351a748b968153432527bb9bc",
+    "transformation": "Adapt local artifact links and reproduction section to the companion package; preserve measured values, mixed metrics, control-history difference and timing/analog limitations. Explicitly distinguish portable callback regression from archived local audio evidence."
+  },
+  {
+    "path": "results/dac-reconnect/run.json",
+    "source": "artifacts/dac-on-edge/run.json",
+    "source_sha256": "715fb22dafb66009e29b9e0f172ed27a8be0a6d739d405ba26313dd6932c653b",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/patches/0009-dmg-dac-reconnect.patch",
+    "source": "benchmark/patches/0009-dmg-dac-reconnect.patch",
+    "source_sha256": "8c0ff8d2f1e3b4b69dde6b1ec10b4737bac5da6606b2990ebacac3fff1076fcb",
+    "transformation": "verbatim"
   }
 ]

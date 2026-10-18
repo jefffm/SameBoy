@@ -1,6 +1,6 @@
 {
   "format": "sameboy-dmg-audio-evidence-v1",
-  "publication_core_commit": "79fb345c2735e37e8a94b95030986a81d1a557af",
+  "publication_core_commit": "f51cb47b133b2291887463b1f74eb7b7298bb1ae",
   "full_waveform_validation_commit": "61d83fe7deeb4c90eef003b7933d0a9dd5fa7f2c",
   "upstream_base_commit": "26a56bd6a122a6318a456abd80558408742d5adf",
   "scope": "Explicit file inventory excluding this self-referential manifest, generated build/, Python caches, and Git internals.",
@@ -19,14 +19,19 @@
       "sha256": "911013b9cc287feea8eb61b6244224fff8706d4f6f32cb27a08f5d9454e0e52d"
     },
     {
+      "path": "DAC-RECONNECT.md",
+      "bytes": 8309,
+      "sha256": "32308f389606fc60f39ac415773f3304a920c9ba55c90ce7a2aa3879291e4fa1"
+    },
+    {
       "path": "LICENSE",
       "bytes": 1453,
       "sha256": "53b6e813651618c3ca00c63d76cda783143e017a505e04f4cb325d72253ad02e"
     },
     {
       "path": "README.md",
-      "bytes": 14724,
-      "sha256": "cd61e79e4a05d7573bcae78efc8ce0073dfc2a5f59a174434c3e10532cf5340f"
+      "bytes": 16115,
+      "sha256": "de806f88eabc85898e6303f24b0248c30e1ce980167c3cfec0c3e71629bc8b4f"
     },
     {
       "path": "artifacts/audio-oracle-probe-v2/audio-torture.gb",
@@ -219,6 +224,11 @@
       "sha256": "f6f2761611433eb6816b85173b5d7fc03593c87a2cb3839c34ebf02c84d90ff5"
     },
     {
+      "path": "benchmark/dac-reconnect-test.c",
+      "bytes": 6442,
+      "sha256": "bac09575c295955e7af38afe978faf6aef235f9cb893785018fefc2cd13f8c33"
+    },
+    {
       "path": "benchmark/generate-sweep-table.py",
       "bytes": 3760,
       "sha256": "b83f233cbb66462ea26394954083365faabc275fe7bad6c00f12665b2673ed6b"
@@ -249,6 +259,11 @@
       "sha256": "663c82bbc431c7365810690b21d3b53e76570ee7f2dfa02a089eeaca09cf4487"
     },
     {
+      "path": "benchmark/patches/0009-dmg-dac-reconnect.patch",
+      "bytes": 3101,
+      "sha256": "8c0ff8d2f1e3b4b69dde6b1ec10b4737bac5da6606b2990ebacac3fff1076fcb"
+    },
+    {
       "path": "benchmark/probe-readbacks.c",
       "bytes": 1910,
       "sha256": "4163bf9023b37df91075559338b5917f3e48cf9e19fe1e013466bc136f659312"
@@ -277,6 +292,11 @@
       "path": "benchmark/run-dac-off-probe.sh",
       "bytes": 778,
       "sha256": "cdd447c7b9b1586c66cf89cf53868c74bf64af344b6a858392d4035656a4cbba"
+    },
+    {
+      "path": "benchmark/run-dac-reconnect-test.sh",
+      "bytes": 753,
+      "sha256": "189d4f15be32c01f1977bedf1f45d0c235c84f79ab0597431d47d852dc063b75"
     },
     {
       "path": "benchmark/run-mixer-dac-test.sh",
@@ -470,8 +490,8 @@
     },
     {
       "path": "provenance-sources.json",
-      "bytes": 35431,
-      "sha256": "c5cbcc46ad22463c68cc43fb3c1f558ab764719b8153f7aea3a7b2668945c32c"
+      "bytes": 43662,
+      "sha256": "652438f297b55cd102e2563d02716db7e4ec747314515d2b4d5d58be09132102"
     },
     {
       "path": "results/causal-findings.json",
@@ -584,6 +604,141 @@
       "sha256": "24f21611fea5d571e807949fdf0ab515fb82ed8f8782343c09c1a85fe51dd621"
     },
     {
+      "path": "results/dac-reconnect/mechanism/FINDINGS.md",
+      "bytes": 1852,
+      "sha256": "649bb09d2eadafb03dac294bd487da804cac94697112c2a20fe4ec8096b150cd"
+    },
+    {
+      "path": "results/dac-reconnect/mechanism/capture.c",
+      "bytes": 13347,
+      "sha256": "2d42189d5640721e81ecc12d76b610f3cad151a1888068d3df9e3b14cef687c7"
+    },
+    {
+      "path": "results/dac-reconnect/mechanism/manifest.json",
+      "bytes": 1694,
+      "sha256": "ad161c5363c573a8bf009e57afcddf3939bcae1cc4eacd027dcfc2ccf94b13d9"
+    },
+    {
+      "path": "results/dac-reconnect/mechanism/state.csv",
+      "bytes": 4637,
+      "sha256": "c44aecab2ddd5854806398cd1059a348f00794f433c621c228a79fd7c0dbc1c5"
+    },
+    {
+      "path": "results/dac-reconnect/mechanism/trace.csv",
+      "bytes": 3352,
+      "sha256": "8f589557492f40e04e226786530fd7e6253976987c532a40bcf42f370a9a9c47"
+    },
+    {
+      "path": "results/dac-reconnect/noize/analysis.json",
+      "bytes": 427921,
+      "sha256": "c63a11037682c3428115328e05736a166a834377b41fe0431bd2d635c2000ba9"
+    },
+    {
+      "path": "results/dac-reconnect/noize/first-reconnect-native.csv",
+      "bytes": 20037,
+      "sha256": "52d930f9b7c38202dcb2776bea8d0cbdc2cc5dc485906357c66e32a2235f478c"
+    },
+    {
+      "path": "results/dac-reconnect/noize/first-reconnect.pdf",
+      "bytes": 27970,
+      "sha256": "2a20f6471d72dc9b58e394e9ebf269f45b496c5a3c69b638bd16546de0cd0b88"
+    },
+    {
+      "path": "results/dac-reconnect/noize/first-reconnect.png",
+      "bytes": 178299,
+      "sha256": "41c6b014e8c9fcfa052ed6b5bf902ae0993e144027ddf3a0c1d331062b35f5cc"
+    },
+    {
+      "path": "results/dac-reconnect/packet-and-controls.json",
+      "bytes": 26049,
+      "sha256": "9982fc967a1dda4322d7fb7c8addd31e5135a7110121c28cae3f001008b46d8a"
+    },
+    {
+      "path": "results/dac-reconnect/reconnect-after.json",
+      "bytes": 2689,
+      "sha256": "6a5d22dae21af17ddb295731b31bd42abe8eb05d4208d3b3cd4fdc8ecdc68845"
+    },
+    {
+      "path": "results/dac-reconnect/reconnect-after.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/dac-reconnect/reconnect-after.stdout",
+      "bytes": 7095,
+      "sha256": "78f01ec2a115a2b6637025c98193740b159396ddbcce49d34ee597dd6c6fcb7a"
+    },
+    {
+      "path": "results/dac-reconnect/reconnect-before.json",
+      "bytes": 1213,
+      "sha256": "03f1307f088f8ecf76c1f5ee40c4945ac161daa2b13d8c732d697a6194fa2c62"
+    },
+    {
+      "path": "results/dac-reconnect/reconnect-before.stderr",
+      "bytes": 5776,
+      "sha256": "efa728999470fe05456dc570a4cd2f6ab36e5590795e63672d537729b3556e70"
+    },
+    {
+      "path": "results/dac-reconnect/reconnect-before.stdout",
+      "bytes": 7272,
+      "sha256": "537a6ee2e5238a27debe12e6954bdf320409254d6c20f6f51b04a05a55d5b598"
+    },
+    {
+      "path": "results/dac-reconnect/reconnect-comparison.json",
+      "bytes": 149,
+      "sha256": "1e3f7040e8477666a2c1f8494631a510153cfee1439f4fd4e4e18cb58accecaf"
+    },
+    {
+      "path": "results/dac-reconnect/run.json",
+      "bytes": 5929,
+      "sha256": "715fb22dafb66009e29b9e0f172ed27a8be0a6d739d405ba26313dd6932c653b"
+    },
+    {
+      "path": "results/dac-reconnect/torture/after-provenance.json",
+      "bytes": 2523,
+      "sha256": "c0f31baf68ec679217a5a81c021f84fd3c7f90f7abff68a353628ee64b44ab78"
+    },
+    {
+      "path": "results/dac-reconnect/torture/analysis.json",
+      "bytes": 15264,
+      "sha256": "b2f44a309eed2869def5d93a030f64660467100807a5ade975c93de59550412f"
+    },
+    {
+      "path": "results/dac-reconnect/torture/before-provenance.json",
+      "bytes": 2180,
+      "sha256": "fe2cc70d48105641d07afde3fee99cf5c594904b1032bcaaf411ff1a24f9229a"
+    },
+    {
+      "path": "results/dac-reconnect/torture/reconnect-controls.pdf",
+      "bytes": 58050,
+      "sha256": "1692b3e47f5acb5aa2cbaf455d0aaf1600625c34074e5ae40ef465a3c2cd5db8"
+    },
+    {
+      "path": "results/dac-reconnect/torture/reconnect-controls.png",
+      "bytes": 443615,
+      "sha256": "b389311824872fb3214225418bff59bfcd158e426f5fcbc2567d8798e9dd8970"
+    },
+    {
+      "path": "results/dac-reconnect/torture/variant-differences.json",
+      "bytes": 2021,
+      "sha256": "6ec6a1735ad85015d5e892149303ded69d26bd478682203d2961a478d8134de7"
+    },
+    {
+      "path": "results/dac-reconnect/validation/mechanism-review.json",
+      "bytes": 2786,
+      "sha256": "9f355a70662b53bbcdbb3b4cf255c45b145dc76be60be5014473bd52c93e47f9"
+    },
+    {
+      "path": "results/dac-reconnect/validation/mixer.log",
+      "bytes": 4983,
+      "sha256": "4d1512f4fa2a3b0f761b8987e6c2af28d2d74a81d659921054d43e7ba054b604"
+    },
+    {
+      "path": "results/dac-reconnect/validation/shutdown.log",
+      "bytes": 3292,
+      "sha256": "3db3214ffee85365086d0b81eb7443036835900c5e4f3609faaf90c707dc3ce4"
+    },
+    {
       "path": "results/historical-broad/dac.json",
       "bytes": 675,
       "sha256": "a44ffdce9af888dcfcb51c086a524da223a790a5fa771526382172a82c88c91f"
@@ -604,14 +759,14 @@
       "sha256": "82f5420e209c4668cff175360ed49b1878efe38ebfa623a31caaaf92898c0cc7"
     },
     {
-      "path": "results/measured-map/boundaries/results.json",
-      "bytes": 15570,
-      "sha256": "4f741bdb57254b616d3b6e87d3f1d6c90d750608e12d2f61a29205c23c9b42a5"
-    },
-    {
       "path": "results/measured-map/boundaries-before/results.json",
       "bytes": 16012,
       "sha256": "8cda2db29b03daf8d641e2096cf182571790347380a77d9f7dcca15c4cbae114"
+    },
+    {
+      "path": "results/measured-map/boundaries/results.json",
+      "bytes": 15570,
+      "sha256": "4f741bdb57254b616d3b6e87d3f1d6c90d750608e12d2f61a29205c23c9b42a5"
     },
     {
       "path": "results/measured-map/original-e2e.json",
@@ -659,6 +814,11 @@
       "sha256": "5207cef634344baa972ffdc017a7b05649347d27fa3f48ac24d223d7d4807b40"
     },
     {
+      "path": "results/pr-head/cpu-full.log",
+      "bytes": 763,
+      "sha256": "66d4218ee809d415a163d0359c254b8d42d6ebbda7326aedc0d3eab325ce92e1"
+    },
+    {
       "path": "results/pr-head/cpu-full/build.log",
       "bytes": 222,
       "sha256": "ff70dd01119108da65b887d7838b551f017e62b251c3906d50efdf16431016e9"
@@ -677,11 +837,6 @@
       "path": "results/pr-head/cpu-full/results.json",
       "bytes": 96119,
       "sha256": "b7f83207f37f42fd7df3d7a4a8b4a13b0a8c2e4bf32ca6e7bc21d058a756c07c"
-    },
-    {
-      "path": "results/pr-head/cpu-full.log",
-      "bytes": 763,
-      "sha256": "66d4218ee809d415a163d0359c254b8d42d6ebbda7326aedc0d3eab325ce92e1"
     },
     {
       "path": "results/pr-head/diff-check.log",
@@ -719,6 +874,11 @@
       "sha256": "e7200313ee26d5b57663c6477e951c8b77a4c2e7ae99332528d8256e797eb163"
     },
     {
+      "path": "results/pulse-oracle-findings.json",
+      "bytes": 1285,
+      "sha256": "4ab5fff7fb057e105b4ce34d4623d58bfed370af92174b8011b5a990665c4607"
+    },
+    {
       "path": "results/pulse/baseline-edges.json",
       "bytes": 29054,
       "sha256": "18aa683ce25f17ae87b636e275bd500a9df55f49abf868b0babdb312202905ec"
@@ -737,11 +897,6 @@
       "path": "results/pulse/duty-oracle.json",
       "bytes": 18086,
       "sha256": "8f43f4fd33353601fbfbffdd4d8035eff1e2cb010cdaf9965bd9ce08d39197b5"
-    },
-    {
-      "path": "results/pulse-oracle-findings.json",
-      "bytes": 1285,
-      "sha256": "4ab5fff7fb057e105b4ce34d4623d58bfed370af92174b8011b5a990665c4607"
     },
     {
       "path": "results/retrigger-hardware-findings.json",

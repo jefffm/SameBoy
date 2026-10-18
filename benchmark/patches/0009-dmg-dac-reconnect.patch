@@ -1,0 +1,72 @@
+From f51cb47b133b2291887463b1f74eb7b7298bb1ae Mon Sep 17 00:00:00 2001
+From: Jeff Lynn <4128043+jefffm@users.noreply.github.com>
+Date: Sat, 17 Oct 2026 21:18:38 -0400
+Subject: [PATCH] APU: restore the full DAC level when reconnecting DMG output
+
+When all DACs are disabled, the DMG mixer holds its coupling-capacitor
+charge. The per-channel DAC fade still reaches zero while disconnected.
+Applying the existing attack ramp on reconnect therefore subtracts the
+full held charge from a fraction of the unchanged source level, creating
+a negative pulse and incorrectly discharging the capacitor.
+
+Restore the newly enabled DAC to full level on the all-disabled to
+connected transition. Keep the capacitor charge intact so actual source
+changes still produce their reconnect step. Retain the existing fades
+when another DAC remains enabled and on non-DMG models. No new persistent
+state or per-sample work is required.
+
+The pulse appears at all 31 reconnects in the measured NOIZE JAMS passage;
+removing it agrees with the original capture and the independent recorded
+all-DAC-off/reconnect cases for all four channels. This addresses that
+pulse, not all analog onset differences: broader envelope metrics remain
+mixed and the 48 kHz capture does not resolve the physical edge latency.
+
+A register-write/sample-callback regression fails 44 checks before this
+change and passes afterward, including changed-volume/routing reconnects.
+All 24 CGB and other-enabled-DAC control traces are unchanged. The existing
+shutdown and mixer regressions pass. A complete original-suite render
+preserves the CPU write trace, markers and final screen, and all 337
+acoustic packets decode.
+---
+ Core/apu.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+diff --git a/Core/apu.c b/Core/apu.c
+index 2c436abb..9d343f31 100644
+--- a/Core/apu.c
++++ b/Core/apu.c
+@@ -1779,6 +1779,15 @@ void GB_apu_write(GB_gameboy_t *gb, uint8_t reg, uint8_t value)
+         reg = GB_IO_WAV_START + gb->apu.wave_channel.current_sample_index / 2;
+     }
+ 
++    bool reconnect_dac = false;
++    if (gb->model == GB_MODEL_DMG_B &&
++        (reg == GB_IO_NR12 || reg == GB_IO_NR22 || reg == GB_IO_NR30 || reg == GB_IO_NR42)) {
++        reconnect_dac = true;
++        unrolled for (unsigned i = 0; i < GB_N_CHANNELS; i++) {
++            reconnect_dac &= !GB_apu_is_DAC_enabled(gb, i);
++        }
++    }
++
+     /* Todo: this can and should be rewritten with a function table. */
+     switch (reg) {
+         /* Globals */
+@@ -2252,6 +2261,15 @@ void GB_apu_write(GB_gameboy_t *gb, uint8_t reg, uint8_t value)
+         }
+     }
+     gb->io_registers[reg] = value;
++    if (reconnect_dac) {
++        /* Reconnect the full DAC level to the held coupling capacitor. Starting
++           an attack ramp against its old charge creates a false negative pulse. */
++        unrolled for (unsigned i = 0; i < GB_N_CHANNELS; i++) {
++            if (GB_apu_is_DAC_enabled(gb, i)) {
++                gb->apu_output.dac_discharge[i] = 1;
++            }
++        }
++    }
+ }
+ 
+ void GB_set_sample_rate(GB_gameboy_t *gb, unsigned sample_rate)
+-- 
+2.56.0
+

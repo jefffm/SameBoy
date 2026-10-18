@@ -1,0 +1,40 @@
+{
+  "sameboy_commit": "79fb345c2735e37e8a94b95030986a81d1a557af",
+  "binary_source": "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-edge/after/capture",
+  "binary_sha256": "9ffffd5031d81487eb1f8a6ff5cf421aeedd541d2b77d3930182934d116491ee",
+  "source_run": "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-edge/run.json",
+  "source_run_sha256": "412e9bfd933b6aa182669cdcf2c8bde176c2c46f41be3ffeac95cae3079068ba",
+  "manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-before/manifest.json",
+  "input_manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/renders/render-h1xqcgiz/manifest.json",
+  "manifest_sha256": "c91aa686be8e0c6472110485ae2699df9fb51963ed889e573ede83afd55b7f06",
+  "rom_sha256": "0eab1e73e34da49fe1bc7c83dd2fb6768e1e6e3e4ca01d5c39d3932eb936dedf",
+  "boot_sha256": "6f64da4cecd7e54e2f928eb3e3ba7810a7a567d0d247cc71737d1771e073a916",
+  "commands": [
+    [
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-before/capture",
+      "--rom",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/full/audio-torture.gb",
+      "--boot",
+      "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+      "--until-done",
+      "--seed",
+      "1",
+      "--wav",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-before/audio.wav",
+      "--screenshot",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-before/screen.ppm",
+      "--apu-log",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-before/apu.csv",
+      "--markers-log",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-before/markers.csv"
+    ]
+  ],
+  "status": "completed",
+  "completion_authority": "ROM emits HRAM FF82=4 after finite suite/end packet; no wall-clock timeout.",
+  "outputs_sha256": {
+    "audio.wav": "4d19ac3574a74d83b55cf2493c3adab41ca6a94312e6851e575d1fd2b4064948",
+    "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+    "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657",
+    "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7"
+  }
+}
