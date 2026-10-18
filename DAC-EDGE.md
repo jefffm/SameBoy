@@ -1,5 +1,11 @@
 # Residual all-DAC-off shutdown pulse
 
+This report preserves measurements from `79fb345c`. The subsequent
+[DAC timing correction](DAC-TIMING.md) aligns DAC controls with the synthesis
+pipeline. Current callback sources account for that delay; the exact earlier
+test source is archived beside these historical results as `historical-test.c`.
+Zero-latency output expectations below describe the historical head only.
+
 The seven-fix stack removed the long high-pass decay in NOIZE JAMS but still
 emitted a short negative pulse when the final enabled DAC was disabled. The
 mixer's connection condition also counted the artificial DAC discharge value,
@@ -45,8 +51,8 @@ python benchmark/verify-dac-off.py --prefix results/dac-edge/after \
 
 Use `--prefix results/dac-edge/before` to reproduce the expected 612-value
 failure. `--silence-only` remains available but skips the independent control
-comparison. The README gives fresh-render commands using a separately built
-capture executable and explicit SameBoy checkout. The callback observation
+comparison. The README gives commands for these archived `79fb345c` captures;
+the unchanged gap checker is not valid for the current synthesis-delay head. The callback observation
 interval is the existing fade duration, `ceil(48000 / 20000) = 3` samples;
 setup settling derives from the synthesis kernel and DAC attack rate, not an
 allowance on the tested shutdown edge.

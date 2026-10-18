@@ -1,0 +1,45 @@
+{
+  "core_commit": "f51cb47b133b2291887463b1f74eb7b7298bb1ae",
+  "archive_source": "SameBoy/build/lib/libsameboy.a snapshotted before running; original checkout/build untouched",
+  "render_command": [
+    "capture",
+    "--rom",
+    "artifacts/torture/full/audio-torture.gb",
+    "--boot",
+    "SameBoy/build/bin/BootROMs/dmg_boot.bin",
+    "--until-done",
+    "--seed",
+    "1",
+    "--wav",
+    "audio.wav",
+    "--screenshot",
+    "screen.ppm",
+    "--apu-log",
+    "apu.csv",
+    "--markers-log",
+    "markers.csv"
+  ],
+  "render_authority": "Complete original immutable suite to ROM end marker. Log native state only when case_id is178,180,182 or184.",
+  "files_sha256": {
+    "capture-state.c": "c75487a6e54dcffdffda16046139e898c2f0a910c933f3707d01fa9df26c0034",
+    "f51cb47b-libsameboy.a": "7ed975d0ef89df4a41a5a7883652893aeb85158bceb571dc365684a66d87d67b",
+    "capture": "1dcab3c3525175dd1b789f429727d37d2bdbb43ace0169532744658892466e39",
+    "audio.wav": "bdff9c0fceb184723455de9bbc9ebb47a2dedb23e9b7aca41e655ae60966a696",
+    "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+    "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+    "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657",
+    "state.csv": "671e75149bec9da147dc006a38a3a393ecd11a3c7ef9ffb1ea10c7efd1fa3029",
+    "state-columns.json": "18d065a5cbaeb42cc4526493bdee4e3f8da362e893d5521fd2a15ba34f000204",
+    "reconnect-state.json": "1f0970619973e1c6a2838d186195457b9b96303e457f8ce652cbd86c1c0a5c78",
+    "equivalent-step.c": "37f8556f20ddc613a0b70425ec0e8464552d87569b57d592c3ef398f696db7f5",
+    "equivalent-step.csv": "be0346860ce157fc01053c08b1a35cdbbfa90c0bba176b5394e201ddc9772ee1",
+    "equivalent-step.json": "0de9e4f6f8b1bee23791bc4c25906f6f52cc9b23ac78193d6bcd4ae7893e75ae"
+  },
+  "original_f51_render_equality": {
+    "audio.wav": true,
+    "screen.ppm": true,
+    "apu.csv": true,
+    "markers.csv": true
+  },
+  "equivalent_step": "HP off, no oscillator active; CH2 DAC enabled but unrouted. CH1 digitalzero gives4080PCM atNR50=77. Compare routing-connected voltage step against DAC-enabled voltage step; waveform centroid measured from exact first differences, no amplitude threshold."
+}

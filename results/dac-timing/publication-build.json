@@ -1,0 +1,12 @@
+{
+  "commit": "2d6ea110275b17de06d9d1c1a621adf625973cac",
+  "command": "benchmark/build-capture.sh",
+  "exit_status": 0,
+  "files_sha256": {
+    "SameBoy/Core/apu.c": "1f33bc8cc842e1c38cb10e3b1e41bc315711dc6b4fbe7cf3a3f8a85cc539c51a",
+    "SameBoy/Core/apu.h": "49c626b26c283e54c6affff3707ec3b445343cfda14a659e9f2cae73c63fd4a6",
+    "SameBoy/build/lib/libsameboy.a": "fb0a0729ea10e0a54ef9d787f2877563ed31955301b22fcf0bb9628d250b0c31",
+    "benchmark/capture": "273dfd54f0649fd8edd6e35aa7ba638fbcc71fe1dc213137b54944dd70b22c55",
+    "artifacts/dac-connected/publication-build.log": "6c35fe5afce75915a70f351557c368518b5b45fec179bc1b10d890fbbff2fc87"
+  }
+}

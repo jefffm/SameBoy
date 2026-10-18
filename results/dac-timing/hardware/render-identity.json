@@ -1,0 +1,33 @@
+{
+  "method": "SHA256 verification of all four completed render outputs, followed by exact digest-map equality. Existing numeric observations retained because their input samples and CPU traces are identical.",
+  "variants": {
+    "delay-render": {
+      "provenance_sha256": "de4be5942a9c966d17c9b5c2619468f680ad8343c4a3ab495887af08c343c4e5",
+      "outputs_sha256": {
+        "audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+        "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+        "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+        "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+      }
+    },
+    "final-render": {
+      "provenance_sha256": "e9ac05ad57294c778bc35eda51c56fb3a9d336b8c80d2033cbbe8b8fd3a549f4",
+      "outputs_sha256": {
+        "audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+        "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+        "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+        "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+      }
+    },
+    "final-mask-render": {
+      "provenance_sha256": "5c316619e0468ae458e7a3f644e35b018005d58a1b4fe2a7b5d6aa3ef8cd5e96",
+      "outputs_sha256": {
+        "audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+        "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+        "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+        "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+      }
+    }
+  },
+  "production_core_commit": "2d6ea110275b17de06d9d1c1a621adf625973cac"
+}

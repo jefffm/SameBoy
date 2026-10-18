@@ -1,0 +1,255 @@
+{
+  "method": "Fixed original baseline affine timing and scalar RMS gain, no refit. Envelope resamples complete WAV with the same Fourier method as baseline comparator. Native PSD uses the established one-second Hann Welch windows, default half overlap and constant detrend. Two measured opening repetitions, separately reported. Channel zero throughout.",
+  "fixed_parameters": {
+    "emulated_start_s": 3.022086462453255,
+    "oracle_start_s": 1.8903125,
+    "emulated_seconds_per_oracle_second": 0.9999817618069532,
+    "duration_s": 15.186,
+    "rms_gain_oracle_per_emulator": 0.06337448434741354,
+    "envelope_resolution_ms": 1.0
+  },
+  "oracle_sha256": "7ed45a1c3a2859b6853381e859a7085070334dea86f8269f5f1f4bc1bdffdd34",
+  "variants": {
+    "upstream": {
+      "wav": "artifacts/baseline.wav",
+      "sha256": "2c94939ee786a0b6a07a82001396791bf7e04102c7fb1520d255950f06fddc7d",
+      "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+      "envelope_correlation": 0.8381936350106606,
+      "envelope_normalized_rmse": 0.37003121203447975,
+      "raw_sample_correlation": 0.5502462385050032,
+      "spectral": [
+        {
+          "repeat": 1,
+          "psd_cosine": 0.9734189449720844,
+          "normalized_psd_l1": 0.2606209086555988,
+          "bands": [
+            {
+              "frequency_bin_centers_hz": [
+                37,
+                41
+              ],
+              "sameboy_minus_hardware_db": -1.0941966866497908
+            },
+            {
+              "frequency_bin_centers_hz": [
+                80,
+                83
+              ],
+              "sameboy_minus_hardware_db": 1.0865826603335298
+            },
+            {
+              "frequency_bin_centers_hz": [
+                40,
+                40
+              ],
+              "sameboy_minus_hardware_db": -1.6167038405925704
+            },
+            {
+              "frequency_bin_centers_hz": [
+                81,
+                81
+              ],
+              "sameboy_minus_hardware_db": 0.9526048350008886
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "psd_cosine": 0.9751550047270731,
+          "normalized_psd_l1": 0.258432664931362,
+          "bands": [
+            {
+              "frequency_bin_centers_hz": [
+                37,
+                41
+              ],
+              "sameboy_minus_hardware_db": -1.2244745187828472
+            },
+            {
+              "frequency_bin_centers_hz": [
+                80,
+                83
+              ],
+              "sameboy_minus_hardware_db": 0.8096823950327916
+            },
+            {
+              "frequency_bin_centers_hz": [
+                40,
+                40
+              ],
+              "sameboy_minus_hardware_db": -1.8374229333259517
+            },
+            {
+              "frequency_bin_centers_hz": [
+                81,
+                81
+              ],
+              "sameboy_minus_hardware_db": 0.7654097023863239
+            }
+          ]
+        }
+      ]
+    },
+    "before_timing": {
+      "wav": "artifacts/dac-on-edge/candidate/capture.wav",
+      "sha256": "e04458e12ac432376f2556c5a2668b8c7cb4be8396ed60b7195416911aed7b00",
+      "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+      "envelope_correlation": 0.871606777216892,
+      "envelope_normalized_rmse": 0.33653056576853846,
+      "raw_sample_correlation": 0.5288444167443428,
+      "spectral": [
+        {
+          "repeat": 1,
+          "psd_cosine": 0.9909148657538233,
+          "normalized_psd_l1": 0.17658908246872967,
+          "bands": [
+            {
+              "frequency_bin_centers_hz": [
+                37,
+                41
+              ],
+              "sameboy_minus_hardware_db": -0.7305837615019104
+            },
+            {
+              "frequency_bin_centers_hz": [
+                80,
+                83
+              ],
+              "sameboy_minus_hardware_db": 0.13149643148595958
+            },
+            {
+              "frequency_bin_centers_hz": [
+                40,
+                40
+              ],
+              "sameboy_minus_hardware_db": -0.5386957716151711
+            },
+            {
+              "frequency_bin_centers_hz": [
+                81,
+                81
+              ],
+              "sameboy_minus_hardware_db": 0.11966364916528222
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "psd_cosine": 0.9931849771631455,
+          "normalized_psd_l1": 0.16653580657204198,
+          "bands": [
+            {
+              "frequency_bin_centers_hz": [
+                37,
+                41
+              ],
+              "sameboy_minus_hardware_db": -0.7176411848757167
+            },
+            {
+              "frequency_bin_centers_hz": [
+                80,
+                83
+              ],
+              "sameboy_minus_hardware_db": -0.08488811533403459
+            },
+            {
+              "frequency_bin_centers_hz": [
+                40,
+                40
+              ],
+              "sameboy_minus_hardware_db": -0.5712769730565977
+            },
+            {
+              "frequency_bin_centers_hz": [
+                81,
+                81
+              ],
+              "sameboy_minus_hardware_db": -0.028161101663390024
+            }
+          ]
+        }
+      ]
+    },
+    "timing_fixed": {
+      "wav": "artifacts/dac-connected/noize/capture.wav",
+      "sha256": "e961d469f531fc0a4a0121248e989a9b6e918b23ba5b11e720fb6907feb81771",
+      "trace_sha256": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+      "envelope_correlation": 0.8716066846569379,
+      "envelope_normalized_rmse": 0.33653064213472006,
+      "raw_sample_correlation": 0.5288444057711704,
+      "spectral": [
+        {
+          "repeat": 1,
+          "psd_cosine": 0.9909146709510825,
+          "normalized_psd_l1": 0.1765898399458588,
+          "bands": [
+            {
+              "frequency_bin_centers_hz": [
+                37,
+                41
+              ],
+              "sameboy_minus_hardware_db": -0.7305978530442223
+            },
+            {
+              "frequency_bin_centers_hz": [
+                80,
+                83
+              ],
+              "sameboy_minus_hardware_db": 0.13147775904657624
+            },
+            {
+              "frequency_bin_centers_hz": [
+                40,
+                40
+              ],
+              "sameboy_minus_hardware_db": -0.538695723727677
+            },
+            {
+              "frequency_bin_centers_hz": [
+                81,
+                81
+              ],
+              "sameboy_minus_hardware_db": 0.11964623896970947
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "psd_cosine": 0.993184706268219,
+          "normalized_psd_l1": 0.16653681669892786,
+          "bands": [
+            {
+              "frequency_bin_centers_hz": [
+                37,
+                41
+              ],
+              "sameboy_minus_hardware_db": -0.7176557705530147
+            },
+            {
+              "frequency_bin_centers_hz": [
+                80,
+                83
+              ],
+              "sameboy_minus_hardware_db": -0.08490245849545847
+            },
+            {
+              "frequency_bin_centers_hz": [
+                40,
+                40
+              ],
+              "sameboy_minus_hardware_db": -0.5712747133526127
+            },
+            {
+              "frequency_bin_centers_hz": [
+                81,
+                81
+              ],
+              "sameboy_minus_hardware_db": -0.028177533190610685
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "identical_register_traces": true
+}

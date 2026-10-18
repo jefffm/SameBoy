@@ -1,6 +1,6 @@
-/* The DMG all-DAC-off switch acts at the register transition, not after the
-   output DAC fade. Exercise writes and real sample callbacks; do not call the
-   static mixer or manufacture a high-pass capacitor value. */
+/* The DMG all-DAC-off switch shares the source synthesis latency, without an
+   additional DAC fade. Exercise writes and real sample callbacks; do not call
+   the static mixer or manufacture a high-pass capacitor value. */
 #define GB_INTERNAL
 #include <Core/gb.h>
 #include <math.h>
@@ -93,10 +93,27 @@ static GB_gameboy_t *setup(GB_model_t model, unsigned channel, int other)
 static void check_edge(GB_model_t model, unsigned channel, int other)
 {
     GB_gameboy_t *gb = setup(model, channel, other);
+    bool disconnected = model == GB_MODEL_DMG_B && other < 0;
+    GB_gameboy_t *connected_control = disconnected ? setup(model, channel, other) : NULL;
     GB_double_sample_t capacitor = gb->apu_output.highpass_diff;
     GB_apu_write(gb, dac_registers[channel], 0);
     CHECK(!GB_apu_is_DAC_enabled(gb, channel));
-    bool disconnected = model == GB_MODEL_DMG_B && other < 0;
+    unsigned latency = model == GB_MODEL_DMG_B && gb->apu_output.max_cycles_per_sample != 1 ?
+        GB_BAND_LIMITED_WIDTH / 2 : 0;
+    /* Already queued source samples still precede the register transition.
+       Require their actual output and capacitor evolution to match a twin
+       whose DAC remains enabled, rather than accepting an early mute. */
+    for (unsigned i = 0; i < latency; i++) {
+        next_sample(gb);
+        GB_sample_t queued_sample = last_sample;
+        if (connected_control) {
+            next_sample(connected_control);
+            CHECK(queued_sample.packed == last_sample.packed);
+            CHECK(gb->apu_output.highpass_diff.left == connected_control->apu_output.highpass_diff.left);
+            CHECK(gb->apu_output.highpass_diff.right == connected_control->apu_output.highpass_diff.right);
+        }
+    }
+    capacitor = gb->apu_output.highpass_diff;
     printf("model=%x last_channel=%u other_enabled_unrouted=%d", model, channel, other);
     /* Cover the entire old 50 us fade: ceil(48000 / 20000) = 3 renders. */
     unsigned decay_samples = ceil((double) SAMPLE_RATE / DAC_DECAY_SPEED);
@@ -119,6 +136,7 @@ static void check_edge(GB_model_t model, unsigned channel, int other)
         }
     }
     puts("");
+    if (connected_control) GB_dealloc(connected_control);
     GB_dealloc(gb);
 }
 

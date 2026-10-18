@@ -1,0 +1,61 @@
+{
+  "manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/manifest.json",
+  "input_manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/renders/render-h1xqcgiz/manifest.json",
+  "manifest_sha256": "c91aa686be8e0c6472110485ae2699df9fb51963ed889e573ede83afd55b7f06",
+  "rom_sha256": "0eab1e73e34da49fe1bc7c83dd2fb6768e1e6e3e4ca01d5c39d3932eb936dedf",
+  "sameboy_commit": "f51cb47b133b2291887463b1f74eb7b7298bb1ae",
+  "sameboy_diff_sha256": "41da62507805260d80ebae3879ac10c23d833b9a07f7772e59a7b0de722e4e36",
+  "capture_source_sha256": "ca354f4f042ea48cb5bdc479d312f9f63bcbd7b56f08a3a9ae925762f0d37868",
+  "commands": [
+    [
+      "make",
+      "-C",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source",
+      "CONF=release",
+      "build/lib/libsameboy.a",
+      "bootroms"
+    ],
+    [
+      "cc",
+      "-std=gnu11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source",
+      "/home/jeff/Documents/ChatGPT/dmg/benchmark/capture.c",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source/build/lib/libsameboy.a",
+      "-lm",
+      "-ldl",
+      "-o",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/capture"
+    ],
+    [
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/capture",
+      "--rom",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/full/audio-torture.gb",
+      "--boot",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source/build/bin/BootROMs/dmg_boot.bin",
+      "--until-done",
+      "--seed",
+      "1",
+      "--wav",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/audio.wav",
+      "--screenshot",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/screen.ppm",
+      "--apu-log",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/apu.csv",
+      "--markers-log",
+      "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/markers.csv"
+    ]
+  ],
+  "completion_authority": "ROM emits HRAM FF82=4 after its finite suite/end packet; no wall-clock timeout.",
+  "outputs_sha256": {
+    "audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+    "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+    "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+    "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+  },
+  "status": "completed"
+}

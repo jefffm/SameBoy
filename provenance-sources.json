@@ -346,12 +346,6 @@
     "transformation": "verbatim"
   },
   {
-    "path": "artifacts/audio-oracle-probe-v2/reference/manifest.json",
-    "source": "artifacts/audio-oracle-probe-v2/reference/manifest.json",
-    "source_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
-    "transformation": "verbatim"
-  },
-  {
     "path": "artifacts/sweep-history-probe/reference/markers.csv",
     "source": "artifacts/sweep-history-probe/reference/markers.csv",
     "source_sha256": "7e73ac6d5c6e98b7a50ad38dcb753c5220e6187922cf167a599c57db3d7333c4",
@@ -696,8 +690,13 @@
   {
     "path": "benchmark/dac-edge-test.c",
     "source": "benchmark/dac-edge-test.c",
-    "source_sha256": "637fd84428dcf97b63f099b711aed2085073eb5371facc9b4839404bcec4359a",
-    "transformation": "verbatim"
+    "source_sha256": "b743bcfff2ea2ecf63a6585393b795f833317de16c757eb9e36ad01fad353fc7",
+    "transformation": "verbatim",
+    "previous_published_source": {
+      "source": "benchmark/dac-edge-test.c",
+      "source_sha256": "637fd84428dcf97b63f099b711aed2085073eb5371facc9b4839404bcec4359a",
+      "transformation": "verbatim"
+    }
   },
   {
     "path": "benchmark/run-dac-edge-test.sh",
@@ -835,13 +834,18 @@
     "path": "DAC-EDGE.md",
     "source": "benchmark/DAC-EDGE.md",
     "source_sha256": "f0e003e0844828688a6f16b4bc607b743ddb8dd0e3a5b808b68b68674391beb2",
-    "transformation": "Adapt local reproduction commands and artifact links to the companion package; retain measured outcomes and limitations; explicitly distinguish preserved song analysis from portable emulator regression reproduction."
+    "transformation": "Adapt local reproduction commands and artifact links to the companion package; retain measured outcomes and limitations; explicitly distinguish preserved song analysis from portable emulator regression reproduction. Add explicit historical-head scope note and point to the current timing report/tests. Correct the README reference to archived-capture commands; no fresh latest-head ROM command is prescribed."
   },
   {
     "path": "benchmark/dac-reconnect-test.c",
     "source": "benchmark/dac-reconnect-test.c",
-    "source_sha256": "bac09575c295955e7af38afe978faf6aef235f9cb893785018fefc2cd13f8c33",
-    "transformation": "verbatim"
+    "source_sha256": "30caf4eee21508e73451c0eb8dbc167a16498051c7e1f772821bd081ae3dd39a",
+    "transformation": "verbatim",
+    "previous_published_source": {
+      "source": "benchmark/dac-reconnect-test.c",
+      "source_sha256": "bac09575c295955e7af38afe978faf6aef235f9cb893785018fefc2cd13f8c33",
+      "transformation": "verbatim"
+    }
   },
   {
     "path": "benchmark/run-dac-reconnect-test.sh",
@@ -1009,7 +1013,7 @@
     "path": "DAC-RECONNECT.md",
     "source": "benchmark/DAC-RECONNECT.md",
     "source_sha256": "15d265630e9ac86f1b4d5a1ea148d9773828c91351a748b968153432527bb9bc",
-    "transformation": "Adapt local artifact links and reproduction section to the companion package; preserve measured values, mixed metrics, control-history difference and timing/analog limitations. Explicitly distinguish portable callback regression from archived local audio evidence."
+    "transformation": "Adapt local artifact links and reproduction section to the companion package; preserve measured values, mixed metrics, control-history difference and timing/analog limitations. Explicitly distinguish portable callback regression from archived local audio evidence. Add explicit historical-head scope note and point to the current timing report/tests."
   },
   {
     "path": "results/dac-reconnect/run.json",
@@ -1021,6 +1025,354 @@
     "path": "benchmark/patches/0009-dmg-dac-reconnect.patch",
     "source": "benchmark/patches/0009-dmg-dac-reconnect.patch",
     "source_sha256": "8c0ff8d2f1e3b4b69dde6b1ec10b4737bac5da6606b2990ebacac3fff1076fcb",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-edge/historical-test.c",
+    "source": "benchmark/dac-edge-test.c",
+    "source_sha256": "637fd84428dcf97b63f099b711aed2085073eb5371facc9b4839404bcec4359a",
+    "transformation": "Exact preceding publication copy retained with its historical results; current benchmark copy is updated for the synthesis delay."
+  },
+  {
+    "path": "results/dac-reconnect/historical-test.c",
+    "source": "benchmark/dac-reconnect-test.c",
+    "source_sha256": "bac09575c295955e7af38afe978faf6aef235f9cb893785018fefc2cd13f8c33",
+    "transformation": "Exact preceding publication copy retained with its historical results; current benchmark copy is updated for the synthesis delay."
+  },
+  {
+    "path": "benchmark/dac-timing-test.c",
+    "source": "benchmark/dac-timing-test.c",
+    "source_sha256": "c1739dfb5150c871c8591142aa87043b9d74ea1c3e3c977dce8749802b8c5904",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/run-dac-timing-test.sh",
+    "source": "benchmark/run-dac-timing-test.sh",
+    "source_sha256": "0b5cc1e310233d3986b78cc520e6b8ccfdc94fb248e983b37da96d0a0d1bb334",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "benchmark/patches/0010-dmg-dac-synthesis-timing.patch",
+    "source": "benchmark/patches/0010-dmg-dac-synthesis-timing.patch",
+    "source_sha256": "58fa00a4c60fba85b9aabb5826b006812f7ca424d4345a9fbdc0f176bdbed262",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/before.stdout",
+    "source": "build/dac-timing-test/before.stdout",
+    "source_sha256": "126d92d640280953a55aea0ec2d3eb0c632e7c780df6f85caee86dd44fc63967",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/before.stderr",
+    "source": "build/dac-timing-test/before.stderr",
+    "source_sha256": "6b364d8c2ffecce64d3c0a477f36af473f30fdb1f3ea8a62325b403ec70c4f7f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/after.stdout",
+    "source": "build/dac-timing-test/after.stdout",
+    "source_sha256": "3ea936d560925143c851e2fb858d77408dd26fbc79abe92591eaef26df4bd54a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/after.stderr",
+    "source": "build/dac-timing-test/after.stderr",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/results.json",
+    "source": "build/dac-timing-test/results.json",
+    "source_sha256": "c2aec370cb2a8b5b0df66e2272da7d683e2147e5e8b9f5320479f90c6edd7f84",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/edge-after.stdout",
+    "source": "build/dac-timing-test/adapted/edge-after.stdout",
+    "source_sha256": "4214d786bd03250feb5876f6fc85557b3034fbb138623e136bb6cd53f02c957c",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/edge-after.stderr",
+    "source": "build/dac-timing-test/adapted/edge-after.stderr",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/reconnect-after.stdout",
+    "source": "build/dac-timing-test/adapted/reconnect-after.stdout",
+    "source_sha256": "1b423bcb1a8b483d702c73e4506822975404884865ca2fffe6a2ed4b97e1fe29",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/reconnect-after.stderr",
+    "source": "build/dac-timing-test/adapted/reconnect-after.stderr",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/edge-before.stdout",
+    "source": "build/dac-timing-test/adapted/edge-before.stdout",
+    "source_sha256": "b381c6adcdedfa685eee18e86eda98c8d87894c9102ec07a9406827db140374f",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/edge-before.stderr",
+    "source": "build/dac-timing-test/adapted/edge-before.stderr",
+    "source_sha256": "578870881b69ccae251c64b1963487a19f830114ad7327cb1f91446276889632",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/reconnect-before.stdout",
+    "source": "build/dac-timing-test/adapted/reconnect-before.stdout",
+    "source_sha256": "a8ece6c193f2f329352c29bc5a6b6e235ed85c26b551a931717024185d46f148",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/tests/adapted/reconnect-before.stderr",
+    "source": "build/dac-timing-test/adapted/reconnect-before.stderr",
+    "source_sha256": "d56602b67ff57788d4f8eed5e8d1b4896b5ce10715734811b47d94ba5a328e42",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/analyze.py",
+    "source": "artifacts/dac-connected/hardware/analyze.py",
+    "source_sha256": "cb90ef080a6fd597aeb6bead120dbafd95680c6c10f5298c86c61db951644e59",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/figure.py",
+    "source": "artifacts/dac-connected/hardware/figure.py",
+    "source_sha256": "1ff3489ec7fd72521945c8151d37c90c4e5fbf22ae9e51854ca8ff703a6e3e4a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/analysis.json",
+    "source": "artifacts/dac-connected/hardware/analysis.json",
+    "source_sha256": "cfec0fc0424f618f14093e905a9e98b8cb84d3f4cc92ef7233d4c3f283030fb3",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/render-identity.json",
+    "source": "artifacts/dac-connected/hardware/render-identity.json",
+    "source_sha256": "2fc76affb776e6c6ade478805a136dd80278d2e805a6d003842fe16808c94e34",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/edge-controls-native.csv",
+    "source": "artifacts/dac-connected/hardware/edge-controls-native.csv",
+    "source_sha256": "3d39867670cda505633743102a1cac324ceff87418f4e8a522fe442a451b4824",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/edge-controls.png",
+    "source": "artifacts/dac-connected/hardware/edge-controls.png",
+    "source_sha256": "fea46ce202ccca61c0c2e1c18bb4d4f9b4ef3a791857e7f7811113872eb4d041",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/edge-controls.pdf",
+    "source": "artifacts/dac-connected/hardware/edge-controls.pdf",
+    "source_sha256": "d0502a565e74f9e9d303456de87a7323be255ffec3b1f1759c47b2121e51919e",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/edge-alloff.png",
+    "source": "artifacts/dac-connected/hardware/edge-alloff.png",
+    "source_sha256": "52df1921f7964140bc136926542e1e58c5dd566725814bc3696895ebaf56472e",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/edge-alloff.pdf",
+    "source": "artifacts/dac-connected/hardware/edge-alloff.pdf",
+    "source_sha256": "3a3581df616648d1778635f7a09025f8cf76d80aeada157e267aa95c43413a01",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/wave-noise-timing.png",
+    "source": "artifacts/dac-connected/hardware/wave-noise-timing.png",
+    "source_sha256": "900157602b37c54cfb927d357fa6f7b20affab55db9abce5aade2a64e077b95d",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/hardware/wave-noise-timing.pdf",
+    "source": "artifacts/dac-connected/hardware/wave-noise-timing.pdf",
+    "source_sha256": "13fa385c7a29f16d93b71204510c96b95eecf3ed24c8d18fc3aaa43c2252275e",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/before-all-cases.json",
+    "source": "artifacts/dac-connected/before-all-cases.json",
+    "source_sha256": "5f460b655edd717163bf94b544b97bed474ce55fc19f8b23a10daf569340dcdd",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/final-all-cases.json",
+    "source": "artifacts/dac-connected/final-all-cases.json",
+    "source_sha256": "d4e1c6c6382b690074606d13008ce912e2f27d0c3e8fa530a846c129dbb7ff79",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/full-case-deltas.json",
+    "source": "artifacts/dac-connected/full-case-deltas.json",
+    "source_sha256": "f3f160deeb3e07c2872ac25ed673b6d26335824230250af8e4539c09023506fa",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/delay-metrics.json",
+    "source": "artifacts/dac-connected/delay-metrics.json",
+    "source_sha256": "cd2aaa6e36445d5ee462382169b5ad5f7344aa90b5a7814a28b4d3c7db236cff",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/throughput.json",
+    "source": "artifacts/dac-connected/throughput.json",
+    "source_sha256": "e743cd91fb88d1281738e0dbb21b5a6ee9a7a03b9ef36a820aa1651c076c807d",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/renders/delay-render-provenance.json",
+    "source": "artifacts/dac-connected/delay-render/provenance.json",
+    "source_sha256": "de4be5942a9c966d17c9b5c2619468f680ad8343c4a3ab495887af08c343c4e5",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/renders/final-render-provenance.json",
+    "source": "artifacts/dac-connected/final-render/provenance.json",
+    "source_sha256": "e9ac05ad57294c778bc35eda51c56fb3a9d336b8c80d2033cbbe8b8fd3a549f4",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/renders/final-mask-render-provenance.json",
+    "source": "artifacts/dac-connected/final-mask-render/provenance.json",
+    "source_sha256": "5c316619e0468ae458e7a3f644e35b018005d58a1b4fe2a7b5d6aa3ef8cd5e96",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/renders/final-manifest.json",
+    "source": "artifacts/dac-connected/final-mask-render/manifest.json",
+    "source_sha256": "c91aa686be8e0c6472110485ae2699df9fb51963ed889e573ede83afd55b7f06",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/noize-metrics.json",
+    "source": "artifacts/dac-connected/noize/metrics.json",
+    "source_sha256": "f92d804a6f42be4a56f90c2b55c7ad6dc8ca552600cdef95bb16933910242d72",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/FINDINGS.md",
+    "source": "artifacts/dac-connected/mechanism/FINDINGS.md",
+    "source_sha256": "765a86b338dd061b23f826cfb3c69f8fcd422c2bbc55155c866b08f0881ccd0a",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/manifest.json",
+    "source": "artifacts/dac-connected/mechanism/manifest.json",
+    "source_sha256": "484df9d0b4d1991477e01a9c938cd738c72714b75be09d1977bd9c68f884cd59",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/capture-state.c",
+    "source": "artifacts/dac-connected/mechanism/capture-state.c",
+    "source_sha256": "c75487a6e54dcffdffda16046139e898c2f0a910c933f3707d01fa9df26c0034",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/state-columns.json",
+    "source": "artifacts/dac-connected/mechanism/state-columns.json",
+    "source_sha256": "18d065a5cbaeb42cc4526493bdee4e3f8da362e893d5521fd2a15ba34f000204",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/state.csv",
+    "source": "artifacts/dac-connected/mechanism/state.csv",
+    "source_sha256": "671e75149bec9da147dc006a38a3a393ecd11a3c7ef9ffb1ea10c7efd1fa3029",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/reconnect-state.json",
+    "source": "artifacts/dac-connected/mechanism/reconnect-state.json",
+    "source_sha256": "1f0970619973e1c6a2838d186195457b9b96303e457f8ce652cbd86c1c0a5c78",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/equivalent-step.c",
+    "source": "artifacts/dac-connected/mechanism/equivalent-step.c",
+    "source_sha256": "37f8556f20ddc613a0b70425ec0e8464552d87569b57d592c3ef398f696db7f5",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/equivalent-step.csv",
+    "source": "artifacts/dac-connected/mechanism/equivalent-step.csv",
+    "source_sha256": "be0346860ce157fc01053c08b1a35cdbbfa90c0bba176b5394e201ddc9772ee1",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/equivalent-step.json",
+    "source": "artifacts/dac-connected/mechanism/equivalent-step.json",
+    "source_sha256": "0de9e4f6f8b1bee23791bc4c25906f6f52cc9b23ac78193d6bcd4ae7893e75ae",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/dc-mode-probe.c",
+    "source": "artifacts/dac-connected/mechanism/dc-mode-probe.c",
+    "source_sha256": "c4eb61b7e7f631355e68c53cd1b66a33a6a2c8998026abd1ac4318ebf4f2e3d9",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/dc-mode-baseline.csv",
+    "source": "artifacts/dac-connected/mechanism/dc-mode-baseline.csv",
+    "source_sha256": "997f42cff3c6d7922de06cb6a8ede8d209a039f239aa8c3b360406b3c918002c",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/dc-mode-candidate.csv",
+    "source": "artifacts/dac-connected/mechanism/dc-mode-candidate.csv",
+    "source_sha256": "2f9a809946b0854df7ad757f03989ad324e23d75e7e91cfbe468ed5b458a4854",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/dc-mode-fixed.csv",
+    "source": "artifacts/dac-connected/mechanism/dc-mode-fixed.csv",
+    "source_sha256": "c67c1e4396367bdcbe15cd6e84d813563148ef33191c0743fa681f6412a36501",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/mechanism/review-dc-mode.json",
+    "source": "artifacts/dac-connected/mechanism/review-dc-mode.json",
+    "source_sha256": "ba1292b276b8e6d72c0c1b124269359dbb14058e658f2c2996670782668064dc",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/run.json",
+    "source": "artifacts/dac-connected/run.json",
+    "source_sha256": "dc699afa49ffc2eeefdf4aa5300ad453a7c60aa4961ca6b90711edc1896f21eb",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "DAC-TIMING.md",
+    "source": "benchmark/DAC-TIMING.md",
+    "source_sha256": "85f61f42e4e2a2950ce2b8c2507d522a09d1a2d166b5b1eba1fe7bd9333610af",
+    "transformation": "Adapt reproduction commands and figure links to the companion package; explicitly distinguish portable callback/figure reproduction from archived original-layout analysis; preserve measured results, limits and render identity."
+  },
+  {
+    "path": "results/dac-timing/measure-throughput.py",
+    "source": "artifacts/dac-connected/measure-throughput.py",
+    "source_sha256": "f71707562e75c5bbda8765a1358695776ee67b0176dd3b4e132a32ad5c42cca0",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/publication-build.json",
+    "source": "artifacts/dac-connected/publication-build.json",
+    "source_sha256": "a8edefe7683db205b30399f1af8f092765ec6e07100f7b7121f204f9b3a9d079",
+    "transformation": "verbatim"
+  },
+  {
+    "path": "results/dac-timing/publication-build.log",
+    "source": "artifacts/dac-connected/publication-build.log",
+    "source_sha256": "6c35fe5afce75915a70f351557c368518b5b45fec179bc1b10d890fbbff2fc87",
     "transformation": "verbatim"
   }
 ]

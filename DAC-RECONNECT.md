@@ -1,5 +1,11 @@
 # DMG DAC reconnect pulse
 
+This report preserves measurements from `f51cb47b`. The subsequent
+[DAC timing correction](DAC-TIMING.md) aligns DAC controls with the synthesis
+pipeline. Current callback sources account for that delay; the exact earlier
+test source is archived beside these historical results as `historical-test.c`.
+Zero-latency output expectations below describe the historical head only.
+
 Core commit `f51cb47b133b2291887463b1f74eb7b7298bb1ae` follows the immediate-disconnect fix
 `79fb345c2735e37e8a94b95030986a81d1a557af`. While every DAC was disabled, the
 mixer correctly held its coupling-capacitor charge, but each DAC's attack state

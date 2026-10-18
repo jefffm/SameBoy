@@ -1,0 +1,41 @@
+{
+  "before_commit": "f51cb47b133b2291887463b1f74eb7b7298bb1ae",
+  "candidate_commit": "2d6ea110275b17de06d9d1c1a621adf625973cac",
+  "files_sha256": {
+    "SameBoy/Core/apu.c": "1f33bc8cc842e1c38cb10e3b1e41bc315711dc6b4fbe7cf3a3f8a85cc539c51a",
+    "SameBoy/Core/apu.h": "49c626b26c283e54c6affff3707ec3b445343cfda14a659e9f2cae73c63fd4a6",
+    "benchmark/dac-timing-test.c": "c1739dfb5150c871c8591142aa87043b9d74ea1c3e3c977dce8749802b8c5904",
+    "benchmark/run-dac-timing-test.sh": "0b5cc1e310233d3986b78cc520e6b8ccfdc94fb248e983b37da96d0a0d1bb334",
+    "benchmark/dac-edge-test.c": "b743bcfff2ea2ecf63a6585393b795f833317de16c757eb9e36ad01fad353fc7",
+    "benchmark/dac-reconnect-test.c": "30caf4eee21508e73451c0eb8dbc167a16498051c7e1f772821bd081ae3dd39a",
+    "benchmark/patches/0010-dmg-dac-synthesis-timing.patch": "58fa00a4c60fba85b9aabb5826b006812f7ca424d4345a9fbdc0f176bdbed262",
+    "build/dac-timing-test/results.json": "c2aec370cb2a8b5b0df66e2272da7d683e2147e5e8b9f5320479f90c6edd7f84",
+    "artifacts/dac-connected/final-mask-render/provenance.json": "5c316619e0468ae458e7a3f644e35b018005d58a1b4fe2a7b5d6aa3ef8cd5e96",
+    "artifacts/dac-connected/final-render/provenance.json": "e9ac05ad57294c778bc35eda51c56fb3a9d336b8c80d2033cbbe8b8fd3a549f4",
+    "artifacts/dac-connected/delay-render/provenance.json": "de4be5942a9c966d17c9b5c2619468f680ad8343c4a3ab495887af08c343c4e5",
+    "artifacts/dac-connected/before-all-cases.json": "5f460b655edd717163bf94b544b97bed474ce55fc19f8b23a10daf569340dcdd",
+    "artifacts/dac-connected/final-all-cases.json": "d4e1c6c6382b690074606d13008ce912e2f27d0c3e8fa530a846c129dbb7ff79",
+    "artifacts/dac-connected/full-case-deltas.json": "f3f160deeb3e07c2872ac25ed673b6d26335824230250af8e4539c09023506fa",
+    "artifacts/dac-connected/noize/capture.wav": "e961d469f531fc0a4a0121248e989a9b6e918b23ba5b11e720fb6907feb81771",
+    "artifacts/dac-connected/noize/capture.csv": "d706a5d0135630487e1b4611f19af3006547470dc145afdc59127ea5f2721c66",
+    "artifacts/dac-connected/noize/metrics.json": "f92d804a6f42be4a56f90c2b55c7ad6dc8ca552600cdef95bb16933910242d72",
+    "artifacts/dac-connected/hardware/analysis.json": "cfec0fc0424f618f14093e905a9e98b8cb84d3f4cc92ef7233d4c3f283030fb3",
+    "artifacts/dac-connected/hardware/wave-noise-timing.png": "900157602b37c54cfb927d357fa6f7b20affab55db9abce5aade2a64e077b95d",
+    "artifacts/dac-connected/mechanism/review-dc-mode.json": "ba1292b276b8e6d72c0c1b124269359dbb14058e658f2c2996670782668064dc",
+    "benchmark/DAC-TIMING.md": "85f61f42e4e2a2950ce2b8c2507d522a09d1a2d166b5b1eba1fe7bd9333610af",
+    "artifacts/dac-connected/throughput.json": "e743cd91fb88d1281738e0dbb21b5a6ee9a7a03b9ef36a820aa1651c076c807d",
+    "artifacts/dac-connected/hardware/render-identity.json": "2fc76affb776e6c6ade478805a136dd80278d2e805a6d003842fe16808c94e34",
+    "artifacts/dac-connected/measure-throughput.py": "f71707562e75c5bbda8765a1358695776ee67b0176dd3b4e132a32ad5c42cca0"
+  },
+  "all_complete_suite_output_hashes": {
+    "audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+    "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+    "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+    "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+  },
+  "all_three_candidate_render_outputs_byte_identical": true,
+  "final_mask_accurate_mode_equivalence": "The final enabled-mask refinement also delays REMOVE_DC_OFFSET target updates. Accurate-mode WAV, APU trace, markers and finalscreen remainbyte-identical to the preceding connected-boolean implementation; thus its entire frozen hardware comparison applies unchanged. DC-offset mode has its separate failing/passing reproduction.",
+  "original_cpu_apu_trace_identical": true,
+  "timing_authority": "GB_BAND_LIMITED_WIDTH/2, no hardware fit. No delay in the existing unfiltered max_cycles_per_sample==1 path.",
+  "report_attribution": "Full-case metrics retain original pre-commit render provenance verbatim; this file pins the exact final source, equivalent outputs, and new commit."
+}

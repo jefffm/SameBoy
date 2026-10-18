@@ -1,5 +1,6 @@
 /* A DMG reconnect must restore the DAC's held source before subtracting the
-   coupling capacitor. A changed source must retain its genuine reconnect step.
+   coupling capacitor, at the same synthesis latency as that source. A changed
+   source must retain its genuine reconnect step.
    Drive real register writes and sample callbacks; never manufacture a capacitor. */
 #define GB_INTERNAL
 #include <Core/gb.h>
@@ -88,6 +89,8 @@ static void check_reconnect(GB_model_t model, unsigned channel, int other,
 {
     GB_gameboy_t *gb = setup(model, channel, other);
     bool disconnected = model == GB_MODEL_DMG_B && other < 0;
+    unsigned latency = model == GB_MODEL_DMG_B && gb->apu_output.max_cycles_per_sample != 1 ?
+        GB_BAND_LIMITED_WIDTH / 2 : 0;
     GB_double_sample_t held = gb->apu_output.highpass_diff;
     GB_apu_write(gb, dac_registers[channel], 0);
     if (change == CHANGE_VOLUME) {
@@ -97,8 +100,9 @@ static void check_reconnect(GB_model_t model, unsigned channel, int other,
         GB_apu_write(gb, GB_IO_NR51, 0);
     }
     for (unsigned i = 0; i < settle_samples(); i++) {
+        if (i == latency) held = gb->apu_output.highpass_diff;
         next_sample(gb);
-        if (disconnected) {
+        if (disconnected && i >= latency) {
             CHECK(last_sample.left == 0 && last_sample.right == 0);
             CHECK(gb->apu_output.highpass_diff.left == held.left);
             CHECK(gb->apu_output.highpass_diff.right == held.right);
@@ -125,6 +129,14 @@ static void check_reconnect(GB_model_t model, unsigned channel, int other,
     GB_apu_write(gb, dac_registers[channel], enabled_value(channel));
     CHECK(gb->apu_output.highpass_diff.left == held.left);
     CHECK(gb->apu_output.highpass_diff.right == held.right);
+    if (disconnected) {
+        for (unsigned i = 0; i < latency; i++) {
+            next_sample(gb);
+            CHECK(last_sample.left == 0 && last_sample.right == 0);
+            CHECK(gb->apu_output.highpass_diff.left == held.left);
+            CHECK(gb->apu_output.highpass_diff.right == held.right);
+        }
+    }
     next_sample(gb);
     printf("%s model=%x channel=%u other=%d change=%u raw=%d,%d cap=%a,%a "
            "output=%d,%d fraction=%a cap_after=%a,%a\n",

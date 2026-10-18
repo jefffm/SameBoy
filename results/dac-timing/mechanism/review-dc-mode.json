@@ -1,0 +1,78 @@
+{
+  "finding": "GB_HIGHPASS_REMOVE_DC_OFFSET computes target from live DAC enables while queued gain is still from32samples earlier, creating an anticipatory positive offset before an intentionally delayed negativeDACvoltage step.",
+  "reproducer": "CH1 digitalzero, NR50=77, NR51=99, CH2DACenabledinactiveunrouted, CH4disabled despite routing. Settle64kernel samples, then cap machine-precisionfixedpoint; disableCH1. Use originaloldcode routing logic unchanged.",
+  "baseline_before": 3,
+  "candidate_before": 3,
+  "candidate_before_delayed_voltage_step_last_sample": 441,
+  "delayed_voltage_step_sample": 32,
+  "proposed_seam": "Queue DAC-enabledmask instead of connectedboolean; derive connected frommask and apply delayedmasktoDCtarget. No change to pre-existingNR50/51live-target approximation or channelmapping.",
+  "sha256": {
+    "dc-mode-probe.c": "c4eb61b7e7f631355e68c53cd1b66a33a6a2c8998026abd1ac4318ebf4f2e3d9",
+    "dc-mode-probe-candidate": "46ed774c6b797d2cb4ec6855ea4905b42dad20df7d239c2a493dcb6c87800287",
+    "dc-mode-probe-baseline": "5fac1a4974356d4c6a90ea9d60ec6fffa1d735702725cb080c3d98e22f9e70ce",
+    "dc-mode-candidate.csv": "2f9a809946b0854df7ad757f03989ad324e23d75e7e91cfbe468ed5b458a4854",
+    "dc-mode-baseline.csv": "997f42cff3c6d7922de06cb6a8ede8d209a039f239aa8c3b360406b3c918002c",
+    "dc-mode-probe-fixed": "002a2e4a35f55a2c374ed1a807cdc05b24738069e791bd20e06d054096e772e8",
+    "dc-mode-fixed.csv": "c67c1e4396367bdcbe15cd6e84d813563148ef33191c0743fa681f6412a36501"
+  },
+  "fixed_source_diff_captured_after_concurrent_review_correction": "diff --git i/Core/apu.c w/Core/apu.c\nindex 9d343f31..904c05f2 100644\n--- i/Core/apu.c\n+++ w/Core/apu.c\n@@ -321,7 +321,8 @@ static signed interference(GB_gameboy_t *gb)\n static void render(GB_gameboy_t *gb)\n {\n     GB_sample_t output = {0, 0};\n-    bool dac_output_connected = gb->model != GB_MODEL_DMG_B;\n+    uint8_t enabled_dacs = 0;\n+    bool delay_dac = gb->model == GB_MODEL_DMG_B && gb->apu_output.max_cycles_per_sample != 1;\n \n     unrolled for (unsigned i = 0; i < GB_N_CHANNELS; i++) {\n         double multiplier = CH_STEP;\n@@ -348,14 +349,28 @@ static void render(GB_gameboy_t *gb)\n             }\n         }\n         \n-        dac_output_connected |= GB_apu_is_DAC_enabled(gb, i);\n+        enabled_dacs |= GB_apu_is_DAC_enabled(gb, i) << i;\n \n+        if (delay_dac) {\n+            /* DAC gain is applied after synthesis. Match the filter's midpoint\n+               delay so enabling a DAC cannot precede its digital waveform. */\n+            uint8_t delayed = gb->apu_output.dac_delay[gb->apu_output.dac_delay_pos].multiplier[i];\n+            gb->apu_output.dac_delay[gb->apu_output.dac_delay_pos].multiplier[i] = multiplier;\n+            multiplier = delayed;\n+        }\n         GB_sample_t channel_output;\n         band_limited_read(&gb->apu_output.band_limited[i], &channel_output, multiplier);\n \n         output.left += channel_output.left;\n         output.right += channel_output.right;\n     }\n+    if (delay_dac) {\n+        uint8_t delayed = gb->apu_output.dac_delay[gb->apu_output.dac_delay_pos].enabled;\n+        gb->apu_output.dac_delay[gb->apu_output.dac_delay_pos].enabled = enabled_dacs;\n+        enabled_dacs = delayed;\n+        gb->apu_output.dac_delay_pos =\n+            (gb->apu_output.dac_delay_pos + 1) % (GB_BAND_LIMITED_WIDTH / 2);\n+    }\n     gb->apu_output.cycles_since_render = 0;\n     if (unlikely(gb->apu_output.sample_fraction < (1 << 28))) {\n         gb->apu_output.sample_fraction = 0;\n@@ -367,9 +382,10 @@ static void render(GB_gameboy_t *gb)\n     if (gb->sgb && gb->sgb->intro_animation < GB_SGB_INTRO_ANIMATION_LENGTH) return;\n \n     GB_sample_t filtered_output = {0, 0};\n-    /* On DMG, disabling the last DAC disconnects the mixer immediately. Keep\n-       per-channel discharge running, but hold the coupling capacitor while disconnected. */\n-    if (dac_output_connected) {\n+    /* On DMG, the last DAC disconnects the mixer without waiting for discharge.\n+       Apply the same synthesis delay to connection and gain, then hold the\n+       coupling capacitor while disconnected. */\n+    if (gb->model != GB_MODEL_DMG_B || enabled_dacs) {\n         filtered_output = gb->apu_output.highpass_mode?\n             (GB_sample_t) {output.left  - (int16_t)gb->apu_output.highpass_diff.left,\n                            output.right - (int16_t)gb->apu_output.highpass_diff.right} :\n@@ -390,7 +406,7 @@ static void render(GB_gameboy_t *gb)\n                 unsigned left_volume = 0;\n                 unsigned right_volume = 0;\n                 unrolled for (unsigned i = GB_N_CHANNELS; i--;) {\n-                    if (GB_apu_is_DAC_enabled(gb, i)) {\n+                    if (enabled_dacs & (1 << i)) {\n                         if (mask & 1) {\n                             left_volume += ((gb->io_registers[GB_IO_NR50] & 7) + 1) * CH_STEP * 0xF;\n                         }\ndiff --git i/Core/apu.h w/Core/apu.h\nindex cc3f4b14..3b827906 100644\n--- i/Core/apu.h\n+++ w/Core/apu.h\n@@ -205,6 +205,11 @@ typedef struct {\n     \n     GB_band_limited_t band_limited[GB_N_CHANNELS];\n     double dac_discharge[GB_N_CHANNELS];\n+    struct {\n+        uint8_t multiplier[GB_N_CHANNELS];\n+        uint8_t enabled;\n+    } dac_delay[GB_BAND_LIMITED_WIDTH / 2];\n+    uint8_t dac_delay_pos;\n     bool channel_muted[GB_N_CHANNELS];\n     bool edge_triggered[GB_N_CHANNELS];\n \n",
+  "source_diff_timing_note": "The original candidate_source_diff_at_review field was captured after the parent concurrently applied the enabled-mask correction. It describes the fixed source, not the connected-boolean candidate that produced dc-mode-candidate.csv. The old executable and old samples retain their original hashes. No claim is made that the old executable was built from this subsequently captured diff.",
+  "connected_boolean_render_provenance": {
+    "path": "artifacts/dac-connected/final-render/provenance.json",
+    "sha256": "e9ac05ad57294c778bc35eda51c56fb3a9d336b8c80d2033cbbe8b8fd3a549f4",
+    "sameboy_commit": "f51cb47b133b2291887463b1f74eb7b7298bb1ae",
+    "sameboy_diff_sha256": "8465777559620fba2f7e305289407dd71a44d5a56cdfb7794ee2075497f66bf9",
+    "scope": "Preserved full-suite timing-render provenance for the connected-boolean candidate. This is the old source revision identifier, not a new build of the DC diagnostic."
+  },
+  "fixed_probe_result": {
+    "before": [
+      "before",
+      "3",
+      "0x1.fdfffffffffbbp+11"
+    ],
+    "pre_edge_samples": 32,
+    "all_pre_edge_samples_and_capacitor_equal_before": true,
+    "first_delayed_edge_samples": [
+      [
+        "32",
+        "-1559",
+        "0x1.fc21b5fb74324p+11"
+      ],
+      [
+        "33",
+        "-3825",
+        "0x1.fa452c83b4652p+11"
+      ],
+      [
+        "34",
+        "-4050",
+        "0x1.f86a61f417a0ap+11"
+      ]
+    ],
+    "former_anticipatory_sample_31_pcm16": 441,
+    "fixed_sample_31_pcm16": 3,
+    "purpose": "Confirm removing the anticipatory DC-offset artifact while preserving the delayed real source-voltage step."
+  },
+  "fixed_build_inputs_sha256": {
+    "artifacts/dac-connected/source/Core/apu.c": "1f33bc8cc842e1c38cb10e3b1e41bc315711dc6b4fbe7cf3a3f8a85cc539c51a",
+    "artifacts/dac-connected/source/Core/apu.h": "49c626b26c283e54c6affff3707ec3b445343cfda14a659e9f2cae73c63fd4a6",
+    "artifacts/dac-connected/source/build/lib/libsameboy.a": "fb0a0729ea10e0a54ef9d787f2877563ed31955301b22fcf0bb9628d250b0c31"
+  },
+  "fixed_build_command": [
+    "cc",
+    "-std=gnu11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-multichar",
+    "-I",
+    "artifacts/dac-connected/source",
+    "artifacts/dac-connected/mechanism/dc-mode-probe.c",
+    "artifacts/dac-connected/source/build/lib/libsameboy.a",
+    "-lm",
+    "-ldl",
+    "-o",
+    "artifacts/dac-connected/mechanism/dc-mode-probe-fixed"
+  ]
+}

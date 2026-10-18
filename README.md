@@ -1,6 +1,6 @@
 # SameBoy DMG audio: companion evidence
 
-This is the separate evidence branch for Jeff Lynn’s SameBoy audio PR, including the follow-up DAC shutdown-edge and reconnect corrections. It contains test sources, frozen hardware ROMs, physical readbacks, recordings, and existing validation reports. The core changes are on [`jefffm/SameBoy:codex/dmg-audio-fidelity`](https://github.com/jefffm/SameBoy/tree/codex/dmg-audio-fidelity), publication head `f51cb47b133b2291887463b1f74eb7b7298bb1ae` (the preceding shutdown-edge head was `79fb345c2735e37e8a94b95030986a81d1a557af`; the seven-fix head was `8182d8edbaddbac9f6057930f6cebdabd3b83228`), based on upstream `26a56bd6a122a6318a456abd80558408742d5adf`.
+This is the separate evidence branch for Jeff Lynn’s SameBoy audio PR, including the follow-up DAC shutdown, reconnect and synthesis-timing corrections. It contains test sources, frozen hardware ROMs, physical readbacks, recordings, and existing validation reports. The core changes are on [`jefffm/SameBoy:codex/dmg-audio-fidelity`](https://github.com/jefffm/SameBoy/tree/codex/dmg-audio-fidelity), publication head `2d6ea110275b17de06d9d1c1a621adf625973cac` (the reconnect head was `f51cb47b133b2291887463b1f74eb7b7298bb1ae`; the shutdown-edge head was `79fb345c2735e37e8a94b95030986a81d1a557af`; the seven-fix head was `8182d8edbaddbac9f6057930f6cebdabd3b83228`), based on upstream `26a56bd6a122a6318a456abd80558408742d5adf`.
 
 The work began with a chiptune recorded from LSDj 8.5.1 on an authentic DMG. Later standalone ROMs isolated noise, pulse, wave-RAM, and sweep behavior. The hardware connection was the stock headphone jack to Scarlett inputs 3 (left) and 4 (right), recorded at 48 kHz, stereo, 24-bit PCM. **The physical CPU/board revision is unconfirmed.** The emulator tests select DMG-B. The right capture channel is inverted, so analysis uses left channel zero; do not average the two. The analog path is not calibrated.
 
@@ -8,8 +8,9 @@ The work began with a chiptune recorded from LSDj 8.5.1 on an authentic DMG. Lat
 
 | Change | Reproduction and evidence | Scope |
 |---|---|---|
+| DAC synthesis timing | [DAC-TIMING.md](DAC-TIMING.md), `benchmark/run-dac-timing-test.sh`, `results/dac-timing/` | Delay DAC gains and enabled-mask state by the synthesis kernel midpoint (32 samples); retain real voltage steps. All eight recorded DAC cases and all 189 full-case RMSEs improve under the original map/gain; 337/337 packets and zero readback differences. Pulse reconnect phase differences remain. |
 | DAC reconnect | [DAC-RECONNECT.md](DAC-RECONNECT.md), `benchmark/run-dac-reconnect-test.sh`, `results/dac-reconnect/` | Restore the full DAC source against the held capacitor when reconnecting from all DACs off. Removes 31 NOIZE JAMS restart pulses and the pulses in all four recorded standalone channel cases. Genuine changed-source transients remain; 24 callback controls are byte-identical. Broad onset metrics are mixed, and CH2 control startup history changes before its unchanged reconnect. |
-| DAC shutdown edge | [DAC-EDGE.md](DAC-EDGE.md), `benchmark/run-dac-edge-test.sh`, `results/dac-edge/` | Disconnect immediately when the final DAC is disabled; preserve the capacitor without waiting for the old 50 µs fade. All 336 generated gaps now have zero nonzero samples from the first sample after the register instruction; CGB and continuously enabled-DAC controls are unchanged. |
+| DAC shutdown edge | [DAC-EDGE.md](DAC-EDGE.md), `benchmark/run-dac-edge-test.sh`, `results/dac-edge/` | Disconnect immediately when the final DAC is disabled; preserve the capacitor without waiting for the old 50 µs fade. At historical head `79fb345c`, all 336 generated gaps had zero nonzero samples from the first sample after the register instruction; current callbacks account for synthesis latency; CGB and continuously enabled-DAC controls are unchanged. |
 | DAC disconnection (initial fix) | `benchmark/dac-off-probe.asm`, `benchmark/verify-dac-off.py`; `figures/dac-off-transition.png`, `hardware/lsdj-dac-excerpt.wav`, `results/causal-findings.json` | LSDj rest-tail excess RMS fell from 23.42 to 2.49 dB with the original fixed alignment/gain. Generated DAC-off fixture has 336 silent gaps; that particular fixture was not recorded on hardware. |
 | Noise feedback latch | `benchmark/run-noise-feedback-test.sh`; the steady and retrigger ROMs/FLACs; `results/retrigger-hardware-findings.json`, `results/noise-feedback-regression.json` | Falling-edge feedback capture explains the physical 64-phase retrigger pattern; 604 observed cycles, phase-mean timing RMS error 2.329 µs. Native/legacy state and non-DMG controls are documented separately. |
 | Retain silent pulse clocks | `benchmark/run-pulse-clock-test.sh`; original torture recording, cases 70 and 72; `results/pulse/` | Whole duty-step phase disagreements fell from 49/62 to 0/62 bursts on each pulse channel. |
@@ -18,9 +19,11 @@ The work began with a chiptune recorded from LSDj 8.5.1 on an authentic DMG. Lat
 | Wave-RAM retrigger majority | `benchmark/wave-majority-repro.asm`, `benchmark/wave-probe-check.py`; v2 recording and committed physical oracle | All 17 v2 cases/272 bytes and the original 60 cases/6,337 bytes match. This is observed RAM corruption, not a claim that the readback probe sounds better. Other DMG specimens may retain the ordinary block-copy variant. |
 | Positive-sweep stops | `benchmark/run-sweep-map-test.py`, `benchmark/check-physical-probe.py`, `benchmark/generate-sweep-table.py`; v2 and history recordings/oracles | A guarded 1,792-byte empirical map matches 11,587 measured ordinary positive transitions: 192 stops, 11,395 survivors. Six later direct/second-update pairs also agree. This is not a transistor model or proof for every history/revision. |
 
-`results/pr-head/` contains focused checks captured at the preceding seven-fix head `8182d8edbaddbac9f6057930f6cebdabd3b83228`, not either later DAC-edge head: all four C regressions pass; all 57 v2 CPU readback cases match the physical oracle with zero differing bytes; sweep-header regeneration and diff checks pass. The complete 189-case and 58-case WAV comparisons in `results/measured-map/` were captured at the pre-publication head `61d83fe7deeb4c90eef003b7933d0a9dd5fa7f2c`. The changes between that full-waveform head and `8182d8e` were braces/comment/message cleanup, with no changed executable behavior. The new shutdown-edge change has its own focused before/after checks in `results/dac-edge/`; the broad suites were not rerun for it. The full takes have 337/337 and 116/116 packets respectively; history has 26/26.
+`results/pr-head/` contains focused checks captured at the preceding seven-fix head `8182d8edbaddbac9f6057930f6cebdabd3b83228`, not a later DAC follow-up head: all four C regressions pass; all 57 v2 CPU readback cases match the physical oracle with zero differing bytes; sweep-header regeneration and diff checks pass. The complete 189-case and 58-case WAV comparisons in `results/measured-map/` were captured at the pre-publication head `61d83fe7deeb4c90eef003b7933d0a9dd5fa7f2c`. The changes between that full-waveform head and `8182d8e` were braces/comment/message cleanup, with no changed executable behavior. The historical shutdown-edge change has its own focused before/after checks in `results/dac-edge/`; the broad suites were not rerun for it. The full takes have 337/337 and 116/116 packets respectively; history has 26/26.
 
 The reconnect correction has independent preserved-79fb345c/candidate renders and focused callback checks in `results/dac-reconnect/`. The complete original torture stimulus was rendered through its suite-end packet; all 337 expected candidate packets decode successfully, with seven additional invalid/partial search candidates retained in the report. Hardware comparison is scoped to the eight recorded reconnect/control cases, using the original mapping and gain. Three complete enabled-DAC controls remain byte-identical; CH2 control case 180 differs during its earlier all-off startup, while its reconnect and subsequent samples are identical. The historical broader regression results above are not relabeled as runs on the reconnect head.
+
+The synthesis-timing correction has new callback results in `results/dac-timing/tests/`: 16 failures before and zero after, with all 40 CGB output controls exact. Updated shutdown/reconnect tests pass; their earlier test sources and outputs remain in their historical result directories. The complete original-suite comparison uses unchanged alignment and gain: pooled RMSE falls from 0.0083014034 to 0.0081145269, with all 189 case RMSEs lower, 337/337 packets and zero readback differences. This is existing hardware evidence under a frozen comparison, not a claim of perfect emulation. NOIZE JAMS correlation is effectively unchanged by this timing follow-up. The enabled-mask refinement also prevents an anticipatory DC-offset-mode artifact found in the intermediate candidate. One finite-suite throughput pair took 19.59 seconds before and 20.00 after for 563.65 seconds of audio; this is not a statistical performance estimate.
 
 The broader historical SameSuite report is preserved under `results/historical-broad/`: existing failures were unchanged from its preserved baseline, not converted into passes. It is not a fresh all-platform run on the publication head. `results/measured-map/regressions/` separately records the final six upstream sanity cases and two documented DMG-B DIV cases. The performance report is one before/after sweep-map run on the same finite 160.121-second ROM with 48 kHz audio: about 5.06/5.05 seconds wall time on the tested Ryzen 5650U. It is a throughput observation, not a statistical performance claim for the whole seven-commit series.
 
@@ -50,12 +53,14 @@ python evidence.py decode
 Focused code regressions and physical CPU readbacks:
 
 ```sh
+make -C "$sameboy_checkout" CONF=release build/lib/libsameboy.a
 bash benchmark/run-noise-feedback-test.sh "$sameboy_checkout"
 bash benchmark/run-pulse-clock-test.sh "$sameboy_checkout"
 bash benchmark/run-pulse-duty-test.sh "$sameboy_checkout"
 bash benchmark/run-mixer-dac-test.sh "$sameboy_checkout"
 bash benchmark/run-dac-edge-test.sh "$sameboy_checkout"
 bash benchmark/run-dac-reconnect-test.sh "$sameboy_checkout"
+bash benchmark/run-dac-timing-test.sh "$sameboy_checkout"
 python benchmark/check-physical-probe.py --sameboy "$sameboy_checkout" --out build/cpu-v2
 python benchmark/run-sweep-map-test.py --sameboy "$sameboy_checkout" --out build/sweep-boundaries
 python benchmark/wave-probe-check.py --sameboy "$sameboy_checkout" --out build/wave-minimal --minimal
@@ -112,18 +117,14 @@ python oracle-analysis/retrigger_hardware.py --hardware build/hardware/retrigger
 
 The original 15.186-second analysis duration is retained in `benchmark/baseline.json`. These noise fixtures loop; render them for the same established 18.3-second span if creating new emulator captures with `benchmark/capture.c`. The frozen torture suites instead run to their explicit suite-complete marker.
 
-For the revised standalone DAC-gap fixture, the suite render above builds a capture executable usable here. Its control keeps a DAC enabled continuously from the boot ROM; no startup disconnection can alter the coupling capacitor:
+The standalone DAC-gap fixture and unchanged `verify-dac-off.py` checker are
+historical `79fb345c` evidence. That checker assumes zero synthesis latency,
+requiring silence from the first sample after the CPU DAC-disable instruction;
+it must not be used unchanged on the current head. Use the callback tests above
+for the current implementation. To check the archived historical captures:
 
 ```sh
 mkdir -p build/dac-edge
-bash benchmark/run-dac-off-probe.sh build/v2-render/capture build/dac-edge/current "$sameboy_checkout"
-python benchmark/verify-dac-off.py --prefix build/dac-edge/current \
-  --control-reference results/dac-edge/before-dac-control.wav --out build/dac-edge/current.json
-```
-
-The checker requires silence from the first sample after the DAC-disable instruction, with no fade allowance, and full-file identity against the preceding-head control. To check the archived captures directly:
-
-```sh
 python benchmark/verify-dac-off.py --prefix results/dac-edge/after \
   --control-reference results/dac-edge/before-dac-control.wav --out build/dac-edge/archived-after.json
 ```

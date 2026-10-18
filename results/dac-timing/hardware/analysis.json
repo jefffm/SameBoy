@@ -1,0 +1,5310 @@
+{
+  "diagnostic_final_outputs_identical": true,
+  "steady_tone_summary": {
+    "periods": 31,
+    "edge_count": 62,
+    "hardware_minus_emulator_samples_range": [
+      -0.5673581650356141,
+      0.6138696029474033
+    ],
+    "rms_samples": 0.4504759298043061,
+    "selection_authority": "The initial source-period contains trigger/startup transients; all remaining complete256Hz periods are used. Initial-period observations remain in calibration_tone_edges."
+  },
+  "method": "Inspect recorded mixed-DAC controls, retaining original packet timing/gain.\n\nNo parameter is fitted. Native strongest signed derivative identifies edge time;\nwindows come from the 64-tap synthesis support. The calibration's256Hz period\nsupplies independent, complete-cycle tone-edge windows. Amplitude means use the\nquiet halves on either side of the midpoint, as descriptive levels, not fitted\nstep heights. Original WAVs are unchanged.\n",
+  "inputs_sha256": {
+    "artifacts/torture/comparison-torture-pula2a6h/metrics.json": "8c0eb6c3214f0f0768543330a8e8d5311f390c5028f86f2f72a83b92f29c549a",
+    "artifacts/dac-on-edge/torture-after/audio.wav": "bdff9c0fceb184723455de9bbc9ebb47a2dedb23e9b7aca41e655ae60966a696",
+    "artifacts/dac-on-edge/torture-after/apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+    "artifacts/dac-on-edge/torture-after/markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657",
+    "artifacts/dac-on-edge/torture-after/provenance.json": "c0f31baf68ec679217a5a81c021f84fd3c7f90f7abff68a353628ee64b44ab78",
+    "artifacts/dac-connected/final-mask-render/audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+    "artifacts/dac-connected/final-mask-render/apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+    "artifacts/dac-connected/final-mask-render/provenance.json": "5c316619e0468ae458e7a3f644e35b018005d58a1b4fe2a7b5d6aa3ef8cd5e96",
+    "artifacts/hardware/torture-pula2a6h/capture.wav": "c998f8af6ed5389fdbc12127d68da749bfe7ba341f67afda141fe8e31cc73960"
+  },
+  "frozen_mapping": {
+    "clock": 1.0000585963100947,
+    "offset_s": 94.04181316194428,
+    "gain": 0.06392767566127538
+  },
+  "synthesis": {
+    "width_samples": 64,
+    "midpoint_samples": 32,
+    "rate": 48000
+  },
+  "cases": [
+    {
+      "id": 177,
+      "name": "ch1-DAC-off-all-off",
+      "channel": 1,
+      "case_interval_s": [
+        556.825657845,
+        556.888244629
+      ],
+      "writes": [
+        {
+          "write_index": "184674",
+          "run_start_tick_8mhz": "4670992216",
+          "run_start_seconds": "556.825663567",
+          "address": "0xff25",
+          "value": "0x11"
+        },
+        {
+          "write_index": "184675",
+          "run_start_tick_8mhz": "4670992256",
+          "run_start_seconds": "556.825668335",
+          "address": "0xff10",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184676",
+          "run_start_tick_8mhz": "4670992296",
+          "run_start_seconds": "556.825673103",
+          "address": "0xff11",
+          "value": "0x80"
+        },
+        {
+          "write_index": "184677",
+          "run_start_tick_8mhz": "4670992336",
+          "run_start_seconds": "556.825677872",
+          "address": "0xff12",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "184678",
+          "run_start_tick_8mhz": "4670992376",
+          "run_start_seconds": "556.825682640",
+          "address": "0xff13",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184679",
+          "run_start_tick_8mhz": "4670992416",
+          "run_start_seconds": "556.825687408",
+          "address": "0xff14",
+          "value": "0x86"
+        },
+        {
+          "write_index": "184680",
+          "run_start_tick_8mhz": "4671123528",
+          "run_start_seconds": "556.841317177",
+          "address": "0xff12",
+          "value": "0x08"
+        },
+        {
+          "write_index": "184681",
+          "run_start_tick_8mhz": "4671123568",
+          "run_start_seconds": "556.841321945",
+          "address": "0xff14",
+          "value": "0x86"
+        },
+        {
+          "write_index": "184682",
+          "run_start_tick_8mhz": "4671254680",
+          "run_start_seconds": "556.856951714",
+          "address": "0xff12",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184683",
+          "run_start_tick_8mhz": "4671385792",
+          "run_start_seconds": "556.872581482",
+          "address": "0xff25",
+          "value": "0x11"
+        },
+        {
+          "write_index": "184684",
+          "run_start_tick_8mhz": "4671385832",
+          "run_start_seconds": "556.872586250",
+          "address": "0xff10",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184685",
+          "run_start_tick_8mhz": "4671385872",
+          "run_start_seconds": "556.872591019",
+          "address": "0xff11",
+          "value": "0x80"
+        },
+        {
+          "write_index": "184686",
+          "run_start_tick_8mhz": "4671385912",
+          "run_start_seconds": "556.872595787",
+          "address": "0xff12",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "184687",
+          "run_start_tick_8mhz": "4671385952",
+          "run_start_seconds": "556.872600555",
+          "address": "0xff13",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184688",
+          "run_start_tick_8mhz": "4671385992",
+          "run_start_seconds": "556.872605324",
+          "address": "0xff14",
+          "value": "0x86"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "184680",
+            "run_start_tick_8mhz": "4671123528",
+            "run_start_seconds": "556.841317177",
+            "address": "0xff12",
+            "value": "0x08"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26728352,
+                26728447
+              ],
+              "strongest_derivative_time_s": 556.8419895833333,
+              "derivative_interval_s": [
+                556.8419791666666,
+                556.842
+              ],
+              "edge_offset_ms": 0.672406333364961,
+              "strongest_delta": 0.012277125944104187,
+              "min": -0.009666797879077744,
+              "max": 0.008911792676413146,
+              "strongest_absolute_derivative_time_s": 556.8419895833333,
+              "strongest_absolute_derivative_delta": 0.012277125944104187,
+              "early_mean": -0.009289904939569302,
+              "late_mean": 0.007684145112597271,
+              "early_rms": 0.009291465056798358,
+              "late_rms": 0.007685096042961981
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26728352,
+                26728447
+              ],
+              "strongest_derivative_time_s": 556.8419895833333,
+              "derivative_interval_s": [
+                556.8419791666666,
+                556.842
+              ],
+              "edge_offset_ms": 0.672406333364961,
+              "strongest_delta": 0.012275175026267843,
+              "min": -0.009690208893113856,
+              "max": 0.008892283498049719,
+              "strongest_absolute_derivative_time_s": 556.8419895833333,
+              "strongest_absolute_derivative_delta": 0.012275175026267843,
+              "early_mean": -0.009312584359416785,
+              "late_mean": 0.0076672371580156365,
+              "early_rms": 0.009314148997388938,
+              "late_rms": 0.007668182574479691
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31243925,
+                31244020
+              ],
+              "strongest_derivative_time_s": 556.8419850357602,
+              "derivative_interval_s": [
+                556.8419746197039,
+                556.8419954518165
+              ],
+              "edge_offset_ms": 0.6678587602664265,
+              "strongest_delta": 0.01179361343383789,
+              "min": -0.009459137916564941,
+              "max": 0.008850812911987305,
+              "strongest_absolute_derivative_time_s": 556.8419850357602,
+              "strongest_absolute_derivative_delta": 0.01179361343383789,
+              "early_mean": -0.009228028357028961,
+              "late_mean": 0.007441830635070801,
+              "early_rms": 0.00922892108756166,
+              "late_rms": 0.007443110819557314
+            }
+          },
+          "hardware_minus_emulator_edge_samples": -0.2182835087296553,
+          "hardware_minus_delayed_edge_samples": -0.2182835087296553
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "184682",
+            "run_start_tick_8mhz": "4671254680",
+            "run_start_seconds": "556.856951714",
+            "address": "0xff12",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26729102,
+                26729197
+              ],
+              "strongest_derivative_time_s": 556.8569270833333,
+              "derivative_interval_s": [
+                556.8569166666666,
+                556.8569375
+              ],
+              "edge_offset_ms": -0.02463066675773007,
+              "strongest_delta": -0.0006047845292662161,
+              "min": 0.0,
+              "max": 0.0006750175713745508,
+              "strongest_absolute_derivative_time_s": 556.8569270833333,
+              "strongest_absolute_derivative_delta": -0.0006047845292662161,
+              "early_mean": 0.000657093513753153,
+              "late_mean": 0.0,
+              "early_rms": 0.0006571869870759845,
+              "late_rms": 0.0
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26729102,
+                26729197
+              ],
+              "strongest_derivative_time_s": 556.85759375,
+              "derivative_interval_s": [
+                556.8575833333333,
+                556.8576041666666
+              ],
+              "edge_offset_ms": 0.6420359999310676,
+              "strongest_delta": -0.0005365024049942239,
+              "min": 0.0,
+              "max": 0.0006730666535382082,
+              "strongest_absolute_derivative_time_s": 556.85759375,
+              "strongest_absolute_derivative_delta": -0.0005365024049942239,
+              "early_mean": 0.0006555083930111246,
+              "late_mean": 0.0,
+              "early_rms": 0.0006556027386467831,
+              "late_rms": 0.0
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31244675,
+                31244770
+              ],
+              "strongest_derivative_time_s": 556.8576299523592,
+              "derivative_interval_s": [
+                556.8576195363029,
+                556.8576403684154
+              ],
+              "edge_offset_ms": 0.6782383591144026,
+              "strongest_delta": -0.0007632970809936523,
+              "min": -0.00015032291412353516,
+              "max": 0.000984787940979004,
+              "strongest_absolute_derivative_time_s": 556.8576299523592,
+              "strongest_absolute_derivative_delta": -0.0007632970809936523,
+              "early_mean": 0.0009551048278808594,
+              "late_mean": -0.00011999607086181641,
+              "early_rms": 0.0009552967438132847,
+              "late_rms": 0.0001206821647151225
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 33.737713241862366,
+          "hardware_minus_delayed_edge_samples": 1.7377132408000762
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "184686",
+            "run_start_tick_8mhz": "4671385912",
+            "run_start_seconds": "556.872595787",
+            "address": "0xff12",
+            "value": "0xf0"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26729853,
+                26729948
+              ],
+              "strongest_derivative_time_s": 556.8725729166666,
+              "derivative_interval_s": [
+                556.8725625,
+                556.8725833333333
+              ],
+              "edge_offset_ms": -0.022870333395985654,
+              "strongest_delta": 0.0006028336114298735,
+              "min": 0.0,
+              "max": 0.0006028336114298735,
+              "strongest_absolute_derivative_time_s": 556.8725729166666,
+              "strongest_absolute_derivative_delta": 0.0006028336114298735,
+              "early_mean": 0.0,
+              "late_mean": 0.0004908509276238064,
+              "early_rms": 0.0,
+              "late_rms": 0.000490910268331397
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26729853,
+                26729948
+              ],
+              "strongest_derivative_time_s": 556.8732395833333,
+              "derivative_interval_s": [
+                556.8732291666666,
+                556.87325
+              ],
+              "edge_offset_ms": 0.643796333292812,
+              "strongest_delta": 0.0005345514871578813,
+              "min": 0.0,
+              "max": 0.0005345514871578813,
+              "strongest_absolute_derivative_time_s": 556.8732395833333,
+              "strongest_absolute_derivative_delta": 0.0005345514871578813,
+              "early_mean": 0.0,
+              "late_mean": 0.0004900705604892694,
+              "early_rms": 0.0,
+              "late_rms": 0.0004901343443101822
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31245426,
+                31245521
+              ],
+              "strongest_derivative_time_s": 556.8737748396616,
+              "derivative_interval_s": [
+                556.8737644236053,
+                556.8737852557178
+              ],
+              "edge_offset_ms": 1.179052661541391,
+              "strongest_delta": 0.012685179710388184,
+              "min": -0.01579296588897705,
+              "max": 0.0025821924209594727,
+              "strongest_absolute_derivative_time_s": 556.8737748396616,
+              "strongest_absolute_derivative_delta": 0.012685179710388184,
+              "early_mean": -0.00011154264211654663,
+              "late_mean": -0.0078097105026245115,
+              "early_rms": 0.00011217543869052835,
+              "late_rms": 0.010958555950026976
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 57.69230375699408,
+          "hardware_minus_delayed_edge_samples": 25.69230375593179
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "name": "ch1-DAC-off-control",
+      "channel": 1,
+      "case_interval_s": [
+        557.029125214,
+        557.091716766
+      ],
+      "writes": [
+        {
+          "write_index": "184813",
+          "run_start_tick_8mhz": "4672699024",
+          "run_start_seconds": "557.029130936",
+          "address": "0xff25",
+          "value": "0x11"
+        },
+        {
+          "write_index": "184814",
+          "run_start_tick_8mhz": "4672699064",
+          "run_start_seconds": "557.029135704",
+          "address": "0xff10",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184815",
+          "run_start_tick_8mhz": "4672699104",
+          "run_start_seconds": "557.029140472",
+          "address": "0xff11",
+          "value": "0x80"
+        },
+        {
+          "write_index": "184816",
+          "run_start_tick_8mhz": "4672699144",
+          "run_start_seconds": "557.029145241",
+          "address": "0xff12",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "184817",
+          "run_start_tick_8mhz": "4672699184",
+          "run_start_seconds": "557.029150009",
+          "address": "0xff13",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184818",
+          "run_start_tick_8mhz": "4672699224",
+          "run_start_seconds": "557.029154778",
+          "address": "0xff14",
+          "value": "0x86"
+        },
+        {
+          "write_index": "184819",
+          "run_start_tick_8mhz": "4672699264",
+          "run_start_seconds": "557.029159546",
+          "address": "0xff17",
+          "value": "0x08"
+        },
+        {
+          "write_index": "184820",
+          "run_start_tick_8mhz": "4672830376",
+          "run_start_seconds": "557.044789314",
+          "address": "0xff12",
+          "value": "0x08"
+        },
+        {
+          "write_index": "184821",
+          "run_start_tick_8mhz": "4672830416",
+          "run_start_seconds": "557.044794083",
+          "address": "0xff14",
+          "value": "0x86"
+        },
+        {
+          "write_index": "184822",
+          "run_start_tick_8mhz": "4672961528",
+          "run_start_seconds": "557.060423851",
+          "address": "0xff12",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184823",
+          "run_start_tick_8mhz": "4673092640",
+          "run_start_seconds": "557.076053619",
+          "address": "0xff25",
+          "value": "0x11"
+        },
+        {
+          "write_index": "184824",
+          "run_start_tick_8mhz": "4673092680",
+          "run_start_seconds": "557.076058388",
+          "address": "0xff10",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184825",
+          "run_start_tick_8mhz": "4673092720",
+          "run_start_seconds": "557.076063156",
+          "address": "0xff11",
+          "value": "0x80"
+        },
+        {
+          "write_index": "184826",
+          "run_start_tick_8mhz": "4673092760",
+          "run_start_seconds": "557.076067924",
+          "address": "0xff12",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "184827",
+          "run_start_tick_8mhz": "4673092800",
+          "run_start_seconds": "557.076072693",
+          "address": "0xff13",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184828",
+          "run_start_tick_8mhz": "4673092840",
+          "run_start_seconds": "557.076077461",
+          "address": "0xff14",
+          "value": "0x86"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "184820",
+            "run_start_tick_8mhz": "4672830376",
+            "run_start_seconds": "557.044789314",
+            "address": "0xff12",
+            "value": "0x08"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26738118,
+                26738213
+              ],
+              "strongest_derivative_time_s": 557.0454479166667,
+              "derivative_interval_s": [
+                557.0454375,
+                557.0454583333334
+              ],
+              "edge_offset_ms": 0.6586026667037004,
+              "strongest_delta": 0.010437410424433084,
+              "min": -0.009703865317968255,
+              "max": 0.009729227249840709,
+              "strongest_absolute_derivative_time_s": 557.0454479166667,
+              "strongest_absolute_derivative_delta": 0.010437410424433084,
+              "early_mean": -0.009351968513237953,
+              "late_mean": 0.007668927953473797,
+              "early_rms": 0.009353484877390673,
+              "late_rms": 0.0076699389292820275
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26738118,
+                26738213
+              ],
+              "strongest_derivative_time_s": 557.0454479166667,
+              "derivative_interval_s": [
+                557.0454375,
+                557.0454583333334
+              ],
+              "edge_offset_ms": 0.6586026667037004,
+              "strongest_delta": 0.010439361342269428,
+              "min": -0.00967069971475043,
+              "max": 0.009754589181713163,
+              "strongest_absolute_derivative_time_s": 557.0454479166667,
+              "strongest_absolute_derivative_delta": 0.010439361342269428,
+              "early_mean": -0.009319656436573526,
+              "late_mean": 0.007692989273455359,
+              "early_rms": 0.009321168323600403,
+              "late_rms": 0.0076940006163844134
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31253692,
+                31253787
+              ],
+              "strongest_derivative_time_s": 557.0454731121097,
+              "derivative_interval_s": [
+                557.0454626960533,
+                557.045483528166
+              ],
+              "edge_offset_ms": 0.683798109662348,
+              "strongest_delta": 0.00973367691040039,
+              "min": -0.009455561637878418,
+              "max": 0.009186029434204102,
+              "strongest_absolute_derivative_time_s": 557.0454731121097,
+              "strongest_absolute_derivative_delta": 0.00973367691040039,
+              "early_mean": -0.009220883250236511,
+              "late_mean": 0.007439231872558594,
+              "early_rms": 0.009221751475381918,
+              "late_rms": 0.007440129817973675
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 1.2093812620150857,
+          "hardware_minus_delayed_edge_samples": 1.2093812620150857
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "184822",
+            "run_start_tick_8mhz": "4672961528",
+            "run_start_seconds": "557.060423851",
+            "address": "0xff12",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26738869,
+                26738964
+              ],
+              "strongest_derivative_time_s": 557.0604270833334,
+              "derivative_interval_s": [
+                557.0604166666667,
+                557.0604375
+              ],
+              "edge_offset_ms": 0.0032323333698514034,
+              "strongest_delta": -0.00443833807767949,
+              "min": -0.007325696475466585,
+              "max": 0.0006711157357018657,
+              "strongest_absolute_derivative_time_s": 557.0604270833334,
+              "strongest_absolute_derivative_delta": -0.00443833807767949,
+              "early_mean": 0.0006531916780804677,
+              "late_mean": -0.006009737364258934,
+              "early_rms": 0.0006532857096853738,
+              "late_rms": 0.006010493578290072
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26738869,
+                26738964
+              ],
+              "strongest_derivative_time_s": 557.06109375,
+              "derivative_interval_s": [
+                557.0610833333334,
+                557.0611041666667
+              ],
+              "edge_offset_ms": 0.6698990000586491,
+              "strongest_delta": -0.00443833807767949,
+              "min": -0.007390076764065892,
+              "max": 0.0006730666535382082,
+              "strongest_absolute_derivative_time_s": 557.06109375,
+              "strongest_absolute_derivative_delta": -0.00443833807767949,
+              "early_mean": 0.0006552645282815817,
+              "late_mean": -0.006817937593261143,
+              "early_rms": 0.0006553566857879071,
+              "late_rms": 0.00681879267688588
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31254443,
+                31254538
+              ],
+              "strongest_derivative_time_s": 557.0610971965959,
+              "derivative_interval_s": [
+                557.0610867805397,
+                557.0611076126522
+              ],
+              "edge_offset_ms": 0.6733455959420098,
+              "strongest_delta": -0.006716489791870117,
+              "min": -0.00723111629486084,
+              "max": 0.0011104345321655273,
+              "strongest_absolute_derivative_time_s": 557.0610971965959,
+              "strongest_absolute_derivative_delta": -0.006716489791870117,
+              "early_mean": 0.0009540542960166931,
+              "late_mean": -0.006682761510213216,
+              "early_rms": 0.0009543549611215534,
+              "late_rms": 0.006683500028894174
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 32.165436603463604,
+          "hardware_minus_delayed_edge_samples": 0.1654366024013143
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "184826",
+            "run_start_tick_8mhz": "4673092760",
+            "run_start_seconds": "557.076067924",
+            "address": "0xff12",
+            "value": "0xf0"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26739620,
+                26739715
+              ],
+              "strongest_derivative_time_s": 557.0760729166667,
+              "derivative_interval_s": [
+                557.0760625,
+                557.0760833333334
+              ],
+              "edge_offset_ms": 0.004992666731595818,
+              "strongest_delta": 0.004440288995515832,
+              "min": -0.0005247968979761681,
+              "max": 0.007458358888337884,
+              "strongest_absolute_derivative_time_s": 557.0760729166667,
+              "strongest_absolute_derivative_delta": 0.004440288995515832,
+              "early_mean": -0.0005101650142035985,
+              "late_mean": 0.006118338457148673,
+              "early_rms": 0.0005102442757404988,
+              "late_rms": 0.006119106337312659
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26739620,
+                26739715
+              ],
+              "strongest_derivative_time_s": 557.0767395833334,
+              "derivative_interval_s": [
+                557.0767291666667,
+                557.07675
+              ],
+              "edge_offset_ms": 0.6716593334203935,
+              "strongest_delta": 0.004440288995515832,
+              "min": -0.0005950299400845029,
+              "max": 0.007454457052665199,
+              "strongest_absolute_derivative_time_s": 557.0767395833334,
+              "strongest_absolute_derivative_delta": 0.004440288995515832,
+              "early_mean": -0.0005790568002994476,
+              "late_mean": 0.006877245495485958,
+              "early_rms": 0.0005791386347806533,
+              "late_rms": 0.006878112182590428
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31255194,
+                31255289
+              ],
+              "strongest_derivative_time_s": 557.0772420838986,
+              "derivative_interval_s": [
+                557.0772316678423,
+                557.0772524999549
+              ],
+              "edge_offset_ms": 1.174159898596372,
+              "strongest_delta": 0.013513684272766113,
+              "min": -0.0098494291305542,
+              "max": 0.007526040077209473,
+              "strongest_absolute_derivative_time_s": 557.0772420838986,
+              "strongest_absolute_derivative_delta": 0.013513684272766113,
+              "early_mean": -0.0008658915758132935,
+              "late_mean": -0.0010103543599446615,
+              "early_rms": 0.000866074718357353,
+              "late_rms": 0.007779109292994036
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 56.12002712950925,
+          "hardware_minus_delayed_edge_samples": 24.120027128446964
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "name": "ch2-DAC-off-all-off",
+      "channel": 2,
+      "case_interval_s": [
+        557.232597351,
+        557.295174599
+      ],
+      "writes": [
+        {
+          "write_index": "184953",
+          "run_start_tick_8mhz": "4674405872",
+          "run_start_seconds": "557.232603073",
+          "address": "0xff25",
+          "value": "0x22"
+        },
+        {
+          "write_index": "184954",
+          "run_start_tick_8mhz": "4674405912",
+          "run_start_seconds": "557.232607841",
+          "address": "0xff16",
+          "value": "0x80"
+        },
+        {
+          "write_index": "184955",
+          "run_start_tick_8mhz": "4674405952",
+          "run_start_seconds": "557.232612610",
+          "address": "0xff17",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "184956",
+          "run_start_tick_8mhz": "4674405992",
+          "run_start_seconds": "557.232617378",
+          "address": "0xff18",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184957",
+          "run_start_tick_8mhz": "4674406032",
+          "run_start_seconds": "557.232622147",
+          "address": "0xff19",
+          "value": "0x86"
+        },
+        {
+          "write_index": "184958",
+          "run_start_tick_8mhz": "4674537144",
+          "run_start_seconds": "557.248251915",
+          "address": "0xff17",
+          "value": "0x08"
+        },
+        {
+          "write_index": "184959",
+          "run_start_tick_8mhz": "4674537184",
+          "run_start_seconds": "557.248256683",
+          "address": "0xff19",
+          "value": "0x86"
+        },
+        {
+          "write_index": "184960",
+          "run_start_tick_8mhz": "4674668296",
+          "run_start_seconds": "557.263886452",
+          "address": "0xff17",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184961",
+          "run_start_tick_8mhz": "4674799408",
+          "run_start_seconds": "557.279516220",
+          "address": "0xff25",
+          "value": "0x22"
+        },
+        {
+          "write_index": "184962",
+          "run_start_tick_8mhz": "4674799448",
+          "run_start_seconds": "557.279520988",
+          "address": "0xff16",
+          "value": "0x80"
+        },
+        {
+          "write_index": "184963",
+          "run_start_tick_8mhz": "4674799488",
+          "run_start_seconds": "557.279525757",
+          "address": "0xff17",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "184964",
+          "run_start_tick_8mhz": "4674799528",
+          "run_start_seconds": "557.279530525",
+          "address": "0xff18",
+          "value": "0x00"
+        },
+        {
+          "write_index": "184965",
+          "run_start_tick_8mhz": "4674799568",
+          "run_start_seconds": "557.279535294",
+          "address": "0xff19",
+          "value": "0x86"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "184958",
+            "run_start_tick_8mhz": "4674537144",
+            "run_start_seconds": "557.248251915",
+            "address": "0xff17",
+            "value": "0x08"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26747885,
+                26747980
+              ],
+              "strongest_derivative_time_s": 557.2489270833333,
+              "derivative_interval_s": [
+                557.2489166666667,
+                557.2489375
+              ],
+              "edge_offset_ms": 0.6751683333732217,
+              "strongest_delta": 0.010971961911590965,
+              "min": -0.009772147442240246,
+              "max": 0.009432687738716628,
+              "strongest_absolute_derivative_time_s": 557.2489270833333,
+              "strongest_absolute_derivative_delta": 0.010971961911590965,
+              "early_mean": -0.009351358851414096,
+              "late_mean": 0.007632120636961467,
+              "early_rms": 0.00935304940381002,
+              "late_rms": 0.007633060563242297
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26747885,
+                26747980
+              ],
+              "strongest_derivative_time_s": 557.2489270833333,
+              "derivative_interval_s": [
+                557.2489166666667,
+                557.2489375
+              ],
+              "edge_offset_ms": 0.6751683333732217,
+              "strongest_delta": 0.010973912829427309,
+              "min": -0.009727276332004367,
+              "max": 0.009469755177607139,
+              "strongest_absolute_derivative_time_s": 557.2489270833333,
+              "strongest_absolute_derivative_delta": 0.010973912829427309,
+              "early_mean": -0.009307950929555471,
+              "late_mean": 0.007664635934233845,
+              "early_rms": 0.00930963466566942,
+              "late_rms": 0.00766557985095653
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31263459,
+                31263554
+              ],
+              "strongest_derivative_time_s": 557.248919524234,
+              "derivative_interval_s": [
+                557.2489091081777,
+                557.2489299402903
+              ],
+              "edge_offset_ms": 0.6676092340285322,
+              "strongest_delta": 0.011665105819702148,
+              "min": -0.00946509838104248,
+              "max": 0.00885462760925293,
+              "strongest_absolute_derivative_time_s": 557.248919524234,
+              "strongest_absolute_derivative_delta": 0.011665105819702148,
+              "early_mean": -0.009230591356754303,
+              "late_mean": 0.00741734504699707,
+              "early_rms": 0.009231466054889443,
+              "late_rms": 0.00741850613990585
+            }
+          },
+          "hardware_minus_emulator_edge_samples": -0.36283676854509395,
+          "hardware_minus_delayed_edge_samples": -0.36283676854509395
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "184960",
+            "run_start_tick_8mhz": "4674668296",
+            "run_start_seconds": "557.263886452",
+            "address": "0xff17",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26748635,
+                26748730
+              ],
+              "strongest_derivative_time_s": 557.2638645833333,
+              "derivative_interval_s": [
+                557.2638541666666,
+                557.263875
+              ],
+              "edge_offset_ms": -0.021868666635782574,
+              "strongest_delta": -0.0006008826935935309,
+              "min": 0.0,
+              "max": 0.0006711157357018657,
+              "strongest_absolute_derivative_time_s": 557.2638645833333,
+              "strongest_absolute_derivative_delta": -0.0006008826935935309,
+              "early_mean": 0.000652703948621382,
+              "late_mean": 0.0,
+              "early_rms": 0.0006527994169817237,
+              "late_rms": 0.0
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26748635,
+                26748730
+              ],
+              "strongest_derivative_time_s": 557.26453125,
+              "derivative_interval_s": [
+                557.2645208333333,
+                557.2645416666667
+              ],
+              "edge_offset_ms": 0.6447980000530151,
+              "strongest_delta": -0.0005365024049942239,
+              "min": 0.0,
+              "max": 0.0006730666535382082,
+              "strongest_absolute_derivative_time_s": 557.26453125,
+              "strongest_absolute_derivative_delta": -0.0005365024049942239,
+              "early_mean": 0.0006552645282815817,
+              "late_mean": 0.0,
+              "early_rms": 0.0006553566857879071,
+              "late_rms": 0.0
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31264209,
+                31264304
+              ],
+              "strongest_derivative_time_s": 557.2645644408329,
+              "derivative_interval_s": [
+                557.2645540247767,
+                557.2645748568892
+              ],
+              "edge_offset_ms": 0.6779888329901951,
+              "strongest_delta": -0.0008018016815185547,
+              "min": -0.0001571178436279297,
+              "max": 0.0009794235229492188,
+              "strongest_absolute_derivative_time_s": 557.2645644408329,
+              "strongest_absolute_derivative_delta": -0.0008018016815185547,
+              "early_mean": 0.000944085419178009,
+              "late_mean": -0.00012103716532389323,
+              "early_rms": 0.0009443867787369818,
+              "late_rms": 0.00012183904004772369
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 33.59315998204693,
+          "hardware_minus_delayed_edge_samples": 1.5931599809846375
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "184963",
+            "run_start_tick_8mhz": "4674799488",
+            "run_start_seconds": "557.279525757",
+            "address": "0xff17",
+            "value": "0xf0"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26749386,
+                26749481
+              ],
+              "strongest_derivative_time_s": 557.2795104166667,
+              "derivative_interval_s": [
+                557.2795,
+                557.2795208333333
+              ],
+              "edge_offset_ms": -0.015340333334279421,
+              "strongest_delta": 0.0005989317757571882,
+              "min": 0.0,
+              "max": 0.0005989317757571882,
+              "strongest_absolute_derivative_time_s": 557.2795104166667,
+              "strongest_absolute_derivative_delta": 0.0005989317757571882,
+              "early_mean": 0.0,
+              "late_mean": 0.00048772945908565817,
+              "early_rms": 0.0,
+              "late_rms": 0.0004877898037443038
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26749386,
+                26749481
+              ],
+              "strongest_derivative_time_s": 557.2801770833333,
+              "derivative_interval_s": [
+                557.2801666666667,
+                557.2801875
+              ],
+              "edge_offset_ms": 0.6513263333545183,
+              "strongest_delta": 0.0005345514871578813,
+              "min": 0.0,
+              "max": 0.0005345514871578813,
+              "strongest_absolute_derivative_time_s": 557.2801770833333,
+              "strongest_absolute_derivative_delta": 0.0005345514871578813,
+              "early_mean": 0.0,
+              "late_mean": 0.0004899404993001799,
+              "early_rms": 0.0,
+              "late_rms": 0.000490006716582969
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31264960,
+                31265055
+              ],
+              "strongest_derivative_time_s": 557.2807093281356,
+              "derivative_interval_s": [
+                557.2806989120792,
+                557.2807197441919
+              ],
+              "edge_offset_ms": 1.183571135584316,
+              "strongest_delta": 0.010061025619506836,
+              "min": -0.015346050262451172,
+              "max": 0.003148674964904785,
+              "strongest_absolute_derivative_time_s": 557.2802093574319,
+              "strongest_absolute_derivative_delta": -0.013316631317138672,
+              "early_mean": -0.00011894851922988892,
+              "late_mean": -0.007587154706319173,
+              "early_rms": 0.00011941633647099824,
+              "late_rms": 0.010808922235344335
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 57.54775050809258,
+          "hardware_minus_delayed_edge_samples": 25.547750507030287
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "name": "ch2-DAC-off-control",
+      "channel": 2,
+      "case_interval_s": [
+        557.436055183,
+        557.498637199
+      ],
+      "writes": [
+        {
+          "write_index": "185090",
+          "run_start_tick_8mhz": "4676112600",
+          "run_start_seconds": "557.436060905",
+          "address": "0xff25",
+          "value": "0x22"
+        },
+        {
+          "write_index": "185091",
+          "run_start_tick_8mhz": "4676112640",
+          "run_start_seconds": "557.436065674",
+          "address": "0xff16",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185092",
+          "run_start_tick_8mhz": "4676112680",
+          "run_start_seconds": "557.436070442",
+          "address": "0xff17",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "185093",
+          "run_start_tick_8mhz": "4676112720",
+          "run_start_seconds": "557.436075211",
+          "address": "0xff18",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185094",
+          "run_start_tick_8mhz": "4676112760",
+          "run_start_seconds": "557.436079979",
+          "address": "0xff19",
+          "value": "0x86"
+        },
+        {
+          "write_index": "185095",
+          "run_start_tick_8mhz": "4676112800",
+          "run_start_seconds": "557.436084747",
+          "address": "0xff12",
+          "value": "0x08"
+        },
+        {
+          "write_index": "185096",
+          "run_start_tick_8mhz": "4676243912",
+          "run_start_seconds": "557.451714516",
+          "address": "0xff17",
+          "value": "0x08"
+        },
+        {
+          "write_index": "185097",
+          "run_start_tick_8mhz": "4676243952",
+          "run_start_seconds": "557.451719284",
+          "address": "0xff19",
+          "value": "0x86"
+        },
+        {
+          "write_index": "185098",
+          "run_start_tick_8mhz": "4676375064",
+          "run_start_seconds": "557.467349052",
+          "address": "0xff17",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185099",
+          "run_start_tick_8mhz": "4676506176",
+          "run_start_seconds": "557.482978821",
+          "address": "0xff25",
+          "value": "0x22"
+        },
+        {
+          "write_index": "185100",
+          "run_start_tick_8mhz": "4676506216",
+          "run_start_seconds": "557.482983589",
+          "address": "0xff16",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185101",
+          "run_start_tick_8mhz": "4676506256",
+          "run_start_seconds": "557.482988358",
+          "address": "0xff17",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "185102",
+          "run_start_tick_8mhz": "4676506296",
+          "run_start_seconds": "557.482993126",
+          "address": "0xff18",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185103",
+          "run_start_tick_8mhz": "4676506336",
+          "run_start_seconds": "557.482997894",
+          "address": "0xff19",
+          "value": "0x86"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "185096",
+            "run_start_tick_8mhz": "4676243912",
+            "run_start_seconds": "557.451714516",
+            "address": "0xff17",
+            "value": "0x08"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26757651,
+                26757746
+              ],
+              "strongest_derivative_time_s": 557.4523854166666,
+              "derivative_interval_s": [
+                557.452375,
+                557.4523958333333
+              ],
+              "edge_offset_ms": 0.6709006665914785,
+              "strongest_delta": 0.012757051731844474,
+              "min": -0.009768245606567562,
+              "max": 0.008429915970836515,
+              "strongest_absolute_derivative_time_s": 557.4523854166666,
+              "strongest_absolute_derivative_delta": 0.012757051731844474,
+              "early_mean": -0.009342579721150553,
+              "late_mean": 0.007649808958677641,
+              "early_rms": 0.009344287276242869,
+              "late_rms": 0.007650755348092633
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26757651,
+                26757746
+              ],
+              "strongest_derivative_time_s": 557.4523854166666,
+              "derivative_interval_s": [
+                557.452375,
+                557.4523958333333
+              ],
+              "edge_offset_ms": 0.6709006665914785,
+              "strongest_delta": 0.012757051731844476,
+              "min": -0.009735080003349737,
+              "max": 0.008457228820545313,
+              "strongest_absolute_derivative_time_s": 557.4523854166666,
+              "strongest_absolute_derivative_delta": 0.012757051731844476,
+              "early_mean": -0.009309536050297499,
+              "late_mean": 0.007674780706982826,
+              "early_rms": 0.00931124378041599,
+              "late_rms": 0.007675731177678203
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31273226,
+                31273321
+              ],
+              "strongest_derivative_time_s": 557.452386768471,
+              "derivative_interval_s": [
+                557.4523763524147,
+                557.4523971845273
+              ],
+              "edge_offset_ms": 0.6722524709630306,
+              "strongest_delta": 0.01320195198059082,
+              "min": -0.009914755821228027,
+              "max": 0.008088111877441406,
+              "strongest_absolute_derivative_time_s": 557.452386768471,
+              "strongest_absolute_derivative_delta": 0.01320195198059082,
+              "early_mean": -0.009200744330883026,
+              "late_mean": 0.007396848996480306,
+              "early_rms": 0.009206002841366273,
+              "late_rms": 0.007397881551555756
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 0.06488660983450245,
+          "hardware_minus_delayed_edge_samples": 0.06488660983450245
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "185098",
+            "run_start_tick_8mhz": "4676375064",
+            "run_start_seconds": "557.467349052",
+            "address": "0xff17",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26758401,
+                26758496
+              ],
+              "strongest_derivative_time_s": 557.46734375,
+              "derivative_interval_s": [
+                557.4673333333334,
+                557.4673541666667
+              ],
+              "edge_offset_ms": -0.005301999976836669,
+              "strongest_delta": -0.004440288995515832,
+              "min": -0.007325696475466585,
+              "max": 0.0006730666535382082,
+              "strongest_absolute_derivative_time_s": 557.46734375,
+              "strongest_absolute_derivative_delta": -0.004440288995515832,
+              "early_mean": 0.000654167136998639,
+              "late_mean": -0.0060090870583134875,
+              "early_rms": 0.0006542619373726915,
+              "late_rms": 0.006009839089898397
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26758401,
+                26758496
+              ],
+              "strongest_derivative_time_s": 557.4680104166666,
+              "derivative_interval_s": [
+                557.468,
+                557.4680208333333
+              ],
+              "edge_offset_ms": 0.6613646665982742,
+              "strongest_delta": -0.00443833807767949,
+              "min": -0.007390076764065892,
+              "max": 0.0006750175713745508,
+              "strongest_absolute_derivative_time_s": 557.4680104166666,
+              "strongest_absolute_derivative_delta": -0.00443833807767949,
+              "early_mean": 0.0006561180548349816,
+              "late_mean": -0.006817417348504784,
+              "early_rms": 0.0006562125733678923,
+              "late_rms": 0.006818279657442358
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31273976,
+                31274071
+              ],
+              "strongest_derivative_time_s": 557.46803168507,
+              "derivative_interval_s": [
+                557.4680212690137,
+                557.4680421011262
+              ],
+              "edge_offset_ms": 0.6826330699141181,
+              "strongest_delta": -0.005650877952575684,
+              "min": -0.007696986198425293,
+              "max": 0.0015940666198730469,
+              "strongest_absolute_derivative_time_s": 557.46803168507,
+              "strongest_absolute_derivative_delta": -0.005650877952575684,
+              "early_mean": 0.0009545311331748962,
+              "late_mean": -0.006673010190327963,
+              "early_rms": 0.0009550241723123155,
+              "late_rms": 0.006673696122463377
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 33.02088335476583,
+          "hardware_minus_delayed_edge_samples": 1.020883359160507
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "185101",
+            "run_start_tick_8mhz": "4676506256",
+            "run_start_seconds": "557.482988358",
+            "address": "0xff17",
+            "value": "0xf0"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26759152,
+                26759247
+              ],
+              "strongest_derivative_time_s": 557.4829895833334,
+              "derivative_interval_s": [
+                557.4829791666667,
+                557.483
+              ],
+              "edge_offset_ms": 0.0012253334489287226,
+              "strongest_delta": 0.004440288995515832,
+              "min": -0.0005247968979761681,
+              "max": 0.007458358888337884,
+              "strongest_absolute_derivative_time_s": 557.4829895833334,
+              "strongest_absolute_derivative_delta": 0.004440288995515832,
+              "early_mean": -0.0005101650142035985,
+              "late_mean": 0.006118468518337764,
+              "early_rms": 0.0005102442757404988,
+              "late_rms": 0.006119237805837925
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26759152,
+                26759247
+              ],
+              "strongest_derivative_time_s": 557.48365625,
+              "derivative_interval_s": [
+                557.4836458333333,
+                557.4836666666666
+              ],
+              "edge_offset_ms": 0.6678920000240396,
+              "strongest_delta": 0.004440288995515832,
+              "min": -0.0005950299400845029,
+              "max": 0.007454457052665199,
+              "strongest_absolute_derivative_time_s": 557.48365625,
+              "strongest_absolute_derivative_delta": 0.004440288995515832,
+              "early_mean": -0.0005790568002994476,
+              "late_mean": 0.006877375556675048,
+              "early_rms": 0.0005791386347806533,
+              "late_rms": 0.006878239841834344
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31274727,
+                31274822
+              ],
+              "strongest_derivative_time_s": 557.4841557402597,
+              "derivative_interval_s": [
+                557.4841453242034,
+                557.484166156316
+              ],
+              "edge_offset_ms": 1.1673822597231265,
+              "strongest_delta": 0.01139521598815918,
+              "min": -0.00899195671081543,
+              "max": 0.008769989013671875,
+              "strongest_absolute_derivative_time_s": 557.4841557402597,
+              "strongest_absolute_derivative_delta": 0.01139521598815918,
+              "early_mean": -0.0008695945143699646,
+              "late_mean": -0.0013884703318277996,
+              "early_rms": 0.0008698050697105057,
+              "late_rms": 0.007767057487031913
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 55.97553246116149,
+          "hardware_minus_delayed_edge_samples": 23.97553246555617
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "name": "ch3-DAC-off-all-off",
+      "channel": 3,
+      "case_interval_s": [
+        557.639517784,
+        557.702261925
+      ],
+      "writes": [
+        {
+          "write_index": "185228",
+          "run_start_tick_8mhz": "4677819368",
+          "run_start_seconds": "557.639523506",
+          "address": "0xff25",
+          "value": "0x44"
+        },
+        {
+          "write_index": "185229",
+          "run_start_tick_8mhz": "4677819408",
+          "run_start_seconds": "557.639528275",
+          "address": "0xff1a",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185230",
+          "run_start_tick_8mhz": "4677819448",
+          "run_start_seconds": "557.639533043",
+          "address": "0xff30",
+          "value": "0x01"
+        },
+        {
+          "write_index": "185231",
+          "run_start_tick_8mhz": "4677819488",
+          "run_start_seconds": "557.639537811",
+          "address": "0xff31",
+          "value": "0x12"
+        },
+        {
+          "write_index": "185232",
+          "run_start_tick_8mhz": "4677819528",
+          "run_start_seconds": "557.639542580",
+          "address": "0xff32",
+          "value": "0x23"
+        },
+        {
+          "write_index": "185233",
+          "run_start_tick_8mhz": "4677819568",
+          "run_start_seconds": "557.639547348",
+          "address": "0xff33",
+          "value": "0x34"
+        },
+        {
+          "write_index": "185234",
+          "run_start_tick_8mhz": "4677819608",
+          "run_start_seconds": "557.639552116",
+          "address": "0xff34",
+          "value": "0x45"
+        },
+        {
+          "write_index": "185235",
+          "run_start_tick_8mhz": "4677819648",
+          "run_start_seconds": "557.639556885",
+          "address": "0xff35",
+          "value": "0x56"
+        },
+        {
+          "write_index": "185236",
+          "run_start_tick_8mhz": "4677819688",
+          "run_start_seconds": "557.639561653",
+          "address": "0xff36",
+          "value": "0x67"
+        },
+        {
+          "write_index": "185237",
+          "run_start_tick_8mhz": "4677819728",
+          "run_start_seconds": "557.639566422",
+          "address": "0xff37",
+          "value": "0x78"
+        },
+        {
+          "write_index": "185238",
+          "run_start_tick_8mhz": "4677819768",
+          "run_start_seconds": "557.639571190",
+          "address": "0xff38",
+          "value": "0x89"
+        },
+        {
+          "write_index": "185239",
+          "run_start_tick_8mhz": "4677819808",
+          "run_start_seconds": "557.639575958",
+          "address": "0xff39",
+          "value": "0x9a"
+        },
+        {
+          "write_index": "185240",
+          "run_start_tick_8mhz": "4677819848",
+          "run_start_seconds": "557.639580727",
+          "address": "0xff3a",
+          "value": "0xab"
+        },
+        {
+          "write_index": "185241",
+          "run_start_tick_8mhz": "4677819888",
+          "run_start_seconds": "557.639585495",
+          "address": "0xff3b",
+          "value": "0xbc"
+        },
+        {
+          "write_index": "185242",
+          "run_start_tick_8mhz": "4677819928",
+          "run_start_seconds": "557.639590263",
+          "address": "0xff3c",
+          "value": "0xcd"
+        },
+        {
+          "write_index": "185243",
+          "run_start_tick_8mhz": "4677819968",
+          "run_start_seconds": "557.639595032",
+          "address": "0xff3d",
+          "value": "0xde"
+        },
+        {
+          "write_index": "185244",
+          "run_start_tick_8mhz": "4677820008",
+          "run_start_seconds": "557.639599800",
+          "address": "0xff3e",
+          "value": "0xef"
+        },
+        {
+          "write_index": "185245",
+          "run_start_tick_8mhz": "4677820048",
+          "run_start_seconds": "557.639604568",
+          "address": "0xff3f",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "185246",
+          "run_start_tick_8mhz": "4677820088",
+          "run_start_seconds": "557.639609337",
+          "address": "0xff1b",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185247",
+          "run_start_tick_8mhz": "4677820128",
+          "run_start_seconds": "557.639614105",
+          "address": "0xff1c",
+          "value": "0x20"
+        },
+        {
+          "write_index": "185248",
+          "run_start_tick_8mhz": "4677820168",
+          "run_start_seconds": "557.639618874",
+          "address": "0xff1d",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185249",
+          "run_start_tick_8mhz": "4677820208",
+          "run_start_seconds": "557.639623642",
+          "address": "0xff1a",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185250",
+          "run_start_tick_8mhz": "4677820248",
+          "run_start_seconds": "557.639628410",
+          "address": "0xff1e",
+          "value": "0x87"
+        },
+        {
+          "write_index": "185251",
+          "run_start_tick_8mhz": "4677951360",
+          "run_start_seconds": "557.655258179",
+          "address": "0xff1c",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185252",
+          "run_start_tick_8mhz": "4678082472",
+          "run_start_seconds": "557.670887947",
+          "address": "0xff1a",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185253",
+          "run_start_tick_8mhz": "4678213584",
+          "run_start_seconds": "557.686517715",
+          "address": "0xff25",
+          "value": "0x44"
+        },
+        {
+          "write_index": "185254",
+          "run_start_tick_8mhz": "4678213624",
+          "run_start_seconds": "557.686522484",
+          "address": "0xff1a",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185255",
+          "run_start_tick_8mhz": "4678213664",
+          "run_start_seconds": "557.686527252",
+          "address": "0xff30",
+          "value": "0x01"
+        },
+        {
+          "write_index": "185256",
+          "run_start_tick_8mhz": "4678213704",
+          "run_start_seconds": "557.686532021",
+          "address": "0xff31",
+          "value": "0x12"
+        },
+        {
+          "write_index": "185257",
+          "run_start_tick_8mhz": "4678213744",
+          "run_start_seconds": "557.686536789",
+          "address": "0xff32",
+          "value": "0x23"
+        },
+        {
+          "write_index": "185258",
+          "run_start_tick_8mhz": "4678213784",
+          "run_start_seconds": "557.686541557",
+          "address": "0xff33",
+          "value": "0x34"
+        },
+        {
+          "write_index": "185259",
+          "run_start_tick_8mhz": "4678213824",
+          "run_start_seconds": "557.686546326",
+          "address": "0xff34",
+          "value": "0x45"
+        },
+        {
+          "write_index": "185260",
+          "run_start_tick_8mhz": "4678213864",
+          "run_start_seconds": "557.686551094",
+          "address": "0xff35",
+          "value": "0x56"
+        },
+        {
+          "write_index": "185261",
+          "run_start_tick_8mhz": "4678213904",
+          "run_start_seconds": "557.686555862",
+          "address": "0xff36",
+          "value": "0x67"
+        },
+        {
+          "write_index": "185262",
+          "run_start_tick_8mhz": "4678213944",
+          "run_start_seconds": "557.686560631",
+          "address": "0xff37",
+          "value": "0x78"
+        },
+        {
+          "write_index": "185263",
+          "run_start_tick_8mhz": "4678213984",
+          "run_start_seconds": "557.686565399",
+          "address": "0xff38",
+          "value": "0x89"
+        },
+        {
+          "write_index": "185264",
+          "run_start_tick_8mhz": "4678214024",
+          "run_start_seconds": "557.686570168",
+          "address": "0xff39",
+          "value": "0x9a"
+        },
+        {
+          "write_index": "185265",
+          "run_start_tick_8mhz": "4678214064",
+          "run_start_seconds": "557.686574936",
+          "address": "0xff3a",
+          "value": "0xab"
+        },
+        {
+          "write_index": "185266",
+          "run_start_tick_8mhz": "4678214104",
+          "run_start_seconds": "557.686579704",
+          "address": "0xff3b",
+          "value": "0xbc"
+        },
+        {
+          "write_index": "185267",
+          "run_start_tick_8mhz": "4678214144",
+          "run_start_seconds": "557.686584473",
+          "address": "0xff3c",
+          "value": "0xcd"
+        },
+        {
+          "write_index": "185268",
+          "run_start_tick_8mhz": "4678214184",
+          "run_start_seconds": "557.686589241",
+          "address": "0xff3d",
+          "value": "0xde"
+        },
+        {
+          "write_index": "185269",
+          "run_start_tick_8mhz": "4678214224",
+          "run_start_seconds": "557.686594009",
+          "address": "0xff3e",
+          "value": "0xef"
+        },
+        {
+          "write_index": "185270",
+          "run_start_tick_8mhz": "4678214264",
+          "run_start_seconds": "557.686598778",
+          "address": "0xff3f",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "185271",
+          "run_start_tick_8mhz": "4678214304",
+          "run_start_seconds": "557.686603546",
+          "address": "0xff1b",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185272",
+          "run_start_tick_8mhz": "4678214344",
+          "run_start_seconds": "557.686608315",
+          "address": "0xff1c",
+          "value": "0x20"
+        },
+        {
+          "write_index": "185273",
+          "run_start_tick_8mhz": "4678214384",
+          "run_start_seconds": "557.686613083",
+          "address": "0xff1d",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185274",
+          "run_start_tick_8mhz": "4678214424",
+          "run_start_seconds": "557.686617851",
+          "address": "0xff1a",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185275",
+          "run_start_tick_8mhz": "4678214464",
+          "run_start_seconds": "557.686622620",
+          "address": "0xff1e",
+          "value": "0x87"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "185251",
+            "run_start_tick_8mhz": "4677951360",
+            "run_start_seconds": "557.655258179",
+            "address": "0xff1c",
+            "value": "0x00"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26767421,
+                26767516
+              ],
+              "strongest_derivative_time_s": 557.6558020833334,
+              "derivative_interval_s": [
+                557.6557916666667,
+                557.6558125
+              ],
+              "edge_offset_ms": 0.5439043333126392,
+              "strongest_delta": 0.013114069695895177,
+              "min": -0.00812947462403975,
+              "max": 0.008824001373777727,
+              "strongest_absolute_derivative_time_s": 557.6558020833334,
+              "strongest_absolute_derivative_delta": 0.013114069695895177,
+              "early_mean": -0.004495768221486825,
+              "late_mean": 0.007767904518370916,
+              "early_rms": 0.00451557689322396,
+              "late_rms": 0.007768880705355183
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26767421,
+                26767516
+              ],
+              "strongest_derivative_time_s": 557.6558020833334,
+              "derivative_interval_s": [
+                557.6557916666667,
+                557.6558125
+              ],
+              "edge_offset_ms": 0.5439043333126392,
+              "strongest_delta": 0.013112118778058835,
+              "min": -0.008139229213221463,
+              "max": 0.008814246784596014,
+              "strongest_absolute_derivative_time_s": 557.6558020833334,
+              "strongest_absolute_derivative_delta": 0.013112118778058835,
+              "early_mean": -0.004507839525599196,
+              "late_mean": 0.007758930296323739,
+              "early_rms": 0.00452757509908557,
+              "late_rms": 0.007759906297767531
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31282996,
+                31283091
+              ],
+              "strongest_derivative_time_s": 557.6558123484824,
+              "derivative_interval_s": [
+                557.6558019324261,
+                557.6558227645388
+              ],
+              "edge_offset_ms": 0.5541694823705257,
+              "strongest_delta": 0.012210249900817871,
+              "min": -0.008842706680297852,
+              "max": 0.008979439735412598,
+              "strongest_absolute_derivative_time_s": 557.6558123484824,
+              "strongest_absolute_derivative_delta": 0.012210249900817871,
+              "early_mean": -0.0045385658740997314,
+              "late_mean": 0.007570974032084147,
+              "early_rms": 0.004555948146468583,
+              "late_rms": 0.007571633311774551
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 0.49272715477854945,
+          "hardware_minus_delayed_edge_samples": 0.49272715477854945
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "185252",
+            "run_start_tick_8mhz": "4678082472",
+            "run_start_seconds": "557.670887947",
+            "address": "0xff1a",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26768171,
+                26768266
+              ],
+              "strongest_derivative_time_s": 557.6708645833334,
+              "derivative_interval_s": [
+                557.6708541666667,
+                557.670875
+              ],
+              "edge_offset_ms": -0.023363666628029023,
+              "strongest_delta": -0.000610637282775244,
+              "min": 0.0,
+              "max": 0.0006828212427199214,
+              "strongest_absolute_derivative_time_s": 557.6708645833334,
+              "strongest_absolute_derivative_delta": -0.000610637282775244,
+              "early_mean": 0.0006640436585451236,
+              "late_mean": 0.0,
+              "early_rms": 0.0006641399705164388,
+              "late_rms": 0.0
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26768171,
+                26768266
+              ],
+              "strongest_derivative_time_s": 557.67153125,
+              "derivative_interval_s": [
+                557.6715208333334,
+                557.6715416666667
+              ],
+              "edge_offset_ms": 0.6433030000607687,
+              "strongest_delta": -0.0005423551585032519,
+              "min": 0.0,
+              "max": 0.0006808703248835788,
+              "strongest_absolute_derivative_time_s": 557.67153125,
+              "strongest_absolute_derivative_delta": -0.0005423551585032519,
+              "early_mean": 0.0006633120643564951,
+              "late_mean": 0.0,
+              "early_rms": 0.0006634053002004207,
+              "late_rms": 0.0
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31283747,
+                31283842
+              ],
+              "strongest_derivative_time_s": 557.6715614256448,
+              "derivative_interval_s": [
+                557.6715510095884,
+                557.671571841701
+              ],
+              "edge_offset_ms": 0.6734786447850638,
+              "strongest_delta": -0.0008113384246826172,
+              "min": -0.00017392635345458984,
+              "max": 0.0010074377059936523,
+              "strongest_absolute_derivative_time_s": 557.6715614256448,
+              "strongest_absolute_derivative_delta": -0.0008113384246826172,
+              "early_mean": 0.0009680092334747314,
+              "late_mean": -0.00013377666473388672,
+              "early_rms": 0.0009682109119152744,
+              "late_rms": 0.00013414357094283528
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 33.448430947828456,
+          "hardware_minus_delayed_edge_samples": 1.448430946766166
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "185274",
+            "run_start_tick_8mhz": "4678214424",
+            "run_start_seconds": "557.686617851",
+            "address": "0xff1a",
+            "value": "0x80"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26768926,
+                26769021
+              ],
+              "strongest_derivative_time_s": 557.68659375,
+              "derivative_interval_s": [
+                557.6865833333334,
+                557.6866041666667
+              ],
+              "edge_offset_ms": -0.024101000008158735,
+              "strongest_delta": 0.0006086863649389014,
+              "min": -0.0025947207223357012,
+              "max": 0.0006086863649389014,
+              "strongest_absolute_derivative_time_s": 557.68765625,
+              "strongest_absolute_derivative_delta": -0.0008759621085178419,
+              "early_mean": 0.0,
+              "late_mean": -0.0014841282287003854,
+              "early_rms": 0.0,
+              "late_rms": 0.0015543469815336615
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26768926,
+                26769021
+              ],
+              "strongest_derivative_time_s": 557.6872604166666,
+              "derivative_interval_s": [
+                557.68725,
+                557.6872708333333
+              ],
+              "edge_offset_ms": 0.6425656665669521,
+              "strongest_delta": 0.0005365024049942239,
+              "min": -0.0025947207223357012,
+              "max": 0.0005950299400845029,
+              "strongest_absolute_derivative_time_s": 557.68765625,
+              "strongest_absolute_derivative_delta": -0.0008759621085178419,
+              "early_mean": 0.0,
+              "late_mean": -0.0014847785346458328,
+              "early_rms": 0.0,
+              "late_rms": 0.0015550181798801427
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31284502,
+                31284597
+              ],
+              "strongest_derivative_time_s": 557.6872896706943,
+              "derivative_interval_s": [
+                557.6872792546379,
+                557.6873000867506
+              ],
+              "edge_offset_ms": 0.6718196942756549,
+              "strongest_delta": 0.0009816884994506836,
+              "min": -0.002269148826599121,
+              "max": 0.0011005401611328125,
+              "strongest_absolute_derivative_time_s": 557.6872896706943,
+              "strongest_absolute_derivative_delta": 0.0009816884994506836,
+              "early_mean": -0.00011771917343139648,
+              "late_mean": -0.00117339293162028,
+              "early_rms": 0.00011849927308983826,
+              "late_rms": 0.0012577058137451392
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 33.404193325623055,
+          "hardware_minus_delayed_edge_samples": 1.4041933300177334
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "name": "ch3-DAC-off-control",
+      "channel": 3,
+      "case_interval_s": [
+        557.843142509,
+        557.905891418
+      ],
+      "writes": [
+        {
+          "write_index": "185400",
+          "run_start_tick_8mhz": "4679527496",
+          "run_start_seconds": "557.843148232",
+          "address": "0xff25",
+          "value": "0x44"
+        },
+        {
+          "write_index": "185401",
+          "run_start_tick_8mhz": "4679527536",
+          "run_start_seconds": "557.843153000",
+          "address": "0xff1a",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185402",
+          "run_start_tick_8mhz": "4679527576",
+          "run_start_seconds": "557.843157768",
+          "address": "0xff30",
+          "value": "0x01"
+        },
+        {
+          "write_index": "185403",
+          "run_start_tick_8mhz": "4679527616",
+          "run_start_seconds": "557.843162537",
+          "address": "0xff31",
+          "value": "0x12"
+        },
+        {
+          "write_index": "185404",
+          "run_start_tick_8mhz": "4679527656",
+          "run_start_seconds": "557.843167305",
+          "address": "0xff32",
+          "value": "0x23"
+        },
+        {
+          "write_index": "185405",
+          "run_start_tick_8mhz": "4679527696",
+          "run_start_seconds": "557.843172073",
+          "address": "0xff33",
+          "value": "0x34"
+        },
+        {
+          "write_index": "185406",
+          "run_start_tick_8mhz": "4679527736",
+          "run_start_seconds": "557.843176842",
+          "address": "0xff34",
+          "value": "0x45"
+        },
+        {
+          "write_index": "185407",
+          "run_start_tick_8mhz": "4679527776",
+          "run_start_seconds": "557.843181610",
+          "address": "0xff35",
+          "value": "0x56"
+        },
+        {
+          "write_index": "185408",
+          "run_start_tick_8mhz": "4679527816",
+          "run_start_seconds": "557.843186378",
+          "address": "0xff36",
+          "value": "0x67"
+        },
+        {
+          "write_index": "185409",
+          "run_start_tick_8mhz": "4679527856",
+          "run_start_seconds": "557.843191147",
+          "address": "0xff37",
+          "value": "0x78"
+        },
+        {
+          "write_index": "185410",
+          "run_start_tick_8mhz": "4679527896",
+          "run_start_seconds": "557.843195915",
+          "address": "0xff38",
+          "value": "0x89"
+        },
+        {
+          "write_index": "185411",
+          "run_start_tick_8mhz": "4679527936",
+          "run_start_seconds": "557.843200684",
+          "address": "0xff39",
+          "value": "0x9a"
+        },
+        {
+          "write_index": "185412",
+          "run_start_tick_8mhz": "4679527976",
+          "run_start_seconds": "557.843205452",
+          "address": "0xff3a",
+          "value": "0xab"
+        },
+        {
+          "write_index": "185413",
+          "run_start_tick_8mhz": "4679528016",
+          "run_start_seconds": "557.843210220",
+          "address": "0xff3b",
+          "value": "0xbc"
+        },
+        {
+          "write_index": "185414",
+          "run_start_tick_8mhz": "4679528056",
+          "run_start_seconds": "557.843214989",
+          "address": "0xff3c",
+          "value": "0xcd"
+        },
+        {
+          "write_index": "185415",
+          "run_start_tick_8mhz": "4679528096",
+          "run_start_seconds": "557.843219757",
+          "address": "0xff3d",
+          "value": "0xde"
+        },
+        {
+          "write_index": "185416",
+          "run_start_tick_8mhz": "4679528136",
+          "run_start_seconds": "557.843224525",
+          "address": "0xff3e",
+          "value": "0xef"
+        },
+        {
+          "write_index": "185417",
+          "run_start_tick_8mhz": "4679528176",
+          "run_start_seconds": "557.843229294",
+          "address": "0xff3f",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "185418",
+          "run_start_tick_8mhz": "4679528216",
+          "run_start_seconds": "557.843234062",
+          "address": "0xff1b",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185419",
+          "run_start_tick_8mhz": "4679528256",
+          "run_start_seconds": "557.843238831",
+          "address": "0xff1c",
+          "value": "0x20"
+        },
+        {
+          "write_index": "185420",
+          "run_start_tick_8mhz": "4679528296",
+          "run_start_seconds": "557.843243599",
+          "address": "0xff1d",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185421",
+          "run_start_tick_8mhz": "4679528336",
+          "run_start_seconds": "557.843248367",
+          "address": "0xff1a",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185422",
+          "run_start_tick_8mhz": "4679528376",
+          "run_start_seconds": "557.843253136",
+          "address": "0xff1e",
+          "value": "0x87"
+        },
+        {
+          "write_index": "185423",
+          "run_start_tick_8mhz": "4679528416",
+          "run_start_seconds": "557.843257904",
+          "address": "0xff12",
+          "value": "0x08"
+        },
+        {
+          "write_index": "185424",
+          "run_start_tick_8mhz": "4679659528",
+          "run_start_seconds": "557.858887672",
+          "address": "0xff1c",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185425",
+          "run_start_tick_8mhz": "4679790640",
+          "run_start_seconds": "557.874517441",
+          "address": "0xff1a",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185426",
+          "run_start_tick_8mhz": "4679921752",
+          "run_start_seconds": "557.890147209",
+          "address": "0xff25",
+          "value": "0x44"
+        },
+        {
+          "write_index": "185427",
+          "run_start_tick_8mhz": "4679921792",
+          "run_start_seconds": "557.890151978",
+          "address": "0xff1a",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185428",
+          "run_start_tick_8mhz": "4679921832",
+          "run_start_seconds": "557.890156746",
+          "address": "0xff30",
+          "value": "0x01"
+        },
+        {
+          "write_index": "185429",
+          "run_start_tick_8mhz": "4679921872",
+          "run_start_seconds": "557.890161514",
+          "address": "0xff31",
+          "value": "0x12"
+        },
+        {
+          "write_index": "185430",
+          "run_start_tick_8mhz": "4679921912",
+          "run_start_seconds": "557.890166283",
+          "address": "0xff32",
+          "value": "0x23"
+        },
+        {
+          "write_index": "185431",
+          "run_start_tick_8mhz": "4679921952",
+          "run_start_seconds": "557.890171051",
+          "address": "0xff33",
+          "value": "0x34"
+        },
+        {
+          "write_index": "185432",
+          "run_start_tick_8mhz": "4679921992",
+          "run_start_seconds": "557.890175819",
+          "address": "0xff34",
+          "value": "0x45"
+        },
+        {
+          "write_index": "185433",
+          "run_start_tick_8mhz": "4679922032",
+          "run_start_seconds": "557.890180588",
+          "address": "0xff35",
+          "value": "0x56"
+        },
+        {
+          "write_index": "185434",
+          "run_start_tick_8mhz": "4679922072",
+          "run_start_seconds": "557.890185356",
+          "address": "0xff36",
+          "value": "0x67"
+        },
+        {
+          "write_index": "185435",
+          "run_start_tick_8mhz": "4679922112",
+          "run_start_seconds": "557.890190125",
+          "address": "0xff37",
+          "value": "0x78"
+        },
+        {
+          "write_index": "185436",
+          "run_start_tick_8mhz": "4679922152",
+          "run_start_seconds": "557.890194893",
+          "address": "0xff38",
+          "value": "0x89"
+        },
+        {
+          "write_index": "185437",
+          "run_start_tick_8mhz": "4679922192",
+          "run_start_seconds": "557.890199661",
+          "address": "0xff39",
+          "value": "0x9a"
+        },
+        {
+          "write_index": "185438",
+          "run_start_tick_8mhz": "4679922232",
+          "run_start_seconds": "557.890204430",
+          "address": "0xff3a",
+          "value": "0xab"
+        },
+        {
+          "write_index": "185439",
+          "run_start_tick_8mhz": "4679922272",
+          "run_start_seconds": "557.890209198",
+          "address": "0xff3b",
+          "value": "0xbc"
+        },
+        {
+          "write_index": "185440",
+          "run_start_tick_8mhz": "4679922312",
+          "run_start_seconds": "557.890213966",
+          "address": "0xff3c",
+          "value": "0xcd"
+        },
+        {
+          "write_index": "185441",
+          "run_start_tick_8mhz": "4679922352",
+          "run_start_seconds": "557.890218735",
+          "address": "0xff3d",
+          "value": "0xde"
+        },
+        {
+          "write_index": "185442",
+          "run_start_tick_8mhz": "4679922392",
+          "run_start_seconds": "557.890223503",
+          "address": "0xff3e",
+          "value": "0xef"
+        },
+        {
+          "write_index": "185443",
+          "run_start_tick_8mhz": "4679922432",
+          "run_start_seconds": "557.890228271",
+          "address": "0xff3f",
+          "value": "0xf0"
+        },
+        {
+          "write_index": "185444",
+          "run_start_tick_8mhz": "4679922472",
+          "run_start_seconds": "557.890233040",
+          "address": "0xff1b",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185445",
+          "run_start_tick_8mhz": "4679922512",
+          "run_start_seconds": "557.890237808",
+          "address": "0xff1c",
+          "value": "0x20"
+        },
+        {
+          "write_index": "185446",
+          "run_start_tick_8mhz": "4679922552",
+          "run_start_seconds": "557.890242577",
+          "address": "0xff1d",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185447",
+          "run_start_tick_8mhz": "4679922592",
+          "run_start_seconds": "557.890247345",
+          "address": "0xff1a",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185448",
+          "run_start_tick_8mhz": "4679922632",
+          "run_start_seconds": "557.890252113",
+          "address": "0xff1e",
+          "value": "0x87"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "185424",
+            "run_start_tick_8mhz": "4679659528",
+            "run_start_seconds": "557.858887672",
+            "address": "0xff1c",
+            "value": "0x00"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26777195,
+                26777290
+              ],
+              "strongest_derivative_time_s": 557.8594270833333,
+              "derivative_interval_s": [
+                557.8594166666667,
+                557.8594375
+              ],
+              "edge_offset_ms": 0.5394113333068162,
+              "strongest_delta": 0.013053591242968555,
+              "min": -0.008168492980766603,
+              "max": 0.00878108118137819,
+              "strongest_absolute_derivative_time_s": 557.8594270833333,
+              "strongest_absolute_derivative_delta": 0.013053591242968555,
+              "early_mean": -0.0044891838737891685,
+              "late_mean": 0.007772586721178138,
+              "early_rms": 0.004509076839015841,
+              "late_rms": 0.007773559408582694
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26777195,
+                26777290
+              ],
+              "strongest_derivative_time_s": 557.8594270833333,
+              "derivative_interval_s": [
+                557.8594166666667,
+                557.8594375
+              ],
+              "edge_offset_ms": 0.5394113333068162,
+              "strongest_delta": 0.013055542160804897,
+              "min": -0.008186051241293686,
+              "max": 0.008763522920851106,
+              "strongest_absolute_derivative_time_s": 557.8594270833333,
+              "strongest_absolute_derivative_delta": 0.013055542160804897,
+              "early_mean": -0.004509668511070767,
+              "late_mean": 0.0077572395008655756,
+              "early_rms": 0.004529439290730432,
+              "late_rms": 0.007758215183000888
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31292771,
+                31292866
+              ],
+              "strongest_derivative_time_s": 557.859425417508,
+              "derivative_interval_s": [
+                557.8594150014517,
+                557.8594358335644
+              ],
+              "edge_offset_ms": 0.5377455079269566,
+              "strongest_delta": 0.01179492473602295,
+              "min": -0.008513450622558594,
+              "max": 0.009110569953918457,
+              "strongest_absolute_derivative_time_s": 557.859425417508,
+              "strongest_absolute_derivative_delta": 0.01179492473602295,
+              "early_mean": -0.004542805254459381,
+              "late_mean": 0.007551789283752441,
+              "early_rms": 0.0045608294697711774,
+              "late_rms": 0.007552666777911726
+            }
+          },
+          "hardware_minus_emulator_edge_samples": -0.0799596182332607,
+          "hardware_minus_delayed_edge_samples": -0.0799596182332607
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "185425",
+            "run_start_tick_8mhz": "4679790640",
+            "run_start_seconds": "557.874517441",
+            "address": "0xff1a",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26777945,
+                26778040
+              ],
+              "strongest_derivative_time_s": 557.8745104166667,
+              "derivative_interval_s": [
+                557.8745,
+                557.8745208333333
+              ],
+              "edge_offset_ms": -0.007024333285698958,
+              "strongest_delta": -0.00443833807767949,
+              "min": -0.007315941886284872,
+              "max": 0.0006828212427199214,
+              "strongest_absolute_derivative_time_s": 557.8745104166667,
+              "strongest_absolute_derivative_delta": -0.00443833807767949,
+              "early_mean": 0.0006644094556394378,
+              "late_mean": -0.0060014134481572055,
+              "early_rms": 0.0006645032422861672,
+              "late_rms": 0.0060021659479918416
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26777945,
+                26778040
+              ],
+              "strongest_derivative_time_s": 557.8751770833334,
+              "derivative_interval_s": [
+                557.8751666666667,
+                557.8751875
+              ],
+              "edge_offset_ms": 0.6596423334030987,
+              "strongest_delta": -0.004438338077679489,
+              "min": -0.007384224010556864,
+              "max": 0.0006808703248835788,
+              "strongest_absolute_derivative_time_s": 557.8751770833334,
+              "strongest_absolute_derivative_delta": -0.004438338077679489,
+              "early_mean": 0.0006631901319917237,
+              "late_mean": -0.006812084839752115,
+              "early_rms": 0.0006632831944477474,
+              "late_rms": 0.006812940657948634
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31293521,
+                31293616
+              ],
+              "strongest_derivative_time_s": 557.8751953267829,
+              "derivative_interval_s": [
+                557.8751849107266,
+                557.8752057428392
+              ],
+              "edge_offset_ms": 0.6778857829203844,
+              "strongest_delta": -0.006646394729614258,
+              "min": -0.0070993900299072266,
+              "max": 0.0014085769653320312,
+              "strongest_absolute_derivative_time_s": 557.8751953267829,
+              "strongest_absolute_derivative_delta": -0.006646394729614258,
+              "early_mean": 0.0009747520089149475,
+              "late_mean": -0.0066558122634887695,
+              "early_rms": 0.0009751909169207912,
+              "late_rms": 0.006656418452403798
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 32.875685577892,
+          "hardware_minus_delayed_edge_samples": 0.87568557682971
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "185447",
+            "run_start_tick_8mhz": "4679922592",
+            "run_start_seconds": "557.890247345",
+            "address": "0xff1a",
+            "value": "0x80"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26778700,
+                26778795
+              ],
+              "strongest_derivative_time_s": 557.8902395833334,
+              "derivative_interval_s": [
+                557.8902291666667,
+                557.89025
+              ],
+              "edge_offset_ms": -0.00776166666582867,
+              "strongest_delta": 0.004440288995515832,
+              "min": -0.0005169932266307977,
+              "max": 0.007466162559683255,
+              "strongest_absolute_derivative_time_s": 557.8902395833334,
+              "strongest_absolute_derivative_delta": 0.004440288995515832,
+              "early_mean": -0.0005023613428582279,
+              "late_mean": 0.004173923680260517,
+              "early_rms": 0.0005024418354465623,
+              "late_rms": 0.004205957878044102
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26778700,
+                26778795
+              ],
+              "strongest_derivative_time_s": 557.89090625,
+              "derivative_interval_s": [
+                557.8908958333334,
+                557.8909166666666
+              ],
+              "edge_offset_ms": 0.6589049999092822,
+              "strongest_delta": 0.004430534406334118,
+              "min": -0.0005852753509027898,
+              "max": 0.007473966231028625,
+              "strongest_absolute_derivative_time_s": 557.89090625,
+              "strongest_absolute_derivative_delta": 0.004430534406334118,
+              "early_mean": -0.0005699118729415916,
+              "late_mean": 0.004932830718597803,
+              "early_rms": 0.0005699961289166721,
+              "late_rms": 0.00496101046938104
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31294277,
+                31294372
+              ],
+              "strongest_derivative_time_s": 557.8909235718324,
+              "derivative_interval_s": [
+                557.8909131557762,
+                557.8909339878887
+              ],
+              "edge_offset_ms": 0.6762268324109755,
+              "strongest_delta": 0.006679654121398926,
+              "min": -0.001248478889465332,
+              "max": 0.00701594352722168,
+              "strongest_absolute_derivative_time_s": 557.8909235718324,
+              "strongest_absolute_derivative_delta": 0.006679654121398926,
+              "early_mean": -0.0008572190999984741,
+              "late_mean": 0.004726203282674154,
+              "early_rms": 0.000857660193585057,
+              "late_rms": 0.004754162063924037
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 32.8314479556866,
+          "hardware_minus_delayed_edge_samples": 0.8314479600812774
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "name": "ch4-DAC-off-all-off",
+      "channel": 4,
+      "case_interval_s": [
+        558.046772003,
+        558.109349251
+      ],
+      "writes": [
+        {
+          "write_index": "185573",
+          "run_start_tick_8mhz": "4681235664",
+          "run_start_seconds": "558.046777725",
+          "address": "0xff25",
+          "value": "0x88"
+        },
+        {
+          "write_index": "185574",
+          "run_start_tick_8mhz": "4681235704",
+          "run_start_seconds": "558.046782494",
+          "address": "0xff20",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185575",
+          "run_start_tick_8mhz": "4681235744",
+          "run_start_seconds": "558.046787262",
+          "address": "0xff21",
+          "value": "0x98"
+        },
+        {
+          "write_index": "185576",
+          "run_start_tick_8mhz": "4681235784",
+          "run_start_seconds": "558.046792030",
+          "address": "0xff22",
+          "value": "0x6e"
+        },
+        {
+          "write_index": "185577",
+          "run_start_tick_8mhz": "4681235824",
+          "run_start_seconds": "558.046796799",
+          "address": "0xff23",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185578",
+          "run_start_tick_8mhz": "4681366936",
+          "run_start_seconds": "558.062426567",
+          "address": "0xff21",
+          "value": "0x08"
+        },
+        {
+          "write_index": "185579",
+          "run_start_tick_8mhz": "4681366976",
+          "run_start_seconds": "558.062431335",
+          "address": "0xff23",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185580",
+          "run_start_tick_8mhz": "4681498088",
+          "run_start_seconds": "558.078061104",
+          "address": "0xff21",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185581",
+          "run_start_tick_8mhz": "4681629200",
+          "run_start_seconds": "558.093690872",
+          "address": "0xff25",
+          "value": "0x88"
+        },
+        {
+          "write_index": "185582",
+          "run_start_tick_8mhz": "4681629240",
+          "run_start_seconds": "558.093695641",
+          "address": "0xff20",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185583",
+          "run_start_tick_8mhz": "4681629280",
+          "run_start_seconds": "558.093700409",
+          "address": "0xff21",
+          "value": "0x98"
+        },
+        {
+          "write_index": "185584",
+          "run_start_tick_8mhz": "4681629320",
+          "run_start_seconds": "558.093705177",
+          "address": "0xff22",
+          "value": "0x6e"
+        },
+        {
+          "write_index": "185585",
+          "run_start_tick_8mhz": "4681629360",
+          "run_start_seconds": "558.093709946",
+          "address": "0xff23",
+          "value": "0x80"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "185578",
+            "run_start_tick_8mhz": "4681366936",
+            "run_start_seconds": "558.062426567",
+            "address": "0xff21",
+            "value": "0x08"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26786965,
+                26787060
+              ],
+              "strongest_derivative_time_s": 558.06309375,
+              "derivative_interval_s": [
+                558.0630833333333,
+                558.0631041666667
+              ],
+              "edge_offset_ms": 0.6671830000186674,
+              "strongest_delta": 0.007308138214939502,
+              "min": -0.004965085893492,
+              "max": 0.006373648571331381,
+              "strongest_absolute_derivative_time_s": 558.06309375,
+              "strongest_absolute_derivative_delta": 0.007308138214939502,
+              "early_mean": -0.004831935751161615,
+              "late_mean": 0.005179296671922421,
+              "early_rms": 0.004832624317807087,
+              "late_rms": 0.005179978933823377
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26786965,
+                26787060
+              ],
+              "strongest_derivative_time_s": 558.06309375,
+              "derivative_interval_s": [
+                558.0630833333333,
+                558.0631041666667
+              ],
+              "edge_offset_ms": 0.6671830000186674,
+              "strongest_delta": 0.007308138214939502,
+              "min": -0.004988496907528112,
+              "max": 0.006356090310804297,
+              "strongest_absolute_derivative_time_s": 558.06309375,
+              "strongest_absolute_derivative_delta": 0.007308138214939502,
+              "early_mean": -0.00485388357682047,
+              "late_mean": 0.005162648839718965,
+              "early_rms": 0.00485457797313457,
+              "late_rms": 0.0051633230437260315
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31302542,
+                31302637
+              ],
+              "strongest_derivative_time_s": 558.0631009828713,
+              "derivative_interval_s": [
+                558.063090566815,
+                558.0631113989276
+              ],
+              "edge_offset_ms": 0.6744158713445358,
+              "strongest_delta": 0.007216691970825195,
+              "min": -0.00538790225982666,
+              "max": 0.0056143999099731445,
+              "strongest_absolute_derivative_time_s": 558.0631009828713,
+              "strongest_absolute_derivative_delta": 0.007216691970825195,
+              "early_mean": -0.005283690989017487,
+              "late_mean": 0.004711556434631348,
+              "early_rms": 0.0052841800915459135,
+              "late_rms": 0.004712329725942934
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 0.3471778236416867,
+          "hardware_minus_delayed_edge_samples": 0.3471778236416867
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "185580",
+            "run_start_tick_8mhz": "4681498088",
+            "run_start_seconds": "558.078061104",
+            "address": "0xff21",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26787715,
+                26787810
+              ],
+              "strongest_derivative_time_s": 558.0780520833333,
+              "derivative_interval_s": [
+                558.0780416666666,
+                558.0780625
+              ],
+              "edge_offset_ms": -0.009020666652759246,
+              "strongest_delta": -0.0004057909099592676,
+              "min": 0.0,
+              "max": 0.00045456385586783337,
+              "strongest_absolute_derivative_time_s": 558.0780520833333,
+              "strongest_absolute_derivative_delta": -0.0004057909099592676,
+              "early_mean": 0.0004431022135793204,
+              "late_mean": 0.0,
+              "early_rms": 0.0004431649536400619,
+              "late_rms": 0.0
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26787715,
+                26787810
+              ],
+              "strongest_derivative_time_s": 558.07871875,
+              "derivative_interval_s": [
+                558.0787083333333,
+                558.0787291666667
+              ],
+              "edge_offset_ms": 0.6576460000360385,
+              "strongest_delta": -0.00036091979972338703,
+              "min": 0.0,
+              "max": 0.00045456385586783337,
+              "strongest_absolute_derivative_time_s": 558.07871875,
+              "strongest_absolute_derivative_delta": -0.00036091979972338703,
+              "early_mean": 0.00044163902520206344,
+              "late_mean": 0.0,
+              "early_rms": 0.0004417041273041666,
+              "late_rms": 0.0
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31303292,
+                31303387
+              ],
+              "strongest_derivative_time_s": 558.0787458994703,
+              "derivative_interval_s": [
+                558.078735483414,
+                558.0787563155266
+              ],
+              "edge_offset_ms": 0.6847954703061987,
+              "strongest_delta": -0.0003889799118041992,
+              "min": -0.00018930435180664062,
+              "max": 0.0005937814712524414,
+              "strongest_absolute_derivative_time_s": 558.0787458994703,
+              "strongest_absolute_derivative_delta": -0.0003889799118041992,
+              "early_mean": 0.0005618929862976074,
+              "late_mean": -0.00013364156087239583,
+              "early_rms": 0.0005622365784968265,
+              "late_rms": 0.00013440905988132748
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 33.30317457402998,
+          "hardware_minus_delayed_edge_samples": 1.3031745729676913
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "185583",
+            "run_start_tick_8mhz": "4681629280",
+            "run_start_seconds": "558.093700409",
+            "address": "0xff21",
+            "value": "0x98"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26788466,
+                26788561
+              ],
+              "strongest_derivative_time_s": 558.0936770833333,
+              "derivative_interval_s": [
+                558.0936666666666,
+                558.0936875
+              ],
+              "edge_offset_ms": -0.023325666688833735,
+              "strongest_delta": 0.0004057909099592676,
+              "min": 0.0,
+              "max": 0.0004057909099592676,
+              "strongest_absolute_derivative_time_s": 558.0936770833333,
+              "strongest_absolute_derivative_delta": 0.0004057909099592676,
+              "early_mean": 0.0,
+              "late_mean": 0.0003300952979091735,
+              "early_rms": 0.0,
+              "late_rms": 0.0003301392636574678
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26788466,
+                26788561
+              ],
+              "strongest_derivative_time_s": 558.09434375,
+              "derivative_interval_s": [
+                558.0943333333333,
+                558.0943541666667
+              ],
+              "edge_offset_ms": 0.643340999999964,
+              "strongest_delta": 0.0003589688818870444,
+              "min": 0.0,
+              "max": 0.0003589688818870444,
+              "strongest_absolute_derivative_time_s": 558.09434375,
+              "strongest_absolute_derivative_delta": 0.0003589688818870444,
+              "early_mean": 0.0,
+              "late_mean": 0.00032892474720736784,
+              "early_rms": 0.0,
+              "late_rms": 0.0003289654755920082
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31304043,
+                31304138
+              ],
+              "strongest_derivative_time_s": 558.0943699839565,
+              "derivative_interval_s": [
+                558.0943595679003,
+                558.0943804000129
+              ],
+              "edge_offset_ms": 0.6695749565324149,
+              "strongest_delta": 0.0006928443908691406,
+              "min": -0.00020325183868408203,
+              "max": 0.0007370710372924805,
+              "strongest_absolute_derivative_time_s": 558.0943699839565,
+              "strongest_absolute_derivative_delta": 0.0006928443908691406,
+              "early_mean": -0.0001306980848312378,
+              "late_mean": 0.0004527171452840169,
+              "early_rms": 0.00013189406247683886,
+              "late_rms": 0.00045335272127719023
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 33.25922991461994,
+          "hardware_minus_delayed_edge_samples": 1.2592299135576468
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "name": "ch4-DAC-off-control",
+      "channel": 4,
+      "case_interval_s": [
+        558.250229836,
+        558.312811852
+      ],
+      "writes": [
+        {
+          "write_index": "185710",
+          "run_start_tick_8mhz": "4682942392",
+          "run_start_seconds": "558.250235558",
+          "address": "0xff25",
+          "value": "0x88"
+        },
+        {
+          "write_index": "185711",
+          "run_start_tick_8mhz": "4682942432",
+          "run_start_seconds": "558.250240326",
+          "address": "0xff20",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185712",
+          "run_start_tick_8mhz": "4682942472",
+          "run_start_seconds": "558.250245094",
+          "address": "0xff21",
+          "value": "0x98"
+        },
+        {
+          "write_index": "185713",
+          "run_start_tick_8mhz": "4682942512",
+          "run_start_seconds": "558.250249863",
+          "address": "0xff22",
+          "value": "0x6e"
+        },
+        {
+          "write_index": "185714",
+          "run_start_tick_8mhz": "4682942552",
+          "run_start_seconds": "558.250254631",
+          "address": "0xff23",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185715",
+          "run_start_tick_8mhz": "4682942592",
+          "run_start_seconds": "558.250259399",
+          "address": "0xff12",
+          "value": "0x08"
+        },
+        {
+          "write_index": "185716",
+          "run_start_tick_8mhz": "4683073704",
+          "run_start_seconds": "558.265889168",
+          "address": "0xff21",
+          "value": "0x08"
+        },
+        {
+          "write_index": "185717",
+          "run_start_tick_8mhz": "4683073744",
+          "run_start_seconds": "558.265893936",
+          "address": "0xff23",
+          "value": "0x80"
+        },
+        {
+          "write_index": "185718",
+          "run_start_tick_8mhz": "4683204856",
+          "run_start_seconds": "558.281523705",
+          "address": "0xff21",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185719",
+          "run_start_tick_8mhz": "4683335968",
+          "run_start_seconds": "558.297153473",
+          "address": "0xff25",
+          "value": "0x88"
+        },
+        {
+          "write_index": "185720",
+          "run_start_tick_8mhz": "4683336008",
+          "run_start_seconds": "558.297158241",
+          "address": "0xff20",
+          "value": "0x00"
+        },
+        {
+          "write_index": "185721",
+          "run_start_tick_8mhz": "4683336048",
+          "run_start_seconds": "558.297163010",
+          "address": "0xff21",
+          "value": "0x98"
+        },
+        {
+          "write_index": "185722",
+          "run_start_tick_8mhz": "4683336088",
+          "run_start_seconds": "558.297167778",
+          "address": "0xff22",
+          "value": "0x6e"
+        },
+        {
+          "write_index": "185723",
+          "run_start_tick_8mhz": "4683336128",
+          "run_start_seconds": "558.297172546",
+          "address": "0xff23",
+          "value": "0x80"
+        }
+      ],
+      "events": [
+        {
+          "kind": "digital-zero",
+          "write": {
+            "write_index": "185716",
+            "run_start_tick_8mhz": "4683073704",
+            "run_start_seconds": "558.265889168",
+            "address": "0xff21",
+            "value": "0x08"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26796731,
+                26796826
+              ],
+              "strongest_derivative_time_s": 558.2665729166666,
+              "derivative_interval_s": [
+                558.2665625,
+                558.2665833333333
+              ],
+              "edge_offset_ms": 0.6837486666881887,
+              "strongest_delta": 0.006607758711692497,
+              "min": -0.00495728222214663,
+              "max": 0.006397059585367492,
+              "strongest_absolute_derivative_time_s": 558.2665729166666,
+              "strongest_absolute_derivative_delta": 0.006607758711692497,
+              "early_mean": -0.004823278553262845,
+              "late_mean": 0.0051971150548276845,
+              "early_rms": 0.0048239695499024135,
+              "late_rms": 0.005197796406589565
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26796731,
+                26796826
+              ],
+              "strongest_derivative_time_s": 558.2665729166666,
+              "derivative_interval_s": [
+                558.2665625,
+                558.2665833333333
+              ],
+              "edge_offset_ms": 0.6837486666881887,
+              "strongest_delta": 0.006607758711692497,
+              "min": -0.004988496907528112,
+              "max": 0.006371697653495038,
+              "strongest_absolute_derivative_time_s": 558.2665729166666,
+              "strongest_absolute_derivative_delta": 0.006607758711692497,
+              "early_mean": -0.00485388357682047,
+              "late_mean": 0.00517422428554793,
+              "early_rms": 0.00485457797313457,
+              "late_rms": 0.005174902803266594
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31312308,
+                31312403
+              ],
+              "strongest_derivative_time_s": 558.2665682271083,
+              "derivative_interval_s": [
+                558.266557811052,
+                558.2665786431646
+              ],
+              "edge_offset_ms": 0.6790591083927211,
+              "strongest_delta": 0.00804746150970459,
+              "min": -0.005379080772399902,
+              "max": 0.0052291154861450195,
+              "strongest_absolute_derivative_time_s": 558.2665682271083,
+              "strongest_absolute_derivative_delta": 0.00804746150970459,
+              "early_mean": -0.005266942083835602,
+              "late_mean": 0.004748717943827311,
+              "early_rms": 0.005267451394531793,
+              "late_rms": 0.004749639476916238
+            }
+          },
+          "hardware_minus_emulator_edge_samples": -0.22509879818244372,
+          "hardware_minus_delayed_edge_samples": -0.22509879818244372
+        },
+        {
+          "kind": "DAC-off",
+          "write": {
+            "write_index": "185718",
+            "run_start_tick_8mhz": "4683204856",
+            "run_start_seconds": "558.281523705",
+            "address": "0xff21",
+            "value": "0x00"
+          },
+          "edge_sign_requested": -1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26797482,
+                26797577
+              ],
+              "strongest_derivative_time_s": 558.28153125,
+              "derivative_interval_s": [
+                558.2815208333334,
+                558.2815416666666
+              ],
+              "edge_offset_ms": 0.007544999903075222,
+              "strongest_delta": -0.00443833807767949,
+              "min": -0.007516886423428164,
+              "max": 0.00045456385586783337,
+              "strongest_absolute_derivative_time_s": 558.28153125,
+              "strongest_absolute_derivative_delta": -0.00443833807767949,
+              "early_mean": 0.0004428583488497776,
+              "late_mean": -0.006166851280679062,
+              "early_rms": 0.00044292065351687047,
+              "late_rms": 0.006167627360984785
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26797482,
+                26797577
+              ],
+              "strongest_derivative_time_s": 558.2821979166666,
+              "derivative_interval_s": [
+                558.2821875,
+                558.2822083333333
+              ],
+              "edge_offset_ms": 0.6742116665918729,
+              "strongest_delta": -0.0044363871598431465,
+              "min": -0.007563708451500386,
+              "max": 0.0004526129380314908,
+              "strongest_absolute_derivative_time_s": 558.2821979166666,
+              "strongest_absolute_derivative_delta": -0.0044363871598431465,
+              "early_mean": 0.0004410293633782064,
+              "late_mean": -0.006977782794652149,
+              "early_rms": 0.00044108948269021037,
+              "late_rms": 0.0069786612402653785
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31313059,
+                31313154
+              ],
+              "strongest_derivative_time_s": 558.2821923115946,
+              "derivative_interval_s": [
+                558.2821818955383,
+                558.282202727651
+              ],
+              "edge_offset_ms": 0.6686065945586961,
+              "strongest_delta": -0.0058411359786987305,
+              "min": -0.007874131202697754,
+              "max": 0.0010242462158203125,
+              "strongest_absolute_derivative_time_s": 558.2821923115946,
+              "strongest_absolute_derivative_delta": -0.0058411359786987305,
+              "early_mean": 0.0005716681480407715,
+              "late_mean": -0.006889216105143229,
+              "early_rms": 0.0005720632519484283,
+              "late_rms": 0.006889922840941834
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 31.7309565434698,
+          "hardware_minus_delayed_edge_samples": -0.26904345759248827
+        },
+        {
+          "kind": "DAC-on",
+          "write": {
+            "write_index": "185721",
+            "run_start_tick_8mhz": "4683336048",
+            "run_start_seconds": "558.297163010",
+            "address": "0xff21",
+            "value": "0x98"
+          },
+          "edge_sign_requested": 1,
+          "measurements": {
+            "emulator": {
+              "native_sample_interval": [
+                26798232,
+                26798327
+              ],
+              "strongest_derivative_time_s": 558.29715625,
+              "derivative_interval_s": [
+                558.2971458333334,
+                558.2971666666666
+              ],
+              "edge_offset_ms": -0.006760000019312429,
+              "strongest_delta": 0.004440288995515832,
+              "min": -0.0005404042406669092,
+              "max": 0.007444702463483486,
+              "strongest_absolute_derivative_time_s": 558.29715625,
+              "strongest_absolute_derivative_delta": 0.004440288995515832,
+              "early_mean": -0.0005257723568943395,
+              "late_mean": 0.006107023133697887,
+              "early_rms": 0.0005258492659335154,
+              "late_rms": 0.006107789104655648
+            },
+            "delayed_fade": {
+              "native_sample_interval": [
+                26798232,
+                26798327
+              ],
+              "strongest_derivative_time_s": 558.2978229166666,
+              "derivative_interval_s": [
+                558.2978125,
+                558.2978333333333
+              ],
+              "edge_offset_ms": 0.6599066666694853,
+              "strongest_delta": 0.004440288995515832,
+              "min": -0.000610637282775244,
+              "max": 0.007440800627810801,
+              "strongest_absolute_derivative_time_s": 558.2978229166666,
+              "strongest_absolute_derivative_delta": 0.004440288995515832,
+              "early_mean": -0.0005949080077197315,
+              "late_mean": 0.006865279866089724,
+              "early_rms": 0.0005949893612089542,
+              "late_rms": 0.006866142857835536
+            },
+            "hardware": {
+              "native_sample_interval": [
+                31313810,
+                31313905
+              ],
+              "strongest_derivative_time_s": 558.2978372281937,
+              "derivative_interval_s": [
+                558.2978268121373,
+                558.2978476442499
+              ],
+              "edge_offset_ms": 0.674218193694287,
+              "strongest_delta": 0.006654500961303711,
+              "min": -0.0011589527130126953,
+              "max": 0.007088899612426758,
+              "strongest_absolute_derivative_time_s": 558.2978372281937,
+              "strongest_absolute_derivative_delta": 0.006654500961303711,
+              "early_mean": -0.0008802562952041626,
+              "late_mean": 0.0066369374593098955,
+              "early_rms": 0.0008804829820889132,
+              "late_rms": 0.0066374655130544075
+            }
+          },
+          "hardware_minus_emulator_edge_samples": 32.686953298252774,
+          "hardware_minus_delayed_edge_samples": 0.6869532971904846
+        }
+      ]
+    }
+  ],
+  "calibration_tone_edges": [
+    {
+      "period": 0,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74096,
+            74097
+          ],
+          "edge_time_s": 1.5436770833333333,
+          "delta": -0.007407635024592976
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74216,
+            74217
+          ],
+          "edge_time_s": 1.5461770833333333,
+          "delta": -0.0070467152248695885
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588228,
+            4588229
+          ],
+          "edge_time_s": 1.5461899870277773,
+          "delta": -0.00692594051361084
+        }
+      },
+      "hardware_minus_emulator_samples": 120.61937733331263
+    },
+    {
+      "period": 0,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74098,
+            74099
+          ],
+          "edge_time_s": 1.54371875,
+          "delta": 0.006828212427199214
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74098,
+            74099
+          ],
+          "edge_time_s": 1.54371875,
+          "delta": 0.004403221556625322
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588110,
+            4588111
+          ],
+          "edge_time_s": 1.5437317977352627,
+          "delta": 0.00362396240234375
+        }
+      },
+      "hardware_minus_emulator_samples": 0.626291292608272
+    },
+    {
+      "period": 1,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74404,
+            74405
+          ],
+          "edge_time_s": 1.5500937499999998,
+          "delta": -0.005333809364560758
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74404,
+            74405
+          ],
+          "edge_time_s": 1.5500937499999998,
+          "delta": -0.005333809364560758
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588415,
+            4588416
+          ],
+          "edge_time_s": 1.550085592093026,
+          "delta": -0.0063724517822265625
+        }
+      },
+      "hardware_minus_emulator_samples": -0.39157953473889506
+    },
+    {
+      "period": 1,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74310,
+            74311
+          ],
+          "edge_time_s": 1.5481354166666668,
+          "delta": 0.006699451850000601
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74310,
+            74311
+          ],
+          "edge_time_s": 1.5481354166666668,
+          "delta": 0.0066994518500006
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588322,
+            4588323
+          ],
+          "edge_time_s": 1.5481482056167282,
+          "delta": 0.00549161434173584
+        }
+      },
+      "hardware_minus_emulator_samples": 0.6138696029474033
+    },
+    {
+      "period": 2,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74591,
+            74592
+          ],
+          "edge_time_s": 1.5539895833333333,
+          "delta": -0.0070486661427059324
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74591,
+            74592
+          ],
+          "edge_time_s": 1.5539895833333333,
+          "delta": -0.007048666142705932
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588603,
+            4588604
+          ],
+          "edge_time_s": 1.5540020292709276,
+          "delta": -0.007027745246887207
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5974050045267632
+    },
+    {
+      "period": 2,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74497,
+            74498
+          ],
+          "edge_time_s": 1.5520312500000002,
+          "delta": 0.006281955433023277
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74497,
+            74498
+          ],
+          "edge_time_s": 1.5520312500000002,
+          "delta": 0.0062819554330232775
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588509,
+            4588510
+          ],
+          "edge_time_s": 1.552043810681977,
+          "delta": 0.007176876068115234
+        }
+      },
+      "hardware_minus_emulator_samples": 0.602912734883887
+    },
+    {
+      "period": 3,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74779,
+            74780
+          ],
+          "edge_time_s": 1.5579062499999998,
+          "delta": -0.0053357602823971
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74779,
+            74780
+          ],
+          "edge_time_s": 1.5579062499999998,
+          "delta": -0.005335760282397101
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588790,
+            4588791
+          ],
+          "edge_time_s": 1.5578976343361766,
+          "delta": -0.006151556968688965
+        }
+      },
+      "hardware_minus_emulator_samples": -0.41355186351665907
+    },
+    {
+      "period": 3,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74685,
+            74686
+          ],
+          "edge_time_s": 1.5559479166666668,
+          "delta": 0.0066975009321642584
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74685,
+            74686
+          ],
+          "edge_time_s": 1.5559479166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588697,
+            4588698
+          ],
+          "edge_time_s": 1.5559602478598784,
+          "delta": 0.0056542158126831055
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5918972741589812
+    },
+    {
+      "period": 4,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74966,
+            74967
+          ],
+          "edge_time_s": 1.5618020833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74966,
+            74967
+          ],
+          "edge_time_s": 1.5618020833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588978,
+            4588979
+          ],
+          "edge_time_s": 1.5618140715140778,
+          "delta": -0.007081270217895508
+        }
+      },
+      "hardware_minus_emulator_samples": 0.575432675738341
+    },
+    {
+      "period": 4,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            74872,
+            74873
+          ],
+          "edge_time_s": 1.5598437500000002,
+          "delta": 0.0062819554330232775
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            74872,
+            74873
+          ],
+          "edge_time_s": 1.5598437500000002,
+          "delta": 0.0062800045151869335
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4588884,
+            4588885
+          ],
+          "edge_time_s": 1.5598558529251272,
+          "delta": 0.007184863090515137
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5809404060954648
+    },
+    {
+      "period": 5,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75154,
+            75155
+          ],
+          "edge_time_s": 1.5657187499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75154,
+            75155
+          ],
+          "edge_time_s": 1.5657187499999998,
+          "delta": -0.005335760282397101
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589165,
+            4589166
+          ],
+          "edge_time_s": 1.5657096765793268,
+          "delta": -0.006022095680236816
+        }
+      },
+      "hardware_minus_emulator_samples": -0.4355241923050812
+    },
+    {
+      "period": 5,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75060,
+            75061
+          ],
+          "edge_time_s": 1.5637604166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75060,
+            75061
+          ],
+          "edge_time_s": 1.5637604166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589072,
+            4589073
+          ],
+          "edge_time_s": 1.5637722901030287,
+          "delta": 0.005860328674316406
+        }
+      },
+      "hardware_minus_emulator_samples": 0.569924945370559
+    },
+    {
+      "period": 6,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75341,
+            75342
+          ],
+          "edge_time_s": 1.5696145833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75341,
+            75342
+          ],
+          "edge_time_s": 1.5696145833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589353,
+            4589354
+          ],
+          "edge_time_s": 1.569626113757228,
+          "delta": -0.0071343183517456055
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5534603469499189
+    },
+    {
+      "period": 6,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75247,
+            75248
+          ],
+          "edge_time_s": 1.5676562500000002,
+          "delta": 0.006280004515186934
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75247,
+            75248
+          ],
+          "edge_time_s": 1.5676562500000002,
+          "delta": 0.006280004515186934
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589259,
+            4589260
+          ],
+          "edge_time_s": 1.5676678951682774,
+          "delta": 0.007134795188903809
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5589680773070427
+    },
+    {
+      "period": 7,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75529,
+            75530
+          ],
+          "edge_time_s": 1.5735312499999998,
+          "delta": -0.005335760282397101
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75529,
+            75530
+          ],
+          "edge_time_s": 1.5735312499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589540,
+            4589541
+          ],
+          "edge_time_s": 1.573521718822477,
+          "delta": -0.005876779556274414
+        }
+      },
+      "hardware_minus_emulator_samples": -0.45749652109350336
+    },
+    {
+      "period": 7,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75435,
+            75436
+          ],
+          "edge_time_s": 1.5715729166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75435,
+            75436
+          ],
+          "edge_time_s": 1.5715729166666668,
+          "delta": 0.0066955500143279145
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589447,
+            4589448
+          ],
+          "edge_time_s": 1.571584332346179,
+          "delta": 0.00594019889831543
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5479526165821369
+    },
+    {
+      "period": 8,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75716,
+            75717
+          ],
+          "edge_time_s": 1.5774270833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75716,
+            75717
+          ],
+          "edge_time_s": 1.5774270833333333,
+          "delta": -0.007048666142705932
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589728,
+            4589729
+          ],
+          "edge_time_s": 1.5774381560003783,
+          "delta": -0.00719296932220459
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5314880181614967
+    },
+    {
+      "period": 8,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75622,
+            75623
+          ],
+          "edge_time_s": 1.5754687500000002,
+          "delta": 0.006281955433023277
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75622,
+            75623
+          ],
+          "edge_time_s": 1.5754687500000002,
+          "delta": 0.0062819554330232775
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589634,
+            4589635
+          ],
+          "edge_time_s": 1.5754799374114277,
+          "delta": 0.007048845291137695
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5369957485186205
+    },
+    {
+      "period": 9,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75904,
+            75905
+          ],
+          "edge_time_s": 1.5813437499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75904,
+            75905
+          ],
+          "edge_time_s": 1.5813437499999998,
+          "delta": -0.005335760282397101
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589915,
+            4589916
+          ],
+          "edge_time_s": 1.5813337610656273,
+          "delta": -0.0057353973388671875
+        }
+      },
+      "hardware_minus_emulator_samples": -0.4794688498819255
+    },
+    {
+      "period": 9,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75810,
+            75811
+          ],
+          "edge_time_s": 1.5793854166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75810,
+            75811
+          ],
+          "edge_time_s": 1.5793854166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4589822,
+            4589823
+          ],
+          "edge_time_s": 1.5793963745893291,
+          "delta": 0.006107926368713379
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5259802877937148
+    },
+    {
+      "period": 10,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76091,
+            76092
+          ],
+          "edge_time_s": 1.5852395833333333,
+          "delta": -0.0070486661427059324
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76091,
+            76092
+          ],
+          "edge_time_s": 1.5852395833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590103,
+            4590104
+          ],
+          "edge_time_s": 1.5852501982435285,
+          "delta": -0.00723719596862793
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5095156893730746
+    },
+    {
+      "period": 10,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            75997,
+            75998
+          ],
+          "edge_time_s": 1.5832812500000002,
+          "delta": 0.006280004515186934
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            75997,
+            75998
+          ],
+          "edge_time_s": 1.5832812500000002,
+          "delta": 0.0062819554330232775
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590009,
+            4590010
+          ],
+          "edge_time_s": 1.583291979654578,
+          "delta": 0.007039785385131836
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5150234197301984
+    },
+    {
+      "period": 11,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76279,
+            76280
+          ],
+          "edge_time_s": 1.5891562499999998,
+          "delta": -0.005335760282397101
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76279,
+            76280
+          ],
+          "edge_time_s": 1.5891562499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590290,
+            4590291
+          ],
+          "edge_time_s": 1.5891458033087775,
+          "delta": -0.005585432052612305
+        }
+      },
+      "hardware_minus_emulator_samples": -0.5014411786703477
+    },
+    {
+      "period": 11,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76185,
+            76186
+          ],
+          "edge_time_s": 1.5871979166666668,
+          "delta": 0.006695550014327915
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76185,
+            76186
+          ],
+          "edge_time_s": 1.5871979166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590197,
+            4590198
+          ],
+          "edge_time_s": 1.5872084168324794,
+          "delta": 0.006245136260986328
+        }
+      },
+      "hardware_minus_emulator_samples": 0.5040079590052926
+    },
+    {
+      "period": 12,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76466,
+            76467
+          ],
+          "edge_time_s": 1.5930520833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76466,
+            76467
+          ],
+          "edge_time_s": 1.5930520833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590478,
+            4590479
+          ],
+          "edge_time_s": 1.5930622404866788,
+          "delta": -0.007242679595947266
+        }
+      },
+      "hardware_minus_emulator_samples": 0.4875433605846524
+    },
+    {
+      "period": 12,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76372,
+            76373
+          ],
+          "edge_time_s": 1.5910937500000002,
+          "delta": 0.0062819554330232775
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76372,
+            76373
+          ],
+          "edge_time_s": 1.5910937500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590384,
+            4590385
+          ],
+          "edge_time_s": 1.5911040218977281,
+          "delta": 0.006930708885192871
+        }
+      },
+      "hardware_minus_emulator_samples": 0.49305109094177624
+    },
+    {
+      "period": 13,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76654,
+            76655
+          ],
+          "edge_time_s": 1.5969687499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76654,
+            76655
+          ],
+          "edge_time_s": 1.5969687499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590665,
+            4590666
+          ],
+          "edge_time_s": 1.5969578455519278,
+          "delta": -0.005399942398071289
+        }
+      },
+      "hardware_minus_emulator_samples": -0.5234135074587698
+    },
+    {
+      "period": 13,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76560,
+            76561
+          ],
+          "edge_time_s": 1.5950104166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76560,
+            76561
+          ],
+          "edge_time_s": 1.5950104166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590572,
+            4590573
+          ],
+          "edge_time_s": 1.5950204590756296,
+          "delta": 0.006376862525939941
+        }
+      },
+      "hardware_minus_emulator_samples": 0.48203563021687046
+    },
+    {
+      "period": 14,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76841,
+            76842
+          ],
+          "edge_time_s": 1.6008645833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76841,
+            76842
+          ],
+          "edge_time_s": 1.6008645833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590853,
+            4590854
+          ],
+          "edge_time_s": 1.600874282729829,
+          "delta": -0.00727999210357666
+        }
+      },
+      "hardware_minus_emulator_samples": 0.4655710317962303
+    },
+    {
+      "period": 14,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76747,
+            76748
+          ],
+          "edge_time_s": 1.5989062500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76747,
+            76748
+          ],
+          "edge_time_s": 1.5989062500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590759,
+            4590760
+          ],
+          "edge_time_s": 1.5989160641408784,
+          "delta": 0.006854057312011719
+        }
+      },
+      "hardware_minus_emulator_samples": 0.4710787621533541
+    },
+    {
+      "period": 15,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77029,
+            77030
+          ],
+          "edge_time_s": 1.6047812499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77029,
+            77030
+          ],
+          "edge_time_s": 1.6047812499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591040,
+            4591041
+          ],
+          "edge_time_s": 1.604769887795078,
+          "delta": -0.005247592926025391
+        }
+      },
+      "hardware_minus_emulator_samples": -0.545385836247192
+    },
+    {
+      "period": 15,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            76935,
+            76936
+          ],
+          "edge_time_s": 1.6028229166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            76935,
+            76936
+          ],
+          "edge_time_s": 1.6028229166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4590947,
+            4590948
+          ],
+          "edge_time_s": 1.6028325013187799,
+          "delta": 0.006513476371765137
+        }
+      },
+      "hardware_minus_emulator_samples": 0.4600633014284483
+    },
+    {
+      "period": 16,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77216,
+            77217
+          ],
+          "edge_time_s": 1.6086770833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77216,
+            77217
+          ],
+          "edge_time_s": 1.6086770833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591228,
+            4591229
+          ],
+          "edge_time_s": 1.6086863249729793,
+          "delta": -0.007330894470214844
+        }
+      },
+      "hardware_minus_emulator_samples": 0.4435987030078081
+    },
+    {
+      "period": 16,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77122,
+            77123
+          ],
+          "edge_time_s": 1.6067187500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77122,
+            77123
+          ],
+          "edge_time_s": 1.6067187500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591134,
+            4591135
+          ],
+          "edge_time_s": 1.6067281063840286,
+          "delta": 0.0067789554595947266
+        }
+      },
+      "hardware_minus_emulator_samples": 0.44910643336493195
+    },
+    {
+      "period": 17,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77404,
+            77405
+          ],
+          "edge_time_s": 1.6125937499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77404,
+            77405
+          ],
+          "edge_time_s": 1.6125937499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591415,
+            4591416
+          ],
+          "edge_time_s": 1.6125819300382283,
+          "delta": -0.0050765275955200195
+        }
+      },
+      "hardware_minus_emulator_samples": -0.5673581650356141
+    },
+    {
+      "period": 17,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77310,
+            77311
+          ],
+          "edge_time_s": 1.6106354166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77310,
+            77311
+          ],
+          "edge_time_s": 1.6106354166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591322,
+            4591323
+          ],
+          "edge_time_s": 1.61064454356193,
+          "delta": 0.006650805473327637
+        }
+      },
+      "hardware_minus_emulator_samples": 0.43809097264002617
+    },
+    {
+      "period": 18,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77591,
+            77592
+          ],
+          "edge_time_s": 1.6164895833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77591,
+            77592
+          ],
+          "edge_time_s": 1.6164895833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591603,
+            4591604
+          ],
+          "edge_time_s": 1.6164983672161295,
+          "delta": -0.007278561592102051
+        }
+      },
+      "hardware_minus_emulator_samples": 0.421626374219386
+    },
+    {
+      "period": 18,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77497,
+            77498
+          ],
+          "edge_time_s": 1.6145312500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77497,
+            77498
+          ],
+          "edge_time_s": 1.6145312500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591509,
+            4591510
+          ],
+          "edge_time_s": 1.6145401486271789,
+          "delta": 0.006646156311035156
+        }
+      },
+      "hardware_minus_emulator_samples": 0.4271341045765098
+    },
+    {
+      "period": 19,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77779,
+            77780
+          ],
+          "edge_time_s": 1.6204062499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77779,
+            77780
+          ],
+          "edge_time_s": 1.6204062499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591791,
+            4591792
+          ],
+          "edge_time_s": 1.6204148043940312,
+          "delta": -0.0051212310791015625
+        }
+      },
+      "hardware_minus_emulator_samples": 0.41061091350513834
+    },
+    {
+      "period": 19,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77685,
+            77686
+          ],
+          "edge_time_s": 1.6184479166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77685,
+            77686
+          ],
+          "edge_time_s": 1.6184479166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591697,
+            4591698
+          ],
+          "edge_time_s": 1.6184565858050803,
+          "delta": 0.006689310073852539
+        }
+      },
+      "hardware_minus_emulator_samples": 0.416118643851604
+    },
+    {
+      "period": 20,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77966,
+            77967
+          ],
+          "edge_time_s": 1.6243020833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77966,
+            77967
+          ],
+          "edge_time_s": 1.6243020833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591978,
+            4591979
+          ],
+          "edge_time_s": 1.6243104094592797,
+          "delta": -0.007263660430908203
+        }
+      },
+      "hardware_minus_emulator_samples": 0.39965404543096383
+    },
+    {
+      "period": 20,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            77872,
+            77873
+          ],
+          "edge_time_s": 1.6223437500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            77872,
+            77873
+          ],
+          "edge_time_s": 1.6223437500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4591884,
+            4591885
+          ],
+          "edge_time_s": 1.6223521908703291,
+          "delta": 0.006513118743896484
+        }
+      },
+      "hardware_minus_emulator_samples": 0.40516177578808765
+    },
+    {
+      "period": 21,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78154,
+            78155
+          ],
+          "edge_time_s": 1.6282187499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78154,
+            78155
+          ],
+          "edge_time_s": 1.6282187499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592166,
+            4592167
+          ],
+          "edge_time_s": 1.6282268466371814,
+          "delta": -0.005324244499206543
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3886385847167162
+    },
+    {
+      "period": 21,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78060,
+            78061
+          ],
+          "edge_time_s": 1.6262604166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78060,
+            78061
+          ],
+          "edge_time_s": 1.6262604166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592072,
+            4592073
+          ],
+          "edge_time_s": 1.6262686280482306,
+          "delta": 0.006863236427307129
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3941463150631819
+    },
+    {
+      "period": 22,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78341,
+            78342
+          ],
+          "edge_time_s": 1.6321145833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78341,
+            78342
+          ],
+          "edge_time_s": 1.6321145833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592353,
+            4592354
+          ],
+          "edge_time_s": 1.63212245170243,
+          "delta": -0.00725245475769043
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3776817166425417
+    },
+    {
+      "period": 22,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78247,
+            78248
+          ],
+          "edge_time_s": 1.6301562500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78247,
+            78248
+          ],
+          "edge_time_s": 1.6301562500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592259,
+            4592260
+          ],
+          "edge_time_s": 1.6301642331134794,
+          "delta": 0.006419062614440918
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3831894469996655
+    },
+    {
+      "period": 23,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78529,
+            78530
+          ],
+          "edge_time_s": 1.6360312499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78529,
+            78530
+          ],
+          "edge_time_s": 1.6360312499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592541,
+            4592542
+          ],
+          "edge_time_s": 1.6360388888803317,
+          "delta": -0.005482792854309082
+        }
+      },
+      "hardware_minus_emulator_samples": 0.36666625592829405
+    },
+    {
+      "period": 23,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78435,
+            78436
+          ],
+          "edge_time_s": 1.6340729166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78435,
+            78436
+          ],
+          "edge_time_s": 1.6340729166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592447,
+            4592448
+          ],
+          "edge_time_s": 1.6340806702913808,
+          "delta": 0.006873607635498047
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3721739862747597
+    },
+    {
+      "period": 24,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78716,
+            78717
+          ],
+          "edge_time_s": 1.6399270833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78716,
+            78717
+          ],
+          "edge_time_s": 1.6399270833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592728,
+            4592729
+          ],
+          "edge_time_s": 1.6399344939455802,
+          "delta": -0.0072269439697265625
+        }
+      },
+      "hardware_minus_emulator_samples": 0.35570938785411954
+    },
+    {
+      "period": 24,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78622,
+            78623
+          ],
+          "edge_time_s": 1.6379687500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78622,
+            78623
+          ],
+          "edge_time_s": 1.6379687500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592634,
+            4592635
+          ],
+          "edge_time_s": 1.6379762753566296,
+          "delta": 0.006282925605773926
+        }
+      },
+      "hardware_minus_emulator_samples": 0.36121711821124336
+    },
+    {
+      "period": 25,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78904,
+            78905
+          ],
+          "edge_time_s": 1.6438437499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78904,
+            78905
+          ],
+          "edge_time_s": 1.6438437499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592916,
+            4592917
+          ],
+          "edge_time_s": 1.643850931123482,
+          "delta": -0.005650877952575684
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3446939271398719
+    },
+    {
+      "period": 25,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78810,
+            78811
+          ],
+          "edge_time_s": 1.6418854166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78810,
+            78811
+          ],
+          "edge_time_s": 1.6418854166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4592822,
+            4592823
+          ],
+          "edge_time_s": 1.641892712534531,
+          "delta": 0.006965160369873047
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3502016574863376
+    },
+    {
+      "period": 26,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79091,
+            79092
+          ],
+          "edge_time_s": 1.6477395833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79091,
+            79092
+          ],
+          "edge_time_s": 1.6477395833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593103,
+            4593104
+          ],
+          "edge_time_s": 1.6477465361887307,
+          "delta": -0.007181048393249512
+        }
+      },
+      "hardware_minus_emulator_samples": 0.33373705907635554
+    },
+    {
+      "period": 26,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            78997,
+            78998
+          ],
+          "edge_time_s": 1.6457812500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            78997,
+            78998
+          ],
+          "edge_time_s": 1.6457812500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593009,
+            4593010
+          ],
+          "edge_time_s": 1.6457883175997798,
+          "delta": 0.006182432174682617
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3392447894228212
+    },
+    {
+      "period": 27,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79279,
+            79280
+          ],
+          "edge_time_s": 1.6516562499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79279,
+            79280
+          ],
+          "edge_time_s": 1.6516562499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593291,
+            4593292
+          ],
+          "edge_time_s": 1.6516629733666321,
+          "delta": -0.0058373212814331055
+        }
+      },
+      "hardware_minus_emulator_samples": 0.32272159835144976
+    },
+    {
+      "period": 27,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79185,
+            79186
+          ],
+          "edge_time_s": 1.6496979166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79185,
+            79186
+          ],
+          "edge_time_s": 1.6496979166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593197,
+            4593198
+          ],
+          "edge_time_s": 1.6497047547776813,
+          "delta": 0.007041573524475098
+        }
+      },
+      "hardware_minus_emulator_samples": 0.32822932869791543
+    },
+    {
+      "period": 28,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79466,
+            79467
+          ],
+          "edge_time_s": 1.6555520833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79466,
+            79467
+          ],
+          "edge_time_s": 1.6555520833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593478,
+            4593479
+          ],
+          "edge_time_s": 1.655558578431881,
+          "delta": -0.00712740421295166
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3117647302879334
+    },
+    {
+      "period": 28,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79372,
+            79373
+          ],
+          "edge_time_s": 1.6535937500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79372,
+            79373
+          ],
+          "edge_time_s": 1.6535937500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593384,
+            4593385
+          ],
+          "edge_time_s": 1.65360035984293,
+          "delta": 0.005947589874267578
+        }
+      },
+      "hardware_minus_emulator_samples": 0.31727246063439907
+    },
+    {
+      "period": 29,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79654,
+            79655
+          ],
+          "edge_time_s": 1.6594687499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79654,
+            79655
+          ],
+          "edge_time_s": 1.6594687499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593666,
+            4593667
+          ],
+          "edge_time_s": 1.6594750156097824,
+          "delta": -0.005971550941467285
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3007492695630276
+    },
+    {
+      "period": 29,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79560,
+            79561
+          ],
+          "edge_time_s": 1.6575104166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79560,
+            79561
+          ],
+          "edge_time_s": 1.6575104166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593572,
+            4593573
+          ],
+          "edge_time_s": 1.6575167970208315,
+          "delta": 0.007182121276855469
+        }
+      },
+      "hardware_minus_emulator_samples": 0.3062569999094933
+    },
+    {
+      "period": 30,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79841,
+            79842
+          ],
+          "edge_time_s": 1.6633645833333333,
+          "delta": -0.007050617060542275
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79841,
+            79842
+          ],
+          "edge_time_s": 1.6633645833333333,
+          "delta": -0.007050617060542275
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593853,
+            4593854
+          ],
+          "edge_time_s": 1.6633706206750312,
+          "delta": -0.007069826126098633
+        }
+      },
+      "hardware_minus_emulator_samples": 0.28979240149951124
+    },
+    {
+      "period": 30,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79747,
+            79748
+          ],
+          "edge_time_s": 1.6614062500000002,
+          "delta": 0.006280004515186935
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79747,
+            79748
+          ],
+          "edge_time_s": 1.6614062500000002,
+          "delta": 0.006280004515186935
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593759,
+            4593760
+          ],
+          "edge_time_s": 1.6614124020860803,
+          "delta": 0.005900263786315918
+        }
+      },
+      "hardware_minus_emulator_samples": 0.2953001318459769
+    },
+    {
+      "period": 31,
+      "sign": -1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            80029,
+            80030
+          ],
+          "edge_time_s": 1.6672812499999998,
+          "delta": -0.005337711200233443
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            80029,
+            80030
+          ],
+          "edge_time_s": 1.6672812499999998,
+          "delta": -0.005337711200233443
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4594041,
+            4594042
+          ],
+          "edge_time_s": 1.6672870578529326,
+          "delta": -0.0060738325119018555
+        }
+      },
+      "hardware_minus_emulator_samples": 0.27877694077460546
+    },
+    {
+      "period": 31,
+      "sign": 1,
+      "sources": {
+        "emulator": {
+          "native_frame_pair": [
+            79935,
+            79936
+          ],
+          "edge_time_s": 1.6653229166666668,
+          "delta": 0.006697500932164258
+        },
+        "delayed_fade": {
+          "native_frame_pair": [
+            79935,
+            79936
+          ],
+          "edge_time_s": 1.6653229166666668,
+          "delta": 0.006697500932164258
+        },
+        "hardware": {
+          "native_frame_pair": [
+            4593947,
+            4593948
+          ],
+          "edge_time_s": 1.6653288392639818,
+          "delta": 0.007160663604736328
+        }
+      },
+      "hardware_minus_emulator_samples": 0.28428467112107114
+    }
+  ],
+  "packet_controls": [
+    {
+      "case": 1,
+      "reference_start_s": 1.4186666666666667,
+      "hardware_start_s": 95.46058333333333,
+      "frozen_map_residual_samples": 0.9779950355799372
+    },
+    {
+      "case": 178,
+      "reference_start_s": 556.90475,
+      "hardware_start_s": 650.9792083333333,
+      "frozen_map_residual_samples": 0.6051468444638886
+    },
+    {
+      "case": 180,
+      "reference_start_s": 557.3116875,
+      "hardware_start_s": 651.3861666666667,
+      "frozen_map_residual_samples": 0.46059360101935454
+    },
+    {
+      "case": 182,
+      "reference_start_s": 557.7187708333333,
+      "hardware_start_s": 651.7932708333333,
+      "frozen_map_residual_samples": 0.31563019001623616
+    },
+    {
+      "case": 184,
+      "reference_start_s": 558.1258541666666,
+      "hardware_start_s": 652.200375,
+      "frozen_map_residual_samples": 0.1706667899270542
+    }
+  ],
+  "original_inputs_unchanged": true,
+  "limitations": "Tone calibration and packet map already align band-limited audio;32-sample register offset is not a physical latency measurement. Strongest signed derivative can select a later oscillator edge when the immediate event is masked; raw waveform and writes retained. No clipping, gain adjustment, or per-variant timing adjustment.",
+  "render_identity_verification": "render-identity.json",
+  "production_core_commit": "2d6ea110275b17de06d9d1c1a621adf625973cac",
+  "repin_method": "SHA256 verification of all four completed render outputs, followed by exact digest-map equality. Existing numeric observations retained because their input samples and CPU traces are identical."
+}

@@ -1,0 +1,785 @@
+{
+  "baseline_report": "artifacts/torture/comparison-torture-pula2a6h/metrics.json",
+  "baseline_report_sha256": "8c0eb6c3214f0f0768543330a8e8d5311f390c5028f86f2f72a83b92f29c549a",
+  "reference": {
+    "path": "artifacts/dac-connected/delay-render/audio.wav",
+    "sha256": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int16",
+    "samples": 27054971,
+    "duration_s": 563.6452291666667
+  },
+  "hardware": {
+    "path": "artifacts/hardware/torture-pula2a6h/capture.wav",
+    "sha256": "c998f8af6ed5389fdbc12127d68da749bfe7ba341f67afda141fe8e31cc73960",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int32",
+    "samples": 31582208,
+    "duration_s": 657.9626666666667
+  },
+  "manifest_sha256": "c91aa686be8e0c6472110485ae2699df9fb51963ed889e573ede83afd55b7f06",
+  "markers_sha256": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657",
+  "candidate_provenance": {
+    "manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/manifest.json",
+    "input_manifest": "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/renders/render-h1xqcgiz/manifest.json",
+    "manifest_sha256": "c91aa686be8e0c6472110485ae2699df9fb51963ed889e573ede83afd55b7f06",
+    "rom_sha256": "0eab1e73e34da49fe1bc7c83dd2fb6768e1e6e3e4ca01d5c39d3932eb936dedf",
+    "sameboy_commit": "f51cb47b133b2291887463b1f74eb7b7298bb1ae",
+    "sameboy_diff_sha256": "41da62507805260d80ebae3879ac10c23d833b9a07f7772e59a7b0de722e4e36",
+    "capture_source_sha256": "ca354f4f042ea48cb5bdc479d312f9f63bcbd7b56f08a3a9ae925762f0d37868",
+    "commands": [
+      [
+        "make",
+        "-C",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source",
+        "CONF=release",
+        "build/lib/libsameboy.a",
+        "bootroms"
+      ],
+      [
+        "cc",
+        "-std=gnu11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source",
+        "/home/jeff/Documents/ChatGPT/dmg/benchmark/capture.c",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source/build/lib/libsameboy.a",
+        "-lm",
+        "-ldl",
+        "-o",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/capture"
+      ],
+      [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/full/audio-torture.gb",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/source/build/bin/BootROMs/dmg_boot.bin",
+        "--until-done",
+        "--seed",
+        "1",
+        "--wav",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/audio.wav",
+        "--screenshot",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/screen.ppm",
+        "--apu-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/apu.csv",
+        "--markers-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/delay-render/markers.csv"
+      ]
+    ],
+    "completion_authority": "ROM emits HRAM FF82=4 after its finite suite/end packet; no wall-clock timeout.",
+    "outputs_sha256": {
+      "audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+      "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+      "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+      "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+    },
+    "status": "completed"
+  },
+  "frozen_mapping": {
+    "clock": 1.0000585963100947,
+    "offset_s": 94.04181316194428,
+    "gain": 0.06392767566127538
+  },
+  "cpu_marker_timing_identical": true,
+  "packet_coverage": {
+    "expected": 337,
+    "reference_valid_unique": 337,
+    "hardware_valid_unique": 337,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "candidate_decoder": {
+    "method": "Decode actual audio around reference packet-writer markers; each search includes one bit of phase ambiguity before/after the specified packet.",
+    "valid_packets": 337,
+    "invalid_or_partial_candidates": 12
+  },
+  "candidate_invalid_packets": [
+    {
+      "kind": 1,
+      "id": 27,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 18,
+      "expected_checksum": 26,
+      "bytes": [
+        211,
+        145,
+        1,
+        27,
+        0,
+        0,
+        18
+      ],
+      "status": "invalid_checksum",
+      "start_s": 80.95095833333333,
+      "preamble_score": 7.6758225788426895,
+      "candidate_region_s": [
+        80.95095833333333,
+        80.95095833333333
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 3,
+      "id": 77,
+      "payload_length": 16,
+      "status": "unknown_kind_or_id",
+      "start_s": 365.45939583333336,
+      "preamble_score": 8.204141209259657,
+      "candidate_region_s": [
+        365.45939583333336,
+        365.45939583333336
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 0,
+      "id": 96,
+      "payload_length": 16,
+      "status": "unknown_kind_or_id",
+      "start_s": 368.2065,
+      "preamble_score": 8.248939665622276,
+      "candidate_region_s": [
+        368.2065,
+        368.2065
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 117,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 100,
+      "expected_checksum": 116,
+      "bytes": [
+        211,
+        145,
+        1,
+        117,
+        0,
+        0,
+        100
+      ],
+      "status": "invalid_checksum",
+      "start_s": 403.0102083333333,
+      "preamble_score": 7.630213479957834,
+      "candidate_region_s": [
+        403.0102083333333,
+        403.0102083333333
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 0,
+      "id": 125,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 421.5761875,
+      "preamble_score": 8.256139236332373,
+      "candidate_region_s": [
+        421.5761875,
+        421.5761875
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 135,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 444.59045833333334,
+      "preamble_score": 8.231272298340784,
+      "candidate_region_s": [
+        444.59045833333334,
+        444.59045833333334
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 144,
+      "payload_length": 1,
+      "status": "unexpected_payload_length",
+      "expected_payload_length": 0,
+      "start_s": 465.1424375,
+      "preamble_score": 7.626773149247434,
+      "candidate_region_s": [
+        465.14243749999997,
+        465.14243749999997
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 3,
+      "id": 384,
+      "payload_length": 128,
+      "status": "unknown_kind_or_id",
+      "start_s": 465.3030625,
+      "preamble_score": 7.638395984362963,
+      "candidate_region_s": [
+        465.3030625,
+        465.3030625
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 128,
+      "payload_length": 1,
+      "status": "unknown_kind_or_id",
+      "start_s": 467.443875,
+      "preamble_score": 7.663530773594481,
+      "candidate_region_s": [
+        467.443875,
+        467.443875
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 3,
+      "id": 156,
+      "payload_length": 17,
+      "status": "unknown_kind_or_id",
+      "start_s": 485.2915,
+      "preamble_score": 7.645353243014463,
+      "candidate_region_s": [
+        485.2915,
+        485.2915
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 156,
+      "payload_length": 0,
+      "status": "unknown_kind_or_id",
+      "start_s": 554.7610208333333,
+      "preamble_score": 8.122247051593343,
+      "candidate_region_s": [
+        554.7610208333333,
+        554.7610208333333
+      ],
+      "within_valid_packet_first_bit": true
+    },
+    {
+      "kind": 1,
+      "id": 178,
+      "payload_length": 1,
+      "status": "unexpected_payload_length",
+      "expected_payload_length": 0,
+      "start_s": 556.9056666666667,
+      "preamble_score": 7.638952482607712,
+      "candidate_region_s": [
+        556.9056666666667,
+        556.9056666666667
+      ],
+      "within_valid_packet_first_bit": true
+    }
+  ],
+  "cases": [
+    {
+      "id": 177,
+      "name": "ch1-DAC-off-all-off",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        556.825657845,
+        556.888244629
+      ],
+      "mapped_hardware_interval_s": [
+        650.9000989358601,
+        650.9626893872148
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3004,
+        "rmse": 0.02220032295597018,
+        "normalized_rmse_reference": 0.24127096330355055,
+        "correlation": 0.9713520133916919,
+        "reference_rms": 0.09201406854764886,
+        "hardware_calibrated_rms": 0.09332063818405467,
+        "mean_difference": -0.0005801544441604018,
+        "peak_absolute_difference": 0.24620112775129072
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.010460588424151157
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.974313684820151,
+        "integrated_absolute_psd_difference": 0.0007322257460192136,
+        "relative_integrated_absolute_psd_difference": 0.36201867006784877,
+        "reference_power": 0.002022618739199228,
+        "hardware_power": 0.0023633517638590993
+      },
+      "baseline_waveform": {
+        "samples": 3004,
+        "rmse": 0.024014287288793883,
+        "normalized_rmse_reference": 0.2602953965356628,
+        "correlation": 0.9665037566935419,
+        "reference_rms": 0.09225782556436303,
+        "hardware_calibrated_rms": 0.09332063818405467,
+        "mean_difference": -0.00041018453749949117,
+        "peak_absolute_difference": 0.2524485767255541
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.974313684820151,
+        "integrated_absolute_psd_difference": 0.0007417321273087669,
+        "relative_integrated_absolute_psd_difference": 0.3624524320193321,
+        "reference_power": 0.002046426128737371,
+        "hardware_power": 0.0023633517638590993
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 178,
+      "name": "ch1-DAC-off-control",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        557.029125214,
+        557.091716766
+      ],
+      "mapped_hardware_interval_s": [
+        651.1035782272972,
+        651.166173446931
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3004,
+        "rmse": 0.022982002571229357,
+        "normalized_rmse_reference": 0.24534755568594563,
+        "correlation": 0.9698982504194926,
+        "reference_rms": 0.09367121065044237,
+        "hardware_calibrated_rms": 0.09387242465270211,
+        "mean_difference": -0.0006003842678002279,
+        "peak_absolute_difference": 0.2628955194899262
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0036388209636923556
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.974313684820151,
+        "integrated_absolute_psd_difference": 0.0008724343948806167,
+        "relative_integrated_absolute_psd_difference": 0.2454162639105206,
+        "reference_power": 0.0035549167808972453,
+        "hardware_power": 0.003875209810980388
+      },
+      "baseline_waveform": {
+        "samples": 3004,
+        "rmse": 0.030094870702206972,
+        "normalized_rmse_reference": 0.3184008173453541,
+        "correlation": 0.9488625390907073,
+        "reference_rms": 0.09451882364222862,
+        "hardware_calibrated_rms": 0.09387242465270211,
+        "mean_difference": -0.0006735289290851808,
+        "peak_absolute_difference": 0.2807788202711762
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.974313684820151,
+        "integrated_absolute_psd_difference": 0.001407686249652822,
+        "relative_integrated_absolute_psd_difference": 0.38943479270483383,
+        "reference_power": 0.003614690510510591,
+        "hardware_power": 0.003875209810980388
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 179,
+      "name": "ch2-DAC-off-all-off",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        557.232597351,
+        557.295174599
+      ],
+      "mapped_hardware_interval_s": [
+        651.3070622870137,
+        651.3696432018094
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3004,
+        "rmse": 0.022113026374915037,
+        "normalized_rmse_reference": 0.2403047701206653,
+        "correlation": 0.9715155860203057,
+        "reference_rms": 0.09202075499296716,
+        "hardware_calibrated_rms": 0.09315056840947661,
+        "mean_difference": -0.0007945400847180156,
+        "peak_absolute_difference": 0.24949436152088805
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.010290142449956045
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0007350237834146854,
+        "relative_integrated_absolute_psd_difference": 0.3633473669655071,
+        "reference_power": 0.002022923104007141,
+        "hardware_power": 0.002350890448624668
+      },
+      "baseline_waveform": {
+        "samples": 3004,
+        "rmse": 0.02388576645534403,
+        "normalized_rmse_reference": 0.2585599128461464,
+        "correlation": 0.9668240603656569,
+        "reference_rms": 0.0923800066004703,
+        "hardware_calibrated_rms": 0.09315056840947661,
+        "mean_difference": -0.000638315278990236,
+        "peak_absolute_difference": 0.28315525019276305
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0007594849179990719,
+        "relative_integrated_absolute_psd_difference": 0.37279193824818724,
+        "reference_power": 0.002037289007825708,
+        "hardware_power": 0.002350890448624668
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 180,
+      "name": "ch2-DAC-off-control",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        557.436055183,
+        557.498637199
+      ],
+      "mapped_hardware_interval_s": [
+        651.5105320408918,
+        651.573117723967
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3004,
+        "rmse": 0.023093822870177548,
+        "normalized_rmse_reference": 0.2465543425136249,
+        "correlation": 0.969516738691956,
+        "reference_rms": 0.09366625886502629,
+        "hardware_calibrated_rms": 0.09359221500168496,
+        "mean_difference": -0.0007114591849974124,
+        "peak_absolute_difference": 0.24926133718623897
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0036477235959540863
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0008827072295440447,
+        "relative_integrated_absolute_psd_difference": 0.2481554518440263,
+        "reference_power": 0.003557073693060972,
+        "hardware_power": 0.0038474290670942623
+      },
+      "baseline_waveform": {
+        "samples": 3004,
+        "rmse": 0.030075476194320116,
+        "normalized_rmse_reference": 0.31829189566129384,
+        "correlation": 0.9487929800486382,
+        "reference_rms": 0.09449023554883264,
+        "hardware_calibrated_rms": 0.09359221500168496,
+        "mean_difference": -0.0008175900567257324,
+        "peak_absolute_difference": 0.272302108670614
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.978695073235684,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0014192231546011874,
+        "relative_integrated_absolute_psd_difference": 0.39256616661795307,
+        "reference_power": 0.0036152457223405624,
+        "hardware_power": 0.0038474290670942623
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 181,
+      "name": "ch3-DAC-off-all-off",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        557.639517784,
+        557.702261925
+      ],
+      "mapped_hardware_interval_s": [
+        651.7140065640494,
+        651.7767543816246
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3012,
+        "rmse": 0.006086241129822912,
+        "normalized_rmse_reference": 0.09523978827706787,
+        "correlation": 0.9956228654985212,
+        "reference_rms": 0.06390439584049742,
+        "hardware_calibrated_rms": 0.06472717027181886,
+        "mean_difference": -0.0006926310667131976,
+        "peak_absolute_difference": 0.07482008523214885
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0018787894154020086
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.936254980079681,
+        "hardware_resolution_reference_hz": 15.937188785818245,
+        "integrated_absolute_psd_difference": 0.00021957966846369178,
+        "relative_integrated_absolute_psd_difference": 0.14902102865427924,
+        "reference_power": 0.0014734810948936932,
+        "hardware_power": 0.0016372384649839162
+      },
+      "baseline_waveform": {
+        "samples": 3012,
+        "rmse": 0.015617668086720498,
+        "normalized_rmse_reference": 0.24091165301072798,
+        "correlation": 0.9707714922236171,
+        "reference_rms": 0.06482736676098036,
+        "hardware_calibrated_rms": 0.06472717027181886,
+        "mean_difference": -0.0005069115424664344,
+        "peak_absolute_difference": 0.27348527039081005
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.936254980079681,
+        "hardware_resolution_reference_hz": 15.937188785818245,
+        "integrated_absolute_psd_difference": 0.0003459225583932366,
+        "relative_integrated_absolute_psd_difference": 0.22513711999448216,
+        "reference_power": 0.0015364972173478758,
+        "hardware_power": 0.0016372384649839162
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 182,
+      "name": "ch3-DAC-off-control",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        557.843142509,
+        557.905891418
+      ],
+      "mapped_hardware_interval_s": [
+        651.9176432207071,
+        651.9803958065615
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3012,
+        "rmse": 0.006862768028632177,
+        "normalized_rmse_reference": 0.10580001943955215,
+        "correlation": 0.9944977997954189,
+        "reference_rms": 0.0648654703939176,
+        "hardware_calibrated_rms": 0.06555587096681544,
+        "mean_difference": -0.0005120820052678308,
+        "peak_absolute_difference": 0.08948921242335592
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0020848632616669274
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.936254980079681,
+        "hardware_resolution_reference_hz": 15.937188785818245,
+        "integrated_absolute_psd_difference": 0.0003464175398368357,
+        "relative_integrated_absolute_psd_difference": 0.12006682113796281,
+        "reference_power": 0.00288520622561319,
+        "hardware_power": 0.003171693587510151
+      },
+      "baseline_waveform": {
+        "samples": 3012,
+        "rmse": 0.021953754451311973,
+        "normalized_rmse_reference": 0.3309324422797955,
+        "correlation": 0.9442619919882413,
+        "reference_rms": 0.06633908207993278,
+        "hardware_calibrated_rms": 0.06555587096681544,
+        "mean_difference": -0.000536733156522188,
+        "peak_absolute_difference": 0.20692078358132168
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.936254980079681,
+        "hardware_resolution_reference_hz": 15.937188785818245,
+        "integrated_absolute_psd_difference": 0.0009281969650961798,
+        "relative_integrated_absolute_psd_difference": 0.31183707116131015,
+        "reference_power": 0.002976544647624762,
+        "hardware_power": 0.003171693587510151
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 183,
+      "name": "ch4-DAC-off-all-off",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        558.046772003,
+        558.109349251
+      ],
+      "mapped_hardware_interval_s": [
+        652.121284646644,
+        652.1838655614397
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3003,
+        "rmse": 0.004625385188522243,
+        "normalized_rmse_reference": 0.10189409656760298,
+        "correlation": 0.9955781107474455,
+        "reference_rms": 0.0453940448400116,
+        "hardware_calibrated_rms": 0.046949715522677085,
+        "mean_difference": -0.0004392544973063577,
+        "peak_absolute_difference": 0.10673641584589894
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0020439347848454654
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 5.964714767351534e-05,
+        "relative_integrated_absolute_psd_difference": 0.08447660967174302,
+        "reference_power": 0.0007060788531321351,
+        "hardware_power": 0.000744782911243183
+      },
+      "baseline_waveform": {
+        "samples": 3003,
+        "rmse": 0.009324565406828403,
+        "normalized_rmse_reference": 0.20116194122213948,
+        "correlation": 0.9800959572948326,
+        "reference_rms": 0.04635352666701229,
+        "hardware_calibrated_rms": 0.046949715522677085,
+        "mean_difference": -0.00028704261413744326,
+        "peak_absolute_difference": 0.17802110174276015
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.00010739285365540993,
+        "relative_integrated_absolute_psd_difference": 0.1475104668482664,
+        "reference_power": 0.0007280354808033885,
+        "hardware_power": 0.000744782911243183
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    },
+    {
+      "id": 184,
+      "name": "ch4-DAC-off-control",
+      "group": "mixer",
+      "description": "Tone, digital silence, DAC disable and re-enable. Control leaves another inactive unrouted DAC enabled.",
+      "reference_interval_s": [
+        558.250229836,
+        558.312811852
+      ],
+      "mapped_hardware_interval_s": [
+        652.3247544015223,
+        652.3873400845973
+      ],
+      "waveform_status": "complete",
+      "waveform": {
+        "samples": 3003,
+        "rmse": 0.005496333788091196,
+        "normalized_rmse_reference": 0.09826345161210474,
+        "correlation": 0.9957076867657574,
+        "reference_rms": 0.05593467049974988,
+        "hardware_calibrated_rms": 0.057551384136434666,
+        "mean_difference": -7.158221891119953e-05,
+        "peak_absolute_difference": 0.07790045536481688
+      },
+      "frame_rms_envelope": {
+        "frame_duration_reference_s": 0.016742706298828125,
+        "frames": 4,
+        "rmse": 0.0019590016989321094
+      },
+      "native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0002269864466935154,
+        "relative_integrated_absolute_psd_difference": 0.09173936262676274,
+        "reference_power": 0.0024742535831320197,
+        "hardware_power": 0.0026760996925273826
+      },
+      "baseline_waveform": {
+        "samples": 3003,
+        "rmse": 0.020442150564761136,
+        "normalized_rmse_reference": 0.3599012805254723,
+        "correlation": 0.9360848077851597,
+        "reference_rms": 0.05679932712357863,
+        "hardware_calibrated_rms": 0.057551384136434666,
+        "mean_difference": -0.00015080800614479948,
+        "peak_absolute_difference": 0.15214104854143312
+      },
+      "baseline_native_spectrum": {
+        "window": "whole-segment Hann, no detrending",
+        "reference_resolution_hz": 15.984015984015986,
+        "hardware_resolution_reference_hz": 15.979631365807109,
+        "integrated_absolute_psd_difference": 0.0005359436680804522,
+        "relative_integrated_absolute_psd_difference": 0.21207694712500091,
+        "reference_power": 0.0025271189318118578,
+        "hardware_power": 0.0026760996925273826
+      },
+      "readback": {
+        "status": "not_emitted_by_this_case"
+      }
+    }
+  ],
+  "scope": "Same hardware samples and original global mapping/gain for every candidate; no new clock, gain, EQ or per-case fit. Hardware packets reuse the validated baseline report."
+}

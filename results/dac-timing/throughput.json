@@ -1,0 +1,72 @@
+{
+  "method": "One sequential before/after render of the same finite hardware-suite ROM at48kHz, same seed and I/O. ROM suite-end terminates each run. These single observations do not estimate a small regression or speedup statistically. Temporary duplicate outputs were verified against the retained original render hashes before removal.",
+  "rendered_audio_seconds": 563.6452291666667,
+  "results": [
+    {
+      "variant": "before",
+      "wall_seconds": 19.592407371965237,
+      "user_cpu_seconds": 19.393389,
+      "system_cpu_seconds": 0.130548,
+      "capture_sha256": "7b7e513d8608f35c9a0b0ba97cf231864008dd35f2682a52d1e7162214577b6c",
+      "provenance_path": "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-after/provenance.json",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-on-edge/torture-after/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/full/audio-torture.gb",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+        "--until-done",
+        "--seed",
+        "1",
+        "--wav",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-before-3nprwkbk/audio.wav",
+        "--screenshot",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-before-3nprwkbk/screen.ppm",
+        "--apu-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-before-3nprwkbk/apu.csv",
+        "--markers-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-before-3nprwkbk/markers.csv"
+      ],
+      "outputs_sha256": {
+        "audio.wav": "bdff9c0fceb184723455de9bbc9ebb47a2dedb23e9b7aca41e655ae60966a696",
+        "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+        "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+        "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+      },
+      "outputs_identical_to_validated_render": true
+    },
+    {
+      "variant": "after",
+      "wall_seconds": 20.000879277009517,
+      "user_cpu_seconds": 19.806010999999998,
+      "system_cpu_seconds": 0.12460099999999999,
+      "capture_sha256": "273dfd54f0649fd8edd6e35aa7ba638fbcc71fe1dc213137b54944dd70b22c55",
+      "provenance_path": "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/final-mask-render/provenance.json",
+      "command": [
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/final-mask-render/capture",
+        "--rom",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/torture/full/audio-torture.gb",
+        "--boot",
+        "/home/jeff/Documents/ChatGPT/dmg/SameBoy/build/bin/BootROMs/dmg_boot.bin",
+        "--until-done",
+        "--seed",
+        "1",
+        "--wav",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-after-lzgv7go8/audio.wav",
+        "--screenshot",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-after-lzgv7go8/screen.ppm",
+        "--apu-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-after-lzgv7go8/apu.csv",
+        "--markers-log",
+        "/home/jeff/Documents/ChatGPT/dmg/artifacts/dac-connected/perf-after-lzgv7go8/markers.csv"
+      ],
+      "outputs_sha256": {
+        "audio.wav": "d373863ea38544ea2a84ec5b3de0dca2f05b56f92067970b258117cff3b77195",
+        "screen.ppm": "0806b848e17c415ee9d470b5b70a38aba1d1d1f638d7ae9e30ecee4a571805d7",
+        "apu.csv": "0361d29351ce797669741c9c78f97a8b8978135feb30249c4d50673acf961747",
+        "markers.csv": "c5de45782b14927f18ada8c04b1d53784b0872c5a45ed0c281cc5fc565f5e657"
+      },
+      "outputs_identical_to_validated_render": true
+    }
+  ]
+}

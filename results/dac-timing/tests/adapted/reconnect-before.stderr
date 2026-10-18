@@ -1,0 +1,1200 @@
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:135: last_sample.left == 0 && last_sample.right == 0
+benchmark/dac-reconnect-test.c:136: gb->apu_output.highpass_diff.left == held.left
+benchmark/dac-reconnect-test.c:137: gb->apu_output.highpass_diff.right == held.right
+benchmark/dac-reconnect-test.c:148: last_sample.left == expected.left
+benchmark/dac-reconnect-test.c:149: last_sample.right == expected.right
+benchmark/dac-reconnect-test.c:151: gb->apu_output.highpass_diff.left == raw.left - (raw.left - held.left) * gb->apu_output.highpass_rate
+benchmark/dac-reconnect-test.c:153: gb->apu_output.highpass_diff.right == raw.right - (raw.right - held.right) * gb->apu_output.highpass_rate

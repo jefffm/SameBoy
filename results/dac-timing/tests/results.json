@@ -1,0 +1,50 @@
+{
+  "before_commit": "f51cb47b133b2291887463b1f74eb7b7298bb1ae",
+  "candidate_checkout": "artifacts/dac-connected/source",
+  "source_timing_authority": "GB_BAND_LIMITED_WIDTH / 2 callbacks, except max_cycles_per_sample == 1; hardware sample rate 48000 Hz; unfiltered sample rate GB_get_clock_rate / 2",
+  "before_failed_checks": {
+    "timing": 16,
+    "adapted_shutdown": 384,
+    "adapted_reconnect": 1200
+  },
+  "candidate_failed_checks": {
+    "timing": 0,
+    "adapted_shutdown": 0,
+    "adapted_reconnect": 0
+  },
+  "unchanged_CGB_complete_PCM_traces": 40,
+  "DC_target_premature_changes_per_channel_before": [
+    32,
+    32,
+    32,
+    32
+  ],
+  "DC_target_premature_changes_per_channel_candidate": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "files": {
+    "benchmark/dac-timing-test.c": "c1739dfb5150c871c8591142aa87043b9d74ea1c3e3c977dce8749802b8c5904",
+    "benchmark/run-dac-timing-test.sh": "0b5cc1e310233d3986b78cc520e6b8ccfdc94fb248e983b37da96d0a0d1bb334",
+    "benchmark/dac-edge-test.c": "b743bcfff2ea2ecf63a6585393b795f833317de16c757eb9e36ad01fad353fc7",
+    "benchmark/dac-reconnect-test.c": "30caf4eee21508e73451c0eb8dbc167a16498051c7e1f772821bd081ae3dd39a",
+    "artifacts/dac-connected/mechanism/f51cb47b-libsameboy.a": "7ed975d0ef89df4a41a5a7883652893aeb85158bceb571dc365684a66d87d67b",
+    "artifacts/dac-connected/source/build/lib/libsameboy.a": "fb0a0729ea10e0a54ef9d787f2877563ed31955301b22fcf0bb9628d250b0c31",
+    "artifacts/dac-connected/source/Core/apu.c": "1f33bc8cc842e1c38cb10e3b1e41bc315711dc6b4fbe7cf3a3f8a85cc539c51a",
+    "artifacts/dac-connected/source/Core/apu.h": "49c626b26c283e54c6affff3707ec3b445343cfda14a659e9f2cae73c63fd4a6",
+    "build/dac-timing-test/before.stdout": "126d92d640280953a55aea0ec2d3eb0c632e7c780df6f85caee86dd44fc63967",
+    "build/dac-timing-test/after.stdout": "3ea936d560925143c851e2fb858d77408dd26fbc79abe92591eaef26df4bd54a",
+    "build/dac-timing-test/before.stderr": "6b364d8c2ffecce64d3c0a477f36af473f30fdb1f3ea8a62325b403ec70c4f7f",
+    "build/dac-timing-test/after.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build/dac-timing-test/adapted/edge-after.stdout": "4214d786bd03250feb5876f6fc85557b3034fbb138623e136bb6cd53f02c957c",
+    "build/dac-timing-test/adapted/reconnect-after.stdout": "1b423bcb1a8b483d702c73e4506822975404884865ca2fffe6a2ed4b97e1fe29",
+    "build/dac-timing-test/adapted/edge-before.stdout": "b381c6adcdedfa685eee18e86eda98c8d87894c9102ec07a9406827db140374f",
+    "build/dac-timing-test/adapted/reconnect-before.stdout": "a8ece6c193f2f329352c29bc5a6b6e235ed85c26b551a931717024185d46f148",
+    "build/dac-timing-test/adapted/edge-after.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build/dac-timing-test/adapted/reconnect-after.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build/dac-timing-test/adapted/edge-before.stderr": "578870881b69ccae251c64b1963487a19f830114ad7327cb1f91446276889632",
+    "build/dac-timing-test/adapted/reconnect-before.stderr": "d56602b67ff57788d4f8eed5e8d1b4896b5ce10715734811b47d94ba5a328e42"
+  }
+}
