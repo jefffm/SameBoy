@@ -1,0 +1,36 @@
+clang mixer-dac red/green output byte-identical
+clang dac-edge red/green output byte-identical
+clang dac-reconnect red/green output byte-identical
+clang dac-timing red/green output byte-identical
+clang noise-feedback red/green output byte-identical
+clang pending-wave red/green output byte-identical
+clang pulse-duty DMG and CGB/AGB/GBP control summaries unchanged
+clang pulse-clock DMG and CGB/AGB/GBP control summaries unchanged
+clang focused audio.wav byte-identical
+clang focused screen.ppm byte-identical
+clang focused apu.csv byte-identical
+clang focused markers.csv byte-identical
+gcc mixer-dac red/green output byte-identical
+gcc dac-edge red/green output byte-identical
+gcc dac-reconnect red/green output byte-identical
+gcc dac-timing red/green output byte-identical
+gcc noise-feedback red/green output byte-identical
+gcc pending-wave red/green output byte-identical
+gcc pulse-duty DMG and CGB/AGB/GBP control summaries unchanged
+gcc pulse-clock DMG and CGB/AGB/GBP control summaries unchanged
+gcc focused audio.wav byte-identical
+gcc focused screen.ppm byte-identical
+gcc focused apu.csv byte-identical
+gcc focused markers.csv byte-identical
+pulse-duty final Clang/GCC output byte-identical
+pulse-clock final Clang/GCC output byte-identical
+mixer-dac final Clang/GCC output byte-identical
+dac-edge final Clang/GCC output byte-identical
+dac-reconnect final Clang/GCC output byte-identical
+dac-timing final Clang/GCC output byte-identical
+noise-feedback final Clang/GCC output byte-identical
+pending-wave final Clang/GCC output byte-identical
+Core/apu.c: exactly two condition changes plus comments; three DMG-B-only gates retained; six scoped TODOs
+build/lib/libsameboy.a: OK
+build/lib/libsameboy.o: OK
+build/lib/libsameboy.so: OK

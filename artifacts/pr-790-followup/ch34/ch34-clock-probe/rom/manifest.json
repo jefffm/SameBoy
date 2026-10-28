@@ -1,0 +1,2096 @@
+{
+  "format": "dmg-audio-torture-v1",
+  "rom": "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/ch34-clock-probe.gb",
+  "rom_sha256": "e68b3184162eb5f848e5428e12b2d89bc9139154bce776299976197e190e8882",
+  "rom_bytes": 65536,
+  "behavior": "Auto-start; LCD off; one pass; acoustic end packet then silence; no SRAM accesses.",
+  "clock_T_hz": 4194304,
+  "protocol": {
+    "sync": [
+      211,
+      145
+    ],
+    "bit_order": "MSB first",
+    "symbol_T": 8192,
+    "zero_hz": 2048,
+    "one_hz": 4096,
+    "header": [
+      "kind",
+      "id_lo",
+      "id_hi",
+      "payload_length"
+    ],
+    "checksum": "XOR of header and payload; sync excluded",
+    "kinds": {
+      "1": "case marker",
+      "2": "readback",
+      "3": "suite end"
+    },
+    "end_id": 65535,
+    "silence_each_side_T": 65536
+  },
+  "markers": {
+    "1": "case packet",
+    "2": "stimulus start",
+    "3": "stimulus end",
+    "4": "suite complete",
+    "5": "readback packet",
+    "6": "end packet"
+  },
+  "cases": [
+    {
+      "id": 1,
+      "name": "calibration-pulse",
+      "group": "calibration",
+      "description": "CH2 256 Hz, 50% duty, volume 8.",
+      "parameters": {},
+      "readback_labels": [],
+      "readback_length": 0,
+      "bank": 1,
+      "address": 32728
+    },
+    {
+      "id": 2,
+      "name": "ch3-00-ff-expired-dac-on-0",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 17504
+    },
+    {
+      "id": 3,
+      "name": "ch3-00-ff-expired-dac-on-1024",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 1024,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 32120
+    },
+    {
+      "id": 4,
+      "name": "ch3-00-ff-expired-dac-on-2048",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 2048,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 29544
+    },
+    {
+      "id": 5,
+      "name": "ch3-00-ff-expired-dac-on-4096",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 4096,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 26072
+    },
+    {
+      "id": 6,
+      "name": "ch3-00-ff-expired-dac-on-8192",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 8192,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 21600
+    },
+    {
+      "id": 7,
+      "name": "ch3-00-ff-expired-dac-on-16384",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 16384,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 28024
+    },
+    {
+      "id": 8,
+      "name": "ch3-00-ff-dac-off-0",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 0,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 17224
+    },
+    {
+      "id": 9,
+      "name": "ch3-00-ff-dac-off-1024",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 1024,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 31712
+    },
+    {
+      "id": 10,
+      "name": "ch3-00-ff-dac-off-2048",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 2048,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 29008
+    },
+    {
+      "id": 11,
+      "name": "ch3-00-ff-dac-off-4096",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 4096,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 25280
+    },
+    {
+      "id": 12,
+      "name": "ch3-00-ff-dac-off-8192",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 8192,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 20296
+    },
+    {
+      "id": 13,
+      "name": "ch3-00-ff-dac-off-16384",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 16384,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 25696
+    },
+    {
+      "id": 14,
+      "name": "ch3-00-ff-never-triggered-0",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 0,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 16944
+    },
+    {
+      "id": 15,
+      "name": "ch3-00-ff-never-triggered-1024",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 1024,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 31304
+    },
+    {
+      "id": 16,
+      "name": "ch3-00-ff-never-triggered-2048",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 2048,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 28472
+    },
+    {
+      "id": 17,
+      "name": "ch3-00-ff-never-triggered-4096",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 4096,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 24488
+    },
+    {
+      "id": 18,
+      "name": "ch3-00-ff-never-triggered-8192",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 8192,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 18992
+    },
+    {
+      "id": 19,
+      "name": "ch3-00-ff-never-triggered-16384",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 16384,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 23368
+    },
+    {
+      "id": 20,
+      "name": "ch3-ff-00-expired-dac-on-0",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 16664
+    },
+    {
+      "id": 21,
+      "name": "ch3-ff-00-expired-dac-on-1024",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 1024,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 30896
+    },
+    {
+      "id": 22,
+      "name": "ch3-ff-00-expired-dac-on-2048",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 2048,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 27936
+    },
+    {
+      "id": 23,
+      "name": "ch3-ff-00-expired-dac-on-4096",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 4096,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 23696
+    },
+    {
+      "id": 24,
+      "name": "ch3-ff-00-expired-dac-on-8192",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 8192,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 17688
+    },
+    {
+      "id": 25,
+      "name": "ch3-ff-00-expired-dac-on-16384",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 16384,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 21040
+    },
+    {
+      "id": 26,
+      "name": "ch3-ff-00-dac-off-0",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 0,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 16384
+    },
+    {
+      "id": 27,
+      "name": "ch3-ff-00-dac-off-1024",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 1024,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 30488
+    },
+    {
+      "id": 28,
+      "name": "ch3-ff-00-dac-off-2048",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 2048,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 27400
+    },
+    {
+      "id": 29,
+      "name": "ch3-ff-00-dac-off-4096",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 4096,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 22904
+    },
+    {
+      "id": 30,
+      "name": "ch3-ff-00-dac-off-8192",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 8192,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 16384
+    },
+    {
+      "id": 31,
+      "name": "ch3-ff-00-dac-off-16384",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 16384,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 18712
+    },
+    {
+      "id": 32,
+      "name": "ch3-ff-00-never-triggered-0",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 0,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 32448
+    },
+    {
+      "id": 33,
+      "name": "ch3-ff-00-never-triggered-1024",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 1024,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 30080
+    },
+    {
+      "id": 34,
+      "name": "ch3-ff-00-never-triggered-2048",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 2048,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 26864
+    },
+    {
+      "id": 35,
+      "name": "ch3-ff-00-never-triggered-4096",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 4096,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 31656
+    },
+    {
+      "id": 36,
+      "name": "ch3-ff-00-never-triggered-8192",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 8192,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 30352
+    },
+    {
+      "id": 37,
+      "name": "ch3-ff-00-never-triggered-16384",
+      "group": "ch3-fetch",
+      "description": "Expire length, replace wave RAM, wait, retrigger; inspect the held first sample.",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 16384,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-setup",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 16384
+    },
+    {
+      "id": 38,
+      "name": "ch4-53-expired-dac-on-0",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 0,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23490
+    },
+    {
+      "id": 39,
+      "name": "ch4-53-expired-dac-on-256",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 256,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 17784
+    },
+    {
+      "id": 40,
+      "name": "ch4-53-expired-dac-on-512",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 512,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21896
+    },
+    {
+      "id": 41,
+      "name": "ch4-53-expired-dac-on-768",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 768,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20815
+    },
+    {
+      "id": 42,
+      "name": "ch4-53-expired-dac-on-1024",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1024,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19998
+    },
+    {
+      "id": 43,
+      "name": "ch4-53-expired-dac-on-1280",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1280,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19175
+    },
+    {
+      "id": 44,
+      "name": "ch4-53-expired-dac-on-1536",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1536,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18622
+    },
+    {
+      "id": 45,
+      "name": "ch4-53-expired-dac-on-4096",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 4096,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21761
+    },
+    {
+      "id": 46,
+      "name": "ch4-53-dac-off-0",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 0,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23978
+    },
+    {
+      "id": 47,
+      "name": "ch4-53-dac-off-256",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 256,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18483
+    },
+    {
+      "id": 48,
+      "name": "ch4-53-dac-off-512",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 512,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23234
+    },
+    {
+      "id": 49,
+      "name": "ch4-53-dac-off-768",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 768,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22701
+    },
+    {
+      "id": 50,
+      "name": "ch4-53-dac-off-1024",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1024,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21626
+    },
+    {
+      "id": 51,
+      "name": "ch4-53-dac-off-1280",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1280,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20679
+    },
+    {
+      "id": 52,
+      "name": "ch4-53-dac-off-1536",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1536,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19861
+    },
+    {
+      "id": 53,
+      "name": "ch4-53-dac-off-4096",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 4096,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23101
+    },
+    {
+      "id": 54,
+      "name": "ch4-53-active-muted-0",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 0,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23735
+    },
+    {
+      "id": 55,
+      "name": "ch4-53-active-muted-256",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 256,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18065
+    },
+    {
+      "id": 56,
+      "name": "ch4-53-active-muted-512",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 512,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22567
+    },
+    {
+      "id": 57,
+      "name": "ch4-53-active-muted-768",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 768,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21491
+    },
+    {
+      "id": 58,
+      "name": "ch4-53-active-muted-1024",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1024,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20543
+    },
+    {
+      "id": 59,
+      "name": "ch4-53-active-muted-1280",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1280,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19724
+    },
+    {
+      "id": 60,
+      "name": "ch4-53-active-muted-1536",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 1536,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19037
+    },
+    {
+      "id": 61,
+      "name": "ch4-53-active-muted-4096",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 83,
+        "gap_T": 4096,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22433
+    },
+    {
+      "id": 62,
+      "name": "ch4-5b-expired-dac-on-0",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 0,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23367
+    },
+    {
+      "id": 63,
+      "name": "ch4-5b-expired-dac-on-256",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 256,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 32528
+    },
+    {
+      "id": 64,
+      "name": "ch4-5b-expired-dac-on-512",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 512,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21356
+    },
+    {
+      "id": 65,
+      "name": "ch4-5b-expired-dac-on-768",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 768,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20407
+    },
+    {
+      "id": 66,
+      "name": "ch4-5b-expired-dac-on-1024",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1024,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19587
+    },
+    {
+      "id": 67,
+      "name": "ch4-5b-expired-dac-on-1280",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1280,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18899
+    },
+    {
+      "id": 68,
+      "name": "ch4-5b-expired-dac-on-1536",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1536,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18344
+    },
+    {
+      "id": 69,
+      "name": "ch4-5b-expired-dac-on-4096",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 4096,
+        "mode": "expired-dac-on",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21221
+    },
+    {
+      "id": 70,
+      "name": "ch4-5b-dac-off-0",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 0,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23857
+    },
+    {
+      "id": 71,
+      "name": "ch4-5b-dac-off-256",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 256,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18205
+    },
+    {
+      "id": 72,
+      "name": "ch4-5b-dac-off-512",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 512,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22968
+    },
+    {
+      "id": 73,
+      "name": "ch4-5b-dac-off-768",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 768,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22299
+    },
+    {
+      "id": 74,
+      "name": "ch4-5b-dac-off-1024",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1024,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21086
+    },
+    {
+      "id": 75,
+      "name": "ch4-5b-dac-off-1280",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1280,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20271
+    },
+    {
+      "id": 76,
+      "name": "ch4-5b-dac-off-1536",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1536,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19450
+    },
+    {
+      "id": 77,
+      "name": "ch4-5b-dac-off-4096",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 4096,
+        "mode": "dac-off",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22835
+    },
+    {
+      "id": 78,
+      "name": "ch4-5b-active-muted-0",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 0,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 23613
+    },
+    {
+      "id": 79,
+      "name": "ch4-5b-active-muted-256",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 256,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 17925
+    },
+    {
+      "id": 80,
+      "name": "ch4-5b-active-muted-512",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 512,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22165
+    },
+    {
+      "id": 81,
+      "name": "ch4-5b-active-muted-768",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 768,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20951
+    },
+    {
+      "id": 82,
+      "name": "ch4-5b-active-muted-1024",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1024,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20135
+    },
+    {
+      "id": 83,
+      "name": "ch4-5b-active-muted-1280",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1280,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 19313
+    },
+    {
+      "id": 84,
+      "name": "ch4-5b-active-muted-1536",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 1536,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18761
+    },
+    {
+      "id": 85,
+      "name": "ch4-5b-active-muted-4096",
+      "group": "ch4-divider",
+      "description": "Retrigger after a controlled silent interval; inspect initial noise-edge phase.",
+      "parameters": {
+        "polynomial": 91,
+        "gap_T": 4096,
+        "mode": "active-muted",
+        "selected_counter_period_T": 1536,
+        "observable": "Retained noise-divider phase, not hidden LFSR progression."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-silent-run",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22031
+    }
+  ],
+  "commands": [
+    [
+      "rgbasm",
+      "-I",
+      "/home/jeff/Documents/ChatGPT/dmg/benchmark/torture/",
+      "-I",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/",
+      "-o",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/engine.o",
+      "/home/jeff/Documents/ChatGPT/dmg/benchmark/torture/engine.asm"
+    ],
+    [
+      "rgblink",
+      "-m",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/ch34-clock-probe.map",
+      "-n",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/ch34-clock-probe.sym",
+      "-o",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/ch34-clock-probe.gb",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/engine.o"
+    ],
+    [
+      "rgbfix",
+      "-v",
+      "-p",
+      "0",
+      "-t",
+      "CH34 CLOCKS V1",
+      "-m",
+      "0x1b",
+      "-r",
+      "0x04",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/ch34-clock-probe.gb"
+    ]
+  ],
+  "source_sha256": {
+    "benchmark/ch34-clock-probe.py": "991bcdb3f87e8b10b0fff780121c1aa241fe6c92908764e94ea26b017641ebc7",
+    "benchmark/torture/engine.asm": "ea2609d9219539dd418666c0ae54f72a443a386e045bc3c1b2d3a9e2b8e96dc2",
+    "benchmark/torture/macros.inc": "c141ad69421ebdccdd7c2f0508ea2f7b8d0816b0a46ebced2e3764448fc65124",
+    "benchmark/torture/cases.py": "e5a85fa26720252f1577c3e8169f14c64c382d6e09cc4fc213fb58510c5d92c0"
+  },
+  "limits": [
+    "One physical DMG does not establish other revisions or models.",
+    "CH3 tests inactive sample-buffer refresh, not progression of the hidden playback index.",
+    "CH4 tests retained divider phase, not progression of the hidden LFSR; retrigger clears it.",
+    "Unexpected CH3 contents or a changed never-triggered buffer require investigating the inactive RAM bus, not choosing an index hypothesis.",
+    "DAC-off is a distinct treatment, not an assumption that every background noise counter stops.",
+    "Short-gap CH3 cases can retain the old byte legitimately; long-gap and inverted patterns are the discriminator.",
+    "Readback packets verify NR52 channel activity; they do not expose the hidden waveform state.",
+    "No hardware pass threshold or silicon result is asserted before recording."
+  ]
+}

@@ -1,0 +1,24 @@
+/home/jeff/Documents/ChatGPT/dmg/.venv/bin/python /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/ch34-focused-probe/benchmark/torture/analyze.py --reference /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/ch34-focused-probe/reference/audio.wav --markers /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/ch34-focused-probe/reference/markers.csv --manifest /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/ch34-focused-probe/rom/manifest.json --hardware /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/hardware/ew_png0d.wav --channel 0 --out /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/decode-recheck/ew_png0d-0
+{
+  "alignment": {
+    "clock": 1.0000592789172724,
+    "offset_s": 9.393460204803514,
+    "clock_difference_ppm": 59.27891727242063,
+    "gain_hardware_per_reference": 0.06384220316799867
+  },
+  "packet_coverage": {
+    "expected": 234,
+    "reference_valid_unique": 234,
+    "hardware_valid_unique": 234,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "complete_hardware": true,
+  "cases": 117,
+  "report": "/home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/decode-recheck/ew_png0d-0/index.html"
+}

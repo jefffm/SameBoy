@@ -1,0 +1,18 @@
+SWEEP COMPARE V1    
+SHIFT 2 / JEFF'S DMG
+TRIALS 1312         
+STOP 0000 REF 0054  
+DIFF 0000 BAD 1312  
+                    
+DIFFERING FREQUENCY 
+FREQ $000           
+                    
+NR52 PRE 0 POST 0   
+                    
+JEFF: LIVE          
+UNIT: INVALID INIT  
+                    
+NOT A HARDWARE PASS 
+                    
+UP/DOWN: PREV/NEXT  
+< > SHIFT  START SUM

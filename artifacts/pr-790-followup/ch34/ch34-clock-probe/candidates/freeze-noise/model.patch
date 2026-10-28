@@ -1,0 +1,11 @@
+--- a/Core/apu.c
++++ b/Core/apu.c
+@@ -1099,7 +1099,7 @@
+         }
+         
+         // TODO: verify these conditions one a DMG somehow
+-        if (gb->apu.noise_counter_active || gb->apu.noise_background_counter_active) {
++        if (gb->apu.is_active[GB_NOISE] && (gb->apu.noise_counter_active || gb->apu.noise_background_counter_active)) {
+             uint16_t cycles_left = cycles;
+             unsigned divisor = (gb->io_registers[GB_IO_NR43] & 0x07) << 2;
+             if (!divisor) divisor = 2;

@@ -1,0 +1,38 @@
+CH1 after length expiry: phase 0 -> 1, expected 1, NR52=f0
+CH2 after length expiry: phase 0 -> 1, expected 1, NR52=f0
+legacy104byte_APU active=0: gate repaired and continuation checked
+legacy104byte_APU active=1: gate repaired and continuation checked
+DMG pulse frequency gate: passed
+model=2 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=2 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=100 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=100 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=4 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=4 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=44 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=44 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=84 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=84 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=c4 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=c4 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=101 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=101 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=181 CH1 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=181 CH2 retrigger_edge_T immediate=14348 background=2060 DAC_stop=14348 expected_advance=12288
+model=200 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=200 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=201 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=201 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=202 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=202 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=203 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=203 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=204 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=204 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=205 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=205 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=207 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=207 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=227 CH1 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+model=227 CH2 retrigger_edge_T immediate=14348 background=14348 DAC_stop=14348 expected_advance=0
+Pulse clock model scope: 0 failed checks

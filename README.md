@@ -1,6 +1,16 @@
 # SameBoy DMG audio: companion evidence
 
-This is the separate evidence branch for Jeff Lynn’s SameBoy audio PR, including the follow-up DAC shutdown, reconnect and synthesis-timing corrections. It contains test sources, frozen hardware ROMs, physical readbacks, recordings, and existing validation reports. The core changes are on [`jefffm/SameBoy:codex/dmg-audio-fidelity`](https://github.com/jefffm/SameBoy/tree/codex/dmg-audio-fidelity), publication head `2d6ea110275b17de06d9d1c1a621adf625973cac` (the reconnect head was `f51cb47b133b2291887463b1f74eb7b7298bb1ae`; the shutdown-edge head was `79fb345c2735e37e8a94b95030986a81d1a557af`; the seven-fix head was `8182d8edbaddbac9f6057930f6cebdabd3b83228`), based on upstream `26a56bd6a122a6318a456abd80558408742d5adf`.
+This is the separate evidence branch for Jeff Lynn’s SameBoy audio PR. The current core is [e31144f1](https://github.com/jefffm/SameBoy/commit/e31144f18194ff8dc9f9e648a7cac7be412d3aec) on [`jefffm/SameBoy:codex/dmg-audio-fidelity`](https://github.com/jefffm/SameBoy/tree/codex/dmg-audio-fidelity).
+
+## Review follow-up: start here
+
+[CH3/CH4 ROMs, recordings and current regressions](artifacts/pr-790-followup/README.md#ch3-and-ch4) · [Standalone on-screen sweep test](artifacts/pr-790-followup/README.md#standalone-sweep-test)
+
+The follow-up includes the review cleanup, focused DMG CH3/CH4 fixes, both promised test-ROM packages, and the same-DMG sweep result. Its portable regression commands cover the current pre-CGB scope, simplified legacy-state contract, and `.inc` sweep table. Additional units/revisions still need physical testing. The packages distinguish the tested MBC5 sweep image from the separately hardware-untested ROM-only image.
+
+## Earlier evidence and reproduction
+
+The evidence and commands below describe the earlier DAC synthesis-timing head `2d6ea110275b17de06d9d1c1a621adf625973cac`. Earlier heads were `f51cb47b133b2291887463b1f74eb7b7298bb1ae` for reconnect, `79fb345c2735e37e8a94b95030986a81d1a557af` for shutdown, and `8182d8edbaddbac9f6057930f6cebdabd3b83228` for the original seven fixes, based on upstream `26a56bd6a122a6318a456abd80558408742d5adf`. Use that earlier core for historical commands unless otherwise noted. Use the follow-up packages above for current regressions.
 
 The work began with a chiptune recorded from LSDj 8.5.1 on an authentic DMG. Later standalone ROMs isolated noise, pulse, wave-RAM, and sweep behavior. The hardware connection was the stock headphone jack to Scarlett inputs 3 (left) and 4 (right), recorded at 48 kHz, stereo, 24-bit PCM. **The physical CPU/board revision is unconfirmed.** The emulator tests select DMG-B. The right capture channel is inverted, so analysis uses left channel zero; do not average the two. The analog path is not calibrated.
 

@@ -1,0 +1,9 @@
+shift-2-old-4cd: expected=10 observed=10 PASS
+shift-2-old-51a: expected=10 observed=10 PASS
+shift-2-old-51b: expected=10 observed=10 PASS
+shift-2-old-51c: expected=11 observed=11 PASS
+shift-2-old-51d: expected=10 observed=10 PASS
+shift-2-old-51e: expected=11 observed=11 PASS
+shift-2-old-51f: expected=11 observed=11 PASS
+shift-3-old-64f: expected=11 observed=11 PASS
+passed: 8 cases, 0 failed; /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/sweep/verification/sweep-map-current-core/results.json

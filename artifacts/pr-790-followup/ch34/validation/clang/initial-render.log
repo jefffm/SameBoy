@@ -1,0 +1,5 @@
+/home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/capture --rom /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/ch34-clock-probe/rom/ch34-clock-probe.gb --boot /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/boot/dmg_boot.bin --until-done --seed 1 --wav /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/initial/audio.wav --screenshot /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/initial/screen.ppm --apu-log /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/initial/apu.csv --markers-log /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/initial/markers.csv
+model=002 seed=1 highpass=1 ticks_8mhz=278981536 seconds=33.257190704 samples=1596345 inputs=0/0 apu_writes=27965
+pre-retrigger roundtrips=0
+markers=341 suite_done=yes
+Program is running, use 'interrupt' to stop execution.

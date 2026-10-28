@@ -1,0 +1,167 @@
+{
+  "label": "ch34-clocks",
+  "status": "saved",
+  "source": "alsa_input.usb-Focusrite_Scarlett_8i6_USB_00000001-00.multichannel-input",
+  "channels": [
+    "Scarlett 3 \u2192 file left",
+    "Scarlett 4 \u2192 file right"
+  ],
+  "command": [
+    "pw-record",
+    "--verbose",
+    "--target",
+    "alsa_input.usb-Focusrite_Scarlett_8i6_USB_00000001-00.multichannel-input",
+    "--rate",
+    "48000",
+    "--format",
+    "s24",
+    "--channels",
+    "2",
+    "--channel-map",
+    "AUX2,AUX3",
+    "--properties",
+    "{\"node.name\": \"dmg-record-ch34-clocks-qw3uz2uv\", \"stream.dont-remix\": true, \"node.dont-reconnect\": true}",
+    "/home/jeff/Documents/ChatGPT/dmg/artifacts/hardware/ch34-clocks-qw3uz2uv/capture.wav"
+  ],
+  "created": {
+    "utc": "2026-10-28T12:32:01.424104+00:00",
+    "monotonic_ns": 174829374276893
+  },
+  "automatic_stop": true,
+  "manifest": "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/manifest.json",
+  "notification_thread": null,
+  "marker_note": "START PLAYBACK is a user action timestamp, not a sample-exact acoustic onset. Power on the physical DMG after pressing Enter.",
+  "process_started": {
+    "utc": "2026-10-28T12:32:01.424807+00:00",
+    "monotonic_ns": 174829374973427
+  },
+  "verified_routes": [
+    {
+      "source_node_id": 92,
+      "source_port": "capture_AUX2",
+      "source_channel": "AUX2",
+      "physical": true,
+      "file_channel_index": 0,
+      "input_channel": "AUX2",
+      "state": "active"
+    },
+    {
+      "source_node_id": 92,
+      "source_port": "capture_AUX3",
+      "source_channel": "AUX3",
+      "physical": true,
+      "file_channel_index": 1,
+      "input_channel": "AUX3",
+      "state": "active"
+    }
+  ],
+  "ready": {
+    "utc": "2026-10-28T12:32:02.472547+00:00",
+    "monotonic_ns": 174830422721299
+  },
+  "start_playback": {
+    "utc": "2026-10-28T12:32:04.960759+00:00",
+    "monotonic_ns": 174832910944602,
+    "seconds_since_process_start": 3.535971175
+  },
+  "completion_packet": {
+    "reason": "final_case_packet_followed_by_suite_end",
+    "clock_used": 1.0,
+    "selected_channel": 0,
+    "sample_rate": 48000,
+    "frames_scanned": 2095336,
+    "rom_sha256": "e68b3184162eb5f848e5428e12b2d89bc9139154bce776299976197e190e8882",
+    "manifest": "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-clock-probe/rom/manifest.json",
+    "terminal_case_packet": {
+      "kind": 2,
+      "id": 85,
+      "payload_length": 4,
+      "payload": [
+        248,
+        248,
+        248,
+        248
+      ],
+      "checksum": 83,
+      "expected_checksum": 83,
+      "bytes": [
+        211,
+        145,
+        2,
+        85,
+        0,
+        4,
+        248,
+        248,
+        248,
+        248,
+        83
+      ],
+      "status": "valid",
+      "start_s": 43.217,
+      "preamble_score": 15.989918471273546,
+      "candidate_region_s": [
+        43.216145833333336,
+        43.21785416666667
+      ],
+      "end_s": 43.388875
+    },
+    "suite_end_packet": {
+      "kind": 3,
+      "id": 65535,
+      "payload_length": 0,
+      "payload": [],
+      "checksum": 3,
+      "expected_checksum": 3,
+      "bytes": [
+        211,
+        145,
+        3,
+        255,
+        255,
+        0,
+        3
+      ],
+      "status": "valid",
+      "start_s": 43.4203125,
+      "preamble_score": 15.993283257905917,
+      "candidate_region_s": [
+        43.41945833333333,
+        43.421104166666666
+      ],
+      "end_s": 43.5296875,
+      "alternative_preamble_phases": [
+        {
+          "start_s": 43.421166666666664,
+          "preamble_score": 7.9385783009598745,
+          "candidate_region_s": [
+            43.421166666666664,
+            43.42125
+          ],
+          "kind": 3,
+          "id": 65535,
+          "payload": [],
+          "checksum": 3
+        }
+      ]
+    },
+    "end_s": 43.5296875,
+    "full_coverage_verified": false,
+    "coverage_note": "Only the expected last-case packet and subsequent complete XOR-checked suite-end packet are required here. Offline analysis must establish complete case/readback coverage and audio accuracy. XOR is error detection, not authentication."
+  },
+  "stop_reason": "suite-end-packet",
+  "recorder_exit_code": 1,
+  "wav_sha256": "3f2a198aac29fd6bc6fd1e874e600c6a32d5f56083fbd85a9653be32bdc834de",
+  "frames": 2110464,
+  "duration_seconds": 43.968,
+  "sample_rate": 48000,
+  "channels_count": 2,
+  "bits_per_sample": 24,
+  "finished": {
+    "utc": "2026-10-28T12:32:45.465155+00:00",
+    "monotonic_ns": 174873415328030
+  },
+  "notification": {
+    "status": "disabled"
+  }
+}

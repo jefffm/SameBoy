@@ -1,0 +1,4 @@
+/home/jeff/Documents/ChatGPT/dmg/.venv/bin/python /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/ch34-focused-fixes/tests/recording_regression.py /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/gcc/focused
+wave 62 cases; maximum error 0.5285974645397697
+noise 54 cases; maximum error 65.88438503444195
+PASS 0 []

@@ -1,0 +1,6 @@
+static const GB_model_t pre_cgb_models[] = {
+    GB_MODEL_DMG_B, GB_MODEL_MGB,
+    GB_MODEL_SGB, GB_MODEL_SGB_PAL,
+    GB_MODEL_SGB_NTSC_NO_SFC, GB_MODEL_SGB_PAL_NO_SFC,
+    GB_MODEL_SGB2, GB_MODEL_SGB2_NO_SFC,
+};

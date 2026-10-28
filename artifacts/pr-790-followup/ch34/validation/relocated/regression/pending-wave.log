@@ -1,0 +1,5 @@
+/home/jeff/Work/SameBoy-review/.amp/in/pr790-relocated/regression/pending-wave /home/jeff/Work/SameBoy-review/.amp/in/pr790-relocated/ch34/ch34-focused-probe/rom/ch34-focused-probe.gb
+pending=1 interrupted_by_trigger=0 exposed_sample=5 expected=5
+pending=1 interrupted_by_trigger=1 exposed_sample=5 expected=5
+pending=2 interrupted_by_trigger=0 exposed_sample=5 expected=5
+pending=2 interrupted_by_trigger=1 exposed_sample=5 expected=5

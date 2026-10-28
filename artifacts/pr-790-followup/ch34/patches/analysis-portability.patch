@@ -1,0 +1,128 @@
+--- original/ch34-focused-hardware-ew_png0d/ch3-analysis/analyze_wave.py
++++ packaged/ch34-focused-hardware-ew_png0d/ch3-analysis/analyze_wave.py
+@@ -1,4 +1,5 @@
+ """Measure CH3 held-output equivalents without fitting tested-waveform timing."""
++import argparse
+ import csv
+ import json
+ from pathlib import Path
+@@ -10,9 +11,12 @@
+ import numpy as np
+ from scipy import ndimage
+ 
+-OUT = Path(__file__).resolve().parent
+-RESULTS = OUT.parent
++RESULTS = Path(__file__).resolve().parent.parent
+ KIT = RESULTS.parent / 'ch34-focused-probe'
++parser = argparse.ArgumentParser(description=__doc__)
++parser.add_argument('--out', type=Path, required=True)
++OUT = parser.parse_args().out.resolve()
++OUT.mkdir(parents=True, exist_ok=False)
+ sys.path.insert(0, str(KIT / 'benchmark/torture'))
+ from analyze import read_audio, sample_hardware
+ 
+@@ -72,7 +76,7 @@
+ for channel, report in enumerate(reports):
+     assert report['packet_coverage']['complete']
+     packets = {(p['kind'], p['id']): p for p in report['hardware_packets']}
+-    hr, hardware, metadata = read_audio(report['hardware']['path'], channel)
++    hr, hardware, metadata = read_audio(RESULTS.parent / 'hardware/ew_png0d.wav', channel)
+     assert hr == rr == 48000
+     alignment = report['alignment']
+     clock, offset = alignment['clock'], alignment['offset_s']
+--- original/ch34-focused-hardware-ew_png0d/ch4-analysis/analyze_ch4.py
++++ packaged/ch34-focused-hardware-ew_png0d/ch4-analysis/analyze_ch4.py
+@@ -1,10 +1,11 @@
+ #!/usr/bin/env python3
+ """CH4-only focused capture measurements; no casewise tested-edge alignment.
+ 
+-Run with /home/jeff/Documents/ChatGPT/dmg/.venv/bin/python analyze_ch4.py.
++Run with Python, NumPy, and SciPy; --out selects a new results directory.
+ The midpoint and affine estimators adapt the old probe's pure functions, not
+ its globals, matrix, expected counts, or tested-edge calibration.
+ """
++import argparse
+ import csv
+ import hashlib
+ import json
+@@ -18,7 +19,7 @@
+ 
+ OUT = Path(__file__).resolve().parent
+ KIT = OUT.parent.parent / "ch34-focused-probe"
+-HARDWARE = Path("/home/jeff/Documents/ChatGPT/dmg/artifacts/hardware/ch34-clocks-ew_png0d/capture.wav")
++HARDWARE = KIT.parent / "hardware/ew_png0d.wav"
+ CPU = 4194304
+ PERIOD = 1536
+ MODELS = {"P+D+R": (1, 1, 1), "P+R": (1, 0, 1), "P": (1, 0, 0),
+@@ -296,6 +297,10 @@
+ 
+ 
+ def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('--out', type=Path, required=True)
++    output = parser.parse_args().out.resolve()
++    output.mkdir(parents=True, exist_ok=False)
+     cases, audios, metrics = load()
+     rows, calibration = measure(cases, audios, metrics)
+     result = {"scope": "54 CH4 cases only, ew_png0d; not a whole-suite pass", "calibration": calibration,
+@@ -311,16 +316,16 @@
+                         [HARDWARE, KIT/"rom/manifest.json", KIT/"reference/audio.wav", KIT/"reference/apu.csv", KIT/"reference/markers.csv",
+                          KIT/"benchmark/noise-design.md", OUT/"analyze_ch4.py",
+                          OUT.parent/"reference-comparison/metrics.json", OUT.parent/"right-channel-check/metrics.json"]}
+-    (OUT/"sensitivity.json").write_text(json.dumps(sensitivity(cases, audios, metrics, rows), indent=2, allow_nan=False)+"\n")
+-    (OUT/"measurements.json").write_text(json.dumps(result, indent=2, allow_nan=False)+"\n")
++    (output/"sensitivity.json").write_text(json.dumps(sensitivity(cases, audios, metrics, rows), indent=2, allow_nan=False)+"\n")
++    (output/"measurements.json").write_text(json.dumps(result, indent=2, allow_nan=False)+"\n")
+     flat = [{**{k:r[k] for k in ("id", "name", "polynomial", "mode", "P", "D", "R")}, "audio":n,
+              **{k:a[k] for k in ("edge_count", "first_latency_T", "first3_latency_T", "first3_phase_spread_T")}}
+             for r in rows for n,a in r["audio"].items()]
+-    with (OUT/"case-measurements.csv").open("w") as f:
++    with (output/"case-measurements.csv").open("w") as f:
+         w = csv.DictWriter(f, fieldnames=list(flat[0])); w.writeheader(); w.writerows(flat)
+     edge_rows = [{"case_id":r["id"], "audio":n, "edge_index":i, **e}
+                  for r in rows for n,a in r["audio"].items() for i,e in enumerate(a["edges"])]
+-    with (OUT/"edges.csv").open("w") as f:
++    with (output/"edges.csv").open("w") as f:
+         w = csv.DictWriter(f, fieldnames=list(edge_rows[0])); w.writeheader(); w.writerows(edge_rows)
+     print(json.dumps({"counts": result["edge_count_distributions"], "pattern_checks": result["pattern_checks"]}, indent=2))
+     for f in result["model_fits"]:
+--- original/ch34-focused-fixes/tests/previous_recordings.py
++++ packaged/ch34-focused-fixes/tests/previous_recordings.py
+@@ -1,4 +1,5 @@
+ """Check both earlier takes with their original timing and gain calibration."""
++import argparse
+ import importlib.util
+ import json
+ from pathlib import Path
+@@ -13,7 +14,12 @@
+ sys.path.insert(0, str(OLD / 'benchmark/torture'))
+ from analyze import read_audio, sample_hardware
+ 
+-rate, audio, _ = read_audio(ROOT / 'previous-probe/audio.wav', 0)
++parser = argparse.ArgumentParser(description=__doc__)
++parser.add_argument('render', type=Path)
++render = parser.parse_args().render.resolve()
++for name in ('apu.csv', 'markers.csv'):
++    assert (render / name).read_bytes() == (OLD / 'reference' / name).read_bytes(), name
++rate, audio, _ = read_audio(render / 'audio.wav', 0)
+ spec = importlib.util.spec_from_file_location('phase', DATA / 'ch4-analysis/analyze_ch4.py')
+ phase = importlib.util.module_from_spec(spec)
+ spec.loader.exec_module(phase)
+@@ -32,7 +38,7 @@
+     folder = OLD / f'hardware-{take}'
+     report = json.loads((folder / 'reference-comparison/metrics.json').read_text())
+     wave = json.loads((folder / 'wave-measurements.json').read_text())
+-    hr, hardware, _ = read_audio(report['hardware']['path'], 0)
++    hr, hardware, _ = read_audio(ROOT.parent / 'hardware' / f'{take}.wav', 0)
+     assert rate == hr == 48000
+     mapping = report['alignment']
+     gain = mapping['calibration']['gain_hardware_per_reference']
+@@ -53,7 +59,7 @@
+                    'max_waveform_rmse': largest_wave, 'max_noise_onset_error_T': largest_noise})
+     print(take, len(waves), 'wave cases', largest_wave, len(noises), 'noise cases', largest_noise)
+ 
+-(ROOT / 'previous-probe/regression.json').write_text(json.dumps(result, indent=2) + '\n')
++(render / 'regression.json').write_text(json.dumps(result, indent=2) + '\n')
+ # Fixed engineering allowances: observed analog waveform mismatch in unchanged
+ # controls is about .014; the old discrete held-output errors were about .16.
+ assert all(r['max_waveform_rmse'] < .03 and r['max_noise_onset_error_T'] < 128 for r in result)

@@ -1,0 +1,37 @@
+sizeof_apu=108 apu_section=112 last_old_field=101 old_fields_end=102 latch_offset=102
+GB_MODEL_DMG_B phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_DMG_B phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_MGB phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_MGB phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_SGB phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_SGB phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_SGB_PAL phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_SGB_PAL phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_SGB_NTSC_NO_SFC phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_SGB_NTSC_NO_SFC phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_SGB_PAL_NO_SFC phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_SGB_PAL_NO_SFC phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_SGB2 phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_SGB2 phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_SGB2_NO_SFC phase=0 output_edges_T=46084,82948,89092
+GB_MODEL_SGB2_NO_SFC phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_CGB_0 phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_CGB_0 phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_CGB_A phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_CGB_A phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_CGB_B phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_CGB_B phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_CGB_C phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_CGB_C phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_CGB_D phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_CGB_D phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_CGB_E phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_CGB_E phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_AGB phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_AGB phase=64 output_edges_T=43012,79876,86020
+GB_MODEL_GBP phase=0 output_edges_T=39940,76804,82948
+GB_MODEL_GBP phase=64 output_edges_T=43012,79876,86020
+NR44_clear=pass APU_off_clear=pass APU_init_clear=pass mid_halfcycle_save_load=pass full_127_step_output_identical=pass
+delayed_NR44_preserves_old_edge=pass synchronized_reset_clears_both=pass
+NR43_rise_consumes=pass fall_captures=pass pulse_consumes_then_refreshes=pass same_value_FF_transition=pass
+legacy104byte_APU=pass poisoned_padding_normalized=pass following_sections_and_RAM=pass

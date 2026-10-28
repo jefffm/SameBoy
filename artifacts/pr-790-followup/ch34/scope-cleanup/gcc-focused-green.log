@@ -1,0 +1,4 @@
+model=002 seed=1 highpass=1 ticks_8mhz=378131536 seconds=45.076791763 samples=2163686 inputs=0/0 apu_writes=38343
+pre-retrigger roundtrips=0
+markers=469 suite_done=yes
+Program is running, use 'interrupt' to stop execution.

@@ -1,0 +1,5 @@
+/home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/capture --rom /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/ch34-focused-probe/rom/ch34-focused-probe.gb --boot /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/boot/dmg_boot.bin --until-done --seed 1 --wav /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/focused/audio.wav --screenshot /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/focused/screen.ppm --apu-log /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/focused/apu.csv --markers-log /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/clang/focused/markers.csv
+model=002 seed=1 highpass=1 ticks_8mhz=378131536 seconds=45.076791763 samples=2163686 inputs=0/0 apu_writes=38343
+pre-retrigger roundtrips=0
+markers=469 suite_done=yes
+Program is running, use 'interrupt' to stop execution.

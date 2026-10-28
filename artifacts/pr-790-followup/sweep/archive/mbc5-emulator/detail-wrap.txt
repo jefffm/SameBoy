@@ -1,0 +1,18 @@
+SWEEP COMPARE V1    
+SHIFT 1 / JEFF'S DMG
+TRIALS 0911         
+STOP 0127 REF 0127  
+DIFF 0000 BAD 0000  
+                    
+DIFFERING FREQUENCY 
+NO DIFFERENCES      
+                    
+                    
+                    
+                    
+                    
+                    
+NOT A HARDWARE PASS 
+                    
+UP/DOWN: PREV/NEXT  
+< > SHIFT  START SUM

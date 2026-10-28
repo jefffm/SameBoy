@@ -1,0 +1,104 @@
+[
+  {
+    "take": "xryrmxjl",
+    "channel": 0,
+    "coverage": {
+      "expected": 170,
+      "reference_valid_unique": 170,
+      "hardware_valid_unique": 170,
+      "missing_reference": [],
+      "missing_hardware": [],
+      "reference_duplicates": {},
+      "hardware_duplicates": {},
+      "order_matches_manifest": true,
+      "complete": true,
+      "suite_end_received": true
+    },
+    "calibration_max_absolute_delta": 6.938893903907228e-17
+  },
+  {
+    "take": "xryrmxjl",
+    "channel": 1,
+    "coverage": {
+      "expected": 170,
+      "reference_valid_unique": 170,
+      "hardware_valid_unique": 170,
+      "missing_reference": [],
+      "missing_hardware": [],
+      "reference_duplicates": {},
+      "hardware_duplicates": {},
+      "order_matches_manifest": true,
+      "complete": true,
+      "suite_end_received": true
+    },
+    "calibration_max_absolute_delta": 3.469446951953614e-17
+  },
+  {
+    "take": "qw3uz2uv",
+    "channel": 0,
+    "coverage": {
+      "expected": 170,
+      "reference_valid_unique": 170,
+      "hardware_valid_unique": 170,
+      "missing_reference": [],
+      "missing_hardware": [],
+      "reference_duplicates": {},
+      "hardware_duplicates": {},
+      "order_matches_manifest": true,
+      "complete": true,
+      "suite_end_received": true
+    },
+    "calibration_max_absolute_delta": 0
+  },
+  {
+    "take": "qw3uz2uv",
+    "channel": 1,
+    "coverage": {
+      "expected": 170,
+      "reference_valid_unique": 170,
+      "hardware_valid_unique": 170,
+      "missing_reference": [],
+      "missing_hardware": [],
+      "reference_duplicates": {},
+      "hardware_duplicates": {},
+      "order_matches_manifest": true,
+      "complete": true,
+      "suite_end_received": true
+    },
+    "calibration_max_absolute_delta": 0
+  },
+  {
+    "take": "ew_png0d",
+    "channel": 0,
+    "coverage": {
+      "expected": 234,
+      "reference_valid_unique": 234,
+      "hardware_valid_unique": 234,
+      "missing_reference": [],
+      "missing_hardware": [],
+      "reference_duplicates": {},
+      "hardware_duplicates": {},
+      "order_matches_manifest": true,
+      "complete": true,
+      "suite_end_received": true
+    },
+    "calibration_max_absolute_delta": 4.163336342344337e-17
+  },
+  {
+    "take": "ew_png0d",
+    "channel": 1,
+    "coverage": {
+      "expected": 234,
+      "reference_valid_unique": 234,
+      "hardware_valid_unique": 234,
+      "missing_reference": [],
+      "missing_hardware": [],
+      "reference_duplicates": {},
+      "hardware_duplicates": {},
+      "order_matches_manifest": true,
+      "complete": true,
+      "suite_end_received": true
+    },
+    "calibration_max_absolute_delta": 2.0816681711721685e-17
+  }
+]

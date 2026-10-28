@@ -1,0 +1,860 @@
+[
+  {
+    "take": "xryrmxjl",
+    "wave": [
+      {
+        "id": 2,
+        "name": "ch3-00-ff-expired-dac-on-0",
+        "waveform_rmse": 0.004494413310206347
+      },
+      {
+        "id": 3,
+        "name": "ch3-00-ff-expired-dac-on-1024",
+        "waveform_rmse": 0.0039700371069564325
+      },
+      {
+        "id": 4,
+        "name": "ch3-00-ff-expired-dac-on-2048",
+        "waveform_rmse": 0.003953615188725074
+      },
+      {
+        "id": 5,
+        "name": "ch3-00-ff-expired-dac-on-4096",
+        "waveform_rmse": 0.0038627234711717034
+      },
+      {
+        "id": 6,
+        "name": "ch3-00-ff-expired-dac-on-8192",
+        "waveform_rmse": 0.004392945746590911
+      },
+      {
+        "id": 7,
+        "name": "ch3-00-ff-expired-dac-on-16384",
+        "waveform_rmse": 0.004218082397554196
+      },
+      {
+        "id": 8,
+        "name": "ch3-00-ff-dac-off-0",
+        "waveform_rmse": 0.0036685012050223986
+      },
+      {
+        "id": 9,
+        "name": "ch3-00-ff-dac-off-1024",
+        "waveform_rmse": 0.003788672052216843
+      },
+      {
+        "id": 10,
+        "name": "ch3-00-ff-dac-off-2048",
+        "waveform_rmse": 0.003695260233828699
+      },
+      {
+        "id": 11,
+        "name": "ch3-00-ff-dac-off-4096",
+        "waveform_rmse": 0.00395444144741615
+      },
+      {
+        "id": 12,
+        "name": "ch3-00-ff-dac-off-8192",
+        "waveform_rmse": 0.003802758402168346
+      },
+      {
+        "id": 13,
+        "name": "ch3-00-ff-dac-off-16384",
+        "waveform_rmse": 0.003834220384000987
+      },
+      {
+        "id": 14,
+        "name": "ch3-00-ff-never-triggered-0",
+        "waveform_rmse": 0.00586112287592878
+      },
+      {
+        "id": 15,
+        "name": "ch3-00-ff-never-triggered-1024",
+        "waveform_rmse": 0.005941491206728643
+      },
+      {
+        "id": 16,
+        "name": "ch3-00-ff-never-triggered-2048",
+        "waveform_rmse": 0.005912012887439754
+      },
+      {
+        "id": 17,
+        "name": "ch3-00-ff-never-triggered-4096",
+        "waveform_rmse": 0.006163052809214557
+      },
+      {
+        "id": 18,
+        "name": "ch3-00-ff-never-triggered-8192",
+        "waveform_rmse": 0.006075694319408266
+      },
+      {
+        "id": 19,
+        "name": "ch3-00-ff-never-triggered-16384",
+        "waveform_rmse": 0.00616615193686503
+      },
+      {
+        "id": 20,
+        "name": "ch3-ff-00-expired-dac-on-0",
+        "waveform_rmse": 0.0131202518139417
+      },
+      {
+        "id": 21,
+        "name": "ch3-ff-00-expired-dac-on-1024",
+        "waveform_rmse": 0.0133370271202665
+      },
+      {
+        "id": 22,
+        "name": "ch3-ff-00-expired-dac-on-2048",
+        "waveform_rmse": 0.013327151663454962
+      },
+      {
+        "id": 23,
+        "name": "ch3-ff-00-expired-dac-on-4096",
+        "waveform_rmse": 0.013347870321195554
+      },
+      {
+        "id": 24,
+        "name": "ch3-ff-00-expired-dac-on-8192",
+        "waveform_rmse": 0.013049677802569928
+      },
+      {
+        "id": 25,
+        "name": "ch3-ff-00-expired-dac-on-16384",
+        "waveform_rmse": 0.012358813003311335
+      },
+      {
+        "id": 26,
+        "name": "ch3-ff-00-dac-off-0",
+        "waveform_rmse": 0.01297287987340162
+      },
+      {
+        "id": 27,
+        "name": "ch3-ff-00-dac-off-1024",
+        "waveform_rmse": 0.012844856851566798
+      },
+      {
+        "id": 28,
+        "name": "ch3-ff-00-dac-off-2048",
+        "waveform_rmse": 0.013071962342643444
+      },
+      {
+        "id": 29,
+        "name": "ch3-ff-00-dac-off-4096",
+        "waveform_rmse": 0.012907312696120339
+      },
+      {
+        "id": 30,
+        "name": "ch3-ff-00-dac-off-8192",
+        "waveform_rmse": 0.013327738860543524
+      },
+      {
+        "id": 31,
+        "name": "ch3-ff-00-dac-off-16384",
+        "waveform_rmse": 0.01354789144256368
+      },
+      {
+        "id": 32,
+        "name": "ch3-ff-00-never-triggered-0",
+        "waveform_rmse": 0.0015409828468181807
+      },
+      {
+        "id": 33,
+        "name": "ch3-ff-00-never-triggered-1024",
+        "waveform_rmse": 0.001521943625534632
+      },
+      {
+        "id": 34,
+        "name": "ch3-ff-00-never-triggered-2048",
+        "waveform_rmse": 0.0015183647562028659
+      },
+      {
+        "id": 35,
+        "name": "ch3-ff-00-never-triggered-4096",
+        "waveform_rmse": 0.0015946043310347499
+      },
+      {
+        "id": 36,
+        "name": "ch3-ff-00-never-triggered-8192",
+        "waveform_rmse": 0.0012287476244122626
+      },
+      {
+        "id": 37,
+        "name": "ch3-ff-00-never-triggered-16384",
+        "waveform_rmse": 0.0007990745558765075
+      }
+    ],
+    "noise": [
+      {
+        "id": 38,
+        "name": "ch4-53-expired-dac-on-0",
+        "onset_error_T": -45.90584050118923
+      },
+      {
+        "id": 39,
+        "name": "ch4-53-expired-dac-on-256",
+        "onset_error_T": -2.673904672265053
+      },
+      {
+        "id": 40,
+        "name": "ch4-53-expired-dac-on-512",
+        "onset_error_T": -8.122031137347221
+      },
+      {
+        "id": 41,
+        "name": "ch4-53-expired-dac-on-768",
+        "onset_error_T": -15.281694456934929
+      },
+      {
+        "id": 42,
+        "name": "ch4-53-expired-dac-on-1024",
+        "onset_error_T": 10.405188366770744
+      },
+      {
+        "id": 43,
+        "name": "ch4-53-expired-dac-on-1280",
+        "onset_error_T": -3.4885186851024628
+      },
+      {
+        "id": 44,
+        "name": "ch4-53-expired-dac-on-1536",
+        "onset_error_T": -32.70190487802029
+      },
+      {
+        "id": 45,
+        "name": "ch4-53-expired-dac-on-4096",
+        "onset_error_T": -6.608909323811531
+      },
+      {
+        "id": 46,
+        "name": "ch4-53-dac-off-0",
+        "onset_error_T": -34.11696019768715
+      },
+      {
+        "id": 47,
+        "name": "ch4-53-dac-off-256",
+        "onset_error_T": -110.6444043815136
+      },
+      {
+        "id": 48,
+        "name": "ch4-53-dac-off-512",
+        "onset_error_T": -107.8297730833292
+      },
+      {
+        "id": 49,
+        "name": "ch4-53-dac-off-768",
+        "onset_error_T": -99.50209161639214
+      },
+      {
+        "id": 50,
+        "name": "ch4-53-dac-off-1024",
+        "onset_error_T": -78.17788153886795
+      },
+      {
+        "id": 51,
+        "name": "ch4-53-dac-off-1280",
+        "onset_error_T": -102.95703479647636
+      },
+      {
+        "id": 52,
+        "name": "ch4-53-dac-off-1536",
+        "onset_error_T": -97.91116513311863
+      },
+      {
+        "id": 53,
+        "name": "ch4-53-dac-off-4096",
+        "onset_error_T": -95.26244543492794
+      },
+      {
+        "id": 54,
+        "name": "ch4-53-active-muted-0",
+        "onset_error_T": -68.98710577189922
+      },
+      {
+        "id": 55,
+        "name": "ch4-53-active-muted-256",
+        "onset_error_T": 7.122602760791779
+      },
+      {
+        "id": 56,
+        "name": "ch4-53-active-muted-512",
+        "onset_error_T": -12.441985368728638
+      },
+      {
+        "id": 57,
+        "name": "ch4-53-active-muted-768",
+        "onset_error_T": -30.9602490067482
+      },
+      {
+        "id": 58,
+        "name": "ch4-53-active-muted-1024",
+        "onset_error_T": 7.733138799667358
+      },
+      {
+        "id": 59,
+        "name": "ch4-53-active-muted-1280",
+        "onset_error_T": -8.690008237957954
+      },
+      {
+        "id": 60,
+        "name": "ch4-53-active-muted-1536",
+        "onset_error_T": -10.575412526726723
+      },
+      {
+        "id": 61,
+        "name": "ch4-53-active-muted-4096",
+        "onset_error_T": 13.798136487603188
+      },
+      {
+        "id": 62,
+        "name": "ch4-5b-expired-dac-on-0",
+        "onset_error_T": -26.66430601477623
+      },
+      {
+        "id": 63,
+        "name": "ch4-5b-expired-dac-on-256",
+        "onset_error_T": 14.838796526193619
+      },
+      {
+        "id": 64,
+        "name": "ch4-5b-expired-dac-on-512",
+        "onset_error_T": -20.574877187609673
+      },
+      {
+        "id": 65,
+        "name": "ch4-5b-expired-dac-on-768",
+        "onset_error_T": -26.826096415519714
+      },
+      {
+        "id": 66,
+        "name": "ch4-5b-expired-dac-on-1024",
+        "onset_error_T": 23.15051630139351
+      },
+      {
+        "id": 67,
+        "name": "ch4-5b-expired-dac-on-1280",
+        "onset_error_T": -16.03977720439434
+      },
+      {
+        "id": 68,
+        "name": "ch4-5b-expired-dac-on-1536",
+        "onset_error_T": -20.29012532532215
+      },
+      {
+        "id": 69,
+        "name": "ch4-5b-expired-dac-on-4096",
+        "onset_error_T": 25.871678233146667
+      },
+      {
+        "id": 70,
+        "name": "ch4-5b-dac-off-0",
+        "onset_error_T": -23.305904269218445
+      },
+      {
+        "id": 71,
+        "name": "ch4-5b-dac-off-256",
+        "onset_error_T": -96.73797069489956
+      },
+      {
+        "id": 72,
+        "name": "ch4-5b-dac-off-512",
+        "onset_error_T": -90.17664358019829
+      },
+      {
+        "id": 73,
+        "name": "ch4-5b-dac-off-768",
+        "onset_error_T": -69.23486064374447
+      },
+      {
+        "id": 74,
+        "name": "ch4-5b-dac-off-1024",
+        "onset_error_T": -90.46604089438915
+      },
+      {
+        "id": 75,
+        "name": "ch4-5b-dac-off-1280",
+        "onset_error_T": -91.57510359585285
+      },
+      {
+        "id": 76,
+        "name": "ch4-5b-dac-off-1536",
+        "onset_error_T": -84.3612400740385
+      },
+      {
+        "id": 77,
+        "name": "ch4-5b-dac-off-4096",
+        "onset_error_T": -85.19312372803688
+      },
+      {
+        "id": 78,
+        "name": "ch4-5b-active-muted-0",
+        "onset_error_T": -78.68764136731625
+      },
+      {
+        "id": 79,
+        "name": "ch4-5b-active-muted-256",
+        "onset_error_T": 36.36216087639332
+      },
+      {
+        "id": 80,
+        "name": "ch4-5b-active-muted-512",
+        "onset_error_T": -24.01493975520134
+      },
+      {
+        "id": 81,
+        "name": "ch4-5b-active-muted-768",
+        "onset_error_T": -2.1686735302209854
+      },
+      {
+        "id": 82,
+        "name": "ch4-5b-active-muted-1024",
+        "onset_error_T": 19.572505801916122
+      },
+      {
+        "id": 83,
+        "name": "ch4-5b-active-muted-1280",
+        "onset_error_T": -22.52322843670845
+      },
+      {
+        "id": 84,
+        "name": "ch4-5b-active-muted-1536",
+        "onset_error_T": 7.323434054851532
+      },
+      {
+        "id": 85,
+        "name": "ch4-5b-active-muted-4096",
+        "onset_error_T": 25.252791553735733
+      }
+    ],
+    "max_waveform_rmse": 0.01354789144256368,
+    "max_noise_onset_error_T": 110.6444043815136
+  },
+  {
+    "take": "qw3uz2uv",
+    "wave": [
+      {
+        "id": 2,
+        "name": "ch3-00-ff-expired-dac-on-0",
+        "waveform_rmse": 0.004189540449440848
+      },
+      {
+        "id": 3,
+        "name": "ch3-00-ff-expired-dac-on-1024",
+        "waveform_rmse": 0.003764920731635402
+      },
+      {
+        "id": 4,
+        "name": "ch3-00-ff-expired-dac-on-2048",
+        "waveform_rmse": 0.003844858821866705
+      },
+      {
+        "id": 5,
+        "name": "ch3-00-ff-expired-dac-on-4096",
+        "waveform_rmse": 0.003808507792002849
+      },
+      {
+        "id": 6,
+        "name": "ch3-00-ff-expired-dac-on-8192",
+        "waveform_rmse": 0.004266729510472801
+      },
+      {
+        "id": 7,
+        "name": "ch3-00-ff-expired-dac-on-16384",
+        "waveform_rmse": 0.004190645061734612
+      },
+      {
+        "id": 8,
+        "name": "ch3-00-ff-dac-off-0",
+        "waveform_rmse": 0.003614519833029641
+      },
+      {
+        "id": 9,
+        "name": "ch3-00-ff-dac-off-1024",
+        "waveform_rmse": 0.003630290539408191
+      },
+      {
+        "id": 10,
+        "name": "ch3-00-ff-dac-off-2048",
+        "waveform_rmse": 0.003547020358332825
+      },
+      {
+        "id": 11,
+        "name": "ch3-00-ff-dac-off-4096",
+        "waveform_rmse": 0.0038869725316980105
+      },
+      {
+        "id": 12,
+        "name": "ch3-00-ff-dac-off-8192",
+        "waveform_rmse": 0.0037082368945393802
+      },
+      {
+        "id": 13,
+        "name": "ch3-00-ff-dac-off-16384",
+        "waveform_rmse": 0.0036792146532473044
+      },
+      {
+        "id": 14,
+        "name": "ch3-00-ff-never-triggered-0",
+        "waveform_rmse": 0.005703946239006375
+      },
+      {
+        "id": 15,
+        "name": "ch3-00-ff-never-triggered-1024",
+        "waveform_rmse": 0.005585742224255139
+      },
+      {
+        "id": 16,
+        "name": "ch3-00-ff-never-triggered-2048",
+        "waveform_rmse": 0.005562960974326105
+      },
+      {
+        "id": 17,
+        "name": "ch3-00-ff-never-triggered-4096",
+        "waveform_rmse": 0.005851168017933869
+      },
+      {
+        "id": 18,
+        "name": "ch3-00-ff-never-triggered-8192",
+        "waveform_rmse": 0.005819788655731901
+      },
+      {
+        "id": 19,
+        "name": "ch3-00-ff-never-triggered-16384",
+        "waveform_rmse": 0.0059366259097566945
+      },
+      {
+        "id": 20,
+        "name": "ch3-ff-00-expired-dac-on-0",
+        "waveform_rmse": 0.012798123758415221
+      },
+      {
+        "id": 21,
+        "name": "ch3-ff-00-expired-dac-on-1024",
+        "waveform_rmse": 0.012947306729198717
+      },
+      {
+        "id": 22,
+        "name": "ch3-ff-00-expired-dac-on-2048",
+        "waveform_rmse": 0.01298274677439825
+      },
+      {
+        "id": 23,
+        "name": "ch3-ff-00-expired-dac-on-4096",
+        "waveform_rmse": 0.01284225891620069
+      },
+      {
+        "id": 24,
+        "name": "ch3-ff-00-expired-dac-on-8192",
+        "waveform_rmse": 0.012869940265320344
+      },
+      {
+        "id": 25,
+        "name": "ch3-ff-00-expired-dac-on-16384",
+        "waveform_rmse": 0.012014138035222686
+      },
+      {
+        "id": 26,
+        "name": "ch3-ff-00-dac-off-0",
+        "waveform_rmse": 0.012781902718890167
+      },
+      {
+        "id": 27,
+        "name": "ch3-ff-00-dac-off-1024",
+        "waveform_rmse": 0.012669658975470094
+      },
+      {
+        "id": 28,
+        "name": "ch3-ff-00-dac-off-2048",
+        "waveform_rmse": 0.012781247539594622
+      },
+      {
+        "id": 29,
+        "name": "ch3-ff-00-dac-off-4096",
+        "waveform_rmse": 0.01254136874497572
+      },
+      {
+        "id": 30,
+        "name": "ch3-ff-00-dac-off-8192",
+        "waveform_rmse": 0.01309532342933677
+      },
+      {
+        "id": 31,
+        "name": "ch3-ff-00-dac-off-16384",
+        "waveform_rmse": 0.013374652542793715
+      },
+      {
+        "id": 32,
+        "name": "ch3-ff-00-never-triggered-0",
+        "waveform_rmse": 0.0014879072116768509
+      },
+      {
+        "id": 33,
+        "name": "ch3-ff-00-never-triggered-1024",
+        "waveform_rmse": 0.0013282178935382762
+      },
+      {
+        "id": 34,
+        "name": "ch3-ff-00-never-triggered-2048",
+        "waveform_rmse": 0.0013619863171102377
+      },
+      {
+        "id": 35,
+        "name": "ch3-ff-00-never-triggered-4096",
+        "waveform_rmse": 0.0011544097294637614
+      },
+      {
+        "id": 36,
+        "name": "ch3-ff-00-never-triggered-8192",
+        "waveform_rmse": 0.0010830460330623667
+      },
+      {
+        "id": 37,
+        "name": "ch3-ff-00-never-triggered-16384",
+        "waveform_rmse": 0.0006246930151380492
+      }
+    ],
+    "noise": [
+      {
+        "id": 38,
+        "name": "ch4-53-expired-dac-on-0",
+        "onset_error_T": -46.08171418309212
+      },
+      {
+        "id": 39,
+        "name": "ch4-53-expired-dac-on-256",
+        "onset_error_T": -2.49781733751297
+      },
+      {
+        "id": 40,
+        "name": "ch4-53-expired-dac-on-512",
+        "onset_error_T": -8.00788776576519
+      },
+      {
+        "id": 41,
+        "name": "ch4-53-expired-dac-on-768",
+        "onset_error_T": -15.47154113650322
+      },
+      {
+        "id": 42,
+        "name": "ch4-53-expired-dac-on-1024",
+        "onset_error_T": 11.145038858056068
+      },
+      {
+        "id": 43,
+        "name": "ch4-53-expired-dac-on-1280",
+        "onset_error_T": -3.521521493792534
+      },
+      {
+        "id": 44,
+        "name": "ch4-53-expired-dac-on-1536",
+        "onset_error_T": -33.073934212327
+      },
+      {
+        "id": 45,
+        "name": "ch4-53-expired-dac-on-4096",
+        "onset_error_T": 7.957948878407478
+      },
+      {
+        "id": 46,
+        "name": "ch4-53-dac-off-0",
+        "onset_error_T": -34.90435180068016
+      },
+      {
+        "id": 47,
+        "name": "ch4-53-dac-off-256",
+        "onset_error_T": -110.79387693107128
+      },
+      {
+        "id": 48,
+        "name": "ch4-53-dac-off-512",
+        "onset_error_T": -108.05541099607944
+      },
+      {
+        "id": 49,
+        "name": "ch4-53-dac-off-768",
+        "onset_error_T": -99.1395153105259
+      },
+      {
+        "id": 50,
+        "name": "ch4-53-dac-off-1024",
+        "onset_error_T": -78.69422422349453
+      },
+      {
+        "id": 51,
+        "name": "ch4-53-dac-off-1280",
+        "onset_error_T": -103.62322027981281
+      },
+      {
+        "id": 52,
+        "name": "ch4-53-dac-off-1536",
+        "onset_error_T": -98.2715981900692
+      },
+      {
+        "id": 53,
+        "name": "ch4-53-dac-off-4096",
+        "onset_error_T": -94.45832288265228
+      },
+      {
+        "id": 54,
+        "name": "ch4-53-active-muted-0",
+        "onset_error_T": -68.45425686240196
+      },
+      {
+        "id": 55,
+        "name": "ch4-53-active-muted-256",
+        "onset_error_T": 7.61585795879364
+      },
+      {
+        "id": 56,
+        "name": "ch4-53-active-muted-512",
+        "onset_error_T": -13.346357211470604
+      },
+      {
+        "id": 57,
+        "name": "ch4-53-active-muted-768",
+        "onset_error_T": -29.909155040979385
+      },
+      {
+        "id": 58,
+        "name": "ch4-53-active-muted-1024",
+        "onset_error_T": 6.587970331311226
+      },
+      {
+        "id": 59,
+        "name": "ch4-53-active-muted-1280",
+        "onset_error_T": -9.465454116463661
+      },
+      {
+        "id": 60,
+        "name": "ch4-53-active-muted-1536",
+        "onset_error_T": -10.319960474967957
+      },
+      {
+        "id": 61,
+        "name": "ch4-53-active-muted-4096",
+        "onset_error_T": 12.163623988628387
+      },
+      {
+        "id": 62,
+        "name": "ch4-5b-expired-dac-on-0",
+        "onset_error_T": -27.859301656484604
+      },
+      {
+        "id": 63,
+        "name": "ch4-5b-expired-dac-on-256",
+        "onset_error_T": 13.349598214030266
+      },
+      {
+        "id": 64,
+        "name": "ch4-5b-expired-dac-on-512",
+        "onset_error_T": -22.32005375623703
+      },
+      {
+        "id": 65,
+        "name": "ch4-5b-expired-dac-on-768",
+        "onset_error_T": -27.912379294633865
+      },
+      {
+        "id": 66,
+        "name": "ch4-5b-expired-dac-on-1024",
+        "onset_error_T": 20.74866832792759
+      },
+      {
+        "id": 67,
+        "name": "ch4-5b-expired-dac-on-1280",
+        "onset_error_T": -18.276066720485687
+      },
+      {
+        "id": 68,
+        "name": "ch4-5b-expired-dac-on-1536",
+        "onset_error_T": -20.873598992824554
+      },
+      {
+        "id": 69,
+        "name": "ch4-5b-expired-dac-on-4096",
+        "onset_error_T": 25.280931785702705
+      },
+      {
+        "id": 70,
+        "name": "ch4-5b-dac-off-0",
+        "onset_error_T": -24.938462525606155
+      },
+      {
+        "id": 71,
+        "name": "ch4-5b-dac-off-256",
+        "onset_error_T": -96.657071813941
+      },
+      {
+        "id": 72,
+        "name": "ch4-5b-dac-off-512",
+        "onset_error_T": -89.90019673109055
+      },
+      {
+        "id": 73,
+        "name": "ch4-5b-dac-off-768",
+        "onset_error_T": -70.05179305374622
+      },
+      {
+        "id": 74,
+        "name": "ch4-5b-dac-off-1024",
+        "onset_error_T": -93.1470632404089
+      },
+      {
+        "id": 75,
+        "name": "ch4-5b-dac-off-1280",
+        "onset_error_T": -94.10805544257164
+      },
+      {
+        "id": 76,
+        "name": "ch4-5b-dac-off-1536",
+        "onset_error_T": -70.3495120704174
+      },
+      {
+        "id": 77,
+        "name": "ch4-5b-dac-off-4096",
+        "onset_error_T": -86.93044105172157
+      },
+      {
+        "id": 78,
+        "name": "ch4-5b-active-muted-0",
+        "onset_error_T": -80.05748109519482
+      },
+      {
+        "id": 79,
+        "name": "ch4-5b-active-muted-256",
+        "onset_error_T": 35.279575780034065
+      },
+      {
+        "id": 80,
+        "name": "ch4-5b-active-muted-512",
+        "onset_error_T": -24.567031025886536
+      },
+      {
+        "id": 81,
+        "name": "ch4-5b-active-muted-768",
+        "onset_error_T": -3.751945823431015
+      },
+      {
+        "id": 82,
+        "name": "ch4-5b-active-muted-1024",
+        "onset_error_T": 17.264430046081543
+      },
+      {
+        "id": 83,
+        "name": "ch4-5b-active-muted-1280",
+        "onset_error_T": -24.08434906601906
+      },
+      {
+        "id": 84,
+        "name": "ch4-5b-active-muted-1536",
+        "onset_error_T": 4.821348130702972
+      },
+      {
+        "id": 85,
+        "name": "ch4-5b-active-muted-4096",
+        "onset_error_T": 22.41743290424347
+      }
+    ],
+    "max_waveform_rmse": 0.013374652542793715,
+    "max_noise_onset_error_T": 110.79387693107128
+  }
+]

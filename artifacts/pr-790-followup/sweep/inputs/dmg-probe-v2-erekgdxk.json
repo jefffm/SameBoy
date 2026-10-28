@@ -1,0 +1,1467 @@
+{
+  "kind": "Physical DMG observations from one finalized take; not a universal hardware specification",
+  "hardware_wav": {
+    "path": "artifacts/hardware/audio-oracle-probe-v2-erekgdxk/capture.wav",
+    "sha256": "bf1a40db5ef5a883182c1121d4da9d569c9d0b4191b47e8dbf8b8f9acd736a93",
+    "sample_rate": 48000,
+    "channels": 2,
+    "selected_channel": 0,
+    "sample_format": "int32",
+    "samples": 12670976,
+    "duration_s": 263.97866666666664
+  },
+  "rom_sha256": "650f9c5f4e8ddcdef3099861051a2d6737d4221b9b9c40e4b29e7434e94ab74f",
+  "manifest_sha256": "965a070f48863b4d86b9cbe45cd341ef7163b06bfd4331e4c8c8e80d4f1322e7",
+  "packet_coverage": {
+    "expected": 116,
+    "reference_valid_unique": 116,
+    "hardware_valid_unique": 116,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "sweep": {
+    "domain": "For shifts 1..7 and old frequency 0..2047, retain old + (old >> shift) < 2048 and new + (new >> shift) < 2048, where new = old + (old >> shift). Reset APU/DIV independently before each trial; observe initially and after the first update.",
+    "trials": 11587,
+    "all_initial_active": true,
+    "killed_old_frequencies_by_shift": {
+      "1": [
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        877,
+        878,
+        879,
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895
+      ],
+      "2": [
+        1229,
+        1230,
+        1231,
+        1232,
+        1233,
+        1234,
+        1235,
+        1236,
+        1237,
+        1238,
+        1239,
+        1240,
+        1241,
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1247,
+        1248,
+        1249,
+        1250,
+        1251,
+        1252,
+        1253,
+        1254,
+        1255,
+        1256,
+        1257,
+        1258,
+        1259,
+        1260,
+        1261,
+        1262,
+        1263,
+        1264,
+        1265,
+        1266,
+        1267,
+        1268,
+        1269,
+        1270,
+        1271,
+        1272,
+        1273,
+        1274,
+        1275,
+        1276,
+        1277,
+        1278,
+        1279,
+        1306,
+        1307,
+        1309
+      ],
+      "3": [
+        1593,
+        1594,
+        1595,
+        1596,
+        1597,
+        1598,
+        1599
+      ],
+      "4": [],
+      "5": [
+        1924,
+        1925
+      ],
+      "6": [
+        1985
+      ],
+      "7": [
+        2017
+      ]
+    },
+    "stops": 192,
+    "candidate_confirmed_stops": 139,
+    "candidate_missed_stops": 53,
+    "candidate_false_positive_stops": 0
+  },
+  "prefix_readbacks": [
+    {
+      "case": 2,
+      "name": "sweep-original-prefix-0",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 0,
+        "wait_T": 0,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 3,
+      "name": "sweep-original-prefix-1",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 1,
+        "wait_T": 32768,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 4,
+      "name": "sweep-original-prefix-2",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 2,
+        "wait_T": 65536,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 5,
+      "name": "sweep-original-prefix-3",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 3,
+        "wait_T": 98304,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 6,
+      "name": "sweep-original-prefix-4",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 4,
+        "wait_T": 131072,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 7,
+      "name": "sweep-original-prefix-5",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 5,
+        "wait_T": 163840,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 8,
+      "name": "sweep-original-prefix-6",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 6,
+        "wait_T": 196608,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 9,
+      "name": "sweep-original-prefix-7",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 7,
+        "wait_T": 229376,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 10,
+      "name": "sweep-original-prefix-8",
+      "parameters": {
+        "first_nr14": 130,
+        "final_nr14": 129,
+        "sweep_intervals": 8,
+        "wait_T": 262144,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 11,
+      "name": "sweep-direct-prefix-0",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 0,
+        "wait_T": 0,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 12,
+      "name": "sweep-direct-prefix-1",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 1,
+        "wait_T": 32768,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 13,
+      "name": "sweep-direct-prefix-2",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 2,
+        "wait_T": 65536,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 14,
+      "name": "sweep-direct-prefix-3",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 3,
+        "wait_T": 98304,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 15,
+      "name": "sweep-direct-prefix-4",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 4,
+        "wait_T": 131072,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 16,
+      "name": "sweep-direct-prefix-5",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 5,
+        "wait_T": 163840,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 17,
+      "name": "sweep-direct-prefix-6",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 6,
+        "wait_T": 196608,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 18,
+      "name": "sweep-direct-prefix-7",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 7,
+        "wait_T": 229376,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 19,
+      "name": "sweep-direct-prefix-8",
+      "parameters": {
+        "first_nr14": 2,
+        "final_nr14": 129,
+        "sweep_intervals": 8,
+        "wait_T": 262144,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 20,
+      "name": "sweep-same-period-prefix-0",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 0,
+        "wait_T": 0,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 21,
+      "name": "sweep-same-period-prefix-1",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 1,
+        "wait_T": 32768,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 22,
+      "name": "sweep-same-period-prefix-2",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 2,
+        "wait_T": 65536,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 23,
+      "name": "sweep-same-period-prefix-3",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 3,
+        "wait_T": 98304,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 241
+    },
+    {
+      "case": 24,
+      "name": "sweep-same-period-prefix-4",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 4,
+        "wait_T": 131072,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 25,
+      "name": "sweep-same-period-prefix-5",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 5,
+        "wait_T": 163840,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 26,
+      "name": "sweep-same-period-prefix-6",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 6,
+        "wait_T": 196608,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 27,
+      "name": "sweep-same-period-prefix-7",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 7,
+        "wait_T": 229376,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    },
+    {
+      "case": 28,
+      "name": "sweep-same-period-prefix-8",
+      "parameters": {
+        "first_nr14": 129,
+        "final_nr14": 129,
+        "sweep_intervals": 8,
+        "wait_T": 262144,
+        "source_full_suite_id": 89,
+        "source_hold_intervals": 8
+      },
+      "NR52": 240
+    }
+  ],
+  "wave": {
+    "selected_truth_mask": "e8",
+    "rule": "(a & b) | (a & c) | (b & c)",
+    "operand_assumption": "a = initial wave[0]; b = initial wave[selected & ~3]; c = initial wave[selected]. The existing timer interpretation supplies selected.",
+    "cases": [
+      {
+        "case": 29,
+        "name": "original-pattern",
+        "parameters": {
+          "wave_bytes": [
+            1,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false
+        },
+        "readback": [
+          65,
+          86,
+          103,
+          120,
+          65,
+          86,
+          103,
+          120,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 30,
+        "name": "operand-truth-000",
+        "parameters": {
+          "wave_bytes": [
+            0,
+            18,
+            35,
+            52,
+            0,
+            86,
+            103,
+            0,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            0,
+            0,
+            0
+          ]
+        },
+        "readback": [
+          0,
+          86,
+          103,
+          0,
+          0,
+          86,
+          103,
+          0,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 31,
+        "name": "operand-truth-001",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            0,
+            86,
+            103,
+            0,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            0,
+            0
+          ]
+        },
+        "readback": [
+          0,
+          86,
+          103,
+          0,
+          0,
+          86,
+          103,
+          0,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 32,
+        "name": "operand-truth-010",
+        "parameters": {
+          "wave_bytes": [
+            0,
+            18,
+            35,
+            52,
+            255,
+            86,
+            103,
+            0,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            0,
+            1,
+            0
+          ]
+        },
+        "readback": [
+          0,
+          86,
+          103,
+          0,
+          0,
+          86,
+          103,
+          0,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 33,
+        "name": "operand-truth-011",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            255,
+            86,
+            103,
+            0,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            1,
+            0
+          ]
+        },
+        "readback": [
+          255,
+          86,
+          103,
+          0,
+          255,
+          86,
+          103,
+          0,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 34,
+        "name": "operand-truth-100",
+        "parameters": {
+          "wave_bytes": [
+            0,
+            18,
+            35,
+            52,
+            0,
+            86,
+            103,
+            255,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            0,
+            0,
+            1
+          ]
+        },
+        "readback": [
+          0,
+          86,
+          103,
+          255,
+          0,
+          86,
+          103,
+          255,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 35,
+        "name": "operand-truth-101",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            0,
+            86,
+            103,
+            255,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            0,
+            1
+          ]
+        },
+        "readback": [
+          255,
+          86,
+          103,
+          255,
+          255,
+          86,
+          103,
+          255,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 36,
+        "name": "operand-truth-110",
+        "parameters": {
+          "wave_bytes": [
+            0,
+            18,
+            35,
+            52,
+            255,
+            86,
+            103,
+            255,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            0,
+            1,
+            1
+          ]
+        },
+        "readback": [
+          255,
+          86,
+          103,
+          255,
+          255,
+          86,
+          103,
+          255,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 37,
+        "name": "operand-truth-111",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            255,
+            86,
+            103,
+            255,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            1,
+            1
+          ]
+        },
+        "readback": [
+          255,
+          86,
+          103,
+          255,
+          255,
+          86,
+          103,
+          255,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 38,
+        "name": "original-pattern-equal-time-NOP",
+        "parameters": {
+          "wave_bytes": [
+            1,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "NOP",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false
+        },
+        "readback": [
+          65,
+          86,
+          103,
+          120,
+          65,
+          86,
+          103,
+          120,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 39,
+        "name": "original-pattern-delayed-DAC-off",
+        "parameters": {
+          "wave_bytes": [
+            1,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 32,
+          "safe_retrigger": false
+        },
+        "readback": [
+          65,
+          86,
+          103,
+          120,
+          65,
+          86,
+          103,
+          120,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 40,
+        "name": "original-pattern-safe-control",
+        "parameters": {
+          "wave_bytes": [
+            1,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            137,
+            154,
+            171,
+            188,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 208,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": true
+        },
+        "readback": [
+          1,
+          18,
+          35,
+          52,
+          69,
+          86,
+          103,
+          120,
+          137,
+          154,
+          171,
+          188,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 41,
+        "name": "operand-block08-truth-010",
+        "parameters": {
+          "wave_bytes": [
+            0,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            255,
+            154,
+            171,
+            0,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 336,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            0,
+            1,
+            0
+          ],
+          "selected_offset_hypothesis": 11,
+          "missing_in_original_block_data": true
+        },
+        "readback": [
+          0,
+          154,
+          171,
+          0,
+          69,
+          86,
+          103,
+          120,
+          0,
+          154,
+          171,
+          0,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 42,
+        "name": "operand-block08-truth-100",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            0,
+            154,
+            171,
+            0,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 336,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            0,
+            0
+          ],
+          "selected_offset_hypothesis": 11,
+          "missing_in_original_block_data": true
+        },
+        "readback": [
+          0,
+          154,
+          171,
+          0,
+          69,
+          86,
+          103,
+          120,
+          0,
+          154,
+          171,
+          0,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 43,
+        "name": "operand-block08-truth-101",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            0,
+            154,
+            171,
+            255,
+            205,
+            222,
+            239,
+            240
+          ],
+          "wait_T": 336,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            0,
+            1
+          ],
+          "selected_offset_hypothesis": 11,
+          "missing_in_original_block_data": true
+        },
+        "readback": [
+          255,
+          154,
+          171,
+          255,
+          69,
+          86,
+          103,
+          120,
+          255,
+          154,
+          171,
+          255,
+          205,
+          222,
+          239,
+          240
+        ]
+      },
+      {
+        "case": 44,
+        "name": "operand-block0c-truth-100",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            137,
+            154,
+            171,
+            188,
+            0,
+            222,
+            239,
+            0
+          ],
+          "wait_T": 464,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            0,
+            0
+          ],
+          "selected_offset_hypothesis": 15,
+          "missing_in_original_block_data": true
+        },
+        "readback": [
+          0,
+          222,
+          239,
+          0,
+          69,
+          86,
+          103,
+          120,
+          137,
+          154,
+          171,
+          188,
+          0,
+          222,
+          239,
+          0
+        ]
+      },
+      {
+        "case": 45,
+        "name": "operand-block0c-truth-101",
+        "parameters": {
+          "wave_bytes": [
+            255,
+            18,
+            35,
+            52,
+            69,
+            86,
+            103,
+            120,
+            137,
+            154,
+            171,
+            188,
+            0,
+            222,
+            239,
+            255
+          ],
+          "wait_T": 464,
+          "wait_instruction": "original counted wait",
+          "post_trigger_extra_T": 0,
+          "safe_retrigger": false,
+          "boolean_inputs_a_b_c": [
+            1,
+            0,
+            1
+          ],
+          "selected_offset_hypothesis": 15,
+          "missing_in_original_block_data": true
+        },
+        "readback": [
+          255,
+          222,
+          239,
+          255,
+          69,
+          86,
+          103,
+          120,
+          137,
+          154,
+          171,
+          188,
+          255,
+          222,
+          239,
+          255
+        ]
+      }
+    ]
+  },
+  "evidence_sha256": {
+    "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-reference/metrics.json": "5e8bdca8b443a4d0fee2f15641152335b0de1ed5ffdc7779c9b339d1f4496f42",
+    "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-reference/sweep-observations.json": "d49fc807e3327675fce22a93d7b2dd2e033825dc7c079321a5b3d6c0e2638243",
+    "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-reference/sweep-summary.json": "c244e99e1aaea71062736db26ea08e9dc6c39fc955035bac472f3ec8c77e4f93",
+    "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-reference/wave-selection.json": "cbe50e01a20c4fb6d9644830aaef0f41b210554b63cadde2e9bdbd6fd516f826",
+    "artifacts/audio-oracle-probe-v2/comparison-erekgdxk-candidate-reference/metrics.json": "2da1a3d7a15b268ad5cccc9b90ce96f416b5e31e61144f67589fd43306e92f78"
+  }
+}

@@ -1,0 +1,4 @@
+warning: Overwrote a non-zero byte in the header checksum [-Woverwrite]
+sweep-verify.gb: 32768 bytes; SHA256 cfb29be1b03c7cb6ebc76a63e2260455b745e09aea4966e26de8fafbf4217d09
+sweep-verify-mbc5.gb: 32768 bytes; SHA256 784825ebfa76fcb33f45aeb12275d34cfdf373a4e9f176f2bea6452e3d507b03
+PASS: both rebuilt variants, headers/checksums, exactly three header-byte differences; measurement bytes unchanged

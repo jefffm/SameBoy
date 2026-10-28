@@ -1,0 +1,10 @@
+{
+  "source_sha256": "cfb29be1b03c7cb6ebc76a63e2260455b745e09aea4966e26de8fafbf4217d09",
+  "cartridge_sha256": "784825ebfa76fcb33f45aeb12275d34cfdf373a4e9f176f2bea6452e3d507b03",
+  "changed_offsets": [
+    "0x147",
+    "0x149",
+    "0x14d"
+  ],
+  "changes": "MBC5+RAM header and cartridge checksums only; all program and reference bytes unchanged"
+}

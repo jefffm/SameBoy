@@ -1,0 +1,18 @@
+SWEEP COMPARE V1    
+SHIFT 7 / JEFF'S DMG
+TRIALS 2018         
+STOP 0001 REF 0001  
+DIFF 0000 BAD 0000  
+                    
+DIFFERING FREQUENCY 
+NO DIFFERENCES      
+                    
+                    
+                    
+                    
+                    
+                    
+NOT A HARDWARE PASS 
+                    
+UP/DOWN: PREV/NEXT  
+< > SHIFT  START SUM

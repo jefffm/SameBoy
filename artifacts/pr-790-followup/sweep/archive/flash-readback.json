@@ -1,0 +1,27 @@
+{
+  "rom": "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/sweep-verify-flash/sweep-verify-mbc5.gb",
+  "rom_sha256": "784825ebfa76fcb33f45aeb12275d34cfdf373a4e9f176f2bea6452e3d507b03",
+  "rom_bytes": 32768,
+  "input_header": {
+    "cart_type": 27,
+    "rom_code": 0,
+    "ram_code": 4
+  },
+  "started_utc": "2026-10-28T18:21:44.402811+00:00",
+  "backup": "User waived backup for ephemeral lab-cartridge data in this thread.",
+  "authorization": "User requested: flash it now.",
+  "rom_write_attempted": true,
+  "rom_readback_verified": true,
+  "sram_write_attempted": false,
+  "status": "readback-verified",
+  "verification": "Blaster.write_rom compares all ROM bytes with device readback.",
+  "port": "/dev/ttyACM0",
+  "identity": "RetroBlaster Programmer 2.0\r\nFirmware version 2.5\r\nRetroStage Computing (c)2021",
+  "flash_id": "01 d8 00 00",
+  "previous_header": {
+    "cart_type": 27,
+    "rom_code": 2,
+    "ram_code": 4
+  },
+  "finished_utc": "2026-10-28T18:22:11.899211+00:00"
+}

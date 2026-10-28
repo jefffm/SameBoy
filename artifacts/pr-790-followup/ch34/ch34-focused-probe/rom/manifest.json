@@ -1,0 +1,3874 @@
+{
+  "format": "dmg-audio-torture-v1",
+  "rom": "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/ch34-focused-probe.gb",
+  "rom_sha256": "35e40243730d7d686721c987ef40ceb6b5dedb31a6051c0c6e4a586a75c498ca",
+  "rom_bytes": 131072,
+  "behavior": "Auto-start; LCD off; one pass; acoustic end packet then silence; no SRAM accesses.",
+  "clock_T_hz": 4194304,
+  "protocol": {
+    "sync": [
+      211,
+      145
+    ],
+    "bit_order": "MSB first",
+    "symbol_T": 8192,
+    "zero_hz": 2048,
+    "one_hz": 4096,
+    "header": [
+      "kind",
+      "id_lo",
+      "id_hi",
+      "payload_length"
+    ],
+    "checksum": "XOR of header and payload; sync excluded",
+    "kinds": {
+      "1": "case marker",
+      "2": "readback",
+      "3": "suite end"
+    },
+    "end_id": 65535,
+    "silence_each_side_T": 65536
+  },
+  "markers": {
+    "1": "case packet",
+    "2": "stimulus start",
+    "3": "stimulus end",
+    "4": "suite complete",
+    "5": "readback packet",
+    "6": "end packet"
+  },
+  "cases": [
+    {
+      "id": 1,
+      "name": "calibration-pulse",
+      "group": "calibration",
+      "description": "CH2 256 Hz, 50% duty, volume 8.",
+      "parameters": {},
+      "readback_labels": [],
+      "readback_length": 0,
+      "bank": 3,
+      "address": 32655
+    },
+    {
+      "id": 2,
+      "name": "ch3-hold-00-0",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 0,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 16606
+    },
+    {
+      "id": 3,
+      "name": "ch3-hold-00-256",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 256,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 28441
+    },
+    {
+      "id": 4,
+      "name": "ch3-hold-00-1024",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 1024,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 30345
+    },
+    {
+      "id": 5,
+      "name": "ch3-hold-00-4096",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 4096,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 31283
+    },
+    {
+      "id": 6,
+      "name": "ch3-hold-00-16384",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 16384,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 28201
+    },
+    {
+      "id": 7,
+      "name": "ch3-hold-55-0",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 0,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 16384
+    },
+    {
+      "id": 8,
+      "name": "ch3-hold-55-256",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 256,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 32415
+    },
+    {
+      "id": 9,
+      "name": "ch3-hold-55-1024",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 1024,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 30109
+    },
+    {
+      "id": 10,
+      "name": "ch3-hold-55-4096",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 4096,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 31049
+    },
+    {
+      "id": 11,
+      "name": "ch3-hold-55-16384",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 16384,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 32175
+    },
+    {
+      "id": 12,
+      "name": "ch3-hold-aa-0",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 170,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 0,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 32414
+    },
+    {
+      "id": 13,
+      "name": "ch3-hold-aa-256",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 170,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 256,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 31935
+    },
+    {
+      "id": 14,
+      "name": "ch3-hold-aa-1024",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 170,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 1024,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 29873
+    },
+    {
+      "id": 15,
+      "name": "ch3-hold-aa-4096",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 170,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 4096,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 30815
+    },
+    {
+      "id": 16,
+      "name": "ch3-hold-aa-16384",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 170,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 16384,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 32303
+    },
+    {
+      "id": 17,
+      "name": "ch3-hold-ff-0",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 255,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 0,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 32192
+    },
+    {
+      "id": 18,
+      "name": "ch3-hold-ff-256",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 255,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 256,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 32063
+    },
+    {
+      "id": 19,
+      "name": "ch3-hold-ff-1024",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 255,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 1024,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 29637
+    },
+    {
+      "id": 20,
+      "name": "ch3-hold-ff-4096",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 255,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 4096,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 30581
+    },
+    {
+      "id": 21,
+      "name": "ch3-hold-ff-16384",
+      "group": "ch3-expiry-retain",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 255,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_expiry_wait_T": 16384,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 31823
+    },
+    {
+      "id": 22,
+      "name": "ch3-bus-0-00-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 0,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 16384
+    },
+    {
+      "id": 23,
+      "name": "ch3-bus-0-00-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 0,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 26888
+    },
+    {
+      "id": 24,
+      "name": "ch3-bus-0-00-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 0,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 25575
+    },
+    {
+      "id": 25,
+      "name": "ch3-bus-0-55-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 85,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 30406
+    },
+    {
+      "id": 26,
+      "name": "ch3-bus-0-55-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 85,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 24262
+    },
+    {
+      "id": 27,
+      "name": "ch3-bus-0-55-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 85,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 22949
+    },
+    {
+      "id": 28,
+      "name": "ch3-bus-0-aa-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 170,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 28069
+    },
+    {
+      "id": 29,
+      "name": "ch3-bus-0-aa-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 170,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 21636
+    },
+    {
+      "id": 30,
+      "name": "ch3-bus-0-aa-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 170,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 20323
+    },
+    {
+      "id": 31,
+      "name": "ch3-bus-0-ff-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 255,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 25732
+    },
+    {
+      "id": 32,
+      "name": "ch3-bus-0-ff-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 255,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 19010
+    },
+    {
+      "id": 33,
+      "name": "ch3-bus-0-ff-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "replacement_byte": 255,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 17697
+    },
+    {
+      "id": 34,
+      "name": "ch3-no-rewrite-0",
+      "group": "ch3-bus-no-write",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 0,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "subsequent_wave_RAM_access": false,
+        "matched_case": "ch3-bus-0-55-idle"
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 18749
+    },
+    {
+      "id": 35,
+      "name": "ch3-bus-4096-00-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 0,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 28149
+    },
+    {
+      "id": 36,
+      "name": "ch3-bus-4096-00-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 0,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 26671
+    },
+    {
+      "id": 37,
+      "name": "ch3-bus-4096-00-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 0,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 25346
+    },
+    {
+      "id": 38,
+      "name": "ch3-bus-4096-55-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 85,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 25800
+    },
+    {
+      "id": 39,
+      "name": "ch3-bus-4096-55-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 85,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 24021
+    },
+    {
+      "id": 40,
+      "name": "ch3-bus-4096-55-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 85,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 22696
+    },
+    {
+      "id": 41,
+      "name": "ch3-bus-4096-aa-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 170,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 23451
+    },
+    {
+      "id": 42,
+      "name": "ch3-bus-4096-aa-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 170,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 21371
+    },
+    {
+      "id": 43,
+      "name": "ch3-bus-4096-aa-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 170,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 20046
+    },
+    {
+      "id": 44,
+      "name": "ch3-bus-4096-ff-idle",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 255,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 21102
+    },
+    {
+      "id": 45,
+      "name": "ch3-bus-4096-ff-wave-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 255,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 18721
+    },
+    {
+      "id": 46,
+      "name": "ch3-bus-4096-ff-wram-read",
+      "group": "ch3-bus",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "replacement_byte": 255,
+        "exposure": "wram-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 30498
+    },
+    {
+      "id": 47,
+      "name": "ch3-no-rewrite-4096",
+      "group": "ch3-bus-no-write",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "pre_rewrite_wait_T": 4096,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "subsequent_wave_RAM_access": false,
+        "matched_case": "ch3-bus-4096-55-idle"
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 16384
+    },
+    {
+      "id": 48,
+      "name": "ch3-never-00-idle",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 0,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 23395
+    },
+    {
+      "id": 49,
+      "name": "ch3-never-00-wave-read",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 0,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 16384
+    },
+    {
+      "id": 50,
+      "name": "ch3-never-55-idle",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 85,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 21058
+    },
+    {
+      "id": 51,
+      "name": "ch3-never-55-wave-read",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 85,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 30622
+    },
+    {
+      "id": 52,
+      "name": "ch3-never-aa-idle",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 170,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 18721
+    },
+    {
+      "id": 53,
+      "name": "ch3-never-aa-wave-read",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 170,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 29309
+    },
+    {
+      "id": 54,
+      "name": "ch3-never-ff-idle",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 255,
+        "exposure": "idle",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 2,
+      "address": 16384
+    },
+    {
+      "id": 55,
+      "name": "ch3-never-ff-wave-read",
+      "group": "ch3-never-triggered",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "replacement_byte": 255,
+        "exposure": "wave-read",
+        "exposure_T": 8192,
+        "exposure_setup_T": 12,
+        "fixed_untriggered_dwell_T": 65536
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-never-triggered-dwell",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 3,
+      "address": 27996
+    },
+    {
+      "id": 56,
+      "name": "ch3-dac-stop-active-00",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 0,
+        "mode": "dac-stop-active",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-DAC-stop",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 31967
+    },
+    {
+      "id": 57,
+      "name": "ch3-dac-off-after-expiry-00",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 0,
+        "mode": "dac-off-after-expiry",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 29398
+    },
+    {
+      "id": 58,
+      "name": "ch3-dac-stop-active-55",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "dac-stop-active",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-DAC-stop",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 31742
+    },
+    {
+      "id": 59,
+      "name": "ch3-dac-off-after-expiry-55",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 85,
+        "mode": "dac-off-after-expiry",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 29159
+    },
+    {
+      "id": 60,
+      "name": "ch3-dac-stop-active-aa",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 170,
+        "mode": "dac-stop-active",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-DAC-stop",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 31517
+    },
+    {
+      "id": 61,
+      "name": "ch3-dac-off-after-expiry-aa",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 170,
+        "mode": "dac-off-after-expiry",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 28920
+    },
+    {
+      "id": 62,
+      "name": "ch3-dac-stop-active-ff",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 255,
+        "mode": "dac-stop-active",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-after-DAC-stop",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 1,
+      "address": 32543
+    },
+    {
+      "id": 63,
+      "name": "ch3-dac-off-after-expiry-ff",
+      "group": "ch3-dac-history",
+      "description": "Observe the held CH3 sample after controlled inactive history.",
+      "parameters": {
+        "initial_byte": 255,
+        "mode": "dac-off-after-expiry",
+        "acquisition_frequency_register": 1,
+        "probe_frequency_register": 1,
+        "sample_period_T": 4094,
+        "pre_trigger_wait_T": 1024,
+        "expected_activity": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "observable": "Retained sample value, not hidden playback-index advancement.",
+        "post_stop_wait_T": 8192,
+        "subsequent_wave_RAM_access": false
+      },
+      "readback_labels": [
+        "NR52-after-acquisition",
+        "NR52-observed-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 28681
+    },
+    {
+      "id": 64,
+      "name": "ch4-53-dac-off-p0-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 24284
+    },
+    {
+      "id": 65,
+      "name": "ch4-53-dac-off-p0-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23543
+    },
+    {
+      "id": 66,
+      "name": "ch4-53-dac-off-p0-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23018
+    },
+    {
+      "id": 67,
+      "name": "ch4-53-dac-off-p384-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 384,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23412
+    },
+    {
+      "id": 68,
+      "name": "ch4-53-dac-off-p384-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 384,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 21202
+    },
+    {
+      "id": 69,
+      "name": "ch4-53-dac-off-p384-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 384,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 20909
+    },
+    {
+      "id": 70,
+      "name": "ch4-53-dac-off-p768-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23803
+    },
+    {
+      "id": 71,
+      "name": "ch4-53-dac-off-p768-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 22072
+    },
+    {
+      "id": 72,
+      "name": "ch4-53-dac-off-p768-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 21783
+    },
+    {
+      "id": 73,
+      "name": "ch4-53-dac-off-p1152-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 1152,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 22618
+    },
+    {
+      "id": 74,
+      "name": "ch4-53-dac-off-p1152-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 1152,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 19435
+    },
+    {
+      "id": 75,
+      "name": "ch4-53-dac-off-p1152-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 1152,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 18540
+    },
+    {
+      "id": 76,
+      "name": "ch4-53-dac-off-p0-d1536-r384",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 384,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 20762
+    },
+    {
+      "id": 77,
+      "name": "ch4-53-dac-off-p0-d1536-r768",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 768,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 21638
+    },
+    {
+      "id": 78,
+      "name": "ch4-53-dac-off-p0-d1536-r1536",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 1536,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 19732
+    },
+    {
+      "id": 79,
+      "name": "ch4-53-dac-off-p768-d1536-r384",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 384,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 17310
+    },
+    {
+      "id": 80,
+      "name": "ch4-53-dac-off-p768-d1536-r768",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 768,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 17628
+    },
+    {
+      "id": 81,
+      "name": "ch4-53-dac-off-p768-d1536-r1536",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 1536,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 16989
+    },
+    {
+      "id": 82,
+      "name": "ch4-53-expired-dac-on-p0-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 22484
+    },
+    {
+      "id": 83,
+      "name": "ch4-53-expired-dac-on-p384-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 384,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 19286
+    },
+    {
+      "id": 84,
+      "name": "ch4-53-expired-dac-on-p768-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 20615
+    },
+    {
+      "id": 85,
+      "name": "ch4-53-expired-dac-on-p1152-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 1152,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 17938
+    },
+    {
+      "id": 86,
+      "name": "ch4-53-expired-dac-on-p0-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 24050
+    },
+    {
+      "id": 87,
+      "name": "ch4-53-expired-dac-on-p0-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 22885
+    },
+    {
+      "id": 88,
+      "name": "ch4-53-expired-dac-on-p0-d1536-r384",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 384,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 19137
+    },
+    {
+      "id": 89,
+      "name": "ch4-53-expired-dac-on-p0-d1536-r768",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 768,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 20468
+    },
+    {
+      "id": 90,
+      "name": "ch4-53-expired-dac-on-p0-d1536-r1536",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 83,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 1536,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 18390
+    },
+    {
+      "id": 91,
+      "name": "ch4-5b-dac-off-p0-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 24168
+    },
+    {
+      "id": 92,
+      "name": "ch4-5b-dac-off-p0-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23281
+    },
+    {
+      "id": 93,
+      "name": "ch4-5b-dac-off-p0-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 4,
+      "address": 32636
+    },
+    {
+      "id": 94,
+      "name": "ch4-5b-dac-off-p384-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 384,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23150
+    },
+    {
+      "id": 95,
+      "name": "ch4-5b-dac-off-p384-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 384,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 21056
+    },
+    {
+      "id": 96,
+      "name": "ch4-5b-dac-off-p384-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 384,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 20321
+    },
+    {
+      "id": 97,
+      "name": "ch4-5b-dac-off-p768-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23674
+    },
+    {
+      "id": 98,
+      "name": "ch4-5b-dac-off-p768-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 21928
+    },
+    {
+      "id": 99,
+      "name": "ch4-5b-dac-off-p768-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 21493
+    },
+    {
+      "id": 100,
+      "name": "ch4-5b-dac-off-p1152-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 1152,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 22350
+    },
+    {
+      "id": 101,
+      "name": "ch4-5b-dac-off-p1152-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 1152,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 18988
+    },
+    {
+      "id": 102,
+      "name": "ch4-5b-dac-off-p1152-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 1152,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 18240
+    },
+    {
+      "id": 103,
+      "name": "ch4-5b-dac-off-p0-d1536-r384",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 384,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 20174
+    },
+    {
+      "id": 104,
+      "name": "ch4-5b-dac-off-p0-d1536-r768",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 768,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 21348
+    },
+    {
+      "id": 105,
+      "name": "ch4-5b-dac-off-p0-d1536-r1536",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 1536,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 19584
+    },
+    {
+      "id": 106,
+      "name": "ch4-5b-dac-off-p768-d1536-r384",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 384,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 17150
+    },
+    {
+      "id": 107,
+      "name": "ch4-5b-dac-off-p768-d1536-r768",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 768,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 17470
+    },
+    {
+      "id": 108,
+      "name": "ch4-5b-dac-off-p768-d1536-r1536",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "dac-off",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 1536,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 16828
+    },
+    {
+      "id": 109,
+      "name": "ch4-5b-expired-dac-on-p0-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 22216
+    },
+    {
+      "id": 110,
+      "name": "ch4-5b-expired-dac-on-p384-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 384,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 18839
+    },
+    {
+      "id": 111,
+      "name": "ch4-5b-expired-dac-on-p768-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 768,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 20027
+    },
+    {
+      "id": 112,
+      "name": "ch4-5b-expired-dac-on-p1152-d1536-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 1152,
+        "off_wait_T": 1536,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 17786
+    },
+    {
+      "id": 113,
+      "name": "ch4-5b-expired-dac-on-p0-d0-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 0,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 23932
+    },
+    {
+      "id": 114,
+      "name": "ch4-5b-expired-dac-on-p0-d384-r0",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 384,
+        "post_enable_T": 0,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 22752
+    },
+    {
+      "id": 115,
+      "name": "ch4-5b-expired-dac-on-p0-d1536-r384",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 384,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 18690
+    },
+    {
+      "id": 116,
+      "name": "ch4-5b-expired-dac-on-p0-d1536-r768",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 768,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 19880
+    },
+    {
+      "id": 117,
+      "name": "ch4-5b-expired-dac-on-p0-d1536-r1536",
+      "group": "ch4-dac-phase",
+      "description": "Expire one length count, vary pre-disable/off/post-enable waits, then retrigger; compare audio phase with timing-matched DAC-on controls.",
+      "parameters": {
+        "polynomial": 91,
+        "mode": "expired-dac-on",
+        "pre_disable_T": 0,
+        "off_wait_T": 1536,
+        "post_enable_T": 1536,
+        "selected_counter_period_T": 1536,
+        "expected_activity": [
+          8,
+          0,
+          0,
+          8
+        ],
+        "observable": "Post-retrigger noise-edge phase, not hidden LFSR evolution.",
+        "timing_caveat": "P/D/R are wait_cycles arguments, not edge-to-edge intervals. P starts after the fixed post-expiry NR52 read and storage. Setup/write/read overhead stays fixed: each write_reg is 20 T and each NR52 read plus storage is 28 T. DAC-off-to-enable writes are D+20 T apart; enable-to-retrigger writes are R+48 T apart. DAC-on controls replace EACH NR42 write with a 20 T wait, leaving the DAC enabled throughout."
+      },
+      "readback_labels": [
+        "NR52-after-initial-trigger",
+        "NR52-after-length-expiry",
+        "NR52-before-retrigger",
+        "NR52-after-retrigger"
+      ],
+      "readback_length": 4,
+      "bank": 5,
+      "address": 18090
+    }
+  ],
+  "commands": [
+    [
+      "rgbasm",
+      "-I",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/benchmark/torture/",
+      "-I",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/",
+      "-o",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/engine.o",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/benchmark/torture/engine.asm"
+    ],
+    [
+      "rgblink",
+      "-m",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/ch34-focused-probe.map",
+      "-n",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/ch34-focused-probe.sym",
+      "-o",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/ch34-focused-probe.gb",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/engine.o"
+    ],
+    [
+      "rgbfix",
+      "-v",
+      "-p",
+      "0",
+      "-t",
+      "CH34 FOCUSED V1",
+      "-m",
+      "0x1b",
+      "-r",
+      "0x04",
+      "/home/jeff/Work/SameBoy-review/.amp/in/artifacts/ch34-focused-probe/rom/ch34-focused-probe.gb"
+    ]
+  ],
+  "source_sha256": {
+    "benchmark/build.py": "560d222eea700126d97bbeee8c4430f0d5dbfa2f57ac07c7c1991005ee329516",
+    "benchmark/wave_cases.py": "854ce06074adb83c4134d91c2481553dcc4242b92baab0f3de83a94062f08d73",
+    "benchmark/noise_cases.py": "6470fb8ad01b5f24beb4d04f4984577f49c33cfa60f1e4f9fbf109c49852e23c",
+    "benchmark/torture/engine.asm": "ea2609d9219539dd418666c0ae54f72a443a386e045bc3c1b2d3a9e2b8e96dc2",
+    "benchmark/torture/macros.inc": "c141ad69421ebdccdd7c2f0508ea2f7b8d0816b0a46ebced2e3764448fc65124",
+    "benchmark/torture/cases.py": "e5a85fa26720252f1577c3e8169f14c64c382d6e09cc4fc213fb58510c5d92c0"
+  },
+  "limits": [
+    "No hardware result or universal pass/fail threshold is asserted before recording.",
+    "Activity expectations validate setup; they do not reveal hidden waveform state.",
+    "CH3 measures retained sample state, not hidden index progression.",
+    "CH3 expiry polling is bounded (4096 iterations, 56 T each). A nonzero expiry activity bit invalidates that case.",
+    "CH3 post-expiry waits start after the successful NR52 observation and storage, not exactly at length expiry.",
+    "CH3 zero-wait probe has a 104-T successful-read-to-trigger interval plus up to 56 T of poll detection delay; earlier changes are not localized to expiry.",
+    "The first post-trigger sample is a proxy: a trigger-dependent sample change can resemble an inactive-history change.",
+    "No-wave-access and idle controls still perform CPU bus transactions; they are not electrically neutral.",
+    "Never-triggered controls use a fixed dwell, not an exactly matched expiry schedule.",
+    "CH4 measures surviving divider phase, not hidden LFSR progression; trigger resets the LFSR.",
+    "CH4 timing axes exclude fixed instruction overhead. Disable-to-enable is D+20 T; enable-to-trigger is R+48 T.",
+    "A reset at disable that freezes until enable can be equivalent to a reset at enable.",
+    "Analog DAC transients can affect onset estimates; compare multiple edges and timing-matched controls.",
+    "One physical unit does not establish other revisions or models."
+  ]
+}

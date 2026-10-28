@@ -1,0 +1,26 @@
+{
+  "focused/audio.wav": {
+    "clang_gcc_byte_identical": true,
+    "sha256": "daf446057e2d4c039e9060165003d17d9b1d87f44efdc433c522ee119a9ce941"
+  },
+  "focused/apu.csv": {
+    "clang_gcc_byte_identical": true,
+    "sha256": "d63eb1e10bb74409b4e422b8b46b03e3dfe7a605179ffb6661b315172073456e"
+  },
+  "focused/markers.csv": {
+    "clang_gcc_byte_identical": true,
+    "sha256": "d7ec25eebf1ed28dd2b8910c31b5e190eb685c8b7e3f41c5eb14ce20747baaa3"
+  },
+  "initial/audio.wav": {
+    "clang_gcc_byte_identical": true,
+    "sha256": "ead3da2e53c16bb3a4fa58564a84fdf6bed63f431d5bea4de09118dbeb2326a9"
+  },
+  "initial/apu.csv": {
+    "clang_gcc_byte_identical": true,
+    "sha256": "137248890ad66b0d72c206ac0103f5b69c4fd8245d14efc063286efd9e6eb3f3"
+  },
+  "initial/markers.csv": {
+    "clang_gcc_byte_identical": true,
+    "sha256": "ce880b4f79b4e004766c100dc0272c25b6a44505951c26f887856697520de110"
+  }
+}

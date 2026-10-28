@@ -1,0 +1,11 @@
+--- a/Core/apu.c
++++ b/Core/apu.c
+@@ -1077,7 +1077,7 @@
+                 gb->apu.wave_channel.wave_form_just_read = false;
+             }
+         }
+-        else if (gb->apu.wave_channel.enable && gb->apu.wave_channel.pulsed && gb->model <= GB_MODEL_CGB_E) {
++        else if (false && gb->apu.wave_channel.enable && gb->apu.wave_channel.pulsed && gb->model <= GB_MODEL_CGB_E) {
+             uint16_t cycles_left = cycles;
+             while (unlikely(cycles_left > gb->apu.wave_channel.sample_countdown)) {
+                 cycles_left -= gb->apu.wave_channel.sample_countdown + 1;

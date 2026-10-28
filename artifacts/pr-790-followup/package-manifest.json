@@ -1,0 +1,18 @@
+{
+  "status": "local-only; not published",
+  "date": "2026-10-28",
+  "core_commit": "e31144f18194ff8dc9f9e648a7cac7be412d3aec",
+  "published_pr_head": "2d6ea110275b17de06d9d1c1a621adf625973cac",
+  "archives": {
+    "sameboy-pr790-ch34-evidence.zip": {
+      "bytes": 45375849,
+      "sha256": "2e3699b3b9f59570cf7a6aee8c64c99f5504bbb20908a7acdb0bc13cede0cf3e",
+      "files": 213
+    },
+    "sameboy-pr790-sweep-evidence.zip": {
+      "bytes": 6226624,
+      "sha256": "b36961ed4ed28097eb277667d2ad6d76957e479c48632265d45f3be55d5355e0",
+      "files": 382
+    }
+  }
+}

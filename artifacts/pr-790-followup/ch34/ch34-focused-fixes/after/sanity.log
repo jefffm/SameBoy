@@ -1,0 +1,19 @@
+SameBoy Tester v1.0.4
+Running up to 5 tests simultaneously
+Test length is 45 seconds
+Test length is 10 seconds
+Test length is 10 seconds
+Testing ROM .github/actions/cgb_sound.gb
+Using DMG mode
+Test length is 45 seconds
+Testing ROM .github/actions/cgb-acid2.gbc
+Using DMG mode
+Test length is 20 seconds
+Testing ROM .github/actions/dmg-acid2.gb
+Testing ROM .github/actions/dmg_sound-2.gb
+Testing ROM .github/actions/oam_bug-2.gb
+SameBoy Tester v1.0.4
+Using DMG mode
+Test length is 10 seconds
+Testing ROM .github/actions/dmg-acid2.gb
+Passed all tests

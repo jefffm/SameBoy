@@ -1,0 +1,1366 @@
+{
+  "recording_quality": {
+    "metadata": {
+      "path": "/home/jeff/Documents/ChatGPT/dmg/artifacts/hardware/ch34-clocks-qw3uz2uv/capture.wav",
+      "sha256": "3f2a198aac29fd6bc6fd1e874e600c6a32d5f56083fbd85a9653be32bdc834de",
+      "sample_rate": 48000,
+      "channels": 2,
+      "selected_channel": 0,
+      "sample_format": "int32",
+      "samples": 2110464,
+      "duration_s": 43.968
+    },
+    "channels": [
+      {
+        "channel": 0,
+        "peak_dbfs": -15.025119830699232,
+        "near_full_scale_samples": 0,
+        "preboot_rms_dbfs": -101.68454436523623
+      },
+      {
+        "channel": 1,
+        "peak_dbfs": -15.880966745971214,
+        "near_full_scale_samples": 0,
+        "preboot_rms_dbfs": -101.77837932602881
+      }
+    ]
+  },
+  "packet_coverage": {
+    "expected": 170,
+    "reference_valid_unique": 170,
+    "hardware_valid_unique": 170,
+    "missing_reference": [],
+    "missing_hardware": [],
+    "reference_duplicates": {},
+    "hardware_duplicates": {},
+    "order_matches_manifest": true,
+    "complete": true,
+    "suite_end_received": true
+  },
+  "readbacks_identical": 84,
+  "global_alignment": {
+    "clock": 1.0000584730623636,
+    "offset_s": 10.285510894308874,
+    "gain": 0.06385958477764171
+  },
+  "renderer_delay_s": 0.0006486279999999844,
+  "reference_mute_delays_s": [
+    0.0006483026666668223,
+    0.0006456989999996665,
+    0.0006489533333331465,
+    0.0006430943333333161,
+    0.0006398389999997534,
+    0.0006417919999996968,
+    0.0006541616666666528,
+    0.0006515579999994969,
+    0.0006548133333339479,
+    0.0006489533333331465,
+    0.0006456990000005547,
+    0.00064765199999961,
+    0.0006391883333334292,
+    0.0006574170000002155,
+    0.0006398389999997534,
+    0.0006548133333339479,
+    0.0006515579999994969,
+    0.0006535109999994404
+  ],
+  "method": "One common packet-calibrated time mapping and calibration-pulse gain; no per-case fitting. Renderer delay is the median reference-only NR32 mute-edge offset in all 18 replacement-FF cases. Edge detection is the largest adjacent-sample change inside separately scheduled 300-us windows; a tiny noise edge is not an event and amplitudes are not decoded digital sample values.",
+  "ch3": [
+    {
+      "id": 2,
+      "name": "ch3-00-ff-expired-dac-on-0",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 1.828757286,
+      "mute_after_trigger_ms": 1.9798279999998503,
+      "reference_rmse": 0.16005991549948967,
+      "frozen_rmse": 0.16005991549948967,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.0003359999999214358,
+          "largest_adjacent_sample_step": -0.18631322769922057
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.8545026666665219,
+          "largest_adjacent_sample_step": 0.0013343739032463386
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9795026666665645,
+          "largest_adjacent_sample_step": 0.1854008172338466
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ch3-00-ff-expired-dac-on-1024",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 1024,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 2.210593224,
+      "mute_after_trigger_ms": 1.9798269999999896,
+      "reference_rmse": 0.16090493402998404,
+      "frozen_rmse": 0.16090493402998404,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.00226866666687305,
+          "largest_adjacent_sample_step": -0.1988246491213559
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.1227313333331694,
+          "largest_adjacent_sample_step": 0.0011731336662355873
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.97689799999977,
+          "largest_adjacent_sample_step": 0.19851247218890233
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ch3-00-ff-expired-dac-on-2048",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 2048,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 2.592673302,
+      "mute_after_trigger_ms": 1.9798280000000723,
+      "reference_rmse": 0.16069013119460956,
+      "frozen_rmse": 0.16069013119460956,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.0009866666666897095,
+          "largest_adjacent_sample_step": -0.19712599778473425
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.0634866666664338,
+          "largest_adjacent_sample_step": 0.0013483442965478432
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9801533333333328,
+          "largest_adjacent_sample_step": 0.196167203896812
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ch3-00-ff-expired-dac-on-4096",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 4096,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 2.975241661,
+      "mute_after_trigger_ms": 1.9798280000000723,
+      "reference_rmse": 0.0038822948092088177,
+      "frozen_rmse": 0.1613938281469514,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.0048723333335847965,
+          "largest_adjacent_sample_step": -0.20254251056089273
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.911794333333314,
+          "largest_adjacent_sample_step": 0.0012717475085763652
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9742943333330583,
+          "largest_adjacent_sample_step": 0.20259036849300263
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "ch3-00-ff-expired-dac-on-8192",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 8192,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 3.358786583,
+      "mute_after_trigger_ms": 1.9798280000000723,
+      "reference_rmse": 0.0042954458582274745,
+      "frozen_rmse": 0.1617573415380501,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.008127666666703467,
+          "largest_adjacent_sample_step": -0.17753579688602789
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9502056666664689,
+          "largest_adjacent_sample_step": 0.0011138671314197268
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9710389999999396,
+          "largest_adjacent_sample_step": 0.18011287431810719
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "ch3-00-ff-expired-dac-on-16384",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 16384,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 3.74428463,
+      "mute_after_trigger_ms": 1.9798280000000723,
+      "reference_rmse": 0.004258923876337163,
+      "frozen_rmse": 0.16171990001678066,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.006174666666759995,
+          "largest_adjacent_sample_step": -0.185072470502079
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.1188253333332825,
+          "largest_adjacent_sample_step": 0.0017635992069588435
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.972991999999883,
+          "largest_adjacent_sample_step": 0.18772960434265412
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "ch3-00-ff-dac-off-0",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 0,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 4.125876427,
+      "mute_after_trigger_ms": 1.9798280000005164,
+      "reference_rmse": 0.16020385591927344,
+      "frozen_rmse": 0.16020385591927344,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.006194999999751852,
+          "largest_adjacent_sample_step": -0.19337221931778514
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9228616666666507,
+          "largest_adjacent_sample_step": 0.0013311382744927713
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.985361666666395,
+          "largest_adjacent_sample_step": 0.1845543135701626
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "ch3-00-ff-dac-off-1024",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 1024,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 4.507712364,
+      "mute_after_trigger_ms": 1.9798280000005164,
+      "reference_rmse": 0.16051008638561326,
+      "frozen_rmse": 0.16051008638561326,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.003591333333484196,
+          "largest_adjacent_sample_step": -0.20241340796055493
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.1285913333335267,
+          "largest_adjacent_sample_step": 0.001202920549351283
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9827580000001273,
+          "largest_adjacent_sample_step": 0.19580454119695212
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "ch3-00-ff-dac-off-2048",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 2048,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 4.889792442,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.16118241915730563,
+      "frozen_rmse": 0.16118241915730563,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.006846666667046955,
+          "largest_adjacent_sample_step": -0.18513311863578946
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.090180000000816,
+          "largest_adjacent_sample_step": 0.0011111570712143415
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.98601333333369,
+          "largest_adjacent_sample_step": 0.17735468116759928
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "ch3-00-ff-dac-off-4096",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 4096,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 5.272360802,
+      "mute_after_trigger_ms": 1.9798280000005164,
+      "reference_rmse": 0.16061759315503701,
+      "frozen_rmse": 0.16061759315503701,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.0009866666662456203,
+          "largest_adjacent_sample_step": -0.19153965625558142
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.875986666666871,
+          "largest_adjacent_sample_step": 0.0015993048141382804
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9801533333328887,
+          "largest_adjacent_sample_step": 0.18864187933492435
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "ch3-00-ff-dac-off-8192",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 8192,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 5.655905724,
+      "mute_after_trigger_ms": 1.9798269999995455,
+      "reference_rmse": 0.16098411683953573,
+      "frozen_rmse": 0.16098411683953573,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.0022686666673171394,
+          "largest_adjacent_sample_step": -0.1803917363325247
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9143979999995817,
+          "largest_adjacent_sample_step": 0.0012712161522203946
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.976897999999326,
+          "largest_adjacent_sample_step": 0.18017403603545762
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "ch3-00-ff-dac-off-16384",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 16384,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 6.04140377,
+      "mute_after_trigger_ms": 1.9798280000005164,
+      "reference_rmse": 0.16082360293851455,
+      "frozen_rmse": 0.16082360293851455,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.0003146666655145702,
+          "largest_adjacent_sample_step": -0.1851169003583353
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9580186666676578,
+          "largest_adjacent_sample_step": 0.0013077250684478958
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9788520000011285,
+          "largest_adjacent_sample_step": 0.18430883401543652
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "ch3-00-ff-never-triggered-0",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 0,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 6.422995567,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.005670969098958669,
+      "frozen_rmse": 0.005670969098958669,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.13377833333318043,
+          "largest_adjacent_sample_step": 0.0004947154514046426
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9703883333337255,
+          "largest_adjacent_sample_step": -0.16299819454344489
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9703883333340595,
+          "largest_adjacent_sample_step": 0.1517510455433802
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "ch3-00-ff-never-triggered-1024",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 1024,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 6.804831505,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.005552827956209283,
+      "frozen_rmse": 0.005552827956209283,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.0927836666667498,
+          "largest_adjacent_sample_step": 0.000611220790002778
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9677836666673751,
+          "largest_adjacent_sample_step": -0.14602349863910324
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9886169999999577,
+          "largest_adjacent_sample_step": 0.14691570893432823
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "ch3-00-ff-never-triggered-2048",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 2048,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 7.186911583,
+      "mute_after_trigger_ms": 1.9798280000005164,
+      "reference_rmse": 0.005533061801431328,
+      "frozen_rmse": 0.005533061801431328,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.0335390000009023,
+          "largest_adjacent_sample_step": -0.0009665639925891564
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9710390000009379,
+          "largest_adjacent_sample_step": -0.1725811778903123
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9710390000003837,
+          "largest_adjacent_sample_step": 0.15979780942080324
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "ch3-00-ff-never-triggered-4096",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 4096,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 7.569479942,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.005817885739602397,
+      "frozen_rmse": 0.005817885739602397,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.006846666667046955,
+          "largest_adjacent_sample_step": 0.0008508382422011099
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.986013333333356,
+          "largest_adjacent_sample_step": -0.16564686907384515
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.98601333333369,
+          "largest_adjacent_sample_step": 0.17910655013066215
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "ch3-00-ff-never-triggered-8192",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 8192,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 7.953024864,
+      "mute_after_trigger_ms": 1.9798280000005164,
+      "reference_rmse": 0.005832246627528466,
+      "frozen_rmse": 0.005832246627528466,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.12859133333319286,
+          "largest_adjacent_sample_step": -0.0009155888343039009
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9827579999997932,
+          "largest_adjacent_sample_step": -0.1968439489404403
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9827580000001273,
+          "largest_adjacent_sample_step": 0.20327547236783494
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "ch3-00-ff-never-triggered-16384",
+      "parameters": {
+        "initial_byte": 0,
+        "replacement_byte": 255,
+        "gap_T": 16384,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 8.338522911,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.005962037983447503,
+      "frozen_rmse": 0.005962037983447503,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.09862233333314425,
+          "largest_adjacent_sample_step": 0.0011680494989471327
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9847109999988485,
+          "largest_adjacent_sample_step": -0.19199579573551406
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9847110000000707,
+          "largest_adjacent_sample_step": 0.20155457805622912
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "ch3-ff-00-expired-dac-on-0",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 0,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 8.720114708,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.01276985178443986,
+      "frozen_rmse": 0.01276985178443986,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.002919333333641324,
+          "largest_adjacent_sample_step": -0.1856079945840318
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9762473333317796,
+          "largest_adjacent_sample_step": 0.19789284400764065
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.8929139999986782,
+          "largest_adjacent_sample_step": -0.0012374121887911427
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "ch3-ff-00-expired-dac-on-1024",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 1024,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 9.101950645,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.012914230353494253,
+      "frozen_rmse": 0.012914230353494253,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.005523000000797159,
+          "largest_adjacent_sample_step": -0.15680223740531313
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9736436666664001,
+          "largest_adjacent_sample_step": 0.17306693095347458
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9319769999995722,
+          "largest_adjacent_sample_step": -0.0009558745986722322
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "ch3-ff-00-expired-dac-on-2048",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 2048,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 9.484030724,
+      "mute_after_trigger_ms": 1.9798269999995455,
+      "reference_rmse": 0.012949814815686822,
+      "frozen_rmse": 0.012949814815686822,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.002268666666428961,
+          "largest_adjacent_sample_step": -0.17646100771925288
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9768979999989919,
+          "largest_adjacent_sample_step": 0.18873434794482397
+        },
+        {
+          "event": "mute",
+          "time_ms": 2.0810646666667862,
+          "largest_adjacent_sample_step": -0.0008997771951061717
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "ch3-ff-00-expired-dac-on-4096",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 4096,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 9.866599083,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.15549042836454566,
+      "frozen_rmse": 0.01280399420604828,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.012705666665989193,
+          "largest_adjacent_sample_step": -0.1643551017131948
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9918723333331864,
+          "largest_adjacent_sample_step": 0.14570926669439963
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.88770566666606,
+          "largest_adjacent_sample_step": -0.0008502246075177272
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "ch3-ff-00-expired-dac-on-8192",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 8192,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 10.250144005,
+      "mute_after_trigger_ms": 1.9798280000014046,
+      "reference_rmse": 0.1557474226060725,
+      "frozen_rmse": 0.012827974230183297,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.009450333333314612,
+          "largest_adjacent_sample_step": -0.1811666079807414
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9886170000005118,
+          "largest_adjacent_sample_step": 0.17064878382154378
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.946950333333684,
+          "largest_adjacent_sample_step": -0.0008055223819786461
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "ch3-ff-00-expired-dac-on-16384",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 16384,
+        "mode": "expired-dac-on",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 10.635642052,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.15612317932662217,
+      "frozen_rmse": 0.011969189366186435,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.011403333333258084,
+          "largest_adjacent_sample_step": -0.1666696272226446
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9905700000004553,
+          "largest_adjacent_sample_step": 0.15275061728966985
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.907236666667354,
+          "largest_adjacent_sample_step": -0.0006218268587101089
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "ch3-ff-00-dac-off-0",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 0,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 11.017233849,
+      "mute_after_trigger_ms": 1.9798269999995455,
+      "reference_rmse": 0.012749757825807891,
+      "frozen_rmse": 0.012749757825807891,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.0029396666661890927,
+          "largest_adjacent_sample_step": -0.1342616212615569
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9821063333333863,
+          "largest_adjacent_sample_step": 0.18329284006915605
+        },
+        {
+          "event": "mute",
+          "time_ms": 2.0862729999994043,
+          "largest_adjacent_sample_step": -0.0006356658051828029
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "ch3-ff-00-dac-off-1024",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 1024,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 11.399069786,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.012637134864395138,
+      "frozen_rmse": 0.012637134864395138,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.0003359999990332574,
+          "largest_adjacent_sample_step": -0.12153577133534099
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9795026666662304,
+          "largest_adjacent_sample_step": 0.1832416483959387
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.8753359999991042,
+          "largest_adjacent_sample_step": -0.0006761257659397696
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "ch3-ff-00-dac-off-2048",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 2048,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 11.781149864,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.012749621314575034,
+      "frozen_rmse": 0.012749621314575034,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.003591333333484196,
+          "largest_adjacent_sample_step": -0.14130128288990798
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9827580000006814,
+          "largest_adjacent_sample_step": 0.18703234809308328
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.8577579999995302,
+          "largest_adjacent_sample_step": -0.000666586968822977
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "ch3-ff-00-dac-off-4096",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 4096,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 12.163718224,
+      "mute_after_trigger_ms": 1.9798269999995455,
+      "reference_rmse": 0.012504843332483095,
+      "frozen_rmse": 0.012504843332483095,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.002268666666428961,
+          "largest_adjacent_sample_step": -0.10810237881953089
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9768979999989919,
+          "largest_adjacent_sample_step": 0.18412803668162986
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9560646666661892,
+          "largest_adjacent_sample_step": -0.0006911073274247087
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "ch3-ff-00-dac-off-8192",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 8192,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 12.547263145,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.013057399676652861,
+      "frozen_rmse": 0.013057399676652861,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.015310333333227767,
+          "largest_adjacent_sample_step": -0.13085591289585982
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9736436666664001,
+          "largest_adjacent_sample_step": 0.16599241791768896
+        },
+        {
+          "event": "mute",
+          "time_ms": 2.056976999998393,
+          "largest_adjacent_sample_step": -0.0009474517256252007
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "ch3-ff-00-dac-off-16384",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 16384,
+        "mode": "dac-off",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 12.932761192,
+      "mute_after_trigger_ms": 1.9798280000014046,
+      "reference_rmse": 0.013339298586206973,
+      "frozen_rmse": 0.013339298586206973,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.01726333333317124,
+          "largest_adjacent_sample_step": -0.12246900227822773
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.9755966666663436,
+          "largest_adjacent_sample_step": 0.17952770667939746
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.8922633333332421,
+          "largest_adjacent_sample_step": -0.0013177605412787452
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "ch3-ff-00-never-triggered-0",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 0,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 13.314352989,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.0014856402700652877,
+      "frozen_rmse": 0.0014856402700652877,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.07453366666644475,
+          "largest_adjacent_sample_step": -0.0007102603922988261
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.8629663333327027,
+          "largest_adjacent_sample_step": -0.0006142302033101286
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.904633000000198,
+          "largest_adjacent_sample_step": -0.0004767530812679337
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "ch3-ff-00-never-triggered-1024",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 1024,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 13.696188927,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.001325039688129984,
+      "frozen_rmse": 0.001325039688129984,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.03547166666740983,
+          "largest_adjacent_sample_step": -0.0007785934817227743
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.0270283333341106,
+          "largest_adjacent_sample_step": 0.0006622280389619061
+        },
+        {
+          "event": "mute",
+          "time_ms": 2.110361666666104,
+          "largest_adjacent_sample_step": -0.0006980237760781105
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "ch3-ff-00-never-triggered-2048",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 2048,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 14.078269005,
+      "mute_after_trigger_ms": 1.9798280000014046,
+      "reference_rmse": 0.0013605346307829006,
+      "frozen_rmse": 0.0013605346307829006,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": -0.09471633333325731,
+          "largest_adjacent_sample_step": 0.0006380229698424431
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.0719503333330587,
+          "largest_adjacent_sample_step": -0.0012071247592011542
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9052836666674104,
+          "largest_adjacent_sample_step": 0.0007714497908815243
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "ch3-ff-00-never-triggered-4096",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 4096,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 14.460837364,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.0011489368804399648,
+      "frozen_rmse": 0.0011489368804399648,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.003591333333484196,
+          "largest_adjacent_sample_step": -0.00049668950097673
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.1285913333335267,
+          "largest_adjacent_sample_step": -0.0006724822850726203
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9202579999998286,
+          "largest_adjacent_sample_step": 0.0005517574076409843
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "ch3-ff-00-never-triggered-8192",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 8192,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 14.844382286,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.0010826071281211404,
+      "frozen_rmse": 0.0010826071281211404,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.10450266666560519,
+          "largest_adjacent_sample_step": 0.00046298995731863324
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 0.8545026666656337,
+          "largest_adjacent_sample_step": 0.0006216821625800468
+        },
+        {
+          "event": "mute",
+          "time_ms": 2.1253360000002983,
+          "largest_adjacent_sample_step": 0.0007117658839190686
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "ch3-ff-00-never-triggered-16384",
+      "parameters": {
+        "initial_byte": 255,
+        "replacement_byte": 0,
+        "gap_T": 16384,
+        "mode": "never-triggered",
+        "acquisition_frequency_register": 1,
+        "acquisition_sample_period_T": 4094,
+        "probe_frequency_register": 0,
+        "probe_sample_period_T": 4096,
+        "observable": "Inactive wave sample-buffer refresh, not hidden index progression."
+      },
+      "trigger_reference_s": 15.229880333,
+      "mute_after_trigger_ms": 1.9798279999996282,
+      "reference_rmse": 0.0006221357448757233,
+      "frozen_rmse": 0.0006221357448757233,
+      "edges": [
+        {
+          "event": "trigger",
+          "time_ms": 0.00228899999897673,
+          "largest_adjacent_sample_step": 0.0005513283922613933
+        },
+        {
+          "event": "first_fetch",
+          "time_ms": 1.1064556666649943,
+          "largest_adjacent_sample_step": -0.0005321996082369287
+        },
+        {
+          "event": "mute",
+          "time_ms": 1.9189556666653211,
+          "largest_adjacent_sample_step": -0.0004114006659579805
+        }
+      ]
+    }
+  ]
+}

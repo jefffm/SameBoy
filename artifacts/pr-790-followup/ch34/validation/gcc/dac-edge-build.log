@@ -1,0 +1,1 @@
+gcc -std=gnu11 -O2 -Wno-multichar -I/home/jeff/Work/SameBoy-review -DPULSE_CLOCK_STATE -DPULSE_DUTY_STATE /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/ch34/companion-tests/dac-edge-test.c /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/gcc/lib/libsameboy.a -lm -ldl -o /home/jeff/Work/SameBoy-review/.amp/in/pr790-package-check/gcc/dac-edge

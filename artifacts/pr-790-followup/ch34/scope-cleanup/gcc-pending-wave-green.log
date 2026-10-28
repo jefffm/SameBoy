@@ -1,0 +1,4 @@
+pending=1 interrupted_by_trigger=0 exposed_sample=5 expected=5
+pending=1 interrupted_by_trigger=1 exposed_sample=5 expected=5
+pending=2 interrupted_by_trigger=0 exposed_sample=5 expected=5
+pending=2 interrupted_by_trigger=1 exposed_sample=5 expected=5

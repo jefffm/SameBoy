@@ -1,0 +1,405 @@
+cc -std=gnu11 -O2 -D_GNU_SOURCE -DGB_INTERNAL '-DGB_VERSION="sweep-evidence-check"' -I /home/jeff/Work/SameBoy-review /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/sweep/validation/observe.c /home/jeff/Work/SameBoy-review/Core/apu.c /home/jeff/Work/SameBoy-review/Core/camera.c /home/jeff/Work/SameBoy-review/Core/cheat_search.c /home/jeff/Work/SameBoy-review/Core/cheats.c /home/jeff/Work/SameBoy-review/Core/debugger.c /home/jeff/Work/SameBoy-review/Core/display.c /home/jeff/Work/SameBoy-review/Core/gb.c /home/jeff/Work/SameBoy-review/Core/joypad.c /home/jeff/Work/SameBoy-review/Core/mbc.c /home/jeff/Work/SameBoy-review/Core/memory.c /home/jeff/Work/SameBoy-review/Core/printer.c /home/jeff/Work/SameBoy-review/Core/random.c /home/jeff/Work/SameBoy-review/Core/rewind.c /home/jeff/Work/SameBoy-review/Core/rumble.c /home/jeff/Work/SameBoy-review/Core/save_state.c /home/jeff/Work/SameBoy-review/Core/sgb.c /home/jeff/Work/SameBoy-review/Core/sm83_cpu.c /home/jeff/Work/SameBoy-review/Core/sm83_disassembler.c /home/jeff/Work/SameBoy-review/Core/symbol_hash.c /home/jeff/Work/SameBoy-review/Core/timing.c /home/jeff/Work/SameBoy-review/Core/workboy.c -lm -o /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/sweep/verification/current-core/.work-_56n8b1x/observe
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/.amp/in/artifacts/pr-790-evidence/sweep/validation/observe.c:3:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/apu.c:7:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/apu.c: In function ‘GB_stop_audio_recording’:
+/home/jeff/Work/SameBoy-review/Core/apu.c:2644:44: warning: multi-character character constant [-Wmultichar]
+ 2644 |                 .format_chunk = BE32('FORM'),
+      |                                            ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2646:38: warning: multi-character character constant [-Wmultichar]
+ 2646 |                 .format = BE32('AIFC'),
+      |                                      ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2648:42: warning: multi-character character constant [-Wmultichar]
+ 2648 |                 .fver_chunk = BE32('FVER'),
+      |                                          ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2652:42: warning: multi-character character constant [-Wmultichar]
+ 2652 |                 .comm_chunk = BE32('COMM'),
+      |                                          ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2660:37: warning: multi-character character constant [-Wmultichar]
+ 2660 |                 .compression_type = 'twos',
+      |                                     ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/apu.c:2663:42: warning: multi-character character constant [-Wmultichar]
+ 2663 |                 .ssnd_chunk = BE32('SSND'),
+      |                                          ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2688:38: warning: multi-character character constant [-Wmultichar]
+ 2688 |                 .marker = BE32('RIFF'),
+      |                                      ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2690:36: warning: multi-character character constant [-Wmultichar]
+ 2690 |                 .type = BE32('WAVE'),
+      |                                    ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2692:41: warning: multi-character character constant [-Wmultichar]
+ 2692 |                 .fmt_chunk = BE32('fmt '),
+      |                                         ^
+/home/jeff/Work/SameBoy-review/Core/apu.c:2701:42: warning: multi-character character constant [-Wmultichar]
+ 2701 |                 .data_chunk = BE32('data'),
+      |                                          ^
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/camera.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/cheat_search.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/cheats.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/cheats.c: In function ‘GB_load_cheats’:
+/home/jeff/Work/SameBoy-review/Core/cheats.c:298:34: warning: multi-character character constant [-Wmultichar]
+  298 |     if (magic != LE32(CHEAT_MAGIC) && magic != BE32(CHEAT_MAGIC)) {
+      |                                  ^
+/home/jeff/Work/SameBoy-review/Core/cheats.c:298:64: warning: multi-character character constant [-Wmultichar]
+  298 |     if (magic != LE32(CHEAT_MAGIC) && magic != BE32(CHEAT_MAGIC)) {
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/cheats.c:315:22: warning: multi-character character constant [-Wmultichar]
+  315 |         if (magic != CHEAT_MAGIC) {
+      |                      ^~~~~~~~~~~
+/home/jeff/Work/SameBoy-review/Core/cheats.c: In function ‘GB_save_cheats’:
+/home/jeff/Work/SameBoy-review/Core/cheats.c:340:22: warning: multi-character character constant [-Wmultichar]
+  340 |     uint32_t magic = CHEAT_MAGIC;
+      |                      ^~~~~~~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/debugger.c:4:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/display.c:6:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/gb.c:13:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/gb.c: In function ‘GB_load_gbs_from_buffer’:
+/home/jeff/Work/SameBoy-review/Core/gb.c:438:47: warning: multi-character character constant [-Wmultichar]
+  438 |     if (gb->gbs_header.magic != BE32('GBS\x01') ||
+      |                                               ^
+/home/jeff/Work/SameBoy-review/Core/gb.c: In function ‘GB_load_isx’:
+/home/jeff/Work/SameBoy-review/Core/gb.c:540:55: warning: multi-character character constant [-Wmultichar]
+  540 |     bool extended = *(uint32_t *)&magic == BE32('ISX ');
+      |                                                       ^
+/home/jeff/Work/SameBoy-review/Core/gb.c: In function ‘fill_tpp1_save_data’:
+/home/jeff/Work/SameBoy-review/Core/gb.c:816:30: warning: multi-character character constant [-Wmultichar]
+  816 |     data->magic = BE32('TPP1');
+      |                              ^
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/joypad.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/mbc.c:4:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/memory.c:4:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/printer.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/rewind.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/rumble.c:2:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/save_state.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.c: In function ‘save_bess_mbc_block’:
+/home/jeff/Work/SameBoy-review/Core/save_state.c:482:42: warning: multi-character character constant [-Wmultichar]
+  482 |     BESS_block_t mbc_block = {BE32('MBC '), 0};
+      |                                          ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c: In function ‘save_state_internal’:
+/home/jeff/Work/SameBoy-review/Core/save_state.c:626:29: warning: multi-character character constant [-Wmultichar]
+  626 |         .magic = BE32('BESS'),
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:631:55: warning: multi-character character constant [-Wmultichar]
+  631 |     static const BESS_block_t bess_name = {BE32('NAME'), LE32(sizeof(BESS_NAME) - 1)};
+      |                                                       ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:643:55: warning: multi-character character constant [-Wmultichar]
+  643 |     static const BESS_block_t bess_info = {BE32('INFO'), LE32(sizeof(BESS_INFO_t) - sizeof(BESS_block_t))};
+      |                                                       ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:661:50: warning: multi-character character constant [-Wmultichar]
+  661 |     bess_core.header = (BESS_block_t){BE32('CORE'), LE32(sizeof(bess_core) - sizeof(bess_core.header))};
+      |                                                  ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:666:64: warning: multi-character character constant [-Wmultichar]
+  666 |         case GB_MODEL_DMG_B: bess_core.full_model = BE32('GDB '); break;
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:667:62: warning: multi-character character constant [-Wmultichar]
+  667 |         case GB_MODEL_MGB: bess_core.full_model = BE32('GM  '); break;
+      |                                                              ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:671:47: warning: multi-character character constant [-Wmultichar]
+  671 |             bess_core.full_model = BE32('SN  '); break;
+      |                                               ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:675:47: warning: multi-character character constant [-Wmultichar]
+  675 |             bess_core.full_model = BE32('SP  '); break;
+      |                                               ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:679:47: warning: multi-character character constant [-Wmultichar]
+  679 |             bess_core.full_model = BE32('S2  '); break;
+      |                                               ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:681:64: warning: multi-character character constant [-Wmultichar]
+  681 |         case GB_MODEL_CGB_0: bess_core.full_model = BE32('CC0 '); break;
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:682:64: warning: multi-character character constant [-Wmultichar]
+  682 |         case GB_MODEL_CGB_A: bess_core.full_model = BE32('CCA '); break;
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:683:64: warning: multi-character character constant [-Wmultichar]
+  683 |         case GB_MODEL_CGB_B: bess_core.full_model = BE32('CCB '); break;
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:684:64: warning: multi-character character constant [-Wmultichar]
+  684 |         case GB_MODEL_CGB_C: bess_core.full_model = BE32('CCC '); break;
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:685:64: warning: multi-character character constant [-Wmultichar]
+  685 |         case GB_MODEL_CGB_D: bess_core.full_model = BE32('CCD '); break;
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:686:64: warning: multi-character character constant [-Wmultichar]
+  686 |         case GB_MODEL_CGB_E: bess_core.full_model = BE32('CCE '); break;
+      |                                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:689:47: warning: multi-character character constant [-Wmultichar]
+  689 |             bess_core.full_model = BE32('CAA '); break;
+      |                                               ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:731:50: warning: multi-character character constant [-Wmultichar]
+  731 |     bess_xoam.header = (BESS_block_t){BE32('XOAM'), LE32(sizeof(bess_xoam) - sizeof(bess_xoam.header))};
+      |                                                  ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:744:58: warning: multi-character character constant [-Wmultichar]
+  744 |             bess_tpp1.header = (BESS_block_t){BE32('TPP1'), LE32(sizeof(bess_tpp1) - sizeof(bess_tpp1.header))};
+      |                                                          ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:759:57: warning: multi-character character constant [-Wmultichar]
+  759 |             bess_rtc.header = (BESS_block_t){BE32('RTC '), LE32(sizeof(bess_rtc) - sizeof(bess_rtc.header))};
+      |                                                         ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:777:58: warning: multi-character character constant [-Wmultichar]
+  777 |             bess_huc3.header = (BESS_block_t){BE32('HUC3'), LE32(sizeof(bess_huc3) - sizeof(bess_huc3.header))};
+      |                                                          ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:810:54: warning: multi-character character constant [-Wmultichar]
+  810 |         bess_mbc7.header = (BESS_block_t){BE32('MBC7'), LE32(sizeof(bess_mbc7) - sizeof(bess_mbc7.header))};
+      |                                                      ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:824:48: warning: multi-character character constant [-Wmultichar]
+  824 |             BESS_SGB_t bess_sgb = {{BE32('SGB '), LE32(sizeof(bess_sgb) - sizeof(bess_sgb.header))}, };
+      |                                                ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:851:54: warning: multi-character character constant [-Wmultichar]
+  851 |     static const BESS_block_t bess_end = {BE32('END '), 0};
+      |                                                      ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c: In function ‘load_bess_save’:
+/home/jeff/Work/SameBoy-review/Core/save_state.c:962:36: warning: multi-character character constant [-Wmultichar]
+  962 |     if (footer.magic != BE32('BESS')) {
+      |                                    ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:983:29: warning: multi-character character constant [-Wmultichar]
+  983 |             case BE32('CORE'):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1103:29: warning: multi-character character constant [-Wmultichar]
+ 1103 |             case BE32('NAME'):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1111:29: warning: multi-character character constant [-Wmultichar]
+ 1111 |             case BE32('INFO'): {
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1129:29: warning: multi-character character constant [-Wmultichar]
+ 1129 |             case BE32('XOAM'):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1134:29: warning: multi-character character constant [-Wmultichar]
+ 1134 |             case BE32('MBC '):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1151:29: warning: multi-character character constant [-Wmultichar]
+ 1151 |             case BE32('RTC '):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1172:29: warning: multi-character character constant [-Wmultichar]
+ 1172 |             case BE32('HUC3'):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1187:29: warning: multi-character character constant [-Wmultichar]
+ 1187 |             case BE32('TPP1'):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1202:29: warning: multi-character character constant [-Wmultichar]
+ 1202 |             case BE32('MBC7'):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1225:29: warning: multi-character character constant [-Wmultichar]
+ 1225 |             case BE32('SGB '):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1237:29: warning: multi-character character constant [-Wmultichar]
+ 1237 |             case BE32('END '):
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c: In function ‘get_state_model_bess’:
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1423:36: warning: multi-character character constant [-Wmultichar]
+ 1423 |     if (footer.magic != BE32('BESS')) {
+      |                                    ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1432:29: warning: multi-character character constant [-Wmultichar]
+ 1432 |             case BE32('CORE'): {
+      |                             ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1443:37: warning: multi-character character constant [-Wmultichar]
+ 1443 |                     case BE32('GDB '): *model = GB_MODEL_DMG_B; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1444:37: warning: multi-character character constant [-Wmultichar]
+ 1444 |                     case BE32('GM  '): *model = GB_MODEL_MGB; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1445:37: warning: multi-character character constant [-Wmultichar]
+ 1445 |                     case BE32('SN  '): *model = GB_MODEL_SGB_NTSC_NO_SFC; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1446:37: warning: multi-character character constant [-Wmultichar]
+ 1446 |                     case BE32('SP  '): *model = GB_MODEL_SGB_PAL; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1447:37: warning: multi-character character constant [-Wmultichar]
+ 1447 |                     case BE32('S2  '): *model = GB_MODEL_SGB2; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1448:37: warning: multi-character character constant [-Wmultichar]
+ 1448 |                     case BE32('CC0 '): *model = GB_MODEL_CGB_0; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1449:37: warning: multi-character character constant [-Wmultichar]
+ 1449 |                     case BE32('CCA '): *model = GB_MODEL_CGB_A; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1450:37: warning: multi-character character constant [-Wmultichar]
+ 1450 |                     case BE32('CCB '): *model = GB_MODEL_CGB_B; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1451:37: warning: multi-character character constant [-Wmultichar]
+ 1451 |                     case BE32('CCC '): *model = GB_MODEL_CGB_C; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1452:37: warning: multi-character character constant [-Wmultichar]
+ 1452 |                     case BE32('CCD '): *model = GB_MODEL_CGB_D; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1453:37: warning: multi-character character constant [-Wmultichar]
+ 1453 |                     case BE32('CCE '): *model = GB_MODEL_CGB_E; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1454:37: warning: multi-character character constant [-Wmultichar]
+ 1454 |                     case BE32('CAA '): *model = GB_MODEL_AGB_A; return 0;
+      |                                     ^
+/home/jeff/Work/SameBoy-review/Core/save_state.c: In function ‘GB_is_save_state’:
+/home/jeff/Work/SameBoy-review/Core/save_state.c:1528:29: warning: multi-character character constant [-Wmultichar]
+ 1528 |     if (magic == BE32('BESS')) {
+      |                             ^
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/sgb.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/sm83_cpu.c:4:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/sm83_disassembler.c:3:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/symbol_hash.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/timing.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~
+In file included from /home/jeff/Work/SameBoy-review/Core/gb.h:24,
+                 from /home/jeff/Work/SameBoy-review/Core/workboy.c:1:
+/home/jeff/Work/SameBoy-review/Core/save_state.h: In function ‘GB_state_magic’:
+/home/jeff/Work/SameBoy-review/Core/save_state.h:49:35: warning: multi-character character constant [-Wmultichar]
+   49 |     if (sizeof(bool) == 1) return 'SAME';
+      |                                   ^~~~~~
+/home/jeff/Work/SameBoy-review/Core/save_state.h:50:12: warning: multi-character character constant [-Wmultichar]
+   50 |     return 'S4ME';
+      |            ^~~~~~

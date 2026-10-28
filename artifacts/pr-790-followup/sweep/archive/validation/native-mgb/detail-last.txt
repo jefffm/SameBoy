@@ -1,0 +1,18 @@
+SWEEP COMPARE V1    
+SHIFT 1 / JEFF'S DMG
+TRIALS 0911         
+STOP 0000 REF 0127  
+DIFF 0127 BAD 0000  
+                    
+DIFFERING FREQUENCY 
+FREQ $37F           
+                    
+NR52 PRE 1 POST 1   
+                    
+JEFF: STOP          
+UNIT: LIVE          
+                    
+NOT A HARDWARE PASS 
+                    
+UP/DOWN: PREV/NEXT  
+< > SHIFT  START SUM

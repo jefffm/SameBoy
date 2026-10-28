@@ -1,0 +1,29 @@
+{
+  "all_passed": true,
+  "rom_sha256": {
+    "sweep-verify.gb": "cfb29be1b03c7cb6ebc76a63e2260455b745e09aea4966e26de8fafbf4217d09",
+    "sweep-verify-mbc5.gb": "784825ebfa76fcb33f45aeb12275d34cfdf373a4e9f176f2bea6452e3d507b03"
+  },
+  "rgbds": {
+    "rgbasm": "rgbasm v1.0.0",
+    "rgblink": "rgblink v1.0.0",
+    "rgbfix": "rgbfix v1.0.0"
+  },
+  "header_changes": {
+    "0x147": [
+      "00",
+      "1b"
+    ],
+    "0x149": [
+      "00",
+      "04"
+    ],
+    "0x14d": [
+      "eb",
+      "cc"
+    ]
+  },
+  "all_other_bytes_identical": true,
+  "frozen_sources_checked": true,
+  "build_script_sha256": "81f84d24d8b405740ab511702545252baf7a14a01cee026d0af5a24a76b9c417"
+}

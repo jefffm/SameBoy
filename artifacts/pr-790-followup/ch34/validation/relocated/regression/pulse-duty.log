@@ -1,0 +1,39 @@
+/home/jeff/Work/SameBoy-review/.amp/in/pr790-relocated/regression/pulse-duty /home/jeff/Work/SameBoy-review/.amp/in/pr790-relocated/ch34/ch34-focused-probe/rom/ch34-focused-probe.gb
+CH1 duty0->1 retrigger: output=0, expected retained 0
+duty latch: new-state roundtrip and zero-volume retention passed
+CH2 duty0->1 retrigger: output=0, expected retained 0
+duty latch: new-state roundtrip and zero-volume retention passed
+DMG pulse duty output latch: passed
+model=2 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=2 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=100 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=100 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=4 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=4 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=44 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=44 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=84 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=84 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=c4 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=c4 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=101 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=101 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=181 CH1 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=181 CH2 duty0->1 retrigger PCM=4080:4080 expected=4080 mismatches=0
+model=200 CH1 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=200 CH2 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=201 CH1 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=201 CH2 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=202 CH1 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=202 CH2 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=203 CH1 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=203 CH2 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=204 CH1 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=204 CH2 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=205 CH1 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=205 CH2 duty0->1 retrigger PCM=-4080:-4080 expected=-4080 mismatches=0
+model=207 CH1 duty0->1 retrigger PCM=-8160:-8160 expected=-8160 mismatches=0
+model=207 CH2 duty0->1 retrigger PCM=-8160:-8160 expected=-8160 mismatches=0
+model=227 CH1 duty0->1 retrigger PCM=-8160:-8160 expected=-8160 mismatches=0
+model=227 CH2 duty0->1 retrigger PCM=-8160:-8160 expected=-8160 mismatches=0
+Pulse duty model scope: 0 failed checks

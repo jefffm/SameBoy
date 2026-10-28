@@ -1,0 +1,17 @@
+{
+  "all_passed": true,
+  "trials_per_run": 11587,
+  "native_models": [
+    "DMG-B",
+    "MGB",
+    "SGB",
+    "SGB2"
+  ],
+  "synthetic": [
+    "mixed missing/extra stops and both invalid bit patterns",
+    "all results inverted",
+    "all initial controls invalid"
+  ],
+  "original_schedule_and_readbacks_equal": true,
+  "hardware_tested": false
+}

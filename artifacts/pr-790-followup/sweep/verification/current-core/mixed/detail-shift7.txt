@@ -1,0 +1,18 @@
+SWEEP COMPARE V1    
+SHIFT 7 / JEFF'S DMG
+TRIALS 2018         
+STOP 0000 REF 0001  
+DIFF 0000 BAD 0001  
+                    
+DIFFERING FREQUENCY 
+FREQ $7E1           
+                    
+NR52 PRE 0 POST 1   
+                    
+JEFF: STOP          
+UNIT: INVALID INIT  
+                    
+NOT A HARDWARE PASS 
+                    
+UP/DOWN: PREV/NEXT  
+< > SHIFT  START SUM

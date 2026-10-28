@@ -1,0 +1,18 @@
+PASS: frozen inputs, both ROM hashes, headers, checksums, exactly three header-byte differences
+native-dmg model=0x002 trials=11587 measurement_and_reporting_s=94.098009 SRAM=0/0 injected=0
+native-mgb model=0x100 trials=11587 measurement_and_reporting_s=94.099998 SRAM=0/0 injected=0
+native-dmg PASS {'stops': 192, 'differences': 0, 'invalid': 0}
+native-mgb PASS {'stops': 0, 'differences': 192, 'invalid': 0}
+native-sgb model=0x004 trials=11587 measurement_and_reporting_s=91.884117 SRAM=0/0 injected=0
+native-sgb PASS {'stops': 0, 'differences': 192, 'invalid': 0}
+native-sgb2 model=0x101 trials=11587 measurement_and_reporting_s=94.099998 SRAM=0/0 injected=0
+native-sgb2 PASS {'stops': 0, 'differences': 192, 'invalid': 0}
+mixed model=0x002 trials=11587 measurement_and_reporting_s=94.098437 SRAM=0/0 injected=1
+mixed PASS {'stops': 194, 'differences': 5, 'invalid': 3}
+opposite model=0x002 trials=11587 measurement_and_reporting_s=95.091724 SRAM=0/0 injected=1
+opposite PASS {'stops': 11395, 'differences': 11587, 'invalid': 0}
+invalid model=0x002 trials=11587 measurement_and_reporting_s=94.445565 SRAM=0/0 injected=1
+invalid PASS {'stops': 0, 'differences': 0, 'invalid': 11587}
+mbc5-dmg model=0x002 trials=11587 measurement_and_reporting_s=94.098009 SRAM=0/0 injected=0
+mbc5-dmg PASS {'stops': 192, 'differences': 0, 'invalid': 0}
+PASS: archived original trace, both variants, 4 models, 3 injected patterns, UI navigation and full retained results

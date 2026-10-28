@@ -1,0 +1,25 @@
+--- a/Core/apu.c
++++ b/Core/apu.c
+@@ -1082,6 +1082,7 @@
+             while (unlikely(cycles_left > gb->apu.wave_channel.sample_countdown)) {
+                 cycles_left -= gb->apu.wave_channel.sample_countdown + 1;
+                 gb->apu.wave_channel.sample_countdown = gb->apu.wave_channel.sample_length ^ 0x7FF;
++                gb->apu.wave_channel.current_sample_index = (gb->apu.wave_channel.current_sample_index + 1) & 0x1F;
+                 if (cycles_left) {
+                     gb->apu.wave_channel.current_sample_byte =
+                     gb->io_registers[GB_IO_WAV_START + (gb->address_bus & 0xF)];
+@@ -1120,12 +1121,12 @@
+                 /* DMG's JOTO feedback latch clocks on the falling edge; the
+                    shift stages clock on the rising edge. Reset clears both, so
+                    a rising edge before the first falling edge shifts in zero. */
+-                if (!GB_is_cgb(gb) && old_bit && !new_bit && gb->apu.is_active[GB_NOISE]) {
++                if (!GB_is_cgb(gb) && old_bit && !new_bit && gb->apu.noise_counter_active) {
+                     gb->apu.noise_feedback_latch = lfsr_feedback(gb);
+                 }
+ 
+                 /* Step LFSR */
+-                if (new_bit && !old_bit && gb->apu.is_active[GB_NOISE]) {
++                if (new_bit && !old_bit && gb->apu.noise_counter_active) {
+                     if (cycles_left == 0 && gb->apu.samples[GB_NOISE] == 0 && !gb->cgb_double_speed) {
+                         gb->apu.pcm_mask[1] &= 0x0F;
+                     }

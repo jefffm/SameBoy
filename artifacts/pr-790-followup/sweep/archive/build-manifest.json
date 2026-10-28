@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "rom_sha256": "cfb29be1b03c7cb6ebc76a63e2260455b745e09aea4966e26de8fafbf4217d09",
+  "rom_bytes": 32768,
+  "trials": 11587,
+  "trials_by_shift": [
+    911,
+    1312,
+    1619,
+    1815,
+    1926,
+    1986,
+    2018
+  ],
+  "jeff_stops_by_shift": [
+    127,
+    54,
+    7,
+    0,
+    2,
+    1,
+    1
+  ],
+  "reference": "Physical observations on one DMG, not a universal pass/fail oracle",
+  "measurement": "13 frozen batches; LCD off, interrupts disabled, normal speed; no changed measurement instructions",
+  "results": "Full packed pre/post NR52 bit 0 observations in WRAM; stops, differences and invalid initial controls per shift; browse every differing/invalid frequency",
+  "storage": "ROM-only 32 KiB, no cartridge RAM or battery access; results last until power off",
+  "sources": {
+    "build.py": "dcb1e1f54211886a7e26de8eb95a3fb63db1e489109b8eb03f608e173909a55d",
+    "src/macros.inc": "c141ad69421ebdccdd7c2f0508ea2f7b8d0816b0a46ebced2e3764448fc65124",
+    "src/sweep.asm": "88718d4296bb30b3cd96176833b6986bba9d818430ad30339dce3e8b8ed18838",
+    "inputs/dmg-probe-v2-erekgdxk.json": "e2251d1ccdd6cf9558ea95a9da574d6d60b973f541708b67daff8b6a00786277",
+    "inputs/font.c": "bad3e04b6876ff30a6f236d38456e81d93b90243e8618a9921ca835be4ef2749",
+    "inputs/sweep-cases.inc": "59195950833d763cea6d3cb9682fe334b564c876af11e70bcfe92fdc36185cff",
+    "inputs/sweep-manifest.json": "f4711f39296632755d837ce0953a21f400302718e2fe8b857d6807d43ba507f4"
+  }
+}
